@@ -1,0 +1,27 @@
+{
+  "name": "mindreeper2420.github.io",
+  "homepage": "http://www.adamjolicoeur.com",
+  "authors": [
+    "Adam J. Jolicoeur <adam.jolicoeur@gmail.com>"
+  ],
+  "description": "My GitHub Pages site",
+  "main": "index.html",
+  "keywords": [
+    "adam",
+    "jolicoeur",
+    "adamjolicoeur",
+    "adam jolicoeur",
+    "adam j jolicoeur",
+    "mindreeper2420"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    
+  }
+}
