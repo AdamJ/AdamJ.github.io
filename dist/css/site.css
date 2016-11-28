@@ -1,4 +1,44 @@
+@import url("http://overpass-30e2.kxcdn.com/overpass.css");
 /* colors */
 /* font sizes */
 html, body {
-  font-size: 14px; }
+  font-family: Overpass;
+  font-size: 14px;
+  height: 100%; }
+
+section {
+  margin-top: 50px;
+  padding-bottom: 50px; }
+
+footer {
+  bottom: 0;
+  height: 60px;
+  position: absolute;
+  text-align: center;
+  width: 100%; }
+
+.bg-white {
+  background-color: #ffffff; }
+
+.bg-primary {
+  background-color: #0275d8; }
+
+.text-white {
+  color: #ffffff; }
+
+.navbar-dark .navbar-toggler {
+  border-color: #ffffff;
+  background-image: none;
+  width: auto; }
+  .navbar-dark .navbar-toggler:focus {
+    outline: none; }
+
+.navbar-dark .username {
+  color: #ffffff;
+  line-height: 2.5; }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff; }
+
+.nav-header {
+  color: rgba(255, 255, 255, 0.5); }

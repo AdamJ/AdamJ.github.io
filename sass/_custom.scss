@@ -1,3 +1,45 @@
 html, body {
+    font-family: Overpass;
     font-size: 14px;
+    height: 100%;
+}
+section {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+footer {
+    bottom: 0;
+    height: 60px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.bg-white {
+    background-color: $white;
+}
+.bg-primary {
+    background-color: $bs-primary;
+}
+.text-white {
+    color: $white;
+}
+.navbar-dark {
+    .navbar-toggler {
+        border-color: $white;
+        background-image: none;
+        width: auto;
+        &:focus {
+            outline: none;
+        }
+    }
+    .username {
+        color: $white;
+        line-height: 2.5;
+    }
+    .navbar-nav .nav-link {
+        color: $white;
+    }
+}
+.nav-header {
+    color: rgba(255,255,255,.5);
 }
