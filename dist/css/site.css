@@ -17,6 +17,10 @@ footer {
   text-align: center;
   width: 100%; }
 
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+
 .bg-white {
   background-color: #ffffff; }
 
@@ -42,3 +46,49 @@ footer {
 
 .nav-header {
   color: rgba(255, 255, 255, 0.5); }
+
+#intro {
+  background-image: url("../img/SC_Panorama.JPG");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #999;
+  display: table;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+  #intro .inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none; }
+
+.content {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.4);
+  max-width: 600px;
+  margin: auto; }
+
+.inner {
+  max-width: 600px;
+  margin: auto;
+  font-size: 140%;
+  line-height: 1.6;
+  padding: 10px; }
+
+#circles {
+  width: 80%;
+  margin: auto; }
+  #circles .inner .circle {
+    padding: 2em 0 0; }
+
+.circle {
+  border-radius: 50%;
+  background-color: orange;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  padding: 10px; }
