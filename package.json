@@ -1,39 +1,27 @@
 {
-  "name": "mindreeper2420",
-  "version": "1.5.1",
-  "description": "adam's github site",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "jolicoeur",
+  "title": "Adam J. Jolicoeur",
+  "version": "1.1.1",
+  "homepage": "https://mindreeper2420.github.io/",
+  "author": "Adam J. Jolicoeur",
+  "license": {
+    "type": "Apache 2.0"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.18.2",
+    "font-awesome": "^4.7",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-header": "^1.8.8",
+    "gulp-less": "^3.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "jquery": "^3.1.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://mindreeper2420@github.com/mindreeper2420/mindreeper2420.github.io.git"
-  },
-  "keywords": [
-    "adam",
-    "jolicoeur",
-    "adam jolicoeur",
-    "adam j jolicoeur",
-    "adamjolicoeur",
-    "ajolicoeur"
-  ],
-  "author": "Adam J. Jolicoeur",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mindreeper2420/mindreeper2420.github.io/issues"
-  },
-  "homepage": "https://github.com/mindreeper2420/mindreeper2420.github.io/index.html",
-  "devDependencies": {
-    "browser-sync": "^2.17.6",
-    "browsersync": "0.0.1-security",
-    "gulp": "^3.9.1",
-    "gulp-batch": "^1.0.5",
-    "gulp-notify": "^2.2.0",
-    "gulp-sass": "^2.3.2",
-    "gulp-watch": "^4.3.10"
-  },
-  "dependencies": {
-    
+    "url": "https://mindreeper2420.github.com/mindreeper2420.github.io.git"
   }
 }
