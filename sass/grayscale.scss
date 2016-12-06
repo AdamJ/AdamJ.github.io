@@ -5,11 +5,11 @@
 @import "buttons";
 
 body {
+    font-family: "Overpass",Helvetica,Arial,sans-serif; //base
+    background-color: $white;
+    color: $text;
     width: 100%;
     height: 100%;
-    font-family: "Overpass",Helvetica,Arial,sans-serif;
-    color: $text;
-    background-color: $white;
     -webkit-tap-highlight-color: rgba($white, 0.2);
 }
 
@@ -18,35 +18,30 @@ html {
     height: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0 0 35px;
-    text-transform: uppercase;
-    font-family: "Overpass-mono",Helvetica,Arial,sans-serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Overpass",Helvetica,Arial,sans-serif; //alternate
     font-weight: 700;
     letter-spacing: 1px;
+    margin: 0 0 35px;
+    text-transform: uppercase;
 }
 
 p {
-    margin: 0 0 25px;
     font-size: 18px;
     line-height: 1.5;
+    margin: 0 0 25px;
     @media(min-width:768px) {
-        margin: 0 0 35px;
         font-size: 20px;
         line-height: 1.6;
+        margin: 0 0 35px;
     }
 }
 
 a {
     color: $blue-400;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
     &:hover,
     &:focus {
         text-decoration: none;
@@ -59,37 +54,37 @@ a {
 }
 
 .fab-top {
-    position: fixed;
-    bottom: 0;
-    right: 0;
     background-color: $blue-400;
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    bottom: 0;
+    box-shadow: 0 0 10px #f7f7f7;
     margin-right: 15px;
     margin-bottom: 15px;
-    box-shadow: 0 0 10px #f7f7f7;
+    position: fixed;
+    right: 0;
+    height: 50px;
+    width: 50px;
     &:before {
         font-family: FontAwesome;
         font-size: 1.5em;
         content: "\f148";
+        color: $white;
         position: relative;
         top: 11px;
         left: 17px;
-        color: $white;
     }
 }
 
 .navbar-custom {
-    margin-bottom: 0;
-    border-bottom: 1px solid rgba($white, 0.3);
-    text-transform: uppercase;
-    font-family: "Overpass-mono",Helvetica,Arial,sans-serif;
+    font-family: "Overpass",Helvetica,Arial,sans-serif; //alternate
     background-color: $blue-300;
+    border-bottom: 1px solid rgba($white, 0.3);
+    margin-bottom: 0;
+    text-transform: uppercase;
     .navbar-toggle {
-        padding: 4px 6px;
         font-size: 16px;
         color: $white;
+        padding: 4px 6px;
         &:focus,
         &:active {
             outline: none;
@@ -107,18 +102,18 @@ a {
     .nav {
         li {
             a {
-                -webkit-transition: background .3s ease-in-out;
-                -moz-transition: background .3s ease-in-out;
                 transition: background .3s ease-in-out;
+                    -webkit-transition: background .3s ease-in-out;
+                    -moz-transition: background .3s ease-in-out;
                 &:hover {
+                    background-color: transparent;
                     color: rgba($white, 0.8);
                     outline: none;
-                    background-color: transparent;
                 }
                 &:focus,
                 &:active {
-                    outline: none;
                     background-color: transparent;
+                    outline: none;
                 }
             }
             &.active {
@@ -133,35 +128,34 @@ a {
         }
     }
     @media(min-width:768px) {
-        padding: 20px 0;
+        background: transparent;
         border-bottom: none;
         letter-spacing: 1px;
-        background: transparent;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        padding: 20px 0;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
+            -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+            -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         &.top-nav-collapse {
-            padding: 0;
             background: $blue-300;
             border-bottom: 1px solid rgba($white, 0.3);
+            padding: 0;
         }
     }
 }
 
 .intro {
-    display: table;
-    width: 100%;
-    //height: auto;
-    height: 100%;
-    padding: 100px 0;
-    text-align: center;
-    color: $white;
     background: url(../img/SC_Panorama.JPG) no-repeat bottom center scroll;
     background-color: $black;
     background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
+    color: $white;
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    text-align: center;
     .intro-body {
         display: table-cell;
         vertical-align: middle;
@@ -187,35 +181,35 @@ a {
 }
 @-webkit-keyframes pulse {
     from {
-        -webkit-transform: scale(1);
         transform: scale(1);
+            -webkit-transform: scale(1);
     }
 
     50% {
-        -webkit-transform: scale(1.2);
         transform: scale(1.2);
+            -webkit-transform: scale(1.2);
     }
 
     100% {
-        -webkit-transform: scale(1);
         transform: scale(1);
+            -webkit-transform: scale(1);
     }
 }
 
 @-moz-keyframes pulse {
     from {
-        -moz-transform: scale(1);
         transform: scale(1);
+            -moz-transform: scale(1);
     }
 
     50% {
-        -moz-transform: scale(1.2);
         transform: scale(1.2);
+            -moz-transform: scale(1.2);
     }
 
     100% {
-        -moz-transform: scale(1);
         transform: scale(1);
+            -moz-transform: scale(1);
     }
 }
 
@@ -225,31 +219,29 @@ a {
 }
 
 .portfolio-section {
-    width: 100%;
-    //height: auto;
-    height: 100%;
-    padding: 50px 0;
-    color: $white;
     background: url(../img/SC_water.jpg) no-repeat center center scroll;
     background-color: $black;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    color: $white;
+    padding: 50px 0;
+    width: 100%;
+    height: 100%;
 }
 
 .contact-section {
-    width: 100%;
-    //height: auto;
-    height: 100%;
-    padding: 50px 0;
-    color: $white;
     //background: url(../img/SC_water.jpg) no-repeat center center scroll;
     background-color: $black;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    color: $white;
+    padding: 50px 0;
+    width: 100%;
+    height: 100%;
 }
 
 @media(min-width:767px) {
@@ -276,15 +268,15 @@ footer {
 }
 
 ::-moz-selection {
-    text-shadow: none;
     background: #fcfcfc;
     background: rgba($white, 0.2);
+    text-shadow: none;
 }
 
 ::selection {
-    text-shadow: none;
     background: #fcfcfc;
     background: rgba($white, 0.2);
+    text-shadow: none;
 }
 
 img::selection {
