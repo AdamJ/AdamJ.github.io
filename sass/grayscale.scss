@@ -1,13 +1,15 @@
 @import "colors";
 @import "variables";
 @import "mixins";
+@import "buttons";
 
 body {
     width: 100%;
     height: 100%;
-    font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Overpass",Helvetica,Arial,sans-serif;
     color: $text;
     background-color: $white;
+    -webkit-tap-highlight-color: rgba($white, 0.2);
 }
 
 html {
@@ -23,7 +25,7 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Overpass-mono",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -55,11 +57,33 @@ a {
     font-weight: 400;
 }
 
+.fab-top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: $blue-400;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px #f7f7f7;
+    &:before {
+        font-family: FontAwesome;
+        font-size: 1.5em;
+        content: "\f148";
+        position: relative;
+        top: 11px;
+        left: 17px;
+        color: $white;
+    }
+}
+
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba($white, 0.3);
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Overpass-mono",Helvetica,Arial,sans-serif;
     background-color: $blue-300;
     .navbar-toggle {
         padding: 4px 6px;
@@ -126,20 +150,20 @@ a {
 .intro {
     display: table;
     width: 100%;
-    height: auto;
+    //height: auto;
+    height: 100%;
     padding: 100px 0;
     text-align: center;
     color: $white;
     background: url(../img/SC_Panorama.JPG) no-repeat bottom center scroll;
     background-color: $black;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
     .intro-body {
         display: table-cell;
         vertical-align: middle;
-        box-shadow: 0 0 15px $blue-400;
         .brand-heading {
             font-size: 40px;
         }
@@ -160,46 +184,6 @@ a {
         }
     }
 }
-
-.btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid $white;
-    border-radius: 100% !important;
-    font-size: 40px;
-    color: $white;
-    background: transparent;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-    &:hover,
-    &:focus {
-        outline: none;
-        color: $white;
-        background: rgba($white, 0.1);
-    }
-    i.animated {
-        -webkit-transition-property: -webkit-transform;
-        -webkit-transition-duration: 1s;
-        -moz-transition-property: -moz-transform;
-        -moz-transition-duration: 1s;
-    }
-    &:hover {
-        i.animated {
-            -webkit-animation-name: pulse;
-            -moz-animation-name: pulse;
-            -webkit-animation-duration: 1.5s;
-            -moz-animation-duration: 1.5s;
-            -webkit-animation-iteration-count: infinite;
-            -moz-animation-iteration-count: infinite;
-            -webkit-animation-timing-function: linear;
-            -moz-animation-timing-function: linear;
-        }
-    }
-}
-
 @-webkit-keyframes pulse {
     from {
         -webkit-transform: scale(1);
@@ -235,12 +219,14 @@ a {
 }
 
 .content-section {
+    height: 100%;
     padding-top: 100px;
 }
 
 .portfolio-section {
     width: 100%;
-    height: auto;
+    //height: auto;
+    height: 100%;
     padding: 50px 0;
     color: $white;
     background: url(../img/SC_water.jpg) no-repeat center center scroll;
@@ -253,7 +239,8 @@ a {
 
 .contact-section {
     width: 100%;
-    height: auto;
+    //height: auto;
+    height: 100%;
     padding: 50px 0;
     color: $white;
     //background: url(../img/SC_water.jpg) no-repeat center center scroll;
@@ -265,90 +252,19 @@ a {
 }
 
 @media(min-width:767px) {
-    .content-section {
-        padding-top: 250px;
+    // .content-section {
+    //     padding-top: 250px;
+    // }
+
+    #about, #portfolio, #contact {
+       height: 100%;
+       padding-top: 250px;
     }
 
     .download-section {
         padding: 100px 0;
     }
 
-}
-
-.btn {
-    text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    border-radius: 0;
-}
-
-.btn-default {
-    border: 3px solid $blue-400;
-    color: $black;
-    background-color: $blue-400;
-    &:hover,
-    &:focus {
-        border: 3px solid $blue-400;
-        outline: none;
-        color: $black;
-        background-color: transparent;
-    }
-}
-.btn-secondary {
-    border: 3px solid $orange-400;
-    color: $black;
-    background-color: $orange-400;
-    &:hover,
-    &:focus {
-        border: 3px solid $orange-400;
-        outline: none;
-        color: $black;
-        background-color: transparent;
-    }
-}
-.btn-tertiary {
-    border: 3px solid $green-400;
-    color: $black;
-    background-color: $green-400;
-    &:hover,
-    &:focus {
-        border: 3px solid $green-400;
-        outline: none;
-        color: $black;
-        background-color: transparent;
-    }
-}
-.btn-social {
-    border: 3px solid $blue-400;
-    color: $black;
-    background-color: $blue-400;
-    &:hover,
-    &:focus {
-        border: 3px solid $blue-400;
-        outline: none;
-        color: $white;
-        background-color: transparent;
-    }
-}
-
-ul.banner-social-buttons {
-    margin-top: 0;
-    @media(max-width:1199px) {
-        margin-top: 15px;
-    }
-    @media(max-width:767px) {
-        li {
-            display: block;
-            margin-bottom: 20px;
-            padding: 0;
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-    }
 }
 
 footer {
@@ -376,8 +292,4 @@ img::selection {
 
 img::-moz-selection {
     background: transparent;
-}
-
-body {
-    -webkit-tap-highlight-color: rgba($white, 0.2);
 }
