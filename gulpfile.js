@@ -5,6 +5,7 @@ var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
+var notify = require('gulp-notify');
 var pkg = require('./package.json');
 
 // Set the banner content
@@ -17,14 +18,25 @@ var banner = ['/*!\n',
 ].join('');
 
 gulp.task('sass', function() {
-    return gulp.src('sass/*.scss')
-        .pipe(sass())
+    return gulp.src("sass/*.scss")
+        .pipe(sass().on('error', sass.logError))
         .pipe(header(banner, { pkg: pkg }))
         .pipe(gulp.dest('css'))
-        .pipe(browserSync.reload({
+	    .pipe(browserSync.reload({
             stream: true
         }))
+        .pipe(notify("CSS compiled"));
 });
+
+// gulp.task('sass', function() {
+//     return gulp.src('sass/*.scss')
+//         .pipe(sass())
+//         .pipe(header(banner, { pkg: pkg }))
+//         .pipe(gulp.dest('css'))
+//         .pipe(browserSync.reload({
+//             stream: true
+//         }))
+// });
 
 // Minify compiled CSS
 gulp.task('minify-css', ['sass'], function() {
@@ -68,9 +80,6 @@ gulp.task('copy', function() {
         .pipe(gulp.dest('vendor/font-awesome'))
 })
 
-// Run everything
-gulp.task('default', ['sass', 'minify-css', 'minify-js', 'copy']);
-
 // Configure the browserSync task
 gulp.task('browserSync', function() {
     browserSync.init({
@@ -80,13 +89,40 @@ gulp.task('browserSync', function() {
     })
 })
 
-// Dev task with browserSync
-gulp.task('dev', ['browserSync', 'minify-css', 'minify-js'], function() {
-    gulp.watch('sass/*.scss', ['sass']);
-    gulp.watch('css/*.css', ['minify-css']);
-    gulp.watch('js/*.js', ['minify-js']);
-    // Reloads the browser whenever HTML or JS files change
-    gulp.watch('*.css', browserSync.reload);
-    gulp.watch('*.html', browserSync.reload);
-    gulp.watch('js/**/*.js', browserSync.reload);
+// ensure js finishes, reload browser
+gulp.task('js-watch', ['minify-js'], function (done) {
+    browserSync.reload();
+    done();
 });
+
+// ensure sass finishes, reload browser
+gulp.task('sass-watch', ['sass'], function (done) {
+    browserSync.reload();
+    done();
+})
+
+// Dev task with browserSync
+gulp.task('serve', ['sass', 'minify-js'], function () {
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        }
+    });
+    gulp.watch('js/*.js', ['js-watch']);
+    gulp.watch('sass/*.scss', ['sass-watch']);
+    gulp.watch('*.html').on('change', browserSync.reload);
+});
+
+// Dev task with browserSync
+// gulp.task('dev', ['browserSync', 'minify-css', 'minify-js'], function() {
+//     gulp.watch('sass/*.scss', ['sass']);
+//     gulp.watch('css/*.css', ['minify-css']);
+//     gulp.watch('js/*.js', ['minify-js']);
+//     // Reloads the browser whenever HTML or JS files change
+//     gulp.watch('*.css', browserSync.reload);
+//     gulp.watch('*.html', browserSync.reload);
+//     gulp.watch('js/**/*.js', browserSync.reload);
+// });
+
+// Run everything
+gulp.task('default', ['sass', 'minify-css', 'minify-js', 'copy']);
