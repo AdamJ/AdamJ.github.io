@@ -96,7 +96,7 @@ gulp.task('js-watch', ['minify-js'], function (done) {
 });
 
 // ensure sass finishes, reload browser
-gulp.task('sass-watch', ['sass'], function (done) {
+gulp.task('sass-watch', ['minify-css'], function (done) {
     browserSync.reload();
     done();
 })
