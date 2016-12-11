@@ -113,39 +113,6 @@ a {
         }
     }
 }
-@-webkit-keyframes pulse {
-    from {
-        transform: scale(1);
-            -webkit-transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.2);
-            -webkit-transform: scale(1.2);
-    }
-
-    100% {
-        transform: scale(1);
-            -webkit-transform: scale(1);
-    }
-}
-
-@-moz-keyframes pulse {
-    from {
-        transform: scale(1);
-            -moz-transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.2);
-            -moz-transform: scale(1.2);
-    }
-
-    100% {
-        transform: scale(1);
-            -moz-transform: scale(1);
-    }
-}
 
 .portfolio-section {
     color: $white;
@@ -161,7 +128,7 @@ a {
         -moz-background-size: cover;
         -o-background-size: cover;
     color: $white;
-    padding-top: 200px;
+    padding-top: 100px;
     padding-bottom: 200px;
     width: 100%;
 }
@@ -208,4 +175,38 @@ img::selection {
 
 img::-moz-selection {
     background: transparent;
+}
+
+@-webkit-keyframes pulse {
+    from {
+        transform: scale(1);
+            -webkit-transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+            -webkit-transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {
+    from {
+        transform: scale(1);
+            -moz-transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+            -moz-transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+            -moz-transform: scale(1);
+    }
 }
