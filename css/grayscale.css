@@ -6,7 +6,7 @@
 /* http://overpassfont.org/ */
 /* Webfont: overpass-bold */
 @font-face {
-  font-family: "overpass";
+  font-family: "Overpass";
   src: url("../fonts/overpass-bold.eot");
   /* IE9 Compat Modes */
   src: url("../fonts/overpass-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-bold.woff") format("woff"), url("../fonts/overpass-bold.ttf") format("truetype"), url("../fonts/overpass-bold.svg#overpass-bold") format("svg");
@@ -15,9 +15,9 @@
   font-weight: 700;
   text-rendering: optimizeLegibility; }
 
-/* Webfont: overpass-bolditalic */
+/* Webfont: Overpass-bolditalic */
 @font-face {
-  font-family: "overpass";
+  font-family: "Overpass";
   src: url("../fonts/overpass-bold-italic.eot");
   /* IE9 Compat Modes */
   src: url("../fonts/overpass-bold-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-bold-italic.woff") format("woff"), url("../fonts/overpass-bold-italic.ttf") format("truetype"), url("../fonts/overpass-bold-italic.svg#overpass-bolditalic") format("svg");
@@ -26,9 +26,9 @@
   font-weight: 700;
   text-rendering: optimizeLegibility; }
 
-/* Webfont: overpass-Reg */
+/* Webfont: Overpass-Reg */
 @font-face {
-  font-family: "overpass";
+  font-family: "Overpass";
   src: url("../fonts/overpass-regular.eot");
   /* IE9 Compat Modes */
   src: url("../fonts/overpass-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-regular.woff") format("woff"), url("../fonts/overpass-regular.ttf") format("truetype"), url("../fonts/overpass-regular.svg#overpass-regular") format("svg");
@@ -37,9 +37,9 @@
   font-weight: 600;
   text-rendering: optimizeLegibility; }
 
-/* Webfont: overpass-italic */
+/* Webfont: Overpass-italic */
 @font-face {
-  font-family: "overpass";
+  font-family: "Overpass";
   src: url("../fonts/overpass-italic.eot");
   /* IE9 Compat Modes */
   src: url("../fonts/overpass-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-italic.woff") format("woff"), url("../fonts/overpass-italic.ttf") format("truetype"), url("../fonts/overpass-italic.svg#overpass-italic") format("svg");
@@ -48,9 +48,9 @@
   font-weight: 600;
   text-rendering: optimizeLegibility; }
 
-/* Webfont: overpass-light */
+/* Webfont: Overpass-light */
 @font-face {
-  font-family: "overpass";
+  font-family: "Overpass";
   src: url("../fonts/overpass-light.eot");
   /* IE9 Compat Modes */
   src: url("../fonts/overpass-light.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-light.woff") format("woff"), url("../fonts/overpass-light.ttf") format("truetype"), url("../fonts/overpass-light.svg#overpass-light") format("svg");
@@ -59,9 +59,9 @@
   font-weight: normal;
   text-rendering: optimizeLegibility; }
 
-/* Webfont: overpass-lightitalic */
+/* Webfont: Overpass-lightitalic */
 @font-face {
-  font-family: "overpass";
+  font-family: "Overpass";
   src: url("../fonts/overpass-light-italic.eot");
   /* IE9 Compat Modes */
   src: url("../fonts/overpass-light-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-light-italic.woff") format("woff"), url("../fonts/overpass-light-italic.ttf") format("truetype"), url("../fonts/overpass-light-italic.svg#overpass-lightitalic") format("svg");
@@ -70,23 +70,23 @@
   font-weight: normal;
   text-rendering: optimizeLegibility; }
 
-/* Webfont: overpass-Extralight */
+/* Webfont: Overpass-extralight */
 @font-face {
-  font-family: "overpass";
-  src: url("../fonts/overpass-Extralight.eot");
+  font-family: "Overpass";
+  src: url("../fonts/overpass-extralight.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/overpass-Extralight.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-Extralight.woff") format("woff"), url("../fonts/overpass-Extralight.ttf") format("truetype"), url("../fonts/overpass-Extralight.svg#overpass-Extralight") format("svg");
+  src: url("../fonts/overpass-extralight.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-extralight.woff") format("woff"), url("../fonts/overpass-extralight.ttf") format("truetype"), url("../fonts/overpass-extralight.svg#overpass-extralight") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: 300;
   text-rendering: optimizeLegibility; }
 
-/* Webfont: overpass-Extralightitalic */
+/* Webfont: Overpass-extralightitalic */
 @font-face {
-  font-family: "overpass";
-  src: url("../fonts/overpass-Extralight-italic.eot");
+  font-family: "Overpass";
+  src: url("../fonts/overpass-extralight-italic.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/overpass-Extralight-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-Extralight-italic.woff") format("woff"), url("../fonts/overpass-Extralight-italic.ttf") format("truetype"), url("../fonts/overpass-Extralight-italic.svg#overpass-Extralightitalic") format("svg");
+  src: url("../fonts/overpass-extralight-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-extralight-italic.woff") format("woff"), url("../fonts/overpass-extralight-italic.ttf") format("truetype"), url("../fonts/overpass-extralight-italic.svg#overpass-extralightitalic") format("svg");
   /* Legacy iOS */
   font-style: italic;
   font-weight: 300;
