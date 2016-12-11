@@ -327,8 +327,15 @@ a {
         font-size: 26px; } }
 
 .portfolio-section {
+  background: url(../img/SC_water.jpg) no-repeat center center scroll;
+  background-color: #212121;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   color: #ffffff;
   padding-top: 200px;
+  padding-bottom: 200px;
   width: 100%;
   height: auto; }
 
@@ -345,15 +352,6 @@ a {
 
 #about {
   padding-top: 200px;
-  padding-bottom: 200px; }
-
-#portfolio {
-  background: url(../img/SC_water.jpg) no-repeat center center scroll;
-  background-color: #212121;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   padding-bottom: 200px; }
 
 .download-section {
