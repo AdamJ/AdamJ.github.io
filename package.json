@@ -1,22 +1,20 @@
 {
   "name": "jolicoeur",
   "title": "Adam J. Jolicoeur",
-  "version": "1.0",
-  "author": "Adam J. Jolicoeur <mindreeper2420@gmail.com> (https://mindreeper2420.github.io)",
-  "license": {
-    "type": "Apache 2.0"
-  },
+  "version": "1.1.1",
+  "author": "Adam J. Jolicoeur",
+  "license": "Apache 2.0",
   "devDependencies": {
-    "bootstrap": "^3.3.7",
-    "browser-sync": "^2.18.2",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.13",
-    "gulp-header": "^1.8.8",
-    "gulp-sass": "^2.3.2",
-    "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^2.0.0",
-    "gulp-notify": "^2.2.0",
-    "jquery": "^3.1.1"
+    "bootstrap": "latest",
+    "browser-sync": "latest",
+    "gulp": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-header": "latest",
+    "gulp-sass": "latest",
+    "gulp-rename": "latest",
+    "gulp-uglify": "latest",
+    "gulp-notify": "latest",
+    "jquery": "latest"
   },
   "repository": {
     "type": "git",
