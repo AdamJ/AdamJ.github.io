@@ -7,7 +7,6 @@ notifications:
   email: mindreeper2420@gmail.com
 
 node_js:
-  - 'lts/*'
   - '6'
 
 env:
