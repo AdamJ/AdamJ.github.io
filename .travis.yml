@@ -1,10 +1,22 @@
 language: node_js
 cache:
   directories:
-    - node_modules
+    - 'node_modules'
 
 notifications:
-  email: false
+  email: mindreeper2420@gmail.com
 
 node_js:
+  - 'lts/*'
   - '6'
+
+env:
+  global:
+    - COMMIT_AUTHOR_EMAIL: "mindreeper2420@gmail.com"
+    - TRIGGER_REPO_SLUG: "mindreeper2420/mindreeper2420.github.io"
+    - TRIGGER_REPO_BRANCH: "master"
+
+before_script:
+  - npm install -g gulp-cli
+
+script: gulp
