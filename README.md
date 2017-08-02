@@ -1,4 +1,4 @@
-# Mindreeper2420.github.io
+# Mindreeper2420.github.io https://travis-ci.org/mindreeper2420/mindreeper2420.github.io.svg?branch=master
 This repo is my own personal site, hosted on GitHub.
 
 If you wish to run this site locally, please follow the Installation steps below. Thanks!
