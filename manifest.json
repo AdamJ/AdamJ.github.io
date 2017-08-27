@@ -1,0 +1,13 @@
+{
+  "author": "Adam J. Jolicoeur",
+  "description": "The portfolio for Adam. J Jolicoeur",
+  "name": "Adam J. Jolcoeur",
+  "short_name": "A. Jolicoeur",
+  "lang": "en-US",
+  "homepage_url": "http://www.adamjolicoeur.com",
+  "developer": {
+    "name": "Adam J. Jolicoeur",
+    "url": "https://github.com/mindreeper2420"
+  },
+  "display": "browser"
+}
