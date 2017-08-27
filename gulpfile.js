@@ -29,8 +29,8 @@ var FAVICON_DATA_FILE = 'faviconData.json';
 gulp.task('generate-favicon', function(done) {
 	realFavicon.generateFavicon({
 		masterPicture: 'img/master_picture.png',
-		dest: 'icon/',
-		iconsPath: '/icon',
+		dest: 'img/',
+		iconsPath: '/img',
 		design: {
 			ios: {
 				pictureAspect: 'noChange',

@@ -1,5 +1,5 @@
 /*!
- * www.AdamJolicoeur.com - Adam J. Jolicoeur v1.2.0 ()
+ * www.AdamJolicoeur.com - Adam J. Jolicoeur v1.2.1 ()
  * Copyright 2008-2017 Adam J. Jolicoeur
  * Licensed under  ()
  */
