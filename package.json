@@ -10,10 +10,11 @@
     "gulp": "latest",
     "gulp-clean-css": "latest",
     "gulp-header": "latest",
-    "gulp-sass": "latest",
-    "gulp-rename": "latest",
-    "gulp-uglify": "latest",
     "gulp-notify": "latest",
+    "gulp-real-favicon": "^0.2.2",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
     "jquery": "latest"
   },
   "repository": {
