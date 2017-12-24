@@ -1,26 +1,36 @@
 .navbar-custom {
-  font-family: "Overpass", Helvetica, Arial, sans-serif; //alternate
-  background-color: $blue-300;
+  display: grid;
+  height: 50px;
+  align-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: rgba($white, 0.3);
   border-bottom: 1px solid rgba($white, 0.3);
-  margin-bottom: 0;
   text-transform: uppercase;
-  .navbar-toggle {
-    font-size: 16px;
-    color: $white;
-    padding: 4px 6px;
-    &:focus,
-    &:active {
-      outline: none;
-    }
+  font-family: $font-stack-alt;
+  .brand {
+    font-size: 20px;
+    opacity: 0;
+    animation: fade-in-right ease 0.4s forwards;
   }
-  .navbar-brand {
-    font-weight: 700;
-    &:focus {
-      outline: none;
-    }
+  .divider {
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: grow-left cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s forwards;
+    animation-delay: 0.4s;
+  }
+  .navbar {
+    animation-delay: 0.8s;
   }
   a {
     color: $white;
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 15px;
   }
   .nav {
     li {
@@ -59,7 +69,7 @@
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
     &.top-nav-collapse {
-      background: $black;
+      background-color: transparent;
       border-bottom: 1px solid rgba($white, 0.3);
       opacity: .8;
     }

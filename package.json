@@ -1,11 +1,10 @@
 {
   "name": "jolicoeur",
   "title": "Adam J. Jolicoeur",
-  "version": "1.2.2",
+  "version": "2.0.0",
   "author": "Adam J. Jolicoeur",
   "license": "Apache 2.0",
   "devDependencies": {
-    "bootstrap": "latest",
     "browser-sync": "latest",
     "gulp": "latest",
     "gulp-clean-css": "latest",

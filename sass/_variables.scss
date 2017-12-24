@@ -1,1 +1,56 @@
-// Variables
+.light {
+  font-weight: 400;
+}
+::-moz-selection {
+  background: #fcfcfc;
+  background: rgba($white, 0.2);
+  text-shadow: none;
+}
+
+::selection {
+  background: #fcfcfc;
+  background: rgba($white, 0.2);
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes pulse {
+  from {
+    transform: scale(1);
+    -moz-transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+    -moz-transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+    -moz-transform: scale(1);
+  }
+}

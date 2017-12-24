@@ -1,0 +1,59 @@
+/*!
+ * www.AdamJolicoeur.com - Adam J. Jolicoeur v2.0.0 ()
+ * Copyright 2008-2017 Adam J. Jolicoeur
+ * Licensed under  ()
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "IBM Plex SemiBold", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 0 35px;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 28px !important; }
+
+h2 {
+  font-size: 25.2px !important; }
+
+h3 {
+  font-size: 22.4px !important; }
+
+h4 {
+  font-size: 19.6px !important; }
+
+h5 {
+  font-size: 16.8px !important; }
+
+p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0 0 25px; }
+  @media (min-width: 768px) {
+    p {
+      font-size: 1.4em;
+      line-height: 1.6;
+      margin: 0 0 35px; } }
+
+.text-center {
+  text-align: center; }
+
+a {
+  color: #0088ce;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out; }
+  a:hover, a:focus {
+    text-decoration: none;
+    color: #004568; }
+
+.about-right {
+  text-align: right; }
+
+.about-header {
+  color: #ffffff;
+  font-size: 56px; }
+
+.about-body {
+  color: #ffffff;
+  font-size: 16.8px; }
