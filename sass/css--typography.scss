@@ -51,20 +51,3 @@ a {
     color: darken($blue-400,20%);
   }
 }
-
-.about {
-  &-left {
-
-  }
-  &-right {
-    text-align: right;
-  }
-  &-header {
-    color: $white;
-    font-size: $font-size-base * 4;
-  }
-  &-body {
-    color: $white;
-    font-size: $font-size-base * 1.2;
-  }
-}

@@ -11,56 +11,119 @@
 
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns:
+    3fr /* left column */
+    6fr /* center column */
+    3fr; /* right column */
   grid-template-rows:
-    [nav-start] 50px [nav-end body-start]
-    auto [body-end footer-start]
-    40px [footer-end] ;
+    50px /* navbar */
+    auto /* content */
+    40px; /* footer */
   grid-template-areas:
     "navbar navbar navbar"
     "content content content"
     "footer footer footer";
-  height: 100vh;
+  min-height: 100vh; /* full vertical height of the browser */
 }
 .navbar-custom {
   grid-area: navbar;
   justify-content: stretch;
+  grid-row-start: navbar-start;
+  grid-row-end: navbar-end / content-start;
 }
 .brand {
   grid-column-start: 1;
-  grid-column-end: 2;
-}
-.divider {
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-end: 4;
 }
 .navbar {
-  grid-column-start: 3;
-  grid-column-end: 4;
+  grid-column-start: 10;
+  grid-column-end: 13;
   justify-content: stretch;
   align-items: center;
 }
 .content {
   grid-area: content;
   justify-content: end;
+  grid-row: 2;
 }
 .about {
+  grid-area: content-about;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(12, 1fr); /* set a 12 column grid inside of the section */
   align-content: center;
   &-left {
     grid-column-start: 1;
-    grid-column-end: 1;
+    grid-column-end: 4;
+    align-self: center;
+  }
+  &-center {
+    grid-column-start: 4;
+    grid-column-end: 10;
   }
   &-right {
+    grid-column-start: 10;
+    grid-column-end: 13;
+    align-self: center;
+    justify-self: end;
+  }
+  // media query for mobile devices to reorder content on the grid
+  @media screen and (max-width: 768px) {
+    &-left, &-center, &-right {
+      display: grid;
+      grid-template-columns: 12fr;
+    }
+    &-left {
+      grid-row: 1/3;
+      grid-column-start: 1;
+      grid-column-end: 13;
+    }
+    &-center {
+      grid-row: 1/4; // overlap all 4 rows in this section
+      grid-column-start: 1;
+      grid-column-end: 13;
+    }
+    &-right {
+      grid-row: 2/4;
+      grid-column-start: 1;
+      grid-column-end: 13;
+      justify-items: end;
+    }
+  }
+}
+.portfolio {
+  grid-area: content-portfolio;
+  display: grid;
+  justify-content: end;
+  &-top, &-middle, &-bottom {
     grid-column-start: 3;
     grid-column-end: 3;
+    justify-self: flex-end;
+  }
+}
+.button-grid {
+  display: grid;
+  align-content: space-evenly;
+  &:first-child {
+    grid-column-start: 3;
+    grid-column-end: 3;
+  }
+}
+.contact {
+  grid-area: content-contact;
+  display: grid;
+  justify-content: end;
+  &-top {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    justify-self: flex-end;
   }
 }
 .footer {
   grid-area: footer;
   justify-content: center;
   align-items: end;
+  grid-row-start: footer-start;
+  grid-row-end: footer-end;
 }
 
 nav ul {

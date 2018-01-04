@@ -5,16 +5,45 @@ html {
 
 body {
   font-family: $font-stack;
-  background-color: #000;
-  color: $text;
-  -webkit-tap-highlight-color: rgba($white, 0.2);
+  // background-color: #000;
+  background-color: #013a6b;
+  color: $white;
+  // -webkit-tap-highlight-color: rgba($white, 0.2);
   overflow-x: hidden;
 }
-.callum {
-  background: url(../img/CallumHeadshot.png);
+.parallax {
   height: 100vh;
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+}
+.callum {
+	width: 45em;
+	height: 50em;
+  background: url(../img/CallumHeadshot.png);
+  background-repeat: round;
+  background-attachment: fixed;
+  background-size: contain;
+  background-color: #013a6b;
+  background-blend-mode: exclusion;
+  opacity: .4;
+  // box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  /* stylelint-disable
+  ** overwrite default handled by the section
+  */
+  // height: 100vh !important;
+  /* stylelint-enable */
+  // background-attachment: fixed;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+  // border-radius: 25px;
+}
+.maggie {
+  background: url(../img/maggie.jpg);
+  height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  border-radius: 25px;
 }

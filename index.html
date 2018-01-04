@@ -20,15 +20,12 @@
   </head>
 
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    <!-- <div class="parallax"></div> -->
     <div class="wrapper">
       <div class="navbar-custom">
         <div class="brand">
           <a class="navbar-brand page-scroll" href="#page-top">
             <span class="brand">Adam J. Jolicoeur<span>
           </a>
-        </div>
-        <div class="divider">
         </div>
         <nav class="navbar">
             <ul>
@@ -42,44 +39,47 @@
                   <a class="page-scroll" href="#portfolio">Portfolio</a>
                 </li>
                 <li>
-                  <a class="page-scroll" href="#contact">Social</a>
+                  <a class="page-scroll" href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
       </div>
         <article class="content">
-            <section id="about" class="about callum">
+            <section id="about" class="about" data-aos="fade-in">
               <span class="about-left" data-aos="fade-up-right">
-                <span class="about-header">Designer.</span>
-                <br />
-                <span class="about-body">
-                  UX, UI, Branding
-                </span>
+                <ul class="about-left-header">
+                  <li><b>D</b>ESIGNER.</li>
+                  <li><b>D</b>EVELOPER.</li>
+                  <li><b><i>ARTIST</i></b>.</li>
+                </ul>
+              </span>
+              <span class="about-center">
               </span>
               <span class="about-right" data-aos="fade-down-left">
-                <span class="about-header">Developer.</span>
-                <br />
-                <span class="about-body">
-                  HTML, CSS, Libraries
-                </span>
+                <!-- <img src="img/CallumHeadshot.png" class="callum" /> -->
+                <div class="callum"></div>
               </span>
             </section>
-            <section id="portfolio" class="text-center">
+            <section id="portfolio" class="portfolio portfolio-overlay">
               <h2 class="portfolio-top" data-aos="fade-down-top">
                 I specialize in Interaction Design, from concept to creation.
               </h2>
-              <h3 data-aos="fade-down-top">
+              <h3 class="portfolio-middle" data-aos="fade-down-top">
                 I'm passionate about design, css and photography.
               </h3>
-              <h4 data-aos="fade-down-top">
+              <h4 class="portfolio-bottom" data-aos="fade-down-top">
                 You can find examples of my work in the following places:
               </h4>
-              <a href="https://dribbble.com/ajolicoeur" target="top" class="btn btn-default btn-lg"><i class="fab fa-dribbble"></i> Dribbble</a>
-              <a href="http://www.coroflot.com/ajolicoeur/portfolio" target="top" class="btn btn-secondary btn-lg"><i class="far fa-image"></i> Coroflot</a>
-              <a href="https://github.com/mindreeper2420" target="top" class="btn btn-tertiary btn-lg"><i class="fab fa-github"></i> GitHub</a>
+              <div class="button-grid">
+                <a href="https://dribbble.com/ajolicoeur" target="top" class="btn btn-default btn-lg"><i class="fab fa-dribbble"></i> Dribbble</a>
+                <a href="http://www.coroflot.com/ajolicoeur/portfolio" target="top" class="btn btn-secondary btn-lg"><i class="far fa-image"></i> Coroflot</a>
+                <a href="https://github.com/mindreeper2420" target="top" class="btn btn-tertiary btn-lg"><i class="fab fa-github"></i> GitHub</a>
+              </div>
             </section>
-            <section id="contact">
-              <h2>Follow Me</h2>
+            <section id="contact" class="contact contact-overlay">
+              <h2 class="contact-top" data-aos="fade-down-top">
+                Follow Me
+              </h2>
               <ul class="list-inline banner-social-buttons">
                 <li>
                   <a href="https://twitter.com/mindreeper2420" target="top" class="btn btn-social btn-lg"><i class="fab fa-twitter-square"></i> <span class="network-name">Twitter</span></a>
@@ -96,114 +96,8 @@
           <span>Copyright &copy; <a href="mailto:mindreeper2420@gmail.com">Adam J. Jolicoeur</a>, 2008-2017</span>
         </footer>
       </div>
-      <!-- <a class="fab-top page-scroll" href="#page-top">
-      </a> -->
-
-      <!-- Navigation
-      <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-              Menu <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand page-scroll" href="#page-top">
-              <span class="light">Adam J. Jolicoeur</span>
-            </a>
-          </div>
-
-          Collect the nav links, forms, and other content for toggling
-          <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-            <ul class="nav navbar-nav">
-              Hidden li included to remove active class from about link when scrolled up past about section
-              <li class="hidden">
-                <a href="#page-top"></a>
-              </li>
-              <li>
-                <a class="page-scroll" href="#about">About</a>
-              </li>
-              <li>
-                <a class="page-scroll" href="#portfolio">Portfolio</a>
-              </li>
-              <li>
-                <a class="page-scroll" href="#contact">Social</a>
-              </li>
-            </ul>
-          </div>
-          /.navbar-collapse
-        </div>
-        /.container
-      </nav> -->
-
-      <!-- Intro Header
-      <header class="intro">
-        <div class="intro-body">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 col-md-offset-2">
-                <a href="#about" class="btn btn-circle page-scroll">
-                  <i class="fa fa-angle-double-down animated"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      About Section
-      <section id="about" class="container-fluid content-section text-right">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <h1>Adam J. Jolicoeur</h1>
-            <p>Designer. Developer.</p>
-            <p>I've created desktop and mobile environments, focusing on enterprise web applications and data visualizations.</p>
-            <p>My designs include custom CSS &amp; HTML, created by me.</p>
-          </div>
-        </div>
-      </section>
-      <div class="background-gradient">
-        <section id="portfolio" class="content-section text-center">
-          <div class="portfolio-section">
-            <div class="container">
-              <div class="col-lg-8 col-lg-offset-2">
-                <h2>View My Portfolio</h2>
-                <p>You can view my portfolio in a few different ways.</p>
-                <p>Choose which one works best for you.</p>
-                <a href="https://dribbble.com/ajolicoeur" target="top" class="btn btn-default btn-lg"><i class="fab fa-dribbble"></i> Dribbble</a>
-                <a href="http://www.coroflot.com/ajolicoeur/portfolio" target="top" class="btn btn-secondary btn-lg"><i class="far fa-image"></i> Coroflot</a>
-                <a href="https://github.com/mindreeper2420" target="top" class="btn btn-tertiary btn-lg"><i class="fab fa-github"></i> GitHub</a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="contact" class="content-section text-center">
-          <div class="contact-section">
-            <div>
-              <div class="col-lg-8 col-lg-offset-2">
-                <h2>Follow Me</h2>
-                <ul class="list-inline banner-social-buttons">
-                  <li>
-                    <a href="https://twitter.com/mindreeper2420" target="top" class="btn btn-social btn-lg"><i class="fab fa-twitter-square"></i> <span class="network-name">Twitter</span></a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/in/ajjolicoeur" target="top" class="btn btn-social btn-lg"><i class="fab fa-linkedin"></i> <span class="network-name">LinkedIn</span></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <footer>
-          <div class="container text-center">
-            <p>Copyright &copy; <a href="mailto:mindreeper2420@gmail.com">Adam J. Jolicoeur</a>, 2008-2017</p>
-          </div>
-        </footer>
-      </div> -->
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>

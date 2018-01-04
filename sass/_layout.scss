@@ -1,28 +1,87 @@
 #about, #portfolio, #contact {
   height: 100vh;
   min-height: 750px;
-  background-color: #000;
+  // background-color: #000;
 }
 #about {
-  padding-top: 200px;
+  background-color: #013a6b;
+  // background-image: -webkit-linear-gradient(15deg, #004E95 50%, #013A6B 50%);
   padding-bottom: 200px;
-  color: $text;
+  // color: $text;
+  z-index: 5;
+}
+.about {
+  &-left {
+    &-header {
+      list-style: none;
+      font-size: $font-size-base * 4;
+      // color: $white;
+      @media screen and (max-width: 768px) {
+        padding-left: 0;
+      }
+      li {
+        line-height: 2.5;
+        &:nth-child(3n-1) {
+          margin-left: 50px;
+          @media screen and (max-width: 768px) {
+            margin-left: 0;
+          }
+        }
+        &:nth-child(3n) {
+          margin-left: 100px;
+          @media screen and (max-width: 768px) {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
 }
 #portfolio {
-  // background-color: $white;
-  padding-top: 50px;
-  background: linear-gradient(transparent, #393f44);
-  box-shadow: 0 -5px 5px -5px #d7d7d7;
+  // color: $white;
+  background-image: -webkit-linear-gradient(15deg, #004E95 50%, #013A6B 50%);
+  // background-color: #002235;
+  // background: url(../img/background_wood_diagonal.jpg);
+  // background: linear-gradient(-90deg, #202020, #393f44);
+  margin-top: -50px;
+  padding-top: 100px;
+  // box-shadow: 0 -5px 5px -5px #d7d7d7;
 }
+// .overlay:before {
+//   position: absolute;
+//   content: "";
+//   width: 100%;
+//   height: 100%;
+//   display: block;
+//   z-index: 0;
+// }
+// .portfolio-overlay:before {
+//   @extend .overlay:before;
+//   background: linear-gradient( to bottom right, rgba(0, 0, 0, 1), rgba(0, 0, 0, .7));
+// }
+// .contact-overlay:before {
+//   @extend .overlay:before;
+//   background: linear-gradient(to left, rgba(0, 0, 0, .7), rgba(0, 0, 0, .85))
+// }
 #contact {
-  // background-color: $orange-400;
+  background-image: -webkit-linear-gradient(150deg, #013A6B 55%, #4CBFFF 35%);
+  // background: url(../img/background_wood_diagonal.jpg);
+  // transform: rotate(180deg);
+  // transform: scaleX(-1);
+  // color: $white;
+  padding-top: 100px;
+  // box-shadow: 0 -5px 5px -5px #d7d7d7;
 }
-#spacer {
-  padding-top: 150px;
-  padding-bottom: 50px;
+.contact {
+
 }
+// #spacer {
+//   padding-top: 150px;
+//   padding-bottom: 50px;
+// }
 .footer {
   // background-color: #393f44;
+  background-image: -webkit-linear-gradient(150deg, #004E95 70%, #4CBFFF 35%);
   text-align: center;
   padding: 0 !important;
 }

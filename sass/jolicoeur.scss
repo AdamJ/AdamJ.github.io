@@ -10,29 +10,6 @@
 @import "layout";
 @import "buttons";
 
-.fab-top {
-  background-color: $blue-400;
-  border-radius: 50%;
-  bottom: 0;
-  box-shadow: 0 0 10px #f7f7f7;
-  margin-right: 15px;
-  margin-bottom: 15px;
-  position: fixed;
-  right: 0;
-  height: 50px;
-  width: 50px;
-  z-index: 1030;
-  &:before {
-    font-family: FontAwesome;
-    font-size: 1.5em;
-    content: "\f148";
-    color: $white;
-    position: relative;
-    top: 11px;
-    left: 17px;
-  }
-}
-
 .portfolio-section {
   color: $white;
   padding-top: 200px;
