@@ -1,8 +1,8 @@
 @import "colors";
 
 $font-size-base: 14px;
-$font-stack: "IBM Plex SemiBold", Helvetica, Arial, sans-serif; //alternate
-$font-stack-alt: "Bourbon";
+$font-stack: "IBM Plex SemiBold", Helvetica, Arial, sans-serif; // primary font
+$font-stack-alt: "Bourbon"; // alternate font
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-stack;
@@ -41,13 +41,14 @@ p {
   text-align: center;
 }
 a {
-  color: $blue-400;
+  color: $white;
+  text-decoration: none;
   transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
   &:hover,
   &:focus {
     text-decoration: none;
-    color: darken($blue-400,20%);
+    color: darken($white,20%);
   }
 }
