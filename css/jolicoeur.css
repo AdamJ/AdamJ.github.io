@@ -54,7 +54,7 @@ img::-moz-selection {
   display: grid;
   grid-template-columns: 3fr 6fr 3fr;
   /* right column */
-  grid-template-rows: 50px auto 40px;
+  grid-template-rows: 50px auto 50px;
   /* footer */
   grid-template-areas: "navbar navbar navbar" "content content content" "footer footer footer";
   min-height: 100vh;
