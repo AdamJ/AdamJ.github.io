@@ -67,28 +67,28 @@
     justify-self: end;
   }
   // media query for mobile devices to reorder content on the grid
-  @media screen and (max-width: 768px) {
-    &-left, &-center, &-right {
-      display: grid;
-      grid-template-columns: 12fr;
-    }
-    &-left {
-      grid-row: 1/3;
-      grid-column-start: 1;
-      grid-column-end: 13;
-    }
-    &-center {
-      grid-row: 1/4; // overlap all 4 rows in this section
-      grid-column-start: 1;
-      grid-column-end: 13;
-    }
-    &-right {
-      grid-row: 2/4;
-      grid-column-start: 1;
-      grid-column-end: 13;
-      justify-items: end;
-    }
-  }
+  // @media screen and (max-width: 768px) {
+  //   &-left, &-center, &-right {
+  //     display: grid;
+  //     grid-template-columns: 12fr;
+  //   }
+  //   &-left {
+  //     grid-row: 1/3;
+  //     grid-column-start: 1;
+  //     grid-column-end: 13;
+  //   }
+  //   &-center {
+  //     grid-row: 1/4; // overlap all 4 rows in this section
+  //     grid-column-start: 1;
+  //     grid-column-end: 13;
+  //   }
+  //   &-right {
+  //     grid-row: 2/4;
+  //     grid-column-start: 1;
+  //     grid-column-end: 13;
+  //     justify-items: end;
+  //   }
+  // }
 }
 .portfolio {
   grid-area: content-portfolio;
