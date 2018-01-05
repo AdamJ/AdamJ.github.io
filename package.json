@@ -9,6 +9,7 @@
     "gulp": "latest",
     "gulp-clean-css": "latest",
     "gulp-header": "latest",
+    "gulp-imagemin": "^4.1.0",
     "gulp-notify": "latest",
     "gulp-real-favicon": "^0.2.2",
     "gulp-rename": "latest",
