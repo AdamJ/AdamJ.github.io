@@ -37,7 +37,7 @@
 }
 .navbar {
   grid-column-start: 10;
-  grid-column-end: 13;
+  grid-column-end: 12;
   justify-content: stretch;
   align-items: center;
 }
@@ -53,18 +53,19 @@
   align-content: center;
   &-left {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 6;
     align-self: center;
+    justify-self: center;
   }
   &-center {
-    grid-column-start: 4;
-    grid-column-end: 10;
+    grid-column-start: 6;
+    grid-column-end: 8;
   }
   &-right {
-    grid-column-start: 10;
-    grid-column-end: 13;
+    grid-column-start: 8;
+    grid-column-end: 12;
     align-self: center;
-    justify-self: end;
+    justify-self: center;
   }
   // media query for mobile devices to reorder content on the grid
   // @media screen and (max-width: 768px) {
@@ -93,19 +94,26 @@
 .portfolio {
   grid-area: content-portfolio;
   display: grid;
-  justify-content: end;
-  &-top, &-middle, &-bottom {
-    grid-column-start: 3;
-    grid-column-end: 3;
-    justify-self: flex-end;
+  grid-template-columns: repeat(12, 1fr); /* set a 12 column grid inside of the section */
+  &-top {
+    grid-column-start: 2;
+    grid-column-end: 9;
+    justify-self: flex-start;
+    align-self: center;
+    @media screen and (max-width: 768px) {
+      grid-column-start: 1;
+      grid-column-end: 12;
+    }
   }
-}
-.button-grid {
-  display: grid;
-  align-content: space-evenly;
-  &:first-child {
-    grid-column-start: 3;
-    grid-column-end: 3;
+  &-bottom {
+    grid-column-start: 4;
+    grid-column-end: 12;
+    justify-self: flex-end;
+    align-self: center;
+    @media screen and (max-width: 768px) {
+      grid-column-start: 1;
+      grid-column-end: 12;
+    }
   }
 }
 .contact {
