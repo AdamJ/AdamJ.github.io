@@ -5,10 +5,9 @@ html {
 
 body {
   font-family: $font-stack;
-  // background-color: #000;
-  background-color: #013a6b;
+  // background-color: #013a6b;
+  margin: 0;
   color: $white;
-  // -webkit-tap-highlight-color: rgba($white, 0.2);
   overflow-x: hidden;
 }
 .parallax {

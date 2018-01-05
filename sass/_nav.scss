@@ -4,6 +4,7 @@
   align-content: center;
   text-transform: uppercase;
   font-family: $font-stack-alt;
+  background-image: -webkit-linear-gradient(15deg, #004E95 20%, #013A6B 75%);
   z-index: 10;
   .brand {
     font-size: 20px;
@@ -17,7 +18,7 @@
     margin-left: 15px;
     margin-right: 15px;
   }
-  @media(min-width:768px) {
+  @media(max-width:768px) {
     background: transparent;
     border-bottom: none;
     letter-spacing: 1px;
