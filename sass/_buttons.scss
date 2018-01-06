@@ -85,14 +85,14 @@
   }
 }
 .btn-primary {
-  border: 3px solid $blue-400;
-  color: $black;
-  background-color: $blue-400;
+  border: 3px solid $orange;
+  color: $white;
+  background-color: $orange;
   &:hover,
   &:focus {
-    border: 3px solid $blue-400;
+    border: 3px solid $orange;
     outline: none;
-    color: $white;
+    color: $orange;
     background-color: transparent;
   }
 }
