@@ -4,12 +4,10 @@
   align-content: center;
   text-transform: uppercase;
   font-family: $font-stack-alt;
-  background-image: -webkit-linear-gradient(15deg, #004E95 20%, #013A6B 75%);
+  background-image: -webkit-linear-gradient(15deg, $blue 20%, $blue-dark 75%);
   z-index: 10;
   .brand {
     font-size: 20px;
-    // opacity: 0;
-    // animation: fade-in-right ease 0.4s forwards;
   }
   .navbar {
     animation-delay: 0.8s;

@@ -6,6 +6,8 @@
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   border-radius: 0;
+  padding: 5px 10px;
+  border-radius: 4px;
   z-index: 5;
 }
 .btn-circle {
@@ -59,30 +61,30 @@
   }
 }
 .btn-secondary {
-  border: 3px solid $orange-400;
+  border: 3px solid $orange;
   color: $black;
-  background-color: $orange-400;
+  background-color: $orange;
   &:hover,
   &:focus {
-    border: 3px solid $orange-400;
+    border: 3px solid $orange;
     outline: none;
     color: $black;
     background-color: transparent;
   }
 }
 .btn-tertiary {
-  border: 3px solid $green-400;
+  border: 3px solid $green;
   color: $black;
-  background-color: $green-400;
+  background-color: $green;
   &:hover,
   &:focus {
-    border: 3px solid $green-400;
+    border: 3px solid $green;
     outline: none;
     color: $black;
     background-color: transparent;
   }
 }
-.btn-social {
+.btn-primary {
   border: 3px solid $blue-400;
   color: $black;
   background-color: $blue-400;

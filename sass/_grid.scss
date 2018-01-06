@@ -2,7 +2,7 @@
 ** use only for guidance
  */
 // .wrapper > * {
-//     border: 2px solid #f08c00;
+//     border: 2px solid $orange;
 //     border-radius: 5px;
 //     padding: 10px;
 // }
@@ -137,14 +137,19 @@
     }
   }
 }
-.contact {
+.work {
   grid-area: content-contact;
   display: grid;
   justify-content: center;
   &-top {
     grid-column-start: 1;
     grid-column-end: 12;
-    justify-self: flex-end;
+    justify-self: center;
+  }
+  &-bottom {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    justift-self: flex-end;
   }
 }
 .footer {

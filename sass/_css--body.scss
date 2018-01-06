@@ -2,10 +2,8 @@ html {
   width: 100%;
   height: 100%;
 }
-
 body {
   font-family: $font-stack;
-  // background-color: #013a6b;
   margin: 0;
   color: $white;
   overflow-x: hidden;
@@ -22,7 +20,7 @@ body {
   background-repeat: round;
   background-attachment: fixed;
   background-size: contain;
-  background-color: #013a6b;
+  background-color: $blue-dark;
   background-blend-mode: exclusion;
   opacity: .4;
   // box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
