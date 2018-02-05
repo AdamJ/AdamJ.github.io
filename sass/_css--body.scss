@@ -5,8 +5,11 @@ html {
 body {
   font-family: $font-stack;
   margin: 0;
-  color: $white;
+  color: #303030;
   overflow-x: hidden;
+}
+.content {
+  background-color: $black;
 }
 .parallax {
   height: 100vh;
@@ -20,20 +23,6 @@ body {
   background-repeat: round;
   background-attachment: fixed;
   background-size: contain;
-  background-color: $blue-dark;
-  background-blend-mode: exclusion;
-  opacity: .4;
-  // box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
-  /* stylelint-disable
-  ** overwrite default handled by the section
-  */
-  // height: 100vh !important;
-  /* stylelint-enable */
-  // background-attachment: fixed;
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: cover;
-  // border-radius: 25px;
 }
 .maggie {
   background: url(../dist/img/maggie.jpg);
