@@ -1,11 +1,14 @@
 .btn {
   text-transform: uppercase;
-  font-family: "Overpass-mono", Helvetica, Arial, sans-serif;
+  font-family: $font-stack;
   font-weight: 400;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   border-radius: 0;
+  padding: 5px 10px;
+  border-radius: 4px;
+  z-index: 5;
 }
 .btn-circle {
   width: 70px;
@@ -58,38 +61,38 @@
   }
 }
 .btn-secondary {
-  border: 3px solid $orange-400;
+  border: 3px solid $orange;
   color: $black;
-  background-color: $orange-400;
+  background-color: $orange;
   &:hover,
   &:focus {
-    border: 3px solid $orange-400;
+    border: 3px solid $orange;
     outline: none;
     color: $black;
     background-color: transparent;
   }
 }
 .btn-tertiary {
-  border: 3px solid $green-400;
+  border: 3px solid $green;
   color: $black;
-  background-color: $green-400;
+  background-color: $green;
   &:hover,
   &:focus {
-    border: 3px solid $green-400;
+    border: 3px solid $green;
     outline: none;
     color: $black;
     background-color: transparent;
   }
 }
-.btn-social {
-  border: 3px solid $blue-400;
-  color: $black;
-  background-color: $blue-400;
+.btn-primary {
+  border: 3px solid $orange;
+  color: $white;
+  background-color: $orange;
   &:hover,
   &:focus {
-    border: 3px solid $blue-400;
+    border: 3px solid $orange;
     outline: none;
-    color: $white;
+    color: $orange;
     background-color: transparent;
   }
 }

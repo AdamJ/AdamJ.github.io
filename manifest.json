@@ -1,6 +1,8 @@
 {
   "author": "Adam J. Jolicoeur",
-  "description": "The portfolio for Adam. J Jolicoeur",
+  "description": "The portfolio for Adam J. Jolicoeur",
+  "version": "2.0",
+  "manifest_version": 2,
   "name": "Adam J. Jolcoeur",
   "short_name": "A. Jolicoeur",
   "lang": "en-US",
@@ -21,6 +23,11 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff"
+  "theme": {
+    "colors": {
+      "background_color": "#ffffff",
+      "textcolor": "#212121",
+      "accentcolor": "#0088ce"
+    }
+  }
 }

@@ -1,0 +1,78 @@
+#about, #portfolio, #work {
+  height: 100vh;
+  min-height: 750px;
+}
+#about {
+  // background-color: $blue-dark;
+  padding-bottom: 200px;
+  z-index: 5;
+}
+.about {
+  color: $white;
+  &-left {
+    &-header {
+      list-style: none;
+      font-size: $font-size-base * 4;
+      li {
+        line-height: 2.5;
+        &:nth-child(3n-1) {
+          margin-left: 50px;
+          @media screen and (max-width: 768px) {
+            margin-left: 0;
+          }
+        }
+        &:nth-child(3n) {
+          margin-left: 100px;
+          @media screen and (max-width: 768px) {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+#portfolio {
+  color: $white;
+  background: -moz-linear-gradient(bottom, rgba(30,87,153,1) 40%, rgba(30,87,153,0.08) 95%, rgba(125,185,232,0) 100%);
+  background: -webkit-linear-gradient(bottom, rgba(30,87,153,1) 40%,rgba(30,87,153,0.08) 95%,rgba(125,185,232,0) 100%);
+  background: linear-gradient(to top, rgba(30,87,153,1) 40%,rgba(30,87,153,0.08) 95%,rgba(125,185,232,0) 100%);
+  margin-top: -50px;
+  padding-top: 100px;
+  @media screen and (max-width: 768px) {
+    height: auto;
+  }
+}
+.portfolio {
+  &-top {
+    &--text {
+      font-size: $font-size-base * 2.5 !important; // ~36px
+      font-style: italic;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 50);
+      &_callout {
+        font-size: $font-size-base * 5.5 !important; // ~75px
+      }
+    }
+  }
+  &-bottom {
+    text-align: right;
+    &--text {
+      font-size: $font-size-base * 2.5 !important; // ~36px
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 50);
+      line-height: 1 !important;
+      margin: 0 !important;
+    }
+  }
+}
+#work {
+  background: -moz-linear-gradient(top, rgba(30,87,153,1) 40%, rgba(30,87,153,0.08) 95%, rgba(125,185,232,0) 100%);
+  background: -webkit-linear-gradient(top, rgba(30,87,153,1) 40%,rgba(30,87,153,0.08) 95%,rgba(125,185,232,0) 100%);
+  background: linear-gradient(to bottom, rgba(30,87,153,1) 40%,rgba(30,87,153,0.08) 95%,rgba(125,185,232,0) 100%);
+  padding-top: 100px;
+}
+.footer {
+  background-color: $black;
+  color: $white;
+  // background-image: -webkit-linear-gradient(15deg, $blue 20%, $blue-dark 75%);
+  text-align: center;
+  padding: 0 !important;
+}

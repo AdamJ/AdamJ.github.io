@@ -1,0 +1,61 @@
+@import "colors";
+
+$font-size-base: 14px !default;
+$font-stack: "IBM Plex SemiBold", Helvetica, Arial, sans-serif !default; // primary font
+$font-stack-alt: "Bourbon"; // alternate font
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-stack;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 0 35px;
+}
+.header {
+  font-size: $font-size-base * 3 !important; // 42px
+}
+h1 {
+  font-size: $font-size-base * 2 !important; // 28px
+}
+h2 {
+  font-size: $font-size-base * 1.8 !important; // ~25px
+}
+h3 {
+  font-size: $font-size-base * 1.6 !important; // ~22px
+}
+h4 {
+  font-size: $font-size-base * 1.4 !important; // ~20px
+}
+h5 {
+  font-size: $font-size-base * 1.2 !important; // ~17px
+}
+p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0 0 25px;
+  @media(min-width:768px) {
+    font-size: 1.4em;
+    line-height: 1.6;
+    margin: 0 0 35px;
+  }
+}
+.text-center {
+  text-align: center;
+}
+a {
+  color: $white;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: darken($white,20%);
+  }
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.first-letter {
+  font-size: $font-size-base * 10 !important; // ~140px
+}

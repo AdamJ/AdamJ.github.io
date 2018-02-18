@@ -1,0 +1,150 @@
+/*
+** use only for guidance
+ */
+// .wrapper > * {
+//     border: 2px solid $orange;
+//     border-radius: 5px;
+//     padding: 10px;
+// }
+
+* {box-sizing: border-box;}
+
+.wrapper {
+  display: grid;
+  grid-template-columns:
+    3fr /* left column */
+    6fr /* center column */
+    3fr; /* right column */
+  grid-template-rows:
+    50px /* navbar */
+    auto /* content */
+    50px; /* footer */
+  grid-template-areas:
+    "navbar navbar navbar"
+    "content content content"
+    "footer footer footer";
+  min-height: 100vh; /* full vertical height of the browser */
+}
+.navbar-custom {
+  grid-area: navbar;
+  justify-content: stretch;
+  grid-row-start: navbar-start;
+  grid-row-end: navbar-end / content-start;
+}
+.brand {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.navbar {
+  grid-column-start: 10;
+  grid-column-end: 12;
+  justify-content: stretch;
+  align-items: center;
+  @media(max-width: 768px) {
+    grid-column: span 12;
+  }
+}
+.content {
+  grid-area: content;
+  justify-content: end;
+  grid-row: 2;
+}
+.about {
+  grid-area: content-about;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* set a 12 column grid inside of the section */
+  align-content: center;
+  &-left {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    align-self: center;
+    justify-self: center;
+  }
+  &-center {
+    grid-column-start: 6;
+    grid-column-end: 8;
+  }
+  &-right {
+    grid-column-start: 8;
+    grid-column-end: 12;
+    align-self: center;
+    justify-self: center;
+  }
+  @media screen and (max-width: 768px) {
+    &-left {
+      grid-column-start: 1;
+      grid-column-end: 12;
+      grid-row: 8;
+    }
+    &-center {
+      // grid-row: 3/4;
+      grid-column-start: 1;
+      grid-column-end: 12;
+    }
+    &-right {
+      grid-row: 6;
+      grid-column-start: 1;
+      grid-column-end: 12;
+    }
+  }
+}
+.portfolio {
+  grid-area: content-portfolio;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* set a 12 column grid inside of the section */
+  @media screen and (max-width: 768px) {
+    grid-row-gap: 100px;
+  }
+  &-top {
+    grid-column-start: 2;
+    grid-column-end: 9;
+    justify-self: flex-start;
+    align-self: center;
+    @media screen and (max-width: 768px) {
+      grid-column-start: 2;
+      grid-column-end: 12;
+    }
+  }
+  &-bottom {
+    grid-column-start: 4;
+    grid-column-end: 12;
+    justify-self: flex-end;
+    align-self: center;
+    @media screen and (max-width: 768px) {
+      grid-column-start: 2;
+      grid-column-end: 12;
+      justify-self: flex-start;
+    }
+  }
+}
+.work {
+  grid-area: content-contact;
+  display: grid;
+  justify-content: center;
+  &-top {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    justify-self: center;
+  }
+  &-bottom {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    justift-self: flex-end;
+  }
+}
+.footer {
+  grid-area: footer;
+  justify-content: center;
+  align-items: end;
+  grid-row-start: footer-start;
+  grid-row-end: footer-end;
+}
+
+nav ul {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

@@ -9,12 +9,16 @@ var notify = require('gulp-notify');
 var pkg = require('./package.json');
 var realFavicon = require ('gulp-real-favicon');
 var fs = require('fs');
+var imagemin = require('gulp-imagemin');
 
 // Set the banner content
 var banner = ['/*!\n',
-' * www.AdamJolicoeur.com - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
+' * www.AdamJolicoeur.com - <%= pkg.title %> v<%= pkg.version %>\n',
 ' * Copyright 2008-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n',
+' * Licensed under <%= pkg.license %>\n',
+' * This Source Code Form is subject to the terms of the Mozilla Public\n',
+' * License, v. 2.0. If a copy of the MPL was not distributed with this\n',
+' * file, You can obtain one at http://mozilla.org/MPL/2.0/.\n',
 ' */\n',
 ''
 ].join('');
@@ -127,10 +131,10 @@ gulp.task('sass', function() {
 
 // Minify compiled CSS
 gulp.task('minify-css', ['sass'], function() {
-  return gulp.src('css/grayscale.css')
+  return gulp.src('css/jolicoeur.css')
   .pipe(cleanCSS({ compatibility: 'ie8' }))
   .pipe(rename({ suffix: '.min' }))
-  .pipe(gulp.dest('css'))
+  .pipe(gulp.dest('dist/css'))
   .pipe(browserSync.reload({
     stream: true
   }))
@@ -138,24 +142,42 @@ gulp.task('minify-css', ['sass'], function() {
 
 // Minify JS
 gulp.task('minify-js', function() {
-  return gulp.src('js/grayscale.js')
+  return gulp.src('js/jolicoeur.js')
   .pipe(uglify())
   .pipe(header(banner, { pkg: pkg }))
   .pipe(rename({ suffix: '.min' }))
-  .pipe(gulp.dest('js'))
+  .pipe(gulp.dest('dist/js'))
   .pipe(browserSync.reload({
     stream: true
   }))
 });
 
+// Minify jpg, png, svg
+gulp.task('minify-images', () =>
+    gulp.src('img/*')
+    .pipe(imagemin([
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({optimizationLevel: 5}),
+      imagemin.svgo({
+          plugins: [
+              {removeViewBox: true},
+              {cleanupIDs: false}
+          ]})
+      ], {
+        verbose: true
+      }))
+        .pipe(gulp.dest('dist/img'))
+);
+
 // Copy vendor libraries from /node_modules into /vendor
 gulp.task('copy', function() {
-  gulp.src(['node_modules/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map'])
-  .pipe(gulp.dest('vendor/bootstrap'))
+  gulp.src('js/fontawesome-all.js')
+  .pipe(gulp.dest('dist/js'))
 
-  gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
-  .pipe(gulp.dest('vendor/jquery'))
-})
+  gulp.src('fonts/**')
+  .pipe(gulp.dest('dist/fonts'))
+});
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -179,7 +201,7 @@ gulp.task('sass-watch', ['minify-css'], function (done) {
 })
 
 // Dev task with browserSync
-gulp.task('serve', ['sass', 'minify-js', 'inject-favicon-markups'], function () {
+gulp.task('serve', ['minify-css', 'minify-js', 'inject-favicon-markups'], function () {
   browserSync.init({
     server: {
       baseDir: "./"
@@ -191,4 +213,4 @@ gulp.task('serve', ['sass', 'minify-js', 'inject-favicon-markups'], function () 
 });
 
 // Run everything
-gulp.task('default', ['sass', 'minify-css', 'minify-js', 'copy']);
+gulp.task('default', ['minify-css', 'minify-js', 'minify-images', 'copy']);

@@ -1,11 +1,16 @@
-$black: #212121;
-$white: #ffffff;
-$text: #000000;
+// Text colors
+$black: #030303 !default;
+$white: #ffffff !default;
+$text: #212121 !default;
 
-$orange-400: #ec7a08;
+// Primary colors
+$primary: #42dca3 !default;
+$blue-400: #0088ce !default;
+$blue-light: #4cbfff !default;
+$blue: #004e95 !default;
+$blue-dark: #013a6b !default;
 
-$primary: #42DCA3;
-$green-400: #3f9c35;
-
-$blue-300: #39a5dc;
-$blue-400: #0088ce;
+// Secondary colors
+$blue-xlight: #39a5dc !default;
+$green: #3f9c35 !default;
+$orange: #e67e22 !default;
