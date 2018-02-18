@@ -12,9 +12,10 @@ var fs = require('fs');
 
 // Set the banner content
 var banner = ['/*!\n',
-' * www.AdamJolicoeur.com - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
+' * https://www.adamjolicoeur.com\n',
+' * <%= pkg.title %> v<%= pkg.version %>\n',
 ' * Copyright 2008-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n',
+' * Licensed under <%= pkg.license %>\n',
 ' */\n',
 ''
 ].join('');

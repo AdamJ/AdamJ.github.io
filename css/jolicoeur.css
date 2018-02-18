@@ -1,7 +1,8 @@
 /*!
- * www.AdamJolicoeur.com - Adam J. Jolicoeur v1.2.2 ()
- * Copyright 2008-2017 Adam J. Jolicoeur
- * Licensed under  ()
+ * https://www.adamjolicoeur.com
+ * Adam J. Jolicoeur v1.3.0
+ * Copyright 2008-2018 Adam J. Jolicoeur
+ * Licensed under Apache 2.0
  */
 /* http://overpassfont.org/ */
 /* Webfont: overpass-bold */
@@ -143,7 +144,7 @@
 
 .btn {
   text-transform: uppercase;
-  font-family: "Overpass-mono", Helvetica, Arial, sans-serif;
+  font-family: 'Overpass Mono', monospace;
   font-weight: 400;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
