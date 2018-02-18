@@ -22,9 +22,5 @@ If you wish to run this site locally, please follow the Installation steps below
 
 ## Development &amp; Usage
  By running the default `gulp` command, all of the required library and component pieces will be moved to their respective directories. If you wish to build your SASS separately, you can run `gulp minify-css`, which will compile the SASS and minify it to the /CSS directory.
- 
+
  If you wish to run the project in a local environment, you can enter the command `gulp dev`. This will start up a synchronized browser, which will automatically refresh upon any HTML, SASS, or JS change.
-
-----
-
-This project was built using [Start Bootstrap](http://startbootstrap.com/)
