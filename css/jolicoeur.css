@@ -78,6 +78,9 @@ img::-moz-selection {
   grid-column-end: 12;
   justify-content: stretch;
   align-items: center; }
+  @media (max-width: 768px) {
+    .navbar {
+      grid-column: span 12; } }
 
 .content {
   grid-area: content;
@@ -107,13 +110,12 @@ img::-moz-selection {
     .about-left {
       grid-column-start: 1;
       grid-column-end: 12;
-      grid-row: 2/4; }
+      grid-row: 8; }
     .about-center {
-      grid-row: 3/4;
       grid-column-start: 1;
       grid-column-end: 12; }
     .about-right {
-      grid-row: 3/4;
+      grid-row: 6;
       grid-column-start: 1;
       grid-column-end: 12; } }
 
@@ -332,7 +334,11 @@ body {
   to {
     transform: scaleX(1); } }
 
-.navbar-custom {
+nav ul li {
+  display: inline-block;
+  padding: 0 20px 0 0; }
+
+.navbar.navbar-custom {
   display: grid;
   position: fixed;
   top: 0;
@@ -346,26 +352,49 @@ body {
   font-family: "Bourbon";
   background-image: -webkit-linear-gradient(15deg, #000 20%, #101010 75%);
   z-index: 10; }
-  .navbar-custom .brand {
-    font-size: 20px; }
-  .navbar-custom .navbar {
+  .navbar.navbar-custom .brand {
+    font-size: 20px;
+    z-index: 15; }
+  .navbar.navbar-custom .navbar {
     animation-delay: 0.8s; }
-  .navbar-custom a {
+  .navbar.navbar-custom .toggle {
+    display: none; }
+  .navbar.navbar-custom .open {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 2.5em; }
+  .navbar.navbar-custom a {
     margin-left: 15px;
     margin-right: 15px; }
+  .navbar.navbar-custom.top-nav-collapse {
+    opacity: .8; }
   @media (max-width: 768px) {
-    .navbar-custom {
-      background: transparent;
-      border-bottom: none;
-      letter-spacing: 1px;
-      padding: 0 0;
+    .navbar.navbar-custom {
       transition: background .5s ease-in-out,padding .5s ease-in-out;
       -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-      -moz-transition: background .5s ease-in-out,padding .5s ease-in-out; }
-      .navbar-custom.top-nav-collapse {
-        background-color: transparent;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        opacity: .8; } }
+      -moz-transition: background .5s ease-in-out,padding .5s ease-in-out; } }
+
+@media (max-width: 768px) {
+  #nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: -768px;
+    width: 100%;
+    height: auto;
+    transition: transform .3s ease-in-out; }
+    #nav:target {
+      transform: translateX(768px); }
+    #nav .close {
+      position: fixed;
+      top: 0;
+      right: 0;
+      display: block;
+      font-size: 2.5em;
+      text-align: right;
+      text-decoration: none; } }
 
 #about, #portfolio, #work {
   height: 100vh;

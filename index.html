@@ -20,28 +20,35 @@
   </head>
 
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <a class="fab-top page-scroll" href="#page-top"></a>
     <div class="wrapper">
-      <div class="navbar-custom">
+      <div class="navbar navbar-custom">
         <div class="brand">
           <a class="navbar-brand page-scroll" href="#page-top">
-            <span class="brand">Adam J. Jolicoeur<span>
+            <span class="brand">Adam J. Jolicoeur</span>
           </a>
         </div>
-        <nav class="navbar">
-            <ul>
-                <li class="hidden">
-                  <a href="#page-top"></a>
-                </li>
-                <li>
-                  <a class="page-scroll" href="#about">About</a>
-                </li>
-                <li>
-                  <a class="page-scroll" href="#portfolio">Portfolio</a>
-                </li>
-                <li>
-                  <a class="page-scroll" href="#work">Contact</a>
-                </li>
-            </ul>
+        <nav id="nav" class="collapse navbar-collapse navbar-main-collapse navbar navbar-custom" role="navigation">
+          <a class="toggle close" href="#">
+            <i class="fa fa-times"></i>
+          </a>
+          <a class="toggle open" href="#nav">
+            <i class="fa fa-bars"></i>
+          </a>
+          <ul>
+            <li class="hidden">
+              <a href="#page-top"></a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#about">About</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#work">Contact</a>
+            </li>
+          </ul>
         </nav>
       </div>
       <article class="content">

@@ -1,7 +1,7 @@
 @import "colors";
 
-$font-size-base: 14px;
-$font-stack: "IBM Plex SemiBold", Helvetica, Arial, sans-serif; // primary font
+$font-size-base: 14px !default;
+$font-stack: "IBM Plex SemiBold", Helvetica, Arial, sans-serif !default; // primary font
 $font-stack-alt: "Bourbon"; // alternate font
 
 h1, h2, h3, h4, h5, h6 {

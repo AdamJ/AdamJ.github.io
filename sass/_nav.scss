@@ -1,40 +1,76 @@
-.navbar-custom {
-  display: grid;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin-bottom: 70px;
-  height: 50px;
-  align-content: center;
-  text-transform: uppercase;
-  font-family: $font-stack-alt;
-  // background-image: -webkit-linear-gradient(15deg, $blue 20%, $blue-dark 75%);
-  background-image: -webkit-linear-gradient(15deg, #000 20%, #101010 75%);
-  z-index: 10;
-  .brand {
-    font-size: 20px;
-  }
-  .navbar {
-    animation-delay: 0.8s;
-  }
-  a {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  @media(max-width:768px) {
-    background: transparent;
-    border-bottom: none;
-    letter-spacing: 1px;
-    padding: 0 0;
-    transition: background .5s ease-in-out,padding .5s ease-in-out;
-    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+nav ul li {
+  display: inline-block;
+  padding: 0 20px 0 0;
+}
+.navbar {
+  &.navbar-custom {
+    display: grid;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 70px;
+    height: 50px;
+    align-content: center;
+    text-transform: uppercase;
+    font-family: $font-stack-alt;
+    // background-image: -webkit-linear-gradient(15deg, $blue 20%, $blue-dark 75%);
+    background-image: -webkit-linear-gradient(15deg, #000 20%, #101010 75%);
+    z-index: 10;
+    .brand {
+      font-size: 20px;
+      z-index: 15;
+    }
+    .navbar {
+      animation-delay: 0.8s;
+    }
+    .toggle {
+      display: none;
+    }
+    .open {
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 0;
+      font-size: 2.5em;
+    }
+    a {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
     &.top-nav-collapse {
-      background-color: transparent;
-      border-bottom: 1px solid rgba($white, 0.3);
+      // background-color: transparent;
+      // border-bottom: 1px solid rgba($white, 0.3);
       opacity: .8;
+    }
+    @media(max-width:768px) {
+      transition: background .5s ease-in-out,padding .5s ease-in-out;
+      -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+      -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+  }
+}
+@media(max-width: 768px) {
+  #nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: -768px;
+    width: 100%;
+    height: auto;
+    transition: transform .3s ease-in-out;
+    &:target {
+      transform: translateX(768px);
+    }
+    .close {
+      position: fixed;
+      top: 0;
+      right: 0;
+      display: block;
+      font-size: 2.5em;
+      text-align: right;
+      text-decoration: none;
     }
   }
 }
