@@ -1,8 +1,9 @@
 {
   "name": "jolicoeur",
   "title": "Adam J. Jolicoeur",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "author": "Adam J. Jolicoeur",
+  "homepage": "https://www.adamjolicoeur.com",
   "license": "Apache 2.0",
   "devDependencies": {
     "bootstrap": "latest",
