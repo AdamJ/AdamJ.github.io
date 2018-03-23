@@ -5,6 +5,9 @@
   "author": "Adam J. Jolicoeur",
   "homepage": "https://www.adamjolicoeur.com",
   "license": "Apache-2.0",
+  "scripts": {
+    "start": "gulp serve"
+  },
   "devDependencies": {
     "bootstrap": "^4.0.0",
     "popper.js": "^1.12.9",
