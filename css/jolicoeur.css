@@ -236,6 +236,24 @@ ul.banner-social-buttons {
       ul.banner-social-buttons li:last-child {
         margin-bottom: 0; } }
 
+.parallax-intro, .parallax-portfolio {
+  /* Full height */
+  height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.parallax-intro {
+  /* The image used */
+  background-image: url(../img/SC_Panorama.JPG); }
+
+.parallax-portfolio {
+  background-position: center center;
+  /* The image used */
+  background-image: url(../img/SC_water.JPG); }
+
 body {
   font-family: "Overpass", Helvetica, Arial, sans-serif;
   background-color: #ffffff;
@@ -299,12 +317,6 @@ a {
     left: 17px; }
 
 .intro {
-  background: url(../img/SC_Panorama.JPG) no-repeat top left scroll;
-  background-color: #212121;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   color: #ffffff;
   display: table;
   width: 100%;
@@ -328,17 +340,13 @@ a {
         font-size: 26px; } }
 
 .portfolio-section {
-  background: url(../img/SC_water.JPG) no-repeat center center scroll;
-  background-color: #212121;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   color: #ffffff;
-  padding-top: 200px;
-  padding-bottom: 200px;
   width: 100%;
-  height: auto; }
+  height: 100%;
+  display: table; }
+  .portfolio-section-body {
+    display: table-cell;
+    vertical-align: middle; }
 
 .contact-section {
   background-color: #212121;

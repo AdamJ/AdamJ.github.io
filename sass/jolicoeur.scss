@@ -4,6 +4,7 @@
 @import "mixins";
 @import "nav";
 @import "buttons";
+@import "animations";
 
 body {
   font-family: "Overpass", Helvetica, Arial, sans-serif; //base
@@ -78,12 +79,6 @@ a {
 }
 
 .intro {
-  background: url(../img/SC_Panorama.JPG) no-repeat top left scroll;
-  background-color: $black;
-  background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
   color: $white;
   display: table;
   width: 100%;
@@ -115,17 +110,14 @@ a {
 }
 
 .portfolio-section {
-  background: url(../img/SC_water.JPG) no-repeat center center scroll;
-  background-color: $black;
-  background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
   color: $white;
-  padding-top: 200px;
-  padding-bottom: 200px;
   width: 100%;
-  height: auto;
+  height: 100%;
+  display: table;
+  &-body {
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
 
 .contact-section {
