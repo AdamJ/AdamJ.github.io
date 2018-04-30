@@ -79,11 +79,11 @@ a {
 }
 
 .intro {
-  color: $white;
   display: table;
   width: 100%;
   height: 100%;
   padding: 100px 0;
+  color: $white;
   text-align: center;
   .intro-body {
     display: table-cell;
@@ -110,10 +110,20 @@ a {
 }
 
 .portfolio-section {
-  color: $white;
+  display: table;
   width: 100%;
   height: 100%;
+  color: $white;
+  &-body {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+.about-section {
   display: table;
+  width: 100%;
+  height: 100%;
+  color: $black;
   &-body {
     display: table-cell;
     vertical-align: middle;
@@ -132,10 +142,6 @@ a {
   width: 100%;
 }
 
-#about {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
 .download-section {
   padding: 100px 0;
 }

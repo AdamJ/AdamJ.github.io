@@ -22,3 +22,10 @@
   /* The image used */
   background-image: url(../img/SC_water.JPG);
 }
+
+.parallax-about {
+  @extend %parallax;
+  background-position: center center;
+  /* The image used */
+  background-image: url(../img/macOnWhite.jpeg);
+}

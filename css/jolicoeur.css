@@ -236,7 +236,7 @@ ul.banner-social-buttons {
       ul.banner-social-buttons li:last-child {
         margin-bottom: 0; } }
 
-.parallax-intro, .parallax-portfolio {
+.parallax-intro, .parallax-portfolio, .parallax-about {
   /* Full height */
   height: 100vh;
   /* Create the parallax scrolling effect */
@@ -253,6 +253,11 @@ ul.banner-social-buttons {
   background-position: center center;
   /* The image used */
   background-image: url(../img/SC_water.JPG); }
+
+.parallax-about {
+  background-position: center center;
+  /* The image used */
+  background-image: url(../img/macOnWhite.jpeg); }
 
 body {
   font-family: "Overpass", Helvetica, Arial, sans-serif;
@@ -317,11 +322,11 @@ a {
     left: 17px; }
 
 .intro {
-  color: #ffffff;
   display: table;
   width: 100%;
   height: 100%;
   padding: 100px 0;
+  color: #ffffff;
   text-align: center; }
   .intro .intro-body {
     display: table-cell;
@@ -340,11 +345,20 @@ a {
         font-size: 26px; } }
 
 .portfolio-section {
-  color: #ffffff;
+  display: table;
   width: 100%;
   height: 100%;
-  display: table; }
+  color: #ffffff; }
   .portfolio-section-body {
+    display: table-cell;
+    vertical-align: middle; }
+
+.about-section {
+  display: table;
+  width: 100%;
+  height: 100%;
+  color: #212121; }
+  .about-section-body {
     display: table-cell;
     vertical-align: middle; }
 
@@ -358,10 +372,6 @@ a {
   padding-top: 100px;
   padding-bottom: 200px;
   width: 100%; }
-
-#about {
-  padding-top: 200px;
-  padding-bottom: 200px; }
 
 .download-section {
   padding: 100px 0; }
