@@ -137,6 +137,18 @@ gulp.task('sass', function() {
   }));
 });
 
+gulp.task('vendor-sass', function() {
+  return gulp.src("dev/vendor/vendor.scss")
+  .pipe(sass().on('error', sass.logError))
+  .pipe(sourcemaps.init())
+  .pipe(sourcemaps.write())
+  .pipe(rename({ suffix: '.min' }))
+  .pipe(gulp.dest('css'))
+  .pipe(browserSync.reload({
+    stream: true
+  }));
+});
+
 // Minify JS
 gulp.task('javascript', function() {
   return gulp.src('dev/js/jolicoeur.js')
@@ -202,4 +214,4 @@ gulp.task('serve', ['sass', 'javascript', 'inject-favicon-markups'], function ()
   gulp.watch('*.html').on('change', browserSync.reload);
 });
 
-gulp.task('default', ['javascript', 'sass']);
+gulp.task('default', ['javascript', 'sass', 'vendor-sass']);
