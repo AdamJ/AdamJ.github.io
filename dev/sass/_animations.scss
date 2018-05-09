@@ -1,0 +1,47 @@
+%parallax {
+  /* Full height */
+  height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax-intro {
+  @extend %parallax;
+  background-image: url(../img/backlitkeyboard.svg);
+}
+
+.parallax-about {
+  @extend %parallax;
+  background-position: center center;
+  background-image: url(../img/macOnWhite.svg);
+}
+
+.parallax-portfolio {
+  @extend %parallax;
+  background-position: center right;
+  background-image: url(../img/businessComposition.svg);
+}
+
+.parallax-content {
+  @extend %parallax;
+  background-position: left center;
+  background-image: url(../img/paperondesk.svg);
+}
+
+@media(max-width:768px) {
+  .parallax-about,
+  .parallax-content,
+  .parallax-portfolio {
+    background-image: none;
+    background-color: $white;
+  }
+}
+@media(max-width:768px) {
+  .parallax-intro {
+    background-image: none;
+    background-color: $black;
+  }
+}

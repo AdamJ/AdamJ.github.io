@@ -1,0 +1,64 @@
+.btn {
+  text-transform: uppercase;
+  font-family: 'Overpass Mono', monospace;
+  font-weight: 400;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  border-radius: 0;
+  &-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid $white;
+    border-radius: 100% !important;
+    font-size: 40px;
+    color: $white;
+    background: transparent;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    &:hover,
+    &:focus {
+      outline: none;
+      color: $white;
+      background: rgba($white, 0.1);
+      transform: scale(1.1);
+    }
+    i.animated {
+      -webkit-transition-property: -webkit-transform;
+      -webkit-transition-duration: 1s;
+      -moz-transition-property: -moz-transform;
+      -moz-transition-duration: 1s;
+    }
+    &:hover {
+      i.animated {
+        -webkit-animation-name: pulse;
+        -moz-animation-name: pulse;
+        -webkit-animation-duration: 1.5s;
+        -moz-animation-duration: 1.5s;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-timing-function: linear;
+      }
+    }
+  }
+  &-default {
+    border: 3px solid $blue-400;
+    color: $black;
+    background-color: $blue-400;
+    &:hover,
+    &:focus {
+      border: 3px solid $blue-400;
+      outline: none;
+      color: $black;
+      background-color: transparent;
+    }
+  }
+  &-continue {
+    position: absolute;
+    bottom: 25px;
+  }
+}
