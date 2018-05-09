@@ -15,11 +15,11 @@
     <link rel="shortcut icon" href="/img/favicon.ico?v=RyMQrv9Gl9">
     <meta name="theme-color" content="#ffffff">
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
+    <link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" as="style"  onload="this.onload=null;this.rel='stylesheet'">
     <!-- Theme CSS -->
-    <link href="css/jolicoeur.css" rel="stylesheet">
+    <link rel="preload" href="css/jolicoeur.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <!-- Custom Fonts -->
+    <link re="preload" href="https://fonts.googleapis.com/css?family=Overpass+Mono" as="fonts">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -29,8 +29,8 @@
   </head>
 
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    <a class="fab-top page-scroll" href="#page-top">
-    </a>
+    <!-- <a class="fab-top page-scroll" href="#page-top">
+    </a> -->
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -58,7 +58,7 @@
               <a class="page-scroll" href="#portfolio">Portfolio</a>
             </li>
             <li>
-              <a class="page-scroll" href="#contact">Social</a>
+              <a class="page-scroll" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -72,14 +72,14 @@
       <div class="intro-body">
         <div class="container">
           <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-sm-12 intro-body-content">
               <h1 class="brand-heading">Adam J. Jolicoeur</h1>
               <p class="intro-text">Interaction, Experience and UI Designer</p>
-              <a href="#about" class="btn btn-circle page-scroll">
-                <i class="fa fa-angle-double-down animated"></i>
-              </a>
             </div>
           </div>
+          <a href="#about" class="btn btn-circle btn-continue page-scroll">
+            <i class="fa fa-angle-double-down animated"></i>
+          </a>
         </div>
       </div>
     </header>
@@ -89,11 +89,16 @@
       <div class="about-section">
         <div class="about-section-body">
           <div class="container">
-            <div class="col-lg-8 col-lg-offset-2">
-              <h2>My name is Adam Jolicoeur</h2>
-              <p>I am a designer, focused on interaction and visual experiences.</p>
-              <p>I've created desktop and mobile environments, focusing on enterprise web applications and data visualizations.</p>
-              <p>My designs include custom CSS &amp; HTML, created by me.</p>
+            <div class="row">
+              <h2 class="vertical-text-left">
+                About
+              </h2>
+              <div class="col-sm-8 col-lg-offset-2">
+                <h2>My name is Adam Jolicoeur</h2>
+                <p>I am a designer, focused on interaction and visual experiences.</p>
+                <p>I've created desktop and mobile environments, focusing on enterprise web applications and data visualizations.</p>
+                <p>My designs include custom CSS &amp; HTML, created by me.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -101,40 +106,119 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="content-section text-center parallax-portfolio">
+    <section id="portfolio" class="portfolio-section text-center parallax-portfolio">
       <div class="portfolio-section">
         <div class="portfolio-section-body">
           <div class="container">
-            <div class="col-lg-8 col-lg-offset-2">
-              <h2>View My Portfolio</h2>
-              <p>You can view my portfolio in a few different ways.</p>
-              <p>Choose which one works best for you.</p>
-              <a href="https://dribbble.com/ajolicoeur" target="top" class="btn btn-default btn-lg"><i class="fab fa-dribbble"></i> Dribbble</a>
-              <a href="http://www.coroflot.com/ajolicoeur/portfolio" target="top" class="btn btn-secondary btn-lg"><i class="far fa-image"></i> Coroflot</a>
-              <a href="https://github.com/mindreeper2420" target="top" class="btn btn-tertiary btn-lg"><i class="fab fa-github"></i> GitHub</a>
+            <h2 class="vertical-text-right">
+              Portfolio
+            </h2>
+            <div class="col-sm-11 col-sm-offset-1">
+              <div class="col-sm-4">
+                <a class="thumbnail" href="http://www.coroflot.com/ajolicoeur/portfolio" target="top">
+                  <div style="color: #ff5400;">
+                    <i class="far fa-tint fa-8x"></i>
+                  </div>
+                  <div class="caption">
+                    <h3>
+                      Coroflot
+                    </h3>
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-4">
+                <a class="thumbnail" href="https://github.com/mindreeper2420" target="top">
+                  <div style="color: #323131;">
+                    <i class="fab fa-github fa-8x"></i>
+                  </div>
+                  <div class="caption">
+                    <h3>
+                      GitHub
+                    </h3>
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-4">
+                <a class="thumbnail" href="https://codepen.io/mindreeper2420/" target="top">
+                  <div style="color: #3f81d0;">
+                    <i class="fab fa-codepen fa-8x"></i>
+                  </div>
+                  <div class="caption">
+                    <h3>
+                      Codepen
+                    </h3>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
+          <!-- <div class="container">
+            <div class="col-sm-12">
+              <h3>OR</h3>
+              <h2>Follow Me Online</h2>
+            </div>
+          </div>
+          <div class="container">
+            <div class="col-sm-12">
+              <div class="col-sm-4 col-md-offset-4">
+                <a class="thumbnail" href="https://twitter.com/mindreeper2420" target="top">
+                  <div style="color: blue;">
+                    <i class="fab fa-twitter-square fa-10x"></i>
+                  </div>
+                  <div class="caption">
+                    <h3>
+                      Twitter
+                    </h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div> -->
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="content-section text-center">
+    <section id="contact" class="content-section text-center parallax-content">
       <div class="contact-section">
         <div class="contact-section-body">
-          <div class="col-lg-8 col-lg-offset-2">
-            <h2>Follow Me</h2>
-            <ul class="list-inline banner-social-buttons">
-              <li>
-                <a href="https://twitter.com/mindreeper2420" target="top" class="btn btn-social btn-lg"><i class="fab fa-twitter-square"></i> <span class="network-name">Twitter</span></a>
-              </li>
-              <li>
-                <a href="https://github.com/mindreeper2420" target="top" class="btn btn-social btn-lg"><i class="fab fa-github-square"></i> <span class="network-name">Github</span></a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/ajjolicoeur" target="top" class="btn btn-social btn-lg"><i class="fab fa-linkedin"></i> <span class="network-name">LinkedIn</span></a>
-              </li>
-            </ul>
+          <div class="container">
+            <h2 class="vertical-text-left">
+              Contact
+            </h2>
+            <div class="col-sm-12">
+              <p>
+                If you'd like to reach out, please fill out the form below.
+              </p>
+              <p>
+                If you'd rather not fill out <i>another</i> form, you can reach me via any of the portfolio options listed above!
+              </p>
+              <div class="form-horizontal form-custom-layout col-sm-10">
+                <!-- <div class="vertical-bar">
+                </div> -->
+                <form action="mailto:mindreeper2420@gmail.com" method="post">
+                  <div class="form-group">
+                    <label for="inputEmail" class="col-sm-2 control-label">
+                      <i class="fal fa-envelope fa-2x"></i>
+                    </label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail" placeholder="jared@piedpiper.com">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputText" class="col-sm-2 control-label">
+                      <i class="fal fa-comment-alt fa-2x"></i>
+                    </label>
+                    <div class="col-sm-10">
+                      <textarea class="form-control" rows="3" id="inputText" placeholder="Say Hello!"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-sm-10 col-sm-offset-2">
+                    <button type="submit" class="btn btn-default">Drop me a line</button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -143,12 +227,22 @@
     <!-- Footer -->
     <footer>
       <div class="container text-center">
-<p>Copyright &copy;
-  <a href="mailto:mindreeper2420@gmail.com">Adam J. Jolicoeur</a>, 2008-
-  <script type="text/javascript">
-    document.write(new Date().getFullYear());
-  </script>
-</p>
+        <p>Copyright &copy;
+          <a href="mailto:mindreeper2420@gmail.com">Adam J. Jolicoeur</a>,
+          2008-<script type="text/javascript">
+                  document.write(new Date().getFullYear());
+                </script>
+          <br >
+          <a href="https://twitter.com/mindreeper2420" target="top">
+            <i class="fab fa-twitter fa-fw"></i>
+          </a>
+          <a href="https://github.com/mindreeper2420" target="top">
+            <i class="fab fa-github-alt fa-fw"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ajjolicoeur" target="top">
+            <i class="fab fa-linkedin-in fa-fw"></i>
+          </a>
+        </p>
       </div>
     </footer>
     <!-- jQuery -->
@@ -158,8 +252,8 @@
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <!-- Font Awesome 5 -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="preload" href="https://pro.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-HX5QvHXoIsrUAY0tE/wG8+Wt1MwvaY28d9Zciqcj6Ob7Tw99tFPo4YUXcZw9l930" crossorigin="anonymous" as="style">
     <!-- Theme JavaScript -->
-    <script src="js/jolicoeur.js"></script>
+    <script src="js/jolicoeur.min.js"></script>
   </body>
 </html>
