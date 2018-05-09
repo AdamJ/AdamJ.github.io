@@ -7,7 +7,6 @@ var notify = require('gulp-notify');
 var pkg = require('./package.json');
 var realFavicon = require ('gulp-real-favicon');
 var rename = require("gulp-rename");
-// var responsive-images-generator = require('gulp-responsive-images-generator');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
@@ -105,8 +104,7 @@ gulp.task('inject-favicon-markups', function() {
     .pipe(gulp.dest('/'));
 });
 
-// Check for updates on RealFaviconGenerator (think: Apple has just
-// released a new Touch icon along with the latest version of iOS).
+// Check for updates on RealFaviconGenerator
 // Run this task from time to time. Ideally, make it part of your
 // continuous integration system.
 gulp.task('check-for-favicon-update', function(done) {
@@ -126,7 +124,7 @@ gulp.task('sass', function() {
   .pipe(cleanCSS({
     level: {
       2: {
-        removeDuplicateRules: true // turns on removing duplicate rules
+        removeDuplicateRules: true
       }
     },
     compatibility: "*"
@@ -154,10 +152,9 @@ gulp.task('javascript', function() {
 // Copy vendor libraries from /node_modules into /vendor
 gulp.task('copy', function() {
   gulp.src(['node_modules/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map'])
-  .pipe(gulp.dest('dev/vendor/bootstrap'));
-
+    .pipe(gulp.dest('dev/vendor/bootstrap'));
   gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
-  .pipe(gulp.dest('dev/vendor/jquery'));
+    .pipe(gulp.dest('dev/vendor/jquery'));
 });
 
 // Configure the browserSync task
@@ -166,6 +163,12 @@ gulp.task('browserSync', function() {
     server: {
       baseDir: ''
     },
+    ui: {
+      port: 8001 // customize port for browserSync UI
+    },
+    port: 8080, // use 8080 to prevent conflicts with other localhosts
+    reloadOnRestart: true,
+    notify: false // prevent the browserSync notification from appearing
   });
 });
 
@@ -186,12 +189,17 @@ gulp.task('serve', ['sass', 'javascript', 'inject-favicon-markups'], function ()
   browserSync.init({
     server: {
       baseDir: "./"
-    }
+    },
+    ui: {
+      port: 8001 // customize port for browserSync UI
+    },
+    port: 8080, // use 8080 to prevent conflicts with other localhosts
+    reloadOnRestart: true,
+    notify: false // prevent the browserSync notification from appearing
   });
   gulp.watch('dev/js/*.js', ['js-watch']);
   gulp.watch('dev/sass/*.scss', ['sass-watch']);
   gulp.watch('*.html').on('change', browserSync.reload);
 });
 
-// Run everything
 gulp.task('default', ['javascript', 'sass', 'copy']);
