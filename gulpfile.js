@@ -1,9 +1,12 @@
 // @ts-nocheck
 var gulp = require('gulp');
+var autoprefixer = require('autoprefixer');
 var browserSync = require('browser-sync').create();
 var cleanCSS = require('gulp-clean-css');
+var cssnano = require('cssnano');
 var header = require('gulp-header');
 var notify = require('gulp-notify');
+var postcss = require('gulp-postcss');
 var pkg = require('./package.json');
 var realFavicon = require ('gulp-real-favicon');
 var rename = require("gulp-rename");
@@ -117,24 +120,26 @@ gulp.task('check-for-favicon-update', function(done) {
 });
 
 gulp.task('sass', function() {
-  return gulp.src("dev/sass/*.scss")
+  return gulp.src("dev/sass/jolicoeur.scss")
   .pipe(sass().on('error', sass.logError))
   .pipe(header(banner, { pkg: pkg }))
-  .pipe(sourcemaps.init())
-  .pipe(cleanCSS({
-    level: {
-      2: {
-        removeDuplicateRules: true
-      }
-    },
-    compatibility: "*"
-  }))
-  .pipe(sourcemaps.write())
-  .pipe(rename({ suffix: '.min' }))
   .pipe(gulp.dest('css'))
   .pipe(browserSync.reload({
     stream: true
   }));
+});
+
+gulp.task('css', ['sass'], function() {
+  var plugins = [
+      autoprefixer({browsers: ['last 1 version']}),
+      cssnano()
+  ];
+  return gulp.src('./css/jolicoeur.css')
+    .pipe(sourcemaps.init())
+    .pipe(postcss(plugins))
+    .pipe(sourcemaps.write())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest('./css'));
 });
 
 gulp.task('vendor-sass', function() {
