@@ -202,4 +202,4 @@ gulp.task('serve', ['sass', 'javascript', 'inject-favicon-markups'], function ()
   gulp.watch('*.html').on('change', browserSync.reload);
 });
 
-gulp.task('default', ['javascript', 'sass', 'copy']);
+gulp.task('default', ['javascript', 'sass']);
