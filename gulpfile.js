@@ -119,6 +119,7 @@ gulp.task('check-for-favicon-update', function(done) {
   });
 });
 
+// compile custom scss files
 gulp.task('sass', function() {
   return gulp.src("dev/sass/jolicoeur.scss")
   .pipe(sass().on('error', sass.logError))
@@ -129,6 +130,7 @@ gulp.task('sass', function() {
   }));
 });
 
+// convert custom scss files to css using PostCSS
 gulp.task('css', ['sass'], function() {
   var plugins = [
       autoprefixer({browsers: ['last 1 version']}),
@@ -142,19 +144,28 @@ gulp.task('css', ['sass'], function() {
     .pipe(gulp.dest('./css'));
 });
 
+// compile vendor scss files
 gulp.task('vendor-sass', function() {
   return gulp.src("dev/vendor/vendor.scss")
-  .pipe(sass().on('error', sass.logError))
-  .pipe(sourcemaps.init())
-  .pipe(sourcemaps.write())
-  .pipe(rename({ suffix: '.min' }))
+  .pipe(sass())
   .pipe(gulp.dest('css'))
   .pipe(browserSync.reload({
     stream: true
   }));
 });
 
-// Minify JS
+// convert vendor scss files to css using PostCSS
+gulp.task('vendor-css', ['vendor-sass'], function() {
+  var plugins = [
+      cssnano()
+  ];
+  return gulp.src('./css/vendor.css')
+    .pipe(postcss(plugins))
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest('./css'));
+});
+
+// Package JS files
 gulp.task('javascript', function() {
   return gulp.src('dev/js/jolicoeur.js')
   .pipe(uglify())
@@ -195,14 +206,14 @@ gulp.task('js-watch', ['javascript'], function (done) {
   done();
 });
 
-// ensure sass finishes, reload browser
+// ensure scss finishes, reload browser
 gulp.task('sass-watch', ['sass'], function (done) {
   browserSync.reload();
   done();
 });
 
 // Dev task with browserSync
-gulp.task('serve', ['sass', 'javascript', 'inject-favicon-markups'], function () {
+gulp.task('serve', ['css', 'javascript', 'inject-favicon-markups'], function () {
   browserSync.init({
     server: {
       baseDir: "./"
@@ -219,4 +230,5 @@ gulp.task('serve', ['sass', 'javascript', 'inject-favicon-markups'], function ()
   gulp.watch('*.html').on('change', browserSync.reload);
 });
 
-gulp.task('default', ['javascript', 'css', 'vendor-sass']);
+// default task - run javascript, CSS and VendorCSS scripts
+gulp.task('default', ['javascript', 'css', 'vendor-css']);
