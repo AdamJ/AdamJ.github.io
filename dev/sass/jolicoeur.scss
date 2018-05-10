@@ -1,6 +1,23 @@
 // Jolicoeur Styles
+:root {
+  --primary-text-color: #000;
+  --text-color--white: #fff;
+  --text-color--black: #212121;
+
+  --background-color--white: #fff;
+  --background-color--black: #212121;
+
+  --background-color--navigation: rgba(33, 33, 33, 0.8);
+
+  --border-color--white: #fff;
+  --border-bottom-color--white: #fff;
+
+  --button-color--blue-300: #39a5dc;
+  --button-color--blue-400: #0088ce;
+}
+
 @import "fonts";
-@import "colors";
+// @import "colors";
 
 @import "variables";
 @import "mixins";
@@ -15,11 +32,11 @@
 
 body {
   font-family: "Overpass", Helvetica, Arial, sans-serif; //base
-  background-color: $white;
-  color: $text;
+  background-color: var(--background-color--white);
+  color: var(--primary-text-color);
   width: 100%;
   height: 100%;
-  -webkit-tap-highlight-color: rgba($white, 0.2);
+  -webkit-tap-highlight-color: rgba(var(--background-color--white), 0.2);
 }
 
 html {
@@ -47,14 +64,14 @@ p {
 }
 
 a {
-  color: $blue-400;
+  color: var(--button-color--blue-400);
   transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
   &:hover,
   &:focus {
     text-decoration: none;
-    color: darken($blue-400,20%);
+    color: darken(#0088ce, 20%);
   }
 }
 
@@ -67,7 +84,7 @@ a {
   width: 100%;
   height: 100%;
   padding: 100px 0;
-  color: $white;
+  color: var(--text-color--white);
   text-align: center;
   .intro-body {
     display: table-cell;
@@ -103,13 +120,13 @@ a {
   display: table;
   width: 100%;
   height: 100%;
-  color: $black;
+  color: var(--text-color--black);
   &-body {
     display: table-cell;
     vertical-align: middle;
   }
   .btn-circle {
-    color: $black;
+    color: var(--text-color--black);
   }
 }
 
@@ -117,7 +134,7 @@ a {
   display: table;
   width: 100%;
   height: 100%;
-  color: $black;
+  color: var(--text-color--black);
   &-body {
     display: table-cell;
     vertical-align: middle;
@@ -126,7 +143,7 @@ a {
 
 .contact-section {
   display: table;
-  color: $black;
+  color: var(--text-color--black);
   width: 100%;
   height: 100%;
   &-body {
@@ -148,13 +165,13 @@ footer {
 
 ::-moz-selection {
   background: #fcfcfc;
-  background: rgba($white, 0.2);
+  background: rgba(var(--background-color--white), 0.2);
   text-shadow: none;
 }
 
 ::selection {
   background: #fcfcfc;
-  background: rgba($white, 0.2);
+  background: rgba(var(--background-color--white), 0.2);
   text-shadow: none;
 }
 

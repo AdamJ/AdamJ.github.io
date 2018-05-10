@@ -24,7 +24,7 @@
     -webkit-flex-direction: column;
     flex-direction: column;
     justify-content: space-between;
-    background-color: $black;
+    background-color: var(--background-color--black);
     width: 2px;
     border-radius: 10px;
     height: 100%;

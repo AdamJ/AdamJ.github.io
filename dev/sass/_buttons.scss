@@ -11,10 +11,10 @@
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid $white;
+    border: 2px solid var(--border-color--white);
     border-radius: 100% !important;
     font-size: 40px;
-    color: $white;
+    color: var(--text-color--white);
     background: transparent;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -22,8 +22,8 @@
     &:hover,
     &:focus {
       outline: none;
-      color: $white;
-      background: rgba($white, 0.1);
+      color: var(--text-color--white);
+      background: rgba(var(--background-color--white), 0.1);
       transform: scale(1.1);
     }
     i.animated {
@@ -46,14 +46,14 @@
     }
   }
   &-default {
-    border: 3px solid $blue-400;
-    color: $black;
-    background-color: $blue-400;
+    border: 3px solid --button-color--blue-400;
+    color: var(--text-color--black);
+    background-color: --button-color--blue-400;
     &:hover,
     &:focus {
-      border: 3px solid $blue-400;
+      border: 3px solid --button-color--blue-400;
       outline: none;
-      color: $black;
+      color: var(--text-color--black);
       background-color: transparent;
     }
   }

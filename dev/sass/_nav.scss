@@ -1,12 +1,12 @@
 .navbar-custom {
   font-family: "Overpass", Helvetica, Arial, sans-serif;
-  background-color: $nav-background;
-  border-bottom: 1px solid rgba($white, 0.3);
+  background-color: var(--background-color--navigation);
+  border-bottom: 1px solid rgba(var(--border-bottom-color--white), 0.3);
   margin-bottom: 0;
   text-transform: uppercase;
   .navbar-toggle {
     font-size: 16px;
-    color: $white;
+    color: var(--text-color--white);
     padding: 4px 6px;
     &:focus,
     &:active {
@@ -20,10 +20,10 @@
     }
   }
   a {
-    color: $white;
+    color: var(--text-color--white);
     &:hover,
     &:focus {
-      color: rgba($white, 0.8);
+      color: rgba(var(--text-color--white), 0.8);
     }
   }
   .nav {
@@ -34,12 +34,12 @@
         -moz-transition: background .3s ease-in-out;
         &:hover {
           background-color: transparent;
-          color: rgba($white, 0.8);
+          color: rgba(var(--text-color--white), 0.8);
           outline: none;
         }
         &:focus,
         &:active {
-          color: $white;
+          color: var(--text-color--white);
           background-color: transparent;
           outline: none;
         }
@@ -47,9 +47,9 @@
       &.active {
         outline: none;
         a {
-          background-color: rgba($white, 0.3);
+          background-color: rgba(var(--background-color--white), 0.3);
           &:hover {
-            color: $white;
+            color: var(--text-color--white);
           }
         }
       }
@@ -64,8 +64,8 @@
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
     &.top-nav-collapse {
-      background: $black;
-      border-bottom: 1px solid rgba($white, 0.3);
+      background: var(--background-color--black);
+      border-bottom: 1px solid rgba(var(--border-bottom-color--white), 0.3);
       opacity: .8;
     }
   }

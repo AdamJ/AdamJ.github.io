@@ -36,12 +36,12 @@
   .parallax-content,
   .parallax-portfolio {
     background-image: none;
-    background-color: $white;
+    background-color: var(--background-color--white);
   }
 }
 @media(max-width:768px) {
   .parallax-intro {
     background-image: none;
-    background-color: $black;
+    background-color: var(--background-color--black);
   }
 }
