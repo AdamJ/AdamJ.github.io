@@ -120,7 +120,7 @@ gulp.task('check-for-favicon-update', function(done) {
 
 // compile custom scss files
 gulp.task('sass', function() {
-  return gulp.src("dev/sass/jolicoeur.scss")
+  return gulp.src("dev/sass/*.scss")
   .pipe(sass().on('error', sass.logError))
   .pipe(header(banner, { pkg: pkg }))
   .pipe(gulp.dest('css'))
@@ -206,7 +206,7 @@ gulp.task('js-watch', ['javascript'], function (done) {
 });
 
 // ensure scss finishes, reload browser
-gulp.task('sass-watch', ['sass'], function (done) {
+gulp.task('sass-watch', ['css'], function (done) {
   browserSync.reload();
   done();
 });
