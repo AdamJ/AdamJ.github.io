@@ -1,6 +1,6 @@
 /*!
  * https://www.adamjolicoeur.com
- * Adam J. Jolicoeur v1.3.0
+ * Adam J. Jolicoeur v2.0.0
  * Copyright 2008-2018 Adam J. Jolicoeur
  * Licensed under Apache-2.0
  */
