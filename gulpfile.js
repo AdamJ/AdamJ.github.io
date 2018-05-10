@@ -2,7 +2,6 @@
 var gulp = require('gulp');
 var autoprefixer = require('autoprefixer');
 var browserSync = require('browser-sync').create();
-var cleanCSS = require('gulp-clean-css');
 var cssnano = require('cssnano');
 var header = require('gulp-header');
 var notify = require('gulp-notify');
