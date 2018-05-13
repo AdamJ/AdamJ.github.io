@@ -395,27 +395,29 @@ a {
   font-weight: 400; }
 
 .intro {
-  display: table;
-  width: 100%;
-  height: 100%;
   color: var(--text-color--white); }
-  .intro .intro-body {
-    display: table-cell;
-    vertical-align: middle; }
-    .intro .intro-body-content {
-      background-color: rgba(48, 48, 48, 0.95);
+  .intro-body {
+    display: grid;
+    grid-template-rows: 50px 1fr 75px;
+    align-items: center;
+    height: 100vh; }
+    .intro-body-container {
+      background-color: rgba(48, 48, 48, 0.95); }
+    .intro-body-content {
       border-radius: 10px;
       padding: 25px 10px;
       box-shadow: 0 0px 10px 2px var(--box-shadow-color);
       text-align: center; }
       @media (max-width: 768px) {
-        .intro .intro-body-content {
+        .intro-body-content {
           background-color: transparent;
           box-shadow: none; } }
-      .intro .intro-body-content .brand-heading {
+      .intro-body-content .brand-heading {
         font-size: 40px; }
-      .intro .intro-body-content .intro-text {
+      .intro-body-content .intro-text {
         font-size: 18px; }
+  .intro .page-continue {
+    justify-self: center; }
   @media (min-width: 768px) {
     .intro {
       height: 100%;
@@ -436,6 +438,36 @@ a {
   .portfolio-section .btn-circle {
     color: var(--text-color--black); }
 
+.portfolio-body {
+  display: grid;
+  grid-template-rows: 50px 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  align-items: center;
+  height: 100vh; }
+  .portfolio-body-text {
+    display: grid;
+    justify-items: right; }
+  .portfolio-body-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+    justify-self: normal;
+    text-align: center; }
+
+.about-body {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  align-items: center;
+  height: 100vh; }
+  .about-body-text {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: left; }
+  .about-body-content {
+    display: grid;
+    justify-self: center; }
+
 .about-section {
   display: table;
   width: 100%;
@@ -453,15 +485,29 @@ a {
   color: var(--text-color--black);
   width: 100%;
   height: 100%; }
-  .contact-section-body {
-    display: table-cell;
-    vertical-align: middle; }
+
+.contact-body {
+  display: grid;
+  grid-template-rows: 50px 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  align-items: center;
+  height: 100vh; }
+  .contact-body-text {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: left; }
+  .contact-body-content {
+    display: grid;
+    justify-self: center; }
 
 .download-section {
   padding: 100px 0; }
 
 footer {
   padding: 15px 0; }
+  footer .footer-content {
+    display: grid;
+    justify-items: center; }
   footer p {
     margin: 0; }
 
