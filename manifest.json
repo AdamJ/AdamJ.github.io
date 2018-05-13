@@ -4,7 +4,7 @@
   "name": "The Portfolio of Adam J. Jolcoeur",
   "short_name": "A. Jolicoeur",
   "lang": "en-US",
-  "display": "browser",
+  "display": "standalone",
   "orientation": "portrait",
   "homepage_url": "https://www.adamjolicoeur.com",
   "developer": {
