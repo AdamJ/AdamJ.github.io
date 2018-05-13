@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -67,177 +67,147 @@
 
     <!-- Intro Header -->
     <header class="intro parallax-intro">
-      <div class="intro-body">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 intro-body-content">
+      <div class="intro-body" style="display: grid; grid-template-rows: 50px 1fr 75px; align-items: center; height: 100vh;">
+        <div></div>
+        <div class="intro-body-container" style="background-color: rgba(48, 48, 48, .95);">
+          <div></div>
+          <div>
+            <div class="intro-body-content">
               <h1 class="brand-heading">Adam J. Jolicoeur</h1>
               <p class="intro-text">Interaction, Experience and UI Designer</p>
             </div>
           </div>
-          <a href="#about" class="btn btn-circle btn-continue page-scroll">
-            <i class="fal fa-angle-double-down animated"></i>
-          </a>
+          <div></div>
+        </div>
+        <div class="page-continue" style="justify-self: center;">
+          <div>
+            <a href="#about" class="btn btn-circle btn-continue page-scroll" aria-label="continuePageScroll">
+              <i class="fal fa-angle-double-down animated"></i>
+            </a>
+          </div>
         </div>
       </div>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="content-section text-center parallax-about">
-      <div class="about-section">
-        <div class="about-section-body">
-          <div class="container">
-            <div class="row">
-              <h2 class="vertical-text-left">
-                About
-              </h2>
-              <div class="col-sm-8 col-lg-offset-2">
-                <h2>My name is Adam Jolicoeur</h2>
-                <p>I am a designer, focused on interaction and visual experiences.</p>
-                <p>I've created desktop and mobile environments, focusing on enterprise web applications and data visualizations.</p>
-                <p>My designs include custom CSS &amp; HTML, created by me.</p>
-              </div>
-            </div>
-          </div>
+    <section id="about" class="content-section parallax-about">
+      <div class="about-body" style="display: grid; grid-template-rows: repeat(3, 1fr); grid-template-columns: 1fr; align-items: center; height: 100vh;">
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); justify-items: left;">
+          <span class="vertical-text-left">
+            About
+          </span>
         </div>
+        <div class="about-body-content" style="display: grid; justify-self: center;">
+          <h2>My name is Adam Jolicoeur</h2>
+          <p>I am a designer, focused on interaction and visual experiences.</p>
+          <p>I've created desktop and mobile environments, focusing on enterprise web applications and data visualizations.</p>
+          <p>My designs include custom CSS &amp; HTML, created by me.</p>
+        </div>
+        <div></div>
       </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio-section text-center parallax-portfolio">
-      <div class="portfolio-section">
-        <div class="portfolio-section-body">
-          <div class="container">
-            <h2 class="vertical-text-right">
-              Portfolio
-            </h2>
-            <div class="col-sm-11 col-sm-offset-1">
-              <div class="col-sm-4">
-                <a class="thumbnail" href="http://www.coroflot.com/ajolicoeur/portfolio" target="top">
-                  <div style="color: #ff5400;">
-                    <i class="far fa-tint fa-8x"></i>
-                  </div>
-                  <div class="caption">
-                    <h3>
-                      Coroflot
-                    </h3>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm-4">
-                <a class="thumbnail" href="https://github.com/mindreeper2420" target="top">
-                  <div style="color: #323131;">
-                    <i class="fab fa-github fa-8x"></i>
-                  </div>
-                  <div class="caption">
-                    <h3>
-                      GitHub
-                    </h3>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm-4">
-                <a class="thumbnail" href="https://codepen.io/mindreeper2420/" target="top">
-                  <div style="color: #3f81d0;">
-                    <i class="fab fa-codepen fa-8x"></i>
-                  </div>
-                  <div class="caption">
-                    <h3>
-                      Codepen
-                    </h3>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="container">
-            <div class="col-sm-12">
-              <h3>OR</h3>
-              <h2>Follow Me Online</h2>
-            </div>
-          </div>
-          <div class="container">
-            <div class="col-sm-12">
-              <div class="col-sm-4 col-md-offset-4">
-                <a class="thumbnail" href="https://twitter.com/mindreeper2420" target="top">
-                  <div style="color: blue;">
-                    <i class="fab fa-twitter-square fa-10x"></i>
-                  </div>
-                  <div class="caption">
-                    <h3>
-                      Twitter
-                    </h3>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div> -->
+    <section id="portfolio" class="portfolio-section parallax-portfolio">
+      <div class="portfolio-body" style="display: grid; grid-template-rows: 50px 1fr 1fr 1fr; grid-template-columns: 1fr; align-items: center; height: 100vh;">
+        <div></div>
+        <div style="display: grid; justify-items: right;">
+          <span class="vertical-text-right">
+            Portfolio
+          </span>
         </div>
+        <div class="portfolio-body-content" style="display: grid; grid-template-columns: repeat(3, 1fr); grid-column-gap: 25px; justify-self: normal; text-align: center;">
+          <a class="thumbnail" href="http://www.coroflot.com/ajolicoeur/portfolio" target="top">
+            <div style="color: #ff5400;">
+              <i class="far fa-tint fa-8x"></i>
+            </div>
+            <div class="caption">
+              <h3>
+                Coroflot
+              </h3>
+            </div>
+          </a>
+          <a class="thumbnail" href="https://github.com/mindreeper2420" target="top">
+            <div style="color: #323131;">
+              <i class="fab fa-github fa-8x"></i>
+            </div>
+            <div class="caption">
+              <h3>
+                GitHub
+              </h3>
+            </div>
+          </a>
+          <a class="thumbnail" href="https://codepen.io/mindreeper2420/" target="top">
+            <div style="color: #3f81d0;">
+              <i class="fab fa-codepen fa-8x"></i>
+            </div>
+            <div class="caption">
+              <h3>
+                Codepen
+              </h3>
+            </div>
+          </a>
+        </div>
+        <div></div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="content-section text-center parallax-content">
-      <div class="contact-section">
-        <div class="contact-section-body">
-          <div class="container">
-            <h2 class="vertical-text-left">
-              Contact
-            </h2>
-            <div class="col-sm-12">
-              <p>
-                If you'd like to reach out, please fill out the form below.
-              </p>
-              <p>
-                If you'd rather not fill out <i>another</i> form, you can reach me via any of the portfolio options listed above!
-              </p>
-              <div class="form-horizontal form-custom-layout col-sm-10">
-                <!-- <div class="vertical-bar">
-                </div> -->
-                <form action="mailto:mindreeper2420@gmail.com" method="post">
-                  <div class="form-group">
-                    <label for="inputEmail" class="col-sm-2 control-label">
-                      <i class="fal fa-envelope fa-2x"></i>
-                    </label>
-                    <div class="col-sm-10">
-                      <input type="email" class="form-control" id="inputEmail" placeholder="jared@piedpiper.com">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="inputText" class="col-sm-2 control-label">
-                      <i class="fal fa-comment-alt fa-2x"></i>
-                    </label>
-                    <div class="col-sm-10">
-                      <textarea class="form-control" rows="3" id="inputText" placeholder="Say Hello!"></textarea>
-                    </div>
-                  </div>
-                  <div class="col-sm-10 col-sm-offset-2">
-                    <button type="submit" class="btn btn-default">Drop me a line</button>
-                  </div>
-                </form>
+    <section id="contact" class="content-section parallax-content">
+      <div class="contact-body" style="display: grid; grid-template-rows: 50px 1fr 1fr 1fr; grid-template-columns: 1fr; align-items: center; height: 100vh;">
+        <div></div>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); justify-items: left;">
+          <span class="vertical-text-left">
+            Contact
+          </span>
+        </div>
+        <div class="contact-body-content" style="display: grid; justify-self: center;">
+          <p>
+            If you'd like to reach out, please fill out the form below.
+          </p>
+          <p>
+            If you'd rather not fill out <i>another</i> form, you can reach me via any of the portfolio options listed above!
+          </p>
+          <div class="form-horizontal form-custom-layout">
+            <form action="mailto:mindreeper2420@gmail.com" method="post">
+              <div class="form-group">
+                <label id="emailLabel" for="inputEmail" class="control-label" aria-label="emailInput">
+                  <i class="fal fa-envelope fa-2x"></i>
+                </label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="jared@piedpiper.com" aria-describedby="emailLabel">
               </div>
-            </div>
+              <div class="form-group">
+                <label id="commentLabel" for="inputText" class="control-label" aria-label="textareaInput">
+                  <i class="fal fa-comment-alt fa-2x"></i>
+                </label>
+                <textarea class="form-control" rows="3" id="inputText" placeholder="Say Hello!" aria-describedby="commentLabel"></textarea>
+              </div>
+              <div>
+                <button type="submit" class="btn btn-default">Drop me a line</button>
+              </div>
+            </form>
           </div>
         </div>
+        <div></div>
       </div>
     </section>
 
     <!-- Footer -->
     <footer>
-      <div class="container text-center">
+      <div style="display: grid; justify-items: center;">
         <p>Copyright &copy;
           <a href="mailto:mindreeper2420@gmail.com">Adam J. Jolicoeur</a>,
           2008-<script type="text/javascript">
                   document.write(new Date().getFullYear());
                 </script>
           <br >
-          <a href="https://twitter.com/mindreeper2420" target="top">
+          <a href="https://twitter.com/mindreeper2420" target="top" aria-label="twitterURL">
             <i class="fab fa-twitter fa-fw"></i>
           </a>
-          <a href="https://github.com/mindreeper2420" target="top">
+          <a href="https://github.com/mindreeper2420" target="top" aria-label="githubURL">
             <i class="fab fa-github-alt fa-fw"></i>
           </a>
-          <a href="https://www.linkedin.com/in/ajjolicoeur" target="top">
+          <a href="https://www.linkedin.com/in/ajjolicoeur" target="top" aria-label="linkedinURL">
             <i class="fab fa-linkedin-in fa-fw"></i>
           </a>
         </p>
