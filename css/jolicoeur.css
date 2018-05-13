@@ -188,6 +188,28 @@
     background-image: none;
     background-color: var(--background-color--black); } }
 
+@-webkit-keyframes pulse {
+  from {
+    transform: scale(1);
+    -webkit-transform: scale(1); }
+  50% {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2); }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1); } }
+
+@-moz-keyframes pulse {
+  from {
+    transform: scale(1);
+    -moz-transform: scale(1); }
+  50% {
+    transform: scale(1.2);
+    -moz-transform: scale(1.2); }
+  100% {
+    transform: scale(1);
+    -moz-transform: scale(1); } }
+
 .navbar-custom {
   font-family: "Overpass", Helvetica, Arial, sans-serif;
   background-color: var(--background-color--navigation);
@@ -528,25 +550,3 @@ img::selection {
 
 img::-moz-selection {
   background: transparent; }
-
-@-webkit-keyframes pulse {
-  from {
-    transform: scale(1);
-    -webkit-transform: scale(1); }
-  50% {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2); }
-  100% {
-    transform: scale(1);
-    -webkit-transform: scale(1); } }
-
-@-moz-keyframes pulse {
-  from {
-    transform: scale(1);
-    -moz-transform: scale(1); }
-  50% {
-    transform: scale(1.2);
-    -moz-transform: scale(1.2); }
-  100% {
-    transform: scale(1);
-    -moz-transform: scale(1); } }
