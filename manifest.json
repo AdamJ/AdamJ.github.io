@@ -20,13 +20,21 @@
     "type": "image/png",
     "sizes": "152x152"
   }, {
-    "src": "img/touch/ms-touch-icon-144x144-precomposed.png",
+    "src": "img/touch/mstile-144x144.png",
     "type": "image/png",
     "sizes": "144x144"
   }, {
-    "src": "img/touch/chrome-touch-icon-192x192.png",
+    "src": "img/touch/android-chome-192x192.png",
     "type": "image/png",
     "sizes": "192x192"
+  }, {
+    "src": "img/touch/android-chome-256x256.png",
+    "type": "image/png",
+    "sizes": "256x256"
+  }, {
+    "src": "img/touch/android-chome-512x512.png",
+    "type": "image/png",
+    "sizes": "512x512"
   }],
   "start_url": "index.html",
   "theme_color": "#303030",
