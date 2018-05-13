@@ -1,13 +1,17 @@
+// @ts-nocheck
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var autoprefixer = require('autoprefixer');
 var browserSync = require('browser-sync').create();
+var cssnano = require('cssnano');
 var header = require('gulp-header');
-var cleanCSS = require('gulp-clean-css');
-var rename = require("gulp-rename");
-var uglify = require('gulp-uglify');
 var notify = require('gulp-notify');
+var postcss = require('gulp-postcss');
 var pkg = require('./package.json');
 var realFavicon = require ('gulp-real-favicon');
+var rename = require("gulp-rename");
+var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
+var uglify = require('gulp-uglify');
 var fs = require('fs');
 
 // Set the banner content
@@ -28,135 +32,157 @@ var FAVICON_DATA_FILE = 'faviconData.json';
 // you should run it whenever RealFaviconGenerator updates its
 // package (see the check-for-favicon-update task below).
 gulp.task('generate-favicon', function(done) {
-	realFavicon.generateFavicon({
-		masterPicture: 'img/master_picture.png',
-		dest: 'img/',
-		iconsPath: '/img',
-		design: {
-			ios: {
-				pictureAspect: 'noChange',
-				assets: {
-					ios6AndPriorIcons: false,
-					ios7AndLaterIcons: false,
-					precomposedIcons: false,
-					declareOnlyDefaultIcon: true
-				}
-			},
-			desktopBrowser: {},
-			windows: {
-				pictureAspect: 'noChange',
-				backgroundColor: '#454545',
-				onConflict: 'override',
-				assets: {
-					windows80Ie10Tile: false,
-					windows10Ie11EdgeTiles: {
-						small: false,
-						medium: true,
-						big: false,
-						rectangle: false
-					}
-				}
-			},
-			androidChrome: {
-				pictureAspect: 'shadow',
-				themeColor: '#ffffff',
-				manifest: {
-					name: 'Adam Jolicoeur',
-					display: 'browser',
-					orientation: 'notSet',
-					onConflict: 'override',
-					declared: true
-				},
-				assets: {
-					legacyIcon: false,
-					lowResolutionIcons: false
-				}
-			},
-			safariPinnedTab: {
-				pictureAspect: 'blackAndWhite',
-				threshold: 46.875,
-				themeColor: '#454545'
-			}
-		},
-		settings: {
-			compression: 1,
-			scalingAlgorithm: 'Mitchell',
-			errorOnImageTooSmall: false
-		},
-		versioning: {
-			paramName: 'v',
-			paramValue: 'RyMQrv9Gl9'
-		},
-		markupFile: FAVICON_DATA_FILE
-	}, function() {
-		done();
-	});
+  realFavicon.generateFavicon({
+    masterPicture: 'img/master_picture.png',
+    dest: 'img/',
+    iconsPath: '/img',
+    design: {
+      ios: {
+        pictureAspect: 'noChange',
+        assets: {
+          ios6AndPriorIcons: false,
+          ios7AndLaterIcons: false,
+          precomposedIcons: false,
+          declareOnlyDefaultIcon: true
+        }
+      },
+      desktopBrowser: {},
+      windows: {
+        pictureAspect: 'noChange',
+        backgroundColor: '#2b5797',
+        onConflict: 'override',
+        assets: {
+          windows80Ie10Tile: true,
+          windows10Ie11EdgeTiles: {
+            small: false,
+            medium: true,
+            big: false,
+            rectangle: false
+          }
+        }
+      },
+      androidChrome: {
+        pictureAspect: 'noChange',
+        themeColor: '#ffffff',
+        manifest: {
+          display: 'standalone',
+          orientation: 'notSet',
+          onConflict: 'override',
+          declared: true
+        },
+        assets: {
+          legacyIcon: false,
+          lowResolutionIcons: false
+        }
+      },
+      safariPinnedTab: {
+        pictureAspect: 'silhouette',
+        themeColor: '#5bbad5'
+      }
+    },
+    settings: {
+      scalingAlgorithm: 'Mitchell',
+      errorOnImageTooSmall: false,
+      readmeFile: false,
+      htmlCodeFile: false,
+      usePathAsIs: false
+    },
+    versioning: {
+      paramName: 'v',
+      paramValue: 'YAoMBnzn4g'
+    },
+    markupFile: FAVICON_DATA_FILE
+  }, function() {
+    done();
+  });
 });
 
 // Inject the favicon markups in your HTML pages. You should run
 // this task whenever you modify a page. You can keep this task
 // as is or refactor your existing HTML pipeline.
 gulp.task('inject-favicon-markups', function() {
-	return gulp.src([ '/index.html' ])
-		.pipe(realFavicon.injectFaviconMarkups(JSON.parse(fs.readFileSync(FAVICON_DATA_FILE)).favicon.html_code))
-		.pipe(gulp.dest('/'));
+  return gulp.src([ '/index.html' ])
+    .pipe(realFavicon.injectFaviconMarkups(JSON.parse(fs.readFileSync(FAVICON_DATA_FILE)).favicon.html_code))
+    .pipe(gulp.dest('/'));
 });
 
-// Check for updates on RealFaviconGenerator (think: Apple has just
-// released a new Touch icon along with the latest version of iOS).
+// Check for updates on RealFaviconGenerator
 // Run this task from time to time. Ideally, make it part of your
 // continuous integration system.
 gulp.task('check-for-favicon-update', function(done) {
-	var currentVersion = JSON.parse(fs.readFileSync(FAVICON_DATA_FILE)).version;
-	realFavicon.checkForUpdates(currentVersion, function(err) {
-		if (err) {
-			throw err;
-		}
-	});
+  var currentVersion = JSON.parse(fs.readFileSync(FAVICON_DATA_FILE)).version;
+  realFavicon.checkForUpdates(currentVersion, function(err) {
+    if (err) {
+      throw err;
+    }
+  });
 });
 
+// compile custom scss files
 gulp.task('sass', function() {
-  return gulp.src("sass/*.scss")
+  return gulp.src("dev/sass/*.scss")
   .pipe(sass().on('error', sass.logError))
   .pipe(header(banner, { pkg: pkg }))
   .pipe(gulp.dest('css'))
   .pipe(browserSync.reload({
     stream: true
-  }))
-  .pipe(notify("CSS compiled"));
+  }));
 });
 
-// Minify compiled CSS
-gulp.task('minify-css', ['sass'], function() {
-  return gulp.src('css/grayscale.css')
-  .pipe(cleanCSS({ compatibility: 'ie8' }))
-  .pipe(rename({ suffix: '.min' }))
+// convert custom scss files to css using PostCSS
+gulp.task('css', ['sass'], function() {
+  var plugins = [
+      autoprefixer({browsers: ['last 1 version']}),
+      cssnano()
+  ];
+  return gulp.src('./css/jolicoeur.css')
+    .pipe(sourcemaps.init())
+    .pipe(postcss(plugins))
+    .pipe(sourcemaps.write())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest('./css'));
+});
+
+// compile vendor scss files
+gulp.task('vendor-sass', function() {
+  return gulp.src("dev/vendor/vendor.scss")
+  .pipe(sass())
   .pipe(gulp.dest('css'))
   .pipe(browserSync.reload({
     stream: true
-  }))
+  }));
 });
 
-// Minify JS
-gulp.task('minify-js', function() {
-  return gulp.src('js/grayscale.js')
+// convert vendor scss files to css using PostCSS
+gulp.task('vendor-css', ['vendor-sass'], function() {
+  var plugins = [
+      cssnano()
+  ];
+  return gulp.src('./css/vendor.css')
+    .pipe(postcss(plugins))
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest('./css'));
+});
+
+// Package JS files
+gulp.task('javascript', function() {
+  return gulp.src('dev/js/jolicoeur.js')
   .pipe(uglify())
   .pipe(header(banner, { pkg: pkg }))
   .pipe(rename({ suffix: '.min' }))
   .pipe(gulp.dest('js'))
   .pipe(browserSync.reload({
     stream: true
-  }))
+  }));
 });
 
 // Copy vendor libraries from /node_modules into /vendor
 gulp.task('copy', function() {
   gulp.src(['node_modules/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map'])
-  .pipe(gulp.dest('vendor/bootstrap'))
-
+    .pipe(gulp.dest('dev/vendor/bootstrap'));
   gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
-  .pipe(gulp.dest('vendor/jquery'))
-})
+    .pipe(gulp.dest('dev/vendor/jquery'));
+});
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -164,32 +190,44 @@ gulp.task('browserSync', function() {
     server: {
       baseDir: ''
     },
-  })
-})
+    ui: {
+      port: 8001 // customize port for browserSync UI
+    },
+    port: 8080, // use 8080 to prevent conflicts with other localhosts
+    reloadOnRestart: true,
+    notify: false // prevent the browserSync notification from appearing
+  });
+});
 
 // ensure js finishes, reload browser
-gulp.task('js-watch', ['minify-js'], function (done) {
+gulp.task('js-watch', ['javascript'], function (done) {
   browserSync.reload();
   done();
 });
 
-// ensure sass finishes, reload browser
-gulp.task('sass-watch', ['minify-css'], function (done) {
+// ensure scss finishes, reload browser
+gulp.task('sass-watch', ['css'], function (done) {
   browserSync.reload();
   done();
-})
+});
 
 // Dev task with browserSync
-gulp.task('serve', ['sass', 'minify-js', 'inject-favicon-markups'], function () {
+gulp.task('serve', ['css', 'javascript', 'inject-favicon-markups'], function () {
   browserSync.init({
     server: {
       baseDir: "./"
-    }
+    },
+    ui: {
+      port: 8001 // customize port for browserSync UI
+    },
+    port: 8080, // use 8080 to prevent conflicts with other localhosts
+    reloadOnRestart: true,
+    notify: false // prevent the browserSync notification from appearing
   });
-  gulp.watch('js/*.js', ['js-watch']);
-  gulp.watch('sass/*.scss', ['sass-watch']);
+  gulp.watch('dev/js/*.js', ['js-watch']);
+  gulp.watch('dev/sass/*.scss', ['sass-watch']);
   gulp.watch('*.html').on('change', browserSync.reload);
 });
 
-// Run everything
-gulp.task('default', ['sass', 'minify-css', 'minify-js', 'copy']);
+// default task - run javascript, CSS and VendorCSS scripts
+gulp.task('default', ['javascript', 'css', 'vendor-css']);

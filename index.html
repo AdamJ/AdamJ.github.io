@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +7,20 @@
     <meta name="description" content="Portfolio for Adam J. Jolicoeur">
     <meta name="author" content="Adam J. Jolicoeur">
     <title>Adam J. Jolicoeur</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png?v=RyMQrv9Gl9">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png?v=RyMQrv9Gl9">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png?v=RyMQrv9Gl9">
-    <link rel="manifest" href="/manifest.json?v=RyMQrv9Gl9">
-    <link rel="mask-icon" href="/img/safari-pinned-tab.svg?v=RyMQrv9Gl9" color="#454545">
-    <link rel="shortcut icon" href="/img/favicon.ico?v=RyMQrv9Gl9">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png?">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#454545">
+    <link rel="shortcut icon" href="/img/favicon.ico">
     <meta name="theme-color" content="#ffffff">
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-HX5QvHXoIsrUAY0tE/wG8+Wt1MwvaY28d9Zciqcj6Ob7Tw99tFPo4YUXcZw9l930" crossorigin="anonymous">
+    <!-- Site CSS -->
+    <link rel="preload" href="css/vendor.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/jolicoeur.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
-    <!-- Theme CSS -->
-    <link href="css/jolicoeur.css" rel="stylesheet">
+    <link re="preload" href="https://fonts.googleapis.com/css?family=Overpass+Mono" as="font" crossorigin>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -29,15 +30,12 @@
   </head>
 
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    <a class="fab-top page-scroll" href="#page-top">
-    </a>
-
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-            Menu <i class="fa fa-bars"></i>
+            Menu <i class="fal fa-bars"></i>
           </button>
           <a class="navbar-brand page-scroll" href="#page-top">
             <span class="light">Adam J. Jolicoeur</span>
@@ -58,7 +56,7 @@
               <a class="page-scroll" href="#portfolio">Portfolio</a>
             </li>
             <li>
-              <a class="page-scroll" href="#contact">Social</a>
+              <a class="page-scroll" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -70,85 +68,149 @@
     <!-- Intro Header -->
     <header class="intro parallax-intro">
       <div class="intro-body">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+        <div></div>
+        <div class="intro-body-container">
+          <div></div>
+          <div>
+            <div class="intro-body-content">
               <h1 class="brand-heading">Adam J. Jolicoeur</h1>
               <p class="intro-text">Interaction, Experience and UI Designer</p>
-              <a href="#about" class="btn btn-circle page-scroll">
-                <i class="fa fa-angle-double-down animated"></i>
-              </a>
             </div>
+          </div>
+          <div></div>
+        </div>
+        <div class="page-continue">
+          <div>
+            <a href="#about" class="btn btn-circle btn-continue page-scroll" aria-label="continuePageScroll">
+              <i class="fal fa-angle-double-down animated"></i>
+            </a>
           </div>
         </div>
       </div>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="content-section text-center parallax-about">
-      <div class="about-section">
-        <div class="about-section-body">
-          <div class="container">
-            <div class="col-lg-8 col-lg-offset-2">
-              <h2>My name is Adam Jolicoeur</h2>
-              <p>I am a designer, focused on interaction and visual experiences.</p>
-              <p>I've created desktop and mobile environments, focusing on enterprise web applications and data visualizations.</p>
-              <p>My designs include custom CSS &amp; HTML, created by me.</p>
-            </div>
-          </div>
+    <section id="about" class="content-section parallax-about">
+      <div class="about-body">
+        <div class="about-body-text">
+          <span class="vertical-text-left">
+            About
+          </span>
         </div>
+        <div class="about-body-content">
+          <h2>My name is Adam Jolicoeur</h2>
+          <p>I am a designer, focused on interaction and visual experiences.</p>
+          <p>I've created desktop and mobile environments, focusing on enterprise web applications and data visualizations.</p>
+          <p>My designs include custom CSS &amp; HTML, created by me.</p>
+        </div>
+        <div></div>
       </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="content-section text-center parallax-portfolio">
-      <div class="portfolio-section">
-        <div class="portfolio-section-body">
-          <div class="container">
-            <div class="col-lg-8 col-lg-offset-2">
-              <h2>View My Portfolio</h2>
-              <p>You can view my portfolio in a few different ways.</p>
-              <p>Choose which one works best for you.</p>
-              <a href="https://dribbble.com/ajolicoeur" target="top" class="btn btn-default btn-lg"><i class="fab fa-dribbble"></i> Dribbble</a>
-              <a href="http://www.coroflot.com/ajolicoeur/portfolio" target="top" class="btn btn-secondary btn-lg"><i class="far fa-image"></i> Coroflot</a>
-              <a href="https://github.com/mindreeper2420" target="top" class="btn btn-tertiary btn-lg"><i class="fab fa-github"></i> GitHub</a>
-            </div>
-          </div>
+    <section id="portfolio" class="portfolio-section parallax-portfolio">
+      <div class="portfolio-body">
+        <div></div>
+        <div class="portfolio-body-text">
+          <span class="vertical-text-right">
+            Portfolio
+          </span>
         </div>
+        <div class="portfolio-body-content">
+          <a class="thumbnail" href="http://www.coroflot.com/ajolicoeur/portfolio" target="top">
+            <div style="color: #ff5400;">
+              <i class="far fa-tint fa-8x"></i>
+            </div>
+            <div class="caption">
+              <h3>
+                Coroflot
+              </h3>
+            </div>
+          </a>
+          <a class="thumbnail" href="https://github.com/mindreeper2420" target="top">
+            <div style="color: #323131;">
+              <i class="fab fa-github fa-8x"></i>
+            </div>
+            <div class="caption">
+              <h3>
+                GitHub
+              </h3>
+            </div>
+          </a>
+          <a class="thumbnail" href="https://codepen.io/mindreeper2420/" target="top">
+            <div style="color: #3f81d0;">
+              <i class="fab fa-codepen fa-8x"></i>
+            </div>
+            <div class="caption">
+              <h3>
+                Codepen
+              </h3>
+            </div>
+          </a>
+        </div>
+        <div></div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="content-section text-center">
-      <div class="contact-section">
-        <div class="contact-section-body">
-          <div class="col-lg-8 col-lg-offset-2">
-            <h2>Follow Me</h2>
-            <ul class="list-inline banner-social-buttons">
-              <li>
-                <a href="https://twitter.com/mindreeper2420" target="top" class="btn btn-social btn-lg"><i class="fab fa-twitter-square"></i> <span class="network-name">Twitter</span></a>
-              </li>
-              <li>
-                <a href="https://github.com/mindreeper2420" target="top" class="btn btn-social btn-lg"><i class="fab fa-github-square"></i> <span class="network-name">Github</span></a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/ajjolicoeur" target="top" class="btn btn-social btn-lg"><i class="fab fa-linkedin"></i> <span class="network-name">LinkedIn</span></a>
-              </li>
-            </ul>
+    <section id="contact" class="content-section parallax-content">
+      <div class="contact-body">
+        <div></div>
+        <div class="contact-body-text">
+          <span class="vertical-text-left">
+            Contact
+          </span>
+        </div>
+        <div class="contact-body-content">
+          <p>
+            If you'd like to reach out, please fill out the form below.
+          </p>
+          <p>
+            If you'd rather not fill out <i>another</i> form, you can reach me via any of the portfolio options listed above!
+          </p>
+          <div class="form-horizontal form-custom-layout">
+            <form action="mailto:mindreeper2420@gmail.com" method="post">
+              <div class="form-group">
+                <label id="emailLabel" for="inputEmail" class="control-label" aria-label="emailInput">
+                  <i class="fal fa-envelope fa-2x"></i>
+                </label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="jared@piedpiper.com" aria-describedby="emailLabel">
+              </div>
+              <div class="form-group">
+                <label id="commentLabel" for="inputText" class="control-label" aria-label="textareaInput">
+                  <i class="fal fa-comment-alt fa-2x"></i>
+                </label>
+                <textarea class="form-control" rows="3" id="inputText" placeholder="Say Hello!" aria-describedby="commentLabel"></textarea>
+              </div>
+              <div>
+                <button type="submit" class="btn btn-default">Drop me a line</button>
+              </div>
+            </form>
           </div>
         </div>
+        <div></div>
       </div>
     </section>
 
     <!-- Footer -->
     <footer>
-      <div class="container text-center">
-<p>Copyright &copy;
-  <a href="mailto:mindreeper2420@gmail.com">Adam J. Jolicoeur</a>, 2008-
-  <script type="text/javascript">
-    document.write(new Date().getFullYear());
-  </script>
-</p>
+      <div class="footer-content">
+        <p>Copyright &copy;
+          <a href="mailto:mindreeper2420@gmail.com">Adam J. Jolicoeur</a>,
+          2008-<script type="text/javascript">
+                  document.write(new Date().getFullYear());
+                </script>
+          <br >
+          <a href="https://twitter.com/mindreeper2420" target="top" aria-label="twitterURL">
+            <i class="fab fa-twitter fa-fw"></i>
+          </a>
+          <a href="https://github.com/mindreeper2420" target="top" aria-label="githubURL">
+            <i class="fab fa-github-alt fa-fw"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ajjolicoeur" target="top" aria-label="linkedinURL">
+            <i class="fab fa-linkedin-in fa-fw"></i>
+          </a>
+        </p>
       </div>
     </footer>
     <!-- jQuery -->
@@ -157,9 +219,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <!-- Font Awesome 5 -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <!-- Theme JavaScript -->
-    <script src="js/jolicoeur.js"></script>
+    <script src="js/jolicoeur.min.js"></script>
   </body>
 </html>

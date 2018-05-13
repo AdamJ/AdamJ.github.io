@@ -1,7 +1,7 @@
 {
   "name": "jolicoeur",
   "title": "Adam J. Jolicoeur",
-  "version": "1.5.0",
+  "version": "2.0.0",
   "author": "Adam J. Jolicoeur",
   "homepage": "https://www.adamjolicoeur.com",
   "license": "Apache-2.0",
@@ -9,18 +9,21 @@
     "start": "gulp serve"
   },
   "devDependencies": {
-    "bootstrap": "^4.0.0",
-    "popper.js": "^1.12.9",
+    "autoprefixer": "^8.4.1",
     "browser-sync": "latest",
-    "gulp": "latest",
-    "gulp-clean-css": "latest",
-    "gulp-header": "latest",
-    "gulp-notify": "latest",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-header": "^2.0.5",
+    "gulp-notify": "^3.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
     "gulp-real-favicon": "^0.2.2",
-    "gulp-rename": "latest",
-    "gulp-sass": "latest",
-    "gulp-uglify": "latest",
-    "jquery": "latest"
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
   },
   "repository": {
     "type": "git",

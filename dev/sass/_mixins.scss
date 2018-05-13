@@ -1,0 +1,18 @@
+.vertical-text {
+  &-left {
+    margin-left: -45px;
+    padding: 0 10px;
+    transform: rotate(-90deg);
+    font-size: 4em;
+    background-color: rgba(216, 215, 211, .6);
+    border-radius: 0 0 5px 5px;
+  }
+  &-right {
+    margin-right: -75px;
+    padding: 0 10px;
+    transform: rotate(90deg);
+    font-size: 4em;
+    background-color: rgba(247, 247, 247, .6);
+    border-radius: 0 0 5px 5px;
+  }
+}
