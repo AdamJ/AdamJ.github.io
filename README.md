@@ -3,10 +3,13 @@
 # Mindreeper2420.github.io
 A repo for my own personal site, hosted on GitHub.
 
-This site uses CSS Grid, CSS Variables and PWA functionality.
+This site uses CSS Grid, CSS Variables and basic PWA functionality.
 
 Lighthouse Scores:
-Performance: 95
-Accessibility: 100
-Best Practices: 75
-SEO: 100
+![Lighthouse Score](img/lighthouse-scores.png)
+
+- Performance: 92
+- Progressive Web App: 55
+- Accessibility: 93
+- Best Practices: 88
+- SEO: 100
