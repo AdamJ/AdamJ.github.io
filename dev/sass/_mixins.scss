@@ -1,22 +1,16 @@
 .vertical-text {
   &-left {
-    position: absolute;
-    left: 0;
-    margin: 0;
+    margin-left: -45px;
     padding: 0 10px;
     transform: rotate(-90deg);
-    transform-origin: left top;
     font-size: 4em;
     background-color: rgba(216, 215, 211, .6);
     border-radius: 0 0 5px 5px;
   }
   &-right {
-    position: absolute;
-    right: 5px;
-    margin: 0;
+    margin-right: -75px;
     padding: 0 10px;
     transform: rotate(90deg);
-    transform-origin: right top;
     font-size: 4em;
     background-color: rgba(247, 247, 247, .6);
     border-radius: 0 0 5px 5px;

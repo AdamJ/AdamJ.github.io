@@ -33,7 +33,6 @@
         -webkit-transition: background .3s ease-in-out;
         -moz-transition: background .3s ease-in-out;
         &:hover {
-          background-color: transparent;
           color: rgba(var(--text-color--white), 0.8);
           outline: none;
         }

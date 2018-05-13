@@ -9,13 +9,10 @@
   &-circle {
     width: 70px;
     height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
     border: 2px solid var(--border-color--white);
-    border-radius: 100% !important;
+    border-radius: 100%;
     font-size: 40px;
     color: var(--text-color--white);
-    background: transparent;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
@@ -46,19 +43,17 @@
     }
   }
   &-default {
-    border: 3px solid --button-color--blue-400;
+    border: 3px solid;
+    border-color: var(--button-border-color--primary);
     color: var(--text-color--black);
-    background-color: --button-color--blue-400;
+    background-color: var(--button-background-color--primary);
     &:hover,
     &:focus {
-      border: 3px solid --button-color--blue-400;
+      border: 3px solid;
+      border-color: var(--button-background-color--primary);
       outline: none;
       color: var(--text-color--black);
       background-color: transparent;
     }
-  }
-  &-continue {
-    position: absolute;
-    bottom: 25px;
   }
 }
