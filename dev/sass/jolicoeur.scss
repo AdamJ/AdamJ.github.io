@@ -35,6 +35,8 @@
 @import "forms";
 
 body {
+  display: grid;
+  grid-template-columns: 1fr;
   font-family: "Overpass", Helvetica, Arial, sans-serif; //base
   background-color: var(--background-color--white);
   color: var(--primary-text-color);

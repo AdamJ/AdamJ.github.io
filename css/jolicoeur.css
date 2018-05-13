@@ -354,6 +354,8 @@ textarea.form-control {
   box-shadow: none; }
 
 body {
+  display: grid;
+  grid-template-columns: 1fr;
   font-family: "Overpass", Helvetica, Arial, sans-serif;
   background-color: var(--background-color--white);
   color: var(--primary-text-color);
