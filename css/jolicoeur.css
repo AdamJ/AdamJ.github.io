@@ -133,6 +133,61 @@
   background-color: rgba(247, 247, 247, 0.6);
   border-radius: 0 0 5px 5px; }
 
+.parallax-intro, .parallax-about, .parallax-portfolio, .parallax-content {
+  /* Full height */
+  height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.parallax-intro {
+  background-image: url(../img/backlitkeyboard.svg); }
+
+.parallax-about {
+  background-position: center center;
+  background-image: url(../img/macOnWhite.svg); }
+
+.parallax-portfolio {
+  background-position: center right;
+  background-image: url(../img/businessComposition.svg); }
+
+.parallax-content {
+  background-position: left center;
+  background-image: url(../img/paperondesk.svg); }
+
+@media (max-width: 768px) {
+  .parallax-about {
+    background-image: none;
+    background: #bdc3c7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, var(--background-color--black), #bdc3c7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, var(--background-color--black), #bdc3c7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .parallax-content {
+    background-image: none;
+    background: #fff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #f7f7f7, #fff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #f7f7f7, #fff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .parallax-portfolio {
+    background-image: none;
+    background: #f7f7f7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #bdc3c7, #f7f7f7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #bdc3c7, #f7f7f7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ } }
+
+@media (max-width: 768px) {
+  .parallax-intro {
+    background-image: none;
+    background-color: var(--background-color--black); } }
+
 .navbar-custom {
   font-family: "Overpass", Helvetica, Arial, sans-serif;
   background-color: var(--background-color--navigation);
@@ -183,6 +238,120 @@
         background: var(--background-color--black);
         border-bottom: 1px solid rgba(var(--border-bottom-color--white), 0.3);
         opacity: .8; } }
+
+.intro {
+  color: var(--text-color--white); }
+  .intro-body {
+    display: grid;
+    grid-template-rows: 50px 1fr 75px;
+    align-items: center;
+    height: 100vh; }
+    .intro-body-container {
+      background-color: rgba(48, 48, 48, 0.95); }
+    .intro-body-content {
+      border-radius: 10px;
+      padding: 25px 10px;
+      box-shadow: 0 0px 10px 2px var(--box-shadow-color);
+      text-align: center; }
+      @media (max-width: 768px) {
+        .intro-body-content {
+          background-color: transparent;
+          box-shadow: none; } }
+      .intro-body-content .brand-heading {
+        font-size: 40px; }
+      .intro-body-content .intro-text {
+        font-size: 18px; }
+  .intro .page-continue {
+    justify-self: center; }
+  @media (min-width: 768px) {
+    .intro {
+      height: 100%;
+      padding: 0; }
+      .intro .intro-body .brand-heading {
+        font-size: 100px; }
+      .intro .intro-body .intro-text {
+        font-size: 26px; } }
+
+.about-body {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  align-items: center;
+  height: 100vh; }
+  .about-body-text {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: left; }
+  .about-body-content {
+    display: grid;
+    justify-self: center; }
+
+.about-section {
+  display: table;
+  width: 100%;
+  height: 100%;
+  color: var(--text-color--black); }
+  @media (max-width: 768px) {
+    .about-section {
+      color: var(--text-color--white); } }
+  .about-section-body {
+    display: table-cell;
+    vertical-align: middle; }
+
+.portfolio-section {
+  display: table;
+  width: 100%;
+  height: 100%;
+  color: var(--text-color--black); }
+  .portfolio-section-body {
+    display: table-cell;
+    vertical-align: middle; }
+  .portfolio-section .btn-circle {
+    color: var(--text-color--black); }
+
+.portfolio-body {
+  display: grid;
+  grid-template-rows: 50px 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  align-items: center;
+  height: 100vh; }
+  .portfolio-body-text {
+    display: grid;
+    justify-items: right; }
+  .portfolio-body-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+    justify-self: normal;
+    text-align: center; }
+
+.contact-section {
+  display: table;
+  color: var(--text-color--black);
+  width: 100%;
+  height: 100%; }
+
+.contact-body {
+  display: grid;
+  grid-template-rows: 50px 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  align-items: center;
+  height: 100vh; }
+  .contact-body-text {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: left; }
+  .contact-body-content {
+    display: grid;
+    justify-self: center; }
+
+footer {
+  padding: 15px 0; }
+  footer .footer-content {
+    display: grid;
+    justify-items: center; }
+  footer p {
+    margin: 0; }
 
 .btn {
   text-transform: uppercase;
@@ -239,61 +408,6 @@
     padding: 0; }
     .thumbnail .caption h3 {
       margin: 0; }
-
-.parallax-intro, .parallax-about, .parallax-portfolio, .parallax-content {
-  /* Full height */
-  height: 100vh;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.parallax-intro {
-  background-image: url(../img/backlitkeyboard.svg); }
-
-.parallax-about {
-  background-position: center center;
-  background-image: url(../img/macOnWhite.svg); }
-
-.parallax-portfolio {
-  background-position: center right;
-  background-image: url(../img/businessComposition.svg); }
-
-.parallax-content {
-  background-position: left center;
-  background-image: url(../img/paperondesk.svg); }
-
-@media (max-width: 768px) {
-  .parallax-about {
-    background-image: none;
-    background: #bdc3c7;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, var(--background-color--black), #bdc3c7);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, var(--background-color--black), #bdc3c7);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-  .parallax-content {
-    background-image: none;
-    background: #fff;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #f7f7f7, #fff);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #f7f7f7, #fff);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-  .parallax-portfolio {
-    background-image: none;
-    background: #f7f7f7;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #bdc3c7, #f7f7f7);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #bdc3c7, #f7f7f7);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ } }
-
-@media (max-width: 768px) {
-  .parallax-intro {
-    background-image: none;
-    background-color: var(--background-color--black); } }
 
 .form {
   display: -moz-box;
@@ -396,122 +510,8 @@ a {
 .light {
   font-weight: 400; }
 
-.intro {
-  color: var(--text-color--white); }
-  .intro-body {
-    display: grid;
-    grid-template-rows: 50px 1fr 75px;
-    align-items: center;
-    height: 100vh; }
-    .intro-body-container {
-      background-color: rgba(48, 48, 48, 0.95); }
-    .intro-body-content {
-      border-radius: 10px;
-      padding: 25px 10px;
-      box-shadow: 0 0px 10px 2px var(--box-shadow-color);
-      text-align: center; }
-      @media (max-width: 768px) {
-        .intro-body-content {
-          background-color: transparent;
-          box-shadow: none; } }
-      .intro-body-content .brand-heading {
-        font-size: 40px; }
-      .intro-body-content .intro-text {
-        font-size: 18px; }
-  .intro .page-continue {
-    justify-self: center; }
-  @media (min-width: 768px) {
-    .intro {
-      height: 100%;
-      padding: 0; }
-      .intro .intro-body .brand-heading {
-        font-size: 100px; }
-      .intro .intro-body .intro-text {
-        font-size: 26px; } }
-
-.portfolio-section {
-  display: table;
-  width: 100%;
-  height: 100%;
-  color: var(--text-color--black); }
-  .portfolio-section-body {
-    display: table-cell;
-    vertical-align: middle; }
-  .portfolio-section .btn-circle {
-    color: var(--text-color--black); }
-
-.portfolio-body {
-  display: grid;
-  grid-template-rows: 50px 1fr 1fr 1fr;
-  grid-template-columns: 1fr;
-  align-items: center;
-  height: 100vh; }
-  .portfolio-body-text {
-    display: grid;
-    justify-items: right; }
-  .portfolio-body-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 25px;
-    justify-self: normal;
-    text-align: center; }
-
-.about-body {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: 1fr;
-  align-items: center;
-  height: 100vh; }
-  .about-body-text {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: left; }
-  .about-body-content {
-    display: grid;
-    justify-self: center; }
-
-.about-section {
-  display: table;
-  width: 100%;
-  height: 100%;
-  color: var(--text-color--black); }
-  @media (max-width: 768px) {
-    .about-section {
-      color: var(--text-color--white); } }
-  .about-section-body {
-    display: table-cell;
-    vertical-align: middle; }
-
-.contact-section {
-  display: table;
-  color: var(--text-color--black);
-  width: 100%;
-  height: 100%; }
-
-.contact-body {
-  display: grid;
-  grid-template-rows: 50px 1fr 1fr 1fr;
-  grid-template-columns: 1fr;
-  align-items: center;
-  height: 100vh; }
-  .contact-body-text {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: left; }
-  .contact-body-content {
-    display: grid;
-    justify-self: center; }
-
 .download-section {
   padding: 100px 0; }
-
-footer {
-  padding: 15px 0; }
-  footer .footer-content {
-    display: grid;
-    justify-items: center; }
-  footer p {
-    margin: 0; }
 
 ::-moz-selection {
   background: #fcfcfc;
