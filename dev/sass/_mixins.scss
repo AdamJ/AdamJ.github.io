@@ -6,6 +6,10 @@
     font-size: 4em;
     background-color: rgba(216, 215, 211, .6);
     border-radius: 0 0 5px 5px;
+    @media(max-width: 768px) {
+      margin-left: 0;
+      transform: none;
+    }
   }
   &-right {
     margin-right: -75px;
@@ -14,5 +18,9 @@
     font-size: 4em;
     background-color: rgba(247, 247, 247, .6);
     border-radius: 0 0 5px 5px;
+    @media(max-width: 768px) {
+      transform: none;
+      margin-right: 0;
+    }
   }
 }

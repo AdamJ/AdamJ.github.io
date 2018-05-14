@@ -124,6 +124,10 @@
   font-size: 4em;
   background-color: rgba(216, 215, 211, 0.6);
   border-radius: 0 0 5px 5px; }
+  @media (max-width: 768px) {
+    .vertical-text-left {
+      margin-left: 0;
+      transform: none; } }
 
 .vertical-text-right {
   margin-right: -75px;
@@ -132,6 +136,10 @@
   font-size: 4em;
   background-color: rgba(247, 247, 247, 0.6);
   border-radius: 0 0 5px 5px; }
+  @media (max-width: 768px) {
+    .vertical-text-right {
+      transform: none;
+      margin-right: 0; } }
 
 .parallax-intro, .parallax-about, .parallax-portfolio, .parallax-content {
   /* Full height */
@@ -306,30 +314,17 @@
     justify-items: left; }
   .about-body-content {
     display: grid;
-    justify-self: center; }
+    justify-self: center;
+    margin: 0 10px; }
 
 .about-section {
-  display: table;
-  width: 100%;
-  height: 100%;
   color: var(--text-color--black); }
   @media (max-width: 768px) {
     .about-section {
       color: var(--text-color--white); } }
-  .about-section-body {
-    display: table-cell;
-    vertical-align: middle; }
 
 .portfolio-section {
-  display: table;
-  width: 100%;
-  height: 100%;
   color: var(--text-color--black); }
-  .portfolio-section-body {
-    display: table-cell;
-    vertical-align: middle; }
-  .portfolio-section .btn-circle {
-    color: var(--text-color--black); }
 
 .portfolio-body {
   display: grid;
@@ -344,14 +339,15 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 25px;
+    margin: 0 10px;
     justify-self: normal;
     text-align: center; }
+    @media (max-width: 768px) {
+      .portfolio-body-content {
+        grid-column-gap: 0; } }
 
 .contact-section {
-  display: table;
-  color: var(--text-color--black);
-  width: 100%;
-  height: 100%; }
+  color: var(--text-color--black); }
 
 .contact-body {
   display: grid;
@@ -365,7 +361,8 @@
     justify-items: left; }
   .contact-body-content {
     display: grid;
-    justify-self: center; }
+    justify-self: center;
+    margin: 0 10px; }
 
 footer {
   padding: 15px 0; }
