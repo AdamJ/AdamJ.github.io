@@ -27,11 +27,11 @@ body {
 .btn {
   border-radius: var(--border-radius--medium);
   &-primary {
-    background-color: #009688;
-    border-color: #009688;
+    background-color: #005C53;
+    border-color: #005C53;
     &:hover {
-      background-color: #00796B;
-      border-color: #00695C;
+      background-color: #00332F;
+      border-color: #003833;
     }
   }
   &-large {
