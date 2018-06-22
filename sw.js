@@ -6,8 +6,7 @@ self.addEventListener('install', function(e) {
       return cache.addAll([
         '/',
         '/index.html',
-        '/css/jolicoeur.min.css',
-        '/js/jolicoeur.min.js'
+        '/css/jolicoeur.min.css'
       ]);
     })
   );
