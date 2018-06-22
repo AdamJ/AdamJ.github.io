@@ -1,122 +1,23 @@
-// @ts-nocheck
 var gulp = require('gulp');
 var autoprefixer = require('autoprefixer');
 var browserSync = require('browser-sync').create();
 var cssnano = require('cssnano');
 var header = require('gulp-header');
-var notify = require('gulp-notify');
 var postcss = require('gulp-postcss');
 var pkg = require('./package.json');
-var realFavicon = require ('gulp-real-favicon');
+var pug = require('gulp-pug');
 var rename = require("gulp-rename");
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
-var uglify = require('gulp-uglify');
-var fs = require('fs');
 
 // Set the banner content
 var banner = ['/*!\n',
-' * https://www.adamjolicoeur.com\n',
-' * <%= pkg.title %> v<%= pkg.version %>\n',
+' * TheScoutersLodge - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
 ' * Copyright 2008-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
 ' * Licensed under <%= pkg.license %>\n',
 ' */\n',
 ''
 ].join('');
-
-// File where the favicon markups are stored
-var FAVICON_DATA_FILE = 'faviconData.json';
-
-// Generate the icons. This task takes a few seconds to complete.
-// You should run it at least once to create the icons. Then,
-// you should run it whenever RealFaviconGenerator updates its
-// package (see the check-for-favicon-update task below).
-gulp.task('generate-favicon', function(done) {
-  realFavicon.generateFavicon({
-    masterPicture: 'img/master_picture.png',
-    dest: 'img/',
-    iconsPath: '/img',
-    design: {
-      ios: {
-        pictureAspect: 'noChange',
-        assets: {
-          ios6AndPriorIcons: false,
-          ios7AndLaterIcons: false,
-          precomposedIcons: false,
-          declareOnlyDefaultIcon: true
-        }
-      },
-      desktopBrowser: {},
-      windows: {
-        pictureAspect: 'noChange',
-        backgroundColor: '#2b5797',
-        onConflict: 'override',
-        assets: {
-          windows80Ie10Tile: true,
-          windows10Ie11EdgeTiles: {
-            small: false,
-            medium: true,
-            big: false,
-            rectangle: false
-          }
-        }
-      },
-      androidChrome: {
-        pictureAspect: 'noChange',
-        themeColor: '#ffffff',
-        manifest: {
-          display: 'standalone',
-          orientation: 'notSet',
-          onConflict: 'override',
-          declared: true
-        },
-        assets: {
-          legacyIcon: false,
-          lowResolutionIcons: false
-        }
-      },
-      safariPinnedTab: {
-        pictureAspect: 'silhouette',
-        themeColor: '#5bbad5'
-      }
-    },
-    settings: {
-      scalingAlgorithm: 'Mitchell',
-      errorOnImageTooSmall: false,
-      readmeFile: false,
-      htmlCodeFile: false,
-      usePathAsIs: false
-    },
-    versioning: {
-      paramName: 'v',
-      paramValue: 'YAoMBnzn4g'
-    },
-    markupFile: FAVICON_DATA_FILE
-  }, function() {
-    done();
-  });
-});
-
-// Inject the favicon markups in your HTML pages. You should run
-// this task whenever you modify a page. You can keep this task
-// as is or refactor your existing HTML pipeline.
-gulp.task('inject-favicon-markups', function() {
-  return gulp.src([ '/index.html' ])
-    .pipe(realFavicon.injectFaviconMarkups(JSON.parse(fs.readFileSync(FAVICON_DATA_FILE)).favicon.html_code))
-    .pipe(gulp.dest('/'));
-});
-
-// Check for updates on RealFaviconGenerator
-// Run this task from time to time. Ideally, make it part of your
-// continuous integration system.
-gulp.task('check-for-favicon-update', function(done) {
-  var currentVersion = JSON.parse(fs.readFileSync(FAVICON_DATA_FILE)).version;
-  realFavicon.checkForUpdates(currentVersion, function(err) {
-    if (err) {
-      throw err;
-    }
-  });
-});
 
 // compile custom scss files
 gulp.task('sass', function() {
@@ -130,6 +31,7 @@ gulp.task('sass', function() {
 });
 
 // convert custom scss files to css using PostCSS
+// @ts-ignore
 gulp.task('css', ['sass'], function() {
   var plugins = [
       autoprefixer({browsers: ['last 1 version']}),
@@ -143,45 +45,20 @@ gulp.task('css', ['sass'], function() {
     .pipe(gulp.dest('./css'));
 });
 
-// compile vendor scss files
-gulp.task('vendor-sass', function() {
-  return gulp.src("dev/vendor/vendor.scss")
-  .pipe(sass())
-  .pipe(gulp.dest('css'))
-  .pipe(browserSync.reload({
-    stream: true
-  }));
+// copy javascript
+gulp.task('js', function() {
+  gulp.src('')
+  .pipe(gulp.dest('js'));
 });
 
-// convert vendor scss files to css using PostCSS
-gulp.task('vendor-css', ['vendor-sass'], function() {
-  var plugins = [
-      cssnano()
-  ];
-  return gulp.src('./css/vendor.css')
-    .pipe(postcss(plugins))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('./css'));
-});
-
-// Package JS files
-gulp.task('javascript', function() {
-  return gulp.src('dev/js/jolicoeur.js')
-  .pipe(uglify())
-  .pipe(header(banner, { pkg: pkg }))
-  .pipe(rename({ suffix: '.min' }))
-  .pipe(gulp.dest('js'))
-  .pipe(browserSync.reload({
-    stream: true
-  }));
-});
-
-// Copy vendor libraries from /node_modules into /vendor
-gulp.task('copy', function() {
-  gulp.src(['node_modules/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map'])
-    .pipe(gulp.dest('dev/vendor/bootstrap'));
-  gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
-    .pipe(gulp.dest('dev/vendor/jquery'));
+// compile pug templates
+gulp.task('views', function () {
+  return gulp.src('./src/*.pug')
+  .pipe(pug({
+    doctype: 'html',
+    pretty: true
+  }))
+  .pipe(gulp.dest('./'));
 });
 
 // Configure the browserSync task
@@ -199,20 +76,22 @@ gulp.task('browserSync', function() {
   });
 });
 
-// ensure js finishes, reload browser
-gulp.task('js-watch', ['javascript'], function (done) {
-  browserSync.reload();
-  done();
-});
-
 // ensure scss finishes, reload browser
+// @ts-ignore
 gulp.task('sass-watch', ['css'], function (done) {
   browserSync.reload();
   done();
 });
 
+// build distribution folder
+gulp.task('dist', ['css', 'views', 'js'], function () {
+  return gulp.src('./*.html', './css')
+    .pipe(gulp.dest('./dist'))
+});
+
 // Dev task with browserSync
-gulp.task('serve', ['css', 'javascript', 'inject-favicon-markups'], function () {
+// @ts-ignore
+gulp.task('serve', ['css'], function () {
   browserSync.init({
     server: {
       baseDir: "./"
@@ -224,10 +103,9 @@ gulp.task('serve', ['css', 'javascript', 'inject-favicon-markups'], function () 
     reloadOnRestart: true,
     notify: false // prevent the browserSync notification from appearing
   });
-  gulp.watch('dev/js/*.js', ['js-watch']);
   gulp.watch('dev/sass/*.scss', ['sass-watch']);
+  gulp.watch('src/**/*.pug', ['views']);
   gulp.watch('*.html').on('change', browserSync.reload);
 });
 
-// default task - run javascript, CSS and VendorCSS scripts
-gulp.task('default', ['javascript', 'css', 'vendor-css']);
+gulp.task('default', ['css', 'views']);

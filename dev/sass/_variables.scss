@@ -1,0 +1,42 @@
+:root {
+  --border-radius--small: 1rem;
+  --border-radius--medium: 2rem;
+  --border-radius--large: 3rem;
+
+  // --padding--small: 1rem;
+  // --padding--medium: 2rem;
+  // --padding--large: 3rem;
+
+  // --padding-top--small: var(--padding--small);
+  // --padding-right--small: var(--padding--small);
+  // --padding-bottom--small: var(--padding--small);
+  // --padding-left--small: var(--padding--small);
+
+  // --padding-top--medium: var(--padding--medium);
+  // --padding-right--medium: var(--padding--medium);
+  // --padding-bottom--medium: var(--padding--medium);
+  // --padding-left--medium: var(--padding--medium);
+
+  // --padding-top--large: var(--padding--large);
+  // --padding-right--large: var(--padding--large);
+  // --padding-bottom--large: var(--padding--large);
+  // --padding-left--large: var(--padding--large);
+}
+
+%parallax {
+  /* Full height */
+  height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+%grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+%box-shadow {
+  box-shadow: var(--box-shadow--primary);
+}
