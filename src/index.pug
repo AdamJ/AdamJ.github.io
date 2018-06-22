@@ -1,17 +1,19 @@
-include includes/head.pug
+doctype html
+html(lang='en')
+  include includes/head.pug
 
-body(style='overflow: hidden;')
-  include includes/navigation.pug
-  header.header__home.container-fluid
-    .row.align-items-center.text-center
-      .col
-      .col-6
-        h1(class='xlarge-heading text-white') Design and Develop
-        h2(class='text-white') Together
-      .col
-    .row.text-center
-      .col
-      .col-6
-        button(class='btn btn-primary btn-large', href='mailto:mindreeper2420@gmail.com') Reach out and say hi!
-      .col
-  include includes/scripts.pug
+  body(style='overflow: hidden;')
+    include includes/navigation.pug
+    header.header__home.container-fluid
+      .row.align-items-center.text-center
+        .col
+        .col-6
+          h1(class='xlarge-heading text-white') Design and Develop
+          h2(class='text-white') Together
+        .col
+      .row.text-center
+        .col
+        .col-6
+          button(class='btn btn-primary btn-large', href='mailto:mindreeper2420@gmail.com') Reach out and say hi!
+        .col
+    include includes/scripts.pug
