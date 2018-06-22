@@ -3,8 +3,11 @@
 @import 'navigation';
 @import 'jumbotron';
 
+$font-size-base: 16px;
+
 body {
   background-color: var(--color-background--primary);
+  font-size: $font-size-base;
 }
 .header__home {
   @extend %grid;

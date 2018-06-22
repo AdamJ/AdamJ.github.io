@@ -48,7 +48,8 @@
   max-width: 40rem; }
 
 body {
-  background-color: var(--color-background--primary); }
+  background-color: var(--color-background--primary);
+  font-size: 16px; }
 
 .header__home {
   background: url(../../img/wick-background.svg);
