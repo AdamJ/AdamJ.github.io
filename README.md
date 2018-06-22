@@ -10,6 +10,9 @@ Lighthouse Scores:
 
 - Performance: 91
 - Progressive Web App: 73
+  - Users will not be prompted to install my site on their device
+  - The site does not work offline
+  - I do not use push notifications
 - Accessibility: 100
 - Best Practices: 100
 - SEO: 100
