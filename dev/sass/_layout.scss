@@ -1,0 +1,131 @@
+.intro {
+  color: var(--text-color--white);
+  &-body {
+    display: grid;
+    grid-template-rows: 50px 1fr 75px;
+    align-items: center;
+    height: 100vh;
+    &-container {
+      background-color: rgba(48, 48, 48, .95);
+    }
+    &-content {
+      border-radius: 10px;
+      padding: 25px 10px;
+      box-shadow: 0 0px 10px 2px var(--box-shadow-color);
+      text-align: center;
+      @media(max-width: 768px) {
+        background-color: transparent;
+        box-shadow: none;
+      }
+      .brand-heading {
+        font-size: 40px;
+      }
+      .intro-text {
+        font-size: 18px;
+      }
+    }
+  }
+  .page-continue {
+    justify-self: center;
+  }
+  @media(min-width:768px) {
+    height: 100%;
+    padding: 0;
+    .intro-body {
+      .brand-heading {
+        font-size: 100px;
+      }
+      .intro-text {
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+.about {
+  &-body {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    align-items: center;
+    height: 100vh;
+    &-text {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: left;
+    }
+    &-content {
+      display: grid;
+      justify-self: center;
+      margin: 0 10px;
+    }
+  }
+  &-section {
+    color: var(--text-color--black);
+    @media(max-width: 768px) {
+      color: var(--text-color--white);
+    }
+  }
+}
+
+.portfolio {
+  &-section {
+    color: var(--text-color--black);
+  }
+  &-body {
+    display: grid;
+    grid-template-rows: 50px 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+    height: 100vh;
+    &-text {
+      display: grid;
+      justify-items: right;
+    }
+    &-content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 25px;
+      @media(max-width: 768px) {
+        grid-column-gap: 0;
+      }
+      margin: 0 10px;
+      justify-self: normal;
+      text-align: center;
+    }
+  }
+}
+
+.contact {
+  &-section {
+    color: var(--text-color--black);
+  }
+  &-body {
+    display: grid;
+    grid-template-rows: 50px 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+    height: 100vh;
+    &-text {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: left;
+    }
+    &-content {
+      display: grid;
+      justify-self: center;
+      margin: 0 10px;
+    }
+  }
+}
+
+footer {
+  .footer-content {
+    display: grid;
+    justify-items: center;
+  }
+  padding: 15px 0;
+  p {
+    margin: 0;
+  }
+}

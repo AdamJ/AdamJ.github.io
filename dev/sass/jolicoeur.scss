@@ -1,0 +1,88 @@
+// Jolicoeur Styles
+@import "colors";
+
+@import "fonts";
+@import "mixins";
+@import "animations";
+
+@import "nav";
+@import "layout";
+
+@import "buttons";
+@import "thumbnails";
+@import "forms";
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family: "Overpass", Helvetica, Arial, sans-serif; //base
+  background-color: var(--background-color--white);
+  color: var(--primary-text-color);
+  width: 100%;
+  height: 100%;
+  -webkit-tap-highlight-color: rgba(var(--background-color--white), 0.2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Overpass", Helvetica, Arial, sans-serif; //alternate
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 0 35px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 25px;
+  @media(min-width:768px) {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0 0 35px;
+  }
+}
+
+a {
+  color: var(--button-color--blue-dark);
+  transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: lighten(#00659c, 20%);
+  }
+}
+
+.light {
+  font-weight: 400;
+}
+
+.download-section {
+  padding: 100px 0;
+}
+
+::-moz-selection {
+  background: #fcfcfc;
+  background: rgba(var(--background-color--white), 0.2);
+  text-shadow: none;
+}
+
+::selection {
+  background: #fcfcfc;
+  background: rgba(var(--background-color--white), 0.2);
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
