@@ -5,15 +5,11 @@ html(lang='en')
   body(style='overflow: hidden;')
     include includes/navigation.pug
     header.header__home.container-fluid
-      .row.align-items-center.text-center
-        .col
-        .col-6
-          h1(class='xlarge-heading text-white') Design and Develop
-          h2(class='text-white') Together
-        .col
-      .row.text-center
-        .col
-        .col-6
+      .row.justify-content-sm-center.align-items-center.text-center
+        .col-sm-auto
+          h1(class='xlarge-heading text-white') Design
+          h2(class='large-heading text-white') from a Developer's Perspective
+      .row.justify-content-md-center.text-center
+        .col-md-auto
           button(class='btn btn-primary btn-large', href='mailto:mindreeper2420@gmail.com') Reach out and say hi!
-        .col
     include includes/scripts.pug

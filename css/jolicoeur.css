@@ -58,6 +58,9 @@ body {
   height: 100vh;
   margin-top: -56px; }
 
+.large-heading {
+  font-size: 3em; }
+
 .xlarge-heading {
   font-size: 5em; }
 
