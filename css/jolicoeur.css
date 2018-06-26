@@ -24,6 +24,23 @@
 .navbar-dark .navbar-toggler {
   border-color: transparent; }
 
+i.navbar-toggler::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased; }
+
+.menu-button[aria-expanded='false']::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 500;
+  content: '\f150'; }
+
+.menu-button[aria-expanded='true']::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 500;
+  content: '\f151'; }
+
 :root {
   --jumbotron-padding-y: 3rem; }
 
@@ -64,9 +81,6 @@ body {
 .xlarge-heading {
   font-size: 5em; }
 
-.text-white {
-  color: var(--color-text-white); }
-
 .btn {
   border-radius: var(--border-radius--medium); }
   .btn-primary {
@@ -77,3 +91,11 @@ body {
       border-color: #003833; }
   .btn-large {
     font-size: 1.2em; }
+
+.bg-dark-opaque {
+  background-color: rgba(52, 58, 64, 0.7) !important; }
+
+.card-footer a {
+  color: #66b0ff; }
+  .card-footer a:hover {
+    color: #007bff; }

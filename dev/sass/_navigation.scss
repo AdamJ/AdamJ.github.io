@@ -1,3 +1,30 @@
 .navbar-dark .navbar-toggler {
   border-color: transparent;
 }
+i.navbar-toggler {
+  &::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+.menu-button {
+  &[aria-expanded='false'] {
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 500;
+      // content: '\f58d'; grabber icon
+      content: '\f150';
+    }
+  }
+  &[aria-expanded='true'] {
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 500;
+      // content: '\f58e'; grabber icon
+      content: '\f151';
+    }
+  }
+}

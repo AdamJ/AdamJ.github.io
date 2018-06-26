@@ -24,9 +24,6 @@ body {
 .xlarge-heading {
   font-size: 5em;
 }
-.text-white {
-  color: var(--color-text-white);
-}
 .btn {
   border-radius: var(--border-radius--medium);
   &-primary {
@@ -41,6 +38,17 @@ body {
     font-size: 1.2em;
   }
 }
+.bg-dark-opaque {
+  background-color: rgba(52, 58, 64, 0.7) !important;
+}
 .box-shadow {
   @extend %box-shadow;
+}
+.card-footer {
+  a {
+    color: lighten(#007bff, 20%);
+    &:hover {
+      color: #007bff;
+    }
+  }
 }
