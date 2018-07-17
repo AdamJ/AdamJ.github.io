@@ -45,10 +45,20 @@ gulp.task('css', ['sass'], function() {
     .pipe(gulp.dest('./css'));
 });
 
-// copy javascript
+// compile custom javascript file
 gulp.task('js', function() {
-  gulp.src('')
-  .pipe(gulp.dest('js'));
+  return gulp.src("dev/js/*.js")
+  .pipe(header(banner, { pkg: pkg }))
+  .pipe(gulp.dest('js'))
+  .pipe(browserSync.reload({
+    stream: true
+  }));
+});
+
+// copy particlesjs file
+gulp.task('particles', function() {
+  gulp.src('./node_modules/particlesjs/dist/particles.min.js')
+  .pipe(gulp.dest('./js'));
 });
 
 // compile pug templates
@@ -84,14 +94,14 @@ gulp.task('sass-watch', ['css'], function (done) {
 });
 
 // build distribution folder
-gulp.task('dist', ['css', 'views', 'js'], function () {
+gulp.task('dist', ['css', 'views', 'js', 'particles'], function () {
   return gulp.src('./*.html', './css')
     .pipe(gulp.dest('./dist'))
 });
 
 // Dev task with browserSync
 // @ts-ignore
-gulp.task('serve', ['css'], function () {
+gulp.task('serve', ['css', 'js'], function () {
   browserSync.init({
     server: {
       baseDir: "./"
@@ -105,7 +115,8 @@ gulp.task('serve', ['css'], function () {
   });
   gulp.watch('dev/sass/*.scss', ['sass-watch']);
   gulp.watch('src/**/*.pug', ['views']);
+  gulp.watch('dev/js/*.js', ['js']);
   gulp.watch('*.html').on('change', browserSync.reload);
 });
 
-gulp.task('default', ['css', 'views']);
+gulp.task('default', ['css', 'js', 'particles', 'views']);

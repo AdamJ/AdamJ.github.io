@@ -2,35 +2,38 @@ doctype html
 html(lang='en')
   include includes/head.pug
 
-  body(style='overflow: hidden;')
+  body(style={overflow: 'hidden'})
     include includes/navigation.pug
     header.header__home.container-fluid
       .row.justify-content-sm-center.align-items-center.text-center
         .col-sm-auto
-          h1(class='xlarge-heading text-white') Developing from Design
-          h2(class='large-heading text-white') a designer's journey
-          //- h1(class='xlarge-heading text-white') Design
-          //- h2(class='large-heading text-white') from a Developer's Perspective
-      //- .row.justify-content-md-center.text-center
-      //-   .col-sm-4
-      //-     .card.bg-dark-opaque.text-white.mb-3(style='min-height: 12rem;')
-      //-       .card-body
-      //-         h5.card-title Design Sprints
-      //-         p.card-text A look into my process of research, inspiration, assets creation, and prototyping.
-      //-       .card-footer
-      //-         a(href='https://www.adamjolicoeur.com/DesignSprint/', class='card-link') Take me there
-      //-   .col-sm-4
-      //-     .card.bg-dark-opaque.text-white.mb-3(style='min-height: 12rem;')
-      //-       .card-body
-      //-         h5.card-title Gallery of Designs
-      //-         p.card-text Simply put, a gallery of various designs throughout the years.
-      //-       .card-footer
-      //-         a(href='https://www.adamjolicoeur.com/portfolio/gallery.html', class='card-link') Browse the gallery
-      //-   .col-sm-4
-      //-     .card.bg-dark-opaque.text-white.mb-3(style='min-height: 12rem;')
-      //-       .card-body
-      //-         h5.card-title Prototypes
-      //-         p.card-text Various prototypes that allow for user testing and quick revisions, outside of a design sprint.
-      //-       .card-footer
-      //-         a(href='https://www.adamjolicoeur.com/leftnav-prototype/index.html', class='card-link') All the things
+          h1.xlarge-heading.text-white Developing from Design
+          h2.large-heading.text-white a designer's journey
+    canvas.background
+    script
+      include ../dev/js/jolicoeur.js
+    //- h1(class='xlarge-heading text-white') Design
+    //- h2(class='large-heading text-white') from a Developer's Perspective
+    //- .row.justify-content-md-center.text-center
+    //-   .col-sm-4
+    //-     .card.bg-dark-opaque.text-white.mb-3(style='min-height: 12rem;')
+    //-       .card-body
+    //-         h5.card-title Design Sprints
+    //-         p.card-text A look into my process of research, inspiration, assets creation, and prototyping.
+    //-       .card-footer
+    //-         a(href='https://www.adamjolicoeur.com/DesignSprint/', class='card-link') Take me there
+    //-   .col-sm-4
+    //-     .card.bg-dark-opaque.text-white.mb-3(style='min-height: 12rem;')
+    //-       .card-body
+    //-         h5.card-title Gallery of Designs
+    //-         p.card-text Simply put, a gallery of various designs throughout the years.
+    //-       .card-footer
+    //-         a(href='https://www.adamjolicoeur.com/portfolio/gallery.html', class='card-link') Browse the gallery
+    //-   .col-sm-4
+    //-     .card.bg-dark-opaque.text-white.mb-3(style='min-height: 12rem;')
+    //-       .card-body
+    //-         h5.card-title Prototypes
+    //-         p.card-text Various prototypes that allow for user testing and quick revisions, outside of a design sprint.
+    //-       .card-footer
+    //-         a(href='https://www.adamjolicoeur.com/leftnav-prototype/index.html', class='card-link') All the things
     include includes/scripts.pug
