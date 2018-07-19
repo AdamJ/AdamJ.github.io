@@ -22,13 +22,10 @@ matrix:
       - bundle install
     script:
       - jekyll build
-
 notifications:
   email: mindreeper2420@gmail.com
-
 node_js:
   - '8'
-
 env:
   global:
     - COMMIT_AUTHOR_EMAIL: "mindreeper2420@gmail.com"
