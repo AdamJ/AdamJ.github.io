@@ -1,10 +1,3 @@
-@import '../../node_modules/bootstrap/scss/bootstrap';
-
-@import 'variables';
-@import 'colors';
-@import 'navigation';
-@import 'jumbotron';
-
 $font-size-base: 16px;
 
 body {
@@ -21,7 +14,7 @@ body {
 .header__home {
   @extend %grid;
   background:
-    url(../../img/wick-background.svg);
+    url(../../assets/images/wick-background.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;

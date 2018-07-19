@@ -1,0 +1,34 @@
+---
+layout: default
+title: Comics
+permalink: /comics/
+order: 2
+---
+
+<div class="container" style="overflow-y: scroll;">
+  <div class="row">
+    <div class="col">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Product</th>
+            <th scope="col">Year Released</th>
+            <th scope="col">Rarity</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% assign funkolist = site.data.funko.funkopops %}
+        {% for item in funkolist %}
+          <tr>
+            <td scope="row">{{ item.name }}</td>
+            <td>{{ item.product }}</td>
+            <td>{{ item.year }}</td>
+            <td>{{ item.rarity }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+nav:
+  - title: Blogs
+    page: Blogs
+    url: /blogs/
+
+  - title: Comics
+    page: Comics
+    url: /comics/
+
+  - title: GitHub
+    icon: <i class="fab fa-github fa-lg"></i>
+    url: https://github.com/mindreeper2420
+
+  - title: GitLab
+    icon: <i class="fab fa-gitlab fa-lg"></i>
+    url: https://gitlab.com/mindreeper2420
+
+  - title: Coroflot
+    icon: <i class="fas fa-image fa-lg"></i>
+    url: http://www.coroflot.com/ajolicoeur/profile
+
+  - title: Dribbble
+    icon: <i class="fab fa-dribbble fa-lg"></i>
+    url: https://dribbble.com/ajolicoeur
+
+  - title: Twitter
+    icon: <i class="fab fa-twitter fa-lg"></i>
+    url: https://twitter.com/mindreeper2420
+
+  - title: Email
+    icon: <i class="fas fa-envelope fa-lg"></i>
+    url: mailto:mindreeper2420@gmail.com

@@ -1,0 +1,45 @@
+    <div class="bg-dark collapse" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">Welcome</h4>
+            <p class="text-muted">
+              My name is Adam J. Jolicoeur and I am a designer and developer.
+              I strive to design and create amazing things. From personal to professional,
+              my goal is to create a product that will you not only love,
+              but your customers will love to visit over and over again.<br>
+            </p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <ul class="fa-ul">
+              {% assign sitelist = site.data.site_nav.nav %}
+              {% for item in sitelist %}
+              <li>
+                <a class="text-white text-size__medium" href="{{ item.url }}">
+                  <span class="fa-li">{{ item.icon }}</span>
+                  {{ item.title }}
+                </a>
+              </li>
+              {% endfor %}
+              <!-- <li><a class="text-white text-size__medium" href="https://gitlab.com/mindreeper2420"><span class="fa-li"><i class="fab fa-gitlab fa-lg"></i></span>GitLab</a></li>
+              <li>
+                <hr>
+              </li>
+              <li><a class="text-white text-size__medium" href="http://www.coroflot.com/ajolicoeur/profile"><span class="fa-li"><i class="fas fa-image fa-lg"></i></span>Coroflot</a></li>
+              <li><a class="text-white text-size__medium" href="https://dribbble.com/ajolicoeur"><span class="fa-li"><i class="fab fa-dribbble fa-lg"></i></span>Dribbble</a></li>
+              <li>
+                <hr>
+              </li>
+              <li><a class="text-white text-size__medium" href="https://twitter.com/mindreeper2420"><span class="fa-li"><i class="fab fa-twitter fa-lg"></i></span>Twitter</a></li>
+              <li>
+                <hr>
+              </li>
+              <li><a class="text-white text-size__medium" href="mailto:mindreeper2420@gmail.com"><span class="fa-li"><i class="fas fa-envelope fa-lg"></i></span>Email</a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark box-shadow">
+      <div class="container d-flex justify-content-between"><a class="navbar-brand d-flex align-items-center" href="index.html"><strong>Adam J. Jolicoeur</strong></a><i class="navbar-toggler menu-button fa-2x collapsed" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation"></i></div>
+    </div>

@@ -1,0 +1,17 @@
+# Site settings
+title: adamjolicoeur.com
+email: mindreeper2420@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Portfolio of Adam J. Jolicoeur
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://www.adamjolicoeur.com" # the base hostname & protocol for your site
+twitter_username: mindreeper2420
+github_username:  mindreeper2420
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:title:output_ext
+
+plugins: [jekyll-paginate]
+paginate: 5
+paginate_path: "/blogs/page:num"
