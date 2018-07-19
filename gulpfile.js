@@ -94,7 +94,7 @@ gulp.task('sass-watch', ['css'], function (done) {
 });
 
 // build distribution folder
-gulp.task('dist', ['css', 'views', 'js', 'particles'], function () {
+gulp.task('dist', ['css', 'views', 'js'], function () {
   return gulp.src('./*.html', './css')
     .pipe(gulp.dest('./dist'))
 });
@@ -119,4 +119,4 @@ gulp.task('serve', ['css', 'js'], function () {
   gulp.watch('*.html').on('change', browserSync.reload);
 });
 
-gulp.task('default', ['css', 'js', 'particles', 'views']);
+gulp.task('default', ['css', 'js']);

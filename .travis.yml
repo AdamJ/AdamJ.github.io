@@ -21,4 +21,6 @@ before_script:
   - gem install jekyll
   - bundle install
 
-script: gulp
+script:
+  - gulp
+  - jekyll build
