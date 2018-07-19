@@ -1,7 +1,27 @@
-language: node_js
-cache:
-  directories:
-    - 'node_modules'
+matrix:
+  include:
+    - language: node_js
+    cache:
+      directories:
+        - 'node_modules'
+    node_js:
+      - '8'
+    before_script:
+      - npm install -g gulp-cli
+      - npm install
+    script:
+      - gulp
+  include:
+    - language: ruby
+    cache:
+      bundler: true
+    rvm:
+    - 2.3.3
+    before_script:
+      - gem install jekyll
+      - bundle install
+    script:
+      - jekyll build
 
 notifications:
   email: mindreeper2420@gmail.com
@@ -14,13 +34,3 @@ env:
     - COMMIT_AUTHOR_EMAIL: "mindreeper2420@gmail.com"
     - TRIGGER_REPO_SLUG: "mindreeper2420/mindreeper2420.github.io"
     - TRIGGER_REPO_BRANCH: "master"
-
-before_script:
-  - npm install -g gulp-cli
-  - npm install
-  - gem install jekyll
-  - bundle install
-
-script:
-  - gulp
-  - jekyll build
