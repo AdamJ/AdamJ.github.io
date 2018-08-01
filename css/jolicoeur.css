@@ -6402,3 +6402,7 @@ body {
   color: #66b0ff; }
   .card-footer a:hover {
     color: #007bff; }
+
+@media (min-width: 768px) {
+  .fa-ul {
+    margin-left: 0; } }
