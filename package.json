@@ -7,7 +7,8 @@
   "license": "Apache-2.0",
   "scripts": {
     "start": "gulp serve",
-    "build": "gulp"
+    "build": "gulp",
+    "publish": "gulp && github_changelog_generator -u mindreeper2420 -p mindreeper2420.github.io"
   },
   "dependencies": {
     "bootstrap": "4.1.1",
