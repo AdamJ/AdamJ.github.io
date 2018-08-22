@@ -8,7 +8,7 @@ This site uses CSS Grid, CSS Variables and basic PWA functionality.
 Lighthouse Scores:
 ![Lighthouse Score](img/lighthouse-scores.png)
 
-- Performance: 91
+- Performance: 100
 - Progressive Web App: 73
   - Users will not be prompted to install my site on their device
   - The site does not work offline
