@@ -13,6 +13,6 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm install -g gulp-cli
+    npm install gulp
     gulp default --gulpfile gulpfile.js
   displayName: 'npm install and run gulp'
