@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/mindreeper2420/mindreeper2420.github.io.svg?branch=master)](https://travis-ci.org/mindreeper2420/mindreeper2420.github.io)
+[![Build Status](https://adamjolicoeur.visualstudio.com/adamjolicoeur.com/_apis/build/status/mindreeper2420.mindreeper2420.github.io)](https://adamjolicoeur.visualstudio.com/adamjolicoeur.com/_build/latest?definitionId=4)
 
 # Mindreeper2420.github.io
 A repo for my own personal site, hosted on GitHub.
