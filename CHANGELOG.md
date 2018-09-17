@@ -1,5 +1,8 @@
 # Change Log
 
+## [v2.13.0](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/v2.13.0) (2018-09-17)
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.12.0...v2.13.0)
+
 ## [v2.12.0](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/v2.12.0) (2018-08-01)
 [Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.11.0...v2.12.0)
 
