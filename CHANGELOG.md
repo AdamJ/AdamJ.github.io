@@ -1,5 +1,8 @@
 # Change Log
 
+## [v2.12.0](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/v2.12.0) (2018-08-01)
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.11.0...v2.12.0)
+
 ## [v2.11.0](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/v2.11.0) (2018-08-01)
 [Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.10.0...v2.11.0)
 
@@ -28,13 +31,13 @@
 [Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.2.0...v2.3.0)
 
 ## [v2.2.0](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/v2.2.0) (2018-06-25)
-[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.1.1...v2.2.0)
-
-## [v2.1.1](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/v2.1.1) (2018-06-24)
-[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.1.0...v2.1.1)
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.1.0...v2.2.0)
 
 ## [v2.1.0](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/v2.1.0) (2018-06-24)
-[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.0.0...v2.1.0)
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.1.1...v2.1.0)
+
+## [v2.1.1](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/v2.1.1) (2018-06-24)
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.0.0...v2.1.1)
 
 **Merged pull requests:**
 
