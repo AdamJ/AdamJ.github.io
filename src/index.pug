@@ -3,6 +3,10 @@ html(lang='en')
   include includes/head.pug
 
   body(style={overflow: 'hidden'})
+    //- Google Tag Manager (noscript)
+    noscript
+      iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-KHQQJJQ', height='0', width='0', style='display:none;visibility:hidden')
+
     include includes/navigation.pug
     header.header__home.container-fluid
       .row.justify-content-sm-center.align-items-center.text-center
