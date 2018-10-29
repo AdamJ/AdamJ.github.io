@@ -1,5 +1,14 @@
 .navbar {
   z-index: 10;
+  .navbar-brand {
+    img {
+      margin-right: 5px;
+      border-radius: 50%;
+    }
+  }
+}
+.navbar-slide-background {
+  background-color: rgba(0, 0, 0, .05);
 }
 .navbar-dark .navbar-toggler {
   border-color: transparent;
@@ -19,7 +28,7 @@ i.navbar-toggler {
       font-family: "Font Awesome 5 Free";
       font-weight: 500;
       // content: '\f58d'; grabber icon
-      content: '\f150';
+      content: '\f141';
     }
   }
   &[aria-expanded='true'] {
@@ -27,7 +36,7 @@ i.navbar-toggler {
       font-family: "Font Awesome 5 Free";
       font-weight: 500;
       // content: '\f58e'; grabber icon
-      content: '\f151';
+      content: '\f142';
     }
   }
 }

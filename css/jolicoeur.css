@@ -6302,6 +6302,7 @@ a.text-dark:hover, a.text-dark:focus {
 :root {
   --color-text-white: #fff;
   --color-text-black: #303030;
+  --color-black-1000: #000;
   --button-color--primary: #005C53;
   --button-color--primary-accent: #00332F;
   --color-background--primary: #f7f7f7;
@@ -6316,6 +6317,12 @@ a.text-dark:hover, a.text-dark:focus {
 
 .navbar {
   z-index: 10; }
+  .navbar .navbar-brand img {
+    margin-right: 5px;
+    border-radius: 50%; }
+
+.navbar-slide-background {
+  background-color: rgba(0, 0, 0, 0.05); }
 
 .navbar-dark .navbar-toggler {
   border-color: transparent; }
@@ -6330,12 +6337,12 @@ i.navbar-toggler::before {
 .menu-button[aria-expanded='false']::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 500;
-  content: '\f150'; }
+  content: '\f141'; }
 
 .menu-button[aria-expanded='true']::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 500;
-  content: '\f151'; }
+  content: '\f142'; }
 
 :root {
   --jumbotron-padding-y: 3rem; }
@@ -6364,15 +6371,9 @@ body {
   background-color: var(--color-background--primary);
   font-size: 16px; }
 
-.background {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  z-index: 0; }
-
 .header__home {
-  background: url(../../img/wick-background.svg);
+  background: url(../../img/lightbulb-black.jpeg);
+  background-color: var(--color-black-1000);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -6394,6 +6395,9 @@ body {
       border-color: var(--button-primary--border-hover); }
   .btn-large {
     font-size: 1.2em; }
+
+.text-center {
+  text-align: center; }
 
 .bg-dark-opaque {
   background-color: rgba(52, 58, 64, 0.7) !important; }

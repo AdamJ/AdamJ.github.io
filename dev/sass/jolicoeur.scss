@@ -11,17 +11,11 @@ body {
   background-color: var(--color-background--primary);
   font-size: $font-size-base;
 }
-.background {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
 .header__home {
   @extend %grid;
   background:
-    url(../../img/wick-background.svg);
+    url(../../img/lightbulb-black.jpeg);
+  background-color: var(--color-black-1000);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -46,6 +40,9 @@ body {
   &-large {
     font-size: 1.2em;
   }
+}
+.text-center {
+  text-align: center;
 }
 .bg-dark-opaque {
   background-color: rgba(52, 58, 64, 0.7) !important;
