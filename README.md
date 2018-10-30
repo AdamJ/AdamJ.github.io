@@ -9,6 +9,8 @@ This site uses CSS Grid, CSS Variables, and basic PWA functionality.
 
 I've configured the build to run using both travis-ci and azure-devops.
 
+Changelog updated using [github-changelog-generator](https://github.com/github-changelog-generator/github-changelog-generator)
+
 Lighthouse Scores:
 ![Lighthouse Score](img/lighthouse-scores.png)
 
