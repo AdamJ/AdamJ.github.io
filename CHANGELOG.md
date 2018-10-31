@@ -1,5 +1,14 @@
 # Change Log
 
+## [Unreleased](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/HEAD)
+
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.15.0...HEAD)
+
+**Implemented enhancements:**
+
+- Move to Node 8 for Build [\#6](https://github.com/mindreeper2420/mindreeper2420.github.io/issues/6)
+- Move to Node 8 for Build System [\#7](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/7) ([mindreeper2420](https://github.com/mindreeper2420))
+
 ## [v2.15.0](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/v2.15.0) (2018-09-18)
 [Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.14.0...v2.15.0)
 
