@@ -1,10 +1,11 @@
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
+@import 'variables';
+
 @import './fontawesome/scss/fontawesome.scss';
 @import './fontawesome/scss/solid.scss';
 @import './fontawesome/scss/brands.scss';
 
-@import 'variables';
 @import 'colors';
 @import 'navigation';
 @import 'jumbotron';
