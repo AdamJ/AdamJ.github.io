@@ -6,7 +6,7 @@
 pool:
   vmImage: 'Ubuntu 16.04'
 
-name: $(TeamProject)_$(SourceBranchName)_$(Date:MMddyyyy)$(Rev:.r)
+name: $(TeamProject)_$(Date:MMddyyyy)$(Rev:.r)
 
 steps:
 - task: NodeTool@0
