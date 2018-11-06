@@ -1,5 +1,5 @@
 /*!
- * Adam J. Jolicoeur - Adam J. Jolicoeur v2.17.0 (https://www.adamjolicoeur.com)
+ * Adam J. Jolicoeur - Adam J. Jolicoeur v2.17.1 (https://www.adamjolicoeur.com)
  * Copyright 2008-2018 Adam J. Jolicoeur
  * Licensed under Apache-2.0
  */
@@ -6287,6 +6287,18 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+:root {
+  --border-radius--small: 1rem;
+  --border-radius--medium: 2rem;
+  --border-radius--large: 3rem; }
+
+.header__home {
+  display: grid;
+  grid-template-columns: 1fr; }
+
+.box-shadow {
+  box-shadow: var(--box-shadow--primary); }
+
 /*!
  * Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -10260,8 +10272,8 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 900;
-  src: url("../webfonts/fa-solid-900.eot");
-  src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+  src: url("../fonts/webfonts/fa-solid-900.eot");
+  src: url("../fonts/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/webfonts/fa-solid-900.woff2") format("woff2"), url("../fonts/webfonts/fa-solid-900.woff") format("woff"), url("../fonts/webfonts/fa-solid-900.ttf") format("truetype"), url("../fonts/webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
 
 .fa,
 .fas {
@@ -10276,23 +10288,11 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: normal;
-  src: url("../webfonts/fa-brands-400.eot");
-  src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
+  src: url("../fonts/webfonts/fa-brands-400.eot");
+  src: url("../fonts/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/webfonts/fa-brands-400.woff2") format("woff2"), url("../fonts/webfonts/fa-brands-400.woff") format("woff"), url("../fonts/webfonts/fa-brands-400.ttf") format("truetype"), url("../fonts/webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
 
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
-
-:root {
-  --border-radius--small: 1rem;
-  --border-radius--medium: 2rem;
-  --border-radius--large: 3rem; }
-
-.header__home {
-  display: grid;
-  grid-template-columns: 1fr; }
-
-.box-shadow {
-  box-shadow: var(--box-shadow--primary); }
 
 :root {
   --color-text-white: #fff;
