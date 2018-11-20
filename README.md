@@ -1,7 +1,5 @@
 [![Build Status](https://adamjolicoeur.visualstudio.com/adamjolicoeur.com/_apis/build/status/adamjolicoeur.com-Node.js%20With%20gulp-CI)](https://adamjolicoeur.visualstudio.com/adamjolicoeur.com/_build/latest?definitionId=6)
 
-[![Build Status](https://travis-ci.org/mindreeper2420/mindreeper2420.github.io.svg?branch=master)](https://travis-ci.org/mindreeper2420/mindreeper2420.github.io)
-
 # Mindreeper2420.github.io
 A repo for my own personal site, hosted on GitHub.
 
