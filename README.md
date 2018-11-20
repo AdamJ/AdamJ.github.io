@@ -22,3 +22,5 @@ Lighthouse Scores:
 - Accessibility: 100
 - Best Practices: 100
 - SEO: 100
+
+** scores are not guaranteed to be up-to-date
