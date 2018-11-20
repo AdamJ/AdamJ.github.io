@@ -1,3 +1,6 @@
+.aj-navbar--background {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 .navbar {
   z-index: 10;
   .navbar-brand {
@@ -8,7 +11,7 @@
   }
 }
 .navbar-slide-background {
-  background-color: rgba(0, 0, 0, .05);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .navbar-dark .navbar-toggler {
   border-color: transparent;
@@ -22,19 +25,19 @@ i.navbar-toggler {
     -webkit-font-smoothing: antialiased;
   }
 }
-.menu-button {
-  &[aria-expanded='false'] {
-    &::before {
-      font-family: "Font Awesome 5 Free";
-      font-weight: 500;
-      content: fa-content($fa-var-ellipsis-h);
-    }
-  }
-  &[aria-expanded='true'] {
-    &::before {
-      font-family: "Font Awesome 5 Free";
-      font-weight: 500;
-      content: fa-content($fa-var-ellipsis-v);
-    }
-  }
-}
+// .menu-button {
+//   &[aria-expanded='false'] {
+//     &::before {
+//       font-family: "Font Awesome 5 Free";
+//       font-weight: 500;
+//       content: fa-content($fa-var-ellipsis-h);
+//     }
+//   }
+//   &[aria-expanded='true'] {
+//     &::before {
+//       font-family: "Font Awesome 5 Free";
+//       font-weight: 500;
+//       content: fa-content($fa-var-ellipsis-v);
+//     }
+//   }
+// }

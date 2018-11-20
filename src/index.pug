@@ -6,25 +6,14 @@ html(lang='en')
     //- Google Tag Manager (noscript)
     noscript
       iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-KHQQJJQ', height='0', width='0', style='display:none;visibility:hidden')
-
-    include includes/navigation.pug
-    header.header__home.container-fluid
-      .row.justify-content-sm-left.align-items-center
-        .col-sm-auto
-          //- h1.xlarge-heading.text-white Developing from Design
-          //- h2.large-heading.text-white a designer's journey
-          h1.xlarge-heading.text-white Enlightened Development
-          h2.large-heading.text-white Through
-          h1.xlarge-heading.text-white Thoughtful Design
-    section.container-fluid
-      .row.text-center
-        .col-sm
-          p Designs
-        .col-sm
-          p Images
-        .col-sm
-          p Code
-    //- canvas.background
-    script
-      //- include ../dev/js/jolicoeur.js
+    .aj-background-image
+    aside
+      include includes/navigation.pug
+    header.header__home.container-fluid(role='banner')
+    main(role='main')
+        .row.justify-content-end.text-right.mr-0
+          .col
+            h1.xlarge-heading Enlightened Development
+            h2.large-heading through
+            h1.xlarge-heading Thoughtful Design
     include includes/scripts.pug
