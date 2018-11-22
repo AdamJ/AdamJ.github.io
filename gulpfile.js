@@ -12,9 +12,7 @@ var sourcemaps = require('gulp-sourcemaps');
 
 // Set the banner content
 var banner = ['/*!\n',
-' * Adam J. Jolicoeur - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-' * Copyright 2008-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-' * Licensed under <%= pkg.license %>\n',
+' * <%= pkg.title %> v<%= pkg.version %>\n',
 ' */\n',
 ''
 ].join('');
