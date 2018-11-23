@@ -1,0 +1,24 @@
+//
+// Adam J. Jolicoeur (https://www.adamjolicoeur.com)
+// Copyright 2008-2018 Adam J. Jolicoeur
+// Licensed under Apache-2.0 (https://github.com/mindreeper2420/mindreeper2420.github.io/blob/master/LICENSE)
+//
+
+// Sass
+%parallax {
+  // Full height
+  height: 100vh;
+
+  // Create the parallax scrolling effect
+  background-attachment: fixed;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+%grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+%box-shadow {
+  box-shadow: var(--box-shadow--primary);
+}

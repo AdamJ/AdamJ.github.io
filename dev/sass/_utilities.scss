@@ -4,9 +4,9 @@
 // Licensed under Apache-2.0 (https://github.com/mindreeper2420/mindreeper2420.github.io/blob/master/LICENSE)
 //
 
-// Directory paths
-$fa-font-path: "../fonts/webfonts";
-$aj-image-path: "../img";
-
-// Font sizes
-$font-size-base: 16px;
+// Site utilities
+@import 'utilities/text';
+@import 'utilities/colors';
+@import 'utilities/backgrounds';
+@import 'utilities/borders';
+@import 'utilities/variables';

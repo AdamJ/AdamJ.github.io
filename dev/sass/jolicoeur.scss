@@ -1,18 +1,24 @@
-@import '../../node_modules/bootstrap/scss/bootstrap';
+/*!
+** Adam J. Jolicoeur (https://www.adamjolicoeur.com)
+** Copyright 2008-2018 Adam J. Jolicoeur
+** Licensed under Apache-2.0 (https://github.com/mindreeper2420/mindreeper2420.github.io/blob/master/LICENSE)
+*/
 
-@import 'variables';
+@import '../../node_modules/bootstrap/scss/bootstrap';
 
 @import './fontawesome/scss/fontawesome.scss';
 @import './fontawesome/scss/solid.scss';
 @import './fontawesome/scss/brands.scss';
 
-@import 'colors';
-@import 'navigation';
+@import 'variables';
+@import 'mixins';
+@import 'utilities';
+
+@import 'buttons';
+
 @import 'jumbotron';
+@import 'navigation';
 
-@import 'backgrounds';
-
-$font-size-base: 16px;
 
 body {
   background-color: var(--color-background--primary);
@@ -20,43 +26,6 @@ body {
 }
 .header__home {
   @extend %grid;
-}
-.large-heading {
-  font-size: var(--font-size--large);
-}
-.xlarge-heading {
-  font-size: var(--font-size--xlarge);
-}
-.btn {
-  border-radius: var(--border-radius--medium);
-  &-primary {
-    background-color: var(--button-primary--background);
-    border-color: var(--button-primary--border);
-    &:hover {
-      background-color: var(--button-primary--background-hover);
-      border-color: var(--button-primary--border-hover);
-    }
-  }
-  &-large {
-    font-size: 1.2em;
-  }
-}
-.text-center {
-  text-align: center;
-}
-.bg-dark-opaque {
-  background-color: rgba(52, 58, 64, 0.7) !important;
-}
-.box-shadow {
-  @extend %box-shadow;
-}
-.card-footer {
-  a {
-    color: lighten(#007bff, 20%);
-    &:hover {
-      color: #007bff;
-    }
-  }
 }
 @media (min-width: 768px) {
   .fa-ul {

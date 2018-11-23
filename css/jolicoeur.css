@@ -1,8 +1,11 @@
 /*!
- * Adam J. Jolicoeur - Adam J. Jolicoeur v2.17.2 (https://www.adamjolicoeur.com)
- * Copyright 2008-2018 Adam J. Jolicoeur
- * Licensed under Apache-2.0
+ * Adam J. Jolicoeur v2.17.2
  */
+/*!
+** Adam J. Jolicoeur (https://www.adamjolicoeur.com)
+** Copyright 2008-2018 Adam J. Jolicoeur
+** Licensed under Apache-2.0 (https://github.com/mindreeper2420/mindreeper2420.github.io/blob/master/LICENSE)
+*/
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -6287,18 +6290,6 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-:root {
-  --border-radius--small: 1rem;
-  --border-radius--medium: 2rem;
-  --border-radius--large: 3rem; }
-
-.header__home {
-  display: grid;
-  grid-template-columns: 1fr; }
-
-.box-shadow {
-  box-shadow: var(--box-shadow--primary); }
-
 /*!
  * Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -10272,8 +10263,8 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 900;
-  src: url("../fonts/webfonts/fa-solid-900.eot");
-  src: url("../fonts/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/webfonts/fa-solid-900.woff2") format("woff2"), url("../fonts/webfonts/fa-solid-900.woff") format("woff"), url("../fonts/webfonts/fa-solid-900.ttf") format("truetype"), url("../fonts/webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+  src: url("../webfonts/fa-solid-900.eot");
+  src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
 
 .fa,
 .fas {
@@ -10288,19 +10279,109 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/webfonts/fa-brands-400.eot");
-  src: url("../fonts/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/webfonts/fa-brands-400.woff2") format("woff2"), url("../fonts/webfonts/fa-brands-400.woff") format("woff"), url("../fonts/webfonts/fa-brands-400.ttf") format("truetype"), url("../fonts/webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
+  src: url("../webfonts/fa-brands-400.eot");
+  src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
 
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
 
+.header__home {
+  display: grid;
+  grid-template-columns: 1fr; }
+
+.box-shadow {
+  box-shadow: var(--box-shadow--primary); }
+
 :root {
-  --color-text-white: #fff;
-  --color-text-black: #303030;
-  --color-black-1000: #000;
-  --button-color--primary: #005C53;
-  --button-color--primary-accent: #00332F;
-  --color-background--primary: #f7f7f7;
+  --border-width--small: 1px;
+  --border-width--medium: 3px;
+  --border-width--large: 5px; }
+
+:root {
+  --border-radius--small: 1rem;
+  --border-radius--medium: 2rem;
+  --border-radius--large: 3rem; }
+
+/* stylelint-disable declaration-no-important */
+.medium-heading {
+  font-size: var(--font-size--medium) !important; }
+
+.large-heading {
+  font-size: var(--font-size--large) !important; }
+
+.xlarge-heading {
+  font-size: var(--font-size--xlarge) !important; }
+
+.text-center {
+  text-align: center !important; }
+
+/* stylelint-enable */
+.aj-background-image {
+  --aj-c-image--Background--xs: url("../img/tranquil_576.jpeg");
+  --aj-c-image--Background--sm: url("../img/tranquil_768.jpeg");
+  --aj-c-image--Background--md: url("../img/tranquil_992.jpeg");
+  --aj-c-image--Background--lg: url("../img/tranquil_1200.jpeg");
+  --aj-c-image--Background--xl: url("../img/tranquil_2000.jpeg");
+  --aj-c-background-image--Filter: url("../img/background-filter.svg#image_overlay"); }
+  .aj-background-image::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.98);
+    background-image: var(--aj-c-background-image--Background--xs);
+    filter: blur(1px) grayscale(70%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* stylelint-disable */
+    /* stylelint-enable */ }
+    @media (max-width: 575.98px) {
+      .aj-background-image::before {
+        background-image: var(--aj-c-image--Background--xs-2x); } }
+    @media (max-width: 767.98px) {
+      .aj-background-image::before {
+        background-image: var(--aj-c-image--Background--sm); } }
+    @media (max-width: 991.98px) {
+      .aj-background-image::before {
+        background-image: var(--aj-c-image--Background--md); } }
+    @media (max-width: 1199.98px) {
+      .aj-background-image::before {
+        background-image: var(--aj-c-image--Background--lg); } }
+    @media (min-width: 1200px) {
+      .aj-background-image::before {
+        background-image: var(--aj-c-image--Background--xl); } }
+
+/* stylelint-disable declaration-no-important */
+.border-radius--small {
+  border-radius: var(--border-radius-small) !important; }
+
+.border-radius--medium,
+.btn {
+  border-radius: var(--border-radius-medium) !important; }
+
+.border-radius--large {
+  border-radius: var(--border-radius-large) !important; }
+
+.border-width--small {
+  border-width: var(--border-width--small) !important; }
+
+.border-width--medium {
+  border-width: var(--border-width--medium) !important; }
+
+.border-width--large {
+  border-width: var(--border-width--large) !important; }
+
+/* stylelint-enable */
+:root {
+  --color-text-white: $aj-text--white;
+  --color-text-black: $aj-text--black;
+  --color-black-1000: $aj-color-black-1000;
+  --button-color--primary: $aj-button-color--primary;
+  --button-color--primary-accent: $aj-button-color--primary-accent;
+  --color-background--primary: $aj-background-color--primary;
   --box-shadow--primary: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
   --button-primary--background: var(--button-color--primary);
   --button-primary--border: var(--button-color--primary);
@@ -10310,27 +10391,15 @@ readers do not read off random characters that represent icons */
   --font-size--large: 3em;
   --font-size--xlarge: 5em; }
 
-.aj-navbar--background {
-  background-color: rgba(255, 255, 255, 0.5); }
+.btn-primary {
+  background-color: var(--button-primary--background);
+  border-color: var(--button-primary--border); }
+  .btn-primary:hover {
+    background-color: var(--button-primary--background-hover);
+    border-color: var(--button-primary--border-hover); }
 
-.navbar {
-  z-index: 10; }
-  .navbar .navbar-brand img {
-    margin-right: 5px;
-    border-radius: 50%; }
-
-.navbar-slide-background {
-  background-color: rgba(255, 255, 255, 0.5); }
-
-.navbar-dark .navbar-toggler {
-  border-color: transparent; }
-
-i.navbar-toggler::before {
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased; }
+.btn-large {
+  font-size: 1.2em; }
 
 :root {
   --jumbotron-padding-y: 3rem; }
@@ -10355,75 +10424,31 @@ i.navbar-toggler::before {
 .jumbotron .container {
   max-width: 40rem; }
 
-.aj-background-image {
-  --aj-c-loading-image--BackgroundImage--xs: url("../img/tranquil_576.jpeg");
-  --aj-c-loading-image--BackgroundImage--sm: url("../img/tranquil_768.jpeg");
-  --aj-c-loading-image--BackgroundImage--md: url("../img/tranquil_992.jpeg");
-  --aj-c-loading-image--BackgroundImage--lg: url("../img/tranquil_1200.jpeg");
-  --aj-c-loading-image--BackgroundImage--xl: url("../img/tranquil_2000.jpeg");
-  --aj-c-background-image--Filter: url("../img/background-filter.svg#image_overlay"); }
-  .aj-background-image::before {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    content: "";
-    background-color: rgba(255, 255, 255, 0.98);
-    background-image: var(--aj-c-background-image--BackgroundImage--xs);
-    filter: blur(1px) grayscale(70%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* ajylelint-disable */
-    /* ajylelint-enable */ }
-    @media (max-width: 575.98px) {
-      .aj-background-image::before {
-        background-image: var(--aj-c-loading-image--BackgroundImage--xs-2x); } }
-    @media (max-width: 767.98px) {
-      .aj-background-image::before {
-        background-image: var(--aj-c-loading-image--BackgroundImage--sm); } }
-    @media (max-width: 991.98px) {
-      .aj-background-image::before {
-        background-image: var(--aj-c-loading-image--BackgroundImage--md); } }
-    @media (max-width: 1199.98px) {
-      .aj-background-image::before {
-        background-image: var(--aj-c-loading-image--BackgroundImage--lg); } }
-    @media (min-width: 1200px) {
-      .aj-background-image::before {
-        background-image: var(--aj-c-loading-image--BackgroundImage--xl); } }
+.aj-navbar--background {
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.navbar {
+  z-index: 10; }
+  .navbar .navbar-brand img {
+    margin-right: 5px;
+    border-radius: 50%; }
+
+.navbar-slide-background {
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.navbar-dark .navbar-toggler {
+  border-color: transparent; }
+
+i.navbar-toggler::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased; }
 
 body {
   background-color: var(--color-background--primary);
   font-size: 16px; }
-
-.large-heading {
-  font-size: var(--font-size--large); }
-
-.xlarge-heading {
-  font-size: var(--font-size--xlarge); }
-
-.btn {
-  border-radius: var(--border-radius--medium); }
-  .btn-primary {
-    background-color: var(--button-primary--background);
-    border-color: var(--button-primary--border); }
-    .btn-primary:hover {
-      background-color: var(--button-primary--background-hover);
-      border-color: var(--button-primary--border-hover); }
-  .btn-large {
-    font-size: 1.2em; }
-
-.text-center {
-  text-align: center; }
-
-.bg-dark-opaque {
-  background-color: rgba(52, 58, 64, 0.7) !important; }
-
-.card-footer a {
-  color: #66b0ff; }
-  .card-footer a:hover {
-    color: #007bff; }
 
 @media (min-width: 768px) {
   .fa-ul {
