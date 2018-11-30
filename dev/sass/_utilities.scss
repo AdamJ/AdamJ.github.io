@@ -5,8 +5,5 @@
 //
 
 // Site utilities
-@import 'utilities/text';
-@import 'utilities/colors';
-@import 'utilities/backgrounds';
-@import 'utilities/borders';
-@import 'utilities/variables';
+@import "./utilities/all";
+

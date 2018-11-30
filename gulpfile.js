@@ -19,7 +19,7 @@ var banner = ['/*!\n',
 
 // compile custom scss files
 gulp.task('sass', function() {
-  return gulp.src("dev/sass/*.scss")
+  return gulp.src("dev/sass/**/*.scss")
   .pipe(sass().on('error', sass.logError))
   .pipe(header(banner, { pkg: pkg }))
   .pipe(gulp.dest('css'))
@@ -111,7 +111,7 @@ gulp.task('serve', ['css', 'js'], function () {
     reloadOnRestart: true,
     notify: false // prevent the browserSync notification from appearing
   });
-  gulp.watch('dev/sass/*.scss', ['sass-watch']);
+  gulp.watch('dev/sass/**/*.scss', ['sass-watch']);
   gulp.watch('src/**/*.pug', ['views']);
   gulp.watch('dev/js/*.js', ['js']);
   gulp.watch('*.html').on('change', browserSync.reload);

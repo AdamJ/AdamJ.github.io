@@ -1,5 +1,5 @@
 /*!
- * Adam J. Jolicoeur v2.17.2
+ * Adam J. Jolicoeur v0.0.0
  */
 /*!
 ** Adam J. Jolicoeur (https://www.adamjolicoeur.com)
@@ -10293,29 +10293,15 @@ readers do not read off random characters that represent icons */
   box-shadow: var(--box-shadow--primary); }
 
 :root {
-  --border-width--small: 1px;
-  --border-width--medium: 3px;
-  --border-width--large: 5px; }
-
-:root {
   --border-radius--small: 1rem;
   --border-radius--medium: 2rem;
   --border-radius--large: 3rem; }
 
-/* stylelint-disable declaration-no-important */
-.medium-heading {
-  font-size: var(--font-size--medium) !important; }
+:root {
+  --border-width--small: 1px;
+  --border-width--medium: 3px;
+  --border-width--large: 5px; }
 
-.large-heading {
-  font-size: var(--font-size--large) !important; }
-
-.xlarge-heading {
-  font-size: var(--font-size--xlarge) !important; }
-
-.text-center {
-  text-align: center !important; }
-
-/* stylelint-enable */
 .aj-background-image {
   --aj-c-image--Background--xs: url("../img/tranquil_576.jpeg");
   --aj-c-image--Background--sm: url("../img/tranquil_768.jpeg");
@@ -10375,6 +10361,20 @@ readers do not read off random characters that represent icons */
   border-width: var(--border-width--large) !important; }
 
 /* stylelint-enable */
+/* stylelint-disable declaration-no-important */
+.medium-heading {
+  font-size: var(--font-size--medium) !important; }
+
+.large-heading {
+  font-size: var(--font-size--large) !important; }
+
+.xlarge-heading {
+  font-size: var(--font-size--xlarge) !important; }
+
+.text-center {
+  text-align: center !important; }
+
+/* stylelint-enable */
 :root {
   --color-text-white: $aj-text--white;
   --color-text-black: $aj-text--black;
@@ -10390,6 +10390,14 @@ readers do not read off random characters that represent icons */
   --font-size--medium: 1em;
   --font-size--large: 3em;
   --font-size--xlarge: 5em; }
+
+body {
+  background-color: var(--color-background--primary);
+  font-size: 16px; }
+
+@media (min-width: 768px) {
+  .fa-ul {
+    margin-left: 0; } }
 
 .btn-primary {
   background-color: var(--button-primary--background);
@@ -10445,11 +10453,3 @@ i.navbar-toggler::before {
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased; }
-
-body {
-  background-color: var(--color-background--primary);
-  font-size: 16px; }
-
-@media (min-width: 768px) {
-  .fa-ul {
-    margin-left: 0; } }

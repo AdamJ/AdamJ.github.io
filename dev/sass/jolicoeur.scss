@@ -10,25 +10,17 @@
 @import './fontawesome/scss/solid.scss';
 @import './fontawesome/scss/brands.scss';
 
-@import 'variables';
-@import 'mixins';
-@import 'utilities';
+// Variables
+@import './variables';
 
-@import 'buttons';
+// Mixins
+@import './mixins';
 
-@import 'jumbotron';
-@import 'navigation';
+// Utilities
+@import './utilities';
 
+// Pages
+@import './pages/all';
 
-body {
-  background-color: var(--color-background--primary);
-  font-size: $font-size-base;
-}
-.header__home {
-  @extend %grid;
-}
-@media (min-width: 768px) {
-  .fa-ul {
-    margin-left: 0;
-  }
-}
+// Components
+@import './components/all';

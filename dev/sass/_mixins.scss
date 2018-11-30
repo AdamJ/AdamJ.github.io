@@ -5,7 +5,4 @@
 //
 
 // Complicated mixins
-@import 'mixins/variables';
-@import 'mixins/border-size';
-@import 'mixins/border-radius';
-@import 'mixins/box-shadow';
+@import "./mixins/all";

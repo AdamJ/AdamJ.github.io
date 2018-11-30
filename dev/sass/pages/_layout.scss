@@ -1,0 +1,12 @@
+body {
+  background-color: var(--color-background--primary);
+  font-size: $font-size-base;
+}
+.header__home {
+  @extend %grid;
+}
+@media (min-width: 768px) {
+  .fa-ul {
+    margin-left: 0;
+  }
+}
