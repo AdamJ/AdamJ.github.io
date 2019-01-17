@@ -5,6 +5,7 @@
   "author": "Adam J. Jolicoeur",
   "homepage": "https://www.adamjolicoeur.com",
   "license": "Apache-2.0",
+  "licenseUrl": "https://github.com/mindreeper2420/mindreeper2420.github.io/blob/master/LICENSE",
   "scripts": {
     "start": "gulp serve",
     "build": "gulp",
@@ -12,7 +13,7 @@
   },
   "dependencies": {
     "bootstrap": "4.1.1",
-    "particlesjs": "2.2.2"
+    "@fortawesome/fontawesome-free": "5.6.3"
   },
   "devDependencies": {
     "autoprefixer": "8.6.3",

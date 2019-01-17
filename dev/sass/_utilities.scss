@@ -1,9 +1,29 @@
 //
 // Adam J. Jolicoeur (https://www.adamjolicoeur.com)
-// Copyright 2008-2018 Adam J. Jolicoeur
+// Copyright 2008-2019 Adam J. Jolicoeur
 // Licensed under Apache-2.0 (https://github.com/mindreeper2420/mindreeper2420.github.io/blob/master/LICENSE)
 //
 
 // Site utilities
-@import "./utilities/all";
+@import "./utilities/variables";
+@import "./utilities/backgrounds";
+@import "./utilities/background-variants";
+@import "./utilities/borders";
+@import "./utilities/text";
 
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }

@@ -1,13 +1,10 @@
 /*!
- * Adam J. Jolicoeur v0.0.0
+ * Adam J. Jolicoeur https://www.adamjolicoeur.com | v0.0.0
+ * Copyright 2008-2019 | Adam J. Jolicoeur
+ * Licensed under Apache-2.0 | (https://github.com/mindreeper2420/mindreeper2420.github.io/blob/master/LICENSE)
  */
 /*!
-** Adam J. Jolicoeur (https://www.adamjolicoeur.com)
-** Copyright 2008-2018 Adam J. Jolicoeur
-** Licensed under Apache-2.0 (https://github.com/mindreeper2420/mindreeper2420.github.io/blob/master/LICENSE)
-*/
-/*!
- * Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.6.3 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 .fa,
@@ -203,6 +200,9 @@ readers do not read off random characters that represent icons */
 .fa-adn:before {
   content: "\f170"; }
 
+.fa-adobe:before {
+  content: "\f778"; }
+
 .fa-adversal:before {
   content: "\f36a"; }
 
@@ -362,6 +362,9 @@ readers do not read off random characters that represent icons */
 .fa-arrows-alt-v:before {
   content: "\f338"; }
 
+.fa-artstation:before {
+  content: "\f77a"; }
+
 .fa-assistive-listening-systems:before {
   content: "\f2a2"; }
 
@@ -376,6 +379,9 @@ readers do not read off random characters that represent icons */
 
 .fa-atlas:before {
   content: "\f558"; }
+
+.fa-atlassian:before {
+  content: "\f77b"; }
 
 .fa-atom:before {
   content: "\f5d2"; }
@@ -400,6 +406,12 @@ readers do not read off random characters that represent icons */
 
 .fa-aws:before {
   content: "\f375"; }
+
+.fa-baby:before {
+  content: "\f77c"; }
+
+.fa-baby-carriage:before {
+  content: "\f77d"; }
 
 .fa-backspace:before {
   content: "\f55a"; }
@@ -482,6 +494,9 @@ readers do not read off random characters that represent icons */
 .fa-binoculars:before {
   content: "\f1e5"; }
 
+.fa-biohazard:before {
+  content: "\f780"; }
+
 .fa-birthday-cake:before {
   content: "\f1fd"; }
 
@@ -508,6 +523,9 @@ readers do not read off random characters that represent icons */
 
 .fa-blind:before {
   content: "\f29d"; }
+
+.fa-blog:before {
+  content: "\f781"; }
 
 .fa-blogger:before {
   content: "\f37c"; }
@@ -629,6 +647,9 @@ readers do not read off random characters that represent icons */
 .fa-calendar-check:before {
   content: "\f274"; }
 
+.fa-calendar-day:before {
+  content: "\f783"; }
+
 .fa-calendar-minus:before {
   content: "\f272"; }
 
@@ -638,6 +659,9 @@ readers do not read off random characters that represent icons */
 .fa-calendar-times:before {
   content: "\f273"; }
 
+.fa-calendar-week:before {
+  content: "\f784"; }
+
 .fa-camera:before {
   content: "\f030"; }
 
@@ -646,6 +670,12 @@ readers do not read off random characters that represent icons */
 
 .fa-campground:before {
   content: "\f6bb"; }
+
+.fa-canadian-maple-leaf:before {
+  content: "\f785"; }
+
+.fa-candy-cane:before {
+  content: "\f786"; }
 
 .fa-cannabis:before {
   content: "\f55f"; }
@@ -692,11 +722,17 @@ readers do not read off random characters that represent icons */
 .fa-caret-up:before {
   content: "\f0d8"; }
 
+.fa-carrot:before {
+  content: "\f787"; }
+
 .fa-cart-arrow-down:before {
   content: "\f218"; }
 
 .fa-cart-plus:before {
   content: "\f217"; }
+
+.fa-cash-register:before {
+  content: "\f788"; }
 
 .fa-cat:before {
   content: "\f6be"; }
@@ -733,6 +769,9 @@ readers do not read off random characters that represent icons */
 
 .fa-centercode:before {
   content: "\f380"; }
+
+.fa-centos:before {
+  content: "\f789"; }
 
 .fa-certificate:before {
   content: "\f0a3"; }
@@ -956,8 +995,14 @@ readers do not read off random characters that represent icons */
 .fa-compress:before {
   content: "\f066"; }
 
+.fa-compress-arrows-alt:before {
+  content: "\f78c"; }
+
 .fa-concierge-bell:before {
   content: "\f562"; }
+
+.fa-confluence:before {
+  content: "\f78d"; }
 
 .fa-connectdevelop:before {
   content: "\f20e"; }
@@ -1106,8 +1151,14 @@ readers do not read off random characters that represent icons */
 .fa-dharmachakra:before {
   content: "\f655"; }
 
+.fa-dhl:before {
+  content: "\f790"; }
+
 .fa-diagnoses:before {
   content: "\f470"; }
+
+.fa-diaspora:before {
+  content: "\f791"; }
 
 .fa-dice:before {
   content: "\f522"; }
@@ -1235,6 +1286,12 @@ readers do not read off random characters that represent icons */
 .fa-dumbbell:before {
   content: "\f44b"; }
 
+.fa-dumpster:before {
+  content: "\f793"; }
+
+.fa-dumpster-fire:before {
+  content: "\f794"; }
+
 .fa-dungeon:before {
   content: "\f6d9"; }
 
@@ -1300,6 +1357,9 @@ readers do not read off random characters that represent icons */
 
 .fa-ethereum:before {
   content: "\f42e"; }
+
+.fa-ethernet:before {
+  content: "\f796"; }
 
 .fa-etsy:before {
   content: "\f2d7"; }
@@ -1373,11 +1433,20 @@ readers do not read off random characters that represent icons */
 .fa-feather-alt:before {
   content: "\f56b"; }
 
+.fa-fedex:before {
+  content: "\f797"; }
+
+.fa-fedora:before {
+  content: "\f798"; }
+
 .fa-female:before {
   content: "\f182"; }
 
 .fa-fighter-jet:before {
   content: "\f0fb"; }
+
+.fa-figma:before {
+  content: "\f799"; }
 
 .fa-file:before {
   content: "\f15b"; }
@@ -1465,6 +1534,9 @@ readers do not read off random characters that represent icons */
 
 .fa-fire:before {
   content: "\f06d"; }
+
+.fa-fire-alt:before {
+  content: "\f7e4"; }
 
 .fa-fire-extinguisher:before {
   content: "\f134"; }
@@ -1625,6 +1697,9 @@ readers do not read off random characters that represent icons */
 .fa-gift:before {
   content: "\f06b"; }
 
+.fa-gifts:before {
+  content: "\f79c"; }
+
 .fa-git:before {
   content: "\f1d3"; }
 
@@ -1649,11 +1724,17 @@ readers do not read off random characters that represent icons */
 .fa-gitter:before {
   content: "\f426"; }
 
+.fa-glass-cheers:before {
+  content: "\f79f"; }
+
 .fa-glass-martini:before {
   content: "\f000"; }
 
 .fa-glass-martini-alt:before {
   content: "\f57b"; }
+
+.fa-glass-whiskey:before {
+  content: "\f7a0"; }
 
 .fa-glasses:before {
   content: "\f530"; }
@@ -1675,6 +1756,9 @@ readers do not read off random characters that represent icons */
 
 .fa-globe-asia:before {
   content: "\f57e"; }
+
+.fa-globe-europe:before {
+  content: "\f7a2"; }
 
 .fa-gofore:before {
   content: "\f3a7"; }
@@ -1772,6 +1856,12 @@ readers do not read off random characters that represent icons */
 .fa-grip-horizontal:before {
   content: "\f58d"; }
 
+.fa-grip-lines:before {
+  content: "\f7a4"; }
+
+.fa-grip-lines-vertical:before {
+  content: "\f7a5"; }
+
 .fa-grip-vertical:before {
   content: "\f58e"; }
 
@@ -1780,6 +1870,9 @@ readers do not read off random characters that represent icons */
 
 .fa-grunt:before {
   content: "\f3ad"; }
+
+.fa-guitar:before {
+  content: "\f7a6"; }
 
 .fa-gulp:before {
   content: "\f3ae"; }
@@ -1883,6 +1976,9 @@ readers do not read off random characters that represent icons */
 .fa-heart:before {
   content: "\f004"; }
 
+.fa-heart-broken:before {
+  content: "\f7a9"; }
+
 .fa-heartbeat:before {
   content: "\f21e"; }
 
@@ -1910,6 +2006,9 @@ readers do not read off random characters that represent icons */
 .fa-hockey-puck:before {
   content: "\f453"; }
 
+.fa-holly-berry:before {
+  content: "\f7aa"; }
+
 .fa-home:before {
   content: "\f015"; }
 
@@ -1921,6 +2020,9 @@ readers do not read off random characters that represent icons */
 
 .fa-horse:before {
   content: "\f6f0"; }
+
+.fa-horse-head:before {
+  content: "\f7ab"; }
 
 .fa-hospital:before {
   content: "\f0f8"; }
@@ -1970,6 +2072,9 @@ readers do not read off random characters that represent icons */
 .fa-i-cursor:before {
   content: "\f246"; }
 
+.fa-icicles:before {
+  content: "\f7ad"; }
+
 .fa-id-badge:before {
   content: "\f2c1"; }
 
@@ -1978,6 +2083,9 @@ readers do not read off random characters that represent icons */
 
 .fa-id-card-alt:before {
   content: "\f47f"; }
+
+.fa-igloo:before {
+  content: "\f7ae"; }
 
 .fa-image:before {
   content: "\f03e"; }
@@ -2009,8 +2117,14 @@ readers do not read off random characters that represent icons */
 .fa-instagram:before {
   content: "\f16d"; }
 
+.fa-intercom:before {
+  content: "\f7af"; }
+
 .fa-internet-explorer:before {
   content: "\f26b"; }
+
+.fa-invision:before {
+  content: "\f7b0"; }
 
 .fa-ioxhost:before {
   content: "\f208"; }
@@ -2035,6 +2149,9 @@ readers do not read off random characters that represent icons */
 
 .fa-jenkins:before {
   content: "\f3b6"; }
+
+.fa-jira:before {
+  content: "\f7b1"; }
 
 .fa-joget:before {
   content: "\f3b7"; }
@@ -2336,6 +2453,9 @@ readers do not read off random characters that represent icons */
 .fa-memory:before {
   content: "\f538"; }
 
+.fa-mendeley:before {
+  content: "\f7b3"; }
+
 .fa-menorah:before {
   content: "\f676"; }
 
@@ -2374,6 +2494,9 @@ readers do not read off random characters that represent icons */
 
 .fa-minus-square:before {
   content: "\f146"; }
+
+.fa-mitten:before {
+  content: "\f7b5"; }
 
 .fa-mix:before {
   content: "\f3cb"; }
@@ -2434,6 +2557,9 @@ readers do not read off random characters that represent icons */
 
 .fa-mouse-pointer:before {
   content: "\f245"; }
+
+.fa-mug-hot:before {
+  content: "\f7b6"; }
 
 .fa-music:before {
   content: "\f001"; }
@@ -2804,11 +2930,20 @@ readers do not read off random characters that represent icons */
 .fa-r-project:before {
   content: "\f4f7"; }
 
+.fa-radiation:before {
+  content: "\f7b9"; }
+
+.fa-radiation-alt:before {
+  content: "\f7ba"; }
+
 .fa-rainbow:before {
   content: "\f75b"; }
 
 .fa-random:before {
   content: "\f074"; }
+
+.fa-raspberry-pi:before {
+  content: "\f7bb"; }
 
 .fa-ravelry:before {
   content: "\f2d9"; }
@@ -2843,6 +2978,9 @@ readers do not read off random characters that represent icons */
 .fa-reddit-square:before {
   content: "\f1a2"; }
 
+.fa-redhat:before {
+  content: "\f7bc"; }
+
 .fa-redo:before {
   content: "\f01e"; }
 
@@ -2872,6 +3010,9 @@ readers do not read off random characters that represent icons */
 
 .fa-resolving:before {
   content: "\f3e7"; }
+
+.fa-restroom:before {
+  content: "\f7bd"; }
 
 .fa-retweet:before {
   content: "\f079"; }
@@ -2942,6 +3083,12 @@ readers do not read off random characters that represent icons */
 .fa-sass:before {
   content: "\f41e"; }
 
+.fa-satellite:before {
+  content: "\f7bf"; }
+
+.fa-satellite-dish:before {
+  content: "\f7c0"; }
+
 .fa-save:before {
   content: "\f0c7"; }
 
@@ -2959,6 +3106,9 @@ readers do not read off random characters that represent icons */
 
 .fa-scroll:before {
   content: "\f70e"; }
+
+.fa-sd-card:before {
+  content: "\f7c2"; }
 
 .fa-search:before {
   content: "\f002"; }
@@ -3062,6 +3212,9 @@ readers do not read off random characters that represent icons */
 .fa-signature:before {
   content: "\f5b7"; }
 
+.fa-sim-card:before {
+  content: "\f7c4"; }
+
 .fa-simplybuilt:before {
   content: "\f215"; }
 
@@ -3073,6 +3226,18 @@ readers do not read off random characters that represent icons */
 
 .fa-sith:before {
   content: "\f512"; }
+
+.fa-skating:before {
+  content: "\f7c5"; }
+
+.fa-sketch:before {
+  content: "\f7c6"; }
+
+.fa-skiing:before {
+  content: "\f7c9"; }
+
+.fa-skiing-nordic:before {
+  content: "\f7ca"; }
 
 .fa-skull:before {
   content: "\f54c"; }
@@ -3094,6 +3259,9 @@ readers do not read off random characters that represent icons */
 
 .fa-slash:before {
   content: "\f715"; }
+
+.fa-sleigh:before {
+  content: "\f7cc"; }
 
 .fa-sliders-h:before {
   content: "\f1de"; }
@@ -3119,6 +3287,9 @@ readers do not read off random characters that represent icons */
 .fa-smoking-ban:before {
   content: "\f54d"; }
 
+.fa-sms:before {
+  content: "\f7cd"; }
+
 .fa-snapchat:before {
   content: "\f2ab"; }
 
@@ -3128,8 +3299,17 @@ readers do not read off random characters that represent icons */
 .fa-snapchat-square:before {
   content: "\f2ad"; }
 
+.fa-snowboarding:before {
+  content: "\f7ce"; }
+
 .fa-snowflake:before {
   content: "\f2dc"; }
+
+.fa-snowman:before {
+  content: "\f7d0"; }
+
+.fa-snowplow:before {
+  content: "\f7d2"; }
 
 .fa-socks:before {
   content: "\f696"; }
@@ -3166,6 +3346,9 @@ readers do not read off random characters that represent icons */
 
 .fa-soundcloud:before {
   content: "\f1be"; }
+
+.fa-sourcetree:before {
+  content: "\f7d3"; }
 
 .fa-spa:before {
   content: "\f5bb"; }
@@ -3329,6 +3512,9 @@ readers do not read off random characters that represent icons */
 .fa-surprise:before {
   content: "\f5c2"; }
 
+.fa-suse:before {
+  content: "\f7d6"; }
+
 .fa-swatchbook:before {
   content: "\f5c3"; }
 
@@ -3406,6 +3592,9 @@ readers do not read off random characters that represent icons */
 
 .fa-tencent-weibo:before {
   content: "\f1d5"; }
+
+.fa-tenge:before {
+  content: "\f7d7"; }
 
 .fa-terminal:before {
   content: "\f120"; }
@@ -3491,11 +3680,17 @@ readers do not read off random characters that represent icons */
 .fa-toggle-on:before {
   content: "\f205"; }
 
+.fa-toilet:before {
+  content: "\f7d8"; }
+
 .fa-toilet-paper:before {
   content: "\f71e"; }
 
 .fa-toolbox:before {
   content: "\f552"; }
+
+.fa-tools:before {
+  content: "\f7d9"; }
 
 .fa-tooth:before {
   content: "\f5c9"; }
@@ -3520,6 +3715,9 @@ readers do not read off random characters that represent icons */
 
 .fa-train:before {
   content: "\f238"; }
+
+.fa-tram:before {
+  content: "\f7da"; }
 
 .fa-transgender:before {
   content: "\f224"; }
@@ -3590,6 +3788,9 @@ readers do not read off random characters that represent icons */
 .fa-uber:before {
   content: "\f402"; }
 
+.fa-ubuntu:before {
+  content: "\f7df"; }
+
 .fa-uikit:before {
   content: "\f403"; }
 
@@ -3631,6 +3832,9 @@ readers do not read off random characters that represent icons */
 
 .fa-upload:before {
   content: "\f093"; }
+
+.fa-ups:before {
+  content: "\f7e0"; }
 
 .fa-usb:before {
   content: "\f287"; }
@@ -3709,6 +3913,9 @@ readers do not read off random characters that represent icons */
 
 .fa-users-cog:before {
   content: "\f509"; }
+
+.fa-usps:before {
+  content: "\f7e1"; }
 
 .fa-ussunnah:before {
   content: "\f407"; }
@@ -3932,6 +4139,9 @@ readers do not read off random characters that represent icons */
 .fa-yandex-international:before {
   content: "\f414"; }
 
+.fa-yarn:before {
+  content: "\f7e3"; }
+
 .fa-yelp:before {
   content: "\f1e9"; }
 
@@ -3972,7 +4182,22 @@ readers do not read off random characters that represent icons */
   width: auto; }
 
 /*!
- * Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.6.3 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/webfonts/fa-regular-400.eot");
+  src: url("../fonts/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/webfonts/fa-regular-400.woff2") format("woff2"), url("../fonts/webfonts/fa-regular-400.woff") format("woff"), url("../fonts/webfonts/fa-regular-400.ttf") format("truetype"), url("../fonts/webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
+
+.far {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400; }
+
+/*!
+ * Font Awesome Free 5.6.3 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 @font-face {
@@ -3988,7 +4213,7 @@ readers do not read off random characters that represent icons */
   font-weight: 900; }
 
 /*!
- * Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.6.3 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 @font-face {
@@ -4001,12 +4226,147 @@ readers do not read off random characters that represent icons */
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
 
-.header__home {
-  display: grid;
-  grid-template-columns: 1fr; }
+@font-face {
+  font-family: "overpass";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/overpass-webfont/overpass-thin.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/overpass-webfont/overpass-thin.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-webfont/overpass-thin.woff2") format("woff2"), url("../fonts/overpass-webfont/overpass-thin.woff") format("woff"), url("../fonts/overpass-webfont/overpass-thin.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
 
-.box-shadow {
-  box-shadow: var(--box-shadow--primary); }
+@font-face {
+  font-family: "overpass";
+  font-style: italic;
+  font-weight: 200;
+  src: url("../fonts/overpass-webfont/overpass-thin-italic.eot");
+  src: url("../fonts/overpass-webfont/overpass-thin-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-webfont/overpass-thin-italic.woff2") format("woff2"), url("../fonts/overpass-webfont/overpass-thin-italic.woff") format("woff"), url("../fonts/overpass-webfont/overpass-thin-italic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "overpass";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/overpass-webfont/overpass-extralight.eot");
+  src: url("../fonts/overpass-webfont/overpass-extralight.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-webfont/overpass-extralight.woff2") format("woff2"), url("../fonts/overpass-webfont/overpass-extralight.woff") format("woff"), url("../fonts/overpass-webfont/overpass-extralight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "overpass";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/overpass-webfont/overpass-extralight-italic.eot");
+  src: url("../fonts/overpass-webfont/overpass-extralight-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-webfont/overpass-extralight-italic.woff2") format("woff2"), url("../fonts/overpass-webfont/overpass-extralight-italic.woff") format("woff"), url("../fonts/overpass-webfont/overpass-extralight-italic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "overpass";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/overpass-webfont/overpass-light.eot");
+  src: url("../fonts/overpass-webfont/overpass-light.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-webfont/overpass-light.woff2") format("woff2"), url("../fonts/overpass-webfont/overpass-light.woff") format("woff"), url("../fonts/overpass-webfont/overpass-light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "overpass";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/overpass-webfont/overpass-light-italic.eot");
+  src: url("../fonts/overpass-webfont/overpass-light-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-webfont/overpass-light-italic.woff2") format("woff2"), url("../fonts/overpass-webfont/overpass-light-italic.woff") format("woff"), url("../fonts/overpass-webfont/overpass-light-italic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "overpass";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/overpass-webfont/overpass-regular.eot");
+  src: url("../fonts/overpass-webfont/overpass-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-webfont/overpass-regular.woff2") format("woff2"), url("../fonts/overpass-webfont/overpass-regular.woff") format("woff"), url("../fonts/overpass-webfont/overpass-regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "overpass";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/overpass-webfont/overpass-italic.eot");
+  src: url("../fonts/overpass-webfont/overpass-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-webfont/overpass-italic.woff2") format("woff2"), url("../fonts/overpass-webfont/overpass-italic.woff") format("woff"), url("../fonts/overpass-webfont/overpass-italic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "overpass";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/overpass-webfont/overpass-semibold.eot");
+  src: url("../fonts/overpass-webfont/overpass-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-webfont/overpass-semibold.woff2") format("woff2"), url("../fonts/overpass-webfont/overpass-semibold.woff") format("woff"), url("../fonts/overpass-webfont/overpass-semibold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "overpass";
+  font-style: italic;
+  font-weight: 600;
+  src: url("../fonts/overpass-webfont/overpass-semibold-italic.eot");
+  src: url("../fonts/overpass-webfont/overpass-semibold-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-webfont/overpass-semibold-italic.woff2") format("woff2"), url("../fonts/overpass-webfont/overpass-semibold-italic.woff") format("woff"), url("../fonts/overpass-webfont/overpass-semibold-italic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "overpass";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/overpass-webfont/overpass-bold.eot");
+  src: url("../fonts/overpass-webfont/overpass-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-webfont/overpass-bold.woff2") format("woff2"), url("../fonts/overpass-webfont/overpass-bold.woff") format("woff"), url("../fonts/overpass-webfont/overpass-bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "overpass";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/overpass-webfont/overpass-bold-italic.eot");
+  src: url("../fonts/overpass-webfont/overpass-bold-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-webfont/overpass-bold-italic.woff2") format("woff2"), url("../fonts/overpass-webfont/overpass-bold-italic.woff") format("woff"), url("../fonts/overpass-webfont/overpass-bold-italic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "overpass";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/overpass-webfont/overpass-extrabold.eot");
+  src: url("../fonts/overpass-webfont/overpass-extrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-webfont/overpass-extrabold.woff2") format("woff2"), url("../fonts/overpass-webfont/overpass-extrabold.woff") format("woff"), url("../fonts/overpass-webfont/overpass-extrabold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "overpass";
+  font-style: italic;
+  font-weight: 800;
+  src: url("../fonts/overpass-webfont/overpass-extrabold-italic.eot");
+  src: url("../fonts/overpass-webfont/overpass-extrabold-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-webfont/overpass-extrabold-italic.woff2") format("woff2"), url("../fonts/overpass-webfont/overpass-extrabold-italic.woff") format("woff"), url("../fonts/overpass-webfont/overpass-extrabold-italic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "overpass";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/overpass-webfont/overpass-heavy.eot");
+  src: url("../fonts/overpass-webfont/overpass-heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-webfont/overpass-heavy.woff2") format("woff2"), url("../fonts/overpass-webfont/overpass-heavy.woff") format("woff"), url("../fonts/overpass-webfont/overpass-heavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "overpass";
+  font-style: italic;
+  font-weight: 900;
+  src: url("../fonts/overpass-webfont/overpass-heavy-italic.eot");
+  src: url("../fonts/overpass-webfont/overpass-heavy-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-webfont/overpass-heavy-italic.woff2") format("woff2"), url("../fonts/overpass-webfont/overpass-heavy-italic.woff") format("woff"), url("../fonts/overpass-webfont/overpass-heavy-italic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "overpass-mono";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/overpass-mono-webfont/overpass-mono-light.eot");
+  src: url("../fonts/overpass-mono-webfont/overpass-mono-light.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-mono-webfont/overpass-mono-light.woff2") format("woff2"), url("../fonts/overpass-mono-webfont/overpass-mono-light.woff") format("woff"), url("../fonts/overpass-mono-webfont/overpass-mono-light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "overpass-mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/overpass-mono-webfont/overpass-mono-regular.eot");
+  src: url("../fonts/overpass-mono-webfont/overpass-mono-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-mono-webfont/overpass-mono-regular.woff2") format("woff2"), url("../fonts/overpass-mono-webfont/overpass-mono-regular.woff") format("woff"), url("../fonts/overpass-mono-webfont/overpass-mono-regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "overpass-mono";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/overpass-mono-webfont/overpass-mono-semibold.eot");
+  src: url("../fonts/overpass-mono-webfont/overpass-mono-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-mono-webfont/overpass-mono-semibold.woff2") format("woff2"), url("../fonts/overpass-mono-webfont/overpass-mono-semibold.woff") format("woff"), url("../fonts/overpass-mono-webfont/overpass-mono-semibold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "overpass-mono";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/overpass-mono-webfont/overpass-mono-bold.eot");
+  src: url("../fonts/overpass-mono-webfont/overpass-mono-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/overpass-mono-webfont/overpass-mono-bold.woff2") format("woff2"), url("../fonts/overpass-mono-webfont/overpass-mono-bold.woff") format("woff"), url("../fonts/overpass-mono-webfont/overpass-mono-bold.ttf") format("truetype"); }
 
 :root {
   --border-radius--small: 1rem;
@@ -4018,12 +4378,29 @@ readers do not read off random characters that represent icons */
   --border-width--medium: 3px;
   --border-width--large: 5px; }
 
+.header__home {
+  display: grid;
+  grid-template-columns: 1fr; }
+
+.box-shadow {
+  box-shadow: var(--box-shadow--primary); }
+
+:root {
+  --color-text-white: $aj-text--white;
+  --color-text-black: $aj-text--black;
+  --color-black-1000: $aj-color-black-1000;
+  --color-background--primary: $aj-background-color--primary;
+  --box-shadow--primary: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+  --font-size--medium: 1em;
+  --font-size--large: 3em;
+  --font-size--xlarge: 5em; }
+
 .aj-background-image {
-  --aj-c-image--Background--xs: url("../img/tranquil_576.jpeg");
-  --aj-c-image--Background--sm: url("../img/tranquil_768.jpeg");
-  --aj-c-image--Background--md: url("../img/tranquil_992.jpeg");
-  --aj-c-image--Background--lg: url("../img/tranquil_1200.jpeg");
-  --aj-c-image--Background--xl: url("../img/tranquil_2000.jpeg");
+  --aj-c-image--Background--xs: url("../img/ajbg_header_576.jpg");
+  --aj-c-image--Background--sm: url("../img/ajbg_header_768.jpg");
+  --aj-c-image--Background--md: url("../img/ajbg_header_992.jpg");
+  --aj-c-image--Background--lg: url("../img/ajbg_header_1200.jpg");
+  --aj-c-image--Background--xl: url("../img/ajbg_header_2000.jpg");
   --aj-c-background-image--Filter: url("../img/background-filter.svg#image_overlay"); }
   .aj-background-image::before {
     position: fixed;
@@ -4031,37 +4408,63 @@ readers do not read off random characters that represent icons */
     left: 0;
     z-index: -1;
     width: 100%;
-    height: 100%;
+    height: 50%;
     content: "";
     background-color: rgba(255, 255, 255, 0.98);
-    background-image: var(--aj-c-background-image--Background--xs);
-    filter: blur(1px) grayscale(70%);
+    background-image: var(--aj-c-image--Background--xs);
     background-repeat: no-repeat;
-    background-size: cover;
-    /* stylelint-disable */
-    /* stylelint-enable */ }
-    @media (max-width: 575.98px) {
-      .aj-background-image::before {
-        background-image: var(--aj-c-image--Background--xs-2x); } }
+    background-size: cover; }
     @media (max-width: 767.98px) {
       .aj-background-image::before {
+        height: 100%; } }
+    @media (min-width: 575.98px) {
+      .aj-background-image::before {
+        background-image: var(--aj-c-image--Background--xs); } }
+    @media (min-width: 767.98px) {
+      .aj-background-image::before {
         background-image: var(--aj-c-image--Background--sm); } }
-    @media (max-width: 991.98px) {
+    @media (min-width: 991.98px) {
       .aj-background-image::before {
         background-image: var(--aj-c-image--Background--md); } }
-    @media (max-width: 1199.98px) {
+    @media (min-width: 1199.98px) {
       .aj-background-image::before {
         background-image: var(--aj-c-image--Background--lg); } }
     @media (min-width: 1200px) {
       .aj-background-image::before {
         background-image: var(--aj-c-image--Background--xl); } }
 
+.aj-background--work {
+  --aj-c-image--Background-work--xs: url("../img/ajwork_header_576.jpg");
+  --aj-c-image--Background-work--sm: url("../img/ajwork_header_768.jpg");
+  --aj-c-image--Background-work--md: url("../img/ajwork_header_992.jpg");
+  --aj-c-image--Background-work--lg: url("../img/ajwork_header_1200.jpg");
+  --aj-c-image--Background-work--xl: url("../img/ajwork_header_2000.jpg");
+  --aj-c-background-image--Filter: url("../img/background-filter.svg#image_overlay");
+  background-color: whitesmoke;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  @media (min-width: 575.98px) {
+    .aj-background--work {
+      background-image: var(--aj-c-image--Background-work--xs); } }
+  @media (min-width: 767.98px) {
+    .aj-background--work {
+      background-image: var(--aj-c-image--Background-work--sm); } }
+  @media (min-width: 991.98px) {
+    .aj-background--work {
+      background-image: var(--aj-c-image--Background-work--md); } }
+  @media (min-width: 1199.98px) {
+    .aj-background--work {
+      background-image: var(--aj-c-image--Background-work--lg); } }
+  @media (min-width: 1200px) {
+    .aj-background--work {
+      background-image: var(--aj-c-image--Background-work--xl); } }
+
 /* stylelint-disable declaration-no-important */
 .border-radius--small {
   border-radius: var(--border-radius-small) !important; }
 
-.border-radius--medium,
-.btn {
+.border-radius--medium {
   border-radius: var(--border-radius-medium) !important; }
 
 .border-radius--large {
@@ -4091,81 +4494,63 @@ readers do not read off random characters that represent icons */
   text-align: center !important; }
 
 /* stylelint-enable */
-:root {
-  --color-text-white: $aj-text--white;
-  --color-text-black: $aj-text--black;
-  --color-black-1000: $aj-color-black-1000;
-  --button-color--primary: $aj-button-color--primary;
-  --button-color--primary-accent: $aj-button-color--primary-accent;
-  --color-background--primary: $aj-background-color--primary;
-  --box-shadow--primary: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
-  --button-primary--background: var(--button-color--primary);
-  --button-primary--border: var(--button-color--primary);
-  --button-primary--background-hover: var(--button-color--primary-accent);
-  --button-primary--border-hover: var(--button-color--primary-accent);
-  --font-size--medium: 1em;
-  --font-size--large: 3em;
-  --font-size--xlarge: 5em; }
+/*
+ * Extra utilities
+ */
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1; }
+
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1; } }
+
+.overflow-hidden {
+  overflow: hidden; }
 
 body {
   background-color: var(--color-background--primary);
-  font-size: 16px; }
+  font-size: 16px;
+  font-family: 'overpass-mono'; }
 
 @media (min-width: 768px) {
   .fa-ul {
     margin-left: 0; } }
 
+@media (max-width: 767.98px) {
+  .mockup-screenshot {
+    width: 100%; } }
+
 .btn-primary {
-  background-color: var(--button-primary--background);
-  border-color: var(--button-primary--border); }
+  background-color: #393F44;
+  border-color: #292E34; }
   .btn-primary:hover {
-    background-color: var(--button-primary--background-hover);
-    border-color: var(--button-primary--border-hover); }
+    background-color: #292E34;
+    border-color: #292E34;
+    text-decoration: none; }
+
+.btn-outline {
+  border-color: #292E34; }
+  .btn-outline:hover {
+    border-color: #292E34; }
+
+.btn-outline-secondary {
+  color: #303030; }
 
 .btn-large {
   font-size: 1.2em; }
 
-:root {
-  --jumbotron-padding-y: 3rem; }
+.site-header {
+  background-color: transparent;
+  background-color: rgba(58, 39, 43, 0.85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px); }
 
-.jumbotron {
-  padding-top: var(--jumbotron-padding-y);
-  padding-bottom: var(--jumbotron-padding-y);
-  margin-bottom: 0;
-  background-color: transparent; }
+.site-header a {
+  color: #fff;
+  transition: ease-in-out color .15s; }
 
-@media (min-width: 768px) {
-  .jumbotron {
-    padding-top: calc(var(--jumbotron-padding-y) * 2);
-    padding-bottom: calc(var(--jumbotron-padding-y) * 2); } }
-
-.jumbotron p:last-child {
-  margin-bottom: 0; }
-
-.jumbotron-heading {
-  font-weight: 300; }
-
-.jumbotron .container {
-  max-width: 40rem; }
-
-.aj-navbar--background {
-  background-color: rgba(255, 255, 255, 0.5); }
-
-.navbar {
-  z-index: 10; }
-  .navbar .navbar-brand img {
-    margin-right: 5px;
-    border-radius: 50%; }
-
-.navbar-slide-background {
-  background-color: rgba(255, 255, 255, 0.5); }
-
-.navbar-dark .navbar-toggler {
-  border-color: transparent; }
-
-i.navbar-toggler::before {
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased; }
+.site-header a:hover {
+  color: #fff;
+  text-decoration: underline; }

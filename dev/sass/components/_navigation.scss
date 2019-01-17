@@ -1,33 +1,21 @@
 //
 // Adam J. Jolicoeur (https://www.adamjolicoeur.com)
-// Copyright 2008-2018 Adam J. Jolicoeur
+// Copyright 2008-2019 Adam J. Jolicoeur
 // Licensed under Apache-2.0 (https://github.com/mindreeper2420/mindreeper2420.github.io/blob/master/LICENSE)
 //
 
-.aj-navbar--background {
-  background-color: rgba(255, 255, 255, 0.5);
+.site-header {
+  background-color: transparent;
+  // background-color: rgba(0, 0, 0, .85);
+  background-color: rgba(58, 39, 43, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
 }
-.navbar {
-  z-index: 10;
-  .navbar-brand {
-    img {
-      margin-right: 5px;
-      border-radius: 50%;
-    }
-  }
+.site-header a {
+  color: #fff;
+  transition: ease-in-out color .15s;
 }
-.navbar-slide-background {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-.navbar-dark .navbar-toggler {
-  border-color: transparent;
-}
-i.navbar-toggler {
-  &::before {
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-  }
+.site-header a:hover {
+  color: #fff;
+  text-decoration: underline;
 }

@@ -1,15 +1,19 @@
-/*!
-** Adam J. Jolicoeur (https://www.adamjolicoeur.com)
-** Copyright 2008-2018 Adam J. Jolicoeur
-** Licensed under Apache-2.0 (https://github.com/mindreeper2420/mindreeper2420.github.io/blob/master/LICENSE)
-*/
+//
+// Adam J. Jolicoeur (https://www.adamjolicoeur.com)
+// Copyright 2008-2019 Adam J. Jolicoeur
+// Licensed under Apache-2.0 (https://github.com/mindreeper2420/mindreeper2420.github.io/blob/master/LICENSE)
+//
 
 // Variables
+@import './colors';
 @import './variables';
 
-@import './fontawesome/scss/fontawesome.scss';
-@import './fontawesome/scss/solid.scss';
-@import './fontawesome/scss/brands.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+
+@import './fonts';
 
 // Mixins
 @import './mixins';
@@ -21,4 +25,4 @@
 @import './pages/all';
 
 // Components
-@import './components/all';
+@import './components';
