@@ -1,6 +1,7 @@
 body {
   background-color: var(--color-background--primary);
   font-size: $font-size-base;
+  font-family: 'overpass-mono';
 }
 .header__home {
   @extend %grid;
@@ -8,5 +9,10 @@ body {
 @media (min-width: 768px) {
   .fa-ul {
     margin-left: 0;
+  }
+}
+.mockup-screenshot {
+  @media (max-width: 767.98px) {
+    width: 100%;
   }
 }

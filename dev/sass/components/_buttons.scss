@@ -1,19 +1,29 @@
 //
 // Adam J. Jolicoeur (https://www.adamjolicoeur.com)
-// Copyright 2008-2018 Adam J. Jolicoeur
+// Copyright 2008-2019 Adam J. Jolicoeur
 // Licensed under Apache-2.0 (https://github.com/mindreeper2420/mindreeper2420.github.io/blob/master/LICENSE)
 //
 
 // Button styles
 .btn {
-  @extend %border-radius--medium;
+  // @extend %border-radius--medium;
   &-primary {
-    background-color: var(--button-primary--background);
-    border-color: var(--button-primary--border);
+    background-color: $aj-button-color--primary;
+    border-color: $aj-button-color--primary-accent;
     &:hover {
-      background-color: var(--button-primary--background-hover);
-      border-color: var(--button-primary--border-hover);
+      background-color: $aj-button-color--primary-accent;
+      border-color: $aj-button-color--primary-accent;
+      text-decoration: none;
     }
+  }
+  &-outline {
+    border-color: $aj-button-color--primary-accent;
+    &:hover {
+      border-color: $aj-button-color--primary-accent;
+    }
+  }
+  &-outline-secondary {
+    color: $aj-text--black;
   }
   &-large {
     font-size: 1.2em;

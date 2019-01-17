@@ -12,7 +12,9 @@ var sourcemaps = require('gulp-sourcemaps');
 
 // Set the banner content
 var banner = ['/*!\n',
-' * <%= pkg.title %> v<%= pkg.version %>\n',
+' * <%= pkg.title %> <%=(pkg.homepage) %> | v<%= pkg.version %>\n',
+' * Copyright 2008-2019 | <%= pkg.title %>\n',
+' * Licensed under <%= pkg.license %> | (<%= pkg.licenseUrl %>)\n',
 ' */\n',
 ''
 ].join('');
@@ -43,6 +45,15 @@ gulp.task('css', ['sass'], function() {
     .pipe(gulp.dest('./css'));
 });
 
+// copy FA5 webfonts
+gulp.task('webfonts', function() {
+  return gulp.src("node_modules/@fortawesome/fontawesome-free/webfonts/**")
+  .pipe(gulp.dest('fonts/webfonts'))
+  .pipe(browserSync.reload({
+    stream: true
+  }));
+});
+
 // compile custom javascript file
 gulp.task('js', function() {
   return gulp.src("dev/js/*.js")
@@ -51,12 +62,6 @@ gulp.task('js', function() {
   .pipe(browserSync.reload({
     stream: true
   }));
-});
-
-// copy particlesjs file
-gulp.task('particles', function() {
-  gulp.src('./node_modules/particlesjs/dist/particles.min.js')
-  .pipe(gulp.dest('./js'));
 });
 
 // compile pug templates
@@ -92,7 +97,7 @@ gulp.task('sass-watch', ['css'], function (done) {
 });
 
 // build distribution folder
-gulp.task('dist', ['css', 'views', 'js', 'particles'], function () {
+gulp.task('dist', ['css', 'views', 'js'], function () {
   return gulp.src('./*.html', './css')
     .pipe(gulp.dest('./dist'))
 });
@@ -117,4 +122,4 @@ gulp.task('serve', ['css', 'js'], function () {
   gulp.watch('*.html').on('change', browserSync.reload);
 });
 
-gulp.task('default', ['css', 'js', 'particles', 'views']);
+gulp.task('default', ['css', 'js', 'views']);

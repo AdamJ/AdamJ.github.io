@@ -1,51 +1,11 @@
-nav#navbarHeader.navbar-slide-background.collapse
-  .container-fluid
-    .row
-      .col-sm-4.offset-md-1.py-4
-        ul.fa-ul
-          li
-            | I strive to design and create amazing things. From personal to professional,
-            | my goal is to create a product that will you not only love,
-            | but your customers will love to visit over and over again.
-      .col-sm-2.py-2
-        ul.fa-ul(style='margin-top: 15px;')
-          li
-            a.text-size__medium(href='https://github.com/mindreeper2420')
-              span.fa-li
-                i.fab.fa-github.fa-lg
-              | GitHub
-          li
-            a.text-size__medium(href='https://gitlab.com/mindreeper2420')
-              span.fa-li
-                i.fab.fa-gitlab.fa-lg
-              | GitLab
-      .col-sm-2.py-2
-        ul.fa-ul(style='margin-top: 15px;')
-          li
-            a.text-size__medium(href='http://www.coroflot.com/ajolicoeur/profile')
-              span.fa-li
-                i.fas.fa-image.fa-lg
-              | Coroflot
-          li
-            a.text-size__medium(href='https://dribbble.com/ajolicoeur')
-              span.fa-li
-                i.fab.fa-dribbble.fa-lg
-              | Dribbble
-      .col-sm-2.py-2
-        ul.fa-ul(style='margin-top: 15px;')
-          li
-            a.text-size__medium(href='https://twitter.com/mindreeper2420')
-              span.fa-li
-                i.fab.fa-twitter.fa-lg
-              | Twitter
-          li
-            a.text-size__medium(href='mailto:mindreeper2420@gmail.com')
-              span.fa-li
-                i.fas.fa-envelope.fa-lg
-              | Email
-.navbar.navbar-light.box-shadow.aj-navbar--background
-    .container-fluid.d-flex.justify-content-between
-        a.navbar-brand.d-flex.align-items-center(href='index.html')
-          img(src='img/master_picture.png', width='30', height='30', alt='My headshot').d-inline-block.align-top
-          | Adam J. Jolicoeur
-        i.navbar-toggler.fas.fa-bars.fa-2x.collapsed(data-toggle='collapse', data-target='#navbarHeader', aria-controls='navbarHeader', aria-expanded='false', aria-label='Toggle navigation')
+nav.navbar.navbar-expand-lg.site-header.sticky-top
+  a.navbar-brand(href="/") Adam J. Jolicoeur
+  button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNavAltMarkup", aria-controls="navbarNavAltMarkup", aria-expanded="false", aria-label="Toggle navigation")
+    i.fas.fa-bars
+  .collapse.navbar-collapse#navbarNavAltMarkup
+    .navbar-nav
+      a.nav-item.nav-link(href="#") About
+      a.nav-item.nav-link(href="#") Code
+      a.nav-item.nav-link(href="#") Designs
+      a.nav-item.nav-link(href="#") Demos
+      a.nav-item.nav-link(href="#") Contact
