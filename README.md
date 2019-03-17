@@ -1,4 +1,4 @@
-[![Build Status](https://adamjolicoeur.visualstudio.com/adamjolicoeur.com/_apis/build/status/adamjolicoeur.com-Node.js%20With%20gulp-CI)](https://adamjolicoeur.visualstudio.com/adamjolicoeur.com/_build/latest?definitionId=6)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/30f09242-806a-441a-b0e5-873c0bb73f93/deploy-status)](https://app.netlify.com/sites/mindreeper2420/deploys)
 
 # Mindreeper2420.github.io
 A repo for my own personal site, hosted on GitHub.
