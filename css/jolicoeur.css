@@ -4385,15 +4385,50 @@ readers do not read off random characters that represent icons */
 .box-shadow {
   box-shadow: var(--box-shadow--primary); }
 
-:root {
-  --color-text-white: $aj-text--white;
-  --color-text-black: $aj-text--black;
-  --color-black-1000: $aj-color-black-1000;
-  --color-background--primary: $aj-background-color--primary;
-  --box-shadow--primary: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
-  --font-size--medium: 1em;
-  --font-size--large: 3em;
-  --font-size--xlarge: 5em; }
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1; }
+
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1; } }
+
+/* stylelint-disable declaration-no-important */
+.medium-heading {
+  font-size: var(--font-size--medium); }
+
+.large-heading {
+  font-size: var(--font-size--large); }
+
+.xlarge-heading {
+  font-size: var(--font-size--xlarge); }
+
+.text-center {
+  text-align: center !important; }
+
+/* stylelint-enable */
+/*
+ * Extra utilities
+ */
+.overflow-hidden {
+  overflow: hidden; }
+
+.min-height-20 {
+  min-height: 20em; }
+
+body {
+  background-color: var(--color-background--primary);
+  font-size: 16px;
+  font-family: 'overpass-mono'; }
+
+@media (min-width: 768px) {
+  .fa-ul {
+    margin-left: 0; } }
+
+@media (max-width: 767.98px) {
+  .mockup-screenshot {
+    width: 100%; } }
 
 .aj-background-image {
   --aj-c-image--Background--xs: url("../img/ajbg_header_576.jpg");
@@ -4538,71 +4573,6 @@ readers do not read off random characters that represent icons */
       .aj-background--404::before {
         background-image: var(--aj-c-image--Background-404--xl); } }
 
-/* stylelint-disable declaration-no-important */
-.border-radius--small {
-  border-radius: var(--border-radius-small) !important; }
-
-.border-radius--medium {
-  border-radius: var(--border-radius-medium) !important; }
-
-.border-radius--large {
-  border-radius: var(--border-radius-large) !important; }
-
-.border-width--small {
-  border-width: var(--border-width--small) !important; }
-
-.border-width--medium {
-  border-width: var(--border-width--medium) !important; }
-
-.border-width--large {
-  border-width: var(--border-width--large) !important; }
-
-/* stylelint-enable */
-/* stylelint-disable declaration-no-important */
-.medium-heading {
-  font-size: var(--font-size--medium) !important; }
-
-.large-heading {
-  font-size: var(--font-size--large) !important; }
-
-.xlarge-heading {
-  font-size: var(--font-size--xlarge) !important; }
-
-.text-center {
-  text-align: center !important; }
-
-/* stylelint-enable */
-/*
- * Extra utilities
- */
-.flex-equal > * {
-  -ms-flex: 1;
-  flex: 1; }
-
-@media (min-width: 768px) {
-  .flex-md-equal > * {
-    -ms-flex: 1;
-    flex: 1; } }
-
-.overflow-hidden {
-  overflow: hidden; }
-
-.min-height-20 {
-  min-height: 20em; }
-
-body {
-  background-color: var(--color-background--primary);
-  font-size: 16px;
-  font-family: 'overpass-mono'; }
-
-@media (min-width: 768px) {
-  .fa-ul {
-    margin-left: 0; } }
-
-@media (max-width: 767.98px) {
-  .mockup-screenshot {
-    width: 100%; } }
-
 .btn-primary {
   background-color: #393F44;
   border-color: #292E34; }
@@ -4622,27 +4592,27 @@ body {
 .btn-large {
   font-size: 1.2em; }
 
-.site-header {
+.aj-site-header {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) -10%, rgba(0, 0, 0, 0) 100%);
   text-align: center;
   padding: 0.5rem 0 5rem;
   font-size: 1.25rem; }
 
-.site-header {
+.aj-site-header {
   list-style: none;
   margin: 0;
   padding: 0; }
-  .site-header li {
+  .aj-site-header li {
     display: inline-flex;
     color: #fff; }
-  .site-header a {
+  .aj-site-header a {
     position: relative;
     padding: 1rem 0 0.5rem;
     margin: 0 1.5rem;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase; }
-    .site-header a::after {
+    .aj-site-header a::after {
       content: '';
       position: absolute;
       left: 50%;
@@ -4653,7 +4623,7 @@ body {
       height: 1px;
       background-color: rgba(255, 255, 255, 0.8);
       transition: transform 250ms; }
-  .site-header a:hover {
+  .aj-site-header a:hover {
     color: #fff; }
-    .site-header a:hover::after {
+    .aj-site-header a:hover::after {
       transform: translateX(-50%) scaleX(1); }

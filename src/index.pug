@@ -15,8 +15,9 @@ html(lang='en')
       .d-md-flex.flex-md-equal.w-100.min-height-20
         .d-md-flex.align-items-center.justify-content-center.bg-white.pt-3.px-3.pt-md-5.px-md-5.text-center.text-white.overflow-hidden
           .my-3.py-3
-            button.btn.btn-primary.mb-2(href="#") Reach Out
-            button.btn.btn-outline-secondary.mb-2(href="#") Explore My Work
+            a.btn.btn-primary.mb-2.mr-2(href="#reachOut") Reach Out
+            a.btn.btn-outline-secondary.mb-2.mr-2(href="prototypes.html") Explore My Work
+            a.btn.btn-secondary.mb-2(href="https://www.adamjolicoeur.com/DesignSprint/", target="top") Design Sprints
         .d-md-flex.align-items-center.justify-content-center.bg-white.pt-3.px-3.pt-md-5.px-md-5.overflow-hidden
           .my-3.py-3
             p.lead
@@ -43,13 +44,17 @@ html(lang='en')
         .pt-3.px-3.pt-md-5.px-md-5.overflow-hidden
           .my-3.py-3
             img(src="img/macbook.svg", alt="Mockup screenshot").mockup-screenshot
-      .d-md-flex.flex-md-equal.w-100
+      .d-md-flex.flex-md-equal.w-100#reachOut
         .d-md-flex.align-items-center.justify-content-center.bg-white.pt-3.px-3.pt-md-5.px-md-5.text-center.overflow-hidden
           .my-3.py-3
             p.lead
               | Reach out via these methods
         .bg-white.pt-3.px-3.pt-md-5.px-md-5.overflow-hidden
-          .my-3.py-3
-            button.btn.btn-primary.mb-2(href="#") Reach Out
+          .my-3
+            ul.list-group.list-group-horizontal
+              li.list-group-item
+                a.mb-2(href="mailto:mindreeper2420@gmail.com", target="top") Email
+              li.list-group-item
+                a.mb-2(href="https://www.linkedin.com/in/ajjolicoeur/", target="top") LinkedIn
     footer
       include includes/scripts.pug

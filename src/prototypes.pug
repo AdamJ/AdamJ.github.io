@@ -1,0 +1,93 @@
+doctype html
+html(lang='en')
+  include includes/head.pug
+
+  body
+    //- Google Tag Manager (noscript)
+    noscript
+      iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-KHQQJJQ', height='0', width='0', style='display:none;visibility:hidden')
+    .aj-background-image-full
+    include includes/navigation.pug
+    main
+      .d-md-flex.flex-md-equal.w-100.text-white
+        .d-md-flex.align-items-center.justify-content-center.pt-3.px-3.pt-md-5.px-md-5.text-center.overflow-hidden
+          .my-3.py-3
+            h1.display-4.font-weight-normal Prototypes
+        .d-md-flex.align-items-center.justify-content-center.pt-3.px-3.pt-md-5.px-md-5.overflow-hidden
+          .my-3.py-3
+            p.lead
+              | When I work on a design, I prototype as I go. This allows me to see what I'm doing in a working environment, while keeping expectations realistic.
+            p Below you will find links to various prototypes from my years of work.
+      .d-md-flex.flex-md-equal.bg-white.mb-2.py-2.px-5
+        h2 Site Prototypes
+        table.table.table-borderless
+          thead
+            tr
+              th(scope="col") Project
+              th(scope="col") URL
+          tbody
+            tr
+              td
+                a(href="", target="top") PatternFly 4 website
+              td
+                a(href="https://pf4testbench.netlify.com", target="top") PF4 Site test bench
+            tr
+              td
+                a(href="https://github.com/mindreeper2420/openshift.io", target="top") OpenShift.io
+                  i.fab.fa-github.ml-2
+            tr
+              td KubeVirt.io
+            tr
+              td
+                a(href="https://github.com/mindreeper2420/TheScoutersLodge", target="top") The Scouters Lodge A.F. &amp; A.M.
+                  i.fab.fa-github.ml-2
+              td
+                a(href="https://www.adamjolicoeur.com/TheScoutersLodge/", target="top") TheScoutersLodge.org
+            tr
+              td Rufus Putnam Lodge A.F. &amp; A.M.
+            tr
+              td
+                a(href="https://github.com/mindreeper2420/design-tracker-template/", target="top") Design Tracker
+                  i.fab.fa-github.ml-2
+              td
+                a(href="https://www.adamjolicoeur.com/design-tracker-template/", target="top") design-tracker-template/
+            tr
+              td
+                a(href="https://github.com/mindreeper2420/feature-flag-prototype", target="top") Feature Flag prototype
+                  i.fab.fa-github.ml-2
+              td
+                a(href="https://www.adamjolicoeur.com/feature-flag-prototype/", target="top") feature-flag-prototype/
+            tr
+              td
+                a(href="https://github.com/mindreeper2420/testing_environment", target="top") Agile Development Test Environment
+                  i.fab.fa-github.ml-2
+              td
+                a(href="https://www.adamjolicoeur.com/testing_environment/", target="top") testing_environment/
+      .d-md-flex.flex-md-equal.bg-white.py-2.px-5
+        h2 Navigation Prototypes
+        table.table.table-borderless
+          thead
+            tr
+              th(scope="col") Project
+              th(scope="col") URL
+          tbody
+            tr
+              td
+                a(href="https://github.com/mindreeper2420/leftnav-prototype", target="top") Left navigation
+                  i.fab.fa-github.ml-2
+              td
+                a(href="https://www.adamjolicoeur.com/leftnav-prototype/", target="top") left-nav prototype
+            tr
+              td
+                a(href="https://github.com/mindreeper2420/centernav", target="top") Center navigation
+                  i.fab.fa-github.ml-2
+              td
+                a(href="https://www.adamjolicoeur.com/centernav/", target="top") center-nav prototype
+            tr
+              td
+                a(href="https://github.com/mindreeper2420/megamenu", target="top") Megamenu navigation
+                  i.fab.fa-github.ml-2
+              td
+                a(href="https://www.adamjolicoeur.com/megamenu/", target="top") megamenu prototype
+    footer
+      include includes/scripts.pug
