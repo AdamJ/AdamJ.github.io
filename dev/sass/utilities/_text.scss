@@ -6,15 +6,29 @@
 
 // Text
 
+@mixin text($size: null, $lineHeight: null, $weight: null) {
+  @if $size != null {
+    font-size: $size;
+  }
+
+  @if $lineHeight != null {
+    line-height: $lineHeight;
+  }
+
+  @if $weight != null {
+    font-weight: $weight;
+  }
+}
+
 /* stylelint-disable declaration-no-important */
 .medium-heading {
-  font-size: var(--font-size--medium) !important;
+  @include text(var(--font-size--medium));
 }
 .large-heading {
-  font-size: var(--font-size--large) !important;
+  @include text(var(--font-size--large));
 }
 .xlarge-heading {
-  font-size: var(--font-size--xlarge) !important;
+  @include text(var(--font-size--xlarge));
 }
 .text-center {
   text-align: center !important;

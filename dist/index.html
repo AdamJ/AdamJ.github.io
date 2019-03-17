@@ -10,7 +10,7 @@
     <link rel="shortcut icon" type="image/png" href="/favicon.png">
     <link rel="apple-touch-icon" href="img/touch/apple-touch-icon.png">
     <link rel="manifest" href="/manifest.json">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/jolicoeur.min.css">
     <script>
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -25,24 +25,19 @@
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHQQJJQ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <div class="aj-background-image"></div>
-    <!--nav.navbar.navbar-expand-lg.site-header.sticky-top
-    a.navbar-brand(href="/") Adam J. Jolicoeur
-    button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNavAltMarkup", aria-controls="navbarNavAltMarkup", aria-expanded="false", aria-label="Toggle navigation")
-      i.fas.fa-bars
-    .collapse.navbar-collapse#navbarNavAltMarkup
-      .navbar-nav
-        a.nav-item.nav-link(href="about.html") About
-        a.nav-item.nav-link(href="code.html") Code
-        a.nav-item.nav-link(href="designs.html") Designs
-        a.nav-item.nav-link(href="contact.html") Contact
-    -->
-    <!---->
     <nav class="sticky-top">
-      <ul class="site-header">
+      <ul class="aj-site-header">
         <li><a href="/">Adam J. Jolicoeur</a></li>
-        <li><a href="about.html">About</a><a href="code.html">Code</a><a href="designs.html">Designs</a><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="prototypes.html">Prototypes</a></li>
       </ul>
     </nav>
+    <!--
+    a(href="code.html") Code
+    a(href="designs.html") Designs
+    a(href="contact.html") Contact
+    -->
+    <!---->
     <main>
       <div class="position-relative overflow-hidden p-3 p-md-5 text-white">
         <div class="col-md-10 p-lg-8 mx-auto my-5">
@@ -51,10 +46,7 @@
       </div>
       <div class="d-md-flex flex-md-equal w-100 min-height-20">
         <div class="d-md-flex align-items-center justify-content-center bg-white pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-          <div class="my-3 py-3">
-            <button class="btn btn-primary mb-2" href="#">Reach Out</button>
-            <button class="btn btn-outline-secondary mb-2" href="#">Explore My Work</button>
-          </div>
+          <div class="my-3 py-3"><a class="btn btn-primary mb-2 mr-2" href="#reachOut">Reach Out</a><a class="btn btn-outline-secondary mb-2 mr-2" href="prototypes.html">Explore My Work</a><a class="btn btn-secondary mb-2" href="https://www.adamjolicoeur.com/DesignSprint/" target="top">Design Sprints</a></div>
         </div>
         <div class="d-md-flex align-items-center justify-content-center bg-white pt-3 px-3 pt-md-5 px-md-5 overflow-hidden">
           <div class="my-3 py-3">
@@ -86,23 +78,26 @@
           <div class="my-3 py-3"><img class="mockup-screenshot" src="img/macbook.svg" alt="Mockup screenshot"></div>
         </div>
       </div>
-      <div class="d-md-flex flex-md-equal w-100">
+      <div class="d-md-flex flex-md-equal w-100" id="reachOut">
         <div class="d-md-flex align-items-center justify-content-center bg-white pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
           <div class="my-3 py-3">
             <p class="lead">Reach out via these methods</p>
           </div>
         </div>
         <div class="bg-white pt-3 px-3 pt-md-5 px-md-5 overflow-hidden">
-          <div class="my-3 py-3">
-            <button class="btn btn-primary mb-2" href="#">Reach Out</button>
+          <div class="my-3">
+            <ul class="list-group list-group-horizontal">
+              <li class="list-group-item"><a class="mb-2" href="mailto:mindreeper2420@gmail.com" target="top">Email</a></li>
+              <li class="list-group-item"><a class="mb-2" href="https://www.linkedin.com/in/ajjolicoeur/" target="top">LinkedIn</a></li>
+            </ul>
           </div>
         </div>
       </div>
     </main>
     <footer>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </footer>
   </body>
 </html>

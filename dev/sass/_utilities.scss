@@ -5,26 +5,12 @@
 //
 
 // Site utilities
-@import "./utilities/variables";
-@import "./utilities/backgrounds";
-@import "./utilities/background-variants";
-@import "./utilities/borders";
+@import "./utilities/flex";
 @import "./utilities/text";
 
 /*
  * Extra utilities
  */
-
-.flex-equal > * {
-  -ms-flex: 1;
-  flex: 1;
-}
-@media (min-width: 768px) {
-  .flex-md-equal > * {
-    -ms-flex: 1;
-    flex: 1;
-  }
-}
 
 .overflow-hidden { overflow: hidden; }
 

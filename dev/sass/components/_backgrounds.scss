@@ -4,7 +4,9 @@
 // Licensed under Apache-2.0 (https://github.com/mindreeper2420/mindreeper2420.github.io/blob/master/LICENSE)
 //
 
-.aj-background-image {
+$block: ".aj";
+
+#{$block}-background-image {
   --aj-c-image--Background--xs: url("#{$aj-image-path}/ajbg_header_576.jpg");
   --aj-c-image--Background--sm: url("#{$aj-image-path}/ajbg_header_768.jpg");
   --aj-c-image--Background--md: url("#{$aj-image-path}/ajbg_header_992.jpg");
@@ -53,7 +55,7 @@
   }
 }
 
-.aj-background-image-full {
+#{$block}-background-image-full {
   --aj-c-image--Background--xs: url("#{$aj-image-path}/ajbg_header_576.jpg");
   --aj-c-image--Background--sm: url("#{$aj-image-path}/ajbg_header_768.jpg");
   --aj-c-image--Background--md: url("#{$aj-image-path}/ajbg_header_992.jpg");
@@ -102,7 +104,7 @@
   }
 }
 
-.aj-background--work {
+#{$block}-background--work {
   --aj-c-image--Background-work--xs: url("#{$aj-image-path}/ajwork_header_576.jpg");
   --aj-c-image--Background-work--sm: url("#{$aj-image-path}/ajwork_header_768.jpg");
   --aj-c-image--Background-work--md: url("#{$aj-image-path}/ajwork_header_992.jpg");
@@ -137,7 +139,7 @@
   background-size: contain;
 }
 
-.aj-background--404 {
+#{$block}-background--404 {
   --aj-c-image--Background-404--xs: url("#{$aj-image-path}/tranquil_576.jpeg");
   --aj-c-image--Background-404--sm: url("#{$aj-image-path}/tranquil_768.jpeg");
   --aj-c-image--Background-404--md: url("#{$aj-image-path}/tranquil_992.jpeg");
