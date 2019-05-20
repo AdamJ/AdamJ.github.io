@@ -12,10 +12,11 @@
     "publish": "gulp && github_changelog_generator -u mindreeper2420 -p mindreeper2420.github.io"
   },
   "dependencies": {
-    "bootstrap": "4.3.1",
-    "jquery": "3.4.0",
-    "popper.js": "1.15.0",
-    "@fortawesome/fontawesome-free": "5.8.1"
+    "bootstrap": ">=4.3.1",
+    "@fortawesome/fontawesome-free": ">=5.8.2",
+    "lodash": ">=4.17.11",
+    "sshpk": ">=1.13.2",
+    "tar": ">=4.4.2"
   },
   "devDependencies": {
     "autoprefixer": "8.6.3",
