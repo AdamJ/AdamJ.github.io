@@ -20,22 +20,33 @@
       })(window,document,'script','dataLayer','GTM-KHQQJJQ');
     </script>
   </head>
-  <body>
+  <body class="prototypes">
     <noscript>
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHQQJJQ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <div class="aj-background-image-full"></div>
-    <nav class="sticky-top">
-      <ul class="aj-site-header">
-        <li><a href="/">Adam J. Jolicoeur</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="prototypes.html">Prototypes</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg sticky-top aj-site-header"><a class="navbar-brand" href="/">Adam J. Jolicoeur</a><a class="menu-button [ js-menu-button ]" href="#" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler">
+        <div class="menu-icon"><span></span><span></span><span></span><span></span></div></a>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="prototypes.html">Prototypes</a></li>
+          <li class="nav-item"><a class="nav-link" href="code.html">Code</a></li>
+        </ul>
+      </div>
     </nav>
     <!--
-    a(href="code.html") Code
-    a(href="designs.html") Designs
-    a(href="contact.html") Contact
+    ul.aj-site-header
+      li
+        a(href="about.html") About
+      li
+        a(href="prototypes.html") Prototypes
+      li
+        a(href="code.html") Code
+      li
+        a(href="designs.html") Designs
+      li
+        a(href="contact.html") Contact
     -->
     <!---->
     <main>
@@ -52,78 +63,91 @@
           </div>
         </div>
       </div>
-      <div class="d-md-flex flex-md-equal bg-white mb-2 py-2 px-5">
-        <h2>Site Prototypes</h2>
-        <table class="table table-borderless">
-          <thead>
-            <tr>
-              <th scope="col">Project</th>
-              <th scope="col">URL</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a href="" target="top">PatternFly 4 website</a></td>
-              <td><a href="https://pf4testbench.netlify.com" target="top">PF4 Site test bench</a></td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/mindreeper2420/openshift.io" target="top">OpenShift.io<i class="fab fa-github ml-2"></i></a></td>
-            </tr>
-            <tr>
-              <td>KubeVirt.io</td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/mindreeper2420/TheScoutersLodge" target="top">The Scouters Lodge A.F. &amp; A.M.<i class="fab fa-github ml-2"></i></a></td>
-              <td><a href="https://www.adamjolicoeur.com/TheScoutersLodge/" target="top">TheScoutersLodge.org</a></td>
-            </tr>
-            <tr>
-              <td>Rufus Putnam Lodge A.F. &amp; A.M.</td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/mindreeper2420/design-tracker-template/" target="top">Design Tracker<i class="fab fa-github ml-2"></i></a></td>
-              <td><a href="https://www.adamjolicoeur.com/design-tracker-template/" target="top">design-tracker-template/</a></td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/mindreeper2420/feature-flag-prototype" target="top">Feature Flag prototype<i class="fab fa-github ml-2"></i></a></td>
-              <td><a href="https://www.adamjolicoeur.com/feature-flag-prototype/" target="top">feature-flag-prototype/</a></td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/mindreeper2420/testing_environment" target="top">Agile Development Test Environment<i class="fab fa-github ml-2"></i></a></td>
-              <td><a href="https://www.adamjolicoeur.com/testing_environment/" target="top">testing_environment/</a></td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="d-md-flex flex-md-equal bg-white mb-2 py-2 px-5 container">
+        <div class="row">
+          <div class="col">
+            <h2>Sites</h2>
+          </div>
+          <div class="col">
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th scope="col">Project</th>
+                  <th scope="col">URL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="" target="top">PatternFly 4 website</a></td>
+                  <td><a href="https://pf4testing.netlify.com" target="top">PatternFly 4 test site</a></td>
+                </tr>
+                <tr>
+                  <td><a href="https://github.com/mindreeper2420/openshift.io" target="top">OpenShift.io<i class="fab fa-github ml-2"></i></a></td>
+                </tr>
+                <tr>
+                  <td>KubeVirt.io</td>
+                </tr>
+                <tr>
+                  <td><a href="https://github.com/mindreeper2420/TheScoutersLodge" target="top">The Scouters Lodge A.F. &amp; A.M.<i class="fab fa-github ml-2"></i></a></td>
+                  <td><a href="https://www.adamjolicoeur.com/TheScoutersLodge/" target="top">TheScoutersLodge.org</a></td>
+                </tr>
+                <tr>
+                  <td>Rufus Putnam Lodge A.F. &amp; A.M.</td>
+                </tr>
+                <tr>
+                  <td><a href="https://github.com/mindreeper2420/design-tracker-template/" target="top">Design Tracker<i class="fab fa-github ml-2"></i></a></td>
+                  <td><a href="https://www.adamjolicoeur.com/design-tracker-template/" target="top">design-tracker-template/</a></td>
+                </tr>
+                <tr>
+                  <td><a href="https://github.com/mindreeper2420/feature-flag-prototype" target="top">Feature Flag prototype<i class="fab fa-github ml-2"></i></a></td>
+                  <td><a href="https://www.adamjolicoeur.com/feature-flag-prototype/" target="top">feature-flag-prototype/</a></td>
+                </tr>
+                <tr>
+                  <td><a href="https://github.com/mindreeper2420/testing_environment" target="top">Agile Development Test Environment<i class="fab fa-github ml-2"></i></a></td>
+                  <td><a href="https://www.adamjolicoeur.com/testing_environment/" target="top">testing_environment/</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
-      <div class="d-md-flex flex-md-equal bg-white py-2 px-5">
-        <h2>Navigation Prototypes</h2>
-        <table class="table table-borderless">
-          <thead>
-            <tr>
-              <th scope="col">Project</th>
-              <th scope="col">URL</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a href="https://github.com/mindreeper2420/leftnav-prototype" target="top">Left navigation<i class="fab fa-github ml-2"></i></a></td>
-              <td><a href="https://www.adamjolicoeur.com/leftnav-prototype/" target="top">left-nav prototype</a></td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/mindreeper2420/centernav" target="top">Center navigation<i class="fab fa-github ml-2"></i></a></td>
-              <td><a href="https://www.adamjolicoeur.com/centernav/" target="top">center-nav prototype</a></td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/mindreeper2420/megamenu" target="top">Megamenu navigation<i class="fab fa-github ml-2"></i></a></td>
-              <td><a href="https://www.adamjolicoeur.com/megamenu/" target="top">megamenu prototype</a></td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="d-md-flex flex-md-equal bg-white py-2 px-5 container">
+        <div class="row">
+          <div class="col">
+            <h2>Navigations</h2>
+          </div>
+          <div class="col">
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th scope="col">Project</th>
+                  <th scope="col">URL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="https://github.com/mindreeper2420/leftnav-prototype" target="top">Left navigation<i class="fab fa-github ml-2"></i></a></td>
+                  <td><a href="https://www.adamjolicoeur.com/leftnav-prototype/" target="top">left-nav prototype</a></td>
+                </tr>
+                <tr>
+                  <td><a href="https://github.com/mindreeper2420/centernav" target="top">Center navigation<i class="fab fa-github ml-2"></i></a></td>
+                  <td><a href="https://www.adamjolicoeur.com/centernav/" target="top">center-nav prototype</a></td>
+                </tr>
+                <tr>
+                  <td><a href="https://github.com/mindreeper2420/megamenu" target="top">Megamenu navigation<i class="fab fa-github ml-2"></i></a></td>
+                  <td><a href="https://www.adamjolicoeur.com/megamenu/" target="top">megamenu prototype</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </main>
     <footer>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="js/jolicoeur.js"></script>
     </footer>
   </body>
 </html>

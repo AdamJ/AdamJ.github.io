@@ -27,7 +27,6 @@ $block: ".aj";
     content: "";
     background-color: rgba(255, 255, 255, 0.98);
     background-image: var(--aj-c-image--Background--xs);
-    // filter: var(--aj-c-background-image--Filter);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -116,11 +115,13 @@ $block: ".aj";
   background-image: none;
   // /* stylelint-disable */
   @media (min-width: 575.98px) {
-    background-image: var(--aj-c-image--Background-work--xs);
+    // background-image: var(--aj-c-image--Background-work--xs);
+    background-image: none;
   }
 
   @media (min-width: 767.98px) {
-    background-image: var(--aj-c-image--Background-work--sm);
+    // background-image: var(--aj-c-image--Background-work--sm);
+    background-image: none;
   }
 
   @media (min-width: 991.98px) {

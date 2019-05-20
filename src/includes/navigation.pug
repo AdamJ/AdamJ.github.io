@@ -1,13 +1,29 @@
-nav.sticky-top
+nav.navbar.navbar-expand-lg.sticky-top.aj-site-header
+  a.navbar-brand(href="/") Adam J. Jolicoeur
+  a(class='menu-button [ js-menu-button ]')(href="#", data-toggle="collapse", data-target="#navbarToggler", aria-controls="navbarToggler")
+    .menu-icon
+      span
+      span
+      span
+      span
+  .collapse.navbar-collapse#navbarToggler
+    ul.navbar-nav.mr-auto.mt-2.mt-lg-0
+      li.nav-item
+        a.nav-link(href="about.html") About
+      li.nav-item
+        a.nav-link(href="prototypes.html") Prototypes
+      li.nav-item
+        a.nav-link(href="code.html") Code
+//
   ul.aj-site-header
-    li
-      a(href="/") Adam J. Jolicoeur
     li
       a(href="about.html") About
     li
       a(href="prototypes.html") Prototypes
-//
+    li
       a(href="code.html") Code
+    li
       a(href="designs.html") Designs
+    li
       a(href="contact.html") Contact
 //
