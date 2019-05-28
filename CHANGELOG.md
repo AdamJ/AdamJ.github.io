@@ -11,6 +11,11 @@
 
 **Merged pull requests:**
 
+- Bump gulp-sourcemaps from 2.6.4 to 2.6.5 [\#28](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/28) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump autoprefixer from 8.6.3 to 9.5.1 [\#27](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/27) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump gulp-postcss from 7.0.1 to 8.0.0 [\#26](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/26) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump gulp-rename from 1.3.0 to 1.4.0 [\#25](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/25) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump gulp-sass from 4.0.1 to 4.0.2 [\#24](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/24) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - fix\(security\): fix alert for extend dependency [\#23](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/23) ([mindreeper2420](https://github.com/mindreeper2420))
 - fix\(security\): update dependencies per security alerts [\#21](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/21) ([mindreeper2420](https://github.com/mindreeper2420))
 - feat\(nav\): Update nav and dynamically set backgrounds [\#19](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/19) ([mindreeper2420](https://github.com/mindreeper2420))
@@ -20,10 +25,6 @@
 
 ## [adamjolicoeur.com_20181213.1.1](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/adamjolicoeur.com_20181213.1.1) (2018-12-13)
 [Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/adamjolicoeur.com_20181130.2.2...adamjolicoeur.com_20181213.1.1)
-
-**Merged pull requests:**
-
-- \[ImgBot\] Optimize images [\#14](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/14) ([imgbot[bot]](https://github.com/apps/imgbot))
 
 ## [adamjolicoeur.com_20181130.2.2](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/adamjolicoeur.com_20181130.2.2) (2018-11-30)
 [Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/adamjolicoeur.com_20181130.1.1...adamjolicoeur.com_20181130.2.2)
@@ -88,6 +89,10 @@
 
 - Move to Node 8 for Build [\#6](https://github.com/mindreeper2420/mindreeper2420.github.io/issues/6)
 - Move to Node 8 for Build System [\#7](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/7) ([mindreeper2420](https://github.com/mindreeper2420))
+
+**Merged pull requests:**
+
+- \[ImgBot\] Optimize images [\#14](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/14) ([imgbot[bot]](https://github.com/apps/imgbot))
 
 ## [v2.15.0](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/v2.15.0) (2018-09-18)
 [Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.14.0...v2.15.0)
