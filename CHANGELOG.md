@@ -1,5 +1,86 @@
 # Change Log
 
+## [Unreleased](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/HEAD)
+
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/adamjolicoeur.com_20181213.1.1...HEAD)
+
+**Closed issues:**
+
+- Fix security alert for extend [\#22](https://github.com/mindreeper2420/mindreeper2420.github.io/issues/22)
+- Fix Security Alerts [\#20](https://github.com/mindreeper2420/mindreeper2420.github.io/issues/20)
+
+**Merged pull requests:**
+
+- fix\(security\): fix alert for extend dependency [\#23](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/23) ([mindreeper2420](https://github.com/mindreeper2420))
+- fix\(security\): update dependencies per security alerts [\#21](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/21) ([mindreeper2420](https://github.com/mindreeper2420))
+- feat\(nav\): Update nav and dynamically set backgrounds [\#19](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/19) ([mindreeper2420](https://github.com/mindreeper2420))
+- Update build status badge; remove VSTS config [\#18](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/18) ([mindreeper2420](https://github.com/mindreeper2420))
+- Update Lighthouse scores for new audit [\#17](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/17) ([mindreeper2420](https://github.com/mindreeper2420))
+- feat\(site\): full refresh of site [\#16](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/16) ([mindreeper2420](https://github.com/mindreeper2420))
+
+## [adamjolicoeur.com_20181213.1.1](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/adamjolicoeur.com_20181213.1.1) (2018-12-13)
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/adamjolicoeur.com_20181130.2.2...adamjolicoeur.com_20181213.1.1)
+
+**Merged pull requests:**
+
+- \[ImgBot\] Optimize images [\#14](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/14) ([imgbot[bot]](https://github.com/apps/imgbot))
+
+## [adamjolicoeur.com_20181130.2.2](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/adamjolicoeur.com_20181130.2.2) (2018-11-30)
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/adamjolicoeur.com_20181130.1.1...adamjolicoeur.com_20181130.2.2)
+
+## [adamjolicoeur.com_20181130.1.1](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/adamjolicoeur.com_20181130.1.1) (2018-11-30)
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/adamjolicoeur.com_20181123.1.1...adamjolicoeur.com_20181130.1.1)
+
+## [adamjolicoeur.com_20181123.1.1](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/adamjolicoeur.com_20181123.1.1) (2018-11-23)
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/adamjolicoeur.com_20181120.6.6...adamjolicoeur.com_20181123.1.1)
+
+## [adamjolicoeur.com_20181120.6.6](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/adamjolicoeur.com_20181120.6.6) (2018-11-20)
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/adamjolicoeur.com_20181120.5.5...adamjolicoeur.com_20181120.6.6)
+
+## [adamjolicoeur.com_20181120.5.5](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/adamjolicoeur.com_20181120.5.5) (2018-11-20)
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/adamjolicoeur.com_20181120.2...adamjolicoeur.com_20181120.5.5)
+
+## [adamjolicoeur.com_20181120.2](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/adamjolicoeur.com_20181120.2) (2018-11-20)
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/adamjolicoeur.com_20181120.3.3...adamjolicoeur.com_20181120.2)
+
+## [adamjolicoeur.com_20181120.3.3](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/adamjolicoeur.com_20181120.3.3) (2018-11-20)
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/adamjolicoeur.com_20181120.4.4...adamjolicoeur.com_20181120.3.3)
+
+## [adamjolicoeur.com_20181120.4.4](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/adamjolicoeur.com_20181120.4.4) (2018-11-20)
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/adamjolicoeur.com_20181120.1...adamjolicoeur.com_20181120.4.4)
+
+## [adamjolicoeur.com_20181120.1](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/adamjolicoeur.com_20181120.1) (2018-11-20)
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/adamjolicoeur.com_20181106.3...adamjolicoeur.com_20181120.1)
+
+## [adamjolicoeur.com_20181106.3](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/adamjolicoeur.com_20181106.3) (2018-11-06)
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.17.2...adamjolicoeur.com_20181106.3)
+
+## [v2.17.2](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/v2.17.2) (2018-11-06)
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.17.1...v2.17.2)
+
+**Merged pull requests:**
+
+- Remove Travis-CI config [\#13](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/13) ([mindreeper2420](https://github.com/mindreeper2420))
+- update tag name scheme [\#12](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/12) ([mindreeper2420](https://github.com/mindreeper2420))
+
+## [v2.17.1](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/v2.17.1) (2018-11-06)
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.17.0...v2.17.1)
+
+**Fixed bugs:**
+
+- Fix sass import order [\#10](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/10) ([mindreeper2420](https://github.com/mindreeper2420))
+
+**Merged pull requests:**
+
+- Fix sass import order [\#9](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/9) ([mindreeper2420](https://github.com/mindreeper2420))
+
+## [v2.17.0](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/v2.17.0) (2018-11-06)
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.16.0...v2.17.0)
+
+**Implemented enhancements:**
+
+- Add font files [\#8](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/8) ([mindreeper2420](https://github.com/mindreeper2420))
+
 ## [v2.16.0](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/v2.16.0) (2018-10-31)
 [Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.15.0...v2.16.0)
 
