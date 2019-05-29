@@ -23,7 +23,7 @@
     "autoprefixer": "9.5.1",
     "browser-sync": "^2.26.5",
     "cssnano": "3.10.0",
-    "gulp": "3.9.1",
+    "gulp": "4.0.2",
     "gulp-clean": "0.4.0",
     "gulp-header": "2.0.7",
     "gulp-postcss": "8.0.0",
