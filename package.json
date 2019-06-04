@@ -20,7 +20,7 @@
     "tar": ">=4.4.9"
   },
   "devDependencies": {
-    "autoprefixer": "9.5.1",
+    "autoprefixer": "9.6.0",
     "browser-sync": "^2.26.5",
     "cssnano": "4.1.10",
     "gulp": "3.9.1",
