@@ -17,7 +17,7 @@
     "@fortawesome/fontawesome-free": ">=5.9.0",
     "lodash": ">=4.17.11",
     "sshpk": ">=1.13.2",
-    "tar": ">=4.4.9"
+    "tar": ">=4.4.10"
   },
   "devDependencies": {
     "autoprefixer": "9.6.0",
