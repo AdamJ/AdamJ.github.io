@@ -15,7 +15,7 @@
     "bootstrap": "^4.3.1",
     "extend": "~3.0.2",
     "@fortawesome/fontawesome-free": "~5.10.2",
-    "lodash": "~4.17.13",
+    "lodash": "~4.17.15",
     "sshpk": "~1.16.1",
     "tar": "~4.4.10"
   },
