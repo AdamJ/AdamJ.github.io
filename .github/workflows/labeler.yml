@@ -1,0 +1,18 @@
+CSS:
+- *.scss
+- *.css
+- css/*.css
+- css/*.min.css
+- dev/sass/**/*.scss
+
+JS: dev/js/*.js
+
+Images:
+- img/**/*
+- img/**
+
+Design:
+- sketch/**
+
+Fonts:
+- fonts/**
