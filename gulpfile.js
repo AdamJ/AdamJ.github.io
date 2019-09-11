@@ -14,6 +14,7 @@
 
     // modules
     gulp              =  require('gulp'),
+    autoprefixer      =  require('autoprefixer'),
     del               =  require('del'),
     noop              =  require('gulp-noop'),
     newer             =  require('gulp-newer'),
@@ -61,13 +62,7 @@
         outputStyle     : 'nested',
         precision       : 3,
         errLogToConsole : true
-      },
-
-      postCSS: [
-        require('autoprefixer')({
-          browsers: ['> 1%']
-        })
-      ]
+      }
     };
 
     if (!devBuild) {
@@ -90,7 +85,7 @@
       return gulp.src(cssConfig.dev)
       .pipe(sourcemaps ? sourcemaps.init() : noop())
       .pipe(sass(cssConfig.sassOpts).on('error', sass.logError))
-      .pipe(postcss(cssConfig.postCSS))
+      .pipe(postcss([ autoprefixer() ]))
       .pipe(sourcemaps ? sourcemaps.write() : noop())
       .pipe(size({ showFiles:true }))
       .pipe(header(banner, { pkg: pkg }))
@@ -191,12 +186,14 @@
     }));
 
     // copy FA5 webfonts
-    gulp.task('webfonts', function() {
+    gulp.task('webfonts', (done) => {
       gulp.src("node_modules/@fortawesome/fontawesome-free/webfonts/**")
       .pipe(gulp.dest('fonts/webfonts'))
       .pipe(browserSync.reload({
         stream: true
       }));
+
+      done();
     });
 
 })();
