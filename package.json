@@ -21,16 +21,23 @@
   },
   "devDependencies": {
     "autoprefixer": "9.6.1",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "2.26.7",
     "cssnano": "4.1.10",
-    "gulp": "3.9.1",
+    "del": "^5.1.0",
+    "gulp": "4.0.2",
     "gulp-clean": "0.4.0",
-    "gulp-header": "2.0.9",
+    "gulp-header": "^2.0.9",
+    "gulp-imagemin": "^6.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-noop": "^1.0.0",
     "gulp-postcss": "8.0.0",
     "gulp-pug": "4.0.1",
     "gulp-rename": "1.4.0",
     "gulp-sass": "4.0.2",
-    "gulp-sourcemaps": "2.6.5"
+    "gulp-size": "^3.0.0",
+    "gulp-sourcemaps": "2.6.5",
+    "postcss-assets": "^5.0.0",
+    "usedcss": "^1.0.7"
   },
   "repository": {
     "type": "git",
