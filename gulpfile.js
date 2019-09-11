@@ -9,7 +9,8 @@
     dir = {
       src    : './',
       dev    : './dev/',
-      build  : './dist/'
+      build  : './dist/',
+      node   : './node_modules/'
     },
 
     // modules
@@ -65,6 +66,12 @@
       }
     };
 
+    const fonts = {
+      fontawesome     : dir.node + '@fortawesomefontawesome-free/webfonts/**',
+      overpassmono    : './fonts/overpass-mono-webfont/**',
+      overpass        : './fonts/overpass-webfont/**'
+    };
+
     if (!devBuild) {
       cssConfig.postCSS.push(
         require('usedcss')({ html: ['index.html'] }),
@@ -73,11 +80,16 @@
     }
 
     gulp.task('clean-dist', (done) => {
-      gulp.src("dist/", {read: false})
-      .pipe(clean());
-
+      del.sync([dir.build]);
       done();
     });
+
+    // gulp.task('clean-dist', (done) => {
+    //   gulp.src("dist/", {read: false})
+    //   .pipe(clean());
+
+    //   done();
+    // });
 
     // convert custom scss files to css using PostCSS
     // @ts-ignore
@@ -142,7 +154,7 @@
       done();
     });
 
-    gulp.task('copy-source', gulp.series('clean-dist', (done) => {
+    gulp.task('copy-source', gulp.series( gulp.parallel('clean-dist'), (done) => {
       gulp.src('./README.md').pipe(gulp.dest(dir.build));
       gulp.src('./package.json').pipe(gulp.dest(dir.build));
       gulp.src('./manifest.json').pipe(gulp.dest(dir.build));
@@ -155,7 +167,24 @@
       done();
     }));
 
-    gulp.task('build', gulp.series('copy-source', (done) => {
+    // copy FA5 webfonts
+    gulp.task('webfonts', (done) => {
+      gulp.src(fonts.fontawesome)
+      .pipe(gulp.dest('fonts/webfonts'))
+      // .pipe(browserSync.reload({
+      //   stream: true
+      // }));
+
+      done();
+    });
+
+    gulp.task('fonts', (done) => {
+      gulp.src(fonts.overpassmono).pipe(gulp.dest(dir.build + 'fonts/overpass-mono-webfont'));
+      gulp.src(fonts.overpassmono).pipe(gulp.dest(dir.build + 'fonts/overpass-webfont'));
+      done();
+    });
+
+    gulp.task('build', gulp.series('css', 'js', 'views', 'webfonts', gulp.parallel('copy-source'), (done) => {
       done();
     }));
 
@@ -184,17 +213,6 @@
     gulp.task('default', gulp.series('css', 'js', 'views', (done) => {
       done();
     }));
-
-    // copy FA5 webfonts
-    gulp.task('webfonts', (done) => {
-      gulp.src("node_modules/@fortawesome/fontawesome-free/webfonts/**")
-      .pipe(gulp.dest('fonts/webfonts'))
-      .pipe(browserSync.reload({
-        stream: true
-      }));
-
-      done();
-    });
 
 })();
 
