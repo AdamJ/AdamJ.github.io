@@ -7,11 +7,11 @@
 $block: ".aj";
 
 #{$block}-background-image {
-  --aj-c-image--Background--xs: url("#{$aj-image-path}/ajbg_header_576.jpg");
-  --aj-c-image--Background--sm: url("#{$aj-image-path}/ajbg_header_768.jpg");
-  --aj-c-image--Background--md: url("#{$aj-image-path}/ajbg_header_992.jpg");
-  --aj-c-image--Background--lg: url("#{$aj-image-path}/ajbg_header_1200.jpg");
-  --aj-c-image--Background--xl: url("#{$aj-image-path}/ajbg_header_2000.jpg");
+  --aj-c-image--Background--xs: url("#{$aj-image-path}/ajbg_header.svg");
+  --aj-c-image--Background--sm: url("#{$aj-image-path}/ajbg_header.svg");
+  --aj-c-image--Background--md: url("#{$aj-image-path}/ajbg_header.svg");
+  --aj-c-image--Background--lg: url("#{$aj-image-path}/ajbg_header.svg");
+  --aj-c-image--Background--xl: url("#{$aj-image-path}/ajbg_header.svg");
   --aj-c-background-image--Filter: url("#{$aj-image-path}/background-filter.svg#image_overlay");
 
   &::before {
@@ -55,11 +55,11 @@ $block: ".aj";
 }
 
 #{$block}-background-image-full {
-  --aj-c-image--Background--xs: url("#{$aj-image-path}/ajbg_header_576.jpg");
-  --aj-c-image--Background--sm: url("#{$aj-image-path}/ajbg_header_768.jpg");
-  --aj-c-image--Background--md: url("#{$aj-image-path}/ajbg_header_992.jpg");
-  --aj-c-image--Background--lg: url("#{$aj-image-path}/ajbg_header_1200.jpg");
-  --aj-c-image--Background--xl: url("#{$aj-image-path}/ajbg_header_2000.jpg");
+  --aj-c-image--Background--xs: url("#{$aj-image-path}/ajbg_header.svg");
+  --aj-c-image--Background--sm: url("#{$aj-image-path}/ajbg_header.svg");
+  --aj-c-image--Background--md: url("#{$aj-image-path}/ajbg_header.svg");
+  --aj-c-image--Background--lg: url("#{$aj-image-path}/ajbg_header.svg");
+  --aj-c-image--Background--xl: url("#{$aj-image-path}/ajbg_header.svg");
   --aj-c-background-image--Filter: url("#{$aj-image-path}/background-filter.svg#image_overlay");
 
   &::before {
@@ -104,11 +104,11 @@ $block: ".aj";
 }
 
 #{$block}-background--work {
-  --aj-c-image--Background-work--xs: url("#{$aj-image-path}/ajwork_header_576.jpg");
-  --aj-c-image--Background-work--sm: url("#{$aj-image-path}/ajwork_header_768.jpg");
-  --aj-c-image--Background-work--md: url("#{$aj-image-path}/ajwork_header_992.jpg");
-  --aj-c-image--Background-work--lg: url("#{$aj-image-path}/ajwork_header_1200.jpg");
-  --aj-c-image--Background-work--xl: url("#{$aj-image-path}/ajwork_header_2000.jpg");
+  --aj-c-image--Background-work--xs: url("#{$aj-image-path}/ajwork_header.svg");
+  --aj-c-image--Background-work--sm: url("#{$aj-image-path}/ajwork_header.svg");
+  --aj-c-image--Background-work--md: url("#{$aj-image-path}/ajwork_header.svg");
+  --aj-c-image--Background-work--lg: url("#{$aj-image-path}/ajwork_header.svg");
+  --aj-c-image--Background-work--xl: url("#{$aj-image-path}/ajwork_header.svg");
   --aj-c-background-image--Filter: url("#{$aj-image-path}/background-filter.svg#image_overlay");
 
   background-color: rgba(245, 245, 245, 1);
@@ -137,7 +137,7 @@ $block: ".aj";
     background-image: var(--aj-c-image--Background-work--xl);
   }
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 #{$block}-background--404 {

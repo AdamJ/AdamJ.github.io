@@ -9,7 +9,7 @@ $block: ".aj";
 #{$block}-site-header {
   // background-image: linear-gradient(to bottom,  rgba(0,0,0,0.75) -10%,rgba(0,0,0,0) 100%);
   // background-image: #3a272b;
-  background-image: linear-gradient(to bottom,  rgba(58, 39, 43, 1) -10% , rgba(58, 39, 43, 1) 100%);
+  background-image: linear-gradient(to bottom,  rgba(33, 71, 107, 1) -10% , rgba(33, 71, 107, 1) 100%);
   @media (max-width: 990px) {
     background-image: linear-gradient(to bottom,  rgba(0, 0, 0, .75) -10%,rgba(0, 0, 0, .75) 100%) !important;
   }
