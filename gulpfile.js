@@ -184,7 +184,7 @@
       done();
     });
 
-    gulp.task('build', gulp.series('css', 'js', 'views', 'webfonts', gulp.parallel('copy-source'), (done) => {
+    gulp.task('build', gulp.series('css', 'js', 'views', 'fonts', gulp.parallel('copy-source'), (done) => {
       done();
     }));
 
