@@ -62,12 +62,23 @@
         sourceMap       : devBuild,
         outputStyle     : 'nested',
         precision       : 3,
-        errLogToConsole : true
+        errLogToConsole : true,
+        includePath     : ['node_modules']
       }
     };
 
-    const fonts = {
-      fontawesome     : dir.node + '@fortawesomefontawesome-free/webfonts/**',
+    const jsConfig = {
+      dev         : dir.dev + 'js/*.js',
+      watch       : dir.src + 'js/*.js'
+    };
+
+    const pugConfig = {
+      dev         : dir.src + 'src/*.pug',
+      watch       : dir.src + 'src/*.pug'
+    };
+
+    const fontsConfig = {
+      fontawesome     : dir.node + '@fortawesome/fontawesome-free/webfonts/**',
       overpassmono    : './fonts/overpass-mono-webfont/**',
       overpass        : './fonts/overpass-webfont/**'
     };
@@ -79,21 +90,16 @@
       );
     }
 
-    gulp.task('clean-dist', (done) => {
+    sass.compiler = require('node-sass');
+
+    function cleanDist(cb) {
       del.sync([dir.build]);
-      done();
-    });
-
-    // gulp.task('clean-dist', (done) => {
-    //   gulp.src("dist/", {read: false})
-    //   .pipe(clean());
-
-    //   done();
-    // });
+      cb();
+    };
 
     // convert custom scss files to css using PostCSS
     // @ts-ignore
-    gulp.task('css', (done) => {
+    function cssDev(cb) {
       return gulp.src(cssConfig.dev)
       .pipe(sourcemaps ? sourcemaps.init() : noop())
       .pipe(sass(cssConfig.sassOpts).on('error', sass.logError))
@@ -104,57 +110,49 @@
       .pipe(gulp.dest(cssConfig.build))
       .pipe(gulp.dest(cssConfig.release))
       .pipe(browserSync ? browserSync.reload({ stream: true }) : noop());
-    });
+    }
 
     // compile custom javascript file
-    gulp.task('js', (done) => {
-      gulp.src("dev/js/*.js")
+    function jsDev(cb) {
+      return gulp.src(jsConfig.dev)
       .pipe(header(banner, { pkg: pkg }))
       .pipe(gulp.dest('js'))
       .pipe(browserSync.reload({
         stream: true
       }));
-      done();
-    });
+    }
 
     // compile pug templates
-    gulp.task('views', (done) => {
-      gulp.src('./src/*.pug')
+    function pugViews(cb) {
+      return gulp.src(pugConfig.dev)
       .pipe(pug({
         doctype: 'html',
         pretty: true
       }))
       .pipe(gulp.dest('./'));
-
-      done();
-    });
+    }
 
     // Configure the browserSync task
-    gulp.task('browserSync', (done) => {
-      browserSync.init({
-        server: {
-          baseDir: ''
-        },
-        ui: {
-          port: 8001 // customize port for browserSync UI
-        },
-        port: 8080, // use 8080 to prevent conflicts with other localhosts
-        reloadOnRestart: true,
-        notify: false // prevent the browserSync notification from appearing
-      });
+    function watchCSS(cb) {
+      gulp.watch(cssConfig.dev, cssDev);
+      // browserSync.reload();
+    }
 
-      done();
-    });
+    function watchJS(cb) {
+      gulp.watch(jsConfig.dev, jsDev);
+      // browserSync.reload();
+    }
 
-    // ensure scss finishes, reload browser
-    // @ts-ignore
-    gulp.task('sass-watch', gulp.series('css'), (done) => {
+    function watchPUG(cb) {
+      gulp.watch(pugConfig.dev, pugViews);
+      // browserSync.reload();
+    }
+
+    function browserSyncReload(cb) {
       browserSync.reload();
+    }
 
-      done();
-    });
-
-    gulp.task('copy-source', gulp.series( gulp.parallel('clean-dist'), (done) => {
+    function copySource(cb) {
       gulp.src('./README.md').pipe(gulp.dest(dir.build));
       gulp.src('./package.json').pipe(gulp.dest(dir.build));
       gulp.src('./manifest.json').pipe(gulp.dest(dir.build));
@@ -164,33 +162,33 @@
       gulp.src('./fonts/**/*.*').pipe(gulp.dest('./dist/fonts/'));
       gulp.src('./*.html').pipe(gulp.dest(dir.build));
 
-      done();
-    }));
+      cb();
+    }
 
     // copy FA5 webfonts
-    gulp.task('webfonts', (done) => {
-      gulp.src(fonts.fontawesome)
-      .pipe(gulp.dest('fonts/webfonts'))
-      // .pipe(browserSync.reload({
-      //   stream: true
-      // }));
+    function webFonts(cb) {
+      gulp.src(fontsConfig.fontawesome)
+      .pipe(gulp.dest('fonts/webfonts'));
 
-      done();
-    });
+      cb();
+    }
 
-    gulp.task('fonts', (done) => {
-      gulp.src(fonts.overpassmono).pipe(gulp.dest(dir.build + 'fonts/overpass-mono-webfont'));
-      gulp.src(fonts.overpassmono).pipe(gulp.dest(dir.build + 'fonts/overpass-webfont'));
-      done();
-    });
+    function fonts(cb) {
+      gulp.src(fontsConfig.overpassmono)
+        .pipe(fontsConfig.dest(dir.build + 'fonts/overpass-mono-webfont'));
+      gulp.src(fontsConfig.overpassmono)
+        .pipe(gulp.dest(dir.build + 'fonts/overpass-webfont'));
 
-    gulp.task('build', gulp.series('css', 'js', 'views', 'fonts', gulp.parallel('copy-source'), (done) => {
-      done();
-    }));
+      cb();
+    }
 
-    // Dev task with browserSync
-    // @ts-ignore
-    gulp.task('serve', gulp.series('css', 'js', (done) => {
+    function buildSite(cb) {
+      gulp.parallel(cssDev, jsDev, pugViews, fonts);
+
+      cb();
+    }
+
+    function browserSyncInit(cb) {
       browserSync.init({
         server: {
           baseDir: "./"
@@ -202,17 +200,42 @@
         reloadOnRestart: true,
         notify: false // prevent the browserSync notification from appearing
       });
-      gulp.watch('dev/sass/**/*.scss', gulp.series('sass-watch'));
-      gulp.watch('src/**/*.pug', gulp.series('views'));
-      gulp.watch('dev/js/*.js', gulp.series('js'));
+    }
+
+    function htmlWatch(cb) {
       gulp.watch('*.html').on('change', browserSync.reload);
+    }
 
-      done();
-    }));
+    exports.cleanDist       = cleanDist;
+    exports.cssDev          = cssDev;
+    exports.jsDev           = jsDev;
+    exports.pugViews        = pugViews;
+    exports.htmlWatch       = htmlWatch;
+    exports.browserSyncInit = browserSyncInit;
+    exports.buildSite       = buildSite;
+    exports.copySource      = copySource;
+    exports.webFonts        = webFonts;
+    exports.fonts           = fonts;
+    exports.browserSyncReload = browserSyncReload;
 
-    gulp.task('default', gulp.series('css', 'js', 'views', (done) => {
-      done();
-    }));
+    exports.serve = gulp.series(
+      buildSite,
+      gulp.parallel(browserSyncInit, watchPUG, watchCSS, watchJS),
+      htmlWatch,
+      browserSyncReload
+    );
+
+    exports.build = gulp.series(
+      buildSite,
+      copySource,
+      cleanDist
+    );
+
+    exports.default = gulp.series(
+      cssDev,
+      jsDev,
+      pugViews
+    );
 
 })();
 
