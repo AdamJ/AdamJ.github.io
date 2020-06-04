@@ -1,0 +1,31 @@
+/*!
+ * Adam J. Jolicoeur https://www.adamjolicoeur.com | v0.0.0
+ * Copyright 2008-2019 | Adam J. Jolicoeur
+ * Licensed under Apache-2.0 | (https://github.com/mindreeper2420/mindreeper2420.github.io/blob/master/LICENSE)
+ */
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 16px; }
+
+h1, h2, h3, h4 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700; }
+
+h1 {
+  font-size: 4em; }
+
+h2 {
+  font-size: 3em; }
+
+h3 {
+  font-size: 2em; }
+
+h4 {
+  font-size: 1.5em; }
+
+h5, h6, p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1em; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRvd24tc2VsZWN0bWFuLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSx3Q0FBd0M7RUFDeEMsZUFBZSxFQUFBOztBQUVqQjtFQUNFLHdDQUF3QztFQUN4QyxnQkFBZ0IsRUFBQTs7QUFFbEI7RUFDRSxjQUFjLEVBQUE7O0FBRWhCO0VBQ0UsY0FBYyxFQUFBOztBQUVoQjtFQUNFLGNBQWMsRUFBQTs7QUFFaEI7RUFDRSxnQkFBZ0IsRUFBQTs7QUFFbEI7RUFDRSx3Q0FBd0M7RUFDeEMsZ0JBQWdCO0VBQ2hCLGNBQWMsRUFBQSIsImZpbGUiOiJ0b3duLXNlbGVjdG1hbi5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJib2R5IHtcbiAgZm9udC1mYW1pbHk6ICdJQk0gUGxleCBTYW5zJywgc2Fucy1zZXJpZjtcbiAgZm9udC1zaXplOiAxNnB4O1xufVxuaDEsIGgyLCBoMywgaDQge1xuICBmb250LWZhbWlseTogJ0lCTSBQbGV4IFNhbnMnLCBzYW5zLXNlcmlmO1xuICBmb250LXdlaWdodDogNzAwO1xufVxuaDEge1xuICBmb250LXNpemU6IDRlbTtcbn1cbmgyIHtcbiAgZm9udC1zaXplOiAzZW07XG59XG5oMyB7XG4gIGZvbnQtc2l6ZTogMmVtO1xufVxuaDQge1xuICBmb250LXNpemU6IDEuNWVtO1xufVxuaDUsIGg2LCBwIHtcbiAgZm9udC1mYW1pbHk6ICdJQk0gUGxleCBTYW5zJywgc2Fucy1zZXJpZjtcbiAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgZm9udC1zaXplOiAxZW07XG59Il19 */
