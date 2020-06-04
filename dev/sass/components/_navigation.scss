@@ -11,11 +11,17 @@ $block: ".aj";
   // background-image: #3a272b;
   background-image: linear-gradient(to bottom,  rgba(33, 71, 107, 1) -10% , rgba(33, 71, 107, 1) 100%);
   @media (max-width: 990px) {
-    background-image: linear-gradient(to bottom,  rgba(0, 0, 0, .75) -10%,rgba(0, 0, 0, .75) 100%) !important;
+    background-image: linear-gradient(to bottom,  rgba(0, 0, 0, 1) -10%,rgba(0, 0, 0, 1) 100%) !important;
   }
   text-align: center;
   padding: 0.5rem 0 5rem;
   font-size: 1.25rem;
+  &.town-office{
+    background-image: linear-gradient(to bottom,  rgba(0, 0, 0, .75) -10%,rgba(0, 0, 0, .75) 100%) !important;
+    @media (max-width: 990px) {
+      background-image: linear-gradient(to bottom,  rgb(36, 36, 36) -10%,rgb(36, 36, 36) 100%) !important;
+    }
+  }
 }
 #{$block}-site-header {
   list-style: none;

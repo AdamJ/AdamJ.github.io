@@ -62,10 +62,14 @@ $block: ".aj";
   --aj-c-image--Background--xl: url("#{$aj-image-path}/banner.jpg");
   --aj-c-background-image--Filter: url("#{$aj-image-path}/background-filter.svg#image_overlay");
 
-  background-color: rgba(245, 245, 245, 1);
+  background-color: rgb(48, 48, 48);
   background-image: none;
   height: 100vh;
   // /* stylelint-disable */
+  @media (max-width: 575.98px) {
+    height: 50vh;
+    min-height: 450px;
+  }
   @media (min-width: 575.98px) {
     background-image: var(--aj-c-image--Background--xs);
     // background-image: none;
@@ -75,6 +79,12 @@ $block: ".aj";
     background-image: var(--aj-c-image--Background--sm);
     // background-image: none;
   }
+
+  @media (max-width: 990px) {
+    margin-top: -75px;
+  }
+
+  margin-top: -54px;
 
   @media (min-width: 991.98px) {
     background-image: var(--aj-c-image--Background--md);
