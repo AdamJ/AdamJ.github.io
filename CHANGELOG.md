@@ -1,12 +1,31 @@
 # Changelog
 
-## [Unreleased](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/HEAD)
+## [v2.9.4](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/v2.9.4) (2020-06-05)
 
-[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.8.4...HEAD)
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.9.3...v2.9.4)
+
+## [v2.9.3](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/v2.9.3) (2020-06-05)
+
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.9.2...v2.9.3)
+
+## [v2.9.2](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/v2.9.2) (2020-06-05)
+
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.9.1...v2.9.2)
+
+## [v2.9.1](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/v2.9.1) (2020-06-04)
+
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.8.5...v2.9.1)
 
 **Merged pull requests:**
 
 - Add town office page [\#85](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/85) ([mindreeper2420](https://github.com/mindreeper2420))
+
+## [v2.8.5](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/v2.8.5) (2020-03-19)
+
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.8.4...v2.8.5)
+
+**Merged pull requests:**
+
 - Update Gulp config and build [\#78](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/78) ([mindreeper2420](https://github.com/mindreeper2420))
 - build\(deps\): bump tar from 4.4.10 to 6.0.1 [\#77](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/77) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - build\(deps-dev\): bump autoprefixer from 9.7.3 to 9.7.4 [\#73](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/73) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
