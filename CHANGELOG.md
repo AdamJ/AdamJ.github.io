@@ -2,16 +2,38 @@
 
 ## [Unreleased](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/HEAD)
 
-[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.8.1...HEAD)
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.8.4...HEAD)
 
 **Merged pull requests:**
 
+- Add town office page [\#85](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/85) ([mindreeper2420](https://github.com/mindreeper2420))
 - Update Gulp config and build [\#78](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/78) ([mindreeper2420](https://github.com/mindreeper2420))
 - build\(deps\): bump tar from 4.4.10 to 6.0.1 [\#77](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/77) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - build\(deps-dev\): bump autoprefixer from 9.7.3 to 9.7.4 [\#73](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/73) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
-- build\(deps-dev\): bump autoprefixer from 9.6.1 to 9.7.3 [\#71](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/71) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
-- build\(deps\): bump bootstrap from 4.3.1 to 4.4.1 [\#70](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/70) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
+## [v2.8.4](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/v2.8.4) (2019-12-27)
+
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.8.3...v2.8.4)
+
+**Merged pull requests:**
+
 - build\(deps-dev\): bump gulp-imagemin from 6.1.1 to 6.2.0 [\#67](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/67) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
+## [v2.8.3](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/v2.8.3) (2019-12-27)
+
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.8.2...v2.8.3)
+
+**Merged pull requests:**
+
+- build\(deps\): bump bootstrap from 4.3.1 to 4.4.1 [\#70](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/70) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
+## [v2.8.2](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/v2.8.2) (2019-12-27)
+
+[Full Changelog](https://github.com/mindreeper2420/mindreeper2420.github.io/compare/v2.8.1...v2.8.2)
+
+**Merged pull requests:**
+
+- build\(deps-dev\): bump autoprefixer from 9.6.1 to 9.7.3 [\#71](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/71) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 
 ## [v2.8.1](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/v2.8.1) (2019-10-04)
 
@@ -165,6 +187,7 @@
 - feat\(nav\): Update nav and dynamically set backgrounds [\#19](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/19) ([mindreeper2420](https://github.com/mindreeper2420))
 - Update build status badge; remove VSTS config [\#18](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/18) ([mindreeper2420](https://github.com/mindreeper2420))
 - Update Lighthouse scores for new audit [\#17](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/17) ([mindreeper2420](https://github.com/mindreeper2420))
+- feat\(site\): full refresh of site [\#16](https://github.com/mindreeper2420/mindreeper2420.github.io/pull/16) ([mindreeper2420](https://github.com/mindreeper2420))
 
 ## [adamjolicoeur.com_20181213.1.1](https://github.com/mindreeper2420/mindreeper2420.github.io/tree/adamjolicoeur.com_20181213.1.1) (2018-12-13)
 
