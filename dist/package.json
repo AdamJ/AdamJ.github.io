@@ -7,8 +7,9 @@
   "license": "Apache-2.0",
   "licenseUrl": "https://github.com/mindreeper2420/mindreeper2420.github.io/blob/master/LICENSE",
   "scripts": {
-    "start": "gulp serve",
-    "build": "gulp",
+    "dev": "gulp serve",
+    "build": "gulp build",
+    "prod": "gulp",
     "publish": "gulp && github_changelog_generator -u mindreeper2420 -p mindreeper2420.github.io"
   },
   "dependencies": {
@@ -16,7 +17,7 @@
     "extend": "~3.0.2",
     "lodash": "~4.17.15",
     "sshpk": "~1.16.1",
-    "tar": "~4.4.10"
+    "tar": "~6.0.1"
   },
   "devDependencies": {
     "autoprefixer": "9.7.4",
