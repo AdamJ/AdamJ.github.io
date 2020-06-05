@@ -104,9 +104,9 @@
           </div>
         </div>
       </section>
-      <section class="d-md-flex flex-md-equal w-100" id="FAQ">
+      <section class="d-md-flex flex-md-equal w-100" id="faq">
         <div class="d-md-flex pt-3 px-3 pt-md-5 px-md-5 overflow-hidden">
-          <div class="my-3 py-3">
+          <div class="mt-3 pt-3">
             <h2 class="mb-3">FAQ</h2>
             <p class="pl-md-5">
               <ul>
@@ -140,12 +140,39 @@
           </div>
         </div>
       </section>
+      <section class="w-100">
+        <div class="pt-1 px-3 px-md-5 overflow-hidden">
+          <div class="my-3 py-3">
+            <p class="mb3"><b>Have something that you want to discuss? Start a conversation below!</b></p>
+            <div id="disqus_thread"></div>
+            <script>
+              /**
+              *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+              *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+              /*
+              var disqus_config = function () {
+              this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+              this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+              };
+              */
+              (function() { // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script');
+              s.src = 'https://ajtownselectman.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <script src="js/jolicoeur.js"></script>
+      <script id="dsq-count-scr" src="//ajtownselectman.disqus.com/count.js" async></script>
     </footer>
   </body>
 </html>

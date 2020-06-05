@@ -87,9 +87,9 @@ html(lang='en')
             p.pl-md-5
               | <b>Financial Considerations</b>
               | According to the letter presented to the Town of Brookfield, Tasse's Fuel would bring in up to $25,000 a year in property and excise taxes. This money would be a of great use to the town, allowing us to improve our infrastructure, expand our community offerings (athletic fields updates, senior center enhancements, South Pond improvements, etc), and allow us to move towards a fiscally-positive position.
-      section#FAQ.d-md-flex.flex-md-equal.w-100
+      section#faq.d-md-flex.flex-md-equal.w-100
         .d-md-flex.pt-3.px-3.pt-md-5.px-md-5.overflow-hidden
-          .my-3.py-3
+          .mt-3.pt-3
             h2.mb-3
               | FAQ
             p.pl-md-5
@@ -109,5 +109,12 @@ html(lang='en')
                 li How can I ask you additional questions?
                   ul
                     li Of course! You can send any questions to me via <a href="mailto:studiojolicoeur@outlook.com">e-mail</a>, or reach out through the Brookfield Community Facebook group. <i>Disclaimer: Any questions/responses may also be added to this site for others to view.</i>
+      section.w-100
+        .pt-1.px-3.px-md-5.overflow-hidden
+          .my-3.py-3
+            p.mb3
+              | <b>Have something that you want to discuss? Start a conversation below!</b>
+            #disqus_thread
+            include includes/disqus.pug
     footer
       include includes/scripts.pug
