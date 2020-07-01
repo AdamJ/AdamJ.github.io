@@ -5,7 +5,7 @@
   "author": "Adam J. Jolicoeur",
   "homepage": "https://www.adamjolicoeur.com",
   "license": "Apache-2.0",
-  "licenseUrl": "https://github.com/mindreeper2420/mindreeper2420.github.io/blob/master/LICENSE",
+  "licenseUrl": "https://github.com/mindreeper2420/mindreeper2420.github.io/blob/main/LICENSE",
   "scripts": {
     "dev": "gulp serve",
     "build": "gulp build",
