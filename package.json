@@ -13,7 +13,7 @@
     "publish": "gulp && github_changelog_generator -u mindreeper2420 -p mindreeper2420.github.io"
   },
   "dependencies": {
-    "bootstrap": "^4.4.1",
+    "bootstrap": "^4.5.0",
     "extend": "~3.0.2",
     "lodash": "~4.17.15",
     "sshpk": "~1.16.1",
