@@ -15,7 +15,7 @@
   "dependencies": {
     "bootstrap": "^4.5.0",
     "extend": "~3.0.2",
-    "lodash": "~4.17.15",
+    "lodash": "~4.17.19",
     "sshpk": "~1.16.1",
     "tar": "~6.0.1"
   },
