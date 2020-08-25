@@ -3,12 +3,15 @@ name: Release Drafter
 on:
   push:
     # branches to consider in the event; optional, defaults to all
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
     types:
       - opened
       - edited
-      - merged
+  pull_request_review:
+    types:
+      - submitted
 
 jobs:
   update_release_draft:
