@@ -53,4 +53,4 @@ template: |
   
   $PREVIOUS_TAG
 no-changes-template: |
-  ## Confusingly, There were no changes in this release
+  Confusingly, There were no changes in this release
