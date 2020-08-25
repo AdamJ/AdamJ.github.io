@@ -2,11 +2,21 @@ name: Automatically merge PRs
 
 on:
   pull_request:
-    types: [labeled, unlabeled, synchronize, edited, unlocked]
+    types:
+      - labeled
+      - unlabeled
+      - synchronize
+      - opened
+      - edited
+      - ready_for_review
+      - reopened
+      - unlocked
   pull_request_review:
-    types: [submitted]
+    types:
+      - submitted
   check_suite:
-    types: [completed]
+    types:
+      - completed
     status: success
 
 jobs:
@@ -17,12 +27,3 @@ jobs:
         uses: "pascalgn/automerge-action@v0.9.0"
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          MERGE_LABELS: "Ready to merge,!in progress!,!blocked, !question, !duplicate, !wontfix, !invalid"
-          MERGE_REMOVE_LABELS: "Ready to merge, in progress"
-          MERGE_METHOD: squash
-          MERGE_COMMIT_MESSAGE: automatic
-          MERGE_DELETE_BRANCH: true
-          MERGE_RETRIES: 0
-          MERGE_RETRY_SLEEP: 10000
-          UPDATE_LABELS: "Ready to merge"
-          UPDATE_METHOD: merge
