@@ -1,0 +1,42 @@
+# Add the 'minor' label to any HTML file changes
+enhancement:
+  - ./*.html
+minor:
+  - ./*.html
+  - ./src/**
+  - ./img/**
+  - ./css/**
+  - ./fonts/**
+  - ./js/**
+  - favicon.icon
+  - favicon.png
+  - favicon-16x16.png
+  - faviconData.json
+  - manifest.json
+  - sw.js
+  - ./dev/**
+  - ./dist/**
+  
+# Add 'frontend` label to any change to *.js files as long as the `main.js` hasn't changed
+# frontend:
+# - any: ['src/**/*.js']
+#   all: ['!src/main.js']
+
+# Add the `patch` label to any of the following
+dependencies:
+  - package.json
+  - package-lock.json
+github-action:
+  - .github/**
+patch:
+  - .github/**
+  - package.json
+  - package-lock.json
+  - .browserslistrc
+  - .gitignore
+  - Audit-desktop_report.json
+  - Audit-mobile_report.json
+  - cache-polyfill.js
+  - CHANGELOG.md
+  - CNAME
+  - gulpfile.js
