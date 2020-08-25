@@ -1,4 +1,4 @@
-name-template: 'v$RESOLVED_VERSION 🌈'
+name-template: 'v$RESOLVED_VERSION'
 tag-template: 'v$RESOLVED_VERSION'
 categories:
   - title: 'Features'
@@ -24,12 +24,20 @@ change-template: '- #$NUMBER $TITLE (@$AUTHOR)'
 version-resolver:
   major:
     labels:
+      - 'feature'
+      - 'enhancement'
       - 'major'
   minor:
     labels:
+      - 'fix'
+      - 'bugfix'
+      - 'bug'
       - 'minor'
   patch:
     labels:
+      - 'dependencies'
+      - 'security'
+      - 'github-action'
       - 'patch'
   default: minor
 template: |
@@ -44,3 +52,5 @@ template: |
   ## Previous tag
   
   $PREVIOUS_TAG
+no-changes-template: |
+  ## Confusingly, There were no changes in this release
