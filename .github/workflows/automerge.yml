@@ -27,7 +27,7 @@ jobs:
         uses: "pascalgn/automerge-action@v0.9.0"
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          MERGE_LABELS: "Ready to merge,!in progress!,!blocked,!question,!duplicate,!invalid,!Stale PR,!wontfix"
+          MERGE_LABELS: "Ready to merge"
           MERGE_REMOVE_LABELS: "Ready to merge, in progress"
           MERGE_METHOD: squash
           MERGE_DELETE_BRANCH: true
