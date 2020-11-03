@@ -5,7 +5,7 @@
   "author": "Adam J. Jolicoeur",
   "homepage": "https://www.adamjolicoeur.com",
   "license": "Apache-2.0",
-  "licenseUrl": "https://github.com/mindreeper2420/mindreeper2420.github.io/blob/master/LICENSE",
+  "licenseUrl": "https://github.com/mindreeper2420/mindreeper2420.github.io/blob/main/LICENSE",
   "scripts": {
     "dev": "gulp serve",
     "build": "gulp build",
@@ -13,23 +13,24 @@
     "publish": "gulp && github_changelog_generator -u mindreeper2420 -p mindreeper2420.github.io"
   },
   "dependencies": {
-    "bootstrap": "^4.4.1",
-    "extend": "~3.0.2",
-    "lodash": "~4.17.15",
-    "sshpk": "~1.16.1",
-    "tar": "~6.0.1"
+    "bootstrap": "4.5.3",
+    "dot-prop": "6.0.0",
+    "extend": "3.0.2",
+    "lodash": "4.17.20",
+    "sshpk": "1.16.1",
+    "tar": "6.0.5"
   },
   "devDependencies": {
-    "autoprefixer": "9.7.4",
-    "browser-sync": "2.26.7",
+    "autoprefixer": "9.8.6",
+    "browser-sync": "2.26.13",
     "cssnano": "4.1.10",
-    "del": "5.1.0",
+    "del": "6.0.0",
     "gulp": "4.0.2",
     "gulp-clean": "0.4.0",
     "gulp-header": "2.0.9",
     "gulp-imagemin": "7.1.0",
     "gulp-newer": "1.4.0",
-    "gulp-noop": "1.0.0",
+    "gulp-noop": "1.0.1",
     "gulp-postcss": "8.0.0",
     "gulp-pug": "4.0.1",
     "gulp-rename": "2.0.0",
