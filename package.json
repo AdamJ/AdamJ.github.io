@@ -13,8 +13,8 @@
     "publish": "gulp && github_changelog_generator -u mindreeper2420 -p mindreeper2420.github.io"
   },
   "dependencies": {
-    "bootstrap": "4.5.2",
-    "dot-prop": "5.1.1",
+    "bootstrap": "4.5.3",
+    "dot-prop": "6.0.0",
     "extend": "3.0.2",
     "lodash": "4.17.20",
     "sshpk": "1.16.1",
@@ -22,9 +22,9 @@
   },
   "devDependencies": {
     "autoprefixer": "9.8.6",
-    "browser-sync": "2.26.12",
+    "browser-sync": "2.26.13",
     "cssnano": "4.1.10",
-    "del": "5.1.0",
+    "del": "6.0.0",
     "gulp": "4.0.2",
     "gulp-clean": "0.4.0",
     "gulp-header": "2.0.9",
