@@ -13,6 +13,7 @@
     "publish": "gulp && github_changelog_generator -u mindreeper2420 -p mindreeper2420.github.io"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
     "bootstrap": "4.5.3",
     "dot-prop": "6.0.0",
     "extend": "3.0.2",

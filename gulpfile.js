@@ -175,7 +175,7 @@
 
     function fonts(cb) {
       gulp.src(fontsConfig.overpassmono)
-        .pipe(fontsConfig.dest(dir.build + 'fonts/overpass-mono-webfont'));
+        .pipe(gulp.dest(dir.build + 'fonts/overpass-mono-webfont'));
       gulp.src(fontsConfig.overpassmono)
         .pipe(gulp.dest(dir.build + 'fonts/overpass-webfont'));
 
@@ -226,6 +226,9 @@
     );
 
     exports.build = gulp.series(
+      cssDev,
+      jsDev,
+      pugViews,
       buildSite,
       copySource,
       cleanDist
