@@ -1,6 +1,6 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/30f09242-806a-441a-b0e5-873c0bb73f93/deploy-status)](https://app.netlify.com/sites/mindreeper2420/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/30f09242-806a-441a-b0e5-873c0bb73f93/deploy-status)](https://app.netlify.com/sites/adamj/deploys)
 
-# Mindreeper2420.github.io
+# adamj.github.io
 A repo for my own personal site, hosted on GitHub.
 
 This site uses CSS Grid, CSS Variables, and basic PWA functionality.
