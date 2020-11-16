@@ -5,12 +5,12 @@
   "author": "Adam J. Jolicoeur",
   "homepage": "https://www.adamjolicoeur.com",
   "license": "Apache-2.0",
-  "licenseUrl": "https://github.com/mindreeper2420/mindreeper2420.github.io/blob/main/LICENSE",
+  "licenseUrl": "https://github.com/adamj/adamj.github.io/blob/main/LICENSE",
   "scripts": {
     "dev": "gulp serve",
     "build": "gulp build",
     "prod": "gulp",
-    "publish": "gulp && github_changelog_generator -u mindreeper2420 -p mindreeper2420.github.io"
+    "publish": "gulp && github_changelog_generator -u adamj -p adamj.github.io"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
@@ -43,6 +43,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://mindreeper2420.github.com/mindreeper2420.github.io.git"
+    "url": "https://adamj.github.com/adamj.github.io.git"
   }
 }
