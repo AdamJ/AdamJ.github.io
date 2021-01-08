@@ -19,7 +19,7 @@
     "extend": "3.0.2",
     "lodash": "4.17.20",
     "sshpk": "1.16.1",
-    "tar": "6.0.5"
+    "tar": "6.1.0"
   },
   "devDependencies": {
     "autoprefixer": "9.8.6",
