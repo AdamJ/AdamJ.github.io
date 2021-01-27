@@ -9,13 +9,20 @@ I've configured the build to run using both travis-ci and azure-devops.
 
 Changelog updated using [github-changelog-generator](https://github.com/github-changelog-generator/github-changelog-generator)
 
-Lighthouse Scores:
- - Desktop
+----
+## Licensing
+
+Font Awesome 5 icons licensed under [Creative Commons Attribute 4.0 International license](https://fontawesome.com/license)
+
+----
+## Lighthouse Scores:
+Desktop
  ![Lighthouse Score](img/lighthouse-scores_desktop.png)
-  [Report](Audit-desktop_report.json)
- - Mobile
+ [Audit Report](Audit-desktop_report.json)
+
+Mobile
  ![Lighthouse Score](img/lighthouse-scores_mobile.png)
- [Report](Audit-mobile_report.json)
+ [Audit Report](Audit-mobile_report.json)
 
 - Performance: 100/100
 - Progressive Web App: Optimized

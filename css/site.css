@@ -1,0 +1,164 @@
+/*!
+ * Adam J. Jolicoeur https://www.adamjolicoeur.com | v0.0.0
+ * Copyright 2008-2021 | Adam J. Jolicoeur
+ * Licensed under Apache-2.0 | (https://github.com/adamj/adamj.github.io/blob/main/LICENSE)
+ */
+
+:root {
+  --site-font-path-fa: "../fonts/webfonts";
+  --site-image-path: "../img";
+
+  --site-text--white: #fff;
+
+  --site-color-black-900: #303030;
+  --site-color-black-1000: #000;
+
+  --site-background-color--primary: #f7f7f7;
+
+  --site-button-color--primary: #393F44;
+  --site-button-color--primary-accent: #292E34;
+
+  /* Font information */
+  --site-font-family: 'IBM Plex Sans', sans-serif;
+  --site-font-size-base: 16px;
+  --site-font-color: var(--site-color-black-900);
+  --site-font-weight-base: 300;
+  --site-font-weight-medium: 500;
+  --site-font-weight-bold: 700;
+
+  --site-font-size--medium: 2em;
+  --site-font-size--large: 3em;
+  --site-font-size--xlarge: 4em;
+
+  --site-border-radius--small: 1rem;
+  --site-border-radius--medium: 2rem;
+  --site-border-radius--large: 3rem;
+
+  --site-border-width--small: 1px;
+  --site-border-width--medium: 3px;
+  --site-border-width--large: 5px;
+}
+
+body {
+  background-color: var(--site-color-background--primary);
+  font-family: var(--site-font-family);
+  font-size: var(--site-font-size-base);
+  color: var(--site-font-color);
+  font-weight: var(--site-font-weight-base);
+  @media (max-width: 990px) {
+    font-size: 18px;
+  }
+}
+h1, h2, h3, h4 {
+  font-weight: var(--site-font-weight-bold);
+}
+h1 {
+  font-size: 4em;
+  @media (max-width: 990px) {
+    font-size: 3.5em;
+  }
+}
+h2 {
+  font-size: 3em;
+  @media (max-width: 990px) {
+    font-size: 2.5em;
+  }
+}
+h3 {
+  font-size: 2em;
+  @media (max-width: 990px) {
+    font-size: 1.5em;
+  }
+}
+h4 {
+  font-size: 1.5em;
+  @media (max-width: 990px) {
+    font-size: 1.2em;
+  }
+}
+h5, h6, p {
+  font-weight: var(--site-font-weight-base);
+}
+
+/*
+ * Extra utilities
+ */
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+/* stylelint-disable declaration-no-important */
+.medium-heading {
+  font-size: var(--site-font-size--medium);
+  font-weight: var(--site-font-weight-base);
+}
+.large-heading {
+  font-size: var(--site-font-size--large);
+  font-weight: var(--site-font-weight-medium);
+}
+.xlarge-heading {
+  font-size: var(--site-font-size--xlarge);
+  font-weight: var(--site-font-weight-bold);
+}
+.text-center {
+  text-align: center !important;
+}
+/* stylelint-enable */
+.overflow-hidden { overflow: hidden; }
+
+.min-height-20 {
+  min-height: 20em;
+}
+.header__home {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .fa-ul {
+    margin-left: 0;
+  }
+}
+.mockup-screenshot {
+  @media (max-width: 767.98px) {
+    width: 100%;
+  }
+}
+.box-shadow {
+  box-shadow: var(--site-box-shadow--primary);
+}
+
+/* Button styles */
+.btn {
+  border-radius: var(--site-border-radius--medium);
+}
+.btn-primary {
+  background-color: var(--site-button-color--primary);
+  border-color: var(--site-button-color--primary-accent);
+}
+.btn-primary:hover {
+  background-color: var(--site-button-color--primary-accent);
+  border-color: var(--site-button-color--primary-accent);
+  text-decoration: none;
+}
+.btn-outline {
+  border-color: var(--site-button-color--primary-accent);
+}
+.btn-outline:hover {
+  border-color: var(--site-button-color--primary-accent);
+}
+.btn-outline-secondary {
+  color: var(--site-font-color);
+}
+.btn-large {
+  font-size: 1.2em;
+}
+.nav-item.active {
+  background-color: rgba(0, 0, 0, .5);
+}
