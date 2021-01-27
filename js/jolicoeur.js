@@ -1,6 +1,51 @@
 /*!
  * Adam J. Jolicoeur https://www.adamjolicoeur.com | v0.0.0
- * Copyright 2008-2019 | Adam J. Jolicoeur
+ * Copyright 2008-2021 | Adam J. Jolicoeur
+ * Licensed under Apache-2.0 | (https://github.com/adamj/adamj.github.io/blob/main/LICENSE)
+ */
+/*!
+ * Adam J. Jolicoeur https://www.adamjolicoeur.com | v0.0.0
+ * Copyright 2008-2021 | Adam J. Jolicoeur
+ * Licensed under Apache-2.0 | (https://github.com/adamj/adamj.github.io/blob/main/LICENSE)
+ */
+/*!
+ * Adam J. Jolicoeur https://www.adamjolicoeur.com | v0.0.0
+ * Copyright 2008-2021 | Adam J. Jolicoeur
+ * Licensed under Apache-2.0 | (https://github.com/adamj/adamj.github.io/blob/main/LICENSE)
+ */
+/*!
+ * Adam J. Jolicoeur https://www.adamjolicoeur.com | v0.0.0
+ * Copyright 2008-2021 | Adam J. Jolicoeur
+ * Licensed under Apache-2.0 | (https://github.com/adamj/adamj.github.io/blob/main/LICENSE)
+ */
+/*!
+ * Adam J. Jolicoeur https://www.adamjolicoeur.com | v0.0.0
+ * Copyright 2008-2021 | Adam J. Jolicoeur
+ * Licensed under Apache-2.0 | (https://github.com/adamj/adamj.github.io/blob/main/LICENSE)
+ */
+/*!
+ * Adam J. Jolicoeur https://www.adamjolicoeur.com | v0.0.0
+ * Copyright 2008-2021 | Adam J. Jolicoeur
+ * Licensed under Apache-2.0 | (https://github.com/adamj/adamj.github.io/blob/main/LICENSE)
+ */
+/*!
+ * Adam J. Jolicoeur https://www.adamjolicoeur.com | v0.0.0
+ * Copyright 2008-2021 | Adam J. Jolicoeur
+ * Licensed under Apache-2.0 | (https://github.com/adamj/adamj.github.io/blob/main/LICENSE)
+ */
+/*!
+ * Adam J. Jolicoeur https://www.adamjolicoeur.com | v0.0.0
+ * Copyright 2008-2021 | Adam J. Jolicoeur
+ * Licensed under Apache-2.0 | (https://github.com/adamj/adamj.github.io/blob/main/LICENSE)
+ */
+/*!
+ * Adam J. Jolicoeur https://www.adamjolicoeur.com | v0.0.0
+ * Copyright 2008-2021 | Adam J. Jolicoeur
+ * Licensed under Apache-2.0 | (https://github.com/adamj/adamj.github.io/blob/main/LICENSE)
+ */
+/*!
+ * Adam J. Jolicoeur https://www.adamjolicoeur.com | v0.0.0
+ * Copyright 2008-2021 | Adam J. Jolicoeur
  * Licensed under Apache-2.0 | (https://github.com/adamj/adamj.github.io/blob/main/LICENSE)
  */
 function updateMenuButton() {
