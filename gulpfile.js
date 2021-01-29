@@ -1,10 +1,10 @@
 (() => {
     'use-strict';
     const
-  
+
       // development or production
       devBuild = ((process.env.NODE_ENV || 'development').trim().toLowerCase() === 'development'),
-  
+
       // directory locations
       dir = {
         src    : './',
@@ -75,12 +75,10 @@
 
     // compile custom javascript file
     function jsDev(cb) {
-      return gulp.src(jsConfig.dev)
+      return gulp.src('./dev/js/jolicoeur.js')
       .pipe(header(banner, { pkg: pkg }))
-      .pipe(gulp.dest('js'))
-      .pipe(browserSync.reload({
-        stream: true
-      }));
+      .pipe(gulp.dest('./js'))
+      .pipe(browserSync ? browserSync.reload({ stream: true }) : noop());
     }
 
     // Configure the browserSync task
