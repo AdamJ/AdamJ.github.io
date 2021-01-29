@@ -14,6 +14,7 @@
   --site-color-black-1000: #000;
 
   --site-background-color--primary: #f7f7f7;
+  --site-background-color--dark: #3c3f42;
 
   --site-button-color--primary: #393F44;
   --site-button-color--primary-accent: #292E34;
@@ -161,4 +162,11 @@ h5, h6, p {
 }
 .nav-item.active {
   background-color: rgba(0, 0, 0, .5);
+}
+
+.background-color-dark {
+  background-color: var(--site-background-color--dark);
+}
+.background-color-light {
+  background-color: var(--site-background-color--primary);
 }
