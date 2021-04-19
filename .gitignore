@@ -3,3 +3,7 @@ node_modules/
 .DS_Store
 .idea
 npm-debug.log.*
+
+
+# Ignore sketch files
+*.sketch
