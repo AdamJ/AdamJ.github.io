@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+{%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
+{%- set pageDescription %}{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}{% endset -%}
+{%- set pageSocialImg %}{{ meta.url }}/previews/{% if title %}{{ title | slug }}{% else %}home{% endif %}.png{% endset -%}
+  <head>
+    <!-- Generated from the 11ty Netlify Jumpstart: https://github.com/5t3ph/11ty-netlify-jumpstart -->
+    <!-- Modified for usage/content provided by Adam J. Jolicoeur: https://github.com/AdamJ -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="@{{ meta.siteMeta }}" />
+    <title>{{pageTitle}}</title>
+    <meta
+      name="description"
+      content="{{pageDescription}}"
+    />
+    <link rel="icon" href="{{ '/favicon.png' | url }}" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="{{ '/css/style.css' | url }}" rel="stylesheet" />
+    <meta name="twitter:card" content="summary_large_image" />
+    {% if meta.twitterUsername %}
+    <meta name="twitter:creator" content="@{{ meta.twitterUsername }}" />
+    {% endif %}
+    <meta
+      name="twitter:title"
+      content="{{pageTitle}}"
+    />
+    <meta
+      name="twitter:description"
+      content="{{pageDescription}}"
+    />
+
+    <meta
+      name="og:title"
+      content="{{pageTitle}}"
+    />
+    <meta
+      name="og:description"
+      content="{{pageDescription}}"
+    />
+    <meta property="og:image" content="{{pageSocialImg}}" />
+    <meta name="twitter:image" content="{{pageSocialImg}}" />
+
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS Feed for {{ meta.siteName }}"
+      href="/feed/"
+    />
+  </head>
+  <body>
+    {% include 'sitenav.njk' %}
+    <main>
+      {{ content | safe }}
+    </main>
+    <div class="divider-large"></div>
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          {{ meta.authorName }}
+          <small class="d-block mb-3 text-muted">&copy; 2008 - {% year %}</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Site</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a class="link-secondary" href="/">Home</a>
+            </li>
+            {%- for page in collections.pages -%}
+            <li>
+              <a class="link-secondary" href="{{ page.url }}">{{ page.data.abbreviation }}</a>
+            </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>External</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary" href="https://www.github.com/AdamJ" alt="View GitHub profile">GitHub</a></li>
+            <li><a class="link-secondary" href="https://www.codepen.io/mindreeper2420" alt="View CodePen profile">CodePen</a></li>
+            <li><a class="link-secondary" href="https://dribbble.com/ajolicoeur" alt="View Dribbble profile">Dribbble</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Social</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary" href="https://www.linkedin.com/in/ajjolicoeur/">LinkedIn</a></li>
+            <li><a class="link-secondary" href="https://www.twitter.com/AdamJJolicoeur">Twitter</a></li>
+            <li><a class="link-secondary" href="https://keybase.io/mindreeper2420" alt="View Keybase.io profile">Keybase.io</a></li>
+          </ul>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    </footer>
+  </body>
+</html>
