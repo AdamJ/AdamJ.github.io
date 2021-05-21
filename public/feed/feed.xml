@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Adam J. Jolicoeur</title>
+	<subtitle>User Experience Designer and Developer</subtitle>
+	
+	<link href="http://localhost:8080/feed/" rel="self"/>
+	<link href="http://localhost:8080"/>
+	<updated>2021-05-23T17:20:43Z</updated>
+	<id>http://localhost:8080</id>
+	<author>
+		<name>Adam J. Jolicoeur</name>
+	</author>
+	
+	<entry>
+		<title>Designs</title>
+		<link href="http://localhost:8080/design/"/>
+		<updated>2021-05-18T12:44:54Z</updated>
+		<id>http://localhost:8080/design/</id>
+		<content type="html">&lt;div class=&quot;container col-xxl-8 px-4 pb-5&quot;&gt;
+  &lt;div class=&quot;row g-5 py-5 d-flex justify-content-center&quot;&gt;
+  &lt;img src=&quot;http://localhost:8080/img/bulb.png&quot; alt=&quot;Idea bulb placeholder&quot; style=&quot;width: 25%;&quot; /&gt;
+  &lt;!-- &lt;div class=&quot;row flex-lg-row-reverse align-items-center g-5 py-5&quot;&gt;
+    &lt;div class=&quot;col-10 col-sm-8 col-lg-6&quot;&gt;
+      &lt;img src=&quot;bootstrap-themes.png&quot; class=&quot;d-block mx-lg-auto img-fluid&quot; alt=&quot;Bootstrap Themes&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-6&quot;&gt;
+      &lt;h2 class=&quot;display-6 fw-bold lh-1 mb-3&quot;&gt;Responsive left-aligned hero with image&lt;/h2&gt;
+      &lt;p class=&quot;lead&quot;&gt;Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.&lt;/p&gt;
+      &lt;div class=&quot;d-grid gap-2 d-md-flex justify-content-md-start&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg px-4 me-md-2&quot;&gt;Primary&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary btn-lg px-4&quot;&gt;Default&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt; --&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Code Examples</title>
+		<link href="http://localhost:8080/code/"/>
+		<updated>2021-05-18T12:45:02Z</updated>
+		<id>http://localhost:8080/code/</id>
+		<content type="html">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row row-cols-1 row-cols-lg-2 align-items-stretch gy-5 py-5&quot;&gt;
+    &lt;div class=&quot;col&quot;&gt;
+      &lt;div class=&quot;card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg&quot; style=&quot;background-image: url(&#39;../img/RHDManual_Home.png&#39;);&quot;&gt;
+        &lt;div class=&quot;d-flex flex-column h-100 p-5 pb-3 text-white&quot; style=&quot;background: rgba(0, 0, 0, .5);&quot;&gt;
+          &lt;h2 class=&quot;pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center text-shadow-1&quot;&gt;Red Hat Developer Design Manual&lt;/h2&gt;
+          &lt;ul class=&quot;d-flex list-unstyled mt-auto&quot;&gt;
+            &lt;li class=&quot;me-auto&quot;&gt;
+              &lt;i class=&quot;bi bi-link-45deg&quot;&gt;&lt;/i&gt;
+              &lt;a href=&quot;https://aj-design-manual.netlify.app/&quot; target=&quot;top&quot; alt=&quot;Design Manual demo&quot; class=&quot;card-link&quot;&gt;
+                &lt;small&gt;Demo&lt;/small&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;i class=&quot;bi bi-github&quot;&gt;&lt;/i&gt;
+              &lt;a href=&quot;https://github.com/AdamJ/design-manual&quot; target=&quot;top&quot; alt=&quot;Design Manual on GitHub&quot; class=&quot;card-link&quot;&gt;
+                &lt;small&gt;GitHub&lt;/small&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;
+      &lt;div class=&quot;card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg&quot; style=&quot;background-image: url(&#39;../img/screenshot-try_openshift.png&#39;);&quot;&gt;
+        &lt;div class=&quot;d-flex flex-column h-100 p-5 pb-3 text-white&quot; style=&quot;background: rgba(0, 0, 0, .5);&quot;&gt;
+          &lt;h2 class=&quot;pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center text-white text-shadow-1&quot;&gt;try.openshift.com&lt;/h2&gt;
+          &lt;ul class=&quot;d-flex list-unstyled mt-auto&quot;&gt;
+            &lt;li class=&quot;me-auto&quot;&gt;
+              &lt;i class=&quot;bi bi-link-45deg&quot;&gt;&lt;/i&gt;
+              &lt;a href=&quot;https://try.openshift.com/&quot; target=&quot;top&quot; alt=&quot;try.openshift site&quot; class=&quot;card-link&quot;&gt;
+                &lt;small&gt;Demo&lt;/small&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;
+      &lt;div class=&quot;card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg&quot; style=&quot;background-image: url(&#39;../img/screenshot-kubevirtio.png&#39;);&quot;&gt;
+        &lt;div class=&quot;d-flex flex-column h-100 p-5 pb-3 text-white&quot; style=&quot;background: rgba(0, 0, 0, .5);&quot;&gt;
+          &lt;h2 class=&quot;pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center text-white text-shadow-1&quot;&gt;kubevirt.io&lt;/h2&gt;
+          &lt;ul class=&quot;d-flex list-unstyled mt-auto&quot;&gt;
+            &lt;li class=&quot;me-auto&quot;&gt;
+              &lt;i class=&quot;bi bi-link-45deg&quot;&gt;&lt;/i&gt;
+              &lt;a href=&quot;https://kubevirtio-site.netlify.app/&quot; target=&quot;top&quot; alt=&quot;KubeVirt.io demo&quot; class=&quot;card-link&quot;&gt;
+                &lt;small&gt;Demo&lt;/small&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;i class=&quot;bi bi-github&quot;&gt;&lt;/i&gt;
+              &lt;a href=&quot;https://github.com/AdamJ/design-manual&quot; target=&quot;top&quot; alt=&quot;KubeVirt.io on GitHub&quot; class=&quot;card-link&quot;&gt;
+                &lt;small&gt;GitHub&lt;/small&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;
+      &lt;div class=&quot;card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg&quot; style=&quot;background-image: url(&#39;../img/screenshot-patternflyorg.png&#39;);&quot;&gt;
+        &lt;div class=&quot;d-flex flex-column h-100 p-5 pb-3 text-white&quot; style=&quot;background: rgba(0, 0, 0, .5);&quot;&gt;
+          &lt;h2 class=&quot;pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center text-shadow-1&quot;&gt;PatternFly.org&lt;/h2&gt;
+          &lt;ul class=&quot;d-flex list-unstyled mt-auto&quot;&gt;
+            &lt;li class=&quot;me-auto&quot;&gt;
+              &lt;i class=&quot;bi bi-link-45deg&quot;&gt;&lt;/i&gt;
+              &lt;a href=&quot;https://pf4testbench.netlify.app/&quot; target=&quot;top&quot; alt=&quot;Design Manual demo&quot; class=&quot;card-link&quot;&gt;
+                &lt;small&gt;Demo&lt;/small&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;i class=&quot;bi bi-github&quot;&gt;&lt;/i&gt;
+              &lt;a href=&quot;https://github.com/AdamJ/pf4website&quot; target=&quot;top&quot; alt=&quot;Design Manual on GitHub&quot; class=&quot;card-link&quot;&gt;
+                &lt;small&gt;GitHub&lt;/small&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Prototypes</title>
+		<link href="http://localhost:8080/prototypes/"/>
+		<updated>2021-05-18T14:01:16Z</updated>
+		<id>http://localhost:8080/prototypes/</id>
+		<content type="html">&lt;div class=&quot;mb-2 py-2 px-5 container&quot;&gt;
+  &lt;h2 class=&quot;pb-2 border-bottom&quot;&gt;
+    Sites
+  &lt;/h2&gt;
+  &lt;div class=&quot;row g-4 py-5 row-cols-1 row-cols-lg-2&quot;&gt;
+    &lt;div class=&quot;col d-flex align-items-start&quot;&gt;
+      &lt;div&gt;
+        &lt;h2&gt;PatternFly 4&lt;/h2&gt;
+        &lt;p&gt;In support of the 4th release of PatternFly, I worked with a group of designers to create a modern, responsive take on the PatternFly website. Using a responsive layout with SVGs that move with the page, I create clean asthetic that would flow through the rest of the site.&lt;/p&gt;
+        &lt;a href=&quot;https://pf4testbench.netlify.app/&quot; class=&quot;btn btn-dark&quot;&gt;
+          View site
+        &lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;mb-2 py-2 px-5 container&quot;&gt;
+  &lt;h2 class=&quot;pb-2 border-bottom&quot;&gt;
+    CodePens
+  &lt;/h2&gt;
+  &lt;div class=&quot;row g-4 py-5 row-cols-1&quot;&gt;
+    &lt;p class=&quot;codepen&quot; data-height=&quot;450&quot; data-theme-id=&quot;38046&quot; data-default-tab=&quot;result&quot; data-user=&quot;mindreeper2420&quot; data-slug-hash=&quot;XWNbJvp&quot; style=&quot;height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-pen-title=&quot;Animated Cards on Glass&quot;&gt;
+      &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/mindreeper2420/pen/XWNbJvp&quot;&gt;
+      Animated Cards on Glass&lt;/a&gt; by Adam Jolicoeur (&lt;a href=&quot;https://codepen.io/mindreeper2420&quot;&gt;@mindreeper2420&lt;/a&gt;)
+      on &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+    &lt;/p&gt;
+    &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- &lt;h2&gt;PatternFly 4&lt;/h2&gt;
+    &lt;p&gt;I worked with a group of designers to transform the website for the 4th release PatternFly to be a modern, responsive take on previous examples. Using a responsive layout with SVGs that move with the page, I transformed their designs into a site with clean, appealing asthetics that would flow throughout the website.&lt;/p&gt; --&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row g-4 py-5 row-cols-1&quot;&gt;
+    &lt;p class=&quot;codepen&quot; data-height=&quot;450&quot; data-theme-id=&quot;38046&quot; data-default-tab=&quot;html,result&quot; data-user=&quot;mindreeper2420&quot; data-slug-hash=&quot;KKgdeEE&quot; style=&quot;height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-pen-title=&quot;Download Card Overlay&quot;&gt;
+      &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/mindreeper2420/pen/KKgdeEE&quot;&gt;
+      Download Card Overlay&lt;/a&gt; by Adam Jolicoeur (&lt;a href=&quot;https://codepen.io/mindreeper2420&quot;&gt;@mindreeper2420&lt;/a&gt;)
+      on &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+    &lt;/p&gt;
+    &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>About</title>
+		<link href="http://localhost:8080/about/"/>
+		<updated>2021-05-23T17:20:43Z</updated>
+		<id>http://localhost:8080/about/</id>
+		<content type="html">&lt;!-- &lt;ul class=&quot;nav justify-content-center&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;History&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Education&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Recognitions&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt; --&gt;
+&lt;div class=&quot;container pt-3 pb-3&quot;&gt;
+  &lt;div class=&quot;row g-5&quot;&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+      &lt;h2 id=&quot;redhat&quot;&gt;Red Hat, Inc.&lt;/h2&gt;
+      &lt;p class=&quot;mb-0&quot;&gt;
+        Senior Software Engineer, UXD
+      &lt;/p&gt;
+      &lt;p&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;Sketch&lt;/span&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;Adobe XD&lt;/span&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;HTML&lt;/span&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;SCSS&lt;/span&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;Git&lt;/span&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;OSS&lt;/span&gt;
+      &lt;/p&gt;
+      &lt;ul class=&quot;icon-list&quot;&gt;
+        &lt;li&gt;Senior Software Engineer
+          &lt;ul&gt;&lt;li&gt;December 2018 - Present&lt;/li&gt;&lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;text-muted&quot;&gt;
+          Interaction Designer
+          &lt;ul&gt;&lt;li&gt;July 2016 - December 2018&lt;/li&gt;&lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+      &lt;p&gt;As a Senior Software Engineer on the User Experience Design team, I am responsible for creating user flows, wireframes, mockups, and proof-of-concepts.&lt;/p&gt;
+      &lt;ul class=&quot;icon-list&quot;&gt;
+        &lt;li&gt;UX Designer, OpenShift&lt;/li&gt;
+        &lt;li&gt;designer/developer, developers.redhat.com&lt;/li&gt;
+        &lt;li&gt;designer/developer, Red Hat Developer Design Manual&lt;/li&gt;
+        &lt;li&gt;interaction designer, Red Hat Managed Integration (Integreatly)
+        &lt;/li&gt;&lt;li&gt;Core Contributer to &lt;a href=&quot;https://www.patternfly.org/&quot; target=&quot;top&quot; alt=&quot;PatternFly website&quot;&gt;PatternFly&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;designer/developer, kubevirt.io&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;hr class=&quot;col-3 col-md-2 mb-5&quot; /&gt;
+  &lt;div class=&quot;row g-5&quot;&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+      &lt;h2&gt;Switchback, Inc.&lt;/h2&gt;
+      &lt;p class=&quot;mb-0&quot;&gt;
+        Vice President, Design
+      &lt;/p&gt;
+      &lt;p&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;Sketch&lt;/span&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;Adobe XD&lt;/span&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;HTML&lt;/span&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;SCSS&lt;/span&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;Wireframes&lt;/span&gt;
+      &lt;/p&gt;
+      &lt;ul class=&quot;icon-list&quot;&gt;
+        &lt;li&gt;Vice President
+          &lt;ul&gt;&lt;li&gt;November 2010 - Present&lt;/li&gt;&lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;text-muted&quot;&gt;
+          Visual Designer &amp;amp; Developer
+          &lt;ul&gt;&lt;li&gt;November 2010 - December 2013&lt;/li&gt;&lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;text-muted&quot;&gt;
+          Web Designer
+          &lt;ul&gt;&lt;li&gt;January 2003 - June 2008&lt;/li&gt;&lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+      &lt;p&gt;As a Designer, I lead the design process of new-age interfaces, experiences and layouts for various desktop, mobile and web based software platforms. Focused on provided a clean and quick experience.&lt;/p&gt;
+      &lt;ul class=&quot;icon-list&quot;&gt;
+        &lt;li&gt;Worked on mobile-first web applications and data input tools for personal inventory systems and portfolios.&lt;/li&gt;
+        &lt;li&gt;Created and implemented a redesign of an internal financial accounting website utilizing HTML5, CSS3, jQuery and Bootstrap 2 &amp; Bootstrap 3 frameworks&lt;/li&gt;
+        &lt;li&gt;Part of design team from initial conception to finished product – creation of wireframes, photoshop designs, test sites and integration of data&lt;/li&gt;
+        &lt;li&gt;PHP Development on Desktop and Mobile Browsers&lt;/li&gt;
+        &lt;li&gt;Built, managed and maintained an internal IIS 7.0 environment&lt;/li&gt;
+        &lt;li&gt;DMS maintenance and creation – Joomla and Drupal&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;hr class=&quot;col-3 col-md-2 mb-5&quot; /&gt;
+  &lt;div class=&quot;row g-5&quot;&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+      &lt;h2&gt;Saylent Technologies&lt;/h2&gt;
+      &lt;p class=&quot;mb-0&quot;&gt;
+        User Experience Designer
+      &lt;/p&gt;
+      &lt;p&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;Photoshop&lt;/span&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;Visual studio&lt;/span&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;HTML&lt;/span&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;CSS&lt;/span&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;Agile&lt;/span&gt;
+      &lt;/p&gt;
+      &lt;ul class=&quot;icon-list&quot;&gt;
+        &lt;li&gt;November 2014 - July 2016&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+      &lt;p&gt;As a User Experience Designer, I lead the design and user research for the Account360 and Card360 platforms, working with a team of developers to improve product usability.&lt;/p&gt;
+      &lt;ul class=&quot;icon-list&quot;&gt;
+        &lt;li&gt;lead designer, Account360 &amp;amp; Card360 platforms&lt;/li&gt;
+        &lt;li&gt;lead designer, product refreshes/corporate presentations &amp;amp; sales demonstrations&lt;/li&gt;
+        &lt;li&gt;created system for ux prototyping and usability testing&lt;/li&gt;
+        &lt;li&gt;developer, html/css for use in asp.net applications&lt;/li&gt;
+        &lt;li&gt;created styleguide/css framework for corporate products&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;hr class=&quot;col-3 col-md-2 mb-5&quot; /&gt;
+  &lt;div class=&quot;row g-5&quot;&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+      &lt;h2&gt;Black Duck Software&lt;/h2&gt;
+      &lt;p class=&quot;mb-0&quot;&gt;
+        UI Software Engineer
+      &lt;/p&gt;
+      &lt;p&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;HTML&lt;/span&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;CSS/LESS&lt;/span&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;Bootstrap&lt;/span&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;Agile&lt;/span&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;Git&lt;/span&gt;
+      &lt;/p&gt;
+      &lt;ul class=&quot;icon-list&quot;&gt;
+        &lt;li&gt;February 2013 - October 2014&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+      &lt;p&gt;As a UI Software Engineer, I worked with the development and design teams to turn the visual designs into working applications.&lt;/p&gt;
+      &lt;ul class=&quot;icon-list&quot;&gt;
+        &lt;li&gt;developer, software inventory and management system&lt;/li&gt;
+        &lt;li&gt;created/developed wireframes/templates/mockups with UX Designer and UI Architect&lt;/li&gt;
+        &lt;li&gt;developed/tested initial phases of mobile/tablet design framework&lt;/li&gt;
+        &lt;li&gt;daily scrum/agile development practices&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;hr class=&quot;col-3 col-md-2 mb-5&quot; /&gt;
+  &lt;div class=&quot;row g-5&quot;&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+      &lt;h2&gt;Conservation Services Group&lt;/h2&gt;
+      &lt;p class=&quot;mb-0&quot;&gt;
+        Help Desk Analyst
+      &lt;/p&gt;
+      &lt;p&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;JIRA&lt;/span&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;DevOps&lt;/span&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;Ubuntu&lt;/span&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;RHEL&lt;/span&gt;
+        &lt;span class=&quot;badge rounded-pill bg-dark&quot;&gt;VMs&lt;/span&gt;
+      &lt;/p&gt;
+      &lt;ul class=&quot;icon-list&quot;&gt;
+        &lt;li&gt;June 2008 - November 2010&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+      &lt;ul class=&quot;icon-list&quot;&gt;
+        &lt;li&gt;Managed and administered IT Help Desk System (Spiceworks)&lt;/li&gt;
+        &lt;li&gt;Managed and administered Blackberry Enterprise Server 5.0&lt;/li&gt;
+        &lt;li&gt;Administered FTP Server and FTP account using SuSE 9 and Ubuntu 8.04 LTS&lt;/li&gt;
+        &lt;li&gt;Created and managed POP3 mail servers on Ubuntu for JIRA&lt;/li&gt;
+        &lt;li&gt;Implemented SFTP Server using RHEL 5.4&lt;/li&gt;
+        &lt;li&gt;Populated applications through Citrix; managed access to applications through AD security groups and settings&lt;/li&gt;
+        &lt;li&gt;Assisted with VMware 4.0 configurations on Linux Servers&lt;/li&gt;
+        &lt;li&gt;Assisted Senior Systems Engineer and Senior Network Engineer with daily administrative tasks in Active Directory and Exchange 2007&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+	</entry>
+</feed>

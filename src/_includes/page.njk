@@ -1,0 +1,17 @@
+---
+layout: base.njk
+---
+
+<header class="px-4 my-5 text-center">
+  <h1 class="disaply-5 fw-bold">{{ title }}</h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead">
+      {{ description }}
+    </p>
+  </div>
+</header>
+<main>
+  <article class="mx-auto">
+    {{ content | safe }}
+  </article>
+</main>

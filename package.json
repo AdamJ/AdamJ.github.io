@@ -6,29 +6,51 @@
   "homepage": "https://www.adamjolicoeur.com",
   "license": "Apache-2.0",
   "licenseUrl": "https://github.com/adamj/adamj.github.io/blob/main/LICENSE",
+  "main": "index.js",
   "scripts": {
-    "dev": "gulp serve",
-    "build": "gulp"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.2",
-    "bootstrap": "4.6.0"
-  },
-  "devDependencies": {
-    "autoprefixer": "9.8.6",
-    "browser-sync": "2.26.14",
-    "cssnano": "5.0.0",
-    "gulp": "^4.0.2",
-    "gulp-header": "2.0.9",
-    "gulp-noop": "1.0.1",
-    "gulp-postcss": "8.0.0",
-    "gulp-sass": "4.0.2",
-    "gulp-size": "3.0.0",
-    "gulp-sourcemaps": "3.0.0",
-    "postcss-assets": "5.0.0"
+    "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
+    "watch:eleventy": "eleventy --serve",
+    "build:sass-site": "sass  --no-source-map src/sass/style.scss public/css/style.css",
+    "build:sass": "npm-run-all --parallel build:sass-site",
+    "build:eleventy": "eleventy",
+    "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r",
+    "start": "cross-env ELEVENTY_ENV=dev npm-run-all build:sass --parallel watch:*",
+    "build": "cross-env ELEVENTY_ENV=prod npm-run-all build:sass",
+    "lint": "stylelint 'src/sass/**/*.scss' 'src/sass/**/**/*.scss' 'src/sass/**/**/**/*.scss'",
+    "lint:fix": "stylelint --fix 'src/sass/**/*.scss' 'src/sass/**/**/*.scss' 'src/sass/**/**/**/*.scss'",
+    "bump": "npm --no-git-tag-version version"
   },
   "repository": {
     "type": "git",
-    "url": "https://adamj.github.com/adamj.github.io.git"
-  }
+    "url": "git+https://github.com/AdamJ/District25.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/AdamJ/District25/issues"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-plugin-rss": "^1.0.9",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+    "autoprefixer": "^9.8.6",
+    "cross-env": "^7.0.2",
+    "cssnano": "^4.1.10",
+    "dotenv": "^8.2.0",
+    "emoji-regex": "^9.0.0",
+    "luxon": "^1.25.0",
+    "markdown-it": "^11.0.0",
+    "markdown-it-anchor": "^5.2.7",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.2",
+    "sass": "^1.26.10",
+    "stylelint": "^13.7.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0",
+    "stylelint-selector-bem-pattern": "^2.1.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
 }
