@@ -1,22 +1,12 @@
 [
 	{
+   "title":"Oops! Not Found",
+   "imgName":"oops-not-found"
+	},
+
+	{
    "title":"Adam J. Jolicoeur",
    "imgName":"home"
-	},
-
-	{
-   "title":"Designs",
-   "imgName":"designs"
-	},
-
-	{
-   "title":"Code Examples",
-   "imgName":"code-examples"
-	},
-
-	{
-   "title":"Prototypes",
-   "imgName":"prototypes"
 	},
 
 	{
@@ -25,7 +15,17 @@
 	},
 
 	{
-   "title":"Oops! Not Found",
-   "imgName":"oops-not-found"
+   "title":"Code Examples",
+   "imgName":"code-examples"
+	},
+
+	{
+   "title":"Designs",
+   "imgName":"designs"
+	},
+
+	{
+   "title":"Prototypes",
+   "imgName":"prototypes"
 	}
 ]
