@@ -8,12 +8,12 @@
   "licenseUrl": "https://github.com/adamj/adamj.github.io/blob/main/LICENSE",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
+    "watch:sass": "sass  --no-source-map --watch src/sass:docs/css",
     "watch:eleventy": "eleventy --serve",
-    "build:sass-site": "sass  --no-source-map src/sass/style.scss public/css/style.css",
+    "build:sass-site": "sass  --no-source-map src/sass/style.scss docs/css/style.css",
     "build:sass": "npm-run-all --parallel build:sass-site",
     "build:eleventy": "eleventy",
-    "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r",
+    "postbuild": "postcss docs/css/*.css -u autoprefixer cssnano -r",
     "start": "cross-env ELEVENTY_ENV=dev npm-run-all build:sass --parallel watch:*",
     "build": "cross-env ELEVENTY_ENV=prod npm-run-all build:sass",
     "lint": "stylelint 'src/sass/**/*.scss' 'src/sass/**/**/*.scss' 'src/sass/**/**/**/*.scss'",
@@ -22,11 +22,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AdamJ/District25.git"
+    "url": "git+https://github.com/AdamJ/AdamJ.github.io.git"
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/AdamJ/District25/issues"
+    "url": "https://github.com/AdamJ/AdamJ.github.io/issues"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",

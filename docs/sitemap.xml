@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://localhost:8080/404.html</loc>
+		
+    <lastmod>2021-06-04T15:24:58Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/</loc>
+		
+    <lastmod>2021-06-04T15:24:58Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/about/</loc>
+		
+    <lastmod>2021-06-04T15:24:58Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/code/</loc>
+		
+    <lastmod>2021-06-04T15:24:58Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/design/</loc>
+		
+    <lastmod>2021-06-04T15:24:58Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/prototypes/</loc>
+		
+    <lastmod>2021-06-04T15:24:58Z</lastmod>
+		
+  </url>
+</urlset>
