@@ -54,7 +54,7 @@
       &lt;/ul&gt;
     &lt;/div&gt;
     &lt;div class=&quot;col-md-6&quot;&gt;
-      &lt;p&gt;As a Senior Software Engineer on the User Experience Design team, I am responsible for creating user flows, wireframes, mockups, and proof-of-concepts.&lt;/p&gt;
+      &lt;p&gt;As a Senior Software Engineer on the User Experience Design team, I am responsible for creating user flows, wireframes, mockups, and proof-of-concepts for a variety of products and websites across the company. I am a core contributor to the PatternFly design system and was the lead designer and developer of the Red Hat Developer Design Manual.&lt;/p&gt;
       &lt;ul class=&quot;icon-list&quot;&gt;
         &lt;li&gt;UX Designer, OpenShift&lt;/li&gt;
         &lt;li&gt;designer/developer, developers.redhat.com&lt;/li&gt;
@@ -94,7 +94,7 @@
       &lt;/ul&gt;
     &lt;/div&gt;
     &lt;div class=&quot;col-md-6&quot;&gt;
-      &lt;p&gt;As a Designer, I lead the design process of new-age interfaces, experiences and layouts for various desktop, mobile and web based software platforms. Focused on provided a clean and quick experience.&lt;/p&gt;
+      &lt;p&gt;Designed and implemented a redesign of an internal financial accounting website, which interacted directly with construction software and daily database updates. Created presentations for senior management in order to demonstrate the full design concepts and gather feedback on direction and feasibility of designs.&lt;/p&gt;
       &lt;ul class=&quot;icon-list&quot;&gt;
         &lt;li&gt;Worked on mobile-first web applications and data input tools for personal inventory systems and portfolios.&lt;/li&gt;
         &lt;li&gt;Created and implemented a redesign of an internal financial accounting website utilizing HTML5, CSS3, jQuery and Bootstrap 2 &amp; Bootstrap 3 frameworks&lt;/li&gt;
@@ -124,7 +124,7 @@
       &lt;/ul&gt;
     &lt;/div&gt;
     &lt;div class=&quot;col-md-6&quot;&gt;
-      &lt;p&gt;As a User Experience Designer, I lead the design and user research for the Account360 and Card360 platforms, working with a team of developers to improve product usability.&lt;/p&gt;
+      &lt;p&gt;As a User Experience Designer, I lead the design and user research for the Account360 and Card360 platforms, working with a team of developers to improve product usability. Our primary focus was to provide a easy to use and manageable interfaces for the financial industry, utilizing standards from across the industry.&lt;/p&gt;
       &lt;ul class=&quot;icon-list&quot;&gt;
         &lt;li&gt;lead designer, Account360 &amp;amp; Card360 platforms&lt;/li&gt;
         &lt;li&gt;lead designer, product refreshes/corporate presentations &amp;amp; sales demonstrations&lt;/li&gt;
@@ -181,6 +181,7 @@
       &lt;/ul&gt;
     &lt;/div&gt;
     &lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;p&gt;Managed and administered IT Help Desk system while maintaining and active system for automated email responses and user-focused ticketing system.&lt;/p&gt;
       &lt;ul class=&quot;icon-list&quot;&gt;
         &lt;li&gt;Managed and administered IT Help Desk System (Spiceworks)&lt;/li&gt;
         &lt;li&gt;Managed and administered Blackberry Enterprise Server 5.0&lt;/li&gt;
@@ -294,22 +295,33 @@
 		<id>http://localhost:8080/design/</id>
 		<content type="html">&lt;div class=&quot;container col-xxl-8 px-4 pb-5&quot;&gt;
   &lt;div class=&quot;row g-5 py-5 d-flex justify-content-center&quot;&gt;
-  &lt;img src=&quot;http://localhost:8080/img/bulb.png&quot; alt=&quot;Idea bulb placeholder&quot; style=&quot;width: 25%;&quot; /&gt;
-  &lt;!-- &lt;div class=&quot;row flex-lg-row-reverse align-items-center g-5 py-5&quot;&gt;
+  &lt;!-- &lt;img src=&quot;../img/bulb.png&quot; alt=&quot;Idea bulb placeholder&quot; style=&quot;width: 25%;&quot;&gt; --&gt;
+  &lt;div class=&quot;row flex-lg-row-reverse align-items-center g-5 py-5&quot;&gt;
     &lt;div class=&quot;col-10 col-sm-8 col-lg-6&quot;&gt;
-      &lt;img src=&quot;bootstrap-themes.png&quot; class=&quot;d-block mx-lg-auto img-fluid&quot; alt=&quot;Bootstrap Themes&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot;&gt;
+      &lt;img src=&quot;http://localhost:8080/img/Timetrak.png&quot; class=&quot;d-block mx-lg-auto img-fluid&quot; alt=&quot;Timetrak&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;
     &lt;/div&gt;
     &lt;div class=&quot;col-lg-6&quot;&gt;
-      &lt;h2 class=&quot;display-6 fw-bold lh-1 mb-3&quot;&gt;Responsive left-aligned hero with image&lt;/h2&gt;
-      &lt;p class=&quot;lead&quot;&gt;Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.&lt;/p&gt;
+      &lt;h2 class=&quot;display-6 fw-bold lh-1 mb-3&quot;&gt;Switchback TimeTrak&lt;/h2&gt;
+      &lt;p class=&quot;lead&quot;&gt;The goal of this redesign was to create a simplistic system to easily access recent log entries, active projects, and team calendars. From this dashboard, users can quickly see these items, in addition to providing quick navigation items for in-depth reporting.&lt;/p&gt;
       &lt;div class=&quot;d-grid gap-2 d-md-flex justify-content-md-start&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg px-4 me-md-2&quot;&gt;Primary&lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary btn-lg px-4&quot;&gt;Default&lt;/button&gt;
+        &lt;a href=&quot;http://localhost:8080/design/#&quot; class=&quot;btn btn-secondary px-4 me-md-2&quot;&gt;History&lt;/a&gt;
       &lt;/div&gt;
-    &lt;/div&gt; --&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row flex-lg-row-reverse align-items-center g-5 py-5&quot;&gt;
+    &lt;div class=&quot;col-10 col-sm-8 col-lg-6&quot;&gt;
+      &lt;h2 class=&quot;display-6 fw-bold lh-1 mb-3&quot;&gt;District 25 website&lt;/h2&gt;
+      &lt;p class=&quot;lead&quot;&gt;The members of the 25th District reached out to me to update their outdated design with something new and clean that would draw new users in, while also quickly and easily displaying information that existing users consistently want to access. Through this process, I worked with the leadership committee to create a clean solution, while keeping a consistent feel across the platform.&lt;/p&gt;
+      &lt;div class=&quot;d-grid gap-2 d-md-flex justify-content-md-start&quot;&gt;
+        &lt;a href=&quot;http://localhost:8080/design/#&quot; class=&quot;btn btn-secondary px-4 me-md-2&quot;&gt;History&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-6&quot;&gt;
+      &lt;img src=&quot;http://localhost:8080/img/District25Desktop.png&quot; class=&quot;d-block mx-lg-auto img-fluid&quot; alt=&quot;District 25 website&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-</content>
+&lt;/div&gt;</content>
 	</entry>
 	
 	<entry>
