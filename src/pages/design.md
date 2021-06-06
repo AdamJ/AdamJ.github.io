@@ -54,7 +54,7 @@ description: "A selection of designs covering different projects and products."
     <div class="col-lg-6">
       <img src="../img/SC_logo_cloud.png" alt="Structure Cloud logo" width="auto" height="50" loading="lazy">
       <img src="../img/SC_logo_cloud2.png" alt="Structure Cloud logo w/text" width="auto" height="50" loading="lazy">
-      <img src="../img/scouters.png" alt="Scouters Lodge logo" width="auto" height="50" loading="lazy">
+      <img src="../img/Scouters.png" alt="Scouters Lodge logo" width="auto" height="50" loading="lazy">
     </div>
   </div>
   <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
