@@ -18,7 +18,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/fonts");
   eleventyConfig.addPassthroughCopy("./src/fonts");
   eleventyConfig.addPassthroughCopy("./src/img");
-  eleventyConfig.addPassthroughCopy("./src/favicon.png");
+  eleventyConfig.addPassthroughCopy("./src/favicon.*");
+  eleventyConfig.addPassthroughCopy("./src/cache-polyfill.js");
+  eleventyConfig.addPassthroughCopy("./src/sw.js");
+  eleventyConfig.addPassthroughCopy("./src/faviconData.json");
+  eleventyConfig.addPassthroughCopy("./src/manifest.json");
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
   eleventyConfig.addShortcode("packageVersion", () => `v${packageVersion}`);
