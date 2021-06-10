@@ -6,10 +6,12 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const packageVersion = require("./package.json").version;
 const fs = require("fs");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   eleventyConfig.addWatchTarget("./src/sass/");
 
