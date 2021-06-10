@@ -1,11 +1,11 @@
 minor:
-  - ./src/**/*.html
-  - ./src/img/**
-  - ./src/sass/**/*.scss
-  - ./src/**/*.js
-  - ./src/**/*.njk
-  - ./src/**/*.md
-  - ./src/**/*.json
+  - src/**/*.html
+  - src/img/**
+  - src/sass/**/*.scss
+  - src/**/*.js
+  - src/**/*.njk
+  - src/**/*.md
+  - src/**/*.json
 dependencies:
   - package-lock.json
 github-action:

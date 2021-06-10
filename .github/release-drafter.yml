@@ -1,11 +1,11 @@
 name-template: 'v$RESOLVED_VERSION'
 tag-template: 'v$RESOLVED_VERSION'
 categories:
-  - title: 'Features'
+  - title: 'Features/Enhancements'
     labels:
       - 'feature'
       - 'enhancement'
-  - title: 'Bug Fixes'
+  - title: 'Fixes'
     labels:
       - 'fix'
       - 'bugfix'
@@ -14,12 +14,12 @@ categories:
     labels:
       - 'dependencies'
       - 'security'
+      - 'github-action'
 exclude-labels:
   - 'invalid'
   - 'Stale PR'
   - 'duplicate'
   - 'wontfix'
-  - 'github-action'
 change-template: '- #$NUMBER $TITLE (@$AUTHOR)'
 version-resolver:
   major:
@@ -38,7 +38,8 @@ version-resolver:
       - 'dependencies'
       - 'security'
       - 'patch'
-  default: minor
+      - 'github-action'
+  default: patch
 template: |
   ## Changes in this release
 
