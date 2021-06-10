@@ -13,13 +13,14 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarToggler01">
+        {% set navPages = collections.all | eleventyNavigation %}
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          {%- for page in collections.pages -%}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ page.url }}">{{ page.data.abbreviation }}</a>
-          </li>
-          {%- endfor -%}
-        </ul>
+          {%- for entry in navPages %}
+            <li class="nav-item">
+              <a class="nav-link" href="{{ entry.url | url }}" {% if entry.url == page.url %} class="nav-link active" {% endif %}>{{ entry.title }}</a>
+            </li>
+          {%- endfor %}
+          </ul>
       </div>
     </div>
   </nav>
