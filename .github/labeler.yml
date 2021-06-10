@@ -1,13 +1,12 @@
 minor:
   - ./src/**/*.html
   - ./src/img/**
-  - ./src/scss/**/*.scss
-  - ./src/js/*.js
+  - ./src/sass/**/*.scss
+  - ./src/**/*.js
+  - ./src/**/*.njk
+  - ./src/**/*.md
+  - ./src/**/*.json
 dependencies:
   - package-lock.json
 github-action:
   - .github/**
-patch:
-  - package-lock.json
-  - CHANGELOG.md
-  - CNAME

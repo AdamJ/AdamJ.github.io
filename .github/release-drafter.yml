@@ -11,15 +11,15 @@ categories:
       - 'bugfix'
       - 'bug'
   - title: 'Maintenance'
-    labels: 
+    labels:
       - 'dependencies'
       - 'security'
-      - 'github-action'
 exclude-labels:
   - 'invalid'
   - 'Stale PR'
   - 'duplicate'
   - 'wontfix'
+  - 'github-action'
 change-template: '- #$NUMBER $TITLE (@$AUTHOR)'
 version-resolver:
   major:
@@ -37,7 +37,6 @@ version-resolver:
     labels:
       - 'dependencies'
       - 'security'
-      - 'github-action'
       - 'patch'
   default: minor
 template: |
@@ -46,11 +45,11 @@ template: |
   $CHANGES
 
   ## Contributors to this release
-  
+
   $CONTRIBUTORS
 
   ## Previous tag
-  
+
   $PREVIOUS_TAG
 no-changes-template: |
-  Confusingly, There were no changes in this release
+  Confusingly, there were no changes in this release
