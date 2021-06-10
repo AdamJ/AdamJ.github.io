@@ -2,6 +2,8 @@
 title: "About"
 abbreviation: "About"
 description: "A little bit about me."
+eleventyNavigation:
+  key: About
 ---
 
 <!-- <ul class="nav justify-content-center">
