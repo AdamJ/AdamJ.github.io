@@ -16,8 +16,8 @@
     />
     <link rel="icon" href="{{ '/favicon.png' | url }}" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
     <link href="{{ '/css/style.css' | url }}" rel="stylesheet" />
+    <link href="{{ '/css/fontawesome.css' | url }}" rel="stylesheet" />
     <meta name="twitter:card" content="summary_large_image" />
     {% if meta.twitterUsername %}
     <meta name="twitter:creator" content="@{{ meta.twitterUsername }}" />
@@ -63,13 +63,14 @@
         </div>
         <div class="col-6 col-md">
           <h5>Site</h5>
+          {% set navPages = collections.all | eleventyNavigation %}
           <ul class="list-unstyled text-small">
             <li>
               <a class="link-secondary" href="/">Home</a>
             </li>
-            {%- for page in collections.pages -%}
+            {%- for entry in navPages %}
             <li>
-              <a class="link-secondary" href="{{ page.url }}">{{ page.data.abbreviation }}</a>
+              <a class="link-secondary" href="{{ entry.url | url }}">{{ entry.title }}</a>
             </li>
             {%- endfor -%}
           </ul>

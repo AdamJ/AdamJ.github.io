@@ -37,3 +37,20 @@
     transform: scale(1.05);
   }
 }
+
+.bi {
+  vertical-align: -.125em;
+}
+.icon-link {
+  text-decoration: none;
+}
+.icon-link > .bi {
+  margin-top: .125rem;
+  margin-left: .125rem;
+  transition: transform .25s ease-in-out;
+  fill: currentColor;
+}
+.icon-link:hover > .bi {
+  transform: translate(.25rem);
+}
+
