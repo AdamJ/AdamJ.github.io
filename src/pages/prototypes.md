@@ -15,10 +15,30 @@ eleventyNavigation:
       <div>
         <h2>PatternFly 4</h2>
         <p>In support of the 4th release of PatternFly, I worked with a group of designers to create a modern, responsive take on the PatternFly website. Using a responsive layout with SVGs that move with the page, I create clean asthetic that would flow through the rest of the site.</p>
-        <a href="https://pf4testbench.netlify.app" class="btn btn-dark">
+        <a href="https://pf4testbench.netlify.app" class="btn btn-secondary">
           View site
         </a>
       </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <div>
+        <h2>Feature flags</h2>
+        <p>As part of a usability study, I worked with a UX Researcher to test out different variations of a Feature Flag, or notifier, for aspects and pages of an application that are either in a pre-release state, or have an unreleased element in use.</p>
+        <a href="https://www.adamjolicoeur.com/feature-flag-prototype/" class="btn btn-secondary">
+          View site
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+    <b>Additional examples:</b>
+    <div class="col d-flex align-items-start">
+      <ul class="fa-ul">
+        <li><span class="fa-li"><i class="fas fa-external-link-alt"></i></span><a href="https://www.adamjolicoeur.com/design-tracker-template/" target="top">Design tracker</a></li>
+        <li><span class="fa-li"><i class="fas fa-external-link-alt"></i></span><a href="https://www.adamjolicoeur.com/leftnav-prototype/" target="top">Leftnav prototype</a></li>
+        <li><span class="fa-li"><i class="fas fa-external-link-alt"></i></span><a href="https://www.adamjolicoeur.com/DashboardPrototype/" target="top">Dashboard prototype</a></li>
+        <li><span class="fa-li"><i class="fas fa-external-link-alt"></i></span><a href="https://www.adamjolicoeur.com/testing_environment/index.html" target="top">Testing environment</a></li>
+      </ul>
     </div>
   </div>
 </div>

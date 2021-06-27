@@ -11,35 +11,49 @@
   <url>
     <loc>http://localhost:8080/</loc>
 		
-    <lastmod>2021-06-04T15:24:58Z</lastmod>
+    <lastmod>2021-06-25T23:37:19Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://localhost:8080/about/</loc>
 		
-    <lastmod>2021-06-04T15:24:58Z</lastmod>
+    <lastmod>2021-06-10T13:20:26Z</lastmod>
 		
   </url>
   
   <url>
     <loc>http://localhost:8080/code/</loc>
 		
-    <lastmod>2021-06-04T15:24:58Z</lastmod>
+    <lastmod>2021-06-10T13:20:26Z</lastmod>
 		
   </url>
   
   <url>
     <loc>http://localhost:8080/design/</loc>
 		
-    <lastmod>2021-06-04T15:24:58Z</lastmod>
+    <lastmod>2021-06-10T13:20:26Z</lastmod>
 		
   </url>
   
   <url>
     <loc>http://localhost:8080/prototypes/</loc>
 		
-    <lastmod>2021-06-04T15:24:58Z</lastmod>
+    <lastmod>2021-06-10T13:20:26Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/history/timetrak/</loc>
+		
+    <lastmod>2021-06-25T23:33:11Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/history/district25/</loc>
+		
+    <lastmod>2021-06-25T23:37:19Z</lastmod>
 		
   </url>
 </urlset>

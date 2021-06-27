@@ -5,7 +5,7 @@
 	
 	<link href="http://localhost:8080/feed/" rel="self"/>
 	<link href="http://localhost:8080"/>
-	<updated>2021-06-04T15:24:58Z</updated>
+	<updated>2021-06-25T23:37:19Z</updated>
 	<id>http://localhost:8080</id>
 	<author>
 		<name>Adam J. Jolicoeur</name>
@@ -14,7 +14,7 @@
 	<entry>
 		<title>About</title>
 		<link href="http://localhost:8080/about/"/>
-		<updated>2021-06-04T15:24:58Z</updated>
+		<updated>2021-06-10T13:20:26Z</updated>
 		<id>http://localhost:8080/about/</id>
 		<content type="html">&lt;!-- &lt;ul class=&quot;nav justify-content-center&quot;&gt;
   &lt;li class=&quot;nav-item&quot;&gt;
@@ -201,7 +201,7 @@
 	<entry>
 		<title>Code Examples</title>
 		<link href="http://localhost:8080/code/"/>
-		<updated>2021-06-04T15:24:58Z</updated>
+		<updated>2021-06-10T13:20:26Z</updated>
 		<id>http://localhost:8080/code/</id>
 		<content type="html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;row row-cols-1 row-cols-lg-2 align-items-stretch gy-5 py-5&quot;&gt;
@@ -227,14 +227,20 @@
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;col&quot;&gt;
-      &lt;div class=&quot;card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg&quot; style=&quot;background-image: url(&#39;../img/screenshot-try_openshift.png&#39;);&quot;&gt;
+      &lt;div class=&quot;card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg&quot; style=&quot;background-image: url(&#39;../img/screenshot-patternflyorg.png&#39;);&quot;&gt;
         &lt;div class=&quot;d-flex flex-column h-100 p-5 pb-3 text-white&quot; style=&quot;background: rgba(0, 0, 0, .5);&quot;&gt;
-          &lt;h2 class=&quot;my-5 display-6 lh-1 fw-bold text-center text-white text-shadow-1&quot;&gt;try.openshift.com&lt;/h2&gt;
+          &lt;h2 class=&quot;my-5 display-6 lh-1 fw-bold text-center text-shadow-1&quot;&gt;PatternFly.org&lt;/h2&gt;
           &lt;ul class=&quot;d-flex list-unstyled mt-auto&quot;&gt;
             &lt;li class=&quot;me-auto&quot;&gt;
               &lt;i class=&quot;bi bi-link-45deg&quot;&gt;&lt;/i&gt;
-              &lt;a href=&quot;https://try.openshift.com/&quot; target=&quot;top&quot; alt=&quot;try.openshift site&quot; class=&quot;card-link&quot;&gt;
+              &lt;a href=&quot;https://pf4testbench.netlify.app/&quot; target=&quot;top&quot; alt=&quot;Design Manual demo&quot; class=&quot;card-link&quot;&gt;
                 &lt;small&gt;Demo&lt;/small&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;i class=&quot;bi bi-github&quot;&gt;&lt;/i&gt;
+              &lt;a href=&quot;https://github.com/AdamJ/pf4website&quot; target=&quot;top&quot; alt=&quot;Design Manual on GitHub&quot; class=&quot;card-link&quot;&gt;
+                &lt;small&gt;GitHub&lt;/small&gt;
               &lt;/a&gt;
             &lt;/li&gt;
           &lt;/ul&gt;
@@ -263,20 +269,14 @@
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;col&quot;&gt;
-      &lt;div class=&quot;card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg&quot; style=&quot;background-image: url(&#39;../img/screenshot-patternflyorg.png&#39;);&quot;&gt;
+      &lt;div class=&quot;card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg&quot; style=&quot;background-image: url(&#39;../img/screenshot-try_openshift.png&#39;);&quot;&gt;
         &lt;div class=&quot;d-flex flex-column h-100 p-5 pb-3 text-white&quot; style=&quot;background: rgba(0, 0, 0, .5);&quot;&gt;
-          &lt;h2 class=&quot;my-5 display-6 lh-1 fw-bold text-center text-shadow-1&quot;&gt;PatternFly.org&lt;/h2&gt;
+          &lt;h2 class=&quot;my-5 display-6 lh-1 fw-bold text-center text-white text-shadow-1&quot;&gt;try.openshift.com&lt;/h2&gt;
           &lt;ul class=&quot;d-flex list-unstyled mt-auto&quot;&gt;
             &lt;li class=&quot;me-auto&quot;&gt;
               &lt;i class=&quot;bi bi-link-45deg&quot;&gt;&lt;/i&gt;
-              &lt;a href=&quot;https://pf4testbench.netlify.app/&quot; target=&quot;top&quot; alt=&quot;Design Manual demo&quot; class=&quot;card-link&quot;&gt;
+              &lt;a href=&quot;https://try.openshift.com/&quot; target=&quot;top&quot; alt=&quot;try.openshift site&quot; class=&quot;card-link&quot;&gt;
                 &lt;small&gt;Demo&lt;/small&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-              &lt;i class=&quot;bi bi-github&quot;&gt;&lt;/i&gt;
-              &lt;a href=&quot;https://github.com/AdamJ/pf4website&quot; target=&quot;top&quot; alt=&quot;Design Manual on GitHub&quot; class=&quot;card-link&quot;&gt;
-                &lt;small&gt;GitHub&lt;/small&gt;
               &lt;/a&gt;
             &lt;/li&gt;
           &lt;/ul&gt;
@@ -355,40 +355,51 @@
 	<entry>
 		<title>Designs</title>
 		<link href="http://localhost:8080/design/"/>
-		<updated>2021-06-04T15:24:58Z</updated>
+		<updated>2021-06-10T13:20:26Z</updated>
 		<id>http://localhost:8080/design/</id>
-		<content type="html">&lt;div class=&quot;container col-xxl-8 px-4 pb-5&quot;&gt;
+		<content type="html">&lt;div class=&quot;container&quot;&gt;
+  &lt;p class=&quot;lead text-center&quot;&gt;
+    In most cases, I will use something similar to my &lt;a href=&quot;https://www.adamjolicoeur.com/DesignSprint/&quot; target=&quot;top&quot;&gt;Design Sprint&lt;/a&gt; site to organize my research (competitive and inspirational), create an easy access point for design assets, and color palettes. If I&#39;m working on a prototype, I&#39;ll often include that link as well.
+  &lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;container col-xxl-8 px-4 pb-5&quot;&gt;
   &lt;div class=&quot;row g-5 py-5 d-flex justify-content-center&quot;&gt;
   &lt;!-- &lt;img src=&quot;../img/bulb.png&quot; alt=&quot;Idea bulb placeholder&quot; style=&quot;width: 25%;&quot;&gt; --&gt;
   &lt;div class=&quot;row flex-lg-row-reverse align-items-center g-5 py-5&quot;&gt;
-    &lt;div class=&quot;col-10 col-sm-8 col-lg-6&quot;&gt;
-      &lt;img src=&quot;http://localhost:8080/img/Timetrak.png&quot; class=&quot;d-block mx-lg-auto img-fluid&quot; alt=&quot;Timetrak&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;
+    &lt;div class=&quot;col-10 col-sm-10 col-lg-6&quot;&gt;
+      &lt;img src=&quot;http://localhost:8080/img/Timetrak.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Timetrak&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;
     &lt;/div&gt;
     &lt;div class=&quot;col-lg-6&quot;&gt;
       &lt;h2 class=&quot;display-6 fw-bold lh-1 mb-3&quot;&gt;Switchback TimeTrak&lt;/h2&gt;
       &lt;p class=&quot;lead&quot;&gt;The goal of this redesign was to create a simplistic system to easily access recent log entries, active projects, and team calendars. From this dashboard, users can quickly see these items, in addition to providing quick navigation items for in-depth reporting.&lt;/p&gt;
-      &lt;!-- &lt;div class=&quot;d-grid gap-2 d-md-flex justify-content-md-start&quot;&gt;
-        &lt;a href=&quot;#&quot; class=&quot;btn btn-secondary px-4 me-md-2&quot;&gt;History&lt;/a&gt;
-      &lt;/div&gt; --&gt;
+      &lt;!-- &lt;a href=&quot;/history/timetrak&quot; class=&quot;icon-link&quot;&gt;
+        History
+        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;1em&quot; height=&quot;1em&quot;fill=&quot;currentColor&quot; class=&quot;bi bi-chevron-compact-right&quot; viewBox=&quot;0 0 16 16&quot;&gt;
+          &lt;path fill-rule=&quot;evenodd&quot; d=&quot;M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z&quot;/&gt;
+        &lt;/svg&gt;
+      &lt;/a&gt; --&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&quot;row flex-lg-row-reverse align-items-center g-5 py-5&quot;&gt;
-    &lt;div class=&quot;col-10 col-sm-8 col-lg-6&quot;&gt;
+    &lt;div class=&quot;col-10 col-sm-10 col-lg-6&quot;&gt;
       &lt;h2 class=&quot;display-6 fw-bold lh-1 mb-3&quot;&gt;District 25 website&lt;/h2&gt;
       &lt;p class=&quot;lead&quot;&gt;The members of the 25th District reached out to me to update their outdated design with something new and clean that would draw new users in, while also quickly and easily displaying information that existing users consistently want to access. Through this process, I worked with the leadership committee to create a clean solution, while keeping a consistent feel across the platform.&lt;/p&gt;
-      &lt;!-- &lt;div class=&quot;d-grid gap-2 d-md-flex justify-content-md-start&quot;&gt;
-        &lt;a href=&quot;#&quot; class=&quot;btn btn-secondary px-4 me-md-2&quot;&gt;History&lt;/a&gt;
-      &lt;/div&gt; --&gt;
+      &lt;!-- &lt;a href=&quot;/history/district25&quot; class=&quot;icon-link&quot;&gt;
+        History
+        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;1em&quot; height=&quot;1em&quot;fill=&quot;currentColor&quot; class=&quot;bi bi-chevron-compact-right&quot; viewBox=&quot;0 0 16 16&quot;&gt;
+          &lt;path fill-rule=&quot;evenodd&quot; d=&quot;M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z&quot;/&gt;
+        &lt;/svg&gt;
+      &lt;/a&gt; --&gt;
     &lt;/div&gt;
     &lt;div class=&quot;col-lg-6&quot;&gt;
-      &lt;img src=&quot;http://localhost:8080/img/District25Desktop.png&quot; class=&quot;d-block mx-lg-auto img-fluid&quot; alt=&quot;District 25 website&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;
+      &lt;img src=&quot;http://localhost:8080/img/District25Desktop.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;District 25 website&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&quot;row flex-lg-row-reverse align-items-center g-5 py-5&quot;&gt;
     &lt;div class=&quot;col-lg-6&quot;&gt;
-      &lt;img src=&quot;http://localhost:8080/img/SC_demo.png&quot; class=&quot;d-block mx-lg-auto img-fluid&quot; alt=&quot;Structure Cloud UI screenshot&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;
+      &lt;img src=&quot;http://localhost:8080/img/SC_demo.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Structure Cloud UI screenshot&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;col-10 col-sm-8 col-lg-6&quot;&gt;
+    &lt;div class=&quot;col-10 col-sm-10 col-lg-6&quot;&gt;
       &lt;h2 class=&quot;display-6 fw-bold lh-1 mb-3&quot;&gt;Structure&lt;/h2&gt;
       &lt;p class=&quot;lead&quot;&gt;For this project, I was tasked with converting the UI of a COBOL application into something that would work with the modern web. The task was very challenging, in that one of the main requirements was to keep the layout as close to the original application as possible (in order to minimize the amount of relearning existing users would need to do), while also providing a clean UI that would attract new users to the platform.&lt;/p&gt;
       &lt;!-- &lt;div class=&quot;d-grid gap-2 d-md-flex justify-content-md-start&quot;&gt;
@@ -396,9 +407,23 @@
       &lt;/div&gt; --&gt;
     &lt;/div&gt;
   &lt;/div&gt;
+  &lt;h2 class=&quot;display-5 fw-bold lh-1&quot;&gt;Wireframes&lt;/h2&gt;
+  &lt;div class=&quot;row flex-lg-row-reverse align-items-center gb-5 pb-5&quot;&gt;
+    &lt;div class=&quot;col-lg-6&quot;&gt;
+      &lt;img src=&quot;http://localhost:8080/img/Dashboardwireframe.png&quot; alt=&quot;Structure Cloud logo&quot; width=&quot;auto&quot; height=&quot;200&quot; loading=&quot;lazy&quot; /&gt;
+      &lt;img src=&quot;http://localhost:8080/img/RPLOnePage.png&quot; alt=&quot;Structure Cloud logo w/text&quot; width=&quot;auto&quot; height=&quot;200&quot; loading=&quot;lazy&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-10 col-sm-10 col-lg-6&quot;&gt;
+      &lt;!-- &lt;h2 class=&quot;display-6 fw-bold lh-1 mb-3&quot;&gt;Logos&lt;/h2&gt; --&gt;
+      &lt;p class=&quot;lead&quot;&gt;Wireframes are the basis for the majority of my designs. I often will include callouts or descriptors to help disseminate the information on a wireframe, rather than overcomplicate or over-design.&lt;/p&gt;
+      &lt;!-- &lt;div class=&quot;d-grid gap-2 d-md-flex justify-content-md-start&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-secondary px-4 me-md-2&quot;&gt;Process&lt;/a&gt;
+      &lt;/div&gt; --&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
   &lt;h2 class=&quot;display-5 fw-bold lh-1&quot;&gt;Logos&lt;/h2&gt;
   &lt;div class=&quot;row flex-lg-row-reverse align-items-center gb-5 pb-5&quot;&gt;
-    &lt;div class=&quot;col-10 col-sm-8 col-lg-6&quot;&gt;
+    &lt;div class=&quot;col-10 col-sm-10 col-lg-6&quot;&gt;
       &lt;!-- &lt;h2 class=&quot;display-6 fw-bold lh-1 mb-3&quot;&gt;Logos&lt;/h2&gt; --&gt;
       &lt;p class=&quot;lead&quot;&gt;From time to time, I&#39;m asked to create a new logo or update an existing one. These can be based off of existing ideas or done from scratch. Here are a few examples.&lt;/p&gt;
       &lt;!-- &lt;div class=&quot;d-grid gap-2 d-md-flex justify-content-md-start&quot;&gt;
@@ -408,44 +433,46 @@
     &lt;div class=&quot;col-lg-6&quot;&gt;
       &lt;img src=&quot;http://localhost:8080/img/SC_logo_cloud.png&quot; alt=&quot;Structure Cloud logo&quot; width=&quot;auto&quot; height=&quot;50&quot; loading=&quot;lazy&quot; /&gt;
       &lt;img src=&quot;http://localhost:8080/img/SC_logo_cloud2.png&quot; alt=&quot;Structure Cloud logo w/text&quot; width=&quot;auto&quot; height=&quot;50&quot; loading=&quot;lazy&quot; /&gt;
-      &lt;img src=&quot;http://localhost:8080/img/Scouters.png&quot; alt=&quot;Scouters Lodge logo&quot; width=&quot;auto&quot; height=&quot;50&quot; loading=&quot;lazy&quot; /&gt;
+      &lt;br /&gt;
+      &lt;img src=&quot;http://localhost:8080/img/Scouters.png&quot; alt=&quot;Scouters Lodge logo&quot; width=&quot;auto&quot; height=&quot;100&quot; loading=&quot;lazy&quot; /&gt;
+      &lt;img src=&quot;http://localhost:8080/img/TLG2012.jpg&quot; alt=&quot;Two logos to be used on a glass&quot; width=&quot;auto&quot; height=&quot;100&quot; loading=&quot;lazy&quot; /&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;h2 class=&quot;display-5 fw-bold lh-1&quot;&gt;Sketch libraries&lt;/h2&gt;
   &lt;div class=&quot;row flex-lg-row-reverse align-items-center gb-5 pb-5&quot;&gt;
     &lt;div class=&quot;col-lg-6&quot;&gt;
-      &lt;img src=&quot;http://localhost:8080/img/Bootstrap5SocialImage.png&quot; class=&quot;d-block mx-lg-auto img-fluid&quot; alt=&quot;Social tag for the Bootstrap 5 Sketch library&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;
+      &lt;img src=&quot;http://localhost:8080/img/Bootstrap5SocialImage.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Social tag for the Bootstrap 5 Sketch library&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;col-10 col-sm-8 col-lg-6&quot;&gt;
+    &lt;div class=&quot;col-10 col-sm-10 col-lg-6&quot;&gt;
       &lt;h2 class=&quot;display-6 lh-1 mb-3&quot;&gt;Bootstrap 5&lt;/h2&gt;
       &lt;p class=&quot;lead&quot;&gt;From time to time, I will create a Sketch library for use in a given project. These are shared with the team, as well as online. I create these libraries when I know that a given project will either have a large number of components or have multiple designers working on it. This will ensure continuity between designs and a clear understanding of what is being done.&lt;/p&gt;
       &lt;div class=&quot;d-grid gap-2 d-md-flex justify-content-md-start&quot;&gt;
-        &lt;a href=&quot;https://github.com/AdamJ/Bootstrap5-sketch/releases&quot; class=&quot;btn btn-outline-primary px-4 me-md-2&quot; target=&quot;_blank&quot;&gt;Download from GitHub &lt;i class=&quot;bi bi-file-arrow-down&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://github.com/AdamJ/Bootstrap5-sketch/releases&quot; class=&quot;btn btn-outline-primary px-4 me-md-2&quot; target=&quot;_blank&quot;&gt;Download from GitHub &lt;i class=&quot;fas fa-file-download&quot;&gt;&lt;/i&gt;&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;h2 class=&quot;display-5 fw-bold lh-1&quot;&gt;Editor themes&lt;/h2&gt;
   &lt;div class=&quot;row flex-lg-row-reverse align-items-center p-2&quot;&gt;
     &lt;div class=&quot;col-lg-6&quot;&gt;
-      &lt;img src=&quot;http://localhost:8080/img/atom-pf-theme.png&quot; class=&quot;d-block mx-lg-auto img-fluid&quot; alt=&quot;Atom.io PatternFly Syntax screenshot&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;
+      &lt;img src=&quot;http://localhost:8080/img/atom-pf-theme.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Atom.io PatternFly Syntax screenshot&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;col-10 col-sm-8 col-lg-6&quot;&gt;
+    &lt;div class=&quot;col-10 col-sm-10 col-lg-6&quot;&gt;
       &lt;h2 class=&quot;display-6 lh-1 mb-3&quot;&gt;PatternFly UI (atom.io)&lt;/h2&gt;
       &lt;p class=&quot;lead&quot;&gt;This theme is inspired by PatternFly for use with Atom.io. Just a fan of both projects, creating something that I&#39;ll like to look at every day. This is a dark theme, using blue as the primary color.&lt;/p&gt;
       &lt;div class=&quot;d-grid gap-2 d-md-flex justify-content-md-start&quot;&gt;
-        &lt;a href=&quot;https://atom.io/themes/atom-patternfly-ui&quot; class=&quot;btn btn-outline-secondary px-4 me-md-2&quot; target=&quot;_blank&quot;&gt;View on Atom.io &lt;i class=&quot;bi bi-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://atom.io/themes/atom-patternfly-ui&quot; class=&quot;btn btn-outline-secondary px-4 me-md-2&quot; target=&quot;_blank&quot;&gt;View on Atom.io &lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&quot;row flex-lg-row-reverse align-items-center gb-5 pb-5&quot;&gt;
     &lt;div class=&quot;col-lg-6&quot;&gt;
-      &lt;img src=&quot;http://localhost:8080/img/atom-pf-syntax.png&quot; class=&quot;d-block mx-lg-auto img-fluid&quot; alt=&quot;Atom.io PatternFly Syntax screenshot&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;
+      &lt;img src=&quot;http://localhost:8080/img/atom-pf-syntax.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Atom.io PatternFly Syntax screenshot&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;col-10 col-sm-8 col-lg-6&quot;&gt;
+    &lt;div class=&quot;col-10 col-sm-10 col-lg-6&quot;&gt;
       &lt;h2 class=&quot;display-6 lh-1 mb-3&quot;&gt;PatternFly Syntax (atom.io)&lt;/h2&gt;
       &lt;p class=&quot;lead&quot;&gt;This is a PatternFly syntax theme for the Atom.io editor, inspired by the open source PatternFly library. This syntax theme is best used with the PatternFly UI theme.&lt;/p&gt;
       &lt;div class=&quot;d-grid gap-2 d-md-flex justify-content-md-start&quot;&gt;
-        &lt;a href=&quot;https://atom.io/themes/atom-patternfly-syntax&quot; class=&quot;btn btn-outline-secondary px-4 me-md-2&quot; target=&quot;_blank&quot;&gt;View on Atom.io &lt;i class=&quot;bi bi-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://atom.io/themes/atom-patternfly-syntax&quot; class=&quot;btn btn-outline-secondary px-4 me-md-2&quot; target=&quot;_blank&quot;&gt;View on Atom.io &lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -456,7 +483,7 @@
 	<entry>
 		<title>Prototypes</title>
 		<link href="http://localhost:8080/prototypes/"/>
-		<updated>2021-06-04T15:24:58Z</updated>
+		<updated>2021-06-10T13:20:26Z</updated>
 		<id>http://localhost:8080/prototypes/</id>
 		<content type="html">&lt;div class=&quot;mb-2 py-2 px-5 container&quot;&gt;
   &lt;h2 class=&quot;pb-2 border-bottom&quot;&gt;
@@ -467,10 +494,30 @@
       &lt;div&gt;
         &lt;h2&gt;PatternFly 4&lt;/h2&gt;
         &lt;p&gt;In support of the 4th release of PatternFly, I worked with a group of designers to create a modern, responsive take on the PatternFly website. Using a responsive layout with SVGs that move with the page, I create clean asthetic that would flow through the rest of the site.&lt;/p&gt;
-        &lt;a href=&quot;https://pf4testbench.netlify.app/&quot; class=&quot;btn btn-dark&quot;&gt;
+        &lt;a href=&quot;https://pf4testbench.netlify.app/&quot; class=&quot;btn btn-secondary&quot;&gt;
           View site
         &lt;/a&gt;
       &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col d-flex align-items-start&quot;&gt;
+      &lt;div&gt;
+        &lt;h2&gt;Feature flags&lt;/h2&gt;
+        &lt;p&gt;As part of a usability study, I worked with a UX Researcher to test out different variations of a Feature Flag, or notifier, for aspects and pages of an application that are either in a pre-release state, or have an unreleased element in use.&lt;/p&gt;
+        &lt;a href=&quot;https://www.adamjolicoeur.com/feature-flag-prototype/&quot; class=&quot;btn btn-secondary&quot;&gt;
+          View site
+        &lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row g-4 py-5 row-cols-1 row-cols-lg-2&quot;&gt;
+    &lt;b&gt;Additional examples:&lt;/b&gt;
+    &lt;div class=&quot;col d-flex align-items-start&quot;&gt;
+      &lt;ul class=&quot;fa-ul&quot;&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;a href=&quot;https://www.adamjolicoeur.com/design-tracker-template/&quot; target=&quot;top&quot;&gt;Design tracker&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;a href=&quot;https://www.adamjolicoeur.com/leftnav-prototype/&quot; target=&quot;top&quot;&gt;Leftnav prototype&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;a href=&quot;https://www.adamjolicoeur.com/DashboardPrototype/&quot; target=&quot;top&quot;&gt;Dashboard prototype&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;a href=&quot;https://www.adamjolicoeur.com/testing_environment/index.html&quot; target=&quot;top&quot;&gt;Testing environment&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -498,5 +545,21 @@
   &lt;/div&gt;
 &lt;/div&gt;
 </content>
+	</entry>
+	
+	<entry>
+		<title>TimeTrak by Switchback</title>
+		<link href="http://localhost:8080/history/timetrak/"/>
+		<updated>2021-06-25T23:33:11Z</updated>
+		<id>http://localhost:8080/history/timetrak/</id>
+		<content type="html"></content>
+	</entry>
+	
+	<entry>
+		<title>District 25 website</title>
+		<link href="http://localhost:8080/history/district25/"/>
+		<updated>2021-06-25T23:37:19Z</updated>
+		<id>http://localhost:8080/history/district25/</id>
+		<content type="html"></content>
 	</entry>
 </feed>
