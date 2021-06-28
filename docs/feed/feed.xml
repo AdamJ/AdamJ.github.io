@@ -5,7 +5,7 @@
 	
 	<link href="http://localhost:8080/feed/" rel="self"/>
 	<link href="http://localhost:8080"/>
-	<updated>2021-06-30T23:12:51Z</updated>
+	<updated>2021-07-02T14:45:28Z</updated>
 	<id>http://localhost:8080</id>
 	<author>
 		<name>Adam J. Jolicoeur</name>
@@ -353,92 +353,9 @@
 	</entry>
 	
 	<entry>
-		<title>District 25 website</title>
-		<link href="http://localhost:8080/designs/district25/"/>
-		<updated>2021-06-28T13:55:42Z</updated>
-		<id>http://localhost:8080/designs/district25/</id>
-		<content type="html"></content>
-	</entry>
-	
-	<entry>
-		<title>TimeTrak by Switchback</title>
-		<link href="http://localhost:8080/designs/timetrak/"/>
-		<updated>2021-06-28T13:55:42Z</updated>
-		<id>http://localhost:8080/designs/timetrak/</id>
-		<content type="html"></content>
-	</entry>
-	
-	<entry>
-		<title>Prototypes</title>
-		<link href="http://localhost:8080/prototypes/"/>
-		<updated>2021-06-28T13:55:42Z</updated>
-		<id>http://localhost:8080/prototypes/</id>
-		<content type="html">&lt;div class=&quot;mb-2 py-2 px-5 container&quot;&gt;
-  &lt;h2 class=&quot;pb-2 border-bottom&quot;&gt;
-    Sites
-  &lt;/h2&gt;
-  &lt;div class=&quot;row g-4 py-5 row-cols-1 row-cols-lg-2&quot;&gt;
-    &lt;div class=&quot;col d-flex align-items-start&quot;&gt;
-      &lt;div&gt;
-        &lt;h2&gt;PatternFly 4&lt;/h2&gt;
-        &lt;p&gt;In support of the 4th release of PatternFly, I worked with a group of designers to create a modern, responsive take on the PatternFly website. Using a responsive layout with SVGs that move with the page, I create clean aesthetic that would flow through the rest of the site.&lt;/p&gt;
-        &lt;a href=&quot;https://pf4testbench.netlify.app/&quot; class=&quot;btn btn-secondary&quot;&gt;
-          View site
-        &lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col d-flex align-items-start&quot;&gt;
-      &lt;div&gt;
-        &lt;h2&gt;Feature flags&lt;/h2&gt;
-        &lt;p&gt;As part of a usability study, I worked with a UX Researcher to test out different variations of a Feature Flag, or notifier, for aspects and pages of an application that are either in a pre-release state, or have an unreleased element in use.&lt;/p&gt;
-        &lt;a href=&quot;https://www.adamjolicoeur.com/feature-flag-prototype/&quot; class=&quot;btn btn-secondary&quot;&gt;
-          View site
-        &lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;row g-4 py-5 row-cols-1 row-cols-lg-2&quot;&gt;
-    &lt;b&gt;Additional examples:&lt;/b&gt;
-    &lt;div class=&quot;col d-flex align-items-start&quot;&gt;
-      &lt;ul class=&quot;fa-ul&quot;&gt;
-        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;a href=&quot;https://www.adamjolicoeur.com/design-tracker-template/&quot; target=&quot;top&quot;&gt;Design tracker&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;a href=&quot;https://www.adamjolicoeur.com/leftnav-prototype/&quot; target=&quot;top&quot;&gt;Leftnav prototype&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;a href=&quot;https://www.adamjolicoeur.com/DashboardPrototype/&quot; target=&quot;top&quot;&gt;Dashboard prototype&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;a href=&quot;https://www.adamjolicoeur.com/testing_environment/index.html&quot; target=&quot;top&quot;&gt;Testing environment&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;mb-2 py-2 px-5 container&quot;&gt;
-  &lt;h2 class=&quot;pb-2 border-bottom&quot;&gt;
-    CodePens
-  &lt;/h2&gt;
-  &lt;div class=&quot;row g-4 py-5 row-cols-1&quot;&gt;
-    &lt;p class=&quot;codepen&quot; data-height=&quot;450&quot; data-theme-id=&quot;38046&quot; data-default-tab=&quot;result&quot; data-user=&quot;mindreeper2420&quot; data-slug-hash=&quot;XWNbJvp&quot; style=&quot;height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-pen-title=&quot;Animated Cards on Glass&quot;&gt;
-      &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/mindreeper2420/pen/XWNbJvp&quot;&gt;
-      Animated Cards on Glass&lt;/a&gt; by Adam Jolicoeur (&lt;a href=&quot;https://codepen.io/mindreeper2420&quot;&gt;@mindreeper2420&lt;/a&gt;)
-      on &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
-    &lt;/p&gt;
-    &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-    &lt;!-- &lt;h2&gt;PatternFly 4&lt;/h2&gt;
-    &lt;p&gt;I worked with a group of designers to transform the website for the 4th release PatternFly to be a modern, responsive take on previous examples. Using a responsive layout with SVGs that move with the page, I transformed their designs into a site with clean, appealing aesthetics that would flow throughout the website.&lt;/p&gt; --&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;row g-4 py-5 row-cols-1&quot;&gt;
-    &lt;p class=&quot;codepen&quot; data-height=&quot;450&quot; data-theme-id=&quot;38046&quot; data-default-tab=&quot;html,result&quot; data-user=&quot;mindreeper2420&quot; data-slug-hash=&quot;KKgdeEE&quot; style=&quot;height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-pen-title=&quot;Download Card Overlay&quot;&gt;
-      &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/mindreeper2420/pen/KKgdeEE&quot;&gt;
-      Download Card Overlay&lt;/a&gt; by Adam Jolicoeur (&lt;a href=&quot;https://codepen.io/mindreeper2420&quot;&gt;@mindreeper2420&lt;/a&gt;)
-      on &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
-    &lt;/p&gt;
-    &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</content>
-	</entry>
-	
-	<entry>
 		<title>Designs</title>
 		<link href="http://localhost:8080/design/"/>
-		<updated>2021-06-30T23:12:51Z</updated>
+		<updated>2021-07-02T14:45:28Z</updated>
 		<id>http://localhost:8080/design/</id>
 		<content type="html">&lt;div class=&quot;container&quot;&gt;
   &lt;p class=&quot;lead text-center&quot;&gt;
@@ -581,7 +498,7 @@
 	<entry>
 		<title>Application Lifecycle Management</title>
 		<link href="http://localhost:8080/designs/alm/"/>
-		<updated>2021-06-30T23:12:51Z</updated>
+		<updated>2021-07-02T14:45:28Z</updated>
 		<id>http://localhost:8080/designs/alm/</id>
 		<content type="html">&lt;div class=&quot;container mb-5&quot;&gt;
   &lt;dl class=&quot;row&quot;&gt;
@@ -618,42 +535,42 @@
         &lt;img src=&quot;http://localhost:8080/img/ALM_step1.png&quot; class=&quot;card-img-top&quot; alt=&quot;Step 1 of the ALM wireframes&quot; /&gt;
         &lt;div class=&quot;card-body&quot;&gt;
           &lt;h5 class=&quot;card-title&quot;&gt;Step 1&lt;/h5&gt;
-          &lt;p class=&quot;card-text&quot;&gt;
-            &lt;/p&gt;&lt;ol&gt;
+          &lt;!-- &lt;p class=&quot;card-text&quot;&gt;
+            &lt;ol&gt;
               &lt;li&gt;I see a recommendation in the report.&lt;/li&gt;
               &lt;li&gt;I click &#39;make a work item&#39;.&lt;/li&gt;
               &lt;li&gt;I navigate to the Planner to see/comment on the new work item.&lt;/li&gt;
               &lt;li&gt;If the same recommendation is suggested during another build process, it will generate a new work. At this time, detection for duplicate items does not exist.&lt;/li&gt;
             &lt;/ol&gt;
-          &lt;p&gt;&lt;/p&gt;
+          &lt;/p&gt; --&gt;
         &lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;card&quot;&gt;
         &lt;img src=&quot;http://localhost:8080/img/ALM_step2.png&quot; class=&quot;card-img-top&quot; alt=&quot;Step 2 of the ALM wireframes&quot; /&gt;
         &lt;div class=&quot;card-body&quot;&gt;
           &lt;h5 class=&quot;card-title&quot;&gt;Step 2&lt;/h5&gt;
-          &lt;p class=&quot;card-text&quot;&gt;
-            &lt;/p&gt;&lt;ol&gt;
+          &lt;!-- &lt;p class=&quot;card-text&quot;&gt;
+            &lt;ol&gt;
               &lt;li&gt;I see a recommendation in the report.&lt;/li&gt;
               &lt;li&gt;I click &#39;make a work item&#39;.&lt;/li&gt;
               &lt;li&gt;I navigate to the Planner to see/comment on the new work item.&lt;/li&gt;
               &lt;li&gt;If the same recommendation is suggested during another build process, it will generate a new work. At this time, detection for duplicate items does not exist.&lt;/li&gt;
             &lt;/ol&gt;
-          &lt;p&gt;&lt;/p&gt;
+          &lt;/p&gt; --&gt;
         &lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;card&quot;&gt;
         &lt;img src=&quot;http://localhost:8080/img/ALM_step3.png&quot; class=&quot;card-img-top&quot; alt=&quot;Step 3 of the ALM wireframes&quot; /&gt;
         &lt;div class=&quot;card-body&quot;&gt;
           &lt;h5 class=&quot;card-title&quot;&gt;Step 3&lt;/h5&gt;
-          &lt;p class=&quot;card-text&quot;&gt;
-            &lt;/p&gt;&lt;ol&gt;
+          &lt;!-- &lt;p class=&quot;card-text&quot;&gt;
+            &lt;ol&gt;
               &lt;li&gt;I see a recommendation in the report.&lt;/li&gt;
               &lt;li&gt;I click &#39;make a work item&#39;.&lt;/li&gt;
               &lt;li&gt;I navigate to the Planner to see/comment on the new work item.&lt;/li&gt;
               &lt;li&gt;If the same recommendation is suggested during another build process, it will generate a new work. At this time, detection for duplicate items does not exist.&lt;/li&gt;
             &lt;/ol&gt;
-          &lt;p&gt;&lt;/p&gt;
+          &lt;/p&gt; --&gt;
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -668,8 +585,8 @@
         &lt;/div&gt;
         &lt;div class=&quot;col-md-7&quot;&gt;
           &lt;div class=&quot;card-body&quot;&gt;
-            &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
-            &lt;p class=&quot;card-text&quot;&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Wireframe&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;This wireframe was created with call outs in order to communicate my thoughts around the design to anyone who saw it, but could not talk with me. Specifically, this worked extremely well when working with colleagues in other time zones where our working ours did not match up.&lt;/p&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
@@ -702,7 +619,7 @@
 	<entry>
 		<title>Customer Engagement App</title>
 		<link href="http://localhost:8080/designs/customer-engagement/"/>
-		<updated>2021-06-30T23:12:51Z</updated>
+		<updated>2021-07-02T14:45:28Z</updated>
 		<id>http://localhost:8080/designs/customer-engagement/</id>
 		<content type="html">&lt;div class=&quot;container mb-5&quot;&gt;
   &lt;dl class=&quot;row&quot;&gt;
@@ -776,6 +693,89 @@
     &lt;div class=&quot;card-body&quot;&gt;
       &lt;p class=&quot;card-text&quot;&gt;I believe that the process used for this project, albeit different, fit within the framework given and met all of the requirements as laid out by the Project Management Team. In the end, a new interface was created that met all of the requirements and was based off of clear steps and proper research. Competitively, this new design met, and often surpassed, expectations when compared to what was in use prior to this project.&lt;/p&gt;
     &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>District 25 website</title>
+		<link href="http://localhost:8080/designs/district25/"/>
+		<updated>2021-07-02T14:45:28Z</updated>
+		<id>http://localhost:8080/designs/district25/</id>
+		<content type="html"></content>
+	</entry>
+	
+	<entry>
+		<title>TimeTrak by Switchback</title>
+		<link href="http://localhost:8080/designs/timetrak/"/>
+		<updated>2021-07-02T14:45:28Z</updated>
+		<id>http://localhost:8080/designs/timetrak/</id>
+		<content type="html"></content>
+	</entry>
+	
+	<entry>
+		<title>Prototypes</title>
+		<link href="http://localhost:8080/prototypes/"/>
+		<updated>2021-07-02T14:45:28Z</updated>
+		<id>http://localhost:8080/prototypes/</id>
+		<content type="html">&lt;div class=&quot;mb-2 py-2 px-5 container&quot;&gt;
+  &lt;h2 class=&quot;pb-2 border-bottom&quot;&gt;
+    Sites
+  &lt;/h2&gt;
+  &lt;div class=&quot;row g-4 py-5 row-cols-1 row-cols-lg-2&quot;&gt;
+    &lt;div class=&quot;col d-flex align-items-start&quot;&gt;
+      &lt;div&gt;
+        &lt;h2&gt;PatternFly 4&lt;/h2&gt;
+        &lt;p&gt;In support of the 4th release of PatternFly, I worked with a group of designers to create a modern, responsive take on the PatternFly website. Using a responsive layout with SVGs that move with the page, I create clean aesthetic that would flow through the rest of the site.&lt;/p&gt;
+        &lt;a href=&quot;https://pf4testbench.netlify.app/&quot; class=&quot;btn btn-secondary&quot;&gt;
+          View site
+        &lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col d-flex align-items-start&quot;&gt;
+      &lt;div&gt;
+        &lt;h2&gt;Feature flags&lt;/h2&gt;
+        &lt;p&gt;As part of a usability study, I worked with a UX Researcher to test out different variations of a Feature Flag, or notifier, for aspects and pages of an application that are either in a pre-release state, or have an unreleased element in use.&lt;/p&gt;
+        &lt;a href=&quot;https://www.adamjolicoeur.com/feature-flag-prototype/&quot; class=&quot;btn btn-secondary&quot;&gt;
+          View site
+        &lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row g-4 py-5 row-cols-1 row-cols-lg-2&quot;&gt;
+    &lt;b&gt;Additional examples:&lt;/b&gt;
+    &lt;div class=&quot;col d-flex align-items-start&quot;&gt;
+      &lt;ul class=&quot;fa-ul&quot;&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;a href=&quot;https://www.adamjolicoeur.com/design-tracker-template/&quot; target=&quot;top&quot;&gt;Design tracker&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;a href=&quot;https://www.adamjolicoeur.com/leftnav-prototype/&quot; target=&quot;top&quot;&gt;Leftnav prototype&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;a href=&quot;https://www.adamjolicoeur.com/DashboardPrototype/&quot; target=&quot;top&quot;&gt;Dashboard prototype&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;a href=&quot;https://www.adamjolicoeur.com/testing_environment/index.html&quot; target=&quot;top&quot;&gt;Testing environment&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;mb-2 py-2 px-5 container&quot;&gt;
+  &lt;h2 class=&quot;pb-2 border-bottom&quot;&gt;
+    CodePens
+  &lt;/h2&gt;
+  &lt;div class=&quot;row g-4 py-5 row-cols-1&quot;&gt;
+    &lt;p class=&quot;codepen&quot; data-height=&quot;450&quot; data-theme-id=&quot;38046&quot; data-default-tab=&quot;result&quot; data-user=&quot;mindreeper2420&quot; data-slug-hash=&quot;XWNbJvp&quot; style=&quot;height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-pen-title=&quot;Animated Cards on Glass&quot;&gt;
+      &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/mindreeper2420/pen/XWNbJvp&quot;&gt;
+      Animated Cards on Glass&lt;/a&gt; by Adam Jolicoeur (&lt;a href=&quot;https://codepen.io/mindreeper2420&quot;&gt;@mindreeper2420&lt;/a&gt;)
+      on &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+    &lt;/p&gt;
+    &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- &lt;h2&gt;PatternFly 4&lt;/h2&gt;
+    &lt;p&gt;I worked with a group of designers to transform the website for the 4th release PatternFly to be a modern, responsive take on previous examples. Using a responsive layout with SVGs that move with the page, I transformed their designs into a site with clean, appealing aesthetics that would flow throughout the website.&lt;/p&gt; --&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row g-4 py-5 row-cols-1&quot;&gt;
+    &lt;p class=&quot;codepen&quot; data-height=&quot;450&quot; data-theme-id=&quot;38046&quot; data-default-tab=&quot;html,result&quot; data-user=&quot;mindreeper2420&quot; data-slug-hash=&quot;KKgdeEE&quot; style=&quot;height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-pen-title=&quot;Download Card Overlay&quot;&gt;
+      &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/mindreeper2420/pen/KKgdeEE&quot;&gt;
+      Download Card Overlay&lt;/a&gt; by Adam Jolicoeur (&lt;a href=&quot;https://codepen.io/mindreeper2420&quot;&gt;@mindreeper2420&lt;/a&gt;)
+      on &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+    &lt;/p&gt;
+    &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </content>
