@@ -41,42 +41,42 @@ description: "A one-stop-shop for a team's planning and project lifecycle manage
         <img src="../../img/ALM_step1.png" class="card-img-top" alt="Step 1 of the ALM wireframes">
         <div class="card-body">
           <h5 class="card-title">Step 1</h5>
-          <p class="card-text">
+          <!-- <p class="card-text">
             <ol>
               <li>I see a recommendation in the report.</li>
               <li>I click 'make a work item'.</li>
               <li>I navigate to the Planner to see/comment on the new work item.</li>
               <li>If the same recommendation is suggested during another build process, it will generate a new work. At this time, detection for duplicate items does not exist.</li>
             </ol>
-          </p>
+          </p> -->
         </div>
       </div>
       <div class="card">
         <img src="../../img/ALM_step2.png" class="card-img-top" alt="Step 2 of the ALM wireframes">
         <div class="card-body">
           <h5 class="card-title">Step 2</h5>
-          <p class="card-text">
+          <!-- <p class="card-text">
             <ol>
               <li>I see a recommendation in the report.</li>
               <li>I click 'make a work item'.</li>
               <li>I navigate to the Planner to see/comment on the new work item.</li>
               <li>If the same recommendation is suggested during another build process, it will generate a new work. At this time, detection for duplicate items does not exist.</li>
             </ol>
-          </p>
+          </p> -->
         </div>
       </div>
       <div class="card">
         <img src="../../img/ALM_step3.png" class="card-img-top" alt="Step 3 of the ALM wireframes">
         <div class="card-body">
           <h5 class="card-title">Step 3</h5>
-          <p class="card-text">
+          <!-- <p class="card-text">
             <ol>
               <li>I see a recommendation in the report.</li>
               <li>I click 'make a work item'.</li>
               <li>I navigate to the Planner to see/comment on the new work item.</li>
               <li>If the same recommendation is suggested during another build process, it will generate a new work. At this time, detection for duplicate items does not exist.</li>
             </ol>
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
@@ -91,8 +91,8 @@ description: "A one-stop-shop for a team's planning and project lifecycle manage
         </div>
         <div class="col-md-7">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5 class="card-title">Wireframe</h5>
+            <p class="card-text">This wireframe was created with call outs in order to communicate my thoughts around the design to anyone who saw it, but could not talk with me. Specifically, this worked extremely well when working with colleagues in other time zones where our working ours did not match up.</p>
           </div>
         </div>
       </div>

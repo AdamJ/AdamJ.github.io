@@ -20,21 +20,6 @@
 	},
 
 	{
-   "title":"District 25 website",
-   "imgName":"district-25-website"
-	},
-
-	{
-   "title":"TimeTrak by Switchback",
-   "imgName":"timetrak-by-switchback"
-	},
-
-	{
-   "title":"Prototypes",
-   "imgName":"prototypes"
-	},
-
-	{
    "title":"Designs",
    "imgName":"designs"
 	},
@@ -47,5 +32,20 @@
 	{
    "title":"Customer Engagement App",
    "imgName":"customer-engagement-app"
+	},
+
+	{
+   "title":"District 25 website",
+   "imgName":"district-25-website"
+	},
+
+	{
+   "title":"TimeTrak by Switchback",
+   "imgName":"timetrak-by-switchback"
+	},
+
+	{
+   "title":"Prototypes",
+   "imgName":"prototypes"
 	}
 ]

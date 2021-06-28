@@ -63,3 +63,29 @@
     max-width: 500px;
   }
 }
+::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+::-webkit-scrollbar-track {
+  background: #ddd;        /* color of the tracking area */
+}
+::-webkit-scrollbar-thumb {
+  background-color: #101010;    /* color of the scroll thumb */
+  border: 1px solid #101010;  /* creates padding around scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  ::-webkit-scrollbar-track {
+    background: #101010;        /* color of the tracking area */
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(8, 15, 48);
+    background: linear-gradient(180deg, rgb(0, 185, 228) 0%, rgb(4, 67, 71) 35%, rgba(4, 67, 71) 65%, rgba(0, 185, 228, 1) 100%);
+    border: 1px solid #101010;  /* creates padding around scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+  }
+}
