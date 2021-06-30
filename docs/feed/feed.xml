@@ -5,7 +5,7 @@
 	
 	<link href="http://localhost:8080/feed/" rel="self"/>
 	<link href="http://localhost:8080"/>
-	<updated>2021-06-25T23:37:19Z</updated>
+	<updated>2021-06-30T11:53:27Z</updated>
 	<id>http://localhost:8080</id>
 	<author>
 		<name>Adam J. Jolicoeur</name>
@@ -201,7 +201,7 @@
 	<entry>
 		<title>Code Examples</title>
 		<link href="http://localhost:8080/code/"/>
-		<updated>2021-06-10T13:20:26Z</updated>
+		<updated>2021-06-28T13:55:42Z</updated>
 		<id>http://localhost:8080/code/</id>
 		<content type="html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;row row-cols-1 row-cols-lg-2 align-items-stretch gy-5 py-5&quot;&gt;
@@ -355,31 +355,58 @@
 	<entry>
 		<title>Designs</title>
 		<link href="http://localhost:8080/design/"/>
-		<updated>2021-06-10T13:20:26Z</updated>
+		<updated>2021-06-28T13:55:42Z</updated>
 		<id>http://localhost:8080/design/</id>
 		<content type="html">&lt;div class=&quot;container&quot;&gt;
   &lt;p class=&quot;lead text-center&quot;&gt;
     In most cases, I will use something similar to my &lt;a href=&quot;https://www.adamjolicoeur.com/DesignSprint/&quot; target=&quot;top&quot;&gt;Design Sprint&lt;/a&gt; site to organize my research (competitive and inspirational), create an easy access point for design assets, and color palettes. If I&#39;m working on a prototype, I&#39;ll often include that link as well.
   &lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;container col-xxl-8 px-4 pb-5&quot;&gt;
-  &lt;div class=&quot;row g-5 py-5 d-flex justify-content-center&quot;&gt;
-  &lt;!-- &lt;img src=&quot;../img/bulb.png&quot; alt=&quot;Idea bulb placeholder&quot; style=&quot;width: 25%;&quot;&gt; --&gt;
-  &lt;div class=&quot;row flex-lg-row-reverse align-items-center g-5 py-5&quot;&gt;
-    &lt;div class=&quot;col-10 col-sm-10 col-lg-6&quot;&gt;
-      &lt;img src=&quot;http://localhost:8080/img/Timetrak.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Timetrak&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-lg-6&quot;&gt;
-      &lt;h2 class=&quot;display-6 fw-bold lh-1 mb-3&quot;&gt;Switchback TimeTrak&lt;/h2&gt;
-      &lt;p class=&quot;lead&quot;&gt;The goal of this redesign was to create a simplistic system to easily access recent log entries, active projects, and team calendars. From this dashboard, users can quickly see these items, in addition to providing quick navigation items for in-depth reporting.&lt;/p&gt;
-      &lt;!-- &lt;a href=&quot;/history/timetrak&quot; class=&quot;icon-link&quot;&gt;
-        History
-        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;1em&quot; height=&quot;1em&quot;fill=&quot;currentColor&quot; class=&quot;bi bi-chevron-compact-right&quot; viewBox=&quot;0 0 16 16&quot;&gt;
-          &lt;path fill-rule=&quot;evenodd&quot; d=&quot;M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z&quot;/&gt;
+&lt;div class=&quot;d-md-flex flex-md-equal w-100 my-md-3 ps-md-3&quot;&gt;
+  &lt;div class=&quot;bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden&quot;&gt;
+    &lt;div class=&quot;my-3 py-3&quot;&gt;
+      &lt;h2 class=&quot;display-5&quot;&gt;Customer Engagement App&lt;/h2&gt;
+      &lt;p class=&quot;lead&quot;&gt;For this project, I was tasked with improving the overall user experience for tracking customer engagement and marketing campaigns. This project included creating color palettes, new UI components, personas, and user journeys.&lt;/p&gt;
+      &lt;a href=&quot;http://localhost:8080/designs/customer-engagement&quot; class=&quot;icon-link text-white lead&quot;&gt;
+        the journey
+        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;1em&quot; height=&quot;1em&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-chevron-compact-right&quot; viewBox=&quot;0 0 16 16&quot;&gt;
+          &lt;path fill-rule=&quot;evenodd&quot; d=&quot;M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z&quot;&gt;&lt;/path&gt;
         &lt;/svg&gt;
-      &lt;/a&gt; --&gt;
+      &lt;/a&gt;
     &lt;/div&gt;
+    &lt;div class=&quot;bg-light shadow-sm mx-auto&quot; style=&quot;width: 80%; height: 300px; border-radius: 21px 21px 0 0;&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/CEA_Dashboard.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Customer Engagement App Dashboard thumbnail&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/div&gt;
   &lt;/div&gt;
+  &lt;div class=&quot;bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden&quot;&gt;
+    &lt;div class=&quot;my-3 p-3&quot;&gt;
+      &lt;h2 class=&quot;display-5&quot;&gt;Application Lifecycle Management&lt;/h2&gt;
+      &lt;p class=&quot;lead&quot;&gt;A one-stop-shop for a team&#39;s planning and project lifecycle management.&lt;/p&gt;
+      &lt;a href=&quot;http://localhost:8080/designs/alm&quot; class=&quot;icon-link text-dark lead&quot;&gt;
+        the journey
+        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;1em&quot; height=&quot;1em&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-chevron-compact-right&quot; viewBox=&quot;0 0 16 16&quot;&gt;
+          &lt;path fill-rule=&quot;evenodd&quot; d=&quot;M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z&quot;&gt;&lt;/path&gt;
+        &lt;/svg&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;bg-light mx-auto&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/OSIO-laptop-screen-1200.png&quot; class=&quot;d-block mx-lg-auto img-fluid&quot; alt=&quot;Application Lifecycle Management thumbnail&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-md-flex flex-md-equal w-100 my-md-3 ps-md-3&quot;&gt;
+  &lt;div class=&quot;bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden&quot;&gt;
+    &lt;div class=&quot;my-3 py-3&quot;&gt;
+      &lt;h2 class=&quot;display-5&quot;&gt;Switchback TimeTrak&lt;/h2&gt;
+      &lt;p class=&quot;lead&quot;&gt;The goal of this redesign was to create a simplistic system to easily access recent log entries, active projects, and team calendars. From this dashboard, users can quickly see these items, in addition to providing quick navigation items for in-depth reporting.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;bg-light shadow-sm mx-auto&quot; style=&quot;width: 80%; height: 300px; border-radius: 21px 21px 0 0;&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/Timetrak.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Switchback Timetrak thumbnail&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden&quot;&gt;
+    &lt;div class=&quot;my-3 p-3&quot;&gt;
+      &lt;h2 class=&quot;display-5&quot;&gt;Structure&lt;/h2&gt;
+      &lt;p class=&quot;lead&quot;&gt;For this project, I was tasked with converting the UI of a COBOL application into something that would work with the modern web. The task was very challenging, in that one of the main requirements was to keep the layout as close to the original application as possible (in order to minimize the amount of relearning existing users would need to do), while also providing a clean UI that would attract new users to the platform.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;bg-dark shadow-sm mx-auto&quot; style=&quot;width: 80%; height: 300px; border-radius: 21px 21px 0 0;&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/SC_demo.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Structure Cloud UI screenshot&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;container col-xxl-8 px-4 pb-5&quot;&gt;
   &lt;div class=&quot;row flex-lg-row-reverse align-items-center g-5 py-5&quot;&gt;
     &lt;div class=&quot;col-10 col-sm-10 col-lg-6&quot;&gt;
       &lt;h2 class=&quot;display-6 fw-bold lh-1 mb-3&quot;&gt;District 25 website&lt;/h2&gt;
@@ -395,18 +422,6 @@
       &lt;img src=&quot;http://localhost:8080/img/District25Desktop.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;District 25 website&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;row flex-lg-row-reverse align-items-center g-5 py-5&quot;&gt;
-    &lt;div class=&quot;col-lg-6&quot;&gt;
-      &lt;img src=&quot;http://localhost:8080/img/SC_demo.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Structure Cloud UI screenshot&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-10 col-sm-10 col-lg-6&quot;&gt;
-      &lt;h2 class=&quot;display-6 fw-bold lh-1 mb-3&quot;&gt;Structure&lt;/h2&gt;
-      &lt;p class=&quot;lead&quot;&gt;For this project, I was tasked with converting the UI of a COBOL application into something that would work with the modern web. The task was very challenging, in that one of the main requirements was to keep the layout as close to the original application as possible (in order to minimize the amount of relearning existing users would need to do), while also providing a clean UI that would attract new users to the platform.&lt;/p&gt;
-      &lt;!-- &lt;div class=&quot;d-grid gap-2 d-md-flex justify-content-md-start&quot;&gt;
-        &lt;a href=&quot;#&quot; class=&quot;btn btn-secondary px-4 me-md-2&quot;&gt;Process&lt;/a&gt;
-      &lt;/div&gt; --&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
   &lt;h2 class=&quot;display-5 fw-bold lh-1&quot;&gt;Wireframes&lt;/h2&gt;
   &lt;div class=&quot;row flex-lg-row-reverse align-items-center gb-5 pb-5&quot;&gt;
     &lt;div class=&quot;col-lg-6&quot;&gt;
@@ -415,7 +430,7 @@
     &lt;/div&gt;
     &lt;div class=&quot;col-10 col-sm-10 col-lg-6&quot;&gt;
       &lt;!-- &lt;h2 class=&quot;display-6 fw-bold lh-1 mb-3&quot;&gt;Logos&lt;/h2&gt; --&gt;
-      &lt;p class=&quot;lead&quot;&gt;Wireframes are the basis for the majority of my designs. I often will include callouts or descriptors to help disseminate the information on a wireframe, rather than overcomplicate or over-design.&lt;/p&gt;
+      &lt;p class=&quot;lead&quot;&gt;Wireframes are the basis for the majority of my designs. I often will include call-outs or descriptors to help disseminate the information on a wireframe, rather than have an overcomplicated design.&lt;/p&gt;
       &lt;!-- &lt;div class=&quot;d-grid gap-2 d-md-flex justify-content-md-start&quot;&gt;
         &lt;a href=&quot;#&quot; class=&quot;btn btn-secondary px-4 me-md-2&quot;&gt;Process&lt;/a&gt;
       &lt;/div&gt; --&gt;
@@ -477,13 +492,29 @@
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</content>
+</content>
+	</entry>
+	
+	<entry>
+		<title>District 25 website</title>
+		<link href="http://localhost:8080/history/district25/"/>
+		<updated>2021-06-28T13:55:42Z</updated>
+		<id>http://localhost:8080/history/district25/</id>
+		<content type="html"></content>
+	</entry>
+	
+	<entry>
+		<title>TimeTrak by Switchback</title>
+		<link href="http://localhost:8080/history/timetrak/"/>
+		<updated>2021-06-28T13:55:42Z</updated>
+		<id>http://localhost:8080/history/timetrak/</id>
+		<content type="html"></content>
 	</entry>
 	
 	<entry>
 		<title>Prototypes</title>
 		<link href="http://localhost:8080/prototypes/"/>
-		<updated>2021-06-10T13:20:26Z</updated>
+		<updated>2021-06-28T13:55:42Z</updated>
 		<id>http://localhost:8080/prototypes/</id>
 		<content type="html">&lt;div class=&quot;mb-2 py-2 px-5 container&quot;&gt;
   &lt;h2 class=&quot;pb-2 border-bottom&quot;&gt;
@@ -548,18 +579,178 @@
 	</entry>
 	
 	<entry>
-		<title>TimeTrak by Switchback</title>
-		<link href="http://localhost:8080/history/timetrak/"/>
-		<updated>2021-06-25T23:33:11Z</updated>
-		<id>http://localhost:8080/history/timetrak/</id>
-		<content type="html"></content>
+		<title>Customer Engagement App</title>
+		<link href="http://localhost:8080/designs/customer-engagement/"/>
+		<updated>2021-06-30T11:49:27Z</updated>
+		<id>http://localhost:8080/designs/customer-engagement/</id>
+		<content type="html">&lt;div class=&quot;container mb-5&quot;&gt;
+  &lt;dl class=&quot;row&quot;&gt;
+    &lt;dt class=&quot;col-sm-2&quot;&gt;Role&lt;/dt&gt;
+    &lt;dd class=&quot;col-sm-10&quot;&gt;Interaction Designer, Visual Designer&lt;/dd&gt;
+    &lt;dt class=&quot;col-sm-2&quot;&gt;Areas&lt;/dt&gt;
+    &lt;dd class=&quot;col-sm-10&quot;&gt;Wireframes, Visual Designs&lt;/dd&gt;
+    &lt;dt class=&quot;col-sm-2&quot;&gt;Challenge&lt;/dt&gt;
+    &lt;dd class=&quot;col-sm-10&quot;&gt;For this project, I was tasked with updating an old UI to increase usability and visual styling to match a more modern aesthetic.&lt;/dd&gt;
+  &lt;/dl&gt;
+  &lt;hr class=&quot;my-5&quot; /&gt;
+  &lt;h2&gt;Goals&lt;/h2&gt;
+  &lt;p&gt;The goals of this project were to &lt;i&gt;improve&lt;/i&gt; efficiency, &lt;i&gt;upgrade&lt;/i&gt; the visual aesthetic, and &lt;i&gt;enhance&lt;/i&gt; visual awareness.&lt;/p&gt;
+  &lt;h2&gt;Sitemap (alpha)&lt;/h2&gt;
+  &lt;p&gt;Before starting on the updated design for the Customer Engagement App (CEA), I first took to creating an updated sitemap. This allowed me to set a basic path for users to navigate through the application, while also separating the pieces of the application into useful areas.&lt;/p&gt;
+  &lt;a href=&quot;http://localhost:8080/img/Sitemap_alpha.png&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/Sitemap_alpha.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Sitemap for the alpha version of the Customer Engagement App&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/a&gt;
+  &lt;h2&gt;Wireframes&lt;/h2&gt;
+  &lt;a href=&quot;http://localhost:8080/img/CEA_Dashboard_Overview.pdf&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/CEA_wireframe_first.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Example visual design for the navigation variations in the Customer Engagement App&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/a&gt;
+  &lt;h2&gt;Visual Designs&lt;/h2&gt;
+  &lt;div class=&quot;row align-items-md-stretch&quot;&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+      &lt;div class=&quot;h-100 p-5 text-white rounded-3&quot; style=&quot;background-color: #333742;&quot;&gt;
+        &lt;h2 class=&quot;text-center&quot;&gt;Application Dashboard&lt;/h2&gt;
+        &lt;a href=&quot;http://localhost:8080/img/CEA_Dashboard.png&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/CEA_Dashboard.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Example visual design for the primary dashboard in the Customer Engagement App&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+      &lt;div class=&quot;h-100 p-5 text-dark bg-light rounded-3&quot;&gt;
+        &lt;h2&gt;Engagement Reporting&lt;/h2&gt;
+        &lt;a href=&quot;http://localhost:8080/img/CEA_Engagement.png&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/CEA_Engagement.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Example visual design for the engagement dashboard in the Customer Engagement App&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row align-items-md-stretch&quot;&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+      &lt;div class=&quot;h-100 p-5 text-dark bg-light rounded-3&quot;&gt;
+        &lt;h2 class=&quot;text-center&quot;&gt;Settings&lt;/h2&gt;
+        &lt;a href=&quot;http://localhost:8080/img/CEA_Settings.png&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/CEA_Settings.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Example visual design for the settings page in the Customer Engagement App&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+      &lt;div class=&quot;h-100 p-5 text-white rounded-3&quot; style=&quot;background-color: #333742;&quot;&gt;
+        &lt;h2&gt;Navigation&lt;/h2&gt;
+        &lt;a href=&quot;http://localhost:8080/img/CEA_Navigation.png&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/CEA_Navigation.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Example visual design for the navigation variations in the Customer Engagement App&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
 	</entry>
 	
 	<entry>
-		<title>District 25 website</title>
-		<link href="http://localhost:8080/history/district25/"/>
-		<updated>2021-06-25T23:37:19Z</updated>
-		<id>http://localhost:8080/history/district25/</id>
-		<content type="html"></content>
+		<title>Application Lifecycle Management</title>
+		<link href="http://localhost:8080/designs/alm/"/>
+		<updated>2021-06-30T11:53:27Z</updated>
+		<id>http://localhost:8080/designs/alm/</id>
+		<content type="html">&lt;div class=&quot;container mb-5&quot;&gt;
+  &lt;dl class=&quot;row&quot;&gt;
+    &lt;dt class=&quot;col-sm-2&quot;&gt;Role&lt;/dt&gt;
+    &lt;dd class=&quot;col-sm-10&quot;&gt;Interaction Designer, Prototypes&lt;/dd&gt;
+    &lt;dt class=&quot;col-sm-2&quot;&gt;Areas&lt;/dt&gt;
+    &lt;dd class=&quot;col-sm-10&quot;&gt;Wireframes, user paths, usability, prototyping&lt;/dd&gt;
+    &lt;dt class=&quot;col-sm-2&quot;&gt;Challenge&lt;/dt&gt;
+    &lt;dd class=&quot;col-sm-10&quot;&gt;The greater project team was using multiple project management tools, code repositories, and application development processes, with none of them talking to each other. This project takes all of those areas of concern and brings them together into a single, cohesive interface.&lt;/dd&gt;
+  &lt;/dl&gt;
+  &lt;hr class=&quot;my-5&quot; /&gt;
+  &lt;h2&gt;The Process&lt;/h2&gt;
+  &lt;p&gt;Before starting on the Application Lifecycle Management project, it was determined that the following areas would be need to be covered: who are the target users, a user flow, wireframes, and, potential, prototypes for user testings and feasibility. &lt;/p&gt;
+  &lt;h3&gt;Target Users&lt;/h3&gt;
+  &lt;p&gt;Through discussions with Stakeholders and Project Management, it was decided that the target users would be set in tiers - &lt;u&gt;General Users&lt;/u&gt; (those who need to add and interact with issues, update project assets, and interact daily - a mix of designers and developers); &lt;u&gt;Project Managers&lt;/u&gt; (organizers of work, set deadlines and release dates), and &lt;u&gt;Administrators&lt;/u&gt; (control any integrations, add-ons, and access).&lt;/p&gt;
+  &lt;h3&gt;Application Lifecycle Management flow&lt;/h3&gt;
+  &lt;a href=&quot;http://localhost:8080/img/ALM_workflow.png&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/ALM_workflow.png&quot; class=&quot;d-block mx-lg-auto img-fluid&quot; alt=&quot;ALM workflow&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/a&gt;
+  &lt;h3&gt;Wireframes and Workflows&lt;/h3&gt;
+  &lt;p&gt;For each section of the ALM application, workflows and wireframes were used to identify possible user paths, as well as to strategize initial designs before moving on to high fidelity mockups and prototypes.&lt;/p&gt;
+  &lt;h4&gt;From Work Items to Development&lt;/h4&gt;
+  &lt;p&gt;&lt;b&gt;Goals:&lt;/b&gt;
+    &lt;/p&gt;&lt;ul&gt;
+      &lt;li&gt;Communicates to the user that direct access to developing the Work Item is available in a single click.&lt;/li&gt;
+      &lt;li&gt;Implementation is unobtrusive and implies navigation.&lt;/li&gt;
+      &lt;li&gt;Location will not accidentally be clicked, allowing for enough real estate for line lengths and other meta data. The location of the integration should also imply moving forward.&lt;/li&gt;
+      &lt;li&gt;Ordered by recommendation - require users to fill in one area before moving on.&lt;/li&gt;
+      &lt;li&gt;As a button, it needs to have a prominent place yet not take the place of a primary button (in style).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;p&gt;&lt;/p&gt;
+  &lt;b&gt;Steps to complete the process:&lt;/b&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;card-group&quot;&gt;
+      &lt;div class=&quot;card&quot;&gt;
+        &lt;img src=&quot;http://localhost:8080/img/ALM_step1.png&quot; class=&quot;card-img-top&quot; alt=&quot;Step 1 of the ALM wireframes&quot; /&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+          &lt;h5 class=&quot;card-title&quot;&gt;Step 1&lt;/h5&gt;
+          &lt;p class=&quot;card-text&quot;&gt;
+            &lt;/p&gt;&lt;ol&gt;
+              &lt;li&gt;I see a recommendation in the report.&lt;/li&gt;
+              &lt;li&gt;I click &#39;make a work item&#39;.&lt;/li&gt;
+              &lt;li&gt;I navigate to the Planner to see/comment on the new work item.&lt;/li&gt;
+              &lt;li&gt;If the same recommendation is suggested during another build process, it will generate a new work. At this time, detection for duplicate items does not exist.&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;p&gt;&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;
+        &lt;img src=&quot;http://localhost:8080/img/ALM_step2.png&quot; class=&quot;card-img-top&quot; alt=&quot;Step 2 of the ALM wireframes&quot; /&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+          &lt;h5 class=&quot;card-title&quot;&gt;Step 2&lt;/h5&gt;
+          &lt;p class=&quot;card-text&quot;&gt;
+            &lt;/p&gt;&lt;ol&gt;
+              &lt;li&gt;I see a recommendation in the report.&lt;/li&gt;
+              &lt;li&gt;I click &#39;make a work item&#39;.&lt;/li&gt;
+              &lt;li&gt;I navigate to the Planner to see/comment on the new work item.&lt;/li&gt;
+              &lt;li&gt;If the same recommendation is suggested during another build process, it will generate a new work. At this time, detection for duplicate items does not exist.&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;p&gt;&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;
+        &lt;img src=&quot;http://localhost:8080/img/ALM_step3.png&quot; class=&quot;card-img-top&quot; alt=&quot;Step 3 of the ALM wireframes&quot; /&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+          &lt;h5 class=&quot;card-title&quot;&gt;Step 3&lt;/h5&gt;
+          &lt;p class=&quot;card-text&quot;&gt;
+            &lt;/p&gt;&lt;ol&gt;
+              &lt;li&gt;I see a recommendation in the report.&lt;/li&gt;
+              &lt;li&gt;I click &#39;make a work item&#39;.&lt;/li&gt;
+              &lt;li&gt;I navigate to the Planner to see/comment on the new work item.&lt;/li&gt;
+              &lt;li&gt;If the same recommendation is suggested during another build process, it will generate a new work. At this time, detection for duplicate items does not exist.&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;p&gt;&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;card mt-3 mb-3 mx-2&quot;&gt;
+      &lt;div class=&quot;row g-0&quot;&gt;
+        &lt;div class=&quot;col-md-5&quot;&gt;
+          &lt;a href=&quot;http://localhost:8080/img/ALM_wireframe.png&quot; target=&quot;top&quot; alt=&quot;View larger image of the wireframe thumbnail&quot;&gt;
+            &lt;img src=&quot;http://localhost:8080/img/ALM_wireframe.png&quot; class=&quot;img-fluid rounded-start&quot; alt=&quot;Wireframe of the work item to coding experience&quot; /&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-7&quot;&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;lead mt-3&quot;&gt;From these workflows and wireframes, it was determined that additional questions needed to be answered:
+    &lt;/p&gt;&lt;ul&gt;
+      &lt;li&gt;How do we handle accuracy between the linking of work items?&lt;/li&gt;
+      &lt;li&gt;If the work items has a fine name and line number, is the commit SHA also used to help identify the connection?&lt;/li&gt;
+      &lt;li&gt;Are we able to type the URL in a browser and navigate to the work item? (Does it have a unique link or is it randomly generated each time?)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;p&gt;&lt;/p&gt;
+  &lt;h3&gt;Visual Design&lt;/h3&gt;
+  &lt;p&gt;After completing the wireframes and flows, a sample visual design was created. This design was created using the in-house design component library.&lt;/p&gt;
+  &lt;a href=&quot;http://localhost:8080/img/ALM_planner.png&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/ALM_planner.png&quot; class=&quot;d-block mx-lg-auto img-fluid&quot; alt=&quot;ALM Planner visual design&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/a&gt;
+  &lt;h3 class=&quot;mt-3&quot;&gt;Prototyping&lt;/h3&gt;
+  &lt;p&gt;As part of the testing and usability study process, I created a prototype that demonstrated some of the basic layouts and IA for users to explore and provide feedback on. This process evolved over time and, eventually, became a full-fledged website that utilized static data and was continuously updated as users provided feedback.&lt;/p&gt;
+  &lt;a class=&quot;btn btn-outline-secondary&quot; href=&quot;https://www.adamjolicoeur.com/testing_environment/index.html&quot; target=&quot;top&quot; alt=&quot;Link to prototype example&quot;&gt;View prototype&lt;/a&gt;
+  &lt;hr class=&quot;my-5&quot; /&gt;
+  &lt;div class=&quot;card text-dark bg-light my-3&quot;&gt;
+    &lt;div class=&quot;card-header&quot;&gt;&lt;h3&gt;Final thoughts&lt;/h3&gt;&lt;/div&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+      &lt;p class=&quot;card-text&quot;&gt;In review, I believe that this process helped to flush out a great number of questions and concerns, while also demonstrating that their is a solid platform in which to build the full application on.&lt;br /&gt;The findings discovered through the process were taken to the Project Stakeholders, which were then used to create additional design stories and discussions with the development teams.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
 	</entry>
 </feed>

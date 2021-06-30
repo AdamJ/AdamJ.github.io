@@ -45,6 +45,9 @@
 .icon-link {
   text-decoration: none;
 }
+.icon-link:hover {
+  text-decoration: underline;
+}
 
 .icon-link > .bi {
   margin-top: 0.125rem;

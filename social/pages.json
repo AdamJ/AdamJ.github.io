@@ -25,8 +25,8 @@
 	},
 
 	{
-   "title":"Prototypes",
-   "imgName":"prototypes"
+   "title":"District 25 website",
+   "imgName":"district-25-website"
 	},
 
 	{
@@ -35,7 +35,17 @@
 	},
 
 	{
-   "title":"District 25 website",
-   "imgName":"district-25-website"
+   "title":"Prototypes",
+   "imgName":"prototypes"
+	},
+
+	{
+   "title":"Customer Engagement App",
+   "imgName":"customer-engagement-app"
+	},
+
+	{
+   "title":"Application Lifecycle Management",
+   "imgName":"application-lifecycle-management"
 	}
 ]
