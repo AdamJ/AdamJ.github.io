@@ -20,11 +20,6 @@
 	},
 
 	{
-   "title":"Designs",
-   "imgName":"designs"
-	},
-
-	{
    "title":"District 25 website",
    "imgName":"district-25-website"
 	},
@@ -40,12 +35,17 @@
 	},
 
 	{
-   "title":"Customer Engagement App",
-   "imgName":"customer-engagement-app"
+   "title":"Designs",
+   "imgName":"designs"
 	},
 
 	{
    "title":"Application Lifecycle Management",
    "imgName":"application-lifecycle-management"
+	},
+
+	{
+   "title":"Customer Engagement App",
+   "imgName":"customer-engagement-app"
 	}
 ]
