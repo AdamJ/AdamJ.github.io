@@ -16,7 +16,7 @@ eleventyNavigation:
     <div class="my-3 py-3">
       <h2 class="display-5">Customer Engagement App</h2>
       <p class="lead">For this project, I was tasked with improving the overall user experience for tracking customer engagement and marketing campaigns. This project included creating color palettes, new UI components, personas, and user journeys.</p>
-      <a href="/designs/customer-engagement" class="icon-link text-white lead">
+      <a href="/designs/customer-engagement" class="btn btn-light icon-link lead">
         the journey
         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
@@ -29,7 +29,7 @@ eleventyNavigation:
     <div class="my-3 p-3">
       <h2 class="display-5">Application Lifecycle Management</h2>
       <p class="lead">A one-stop-shop for a team's planning and project lifecycle management.</p>
-      <a href="/designs/alm" class="icon-link text-dark lead">
+      <a href="/designs/alm" class="btn btn-dark icon-link lead">
         the journey
         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
@@ -79,7 +79,7 @@ eleventyNavigation:
     </div>
     <div class="col-10 col-sm-10 col-lg-6">
       <!-- <h2 class="display-6 fw-bold lh-1 mb-3">Logos</h2> -->
-      <p class="lead">Wireframes are the basis for the majority of my designs. I often will include call-outs or descriptors to help disseminate the information on a wireframe, rather than have an overcomplicated design.</p>
+      <p class="lead">Wireframes are the basis for the majority of my designs. I often will include call-outs or descriptors to help disseminate the information on the wireframes, rather than have an overcomplicated design.</p>
       <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start">
         <a href="#" class="btn btn-secondary px-4 me-md-2">Process</a>
       </div> -->

@@ -57,3 +57,9 @@
   transform: translate(.25rem);
 }
 
+.mockup-screenshot {
+  max-width: 1000px;
+  @media (max-width: 768px) {
+    max-width: 500px;
+  }
+}

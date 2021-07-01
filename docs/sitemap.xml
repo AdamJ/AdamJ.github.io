@@ -11,7 +11,7 @@
   <url>
     <loc>http://localhost:8080/</loc>
 		
-    <lastmod>2021-06-30T11:53:27Z</lastmod>
+    <lastmod>2021-06-30T23:12:51Z</lastmod>
     
   </url>
   
@@ -30,21 +30,14 @@
   </url>
   
   <url>
-    <loc>http://localhost:8080/design/</loc>
+    <loc>http://localhost:8080/designs/district25/</loc>
 		
     <lastmod>2021-06-28T13:55:42Z</lastmod>
 		
   </url>
   
   <url>
-    <loc>http://localhost:8080/history/district25/</loc>
-		
-    <lastmod>2021-06-28T13:55:42Z</lastmod>
-		
-  </url>
-  
-  <url>
-    <loc>http://localhost:8080/history/timetrak/</loc>
+    <loc>http://localhost:8080/designs/timetrak/</loc>
 		
     <lastmod>2021-06-28T13:55:42Z</lastmod>
 		
@@ -58,16 +51,23 @@
   </url>
   
   <url>
-    <loc>http://localhost:8080/designs/customer-engagement/</loc>
+    <loc>http://localhost:8080/design/</loc>
 		
-    <lastmod>2021-06-30T11:49:27Z</lastmod>
+    <lastmod>2021-06-30T23:12:51Z</lastmod>
 		
   </url>
   
   <url>
     <loc>http://localhost:8080/designs/alm/</loc>
 		
-    <lastmod>2021-06-30T11:53:27Z</lastmod>
+    <lastmod>2021-06-30T23:12:51Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/designs/customer-engagement/</loc>
+		
+    <lastmod>2021-06-30T23:12:51Z</lastmod>
 		
   </url>
 </urlset>

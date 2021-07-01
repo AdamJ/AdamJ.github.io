@@ -60,6 +60,15 @@
   transform: translate(0.25rem);
 }
 
+.mockup-screenshot {
+  max-width: 1000px;
+}
+@media (max-width: 768px) {
+  .mockup-screenshot {
+    max-width: 500px;
+  }
+}
+
 .container {
   max-width: 960px;
 }

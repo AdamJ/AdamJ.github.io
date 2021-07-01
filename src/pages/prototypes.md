@@ -14,7 +14,7 @@ eleventyNavigation:
     <div class="col d-flex align-items-start">
       <div>
         <h2>PatternFly 4</h2>
-        <p>In support of the 4th release of PatternFly, I worked with a group of designers to create a modern, responsive take on the PatternFly website. Using a responsive layout with SVGs that move with the page, I create clean asthetic that would flow through the rest of the site.</p>
+        <p>In support of the 4th release of PatternFly, I worked with a group of designers to create a modern, responsive take on the PatternFly website. Using a responsive layout with SVGs that move with the page, I create clean aesthetic that would flow through the rest of the site.</p>
         <a href="https://pf4testbench.netlify.app" class="btn btn-secondary">
           View site
         </a>
@@ -54,7 +54,7 @@ eleventyNavigation:
     </p>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
     <!-- <h2>PatternFly 4</h2>
-    <p>I worked with a group of designers to transform the website for the 4th release PatternFly to be a modern, responsive take on previous examples. Using a responsive layout with SVGs that move with the page, I transformed their designs into a site with clean, appealing asthetics that would flow throughout the website.</p> -->
+    <p>I worked with a group of designers to transform the website for the 4th release PatternFly to be a modern, responsive take on previous examples. Using a responsive layout with SVGs that move with the page, I transformed their designs into a site with clean, appealing aesthetics that would flow throughout the website.</p> -->
   </div>
   <div class="row g-4 py-5 row-cols-1">
     <p class="codepen" data-height="450" data-theme-id="38046" data-default-tab="html,result" data-user="mindreeper2420" data-slug-hash="KKgdeEE" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Download Card Overlay">
