@@ -457,7 +457,7 @@
         &lt;/svg&gt;
       &lt;/a&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;bg-light shadow-sm mx-auto&quot; style=&quot;width: 80%; height: 300px; border-radius: 21px 21px 0 0;&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/CEA_Dashboard.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Customer Engagement App Dashboard thumbnail&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/div&gt;
+    &lt;div class=&quot;mx-auto&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/CEA_Dashboard.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Customer Engagement App Dashboard thumbnail&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&quot;bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden&quot;&gt;
     &lt;div class=&quot;my-3 p-3&quot;&gt;
@@ -479,14 +479,14 @@
       &lt;h2 class=&quot;display-5&quot;&gt;Switchback TimeTrak&lt;/h2&gt;
       &lt;p class=&quot;lead&quot;&gt;The goal of this redesign was to create a simplistic system to easily access recent log entries, active projects, and team calendars. From this dashboard, users can quickly see these items, in addition to providing quick navigation items for in-depth reporting.&lt;/p&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;bg-light shadow-sm mx-auto&quot; style=&quot;width: 80%; height: 300px; border-radius: 21px 21px 0 0;&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/Timetrak.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Switchback Timetrak thumbnail&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/div&gt;
+    &lt;div class=&quot;mx-auto&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/Timetrak.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Switchback Timetrak thumbnail&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&quot;bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden&quot;&gt;
     &lt;div class=&quot;my-3 p-3&quot;&gt;
       &lt;h2 class=&quot;display-5&quot;&gt;Structure&lt;/h2&gt;
       &lt;p class=&quot;lead&quot;&gt;For this project, I was tasked with converting the UI of a COBOL application into something that would work with the modern web. The task was very challenging, in that one of the main requirements was to keep the layout as close to the original application as possible (in order to minimize the amount of relearning existing users would need to do), while also providing a clean UI that would attract new users to the platform.&lt;/p&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;bg-dark shadow-sm mx-auto&quot; style=&quot;width: 80%; height: 300px; border-radius: 21px 21px 0 0;&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/SC_demo.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Structure Cloud UI screenshot&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/div&gt;
+    &lt;div class=&quot;mx-auto&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/SC_demo.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Structure Cloud UI screenshot&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;container col-xxl-8 px-4 pb-5&quot;&gt;
