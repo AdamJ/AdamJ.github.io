@@ -1,3 +1,47 @@
+html {
+  scrollbar-color: #666;
+}
+
+html::-webkit-scrollbar {
+  width: 16px;
+  /* width of the entire scrollbar */
+  height: 16px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #101010;
+  /* color of the tracking area */
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #044347;
+  /* color of the scroll thumb */
+  border: 1px solid #021e20;
+  /* creates padding around scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+}
+
+@media (prefers-color-scheme: dark) {
+  html::-webkit-scrollbar {
+    width: 16px;
+    /* width of the entire scrollbar */
+  }
+
+  html::-webkit-scrollbar-track {
+    background: #044347;
+    /* color of the tracking area */
+  }
+
+  html::-webkit-scrollbar-thumb {
+    background: #080f30;
+    background: linear-gradient(180deg, #00b9e4 0%, #044347 35%, #044347 65%, #00b9e4 100%);
+    border: 1px solid #101010;
+    /* creates padding around scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+  }
+}
 .divider-large {
   height: 3rem;
   background-color: rgba(0, 0, 0, 0.1);
@@ -69,45 +113,6 @@
   }
 }
 
-::-webkit-scrollbar {
-  width: 12px;
-  /* width of the entire scrollbar */
-}
-
-::-webkit-scrollbar-track {
-  background: #ddd;
-  /* color of the tracking area */
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #101010;
-  /* color of the scroll thumb */
-  border: 1px solid #101010;
-  /* creates padding around scroll thumb */
-  border-radius: 20px;
-  /* roundness of the scroll thumb */
-}
-
-@media (prefers-color-scheme: dark) {
-  ::-webkit-scrollbar {
-    width: 12px;
-    /* width of the entire scrollbar */
-  }
-
-  ::-webkit-scrollbar-track {
-    background: #101010;
-    /* color of the tracking area */
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: #080f30;
-    background: linear-gradient(180deg, #00b9e4 0%, #044347 35%, #044347 65%, #00b9e4 100%);
-    border: 1px solid #101010;
-    /* creates padding around scroll thumb */
-    border-radius: 20px;
-    /* roundness of the scroll thumb */
-  }
-}
 .container {
   max-width: 960px;
 }
