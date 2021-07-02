@@ -25,11 +25,6 @@
 	},
 
 	{
-   "title":"Application Lifecycle Management",
-   "imgName":"application-lifecycle-management"
-	},
-
-	{
    "title":"Customer Engagement App",
    "imgName":"customer-engagement-app"
 	},
@@ -47,5 +42,10 @@
 	{
    "title":"Prototypes",
    "imgName":"prototypes"
+	},
+
+	{
+   "title":"Application Lifecycle Management",
+   "imgName":"application-lifecycle-management"
 	}
 ]

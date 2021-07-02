@@ -5,7 +5,7 @@
 	
 	<link href="http://localhost:8080/feed/" rel="self"/>
 	<link href="http://localhost:8080"/>
-	<updated>2021-07-02T14:45:28Z</updated>
+	<updated>2021-07-02T15:43:25Z</updated>
 	<id>http://localhost:8080</id>
 	<author>
 		<name>Adam J. Jolicoeur</name>
@@ -496,127 +496,6 @@
 	</entry>
 	
 	<entry>
-		<title>Application Lifecycle Management</title>
-		<link href="http://localhost:8080/designs/alm/"/>
-		<updated>2021-07-02T14:45:28Z</updated>
-		<id>http://localhost:8080/designs/alm/</id>
-		<content type="html">&lt;div class=&quot;container mb-5&quot;&gt;
-  &lt;dl class=&quot;row&quot;&gt;
-    &lt;dt class=&quot;col-sm-2&quot;&gt;Role&lt;/dt&gt;
-    &lt;dd class=&quot;col-sm-10&quot;&gt;Interaction Designer, Prototypes&lt;/dd&gt;
-    &lt;dt class=&quot;col-sm-2&quot;&gt;Areas&lt;/dt&gt;
-    &lt;dd class=&quot;col-sm-10&quot;&gt;Wireframes, user paths, usability, prototyping&lt;/dd&gt;
-    &lt;dt class=&quot;col-sm-2&quot;&gt;Challenge&lt;/dt&gt;
-    &lt;dd class=&quot;col-sm-10&quot;&gt;The greater project team was using multiple project management tools, code repositories, and application development processes, with none of them talking to each other. This project takes all of those areas of concern and brings them together into a single, cohesive interface.&lt;/dd&gt;
-  &lt;/dl&gt;
-  &lt;hr class=&quot;my-5&quot; /&gt;
-  &lt;h2&gt;The Process&lt;/h2&gt;
-  &lt;p&gt;Before starting on the Application Lifecycle Management project, it was determined that the following areas would be need to be covered: list of target users, a user flow, wireframes, and, potentially, prototypes for user testings and feasibility.&lt;/p&gt;
-  &lt;h3&gt;Target Users&lt;/h3&gt;
-  &lt;p&gt;Through discussions with Stakeholders and Project Management, it was decided that the target users would be set in tiers - &lt;u&gt;General Users&lt;/u&gt; (those who need to add and interact with issues, update project assets, and interact daily - a mix of designers and developers); &lt;u&gt;Project Managers&lt;/u&gt; (organizers of work, set deadlines and release dates), and &lt;u&gt;Administrators&lt;/u&gt; (control any integrations, add-ons, and access).&lt;/p&gt;
-  &lt;h3&gt;Application Lifecycle Management flow&lt;/h3&gt;
-  &lt;a href=&quot;http://localhost:8080/img/ALM_workflow.png&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/ALM_workflow.png&quot; class=&quot;d-block mx-lg-auto img-fluid&quot; alt=&quot;ALM workflow&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/a&gt;
-  &lt;h3&gt;Wireframes and Workflows&lt;/h3&gt;
-  &lt;p&gt;For each section of the ALM application, workflows and wireframes were used to identify possible user paths, as well as to strategize initial designs before moving on to high fidelity mockups and prototypes.&lt;/p&gt;
-  &lt;h4&gt;From Work Items to Development&lt;/h4&gt;
-  &lt;p&gt;&lt;b&gt;Goals:&lt;/b&gt;
-    &lt;/p&gt;&lt;ul&gt;
-      &lt;li&gt;Communicates to the user that direct access to developing the Work Item is available in a single click.&lt;/li&gt;
-      &lt;li&gt;Implementation is unobtrusive and implies navigation.&lt;/li&gt;
-      &lt;li&gt;Location will not accidentally be clicked, allowing for enough real estate for line lengths and other meta data. The location of the integration should also imply moving forward.&lt;/li&gt;
-      &lt;li&gt;Ordered by recommendation - require users to fill in one area before moving on.&lt;/li&gt;
-      &lt;li&gt;As a button, it needs to have a prominent place yet not take the place of a primary button (in style).&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;p&gt;&lt;/p&gt;
-  &lt;b&gt;Steps to complete the process:&lt;/b&gt;
-  &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;card-group&quot;&gt;
-      &lt;div class=&quot;card&quot;&gt;
-        &lt;img src=&quot;http://localhost:8080/img/ALM_step1.png&quot; class=&quot;card-img-top&quot; alt=&quot;Step 1 of the ALM wireframes&quot; /&gt;
-        &lt;div class=&quot;card-body&quot;&gt;
-          &lt;h5 class=&quot;card-title&quot;&gt;Step 1&lt;/h5&gt;
-          &lt;!-- &lt;p class=&quot;card-text&quot;&gt;
-            &lt;ol&gt;
-              &lt;li&gt;I see a recommendation in the report.&lt;/li&gt;
-              &lt;li&gt;I click &#39;make a work item&#39;.&lt;/li&gt;
-              &lt;li&gt;I navigate to the Planner to see/comment on the new work item.&lt;/li&gt;
-              &lt;li&gt;If the same recommendation is suggested during another build process, it will generate a new work. At this time, detection for duplicate items does not exist.&lt;/li&gt;
-            &lt;/ol&gt;
-          &lt;/p&gt; --&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;card&quot;&gt;
-        &lt;img src=&quot;http://localhost:8080/img/ALM_step2.png&quot; class=&quot;card-img-top&quot; alt=&quot;Step 2 of the ALM wireframes&quot; /&gt;
-        &lt;div class=&quot;card-body&quot;&gt;
-          &lt;h5 class=&quot;card-title&quot;&gt;Step 2&lt;/h5&gt;
-          &lt;!-- &lt;p class=&quot;card-text&quot;&gt;
-            &lt;ol&gt;
-              &lt;li&gt;I see a recommendation in the report.&lt;/li&gt;
-              &lt;li&gt;I click &#39;make a work item&#39;.&lt;/li&gt;
-              &lt;li&gt;I navigate to the Planner to see/comment on the new work item.&lt;/li&gt;
-              &lt;li&gt;If the same recommendation is suggested during another build process, it will generate a new work. At this time, detection for duplicate items does not exist.&lt;/li&gt;
-            &lt;/ol&gt;
-          &lt;/p&gt; --&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;card&quot;&gt;
-        &lt;img src=&quot;http://localhost:8080/img/ALM_step3.png&quot; class=&quot;card-img-top&quot; alt=&quot;Step 3 of the ALM wireframes&quot; /&gt;
-        &lt;div class=&quot;card-body&quot;&gt;
-          &lt;h5 class=&quot;card-title&quot;&gt;Step 3&lt;/h5&gt;
-          &lt;!-- &lt;p class=&quot;card-text&quot;&gt;
-            &lt;ol&gt;
-              &lt;li&gt;I see a recommendation in the report.&lt;/li&gt;
-              &lt;li&gt;I click &#39;make a work item&#39;.&lt;/li&gt;
-              &lt;li&gt;I navigate to the Planner to see/comment on the new work item.&lt;/li&gt;
-              &lt;li&gt;If the same recommendation is suggested during another build process, it will generate a new work. At this time, detection for duplicate items does not exist.&lt;/li&gt;
-            &lt;/ol&gt;
-          &lt;/p&gt; --&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;card mt-3 mb-3 mx-2&quot;&gt;
-      &lt;div class=&quot;row g-0&quot;&gt;
-        &lt;div class=&quot;col-md-5&quot;&gt;
-          &lt;a href=&quot;http://localhost:8080/img/ALM_wireframe.png&quot; target=&quot;top&quot; alt=&quot;View larger image of the wireframe thumbnail&quot;&gt;
-            &lt;img src=&quot;http://localhost:8080/img/ALM_wireframe.png&quot; class=&quot;img-fluid rounded-start&quot; alt=&quot;Wireframe of the work item to coding experience&quot; /&gt;
-          &lt;/a&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col-md-7&quot;&gt;
-          &lt;div class=&quot;card-body&quot;&gt;
-            &lt;h5 class=&quot;card-title&quot;&gt;Wireframe&lt;/h5&gt;
-            &lt;p class=&quot;card-text&quot;&gt;This wireframe was created with call outs in order to communicate my thoughts around the design to anyone who saw it, but could not talk with me. Specifically, this worked extremely well when working with colleagues in other time zones where our working ours did not match up.&lt;/p&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;p class=&quot;lead mt-3&quot;&gt;From these workflows and wireframes, it was determined that additional questions needed to be answered:
-    &lt;/p&gt;&lt;ul&gt;
-      &lt;li&gt;How do we handle accuracy between the linking of work items?&lt;/li&gt;
-      &lt;li&gt;If the work items has a fine name and line number, is the commit SHA also used to help identify the connection?&lt;/li&gt;
-      &lt;li&gt;Are we able to type the URL in a browser and navigate to the work item? (Does it have a unique link or is it randomly generated each time?)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;p&gt;&lt;/p&gt;
-  &lt;h3&gt;Visual Design&lt;/h3&gt;
-  &lt;p&gt;After completing the wireframes and flows, a sample visual design was created. This design was created using the in-house design component library.&lt;/p&gt;
-  &lt;a href=&quot;http://localhost:8080/img/ALM_planner.png&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/ALM_planner.png&quot; class=&quot;d-block mx-lg-auto img-fluid&quot; alt=&quot;ALM Planner visual design&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/a&gt;
-  &lt;h3 class=&quot;mt-3&quot;&gt;Prototyping&lt;/h3&gt;
-  &lt;p&gt;As part of the testing and usability study process, I created a prototype that demonstrated some of the basic layouts and IA for users to explore and provide feedback on. This process evolved over time and, eventually, became a full-fledged website that utilized static data and was continuously updated as users provided feedback.&lt;/p&gt;
-  &lt;a class=&quot;btn btn-outline-secondary&quot; href=&quot;https://www.adamjolicoeur.com/testing_environment/index.html&quot; target=&quot;top&quot; alt=&quot;Link to prototype example&quot;&gt;View prototype&lt;/a&gt;
-  &lt;hr class=&quot;my-5&quot; /&gt;
-  &lt;div class=&quot;card text-dark bg-light my-3&quot;&gt;
-    &lt;div class=&quot;card-header&quot;&gt;&lt;h3&gt;Final thoughts&lt;/h3&gt;&lt;/div&gt;
-    &lt;div class=&quot;card-body&quot;&gt;
-      &lt;p class=&quot;card-text&quot;&gt;In review, I believe that this process helped to flush out a great number of questions and concerns, while also demonstrating that their is a solid platform in which to build the full application on.&lt;br /&gt;The findings discovered through the process were taken to the Project Stakeholders, which were then used to create additional design stories and discussions with the development teams.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</content>
-	</entry>
-	
-	<entry>
 		<title>Customer Engagement App</title>
 		<link href="http://localhost:8080/designs/customer-engagement/"/>
 		<updated>2021-07-02T14:45:28Z</updated>
@@ -776,6 +655,127 @@
       on &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
     &lt;/p&gt;
     &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Application Lifecycle Management</title>
+		<link href="http://localhost:8080/designs/alm/"/>
+		<updated>2021-07-02T15:43:25Z</updated>
+		<id>http://localhost:8080/designs/alm/</id>
+		<content type="html">&lt;div class=&quot;container mb-5&quot;&gt;
+  &lt;dl class=&quot;row&quot;&gt;
+    &lt;dt class=&quot;col-sm-2&quot;&gt;Role&lt;/dt&gt;
+    &lt;dd class=&quot;col-sm-10&quot;&gt;Interaction Designer, Prototypes&lt;/dd&gt;
+    &lt;dt class=&quot;col-sm-2&quot;&gt;Areas&lt;/dt&gt;
+    &lt;dd class=&quot;col-sm-10&quot;&gt;Wireframes, user paths, usability, prototyping&lt;/dd&gt;
+    &lt;dt class=&quot;col-sm-2&quot;&gt;Challenge&lt;/dt&gt;
+    &lt;dd class=&quot;col-sm-10&quot;&gt;The greater project team was using multiple project management tools, code repositories, and application development processes, with none of them talking to each other. This project takes all of those areas of concern and brings them together into a single, cohesive interface.&lt;/dd&gt;
+  &lt;/dl&gt;
+  &lt;hr class=&quot;my-5&quot; /&gt;
+  &lt;h2&gt;The Process&lt;/h2&gt;
+  &lt;p&gt;Before starting on the Application Lifecycle Management project, it was determined that the following areas would be need to be covered: list of target users, a user flow, wireframes, and, potentially, prototypes for user testings and feasibility.&lt;/p&gt;
+  &lt;h3&gt;Target Users&lt;/h3&gt;
+  &lt;p&gt;Through discussions with Stakeholders and Project Management, it was decided that the target users would be set in tiers - &lt;u&gt;General Users&lt;/u&gt; (those who need to add and interact with issues, update project assets, and interact daily - a mix of designers and developers); &lt;u&gt;Project Managers&lt;/u&gt; (organizers of work, set deadlines and release dates), and &lt;u&gt;Administrators&lt;/u&gt; (control any integrations, add-ons, and access).&lt;/p&gt;
+  &lt;h3&gt;Application Lifecycle Management flow&lt;/h3&gt;
+  &lt;a href=&quot;http://localhost:8080/img/ALM_workflow.png&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/ALM_workflow.png&quot; class=&quot;d-block mx-lg-auto img-fluid&quot; alt=&quot;ALM workflow&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/a&gt;
+  &lt;h3&gt;Wireframes and Workflows&lt;/h3&gt;
+  &lt;p&gt;For each section of the ALM application, workflows and wireframes were used to identify possible user paths, as well as to strategize initial designs before moving on to high fidelity mockups and prototypes.&lt;/p&gt;
+  &lt;h4&gt;From Work Items to Development&lt;/h4&gt;
+  &lt;p&gt;&lt;b&gt;Goals:&lt;/b&gt;
+    &lt;/p&gt;&lt;ul&gt;
+      &lt;li&gt;Communicates to the user that direct access to developing the Work Item is available in a single click.&lt;/li&gt;
+      &lt;li&gt;Implementation is unobtrusive and implies navigation.&lt;/li&gt;
+      &lt;li&gt;Location will not accidentally be clicked, allowing for enough real estate for line lengths and other meta data. The location of the integration should also imply moving forward.&lt;/li&gt;
+      &lt;li&gt;Ordered by recommendation - require users to fill in one area before moving on.&lt;/li&gt;
+      &lt;li&gt;As a button, it needs to have a prominent place yet not take the place of a primary button (in style).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;p&gt;&lt;/p&gt;
+  &lt;b&gt;Steps to complete the process:&lt;/b&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;card-group&quot;&gt;
+      &lt;div class=&quot;card&quot;&gt;
+        &lt;img src=&quot;http://localhost:8080/img/ALM_step1.png&quot; class=&quot;card-img-top&quot; alt=&quot;Step 1 of the ALM wireframes&quot; /&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+          &lt;h5 class=&quot;card-title&quot;&gt;Step 1&lt;/h5&gt;
+          &lt;!-- &lt;p class=&quot;card-text&quot;&gt;
+            &lt;ol&gt;
+              &lt;li&gt;I see a recommendation in the report.&lt;/li&gt;
+              &lt;li&gt;I click &#39;make a work item&#39;.&lt;/li&gt;
+              &lt;li&gt;I navigate to the Planner to see/comment on the new work item.&lt;/li&gt;
+              &lt;li&gt;If the same recommendation is suggested during another build process, it will generate a new work. At this time, detection for duplicate items does not exist.&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/p&gt; --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;
+        &lt;img src=&quot;http://localhost:8080/img/ALM_step2.png&quot; class=&quot;card-img-top&quot; alt=&quot;Step 2 of the ALM wireframes&quot; /&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+          &lt;h5 class=&quot;card-title&quot;&gt;Step 2&lt;/h5&gt;
+          &lt;!-- &lt;p class=&quot;card-text&quot;&gt;
+            &lt;ol&gt;
+              &lt;li&gt;I see a recommendation in the report.&lt;/li&gt;
+              &lt;li&gt;I click &#39;make a work item&#39;.&lt;/li&gt;
+              &lt;li&gt;I navigate to the Planner to see/comment on the new work item.&lt;/li&gt;
+              &lt;li&gt;If the same recommendation is suggested during another build process, it will generate a new work. At this time, detection for duplicate items does not exist.&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/p&gt; --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;
+        &lt;img src=&quot;http://localhost:8080/img/ALM_step3.png&quot; class=&quot;card-img-top&quot; alt=&quot;Step 3 of the ALM wireframes&quot; /&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+          &lt;h5 class=&quot;card-title&quot;&gt;Step 3&lt;/h5&gt;
+          &lt;!-- &lt;p class=&quot;card-text&quot;&gt;
+            &lt;ol&gt;
+              &lt;li&gt;I see a recommendation in the report.&lt;/li&gt;
+              &lt;li&gt;I click &#39;make a work item&#39;.&lt;/li&gt;
+              &lt;li&gt;I navigate to the Planner to see/comment on the new work item.&lt;/li&gt;
+              &lt;li&gt;If the same recommendation is suggested during another build process, it will generate a new work. At this time, detection for duplicate items does not exist.&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/p&gt; --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;card mt-3 mb-3 mx-2&quot;&gt;
+      &lt;div class=&quot;row g-0&quot;&gt;
+        &lt;div class=&quot;col-md-5&quot;&gt;
+          &lt;a href=&quot;http://localhost:8080/img/ALM_wireframe.png&quot; target=&quot;top&quot; alt=&quot;View larger image of the wireframe thumbnail&quot;&gt;
+            &lt;img src=&quot;http://localhost:8080/img/ALM_wireframe.png&quot; class=&quot;img-fluid rounded-start&quot; alt=&quot;Wireframe of the work item to coding experience&quot; /&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-7&quot;&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Wireframe&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;This wireframe was created with call outs in order to communicate my thoughts around the design to anyone who saw it, but could not talk with me. Specifically, this worked extremely well when working with colleagues in other time zones where our working ours did not match up.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;lead mt-3&quot;&gt;From these workflows and wireframes, it was determined that additional questions needed to be answered:
+    &lt;/p&gt;&lt;ul&gt;
+      &lt;li&gt;How do we handle accuracy between the linking of work items?&lt;/li&gt;
+      &lt;li&gt;If the work items has a fine name and line number, is the commit SHA also used to help identify the connection?&lt;/li&gt;
+      &lt;li&gt;Are we able to type the URL in a browser and navigate to the work item? (Does it have a unique link or is it randomly generated each time?)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;p&gt;&lt;/p&gt;
+  &lt;h3&gt;Visual Design&lt;/h3&gt;
+  &lt;p&gt;After completing the wireframes and flows, a sample visual design was created. This design was created using the in-house design component library.&lt;/p&gt;
+  &lt;a href=&quot;http://localhost:8080/img/ALM_planner.png&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/ALM_planner.png&quot; class=&quot;d-block mx-lg-auto img-fluid&quot; alt=&quot;ALM Planner visual design&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/a&gt;
+  &lt;h3 class=&quot;mt-3&quot;&gt;Prototyping&lt;/h3&gt;
+  &lt;p&gt;As part of the testing and usability study process, I created a prototype that demonstrated some of the basic layouts and IA for users to explore and provide feedback on. This process evolved over time and, eventually, became a full-fledged website that utilized static data and was continuously updated as users provided feedback.&lt;/p&gt;
+  &lt;a class=&quot;btn btn-outline-secondary&quot; href=&quot;https://www.adamjolicoeur.com/testing_environment/index.html&quot; target=&quot;top&quot; alt=&quot;Link to prototype example&quot;&gt;View prototype&lt;/a&gt;
+  &lt;hr class=&quot;my-5&quot; /&gt;
+  &lt;div class=&quot;card text-dark bg-light my-3&quot;&gt;
+    &lt;div class=&quot;card-header&quot;&gt;&lt;h3&gt;Final thoughts&lt;/h3&gt;&lt;/div&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+      &lt;p class=&quot;card-text&quot;&gt;In review, I believe that this process helped to flush out a great number of questions and concerns, while also demonstrating that their is a solid platform in which to build the full application on.&lt;br /&gt;The findings discovered through the process were taken to the Project Stakeholders, which were then used to create additional design stories and discussions with the development teams.&lt;/p&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </content>
