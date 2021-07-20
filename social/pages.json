@@ -1,10 +1,5 @@
 [
 	{
-   "title":"Oops! Not Found",
-   "imgName":"oops-not-found"
-	},
-
-	{
    "title":"Adam J. Jolicoeur",
    "imgName":"home"
 	},
@@ -47,5 +42,10 @@
 	{
    "title":"Application Lifecycle Management",
    "imgName":"application-lifecycle-management"
+	},
+
+	{
+   "title":"Oops! Not Found",
+   "imgName":"oops-not-found"
 	}
 ]
