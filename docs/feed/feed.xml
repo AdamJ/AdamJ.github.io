@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title>Adam J. Jolicoeur</title>
-	<subtitle>User Experience Designer and Developer</subtitle>
+	<title>Adam Jolicoeur</title>
+	<subtitle>The portfolio site for Adam Jolicoeur, User Experience Designer and Developer</subtitle>
 	
 	<link href="http://localhost:8080/feed/" rel="self"/>
 	<link href="http://localhost:8080"/>
@@ -367,7 +367,7 @@
     &lt;div class=&quot;my-3 py-3&quot;&gt;
       &lt;h2 class=&quot;display-5&quot;&gt;Customer Engagement App&lt;/h2&gt;
       &lt;p class=&quot;lead&quot;&gt;For this project, I was tasked with improving the overall user experience for tracking customer engagement and marketing campaigns. This project included creating color palettes, new UI components, personas, and user journeys.&lt;/p&gt;
-      &lt;a href=&quot;http://localhost:8080/designs/customer-engagement&quot; class=&quot;btn btn-light icon-link lead&quot;&gt;
+      &lt;a href=&quot;http://localhost:8080/designs/customer-engagement&quot; class=&quot;btn btn-light icon-link lead&quot; alt=&quot;Click to experience the Customer Engagement journey&quot;&gt;
         the journey
         &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;1em&quot; height=&quot;1em&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-chevron-compact-right&quot; viewBox=&quot;0 0 16 16&quot;&gt;
           &lt;path fill-rule=&quot;evenodd&quot; d=&quot;M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z&quot;&gt;&lt;/path&gt;
@@ -380,7 +380,7 @@
     &lt;div class=&quot;my-3 p-3&quot;&gt;
       &lt;h2 class=&quot;display-5&quot;&gt;Application Lifecycle Management&lt;/h2&gt;
       &lt;p class=&quot;lead&quot;&gt;A one-stop-shop for a team&#39;s planning and project lifecycle management.&lt;/p&gt;
-      &lt;a href=&quot;http://localhost:8080/designs/alm&quot; class=&quot;btn btn-dark icon-link lead&quot;&gt;
+      &lt;a href=&quot;http://localhost:8080/designs/alm&quot; class=&quot;btn btn-dark icon-link lead&quot; alt=&quot;Click to experience the Application Lifecycle Management journey&quot;&gt;
         the journey
         &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;1em&quot; height=&quot;1em&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-chevron-compact-right&quot; viewBox=&quot;0 0 16 16&quot;&gt;
           &lt;path fill-rule=&quot;evenodd&quot; d=&quot;M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z&quot;&gt;&lt;/path&gt;
@@ -462,7 +462,7 @@
       &lt;h2 class=&quot;display-6 lh-1 mb-3&quot;&gt;Bootstrap 5&lt;/h2&gt;
       &lt;p class=&quot;lead&quot;&gt;From time to time, I will create a Sketch library for use in a given project. These are shared with the team, as well as online. I create these libraries when I know that a given project will either have a large number of components or have multiple designers working on it. This will ensure continuity between designs and a clear understanding of what is being done.&lt;/p&gt;
       &lt;div class=&quot;d-grid gap-2 d-md-flex justify-content-md-start&quot;&gt;
-        &lt;a href=&quot;https://github.com/AdamJ/Bootstrap5-sketch/releases&quot; class=&quot;btn btn-outline-primary px-4 me-md-2&quot; target=&quot;_blank&quot;&gt;Download from GitHub &lt;i class=&quot;fas fa-file-download&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://github.com/AdamJ/Bootstrap5-sketch/releases&quot; class=&quot;btn btn-outline-primary px-4 me-md-2&quot; target=&quot;_blank&quot;&gt;Download library from GitHub &lt;i class=&quot;fas fa-file-download&quot;&gt;&lt;/i&gt;&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -475,7 +475,7 @@
       &lt;h2 class=&quot;display-6 lh-1 mb-3&quot;&gt;PatternFly UI (atom.io)&lt;/h2&gt;
       &lt;p class=&quot;lead&quot;&gt;This theme is inspired by PatternFly for use with Atom.io. Just a fan of both projects, creating something that I&#39;ll like to look at every day. This is a dark theme, using blue as the primary color.&lt;/p&gt;
       &lt;div class=&quot;d-grid gap-2 d-md-flex justify-content-md-start&quot;&gt;
-        &lt;a href=&quot;https://atom.io/themes/atom-patternfly-ui&quot; class=&quot;btn btn-outline-secondary px-4 me-md-2&quot; target=&quot;_blank&quot;&gt;View on Atom.io &lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://atom.io/themes/atom-patternfly-ui&quot; class=&quot;btn btn-outline-secondary px-4 me-md-2&quot; target=&quot;_blank&quot;&gt;View UI theme on Atom.io &lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -487,7 +487,7 @@
       &lt;h2 class=&quot;display-6 lh-1 mb-3&quot;&gt;PatternFly Syntax (atom.io)&lt;/h2&gt;
       &lt;p class=&quot;lead&quot;&gt;This is a PatternFly syntax theme for the Atom.io editor, inspired by the open source PatternFly library. This syntax theme is best used with the PatternFly UI theme.&lt;/p&gt;
       &lt;div class=&quot;d-grid gap-2 d-md-flex justify-content-md-start&quot;&gt;
-        &lt;a href=&quot;https://atom.io/themes/atom-patternfly-syntax&quot; class=&quot;btn btn-outline-secondary px-4 me-md-2&quot; target=&quot;_blank&quot;&gt;View on Atom.io &lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://atom.io/themes/atom-patternfly-syntax&quot; class=&quot;btn btn-outline-secondary px-4 me-md-2&quot; target=&quot;_blank&quot;&gt;View syntax theme on Atom.io &lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -607,8 +607,8 @@
       &lt;div&gt;
         &lt;h2&gt;PatternFly 4&lt;/h2&gt;
         &lt;p&gt;In support of the 4th release of PatternFly, I worked with a group of designers to create a modern, responsive take on the PatternFly website. Using a responsive layout with SVGs that move with the page, I create clean aesthetic that would flow through the rest of the site.&lt;/p&gt;
-        &lt;a href=&quot;https://pf4testbench.netlify.app/&quot; class=&quot;btn btn-secondary&quot;&gt;
-          View site
+        &lt;a href=&quot;https://pf4testbench.netlify.app/&quot; class=&quot;btn btn-secondary&quot; alt=&quot;Click to view the PatternFly 4 demo site&quot;&gt;
+          View PatternFly 4 demo
         &lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -616,8 +616,8 @@
       &lt;div&gt;
         &lt;h2&gt;Feature flags&lt;/h2&gt;
         &lt;p&gt;As part of a usability study, I worked with a UX Researcher to test out different variations of a Feature Flag, or notifier, for aspects and pages of an application that are either in a pre-release state, or have an unreleased element in use.&lt;/p&gt;
-        &lt;a href=&quot;https://www.adamjolicoeur.com/feature-flag-prototype/&quot; class=&quot;btn btn-secondary&quot;&gt;
-          View site
+        &lt;a href=&quot;https://www.adamjolicoeur.com/feature-flag-prototype/&quot; class=&quot;btn btn-secondary&quot; alt=&quot;Click to view the Feature Flags demo site&quot;&gt;
+          View Feature Flags demo
         &lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
