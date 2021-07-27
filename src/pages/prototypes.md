@@ -15,8 +15,8 @@ eleventyNavigation:
       <div>
         <h2>PatternFly 4</h2>
         <p>In support of the 4th release of PatternFly, I worked with a group of designers to create a modern, responsive take on the PatternFly website. Using a responsive layout with SVGs that move with the page, I create clean aesthetic that would flow through the rest of the site.</p>
-        <a href="https://pf4testbench.netlify.app" class="btn btn-secondary">
-          View site
+        <a href="https://pf4testbench.netlify.app" class="btn btn-secondary" alt="Click to view the PatternFly 4 demo site">
+          View PatternFly 4 demo
         </a>
       </div>
     </div>
@@ -24,8 +24,8 @@ eleventyNavigation:
       <div>
         <h2>Feature flags</h2>
         <p>As part of a usability study, I worked with a UX Researcher to test out different variations of a Feature Flag, or notifier, for aspects and pages of an application that are either in a pre-release state, or have an unreleased element in use.</p>
-        <a href="https://www.adamjolicoeur.com/feature-flag-prototype/" class="btn btn-secondary">
-          View site
+        <a href="https://www.adamjolicoeur.com/feature-flag-prototype/" class="btn btn-secondary" alt="Click to view the Feature Flags demo site">
+          View Feature Flags demo
         </a>
       </div>
     </div>

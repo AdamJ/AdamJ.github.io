@@ -15,20 +15,22 @@
       content="{{pageDescription}}"
     />
     <link rel="icon" href="{{ '/favicon.png' | url }}" />
+    <link rel="shortcut icon" href="{{ '/favicon.png' | url }}" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="{{ '/css/style.css' | url }}" rel="stylesheet" />
     <link href="{{ '/css/fontawesome.css' | url }}" rel="stylesheet" />
     <meta name="twitter:card" content="summary_large_image" />
     {% if meta.twitterUsername %}
     <meta name="twitter:creator" content="@{{ meta.twitterUsername }}" />
+    <meta name="twitter:creator:id" content="@{{ meta.twitterUsername }}" />
     {% endif %}
     <meta
       name="twitter:title"
-      content="{{pageTitle}}"
+      content="{{ meta.twitterTitle }}"
     />
     <meta
       name="twitter:description"
-      content="{{pageDescription}}"
+      content="{{ meta.twitterDescription }}"
     />
 
     <meta
@@ -39,8 +41,8 @@
       name="og:description"
       content="{{pageDescription}}"
     />
-    <meta property="og:image" content="{{pageSocialImg}}" />
-    <meta name="twitter:image" content="{{pageSocialImg}}" />
+    <meta name="twitter:image" content="https://www.adamjolicoeur.com/img/AdamJolicoeur_social.png" />
+    <meta property="og:image" content="https://www.adamjolicoeur.com/img/AdamJolicoeur_social.png" />
 
     <link
       rel="alternate"

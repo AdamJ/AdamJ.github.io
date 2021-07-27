@@ -1,11 +1,13 @@
 module.exports = {
   url: process.env.URL || "http://localhost:8080",
-  siteName: "Adam J. Jolicoeur",
+  siteName: "Adam Jolicoeur",
   siteDescription:
-    "User Experience Designer and Developer",
+    "The portfolio site for Adam Jolicoeur, User Experience Designer and Developer",
   authorName: "Adam J. Jolicoeur",
-  siteMeta:"Adam, Adam Jolicoeur, Adam J. Jolicoeur, AdamJ, Mindreeper2420, Portfolio, Design, UXD, UX Designer, UX Developer, UX Engineer, CSS",
-  twitterUsername: "AdamJJolicoeur",
+  siteMeta:"Adam, Adam Jolicoeur, Adam J. Jolicoeur, AdamJ, Jolicoeur, adamjolicoeur.com, www.adamjolicoeur.com, studiojolicoeur, studiojolicoeur.com, Mindreeper2420, Portfolio, Design, UXD, UX Designer, UX Developer, UX Engineer, CSS",
   githubUsername: "AdamJ",
-  packageVersion: "packageVersion"
+  packageVersion: "packageVersion",
+  twitterUsername: "AdamJJolicoeur",
+  twitterTitle: "Adam Jolicoeur - User Experience Designer and Developer",
+  twitterDescription: "As a User Experience Designer and Developer, I strive to design and create amazing things."
 };
