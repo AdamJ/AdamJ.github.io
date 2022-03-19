@@ -15,11 +15,6 @@
 	},
 
 	{
-   "title":"Designs",
-   "imgName":"designs"
-	},
-
-	{
    "title":"Customer Engagement App",
    "imgName":"customer-engagement-app"
 	},
@@ -35,11 +30,6 @@
 	},
 
 	{
-   "title":"Prototypes",
-   "imgName":"prototypes"
-	},
-
-	{
    "title":"Application Lifecycle Management",
    "imgName":"application-lifecycle-management"
 	},
@@ -47,5 +37,15 @@
 	{
    "title":"Oops! Not Found",
    "imgName":"oops-not-found"
+	},
+
+	{
+   "title":"Designs",
+   "imgName":"designs"
+	},
+
+	{
+   "title":"Prototypes",
+   "imgName":"prototypes"
 	}
 ]
