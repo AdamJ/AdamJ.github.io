@@ -9,7 +9,7 @@
   publish = "docs"
 
   # Default build command.
-  command = "AWS_LAMBDA_FUNCTION_NAME=trickpuppeteer npm run build"
+  command = "eleventy"
 
   [[redirects]]
     from = "/feed/"
