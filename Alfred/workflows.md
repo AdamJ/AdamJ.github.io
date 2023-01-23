@@ -1,0 +1,19 @@
+# Alfred Workflows
+
+A list of my favorite [Alfred Workflows](https://www.alfredapp.com/workflows/), broken down by those that I have downloaded and those that I have created or modified.
+
+*Note: Requires the [Alfred Powerpack](https://www.alfredapp.com/powerpack/) to use.*
+
+## Downloaded
+- [Alfred Web Searches](https://github.com/nikitavoloboev/alfred-web-searches#readme)
+  - Created by [nikitavoloboev on GitHub](https://github.com/nikitavoloboev) to use Alfred for searching the web.
+- [Spotify Mini Player](https://alfred-spotify-mini-player.com/)
+  - Control [Spotify](https://www.spotify.com) from Alfred. Requires Spotify to be installed before use.
+
+## Created / Modified
+- New Obsidian
+  - Create a new note using [Obsidian](https://obsidian.md/).
+- End the day
+  - A workflow to quickly end my day. Closes all applications and asks if I want to shut down my machine.
+- Start the day
+  - A workflow for starting my day. Open Microsoft Outlook, Firefox, and Slack.
