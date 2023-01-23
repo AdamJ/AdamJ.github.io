@@ -17,7 +17,7 @@ A list of my favorite [Alfred Workflows](https://www.alfredapp.com/workflows/), 
 ## Created / Modified
 - New Obsidian
   - Create a new note using [Obsidian](https://obsidian.md/).
-- End the day
-  - A workflow to quickly end my day. Closes all applications and asks if I want to shut down my machine.
-- Start the day
+- Start my day
   - A workflow for starting my day. Open Microsoft Outlook, Firefox, and Slack.
+- End my day
+  - A workflow to quickly end my day. Closes all applications and asks if I want to shut down my machine.
