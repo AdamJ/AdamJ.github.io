@@ -7,8 +7,6 @@ A list of my favorite [Alfred Workflows](https://www.alfredapp.com/workflows/), 
 ## Downloaded
 - [Alfred Web Searches](https://github.com/nikitavoloboev/alfred-web-searches#readme)
   - Created by [nikitavoloboev on GitHub](https://github.com/nikitavoloboev) to use Alfred for searching the web.
-- [Spotify Mini Player](https://alfred-spotify-mini-player.com/)
-  - Control [Spotify](https://www.spotify.com) from Alfred. Requires Spotify to be installed before use.
 
 ## Created / Modified
 - New Obsidian
