@@ -1,3 +1,9 @@
+---
+title: "Alfred Workflows"
+abbreviation: "alfred"
+description: "A list of my favorite Alfred workflows."
+---
+
 # Alfred Workflows
 
 A list of my favorite [Alfred Workflows](https://www.alfredapp.com/workflows/), broken down by those that I have downloaded and those that I have created or modified.
