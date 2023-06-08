@@ -8,6 +8,8 @@
   # been specified, include it in the publish directory path.
   publish = "docs"
 
+  NODE_VERSION = "15.10.0"
+
   # Default build command.
   command = "eleventy"
 
