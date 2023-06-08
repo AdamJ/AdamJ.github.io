@@ -7,8 +7,7 @@
  */
 
 .site-header {
-  background-color: rgba(0, 0, 0, .85);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(0, 0, 0, 85%);
   backdrop-filter: saturate(180%) blur(20px);
 }
 .site-header a {
@@ -43,7 +42,8 @@ h1, h2, h3, h4, h5, h6 {
 .display-4 {
   font-size: 2.5rem;
 }
-@media (min-width: 768px) {
+
+@media (min-width >= 768px) {
   .display-4 {
     font-size: 3rem;
   }
@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .h-250 { height: 250px; }
-@media (min-width: 768px) {
+@media (min-width >= 768px) {
   .h-md-250 { height: 250px; }
 }
 
@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 .flex-equal > * {
   flex: 1;
 }
-@media (min-width: 768px) {
+@media (min-width >= 768px) {
   .flex-md-equal > * {
     flex: 1;
   }
