@@ -4,7 +4,7 @@
   <url>
     <loc>http://localhost:8080/</loc>
 		
-    <lastmod>2021-07-28T12:08:11Z</lastmod>
+    <lastmod>2023-06-08T12:22:47Z</lastmod>
     
   </url>
   
@@ -68,6 +68,13 @@
     <loc>http://localhost:8080/prototypes/</loc>
 		
     <lastmod>2021-07-28T12:08:11Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/alfred/workflows/</loc>
+		
+    <lastmod>2023-06-08T12:22:47Z</lastmod>
 		
   </url>
 </urlset>

@@ -29,10 +29,10 @@
     "url": "https://github.com/AdamJ/AdamJ.github.io/issues"
   },
   "devDependencies": {
-    "@11ty/eleventy": "1.0.0",
-    "@11ty/eleventy-navigation": "^0.3.2",
-    "@11ty/eleventy-plugin-rss": "^1.1.2",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
+    "@11ty/eleventy": "2.0.1",
+    "@11ty/eleventy-navigation": "0.3.5",
+    "@11ty/eleventy-plugin-rss": "1.2.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "5.0.0",
     "autoprefixer": "^10.4.4",
     "cross-env": "^7.0.3",
     "cssnano": "^5.1.4",

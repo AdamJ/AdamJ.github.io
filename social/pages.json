@@ -47,5 +47,10 @@
 	{
    "title":"Prototypes",
    "imgName":"prototypes"
+	},
+
+	{
+   "title":"Alfred Workflows",
+   "imgName":"alfred-workflows"
 	}
 ]
