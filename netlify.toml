@@ -11,6 +11,9 @@
   # Default build command.
   command = "eleventy"
 
+  [build.environment]
+    NODE_VERSION = "18.6.0"
+
   [[redirects]]
     from = "/feed/"
     to = "/feed/feed.xml"

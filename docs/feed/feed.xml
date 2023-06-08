@@ -5,7 +5,7 @@
 	
 	<link href="http://localhost:8080/feed/" rel="self"/>
 	<link href="http://localhost:8080"/>
-	<updated>2021-07-28T12:08:11Z</updated>
+	<updated>2023-06-08T12:22:47Z</updated>
 	<id>http://localhost:8080</id>
 	<author>
 		<name>Adam J. Jolicoeur</name>
@@ -778,6 +778,43 @@
     &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
   &lt;/div&gt;
 &lt;/div&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Alfred Workflows</title>
+		<link href="http://localhost:8080/alfred/workflows/"/>
+		<updated>2023-06-08T12:22:47Z</updated>
+		<id>http://localhost:8080/alfred/workflows/</id>
+		<content type="html">&lt;h1 id=&quot;alfred-workflows&quot; tabindex=&quot;-1&quot;&gt;Alfred Workflows&lt;a class=&quot;tdbc-anchor&quot; href=&quot;http://localhost:8080/alfred/workflows/#alfred-workflows&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;A list of my favorite &lt;a href=&quot;https://www.alfredapp.com/workflows/&quot;&gt;Alfred Workflows&lt;/a&gt;, broken down by those that I have downloaded and those that I have created or modified.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: Requires the &lt;a href=&quot;https://www.alfredapp.com/powerpack/&quot;&gt;Alfred Powerpack&lt;/a&gt; to use.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;downloaded&quot; tabindex=&quot;-1&quot;&gt;Downloaded&lt;a class=&quot;tdbc-anchor&quot; href=&quot;http://localhost:8080/alfred/workflows/#downloaded&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/nikitavoloboev/alfred-web-searches#readme&quot;&gt;Alfred Web Searches&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Created by &lt;a href=&quot;https://github.com/nikitavoloboev&quot;&gt;nikitavoloboev on GitHub&lt;/a&gt; to use Alfred for searching the web.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;created---modified&quot; tabindex=&quot;-1&quot;&gt;Created / Modified&lt;a class=&quot;tdbc-anchor&quot; href=&quot;http://localhost:8080/alfred/workflows/#created---modified&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;New Obsidian
+&lt;ul&gt;
+&lt;li&gt;Create a new note using &lt;a href=&quot;https://obsidian.md/&quot;&gt;Obsidian&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Start my day
+&lt;ul&gt;
+&lt;li&gt;A workflow for starting my day. Open Microsoft Outlook, Firefox, and Slack.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;End my day
+&lt;ul&gt;
+&lt;li&gt;A workflow to quickly end my day. Closes all applications and asks if I want to shut down my machine.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </content>
 	</entry>
 </feed>
