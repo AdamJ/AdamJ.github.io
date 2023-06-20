@@ -21,6 +21,33 @@ eleventyNavigation:
 <div class="container pt-3 pb-3">
   <div class="row g-5">
     <div class="col-md-6">
+      <h2 id="redhat">Amazon - AWS</h2>
+      <p class="mb-0">
+        Senior User Experience Designer, Amazon Software Builder Experience
+      </p>
+      <p>
+        <span class="badge rounded-pill bg-dark">Figma</span>
+        <span class="badge rounded-pill bg-dark">UserTesting</span>
+        <span class="badge rounded-pill bg-dark">Design Systems</span>
+        <span class="badge rounded-pill bg-dark">Cloudscape</span>
+        <span class="badge rounded-pill bg-dark">React</span>
+      </p>
+      <ul class="icon-list">
+        <li>Senior User Experience Designer
+          <ul><li>August 2021 - Present</li></ul>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <p>As a Senior User Experience Designer on the Amazon Issue Management - Task Management team, I am resposnible for designing/creating Amazon’s internal task management solution.</p>
+      <ul class="icon-list">
+        <li>Lead Designer, Amazon Issue Management - Task Management</li>
+      </ul>
+    </div>
+  </div>
+  <hr class="col-3 col-md-2 mb-5">
+  <div class="row g-5">
+    <div class="col-md-6">
       <h2 id="redhat">Red Hat, Inc.</h2>
       <p class="mb-0">
         Senior Software Engineer, UXD
