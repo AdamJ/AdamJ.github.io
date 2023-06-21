@@ -96,7 +96,7 @@ html::-webkit-scrollbar-thumb {
 .mockup-screenshot {
   max-width: 1000px;
 }
-@media (max-width <= 768px) {
+@media (max-width: 768px) {
   .mockup-screenshot {
     max-width: 500px;
   }
@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2.5rem;
 }
 
-@media (min-width >= 768px) {
+@media (min-width: 768px) {
   .display-4 {
     font-size: 3rem;
   }
@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 250px;
 }
 
-@media (min-width >= 768px) {
+@media (min-width: 768px) {
   .h-md-250 {
     height: 250px;
   }
@@ -242,7 +242,7 @@ h1, h2, h3, h4, h5, h6 {
   flex: 1;
 }
 
-@media (min-width >= 768px) {
+@media (min-width: 768px) {
   .flex-md-equal > * {
     flex: 1;
   }

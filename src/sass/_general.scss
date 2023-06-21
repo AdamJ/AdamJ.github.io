@@ -90,7 +90,7 @@ html::-webkit-scrollbar-thumb {
 
 .mockup-screenshot {
   max-width: 1000px;
-  @media (max-width<= 768px) {
+  @media (max-width: 768px) {
     max-width: 500px;
   }
 }
