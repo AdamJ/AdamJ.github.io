@@ -5,11 +5,6 @@
 	},
 
 	{
-   "title":"About",
-   "imgName":"about"
-	},
-
-	{
    "title":"Code Examples",
    "imgName":"code-examples"
 	},
@@ -52,5 +47,10 @@
 	{
    "title":"Alfred Workflows",
    "imgName":"alfred-workflows"
+	},
+
+	{
+   "title":"About",
+   "imgName":"about"
 	}
 ]
