@@ -21,6 +21,43 @@ eleventyNavigation:
 <div class="container pt-3 pb-3">
   <div class="row g-5">
     <div class="col-md-6">
+      <h2 id="redhat">Amazon Web Services</h2>
+      <p class="mb-0">
+        Senior User Experience Designer, ASBX
+      </p>
+      <p>
+        <span class="badge rounded-pill bg-dark">Figma</span>
+        <span class="badge rounded-pill bg-dark">FigJam</span>
+        <span class="badge rounded-pill bg-dark">UserTesting</span>
+        <span class="badge rounded-pill bg-dark">Design Systems</span>
+        <span class="badge rounded-pill bg-dark">Cloudscape</span>
+        <span class="badge rounded-pill bg-dark">React</span>
+      </p>
+      <ul class="icon-list">
+        <li>Senior User Experience Designer
+          <ul><li>August 2021 - Present</li></ul>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <p>As a Senior User Experience Designer on the Amazon Software Builder Experience team, I am responsible for the task management solutions for Amazon Issue Management. As part of this responsibility, I oversee the design, implementation, and feedback of Amazon's next-generation task management solution. As the lead designer, it is my responsibility to provide a cohesive experience for all Amazon employees, regardless of role, in order for them to perform their duties with minimal churn and friction.</p>
+      <ul class="icon-list">
+        <li>Lead Designer, Task Management</li>
+        <li>Contributor, Amazon Software Builder Experience - User Experience Design</li>
+        <li>Performed user testing tests using UserTesting.com</li>
+        <li>Created prototypes for internal testing and validation using <a href="https://cloudscape.design" target="top" alt="Link to Cloudscape design system website">Cloudscape Design System</a>.
+          <ul>
+            <li>Coded testing solution using React and Cloudscape component examples</li>
+            <li>Custom CSS</li>
+            <li>Custom data entries using JSON files, read by React components</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <hr class="col-3 col-md-2 mb-5">
+  <div class="row g-5">
+    <div class="col-md-6">
       <h2 id="redhat">Red Hat, Inc.</h2>
       <p class="mb-0">
         Senior Software Engineer, UXD
