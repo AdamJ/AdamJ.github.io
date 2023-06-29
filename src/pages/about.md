@@ -4,6 +4,7 @@ abbreviation: "About"
 description: "A little bit about me."
 eleventyNavigation:
   key: About
+  order: 1
 ---
 
 <!-- <ul class="nav justify-content-center">
