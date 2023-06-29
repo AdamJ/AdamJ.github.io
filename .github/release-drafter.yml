@@ -41,16 +41,13 @@ version-resolver:
       - 'github-action'
   default: patch
 template: |
-  ## Changes in this release
-
+  ## What changed?
   $CHANGES
 
-  ## Contributors to this release
-
+  **Contributors to this release**
   $CONTRIBUTORS
 
-  ## Previous tag
-
-  $PREVIOUS_TAG
+  **Previous tag**
+  [$PREVIOUS_TAG](https://github.com/AdamJ/AdamJ.github.io/releases/tag/$PREVIOUS_TAG)
 no-changes-template: |
-  Confusingly, there were no changes in this release
+  Confusingly, there are no changes in this release.
