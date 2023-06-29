@@ -4,6 +4,7 @@ abbreviation: "Designs"
 description: "A selection of designs covering different projects and products."
 eleventyNavigation:
   key: Design
+  order: 2
 ---
 
 <div class="container">

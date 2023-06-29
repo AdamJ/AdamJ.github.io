@@ -5,165 +5,11 @@
 	
 	<link href="http://localhost:8080/feed/" rel="self"/>
 	<link href="http://localhost:8080"/>
-	<updated>2023-06-21T14:27:01Z</updated>
+	<updated>2023-06-21T15:32:46Z</updated>
 	<id>http://localhost:8080</id>
 	<author>
 		<name>Adam J. Jolicoeur</name>
 	</author>
-	
-	<entry>
-		<title>Code Examples</title>
-		<link href="http://localhost:8080/code/"/>
-		<updated>2021-06-28T13:55:42Z</updated>
-		<id>http://localhost:8080/code/</id>
-		<content type="html">&lt;div class=&quot;container&quot;&gt;
-  &lt;div class=&quot;row row-cols-1 row-cols-lg-2 align-items-stretch gy-5 py-5&quot;&gt;
-    &lt;div class=&quot;col&quot;&gt;
-      &lt;div class=&quot;card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg&quot; style=&quot;background-image: url(&#39;../img/RHDManual_Home.png&#39;);&quot;&gt;
-        &lt;div class=&quot;d-flex flex-column h-100 p-5 pb-3 text-white&quot; style=&quot;background: rgba(0, 0, 0, .5);&quot;&gt;
-          &lt;h2 class=&quot;my-5 display-6 lh-1 fw-bold text-center text-shadow-1&quot;&gt;Red Hat Developer Design Manual&lt;/h2&gt;
-          &lt;ul class=&quot;d-flex list-unstyled mt-auto&quot;&gt;
-            &lt;li class=&quot;me-auto&quot;&gt;
-              &lt;i class=&quot;bi bi-link-45deg&quot;&gt;&lt;/i&gt;
-              &lt;a href=&quot;https://aj-design-manual.netlify.app/&quot; target=&quot;top&quot; alt=&quot;Design Manual demo&quot; class=&quot;card-link&quot;&gt;
-                &lt;small&gt;Demo&lt;/small&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-              &lt;i class=&quot;bi bi-github&quot;&gt;&lt;/i&gt;
-              &lt;a href=&quot;https://github.com/AdamJ/design-manual&quot; target=&quot;top&quot; alt=&quot;Design Manual on GitHub&quot; class=&quot;card-link&quot;&gt;
-                &lt;small&gt;GitHub&lt;/small&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col&quot;&gt;
-      &lt;div class=&quot;card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg&quot; style=&quot;background-image: url(&#39;../img/screenshot-patternflyorg.png&#39;);&quot;&gt;
-        &lt;div class=&quot;d-flex flex-column h-100 p-5 pb-3 text-white&quot; style=&quot;background: rgba(0, 0, 0, .5);&quot;&gt;
-          &lt;h2 class=&quot;my-5 display-6 lh-1 fw-bold text-center text-shadow-1&quot;&gt;PatternFly.org&lt;/h2&gt;
-          &lt;ul class=&quot;d-flex list-unstyled mt-auto&quot;&gt;
-            &lt;li class=&quot;me-auto&quot;&gt;
-              &lt;i class=&quot;bi bi-link-45deg&quot;&gt;&lt;/i&gt;
-              &lt;a href=&quot;https://pf4testbench.netlify.app/&quot; target=&quot;top&quot; alt=&quot;Design Manual demo&quot; class=&quot;card-link&quot;&gt;
-                &lt;small&gt;Demo&lt;/small&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-              &lt;i class=&quot;bi bi-github&quot;&gt;&lt;/i&gt;
-              &lt;a href=&quot;https://github.com/AdamJ/pf4website&quot; target=&quot;top&quot; alt=&quot;Design Manual on GitHub&quot; class=&quot;card-link&quot;&gt;
-                &lt;small&gt;GitHub&lt;/small&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col&quot;&gt;
-      &lt;div class=&quot;card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg&quot; style=&quot;background-image: url(&#39;../img/screenshot-kubevirtio.png&#39;);&quot;&gt;
-        &lt;div class=&quot;d-flex flex-column h-100 p-5 pb-3 text-white&quot; style=&quot;background: rgba(0, 0, 0, .5);&quot;&gt;
-          &lt;h2 class=&quot;my-5 display-6 lh-1 fw-bold text-center text-white text-shadow-1&quot;&gt;kubevirt.io&lt;/h2&gt;
-          &lt;ul class=&quot;d-flex list-unstyled mt-auto&quot;&gt;
-            &lt;li class=&quot;me-auto&quot;&gt;
-              &lt;i class=&quot;bi bi-link-45deg&quot;&gt;&lt;/i&gt;
-              &lt;a href=&quot;https://kubevirtio-site.netlify.app/&quot; target=&quot;top&quot; alt=&quot;KubeVirt.io demo&quot; class=&quot;card-link&quot;&gt;
-                &lt;small&gt;Demo&lt;/small&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-              &lt;i class=&quot;bi bi-github&quot;&gt;&lt;/i&gt;
-              &lt;a href=&quot;https://github.com/AdamJ/design-manual&quot; target=&quot;top&quot; alt=&quot;KubeVirt.io on GitHub&quot; class=&quot;card-link&quot;&gt;
-                &lt;small&gt;GitHub&lt;/small&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col&quot;&gt;
-      &lt;div class=&quot;card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg&quot; style=&quot;background-image: url(&#39;../img/screenshot-try_openshift.png&#39;);&quot;&gt;
-        &lt;div class=&quot;d-flex flex-column h-100 p-5 pb-3 text-white&quot; style=&quot;background: rgba(0, 0, 0, .5);&quot;&gt;
-          &lt;h2 class=&quot;my-5 display-6 lh-1 fw-bold text-center text-white text-shadow-1&quot;&gt;try.openshift.com&lt;/h2&gt;
-          &lt;ul class=&quot;d-flex list-unstyled mt-auto&quot;&gt;
-            &lt;li class=&quot;me-auto&quot;&gt;
-              &lt;i class=&quot;bi bi-link-45deg&quot;&gt;&lt;/i&gt;
-              &lt;a href=&quot;https://try.openshift.com/&quot; target=&quot;top&quot; alt=&quot;try.openshift site&quot; class=&quot;card-link&quot;&gt;
-                &lt;small&gt;Demo&lt;/small&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col&quot;&gt;
-      &lt;div class=&quot;card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg&quot; style=&quot;background-image: url(&#39;../img/fabric8-package.png&#39;);&quot;&gt;
-        &lt;div class=&quot;d-flex flex-column h-100 p-5 pb-3 text-white&quot; style=&quot;background: rgba(0, 0, 0, .5);&quot;&gt;
-          &lt;h2 class=&quot;my-5 display-6 lh-1 fw-bold text-center text-shadow-1&quot;&gt;fabric8-pattern.library&lt;/h2&gt;
-          &lt;ul class=&quot;d-flex list-unstyled mt-auto&quot;&gt;
-            &lt;li class=&quot;me-auto&quot;&gt;
-              &lt;i class=&quot;bi bi-link-45deg&quot;&gt;&lt;/i&gt;
-              &lt;a href=&quot;https://www.npmjs.com/package/fabric8-pattern.library&quot; target=&quot;_blank&quot; alt=&quot;View library on npm&quot; class=&quot;card-link&quot;&gt;
-                &lt;small&gt;NPM&lt;/small&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-              &lt;i class=&quot;bi bi-github&quot;&gt;&lt;/i&gt;
-              &lt;a href=&quot;https://github.com/AdamJ/fabric8-pattern.library&quot; target=&quot;_blank&quot; alt=&quot;view library on GitHub&quot; class=&quot;card-link&quot;&gt;
-                &lt;small&gt;GitHub&lt;/small&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col&quot;&gt;
-      &lt;div class=&quot;card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg&quot; style=&quot;background-image: url(&#39;../img/atom-pf-syntax.png&#39;);&quot;&gt;
-        &lt;div class=&quot;d-flex flex-column h-100 p-5 pb-3 text-white&quot; style=&quot;background: rgba(0, 0, 0, .5);&quot;&gt;
-          &lt;h2 class=&quot;my-5 display-6 lh-1 fw-bold text-center text-shadow-1&quot;&gt;Atom.io themes&lt;/h2&gt;
-          &lt;ul class=&quot;d-flex list-unstyled mt-auto&quot;&gt;
-            &lt;li class=&quot;me-auto&quot;&gt;
-              &lt;i class=&quot;bi bi-link-45deg&quot;&gt;&lt;/i&gt;
-              &lt;a href=&quot;https://atom.io/users/mindreeper2420&quot; target=&quot;_blank&quot; alt=&quot;View themes on Atom.io&quot; class=&quot;card-link&quot;&gt;
-                &lt;small&gt;Atom.io&lt;/small&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;!-- &lt;h2 class=&quot;display-5 fw-bold lh-1&quot;&gt;NPM packages&lt;/h2&gt;
-&lt;div class=&quot;row flex-lg-row-reverse align-items-center gb-5 pb-5&quot;&gt;
-  &lt;div class=&quot;col-lg-6&quot;&gt;
-    &lt;img src=&quot;../img/fabric8-package.png&quot; class=&quot;d-block mx-lg-auto img-fluid&quot; alt=&quot;Social tag for the Bootstrap 5 Sketch library&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot;&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;col-10 col-sm-8 col-lg-6&quot;&gt;
-    &lt;h2 class=&quot;display-6 lh-1 mb-3&quot;&gt;fabric8-pattern.library&lt;/h2&gt;
-    &lt;p class=&quot;lead&quot;&gt;This package was created for a project that I worked on where having as few packages to install and maintain was a priority. The fabric8 pattern library combines PatternFly 3, Bootstrap 3, and Font Awesome 4 into a single consumable, usable with Webpack, Gulp, CSS Preprocessors or directly in HTML.&lt;/p&gt;
-    &lt;div class=&quot;d-grid gap-2 d-md-flex justify-content-md-start&quot;&gt;
-      &lt;a href=&quot;https://www.npmjs.com/package/fabric8-pattern.library&quot; class=&quot;btn btn-outline-primary px-4 me-md-2&quot; target=&quot;_blank&quot;&gt;View on npmjs.com &lt;i class=&quot;bi bi-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;d-grid gap-2 d-md-flex justify-content-md-start&quot;&gt;
-      &lt;script&gt;
-        function copyPackage() {
-          var copyText = document.getElementById(&quot;npmPackageInstall&quot;);
-          copyText.select();
-          copyText.setSelectionRange(0, 99999);
-          document.execCommand(&quot;copy&quot;);
-          alert(copyText.value + &quot; copied.&quot;);
-        }
-      &lt;/script&gt;
-      &lt;div class=&quot;input-group input-group-sm my-3&quot;&gt;
-        &lt;input class=&quot;form-control&quot; style=&quot;font-family: &#39;Fira Mono&#39;, &#39;Andale Mono&#39;, &#39;Consolas&#39;, monospace; border: 1px #cccccc solid; padding: 6px;&quot; type=&quot;text&quot; value=&quot;npm i fabric8-pattern.library&quot; placeholder=&quot;npm i fabric8-pattern.library&quot; id=&quot;npmPackageInstall&quot; disabled&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-dark&quot; onclick=&quot;copyPackage()&quot;&gt;Copy&lt;/button&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt; --&gt;
-</content>
-	</entry>
 	
 	<entry>
 		<title>Customer Engagement App</title>
@@ -579,16 +425,16 @@
       on &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
     &lt;/p&gt;
     &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-    &lt;!-- &lt;h2&gt;PatternFly 4&lt;/h2&gt;
-    &lt;p&gt;I worked with a group of designers to transform the website for the 4th release PatternFly to be a modern, responsive take on previous examples. Using a responsive layout with SVGs that move with the page, I transformed their designs into a site with clean, appealing aesthetics that would flow throughout the website.&lt;/p&gt; --&gt;
   &lt;/div&gt;
   &lt;div class=&quot;row g-4 py-5 row-cols-1&quot;&gt;
-    &lt;p class=&quot;codepen&quot; data-height=&quot;450&quot; data-theme-id=&quot;38046&quot; data-default-tab=&quot;html,result&quot; data-user=&quot;mindreeper2420&quot; data-slug-hash=&quot;KKgdeEE&quot; style=&quot;height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-pen-title=&quot;Download Card Overlay&quot;&gt;
-      &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/mindreeper2420/pen/KKgdeEE&quot;&gt;
-      Download Card Overlay&lt;/a&gt; by Adam Jolicoeur (&lt;a href=&quot;https://codepen.io/mindreeper2420&quot;&gt;@mindreeper2420&lt;/a&gt;)
+    &lt;p class=&quot;codepen&quot; data-height=&quot;550&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;NWjOzwm&quot; data-user=&quot;mindreeper2420&quot; style=&quot;height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+      &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/mindreeper2420/pen/NWjOzwm&quot;&gt;
+      SwitchTrack - Calendar&lt;/a&gt; by Adam Jolicoeur (&lt;a href=&quot;https://codepen.io/mindreeper2420&quot;&gt;@mindreeper2420&lt;/a&gt;)
       on &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
     &lt;/p&gt;
-    &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </content>
@@ -634,7 +480,7 @@
 	<entry>
 		<title>About</title>
 		<link href="http://localhost:8080/about/"/>
-		<updated>2023-06-21T14:27:01Z</updated>
+		<updated>2023-06-21T15:16:54Z</updated>
 		<id>http://localhost:8080/about/</id>
 		<content type="html">&lt;!-- &lt;ul class=&quot;nav justify-content-center&quot;&gt;
   &lt;li class=&quot;nav-item&quot;&gt;
@@ -852,6 +698,184 @@
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Code Examples</title>
+		<link href="http://localhost:8080/code/"/>
+		<updated>2023-06-21T15:16:56Z</updated>
+		<id>http://localhost:8080/code/</id>
+		<content type="html">&lt;div class=&quot;container&quot;&gt;
+  &lt;h2 class=&quot;display-6&quot;&gt;Personal projects&lt;/h2&gt;
+  &lt;div class=&quot;row row-cols-1 row-cols-lg-2 align-items-stretch gy-5 pb-5&quot;&gt;
+&lt;!-- Alfred workflows --&gt;
+    &lt;div class=&quot;col&quot;&gt;
+      &lt;div class=&quot;card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg&quot; style=&quot;background-image: url(&#39;../img/Alfredlogo4.png&#39;);&quot;&gt;
+        &lt;div class=&quot;d-flex flex-column h-100 p-5 pb-3 text-white&quot; style=&quot;background: rgba(0, 0, 0, .5);&quot;&gt;
+          &lt;h2 class=&quot;my-5 display-6 lh-1 fw-bold text-center text-white text-shadow-1&quot;&gt;Alfred&lt;/h2&gt;
+          &lt;ul class=&quot;d-flex list-unstyled mt-auto&quot;&gt;
+            &lt;li class=&quot;me-auto&quot;&gt;
+              &lt;i class=&quot;bi bi-link-45deg&quot;&gt;&lt;/i&gt;
+              &lt;a href=&quot;http://localhost:8080/alfred/workflows&quot; alt=&quot;My Alfred workflows&quot; class=&quot;card-link&quot;&gt;
+                &lt;small&gt;Workflows&lt;/small&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;i class=&quot;bi bi-github&quot;&gt;&lt;/i&gt;
+              &lt;a href=&quot;https://github.com/AdamJ/AdamJ.github.io/tree/main/src/pages/Alfred&quot; target=&quot;top&quot; alt=&quot;My Alfred workflows on GitHub&quot; class=&quot;card-link&quot;&gt;
+                &lt;small&gt;GitHub&lt;/small&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;!-- Streamdeck configurations --&gt;
+    &lt;div class=&quot;col&quot;&gt;
+      &lt;div class=&quot;card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg&quot; style=&quot;background-image: url(&#39;../img/streamdeck-preview.png&#39;);&quot;&gt;
+        &lt;div class=&quot;d-flex flex-column h-100 p-5 pb-3 text-white&quot; style=&quot;background: rgba(0, 0, 0, .5);&quot;&gt;
+          &lt;h2 class=&quot;my-5 display-6 lh-1 fw-bold text-center text-white text-shadow-1&quot;&gt;Stream Deck icons&lt;/h2&gt;
+          &lt;ul class=&quot;d-flex list-unstyled mt-auto&quot;&gt;
+            &lt;li class=&quot;me-auto&quot;&gt;
+              &lt;i class=&quot;bi bi-link-45deg&quot;&gt;&lt;/i&gt;
+              &lt;a href=&quot;http://localhost:8080/streamdeck/examples&quot; alt=&quot;My Stream Deck icon examples&quot; class=&quot;card-link&quot;&gt;
+                &lt;small&gt;Examples&lt;/small&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;i class=&quot;bi bi-github&quot;&gt;&lt;/i&gt;
+              &lt;a href=&quot;https://github.com/AdamJ/stream-deck-icon-packs&quot; target=&quot;top&quot; alt=&quot;Streamdeck icon packs on GitHub&quot; class=&quot;card-link&quot;&gt;
+                &lt;small&gt;GitHub&lt;/small&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;h2 class=&quot;display-6&quot;&gt;Work-related projects&lt;/h2&gt;
+  &lt;div class=&quot;row row-cols-1 row-cols-lg-2 align-items-stretch gy-5 pb-5&quot;&gt;
+    &lt;div class=&quot;col&quot;&gt;
+      &lt;div class=&quot;card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg&quot; style=&quot;background-image: url(&#39;../img/RHDManual_Home.png&#39;);&quot;&gt;
+        &lt;div class=&quot;d-flex flex-column h-100 p-5 pb-3 text-white&quot; style=&quot;background: rgba(0, 0, 0, .5);&quot;&gt;
+          &lt;h2 class=&quot;my-5 display-6 lh-1 fw-bold text-center text-shadow-1&quot;&gt;Red Hat Developer Design Manual&lt;/h2&gt;
+          &lt;ul class=&quot;d-flex list-unstyled mt-auto&quot;&gt;
+            &lt;li class=&quot;me-auto&quot;&gt;
+              &lt;i class=&quot;bi bi-link-45deg&quot;&gt;&lt;/i&gt;
+              &lt;a href=&quot;https://aj-design-manual.netlify.app/&quot; target=&quot;top&quot; alt=&quot;Design Manual demo&quot; class=&quot;card-link&quot;&gt;
+                &lt;small&gt;Demo&lt;/small&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;i class=&quot;bi bi-github&quot;&gt;&lt;/i&gt;
+              &lt;a href=&quot;https://github.com/AdamJ/design-manual&quot; target=&quot;top&quot; alt=&quot;Design Manual on GitHub&quot; class=&quot;card-link&quot;&gt;
+                &lt;small&gt;GitHub&lt;/small&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;
+      &lt;div class=&quot;card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg&quot; style=&quot;background-image: url(&#39;../img/screenshot-patternflyorg.png&#39;);&quot;&gt;
+        &lt;div class=&quot;d-flex flex-column h-100 p-5 pb-3 text-white&quot; style=&quot;background: rgba(0, 0, 0, .5);&quot;&gt;
+          &lt;h2 class=&quot;my-5 display-6 lh-1 fw-bold text-center text-shadow-1&quot;&gt;PatternFly.org&lt;/h2&gt;
+          &lt;ul class=&quot;d-flex list-unstyled mt-auto&quot;&gt;
+            &lt;li class=&quot;me-auto&quot;&gt;
+              &lt;i class=&quot;bi bi-link-45deg&quot;&gt;&lt;/i&gt;
+              &lt;a href=&quot;https://pf4testbench.netlify.app/&quot; target=&quot;top&quot; alt=&quot;Design Manual demo&quot; class=&quot;card-link&quot;&gt;
+                &lt;small&gt;Demo&lt;/small&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;i class=&quot;bi bi-github&quot;&gt;&lt;/i&gt;
+              &lt;a href=&quot;https://github.com/AdamJ/pf4website&quot; target=&quot;top&quot; alt=&quot;Design Manual on GitHub&quot; class=&quot;card-link&quot;&gt;
+                &lt;small&gt;GitHub&lt;/small&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;h2 class=&quot;display-6&quot;&gt;Deprecated products&lt;/h2&gt;
+  &lt;div class=&quot;row row-cols-1 row-cols-lg-2 align-items-stretch gy-5 pb-5&quot;&gt;
+    &lt;div class=&quot;col&quot;&gt;
+      &lt;div class=&quot;card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg&quot; style=&quot;background-image: url(&#39;../img/screenshot-kubevirtio.png&#39;);&quot;&gt;
+        &lt;div class=&quot;d-flex flex-column h-100 p-5 pb-3 text-white&quot; style=&quot;background: rgba(0, 0, 0, .5);&quot;&gt;
+          &lt;h2 class=&quot;my-5 display-6 lh-1 fw-bold text-center text-white text-shadow-1&quot;&gt;kubevirt.io&lt;/h2&gt;
+          &lt;ul class=&quot;d-flex list-unstyled mt-auto&quot;&gt;
+            &lt;li class=&quot;me-auto&quot;&gt;
+              &lt;i class=&quot;bi bi-link-45deg&quot;&gt;&lt;/i&gt;
+              &lt;a href=&quot;https://kubevirtio-site.netlify.app/&quot; target=&quot;top&quot; alt=&quot;KubeVirt.io demo&quot; class=&quot;card-link&quot;&gt;
+                &lt;small&gt;Demo&lt;/small&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;i class=&quot;bi bi-github&quot;&gt;&lt;/i&gt;
+              &lt;a href=&quot;https://github.com/AdamJ/design-manual&quot; target=&quot;top&quot; alt=&quot;KubeVirt.io on GitHub&quot; class=&quot;card-link&quot;&gt;
+                &lt;small&gt;GitHub&lt;/small&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;
+      &lt;div class=&quot;card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg&quot; style=&quot;background-image: url(&#39;../img/fabric8-package.png&#39;);&quot;&gt;
+        &lt;div class=&quot;d-flex flex-column h-100 p-5 pb-3 text-white&quot; style=&quot;background: rgba(0, 0, 0, .5);&quot;&gt;
+          &lt;h2 class=&quot;my-5 display-6 lh-1 fw-bold text-center text-shadow-1&quot;&gt;fabric8-pattern.library&lt;/h2&gt;
+          &lt;ul class=&quot;d-flex list-unstyled mt-auto&quot;&gt;
+            &lt;li class=&quot;me-auto&quot;&gt;
+              &lt;i class=&quot;bi bi-link-45deg&quot;&gt;&lt;/i&gt;
+              &lt;a href=&quot;https://www.npmjs.com/package/fabric8-pattern.library&quot; target=&quot;_blank&quot; alt=&quot;View library on npm&quot; class=&quot;card-link&quot;&gt;
+                &lt;small&gt;NPM&lt;/small&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;i class=&quot;bi bi-github&quot;&gt;&lt;/i&gt;
+              &lt;a href=&quot;https://github.com/AdamJ/fabric8-pattern.library&quot; target=&quot;_blank&quot; alt=&quot;view library on GitHub&quot; class=&quot;card-link&quot;&gt;
+                &lt;small&gt;GitHub&lt;/small&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;
+      &lt;div class=&quot;card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg&quot; style=&quot;background-image: url(&#39;../img/atom-pf-syntax.png&#39;);&quot;&gt;
+        &lt;div class=&quot;d-flex flex-column h-100 p-5 pb-3 text-white&quot; style=&quot;background: rgba(0, 0, 0, .5);&quot;&gt;
+          &lt;h2 class=&quot;my-5 display-6 lh-1 fw-bold text-center text-shadow-1&quot;&gt;Atom.io themes&lt;/h2&gt;
+          &lt;ul class=&quot;d-flex list-unstyled mt-auto&quot;&gt;
+            &lt;li class=&quot;me-auto&quot;&gt;
+              &lt;i class=&quot;bi bi-link-45deg&quot;&gt;&lt;/i&gt;
+              &lt;a href=&quot;https://atom.io/users/mindreeper2420&quot; target=&quot;_blank&quot; alt=&quot;View themes on Atom.io&quot; class=&quot;card-link&quot;&gt;
+                &lt;small&gt;Atom.io&lt;/small&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Stream Deck examples</title>
+		<link href="http://localhost:8080/streamdeck/examples/"/>
+		<updated>2023-06-21T15:32:46Z</updated>
+		<id>http://localhost:8080/streamdeck/examples/</id>
+		<content type="html">&lt;h2 id=&quot;standard-icons&quot; tabindex=&quot;-1&quot;&gt;Standard icons&lt;a class=&quot;tdbc-anchor&quot; href=&quot;http://localhost:8080/streamdeck/examples/#standard-icons&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:8080/streamdeck/img/streamdeck-preview.png&#39;&quot; alt=&quot;Preview image&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;solid-icons&quot; tabindex=&quot;-1&quot;&gt;Solid icons&lt;a class=&quot;tdbc-anchor&quot; href=&quot;http://localhost:8080/streamdeck/examples/#solid-icons&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;downloads&quot; tabindex=&quot;-1&quot;&gt;Downloads&lt;a class=&quot;tdbc-anchor&quot; href=&quot;http://localhost:8080/streamdeck/examples/#downloads&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/AdamJ/stream-deck-icon-packs/tree/main/com.elgato.jolicoeur-solid.sdIconPack&quot;&gt;jolicoeur-solid.sdIconPack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/AdamJ/stream-deck-icon-packs/tree/main/com.elgato.jolicoeur.sdIconPack&quot;&gt;jolicoeur.sdIconPack&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
 	</entry>
 </feed>

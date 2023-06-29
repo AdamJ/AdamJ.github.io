@@ -4,6 +4,7 @@ abbreviation: "Prototypes"
 description: "When I work on a design, I prototype as I go. This allows me to see what I'm doing in a working environment, while keeping expectations realistic."
 eleventyNavigation:
   key: Prototypes
+  order: 4
 ---
 
 <div class="mb-2 py-2 px-5 container">
@@ -53,15 +54,15 @@ eleventyNavigation:
       on <a href="https://codepen.io">CodePen</a>.</span>
     </p>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-    <!-- <h2>PatternFly 4</h2>
-    <p>I worked with a group of designers to transform the website for the 4th release PatternFly to be a modern, responsive take on previous examples. Using a responsive layout with SVGs that move with the page, I transformed their designs into a site with clean, appealing aesthetics that would flow throughout the website.</p> -->
   </div>
   <div class="row g-4 py-5 row-cols-1">
-    <p class="codepen" data-height="450" data-theme-id="38046" data-default-tab="html,result" data-user="mindreeper2420" data-slug-hash="KKgdeEE" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Download Card Overlay">
-      <span>See the Pen <a href="https://codepen.io/mindreeper2420/pen/KKgdeEE">
-      Download Card Overlay</a> by Adam Jolicoeur (<a href="https://codepen.io/mindreeper2420">@mindreeper2420</a>)
+    <p class="codepen" data-height="550" data-default-tab="result" data-slug-hash="NWjOzwm" data-user="mindreeper2420" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/mindreeper2420/pen/NWjOzwm">
+      SwitchTrack - Calendar</a> by Adam Jolicoeur (<a href="https://codepen.io/mindreeper2420">@mindreeper2420</a>)
       on <a href="https://codepen.io">CodePen</a>.</span>
     </p>
-    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
   </div>
 </div>

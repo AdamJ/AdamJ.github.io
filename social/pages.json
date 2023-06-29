@@ -5,11 +5,6 @@
 	},
 
 	{
-   "title":"Code Examples",
-   "imgName":"code-examples"
-	},
-
-	{
    "title":"Customer Engagement App",
    "imgName":"customer-engagement-app"
 	},
@@ -52,5 +47,15 @@
 	{
    "title":"About",
    "imgName":"about"
+	},
+
+	{
+   "title":"Code Examples",
+   "imgName":"code-examples"
+	},
+
+	{
+   "title":"Stream Deck examples",
+   "imgName":"stream-deck-examples"
 	}
 ]
