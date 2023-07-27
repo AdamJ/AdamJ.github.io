@@ -16,12 +16,12 @@ eleventyNavigation:
         <div class="d-flex flex-column h-100 p-5 pb-3 text-white" style="background: rgba(0, 0, 0, .5);">
           <h2 class="my-5 display-6 lh-1 fw-bold text-center text-white text-shadow-1">Alfred</h2>
           <ul class="d-flex list-unstyled mt-auto">
-            <li class="me-auto">
+            <!-- <li class="me-auto">
               <i class="bi bi-link-45deg"></i>
               <a href="/alfred/workflows" alt="My Alfred workflows" class="card-link">
                 <small>Workflows</small>
               </a>
-            </li>
+            </li> -->
             <li>
               <i class="bi bi-github"></i>
               <a href="https://github.com/AdamJ/AdamJ.github.io/tree/main/src/pages/Alfred" target="top" alt="My Alfred workflows on GitHub" class="card-link">
@@ -38,12 +38,12 @@ eleventyNavigation:
         <div class="d-flex flex-column h-100 p-5 pb-3 text-white" style="background: rgba(0, 0, 0, .5);">
           <h2 class="my-5 display-6 lh-1 fw-bold text-center text-white text-shadow-1">Stream Deck icons</h2>
           <ul class="d-flex list-unstyled mt-auto">
-            <li class="me-auto">
+            <!-- <li class="me-auto">
               <i class="bi bi-link-45deg"></i>
               <a href="/streamdeck/examples" alt="My Stream Deck icon examples" class="card-link">
                 <small>Examples</small>
               </a>
-            </li>
+            </li> -->
             <li>
               <i class="bi bi-github"></i>
               <a href="https://github.com/AdamJ/stream-deck-icon-packs" target="top" alt="Streamdeck icon packs on GitHub" class="card-link">

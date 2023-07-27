@@ -1,30 +1,18 @@
 ---
 title: "About"
 abbreviation: "About"
-description: "A little bit about me."
+description: "Driven and passionate user experience designer, with a background in software development, creating interfaces that allows users to perform their work seamlessly."
 eleventyNavigation:
   key: About
   order: 1
 ---
 
-<!-- <ul class="nav justify-content-center">
-  <li class="nav-item">
-    <a class="nav-link" href="#">History</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Education</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Recognitions</a>
-  </li>
-</ul>
-<hr> -->
 <div class="container pt-3 pb-3">
   <div class="row g-5">
     <div class="col-md-6">
       <h2 id="redhat">Amazon Web Services</h2>
       <p class="mb-0">
-        Senior User Experience Designer, ASBX
+        Senior User Experience Designer, Amazon Software Builder Experience
       </p>
       <p>
         <span class="badge rounded-pill bg-dark">Figma</span>
@@ -82,14 +70,43 @@ eleventyNavigation:
       </ul>
     </div>
     <div class="col-md-6">
-      <p>As a Senior Software Engineer on the User Experience Design team, I am responsible for creating user flows, wireframes, mockups, and proof-of-concepts for a variety of products and websites across the company. I am a core contributor to the PatternFly design system and was the lead designer and developer of the Red Hat Developer Design Manual.</p>
+      <p>As a Senior Software Engineer on the User Experience Design team, my responsibilities included creating user flows, wireframes, mockups, and proof-of-concepts for products and websites across the Red Hat. As part of my role, I became a core contributor to the PatternFly design system, as well as lead the design of the Red Hat Developer Design Manual.</p>
       <ul class="icon-list">
         <li>UX Designer, OpenShift</li>
         <li>designer/developer, developers.redhat.com</li>
         <li>designer/developer, Red Hat Developer Design Manual</li>
-        <li>interaction designer, Red Hat Managed Integration (Integreatly)
-        <li>Core Contributer to <a href="https://www.patternfly.org" target="top" alt="PatternFly website">PatternFly</a></li>
+        <li>interaction designer, Red Hat Managed Integration
+        <li>Core Contributor to <a href="https://www.patternfly.org" target="top" alt="PatternFly website">PatternFly</a></li>
         <li>designer/developer, kubevirt.io</li>
+      </ul>
+    </div>
+  </div>
+<hr class="col-3 col-md-2 mb-5">
+  <div class="row g-5">
+    <div class="col-md-6">
+      <h2>Saylent Technologies</h2>
+      <p class="mb-0">
+        User Experience Designer
+      </p>
+      <p>
+        <span class="badge rounded-pill bg-dark">Photoshop</span>
+        <span class="badge rounded-pill bg-dark">Visual studio</span>
+        <span class="badge rounded-pill bg-dark">HTML</span>
+        <span class="badge rounded-pill bg-dark">CSS</span>
+        <span class="badge rounded-pill bg-dark">Agile</span>
+      </p>
+      <ul class="icon-list">
+        <li>November 2014 - July 2016</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <p>Led the design and user research for the Account360 and Card360 platforms, working with a team of developers to improve product usability. Focused primarily on easy to use and manageable interfaces for the financial industry, utilizing standards from across the industry.</p>
+      <ul class="icon-list">
+        <li>Lead designer, Account360 and Card360 platforms</li>
+        <li>Lead designer, product refreshes/corporate presentations and sales demonstrations</li>
+        <li>Created system for ux prototyping and usability testing</li>
+        <li>Developer, HTML/CSS for use in ASP.net applications</li>
+        <li>Created style guide/css framework for corporate products</li>
       </ul>
     </div>
   </div>
@@ -122,43 +139,13 @@ eleventyNavigation:
       </ul>
     </div>
     <div class="col-md-6">
-      <p>Designed and implemented a redesign of an internal financial accounting website, which interacted directly with construction software and daily database updates. Created presentations for senior management in order to demonstrate the full design concepts and gather feedback on direction and feasibility of designs.</p>
+      <p>Designed and implemented a redesign of an internal financial accounting product, interfacing directly with construction software and daily database updates.</p>
       <ul class="icon-list">
         <li>Worked on mobile-first web applications and data input tools for personal inventory systems and portfolios.</li>
-        <li>Created and implemented a redesign of an internal financial accounting website utilizing HTML5, CSS3, jQuery and Bootstrap 2 & Bootstrap 3 frameworks</li>
-        <li>Part of design team from initial conception to finished product – creation of wireframes, photoshop designs, test sites and integration of data</li>
+        <li>Part of design team from initial conception to finished product – creation of wireframes, Photoshop designs, test sites and integration of data</li>
         <li>PHP Development on Desktop and Mobile Browsers</li>
         <li>Built, managed and maintained an internal IIS 7.0 environment</li>
         <li>DMS maintenance and creation – Joomla and Drupal</li>
-      </ul>
-    </div>
-  </div>
-  <hr class="col-3 col-md-2 mb-5">
-  <div class="row g-5">
-    <div class="col-md-6">
-      <h2>Saylent Technologies</h2>
-      <p class="mb-0">
-        User Experience Designer
-      </p>
-      <p>
-        <span class="badge rounded-pill bg-dark">Photoshop</span>
-        <span class="badge rounded-pill bg-dark">Visual studio</span>
-        <span class="badge rounded-pill bg-dark">HTML</span>
-        <span class="badge rounded-pill bg-dark">CSS</span>
-        <span class="badge rounded-pill bg-dark">Agile</span>
-      </p>
-      <ul class="icon-list">
-        <li>November 2014 - July 2016</li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <p>As a User Experience Designer, I lead the design and user research for the Account360 and Card360 platforms, working with a team of developers to improve product usability. Our primary focus was to provide a easy to use and manageable interfaces for the financial industry, utilizing standards from across the industry.</p>
-      <ul class="icon-list">
-        <li>lead designer, Account360 &amp; Card360 platforms</li>
-        <li>lead designer, product refreshes/corporate presentations &amp; sales demonstrations</li>
-        <li>created system for ux prototyping and usability testing</li>
-        <li>developer, html/css for use in asp.net applications</li>
-        <li>created styleguide/css framework for corporate products</li>
       </ul>
     </div>
   </div>
@@ -183,10 +170,10 @@ eleventyNavigation:
     <div class="col-md-6">
       <p>As a UI Software Engineer, I worked with the development and design teams to turn the visual designs into working applications.</p>
       <ul class="icon-list">
-        <li>developer, software inventory and management system</li>
-        <li>created/developed wireframes/templates/mockups with UX Designer and UI Architect</li>
-        <li>developed/tested initial phases of mobile/tablet design framework</li>
-        <li>daily scrum/agile development practices</li>
+        <li>Developer, software inventory and management system</li>
+        <li>Created and developed wireframes/templates/mockups with UX Designer and UI Architect</li>
+        <li>Developed/tested initial phases of mobile/tablet design framework</li>
+        <li>Daily Agile Scrum development practices</li>
       </ul>
     </div>
   </div>

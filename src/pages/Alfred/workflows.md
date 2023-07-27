@@ -1,7 +1,7 @@
 ---
 title: "Alfred Workflows"
 abbreviation: "alfred"
-description: "A list of my favorite Alfred workflows."
+description: "A list of my favorite Alfred workflows"
 ---
 
 # Alfred Workflows

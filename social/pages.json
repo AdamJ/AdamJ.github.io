@@ -30,16 +30,6 @@
 	},
 
 	{
-   "title":"Designs",
-   "imgName":"designs"
-	},
-
-	{
-   "title":"Prototypes",
-   "imgName":"prototypes"
-	},
-
-	{
    "title":"Alfred Workflows",
    "imgName":"alfred-workflows"
 	},
@@ -52,6 +42,16 @@
 	{
    "title":"Code Examples",
    "imgName":"code-examples"
+	},
+
+	{
+   "title":"Designs",
+   "imgName":"designs"
+	},
+
+	{
+   "title":"Prototypes",
+   "imgName":"prototypes"
 	},
 
 	{

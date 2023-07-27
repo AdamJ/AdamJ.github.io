@@ -2,5 +2,16 @@
   "cSpell.ignoreWords": [
     "borderless",
     "customerengagement"
+  ],
+  "cSpell.words": [
+    "cssnano",
+    "keybase",
+    "linkify",
+    "luxon",
+    "postbuild",
+    "Shortcode",
+    "stylelint",
+    "syntaxhighlight",
+    "webfonts"
   ]
 }
