@@ -7,6 +7,18 @@ const markdownItAnchor = require("markdown-it-anchor");
 const packageVersion = require("./package.json").version;
 const fs = require("fs");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const Image = require("@11ty/eleventy-img");
+
+(async () => {
+  let url = "https://images.unsplash.com/photo-1608178398319-48f814d0750c";
+  let stats = await Image(url, {
+    widths: ["auto"],
+    urlPath: "./src/img/",
+    outputDir: "./docs/img/"
+  });
+
+  console.log( stats );
+})();
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
@@ -27,6 +39,23 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
   eleventyConfig.addShortcode("packageVersion", () => `v${packageVersion}`);
+
+  eleventyConfig.addShortcode("image", async function(src, alt, sizes) {
+    let metadata = await Image(src, {
+      widths: ["auto"],
+      urlPath: "./src/img/",
+      outputDir: "./docs/img/"
+    });
+
+    let imageAttributes = {
+      alt,
+      sizes,
+      loading: "lazy",
+      decoding: "async",
+    };
+
+    return Image.generateHTML(metadata, imageAttributes);
+  });
 
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
@@ -63,19 +92,13 @@ module.exports = function (eleventyConfig) {
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
     html: true,
-  }).use(markdownItAnchor, {
-    permalink: true,
-    permalinkClass: "tdbc-anchor",
-    permalinkSymbol: "#",
-    permalinkSpace: false,
-    level: [1, 2, 3],
-    slugify: (s) =>
-      s
-        .trim()
-        .toLowerCase()
-        .replace(/[\s+~\/]/g, "-")
-        .replace(/[().`,%·'"!?¿:@*]/g, ""),
-  });
+    breaks: true,
+    langPrefix: 'language-',
+    linkify: true,
+  })
+  .use(markdownItAnchor, {
+    permalink: markdownItAnchor.permalink.headerLink({ safariReaderFix: true })
+  })
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   return {
