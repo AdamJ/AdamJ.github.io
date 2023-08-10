@@ -5,7 +5,7 @@
 	
 	<link href="http://localhost:8080/feed/" rel="self"/>
 	<link href="http://localhost:8080"/>
-	<updated>2023-06-29T18:18:02Z</updated>
+	<updated>2023-08-10T13:52:35Z</updated>
 	<id>http://localhost:8080</id>
 	<author>
 		<name>Adam J. Jolicoeur</name>
@@ -98,14 +98,6 @@
 		<link href="http://localhost:8080/designs/district25/"/>
 		<updated>2021-07-02T14:45:28Z</updated>
 		<id>http://localhost:8080/designs/district25/</id>
-		<content type="html"></content>
-	</entry>
-	
-	<entry>
-		<title>TimeTrak by Switchback</title>
-		<link href="http://localhost:8080/designs/timetrak/"/>
-		<updated>2021-07-02T14:45:28Z</updated>
-		<id>http://localhost:8080/designs/timetrak/</id>
 		<content type="html"></content>
 	</entry>
 	
@@ -231,9 +223,76 @@
 	</entry>
 	
 	<entry>
+		<title>Prototypes</title>
+		<link href="http://localhost:8080/prototypes/"/>
+		<updated>2023-06-29T18:18:02Z</updated>
+		<id>http://localhost:8080/prototypes/</id>
+		<content type="html">&lt;div class=&quot;mb-2 py-2 px-5 container&quot;&gt;
+  &lt;h2 class=&quot;pb-2 border-bottom&quot;&gt;
+    Sites
+  &lt;/h2&gt;
+  &lt;div class=&quot;row g-4 py-5 row-cols-1 row-cols-lg-2&quot;&gt;
+    &lt;div class=&quot;col d-flex align-items-start&quot;&gt;
+      &lt;div&gt;
+        &lt;h2&gt;PatternFly 4&lt;/h2&gt;
+        &lt;p&gt;In support of the 4th release of PatternFly, I worked with a group of designers to create a modern, responsive take on the PatternFly website. Using a responsive layout with SVGs that move with the page, I create clean aesthetic that would flow through the rest of the site.&lt;/p&gt;
+        &lt;a href=&quot;https://pf4testbench.netlify.app/&quot; class=&quot;btn btn-secondary&quot; alt=&quot;Click to view the PatternFly 4 demo site&quot;&gt;
+          View PatternFly 4 demo
+        &lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col d-flex align-items-start&quot;&gt;
+      &lt;div&gt;
+        &lt;h2&gt;Feature flags&lt;/h2&gt;
+        &lt;p&gt;As part of a usability study, I worked with a UX Researcher to test out different variations of a Feature Flag, or notifier, for aspects and pages of an application that are either in a pre-release state, or have an unreleased element in use.&lt;/p&gt;
+        &lt;a href=&quot;https://www.adamjolicoeur.com/feature-flag-prototype/&quot; class=&quot;btn btn-secondary&quot; alt=&quot;Click to view the Feature Flags demo site&quot;&gt;
+          View Feature Flags demo
+        &lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row g-4 py-5 row-cols-1 row-cols-lg-2&quot;&gt;
+    &lt;b&gt;Additional examples:&lt;/b&gt;
+    &lt;div class=&quot;col d-flex align-items-start&quot;&gt;
+      &lt;ul class=&quot;fa-ul&quot;&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;a href=&quot;https://www.adamjolicoeur.com/design-tracker-template/&quot; target=&quot;top&quot;&gt;Design tracker&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;a href=&quot;https://www.adamjolicoeur.com/leftnav-prototype/&quot; target=&quot;top&quot;&gt;Leftnav prototype&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;a href=&quot;https://www.adamjolicoeur.com/DashboardPrototype/&quot; target=&quot;top&quot;&gt;Dashboard prototype&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;a href=&quot;https://www.adamjolicoeur.com/testing_environment/index.html&quot; target=&quot;top&quot;&gt;Testing environment&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;mb-2 py-2 px-5 container&quot;&gt;
+  &lt;h2 class=&quot;pb-2 border-bottom&quot;&gt;
+    CodePens
+  &lt;/h2&gt;
+  &lt;div class=&quot;row g-4 py-5 row-cols-1&quot;&gt;
+    &lt;p class=&quot;codepen&quot; data-height=&quot;450&quot; data-theme-id=&quot;38046&quot; data-default-tab=&quot;result&quot; data-user=&quot;mindreeper2420&quot; data-slug-hash=&quot;XWNbJvp&quot; style=&quot;height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-pen-title=&quot;Animated Cards on Glass&quot;&gt;
+      &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/mindreeper2420/pen/XWNbJvp&quot;&gt;
+      Animated Cards on Glass&lt;/a&gt; by Adam Jolicoeur (&lt;a href=&quot;https://codepen.io/mindreeper2420&quot;&gt;@mindreeper2420&lt;/a&gt;)
+      on &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+    &lt;/p&gt;
+    &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row g-4 py-5 row-cols-1&quot;&gt;
+    &lt;p class=&quot;codepen&quot; data-height=&quot;550&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;NWjOzwm&quot; data-user=&quot;mindreeper2420&quot; style=&quot;height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+      &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/mindreeper2420/pen/NWjOzwm&quot;&gt;
+      SwitchTrack - Calendar&lt;/a&gt; by Adam Jolicoeur (&lt;a href=&quot;https://codepen.io/mindreeper2420&quot;&gt;@mindreeper2420&lt;/a&gt;)
+      on &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+    &lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>Alfred Workflows</title>
 		<link href="http://localhost:8080/alfred/workflows/"/>
-		<updated>2023-06-08T12:22:47Z</updated>
+		<updated>2023-07-30T17:28:05Z</updated>
 		<id>http://localhost:8080/alfred/workflows/</id>
 		<content type="html">&lt;h1 id=&quot;alfred-workflows&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;http://localhost:8080/alfred/workflows/#alfred-workflows&quot;&gt;&lt;span&gt;Alfred Workflows&lt;/span&gt;&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;A list of my favorite &lt;a href=&quot;https://www.alfredapp.com/workflows/&quot;&gt;Alfred Workflows&lt;/a&gt;, broken down by those that I have downloaded and those that I have created or modified.&lt;/p&gt;
@@ -268,9 +327,27 @@
 	</entry>
 	
 	<entry>
+		<title>Stream Deck examples</title>
+		<link href="http://localhost:8080/streamdeck/examples/"/>
+		<updated>2023-07-30T17:28:05Z</updated>
+		<id>http://localhost:8080/streamdeck/examples/</id>
+		<content type="html">&lt;div class=&quot;container&quot;&gt;
+&lt;h2 id=&quot;standard-icons&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;http://localhost:8080/streamdeck/examples/#standard-icons&quot;&gt;&lt;span&gt;Standard icons&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:8080/streamdeck/examples/streamdeck-preview.png&quot; alt=&quot;Preview image&quot; title=&quot;Cover image&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;solid-icons&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;http://localhost:8080/streamdeck/examples/#solid-icons&quot;&gt;&lt;span&gt;Solid icons&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;downloads&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;http://localhost:8080/streamdeck/examples/#downloads&quot;&gt;&lt;span&gt;Downloads&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/AdamJ/stream-deck-icon-packs/tree/main/com.elgato.jolicoeur-solid.sdIconPack&quot;&gt;jolicoeur-solid.sdIconPack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/AdamJ/stream-deck-icon-packs/tree/main/com.elgato.jolicoeur.sdIconPack&quot;&gt;jolicoeur.sdIconPack&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>About</title>
 		<link href="http://localhost:8080/about/"/>
-		<updated>2023-06-29T18:18:02Z</updated>
+		<updated>2023-08-10T13:52:35Z</updated>
 		<id>http://localhost:8080/about/</id>
 		<content type="html">&lt;div class=&quot;container pt-3 pb-3&quot;&gt;
   &lt;div class=&quot;row g-5&quot;&gt;
@@ -481,7 +558,7 @@
 	<entry>
 		<title>Code Examples</title>
 		<link href="http://localhost:8080/code/"/>
-		<updated>2023-06-29T18:18:02Z</updated>
+		<updated>2023-08-10T13:52:35Z</updated>
 		<id>http://localhost:8080/code/</id>
 		<content type="html">&lt;div class=&quot;container&quot;&gt;
   &lt;h2 class=&quot;display-6&quot;&gt;Personal projects&lt;/h2&gt;
@@ -643,7 +720,7 @@
 	<entry>
 		<title>Designs</title>
 		<link href="http://localhost:8080/design/"/>
-		<updated>2023-06-29T18:18:02Z</updated>
+		<updated>2023-08-10T13:52:35Z</updated>
 		<id>http://localhost:8080/design/</id>
 		<content type="html">&lt;div class=&quot;container&quot;&gt;
   &lt;p class=&quot;lead text-center&quot;&gt;
@@ -784,87 +861,10 @@
 	</entry>
 	
 	<entry>
-		<title>Prototypes</title>
-		<link href="http://localhost:8080/prototypes/"/>
-		<updated>2023-06-29T18:18:02Z</updated>
-		<id>http://localhost:8080/prototypes/</id>
-		<content type="html">&lt;div class=&quot;mb-2 py-2 px-5 container&quot;&gt;
-  &lt;h2 class=&quot;pb-2 border-bottom&quot;&gt;
-    Sites
-  &lt;/h2&gt;
-  &lt;div class=&quot;row g-4 py-5 row-cols-1 row-cols-lg-2&quot;&gt;
-    &lt;div class=&quot;col d-flex align-items-start&quot;&gt;
-      &lt;div&gt;
-        &lt;h2&gt;PatternFly 4&lt;/h2&gt;
-        &lt;p&gt;In support of the 4th release of PatternFly, I worked with a group of designers to create a modern, responsive take on the PatternFly website. Using a responsive layout with SVGs that move with the page, I create clean aesthetic that would flow through the rest of the site.&lt;/p&gt;
-        &lt;a href=&quot;https://pf4testbench.netlify.app/&quot; class=&quot;btn btn-secondary&quot; alt=&quot;Click to view the PatternFly 4 demo site&quot;&gt;
-          View PatternFly 4 demo
-        &lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col d-flex align-items-start&quot;&gt;
-      &lt;div&gt;
-        &lt;h2&gt;Feature flags&lt;/h2&gt;
-        &lt;p&gt;As part of a usability study, I worked with a UX Researcher to test out different variations of a Feature Flag, or notifier, for aspects and pages of an application that are either in a pre-release state, or have an unreleased element in use.&lt;/p&gt;
-        &lt;a href=&quot;https://www.adamjolicoeur.com/feature-flag-prototype/&quot; class=&quot;btn btn-secondary&quot; alt=&quot;Click to view the Feature Flags demo site&quot;&gt;
-          View Feature Flags demo
-        &lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;row g-4 py-5 row-cols-1 row-cols-lg-2&quot;&gt;
-    &lt;b&gt;Additional examples:&lt;/b&gt;
-    &lt;div class=&quot;col d-flex align-items-start&quot;&gt;
-      &lt;ul class=&quot;fa-ul&quot;&gt;
-        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;a href=&quot;https://www.adamjolicoeur.com/design-tracker-template/&quot; target=&quot;top&quot;&gt;Design tracker&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;a href=&quot;https://www.adamjolicoeur.com/leftnav-prototype/&quot; target=&quot;top&quot;&gt;Leftnav prototype&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;a href=&quot;https://www.adamjolicoeur.com/DashboardPrototype/&quot; target=&quot;top&quot;&gt;Dashboard prototype&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;span class=&quot;fa-li&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;a href=&quot;https://www.adamjolicoeur.com/testing_environment/index.html&quot; target=&quot;top&quot;&gt;Testing environment&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;mb-2 py-2 px-5 container&quot;&gt;
-  &lt;h2 class=&quot;pb-2 border-bottom&quot;&gt;
-    CodePens
-  &lt;/h2&gt;
-  &lt;div class=&quot;row g-4 py-5 row-cols-1&quot;&gt;
-    &lt;p class=&quot;codepen&quot; data-height=&quot;450&quot; data-theme-id=&quot;38046&quot; data-default-tab=&quot;result&quot; data-user=&quot;mindreeper2420&quot; data-slug-hash=&quot;XWNbJvp&quot; style=&quot;height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-pen-title=&quot;Animated Cards on Glass&quot;&gt;
-      &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/mindreeper2420/pen/XWNbJvp&quot;&gt;
-      Animated Cards on Glass&lt;/a&gt; by Adam Jolicoeur (&lt;a href=&quot;https://codepen.io/mindreeper2420&quot;&gt;@mindreeper2420&lt;/a&gt;)
-      on &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
-    &lt;/p&gt;
-    &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;row g-4 py-5 row-cols-1&quot;&gt;
-    &lt;p class=&quot;codepen&quot; data-height=&quot;550&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;NWjOzwm&quot; data-user=&quot;mindreeper2420&quot; style=&quot;height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
-      &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/mindreeper2420/pen/NWjOzwm&quot;&gt;
-      SwitchTrack - Calendar&lt;/a&gt; by Adam Jolicoeur (&lt;a href=&quot;https://codepen.io/mindreeper2420&quot;&gt;@mindreeper2420&lt;/a&gt;)
-      on &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
-    &lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Stream Deck examples</title>
-		<link href="http://localhost:8080/streamdeck/examples/"/>
-		<updated>2023-06-29T18:18:02Z</updated>
-		<id>http://localhost:8080/streamdeck/examples/</id>
-		<content type="html">&lt;div class=&quot;container&quot;&gt;
-&lt;h2 id=&quot;standard-icons&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;http://localhost:8080/streamdeck/examples/#standard-icons&quot;&gt;&lt;span&gt;Standard icons&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;http://localhost:8080/streamdeck/examples/streamdeck-preview.png&quot; alt=&quot;Preview image&quot; title=&quot;Cover image&quot; /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;solid-icons&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;http://localhost:8080/streamdeck/examples/#solid-icons&quot;&gt;&lt;span&gt;Solid icons&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&quot;downloads&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;http://localhost:8080/streamdeck/examples/#downloads&quot;&gt;&lt;span&gt;Downloads&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/AdamJ/stream-deck-icon-packs/tree/main/com.elgato.jolicoeur-solid.sdIconPack&quot;&gt;jolicoeur-solid.sdIconPack&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/AdamJ/stream-deck-icon-packs/tree/main/com.elgato.jolicoeur.sdIconPack&quot;&gt;jolicoeur.sdIconPack&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-</content>
+		<title>TimeTrak by Switchback</title>
+		<link href="http://localhost:8080/designs/timetrak/"/>
+		<updated>2023-08-10T13:52:35Z</updated>
+		<id>http://localhost:8080/designs/timetrak/</id>
+		<content type="html"></content>
 	</entry>
 </feed>

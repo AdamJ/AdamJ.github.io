@@ -4,7 +4,7 @@
   <url>
     <loc>http://localhost:8080/</loc>
 		
-    <lastmod>2023-06-29T18:18:02Z</lastmod>
+    <lastmod>2023-08-10T13:52:35Z</lastmod>
     
   </url>
   
@@ -17,13 +17,6 @@
   
   <url>
     <loc>http://localhost:8080/designs/district25/</loc>
-		
-    <lastmod>2021-07-02T14:45:28Z</lastmod>
-		
-  </url>
-  
-  <url>
-    <loc>http://localhost:8080/designs/timetrak/</loc>
 		
     <lastmod>2021-07-02T14:45:28Z</lastmod>
 		
@@ -44,34 +37,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:8080/alfred/workflows/</loc>
-		
-    <lastmod>2023-06-08T12:22:47Z</lastmod>
-		
-  </url>
-  
-  <url>
-    <loc>http://localhost:8080/about/</loc>
-		
-    <lastmod>2023-06-29T18:18:02Z</lastmod>
-		
-  </url>
-  
-  <url>
-    <loc>http://localhost:8080/code/</loc>
-		
-    <lastmod>2023-06-29T18:18:02Z</lastmod>
-		
-  </url>
-  
-  <url>
-    <loc>http://localhost:8080/design/</loc>
-		
-    <lastmod>2023-06-29T18:18:02Z</lastmod>
-		
-  </url>
-  
-  <url>
     <loc>http://localhost:8080/prototypes/</loc>
 		
     <lastmod>2023-06-29T18:18:02Z</lastmod>
@@ -79,9 +44,44 @@
   </url>
   
   <url>
+    <loc>http://localhost:8080/alfred/workflows/</loc>
+		
+    <lastmod>2023-07-30T17:28:05Z</lastmod>
+		
+  </url>
+  
+  <url>
     <loc>http://localhost:8080/streamdeck/examples/</loc>
 		
-    <lastmod>2023-06-29T18:18:02Z</lastmod>
+    <lastmod>2023-07-30T17:28:05Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/about/</loc>
+		
+    <lastmod>2023-08-10T13:52:35Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/code/</loc>
+		
+    <lastmod>2023-08-10T13:52:35Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/design/</loc>
+		
+    <lastmod>2023-08-10T13:52:35Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/designs/timetrak/</loc>
+		
+    <lastmod>2023-08-10T13:52:35Z</lastmod>
 		
   </url>
 </urlset>
