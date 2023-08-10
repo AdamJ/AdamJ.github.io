@@ -15,11 +15,6 @@
 	},
 
 	{
-   "title":"TimeTrak by Switchback",
-   "imgName":"timetrak-by-switchback"
-	},
-
-	{
    "title":"Application Lifecycle Management",
    "imgName":"application-lifecycle-management"
 	},
@@ -30,8 +25,18 @@
 	},
 
 	{
+   "title":"Prototypes",
+   "imgName":"prototypes"
+	},
+
+	{
    "title":"Alfred Workflows",
    "imgName":"alfred-workflows"
+	},
+
+	{
+   "title":"Stream Deck examples",
+   "imgName":"stream-deck-examples"
 	},
 
 	{
@@ -50,12 +55,7 @@
 	},
 
 	{
-   "title":"Prototypes",
-   "imgName":"prototypes"
-	},
-
-	{
-   "title":"Stream Deck examples",
-   "imgName":"stream-deck-examples"
+   "title":"TimeTrak by Switchback",
+   "imgName":"timetrak-by-switchback"
 	}
 ]
