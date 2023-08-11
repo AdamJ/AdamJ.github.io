@@ -5,7 +5,7 @@
 	
 	<link href="http://localhost:8080/feed/" rel="self"/>
 	<link href="http://localhost:8080"/>
-	<updated>2023-08-10T13:52:35Z</updated>
+	<updated>2023-08-11T13:26:23Z</updated>
 	<id>http://localhost:8080</id>
 	<author>
 		<name>Adam J. Jolicoeur</name>
@@ -347,7 +347,7 @@
 	<entry>
 		<title>About</title>
 		<link href="http://localhost:8080/about/"/>
-		<updated>2023-08-10T13:52:35Z</updated>
+		<updated>2023-08-11T13:26:23Z</updated>
 		<id>http://localhost:8080/about/</id>
 		<content type="html">&lt;div class=&quot;container pt-3 pb-3&quot;&gt;
   &lt;div class=&quot;row g-5&quot;&gt;
@@ -558,7 +558,7 @@
 	<entry>
 		<title>Code Examples</title>
 		<link href="http://localhost:8080/code/"/>
-		<updated>2023-08-10T13:52:35Z</updated>
+		<updated>2023-08-11T13:26:23Z</updated>
 		<id>http://localhost:8080/code/</id>
 		<content type="html">&lt;div class=&quot;container&quot;&gt;
   &lt;h2 class=&quot;display-6&quot;&gt;Personal projects&lt;/h2&gt;
@@ -720,7 +720,7 @@
 	<entry>
 		<title>Designs</title>
 		<link href="http://localhost:8080/design/"/>
-		<updated>2023-08-10T13:52:35Z</updated>
+		<updated>2023-08-11T13:26:23Z</updated>
 		<id>http://localhost:8080/design/</id>
 		<content type="html">&lt;div class=&quot;container&quot;&gt;
   &lt;p class=&quot;lead text-center&quot;&gt;
@@ -863,7 +863,7 @@
 	<entry>
 		<title>TimeTrak by Switchback</title>
 		<link href="http://localhost:8080/designs/timetrak/"/>
-		<updated>2023-08-10T13:52:35Z</updated>
+		<updated>2023-08-11T13:26:23Z</updated>
 		<id>http://localhost:8080/designs/timetrak/</id>
 		<content type="html"></content>
 	</entry>
