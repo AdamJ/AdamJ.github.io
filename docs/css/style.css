@@ -11971,7 +11971,8 @@ a.link-secondary {
 
 button,
 .button,
-a.button {
+a.button,
+a.btn {
   display: flex;
   width: 270px;
   height: 80px;
@@ -11987,12 +11988,6 @@ a.button {
   line-height: normal;
   letter-spacing: 1.6px;
   text-transform: uppercase;
-}
-button-primary,
-.button-primary,
-a.button-primary {
-  background-color: orange;
-  border-color: orange;
 }
 
 .button-secondary {

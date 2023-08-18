@@ -1,6 +1,7 @@
 button,
 .button,
-a.button {
+a.button,
+a.btn {
   display: flex;
   width: 270px;
   height: 80px;
@@ -16,11 +17,6 @@ a.button {
   line-height: normal;
   letter-spacing: 1.6px;
   text-transform: uppercase;
-  &-primary {
-    background-color: orange;
-    border-color: orange;
-
-  }
 }
 .button-secondary {
   border-radius: 4px;
@@ -31,7 +27,4 @@ a.button {
   line-height: normal;
   letter-spacing: 1.6px;
   text-transform: uppercase;
-  // background: #439FFF !important;
-  // border-color: #439FFF !important;
-  // color: #010101 !important;
 }
