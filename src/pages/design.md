@@ -1,6 +1,6 @@
 ---
-title: "Designs"
-abbreviation: "Designs"
+title: "Design"
+abbreviation: "Design"
 description: "A selection of designs covering different projects and products."
 eleventyNavigation:
   key: Design

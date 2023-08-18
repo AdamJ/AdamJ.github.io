@@ -53,5 +53,8 @@
   },
   "browserslist": [
     "last 2 versions"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  }
 }

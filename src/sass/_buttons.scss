@@ -1,0 +1,37 @@
+button,
+.button,
+a.button {
+  display: flex;
+  width: 270px;
+  height: 80px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  font-family: "Work Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  &-primary {
+    background-color: orange;
+    border-color: orange;
+
+  }
+}
+.button-secondary {
+  border-radius: 4px;
+  font-family: "Work Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  // background: #439FFF !important;
+  // border-color: #439FFF !important;
+  // color: #010101 !important;
+}

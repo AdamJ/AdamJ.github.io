@@ -2,67 +2,85 @@
 layout : base.njk
 templateEngineOverride : md, njk
 ---
-<div
-  class="position-relative overflow-hidden text-center bg-light card-cover"
-  style="background-image: url('../img/ajbg_header.svg');">
-  <div class="col-md-5 p-lg-5 mx-auto my-5 text-white">
-    <h1 class="display-4 fw-normal">{{meta.siteName}}</h1>
-    <p class="lead fw-normal">{{meta.siteDescription}}</p>
+
+<div class="container-xxl intro py-3">
+  <h1 class="display-1 jumbo-heading">Adam J. Jolicoeur</h1>
+  <p class="sub-header">
+    I'm a <strong>driven</strong> and <strong>passionate</strong> UX technologist, specializing in data-intensive designs.
+  </p>
+</div>
+<div class="container-xxl imager">
+  <div class="overlay button-overlay">
+    <button type="button" class="btn btn-primary button-secondary">
+      Explore
+    </button>
   </div>
 </div>
-<div class="d-md-flex flex-md-equal align-items-center w-100">
-  <div class="d-md-flex pt-3 px-3 pt-md-5 px-md-5 overflow-hidden">
-    <div class="my-3 py-3">
-      <h2 class="mb-3 fw-bold">I strive to design and create amazing things.</h2>
-      <p class="pl-5">By working with me, teams do not need to move between a designer and developer. With my skillset, I can
-        create the designs needed for a product and then turn around and produce those designs - allowing for a single point of
-        contact throughout the creation process.</p>
+<div class="container-xxl py-3 mt-3 text-bg-light">
+  <div class="row px-3 pb-3">
+    <div class="col-12">
+      <h2>My experience</h2>
+      <p class="paragraph-inset">I strive to design and create amazing things. With my skillset, I can create the designs needed for a product and then turn around and produce those designs - allowing for a single point of contact throughout the creation process.</p>
     </div>
   </div>
-  <div class="pt-3 px-3 pt-md-5 px-md-5 overflow-hidden">
-    <div class="my-3 py-3">
-      <img class="mockup-screenshot" src="img/macbook2.svg" alt="Mockup screenshot of the OpenShift.io interface, inside of a laptop.">
+  <div class="row px-3 align-items-center">
+    <div class="col-md-3">
+      <h3 class="job--company-name">Amazon.com, Inc</h3>
+      <h4 class="job--company-role">Senior UX Designer, ASBX</h4>
+      <p class="job--company-dates">August 2021 - Present</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="job--company-name">Red Hat, Inc</h3>
+      <h4 class="job--company-role">Senior IxD Designer, UXD</h4>
+      <p class="job--company-dates">July 2016 - August 2021</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="job--company-name">Saylent Technologies</h3>
+      <h4 class="job--company-role">UX Designer</h4>
+      <p class="job--company-dates">November 2014 - July 2016</p>
+    </div>
+    <div class="col-md-3">
+      <h3 class="job--company-name">Black Duck Software</h3>
+      <h4 class="job--company-role">UI Developer</h4>
+      <p class="job--company-dates">February 2013 - October 2014</p>
+    </div>
+  </div>
+  <div class="row justify-content-end text-end p-3">
+    <div class="col-2 align-content-end">
+      <a class="link icon-link" href="#">
+        Resume
+      </a>
+      <i class="fa-sharp fa-regular fa-arrow-right"></i>
     </div>
   </div>
 </div>
-<div class="px-4 py-5 my-5 text-center">
-  <i class="d-block mx-auto mb-4 fas fa-broadcast-tower fa-4x"></i>
-  <h3>Stay connected</h3>
-  <div class="col-lg-6 mx-auto">
-    <p class="lead mb-4"><a href="mailto:adam.jolicoeur@gmail.com" alt="Email me at adam.jolicoeur@gmail.com">adam.jolicoeur</a></p>
-    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-      <div class="d-flex flex-column align-items-center">
-        <a href="https://www.linkedin.com/in/ajjolicoeur" target="top" alt="See my profile on LinkedIn.com">
-          <span class="fa-stack fa-2x" style="color: #0a66c2;">
-            <i class="fas fa-circle fa-stack-2x"></i>
-            <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </div>
-      <div class="d-flex flex-column align-items-center">
-        <a href="https://github.com/adamj" target="top" aria-label="View my GitHub profile">
-        <span class="fa-stack fa-2x" style="color: #2d333b;">
-          <i class="fas fa-circle fa-stack-2x"></i>
-          <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-        </span>
-        </a>
-      </div>
-      <div class="d-flex flex-column align-items-center">
-        <a href="https://www.figma.com/@switchback" target="top" aria-label="View my Figma community profile.">
-          <span class="fa-stack fa-2x" style="color: #F24E1E;">
-            <i class="fas fa-circle fa-stack-2x"></i>
-            <i class="fab fa-figma fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </div>
-      <div class="d-flex flex-column align-items-center">
-        <a href="https://dribbble.com/ajolicoeur" target="top" alt="See my profile on Dribbble.com">
-          <span class="fa-stack fa-2x" style="color: #ea4c89;">
-            <i class="fas fa-circle fa-stack-2x"></i>
-            <i class="fab fa-dribbble fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </div>
+<div class="container-xxl pb-3">
+  <div class="row px-3">
+    <div class="col-12">
+      <h2>Prototypes</h2>
+      <p class="paragraph-inset">When I work on a design, I prototype as I go. This allows me to utilize what libraries have available, keeping expectations realistic.</p>
+    </div>
+  </div>
+  <div class="row px-3 justify-content-md-center text-center">
+    <div class="col-md-3">
+      <h3 class="job--company-name">Work planner</h3>
+      <h4 class="job--company-role">Work management</h4>
+      <a class="link icon-link" href="https://www.adamjolicoeur.com/testing_environment/index.html" target="top" alt="External link to the testing environment demo">Demo</a>
+      <i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i>
+    </div>
+    <div class="col-md-3">
+      <h3 class="job--company-name">Red Hat Developer Manual</h3>
+      <h4 class="job--company-role">Component library</h4>
+      <a class="link icon-link" href="https://aj-design-manual.netlify.app" target="top" alt="External link to design manual demo">Demo</a>
+      <i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i>
+    </div>
+  </div>
+  <div class="row justify-content-end text-end p-3">
+    <div class="col-2 align-content-end">
+      <a class="link icon-link" href="/prototypes/prototypes">
+        See them all
+      </a>
+      <i class="fa-sharp fa-regular fa-arrow-right"></i>
     </div>
   </div>
 </div>

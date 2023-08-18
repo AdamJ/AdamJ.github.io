@@ -224,9 +224,9 @@
 	
 	<entry>
 		<title>Prototypes</title>
-		<link href="http://localhost:8080/prototypes/"/>
+		<link href="http://localhost:8080/prototypes/prototypes/"/>
 		<updated>2023-06-29T18:18:02Z</updated>
-		<id>http://localhost:8080/prototypes/</id>
+		<id>http://localhost:8080/prototypes/prototypes/</id>
 		<content type="html">&lt;div class=&quot;mb-2 py-2 px-5 container&quot;&gt;
   &lt;h2 class=&quot;pb-2 border-bottom&quot;&gt;
     Sites
@@ -556,10 +556,10 @@
 	</entry>
 	
 	<entry>
-		<title>Code Examples</title>
-		<link href="http://localhost:8080/code/"/>
+		<title>Development</title>
+		<link href="http://localhost:8080/development/"/>
 		<updated>2023-08-11T13:26:23Z</updated>
-		<id>http://localhost:8080/code/</id>
+		<id>http://localhost:8080/development/</id>
 		<content type="html">&lt;div class=&quot;container&quot;&gt;
   &lt;h2 class=&quot;display-6&quot;&gt;Personal projects&lt;/h2&gt;
   &lt;div class=&quot;row row-cols-1 row-cols-lg-2 align-items-stretch gy-5 pb-5&quot;&gt;
@@ -718,7 +718,7 @@
 	</entry>
 	
 	<entry>
-		<title>Designs</title>
+		<title>Design</title>
 		<link href="http://localhost:8080/design/"/>
 		<updated>2023-08-11T13:26:23Z</updated>
 		<id>http://localhost:8080/design/</id>

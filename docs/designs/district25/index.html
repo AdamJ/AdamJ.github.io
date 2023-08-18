@@ -3,7 +3,7 @@
     <!-- Generated from the 11ty Netlify Jumpstart: https://github.com/5t3ph/11ty-netlify-jumpstart -->
     <!-- Modified for usage/content provided by Adam J. Jolicoeur: https://github.com/AdamJ -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="@Adam, Adam Jolicoeur, Adam J. Jolicoeur, AdamJ, Jolicoeur, adamjolicoeur.com, www.adamjolicoeur.com, mindreeper2420, Portfolio, Design, UXD, UX Designer, UX Developer, UX Engineer, Design Technologist, CSS" />
     <title>District 25 website | Adam Jolicoeur</title>
     <meta
@@ -17,7 +17,9 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#333333">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#333333">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=PT+Sans&family=Work+Sans&display=swap');
+    </style>
     <link href="/css/style.css" rel="stylesheet" />
     <link href="/css/fontawesome.css" rel="stylesheet" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -51,109 +53,74 @@
       title="RSS Feed for Adam Jolicoeur"
       href="/feed/"
     />
+    <script src="https://kit.fontawesome.com/0ea2a7621c.js" crossorigin="anonymous"></script>
   </head>
-  <body>
-    <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <body class="layout">
+      
+<container>
+  <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">
-        Adam Jolicoeur
+        <img src="../img/navbar-logo.png" alt="Avatar" width="32" height="32">
       </a>
-      <button class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarToggler01"
-        aria-controls="navbarToggler01"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarToggler01">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="/about/" >About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/design/" >Design</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/code/" >Code</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/prototypes/" >Prototypes</a>
-            </li>
-          </ul>
+        <div class="navbar-nav">
+          <a class="nav-link" href="/about/" >About</a>
+          <a class="nav-link" href="/design/" >Design</a>
+          <a class="nav-link" href="/development/" >Development</a>
+        </div>
       </div>
     </div>
   </nav>
-</header>
+</container>
 
-    <main>
+    <main class="content">
       
-<header class="px-4 my-5 text-center">
-  <h1 class="display-5 fw-bold">District 25 website</h1>
-  <div class="col-lg-6 mx-auto">
-    <p class="lead">
-      A website revamp for the 25th Masonic District of Masons in Massachusetts.
-    </p>
-  </div>
-</header>
-<main>
-  <article class="mx-auto">
-    
-  </article>
-</main>
+<h1>District 25 website</h1>
+<p>
+  A website revamp for the 25th Masonic District of Masons in Massachusetts.
+</p>
+<content>
+  
+</content>
 
     </main>
-    <div class="divider-large"></div>
-    <footer class="container py-5">
-      <div class="row">
-        <div class="col-12 col-md">
-          Adam J. Jolicoeur
-          <small class="d-block mb-3 text-muted">&copy; 2008 - 2023</small>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Site</h5>
-          
-          <ul class="list-unstyled text-small">
-            <li>
-              <a class="link-secondary" href="/">Home</a>
-            </li>
-            <li>
-              <a class="link-secondary" href="/about/">About</a>
-            </li>
-            <li>
-              <a class="link-secondary" href="/design/">Design</a>
-            </li>
-            <li>
-              <a class="link-secondary" href="/code/">Code</a>
-            </li>
-            <li>
-              <a class="link-secondary" href="/prototypes/">Prototypes</a>
-            </li></ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>External</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="link-secondary" href="https://www.linkedin.com/in/ajjolicoeur/" target="top" alt="View LinkedIn profile">LinkedIn</a></li>
-            <li><a class="link-secondary" href="https://www.github.com/AdamJ" target="top" alt="View GitHub profile">GitHub</a></li>
-            <li><a class="link-secondary" href="https://www.figma.com/@switchback" target="top" alt="View my Figma community profile">Figma</a></li>
-            <li><a class="link-secondary" href="https://www.codepen.io/mindreeper2420" target="top" alt="View CodePen profile">CodePen</a></li>
-            <li><a class="link-secondary" href="https://dribbble.com/ajolicoeur" target="top" alt="View Dribbble profile">Dribbble</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Social</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="link-secondary" href="https://mastodon.world/@adamjol" target="top" alt="Say hello on Mastodon.world">Mastodon</a></li>
-            <li><a class="link-secondary" href="https://www.twitter.com/AdamJJolicoeur" target="top" alt="Say hello on Twitter">Twitter</a></li>
-            <li><a class="link-secondary" href="https://keybase.io/mindreeper2420" target="top" alt="View Keybase.io profile">Keybase.io</a></li>
-          </ul>
-        </div>
+    <footer class="footer">
+      <div class="footer-left">
+        Adam J. Jolicoeur &nbsp;<small>&copy; 2008 - 2023</small>
       </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+      <div class="footer-right">
+        <a class="link icon-link" href="https://www.linkedin.com/in/ajjolicoeur/" target="top" alt="View LinkedIn profile">
+          <span class="fa-stack">
+            <i class="fa-sharp fa-solid fa-circle fa-stack-2x"></i>
+            <i class="fa-brands fa-linkedin fa-stack-1x fa-inverse"></i>
+          </span>LinkedIn
+        </a>
+        <a class="link icon-link" href="https://www.github.com/AdamJ" target="top" alt="View GitHub profile">
+          <span class="fa-stack">
+            <i class="fa-sharp fa-solid fa-circle fa-stack-2x"></i>
+            <i class="fa-brands fa-github fa-stack-1x fa-inverse"></i>
+          </span>GitHub
+        </a>
+        <a class="link icon-link" href="https://www.figma.com/@switchback" target="top" alt="View my Figma community profile">
+          <span class="fa-stack">
+            <i class="fa-sharp fa-solid fa-circle fa-stack-2x"></i>
+            <i class="fa-brands fa-figma fa-stack-1x fa-inverse"></i>
+          </span>Figma
+        </a>
+        <a class="link icon-link" href="https://dribbble.com/ajolicoeur" target="top" alt="View Dribbble profile">
+          <span class="fa-stack">
+            <i class="fa-sharp fa-solid fa-circle fa-stack-2x"></i>
+            <i class="fa-brands fa-dribbble fa-stack-1x fa-inverse"></i>
+          </span>Dribbble
+        </a>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQCZPW3PZN"></script>
       <script>
