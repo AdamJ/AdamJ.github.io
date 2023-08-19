@@ -1,7 +1,4 @@
-button,
-.button,
-a.button,
-a.btn {
+.btn-jumbo {
   display: flex;
   width: 270px;
   height: 80px;
@@ -17,6 +14,13 @@ a.btn {
   line-height: normal;
   letter-spacing: 1.6px;
   text-transform: uppercase;
+  background-color: #02769B;
+  border-color: #02769B;
+  &:hover, &:active {
+    background-color: #004b63;
+    border-color: #009bce;
+    border-width: 2px;
+  }
 }
 .button-secondary {
   border-radius: 4px;

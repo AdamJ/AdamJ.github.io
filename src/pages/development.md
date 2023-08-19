@@ -1,5 +1,6 @@
 ---
 title: "Development"
+collections: primaryPages
 abbreviation: "Development"
 description: "A selection of code examples from various projects that I've worked on."
 eleventyNavigation:

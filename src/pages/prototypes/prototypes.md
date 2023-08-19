@@ -2,6 +2,10 @@
 title: "Prototypes"
 abbreviation: "Prototypes"
 description: "When I work on a design, I prototype as I go. This allows me to see what I'm doing in a working environment, while keeping expectations realistic."
+eleventyNavigation:
+  key: Prototypes
+  parent: Development
+  order: 1
 ---
 
 <div class="mb-2 py-2 px-5 container">

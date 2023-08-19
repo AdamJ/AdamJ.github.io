@@ -1,16 +1,6 @@
-  {# <div class="navbar">
-    <div class="nav-left">
-      <a class="menu-item" href="">Design</a>
-      <a class="menu-item" href="">Development</a>
-    </div>
-    <div class="nav-right">
-      <a class="menu-item" href="">About</a>
-      <a class="menu-item" href="">Contact</a>
-    </div>
-  </div> #}
 <container>
-  <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg justify-content-center bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-md">
       <a class="navbar-brand" href="/">
         <img src="../img/navbar-logo.png" alt="Avatar" width="32" height="32">
       </a>
@@ -21,7 +11,7 @@
         {% set navPages = collections.all | eleventyNavigation %}
         <div class="navbar-nav">
           {%- for entry in navPages %}
-          <a class="nav-link" href="{{ entry.url | url }}" {% if entry.url == page.url %} class="nav-link active" {% endif %}>{{ entry.title }}</a>
+          <a class="nav-link" href="{{ entry.url }}" {% if entry.url == entry.title %} class="nav-link active" {% endif %}>{{ entry.title }}</a>
           {%- endfor %}
         </div>
       </div>
