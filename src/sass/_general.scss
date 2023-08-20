@@ -95,3 +95,28 @@ footer,
     margin-bottom: 0;
   }
 }
+.card {
+  transform: translateZ(0);
+  transition-duration: 0.7s;
+  transition-property: transform;
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+}
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.card-link {
+  color: $white;
+  font-size: 14px;
+  & > i {
+    color: #ffffff !important;
+  }
+  &:hover {
+    color: inherit;
+    text-decoration: underline;
+  }
+}

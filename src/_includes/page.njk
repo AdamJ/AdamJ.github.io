@@ -2,10 +2,16 @@
 layout: base.njk
 ---
 
-<h1>{{ title }}</h1>
-<p>
-  {{ description }}
-</p>
+<div class="container-xxl intro py-3 px-5 text-center">
+  <h1 class="display-1 jumbo-heading">{{ title }}</h1>
+  <p class="sub-header">
+    {{ description }}
+  </p>
+  {% if page.primaryURL === true %}
+  <a class="btn btn-outline-secondary" href="{{ primaryURL }}" type="button">{{ primaryAction }}</a>
+  {% endif %}
+</div>
+
 <content>
   {{ content | safe }}
 </content>

@@ -4,7 +4,7 @@
   <url>
     <loc>http://localhost:8080/</loc>
 		
-    <lastmod>2023-08-11T13:26:23Z</lastmod>
+    <lastmod>2023-08-19T20:34:14Z</lastmod>
     
   </url>
   
@@ -58,14 +58,14 @@
   </url>
   
   <url>
-    <loc>http://localhost:8080/about/</loc>
+    <loc>http://localhost:8080/development/</loc>
 		
     <lastmod>2023-08-11T13:26:23Z</lastmod>
 		
   </url>
   
   <url>
-    <loc>http://localhost:8080/development/</loc>
+    <loc>http://localhost:8080/resume/</loc>
 		
     <lastmod>2023-08-11T13:26:23Z</lastmod>
 		
@@ -82,6 +82,13 @@
     <loc>http://localhost:8080/designs/timetrak/</loc>
 		
     <lastmod>2023-08-11T13:26:23Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/about/</loc>
+		
+    <lastmod>2023-08-19T20:34:14Z</lastmod>
 		
   </url>
 </urlset>

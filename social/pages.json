@@ -40,22 +40,27 @@
 	},
 
 	{
-   "title":"About",
-   "imgName":"about"
-	},
-
-	{
-   "title":"Development",
+   "title":"development",
    "imgName":"development"
 	},
 
 	{
-   "title":"Design",
+   "title":"resume",
+   "imgName":"resume"
+	},
+
+	{
+   "title":"design",
    "imgName":"design"
 	},
 
 	{
    "title":"TimeTrak by Switchback",
    "imgName":"timetrak-by-switchback"
+	},
+
+	{
+   "title":"about",
+   "imgName":"about"
 	}
 ]

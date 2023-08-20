@@ -11860,7 +11860,6 @@ textarea.form-control-lg {
   font-weight: 900;
   font-size: 72px;
   letter-spacing: 0.5px;
-  max-width: 768px;
 }
 
 .sub-header {
@@ -11870,7 +11869,6 @@ textarea.form-control-lg {
   letter-spacing: 1.6px;
   line-height: normal;
   text-transform: uppercase;
-  max-width: 1280px;
 }
 
 [data-bs-theme=dark] h1, [data-bs-theme=dark] .h1, [data-bs-theme=dark] h2, [data-bs-theme=dark] .h2, [data-bs-theme=dark] h3, [data-bs-theme=dark] .h3, [data-bs-theme=dark] h4, [data-bs-theme=dark] .h4, [data-bs-theme=dark] p, [data-bs-theme=dark] small, [data-bs-theme=dark] .small {
@@ -12111,4 +12109,31 @@ footer .footer-right,
 .job--company-dates {
   color: rgba(0, 0, 0, 0.6);
   margin-bottom: 0;
+}
+
+.card {
+  transform: translateZ(0);
+  transition-duration: 0.7s;
+  transition-property: transform;
+}
+.card:hover, .card:focus {
+  transform: scale(1.05);
+}
+
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.card-link {
+  color: #ffffff;
+  font-size: 14px;
+}
+.card-link > i {
+  color: #ffffff !important;
+}
+.card-link:hover {
+  color: inherit;
+  text-decoration: underline;
 }
