@@ -11935,20 +11935,14 @@ code,
   letter-spacing: 0;
 }
 
-.link,
-a,
-a.link {
+.footer-link {
   font-weight: 700;
   letter-spacing: 0.8px;
   color: #02769B;
   text-decoration-line: underline;
   text-underline-offset: 0.25em;
 }
-.link:hover, .link:active,
-a:hover,
-a:active,
-a.link:hover,
-a.link:active {
+.footer-link:hover, .footer-link:active {
   color: #004b63;
   font-weight: 900;
 }
@@ -12078,6 +12072,13 @@ footer .footer-right,
   padding-left: 0;
 }
 
+.portfolio-img-background {
+  background: url(../img/AdamJolicoeur_dot_com-minimal.png);
+  background-size: cover;
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .paragraph-inset {
   padding: 0 16px;
 }
@@ -12111,12 +12112,12 @@ footer .footer-right,
   margin-bottom: 0;
 }
 
-.card {
+.card-transform {
   transform: translateZ(0);
   transition-duration: 0.7s;
   transition-property: transform;
 }
-.card:hover, .card:focus {
+.card-transform:hover, .card-transform:focus {
   transform: scale(1.05);
 }
 

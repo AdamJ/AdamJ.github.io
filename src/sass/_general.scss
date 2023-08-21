@@ -63,7 +63,12 @@ footer,
   padding-right: 0;
   padding-left: 0;
 }
-
+.portfolio-img-background {
+  background: url(../img/AdamJolicoeur_dot_com-minimal.png);
+  background-size: cover;
+  padding-right: 0;
+  padding-left: 0;
+}
 .paragraph-inset {
   padding: 0 16px;
 }
@@ -95,7 +100,7 @@ footer,
     margin-bottom: 0;
   }
 }
-.card {
+.card-transform {
   transform: translateZ(0);
   transition-duration: 0.7s;
   transition-property: transform;
