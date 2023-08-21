@@ -89,8 +89,8 @@ eleventyNavigation:
       Inspired by the PatternFly design system, I created two libraries for use with Atom.io. As atom.io is no longer available, these themes are left to history.</p>
     </div>
   </div>
-  <div class="row align-items-start gx-5">
-    <div class="col-md-3">
+  <div class="row align-items-start">
+    <div class="col-md-6 col-lg-4 px-md-3 my-2 my-md-0">
       <div class="card px-0">
         <img src="{{ "/img/atom-pf-theme.png" | url }}" class="card-img-top" alt="Atom.io PatternFly Theme screenshot" height="200">
         <div class="card-body">
@@ -98,7 +98,7 @@ eleventyNavigation:
         </div>
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-6 col-lg-4 px-md-3 my-2 my-md-0">
       <div class="card px-0">
         <img src="{{ "/img/atom-pf-syntax.png" | url }}" class="card-img-top" alt="Atom.io PatternFly Syntax screenshot" height="200">
         <div class="card-body">
