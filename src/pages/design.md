@@ -45,14 +45,14 @@ eleventyNavigation:
     <div class="card-header">
       Coming soon!
     </div>
-    <img src="{{ "/img/AdamJolicoeur_dot_com-minimal.png" | url }}" class="card-img-top" alt="...">
+    <img src="{{ "/img/AdamJolicoeur_dot_com-minimal.png" | url }}" class="card-img-top" alt="Screenshot of the Figma file for the AdamJolicoeur.com redesign">
     <div class="card-body">
       <h5 class="card-title">AdamJolicoeur.com</h5>
       <p class="card-text">A redesign of my portfolio site with links to Figma designs, GitHub pull requests, and process write-ups (coming soon!).</p>
     </div>
     <div class="card-footer text-body-secondary">
       <div class="d-grid gap-2 d-md-block col-6 mx-auto">
-        <a class="btn btn-secondary" role="button" href="figma.com" target="top" alt="Link to Figma community file">
+        <a class="btn btn-secondary" role="button" href="https://www.figma.com/file/dJmBftN0BgxgbcSyn2rEw5/AdamJolicoeur.com?type=design&node-id=97%3A149&mode=design&t=elaPDwrypUJjC9Eo-1" target="top" alt="Link to the Figma design file">
         <i class="fa-brands fa-figma"></i>
         Figma</a>
         <a class="btn btn-secondary" role="button" href="https://github.com/AdamJ/AdamJ.github.io/pull/234" target="top" alt="Link to GitHub pull request">

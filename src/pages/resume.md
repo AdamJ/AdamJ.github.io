@@ -180,3 +180,74 @@ primaryURL: "https://www.adamjolicoeur.com/downloads/resume.pdf"
     </div>
   </div>
 </div>
+<div class="container-xxl py-3 mt-3 text-bg-light">
+  <div class="row px-3 pb-3">
+    <div class="col-12">
+      <h2>Education</h2>
+      <p class="paragraph-inset">Massachusetts College of Liberal Arts - North Adams, MA</p>
+    </div>
+  </div>
+  <div class="row px-3 align-items-center">
+    <div class="col-md-6">
+      <h3 class="job--company-name">Bachelor of Arts</h3>
+      <h4 class="job--company-role">Fine and Performing Arts, Music</h4>
+      <p class="job--company-dates">2003 - 2008</p>
+    </div>
+    <div class="col-md-6">
+      <h3 class="job--company-name">Bachelor of Arts</h3>
+      <h4 class="job--company-role">Arts, Entertainment, and Media Management</h4>
+      <p class="job--company-dates">2003 - 2008</p>
+    </div>
+  </div>
+  <div class="row px-3 py-3">
+    <p>Alpha Chi - National Scholars Honor Society - Who’s Who in American Colleges and Universities</p>
+  </div>
+</div>
+<div class="container-xxl pb-3">
+  <div class="row px-3">
+    <div class="col-12">
+      <h2>Skills</h2>
+      <p class="paragraph-inset">If a project does not have a component library or design manual, I will often create one to assist in cross-team communications.</p>
+    </div>
+  </div>
+  <div class="row px-3 justify-content-md-center text-center">
+    <div class="col-sm-6 col-md-3">
+      <p class="column-list-item"><strong>UX / UI Design</strong></p>
+      <p class="column-list-item">HTML / CSS</p>
+      <p class="column-list-item"><strong>Iconography</strong></p>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <p class="column-list-item">Prototyping</p>
+      <p class="column-list-item"><strong>Wireframes</strong></p>
+      <p class="column-list-item">User testing</p>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <p class="column-list-item"><strong>Figma / FigJam</strong></p>
+      <p class="column-list-item">Sketch</p>
+      <p class="column-list-item"><strong>Design systems</strong></p>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <p class="column-list-item">Product management</p>
+      <p class="column-list-item"><strong>Roadmapping</strong></p>
+      <p class="column-list-item">Agile methodologies</p>
+    </div>
+  </div>
+</div>
+<div class="container-xxl py-3 my-3 text-bg-light">
+  <div class="row px-3 pb-3">
+    <div class="col-12">
+      <h2>Organizations</h2>
+      <p class="paragraph-inset">Various organizations that I have belonged to, past and present.</p>
+    </div>
+  </div>
+  <div class="row px-3 align-items-center">
+    <div class="col-md-6">
+      <h3 class="job--company-name">UXPA Boston</h3>
+      <p class="job--company-dates">2017 - Present</p>
+    </div>
+    <div class="col-md-6">
+      <h3 class="job--company-name">W3C CSS Working Group</h3>
+      <p class="job--company-dates">April 2020 - August 2021</p>
+    </div>
+  </div>
+</div>

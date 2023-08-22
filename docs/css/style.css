@@ -12112,6 +12112,14 @@ footer .footer-right,
   margin-bottom: 0;
 }
 
+.column-list-item {
+  align-self: stretch;
+  font-family: PT Sans;
+  font-weight: 400;
+  word-wrap: break-word;
+  margin-bottom: 0;
+}
+
 .card-transform {
   transform: translateZ(0);
   transition-duration: 0.7s;
