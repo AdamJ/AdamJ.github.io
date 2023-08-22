@@ -36,7 +36,7 @@ description: "make first contact"
     </div>
   </div>
 </div>
-<div class="container-xxl pt-3 pb-3">
+<!-- <div class="container-xxl pt-3 pb-3">
   <div class="row px-3 pb-3 justify-content-center">
     <div class="col-12 col-md-8 col-lg-6">
       <div class="card">
@@ -56,4 +56,4 @@ description: "make first contact"
       </div>
     </div>
   </div>
-</div>
+</div> -->
