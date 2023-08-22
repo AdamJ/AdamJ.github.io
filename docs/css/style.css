@@ -12016,6 +12016,9 @@ a.link-secondary {
   background-color: #010101;
   color: #ffffff;
 }
+.navbar .nav-link {
+  color: #ffffff;
+}
 
 footer,
 .footer {

@@ -10,8 +10,8 @@ eleventyNavigation:
 <div class="container-xxl pt-3 pb-3">
   <div class="row px-3 pb-3">
     <div class="col text-center">
-      <a class="btn btn-secondary rounded-pill" role="button" href="{{ "/resume" | url }}">
-        Resume
+      <a class="btn btn-info btn-lg rounded-pill" role="button" href="{{ "/resume" | url }}">
+        resume
       </a>
     </div>
   </div>

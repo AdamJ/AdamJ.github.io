@@ -62,5 +62,10 @@
 	{
    "title":"about",
    "imgName":"about"
+	},
+
+	{
+   "title":"contact",
+   "imgName":"contact"
 	}
 ]

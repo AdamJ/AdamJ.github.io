@@ -1,18 +1,21 @@
 <container>
-  <nav class="navbar navbar-expand-lg justify-content-center bg-dark border-bottom border-body" data-bs-theme="dark">
-    <div class="container-md">
-      <a class="navbar-brand" href="/">
-        <img src="{{ "/img/navbar-logo.png" | url }}" alt="Avatar" width="32" height="32">
-      </a>
+  <nav class="navbar navbar-expand-md bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="collapse navbar-collapse d-md-flex" id="navbarNavAltMarkup">
         {% set navPages = collections.all | eleventyNavigation %}
-        <div class="navbar-nav">
+        <div class="navbar-nav col-md-6 justify-content-md-center">
+          <a class="navbar-brand col-md-1 me-0 text-center" href="/">
+            <img src="{{ "/img/navbar-logo.png" | url }}" alt="Avatar" width="32" height="32">
+          </a>
           {%- for entry in navPages %}
-          <a class="nav-link" href="{{ entry.url }}" {% if entry.url == entry.title %} class="nav-link active" {% endif %}>{{ entry.title }}</a>
+          <a class="nav-link" href="{{ entry.url }}" alt="{{entry.description}}">{{ entry.title }}</a>
           {%- endfor %}
+        </div>
+        <div class="d-md-flex col-md-3 justify-content-md-end">
+          <a class="nav-link" href="{{ "/contact" | url }}" alt="Contact me">Contact</a>
         </div>
       </div>
     </div>

@@ -57,20 +57,23 @@
   </head>
     <body class="layout">
     <container>
-  <nav class="navbar navbar-expand-lg justify-content-center bg-dark border-bottom border-body" data-bs-theme="dark">
-    <div class="container-md">
-      <a class="navbar-brand" href="/">
-        <img src="/img/navbar-logo.png" alt="Avatar" width="32" height="32">
-      </a>
+  <nav class="navbar navbar-expand-md bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="collapse navbar-collapse d-md-flex" id="navbarNavAltMarkup">
         
-        <div class="navbar-nav">
-          <a class="nav-link" href="/about/" >About</a>
-          <a class="nav-link" href="/design/" >Designs</a>
-          <a class="nav-link" href="/development/" >Development</a>
+        <div class="navbar-nav col-md-6 justify-content-md-center">
+          <a class="navbar-brand col-md-1 me-0 text-center" href="/">
+            <img src="/img/navbar-logo.png" alt="Avatar" width="32" height="32">
+          </a>
+          <a class="nav-link" href="/about/" alt="">About</a>
+          <a class="nav-link" href="/design/" alt="">Designs</a>
+          <a class="nav-link" href="/development/" alt="">Development</a>
+        </div>
+        <div class="d-md-flex col-md-3 justify-content-md-end">
+          <a class="nav-link" href="/contact" alt="Contact me">Contact</a>
         </div>
       </div>
     </div>
@@ -79,7 +82,7 @@
 
     <main class="content">
       
-<div class="container-xxl intro py-3 px-5 text-center">
+<div class="container-xxl intro py-3 px-0 px-md-5 text-center">
   <h1 class="display-1 jumbo-heading">prototypes</h1>
   <p class="sub-header">
     When I work on a design, I prototype as I go. This allows me to see what I&#39;m doing in a working environment, while keeping expectations realistic.
