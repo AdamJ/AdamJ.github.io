@@ -6,7 +6,7 @@ primaryAction: "Download"
 primaryURL: "https://www.adamjolicoeur.com/downloads/resume.pdf"
 ---
 
-<div class="container-xxl pt-3 pb-3">
+<div class="container-xxl mb-2 py-2 px-md-5">
   <div class="row px-3 pb-3">
     <div class="col-md-6">
       <h2 class="mt-0">Senior UX Designer</h2>
@@ -32,7 +32,7 @@ primaryURL: "https://www.adamjolicoeur.com/downloads/resume.pdf"
     </div>
   </div>
 </div>
-<div class="container-xxl pt-3 pb-3">
+<div class="container-xxl mb-2 py-2 px-md-5">
   <div class="row px-3 pb-3">
     <div class="col-md-6">
       <h2 class="mt-0">Senior Software Engineer, UXD</h2>
@@ -65,7 +65,7 @@ primaryURL: "https://www.adamjolicoeur.com/downloads/resume.pdf"
     </div>
   </div>
 </div>
-<div class="container-xxl pt-3 pb-3">
+<div class="container-xxl mb-2 py-2 px-md-5">
   <div class="row px-3 pb-3">
     <div class="col-md-6">
       <h2 class="mt-0">User Experience Designer</h2>
@@ -91,7 +91,7 @@ primaryURL: "https://www.adamjolicoeur.com/downloads/resume.pdf"
     </div>
   </div>
 </div>
-<div class="container-xxl pt-3 pb-3">
+<div class="container-xxl mb-2 py-2 px-md-5">
   <div class="row px-3 pb-3">
     <div class="col-md-6">
       <h2 class="mt-0">Vice President, Design</h2>
@@ -126,7 +126,7 @@ primaryURL: "https://www.adamjolicoeur.com/downloads/resume.pdf"
     </div>
   </div>
 </div>
-<div class="container-xxl pt-3 pb-3">
+<div class="container-xxl mb-2 py-2 px-md-5">
   <div class="row px-3 pb-3">
     <div class="col-md-6">
       <h2 class="mt-0">UI Software Engineer</h2>
@@ -151,7 +151,7 @@ primaryURL: "https://www.adamjolicoeur.com/downloads/resume.pdf"
     </div>
   </div>
 </div>
-<div class="container-xxl pt-3 pb-3">
+<div class="container-xxl mb-2 py-2 px-md-5">
   <div class="row px-3 pb-3">
     <div class="col-md-6">
       <h2 class="mt-0">Help Desk Analyst</h2>

@@ -8,7 +8,7 @@ eleventyNavigation:
   order: 1
 ---
 
-<div class="container-xxl mb-2 py-2 px-5">
+<div class="container-xxl mb-2 py-2 px-md-5">
   <div class="row px-3">
     <div class="col-12">
       <h2>
@@ -33,7 +33,7 @@ eleventyNavigation:
     </div>
   </div>
 </div>
-<div class="container-xxl mb-2 py-2 px-5">
+<div class="container-xxl mb-2 py-2 px-md-5">
   <div class="row px-3">
     <div class="col-12">
       <h2>Additional examples:</h2>

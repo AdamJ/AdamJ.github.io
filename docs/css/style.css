@@ -11855,17 +11855,10 @@ textarea.form-control-lg {
   --bs-font-sans-serif: "PT Sans", "Open Sans", "Work Sans";
 }
 
-.jumbo-heading {
-  font-family: "Open Sans";
-  font-weight: 900;
-  font-size: 72px;
-  letter-spacing: 0.5px;
-}
-
 .sub-header {
   font-family: "Work Sans";
   font-weight: 400;
-  font-size: 32px;
+  font-size: 24px;
   letter-spacing: 1.6px;
   line-height: normal;
   text-transform: uppercase;
@@ -11961,40 +11954,11 @@ a.link-secondary {
   text-align: center;
 }
 
-.btn-jumbo {
-  display: flex;
-  width: 270px;
-  height: 80px;
-  padding: 8px 16px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  border-radius: 4px;
-  font-family: "Work Sans";
-  font-size: 32px;
-  font-style: normal;
+.bd-btn-lg {
+  border-radius: 0.75rem;
+  padding: 1rem 2rem;
   font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.6px;
-  text-transform: uppercase;
-  background-color: #02769B;
-  border-color: #02769B;
-}
-.btn-jumbo:hover, .btn-jumbo:active {
-  background-color: #004b63;
-  border-color: #009bce;
-  border-width: 2px;
-}
-
-.button-secondary {
-  border-radius: 4px;
-  font-family: "Work Sans";
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.6px;
-  text-transform: uppercase;
+  font-size: 1.5rem;
 }
 
 .content {
@@ -12014,10 +11978,6 @@ a.link-secondary {
 
 .navbar {
   background-color: #010101;
-  color: #ffffff;
-}
-.navbar .nav-link {
-  color: #ffffff;
 }
 
 footer,
@@ -12045,10 +12005,6 @@ footer .footer-right,
   align-items: center;
   gap: 24px;
   flex: 1 0 0;
-}
-
-.intro {
-  min-height: 230px;
 }
 
 .button-overlay {

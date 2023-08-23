@@ -3,13 +3,13 @@ layout: base.njk
 ---
 
 <div class="container-xxl intro py-3 px-0 px-md-5 text-center">
-  <h1 class="display-1 jumbo-heading">{{ title }}</h1>
-  <p class="sub-header">
+  <h1 class="display-1 fw-bold text-break">{{ title }}</h1>
+  <p class="sub-header text-break px-2 px-md-0">
     {{ description }}
   </p>
-  {% if page.primaryURL === true %}
-  <a class="btn btn-outline-secondary" href="{{ primaryURL }}" type="button">{{ primaryAction }}</a>
-  {% endif %}
+  {%- if (headerButton) -%}
+  <a class="btn btn-outline-secondary btn-lg" href="{{ primaryURL}}" | url }}" type="button">{{ primaryAction }}</a>
+  {%- else -%}{%- endif -%}
 </div>
 
 <content>

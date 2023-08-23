@@ -5,7 +5,7 @@
 	
 	<link href="http://localhost:8080/feed/" rel="self"/>
 	<link href="http://localhost:8080"/>
-	<updated>2023-08-11T13:26:23Z</updated>
+	<updated>2023-08-23T01:46:45Z</updated>
 	<id>http://localhost:8080</id>
 	<author>
 		<name>Adam J. Jolicoeur</name>
@@ -227,7 +227,7 @@
 		<link href="http://localhost:8080/prototypes/prototypes/"/>
 		<updated>2023-06-29T18:18:02Z</updated>
 		<id>http://localhost:8080/prototypes/prototypes/</id>
-		<content type="html">&lt;div class=&quot;container-xxl mb-2 py-2 px-5&quot;&gt;
+		<content type="html">&lt;div class=&quot;container-xxl mb-2 py-2 px-md-5&quot;&gt;
   &lt;div class=&quot;row px-3&quot;&gt;
     &lt;div class=&quot;col-12&quot;&gt;
       &lt;h2&gt;
@@ -252,7 +252,7 @@
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;container-xxl mb-2 py-2 px-5&quot;&gt;
+&lt;div class=&quot;container-xxl mb-2 py-2 px-md-5&quot;&gt;
   &lt;div class=&quot;row px-3&quot;&gt;
     &lt;div class=&quot;col-12&quot;&gt;
       &lt;h2&gt;Additional examples:&lt;/h2&gt;
@@ -355,5 +355,23 @@
 		<updated>2023-08-11T13:26:23Z</updated>
 		<id>http://localhost:8080/designs/timetrak/</id>
 		<content type="html"></content>
+	</entry>
+	
+	<entry>
+		<title>redesign</title>
+		<link href="http://localhost:8080/code/redesign/"/>
+		<updated>2023-08-23T01:46:45Z</updated>
+		<id>http://localhost:8080/code/redesign/</id>
+		<content type="html">&lt;div class=&quot;container-xxl mb-2 py-2 px-md-5&quot;&gt;
+  &lt;div class=&quot;row px-3 pb-3&quot;&gt;
+    &lt;div class=&quot;col-12&quot;&gt;
+      &lt;h2 class=&quot;mt-0&quot;&gt;What I used&lt;/h2&gt;
+      &lt;p class=&quot;fs-5 my-0&quot;&gt;
+        Bootstrap, VSCode, GitHub, Netlify, Figma, iOS Simulator
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
 	</entry>
 </feed>

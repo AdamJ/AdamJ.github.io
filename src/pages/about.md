@@ -2,12 +2,15 @@
 title: "about"
 abbreviation: "About"
 description: "Driven and passionate senior user experience designer with a background in software development."
+primaryURL: /resume
+primaryAction: resume
+headerButton: true
 eleventyNavigation:
   key: About
   order: 1
 ---
 
-<div class="container-xxl pt-3 pb-3">
+<!-- <div class="container-xxl mb-2 py-2 px-md-5">
   <div class="row px-3 pb-3">
     <div class="col text-center">
       <a class="btn btn-info btn-lg rounded-pill" role="button" href="{{ "/resume" | url }}">
@@ -15,8 +18,8 @@ eleventyNavigation:
       </a>
     </div>
   </div>
-</div>
-<div class="container-xxl pt-3 pb-3">
+</div> -->
+<div class="container-xxl mb-2 py-2 px-md-5">
   <div class="row px-3 pb-3">
     <div class="col-md-6">
       <h2 class="mt-0">Hello! I’m Adam Jolicoeur</h2>

@@ -1,13 +1,7 @@
-.jumbo-heading {
-  font-family: "Open Sans";
-  font-weight: 900;
-  font-size: 72px;
-  letter-spacing: .5px;
-}
 .sub-header {
   font-family: "Work Sans";
   font-weight: 400;
-  font-size: 32px;
+  font-size: 24px;
   letter-spacing: 1.6px;
   line-height: normal;
   text-transform: uppercase;
@@ -15,7 +9,7 @@
 
 @include color-mode(dark) {
   h1, h2, h3, h4, p, small {
-    color: #ffffff;
+    color: $white;
   }
   h4 {
     color: #adadad;

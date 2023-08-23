@@ -4,7 +4,7 @@ abbreviation: "contact"
 description: "make first contact"
 ---
 
-<div class="container-xxl pt-3 pb-3">
+<div class="container-xxl mb-2 py-2 px-md-5">
   <div class="row px-3 pb-3 justify-content-between gap-2">
     <div class="col-12 col-md card mb-3"">
       <div class="row g-0">
@@ -15,7 +15,7 @@ description: "make first contact"
           <div class="card-body">
             <h5 class="card-title">LinkedIn</h5>
             <p class="card-text">Connect with me to see who we have in common.</p>
-            <a class="btn btn-info" href="https://www.linkedin.com/in/ajjolicoeur" target="top" alt="Link to my LinkedIn profile">Connect on LinkedIn</a>
+            <a class="btn btn-dark" href="https://www.linkedin.com/in/ajjolicoeur" target="top" alt="Link to my LinkedIn profile">Connect on LinkedIn</a>
           </div>
         </div>
       </div>
@@ -29,14 +29,14 @@ description: "make first contact"
           <div class="card-body">
             <h5 class="card-title">GitHub</h5>
             <p class="card-text">Follow my work and contributions to the open source community.</p>
-            <a class="btn btn-info" href="https://github.com/AdamJ" target="top" alt="Link to my GitHub profile">Connect on GitHub</a>
+            <a class="btn btn-dark" href="https://github.com/AdamJ" target="top" alt="Link to my GitHub profile">Connect on GitHub</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<!-- <div class="container-xxl pt-3 pb-3">
+<!-- <div class="container-xxl mb-2 py-2 px-md-5">
   <div class="row px-3 pb-3 justify-content-center">
     <div class="col-12 col-md-8 col-lg-6">
       <div class="card">

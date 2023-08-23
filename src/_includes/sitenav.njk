@@ -11,10 +11,11 @@
             <img src="{{ "/img/navbar-logo.png" | url }}" alt="Avatar" width="32" height="32">
           </a>
           {%- for entry in navPages %}
-          <a class="nav-link" href="{{ entry.url }}" alt="{{entry.description}}">{{ entry.title }}</a>
+          {# <a class="nav-link" href="{{ entry.url }}" alt="{{entry.description}}">{{ entry.title }}</a> #}
+          <a class="nav-link {{ 'active' if 'entry.title' in entry.url }}" href="{{ entry.url }}" alt="{{ entry.abbreviation }}">{{ entry.title }}</a>
           {%- endfor %}
         </div>
-        <div class="d-md-flex col-md-3 justify-content-md-end">
+        <div class="navbar-nav d-md-flex col-md-3 justify-content-md-end">
           <a class="nav-link" href="{{ "/contact" | url }}" alt="Contact me">Contact</a>
         </div>
       </div>
