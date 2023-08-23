@@ -1,29 +1,24 @@
-<header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<container>
+  <nav class="navbar navbar-expand-md bg-dark border-bottom border-body" data-bs-theme="dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">
-        {{ meta.siteName }}
-      </a>
-      <button class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarToggler01"
-        aria-controls="navbarToggler01"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarToggler01">
+      <div class="collapse navbar-collapse d-md-flex" id="navbarNavAltMarkup">
         {% set navPages = collections.all | eleventyNavigation %}
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="navbar-nav col-md-6 justify-content-md-center">
+          <a class="navbar-brand col-md-1 me-0 text-center" href="/">
+            <img src="{{ "/img/navbar-logo.png" | url }}" alt="Avatar" width="32" height="32">
+          </a>
           {%- for entry in navPages %}
-            <li class="nav-item">
-              <a class="nav-link" href="{{ entry.url | url }}" {% if entry.url == page.url %} class="nav-link active" {% endif %}>{{ entry.title }}</a>
-            </li>
+          {# <a class="nav-link" href="{{ entry.url }}" alt="{{entry.description}}">{{ entry.title }}</a> #}
+          <a class="nav-link {{ 'active' if 'entry.title' in entry.url }}" href="{{ entry.url }}" alt="{{ entry.abbreviation }}">{{ entry.title }}</a>
           {%- endfor %}
-          </ul>
+        </div>
+        <div class="navbar-nav d-md-flex col-md-3 justify-content-md-end">
+          <a class="nav-link" href="{{ "/contact" | url }}" alt="Contact me">Contact</a>
+        </div>
       </div>
     </div>
   </nav>
-</header>
+</container>

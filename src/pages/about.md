@@ -1,212 +1,107 @@
 ---
-title: "About"
+title: "about"
 abbreviation: "About"
-description: "Driven and passionate user experience designer, with a background in software development, creating interfaces that allows users to perform their work seamlessly."
+description: "Driven and passionate senior user experience designer with a background in software development."
+primaryURL: /resume
+primaryAction: resume
+headerButton: true
 eleventyNavigation:
   key: About
   order: 1
 ---
 
-<div class="container pt-3 pb-3">
-  <div class="row g-5">
-    <div class="col-md-6">
-      <h2 id="redhat">Amazon Web Services</h2>
-      <p class="mb-0">
-        Senior User Experience Designer, Amazon Software Builder Experience
-      </p>
-      <p>
-        <span class="badge rounded-pill bg-dark">Figma</span>
-        <span class="badge rounded-pill bg-dark">FigJam</span>
-        <span class="badge rounded-pill bg-dark">UserTesting</span>
-        <span class="badge rounded-pill bg-dark">Design Systems</span>
-        <span class="badge rounded-pill bg-dark">Cloudscape</span>
-        <span class="badge rounded-pill bg-dark">React</span>
-      </p>
-      <ul class="icon-list">
-        <li>Senior User Experience Designer
-          <ul><li>August 2021 - Present</li></ul>
-        </li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <p>As a Senior User Experience Designer on the Amazon Software Builder Experience team, I am responsible for the task management solutions for Amazon Issue Management. As part of this responsibility, I oversee the design, implementation, and feedback of Amazon's next-generation task management solution. As the lead designer, it is my responsibility to provide a cohesive experience for all Amazon employees, regardless of role, in order for them to perform their duties with minimal churn and friction.</p>
-      <ul class="icon-list">
-        <li>Lead Designer, Task Management</li>
-        <li>Contributor, Amazon Software Builder Experience - User Experience Design</li>
-        <li>Performed user testing tests using UserTesting.com</li>
-        <li>Created prototypes for internal testing and validation using <a href="https://cloudscape.design" target="top" alt="Link to Cloudscape design system website">Cloudscape Design System</a>.
-          <ul>
-            <li>Coded testing solution using React and Cloudscape component examples</li>
-            <li>Custom CSS</li>
-            <li>Custom data entries using JSON files, read by React components</li>
-          </ul>
-        </li>
-      </ul>
+<!-- <div class="container-xxl mb-2 py-2 px-md-5">
+  <div class="row px-3 pb-3">
+    <div class="col text-center">
+      <a class="btn btn-info btn-lg rounded-pill" role="button" href="{{ "/resume" | url }}">
+        resume
+      </a>
     </div>
   </div>
-  <hr class="col-3 col-md-2 mb-5">
-  <div class="row g-5">
+</div> -->
+<div class="container-xxl mb-2 py-2 px-md-5">
+  <div class="row px-3 pb-3">
     <div class="col-md-6">
-      <h2 id="redhat">Red Hat, Inc.</h2>
-      <p class="mb-0">
-        Senior Software Engineer, UXD
+      <h2 class="mt-0">Hello! I’m Adam Jolicoeur</h2>
+      <p class="fs-5 my-0">
+        I am a user experience designer and developer, based out of Massachusetts. I enjoy building user-centered, data-intensive designs to make user’s lives easier.
       </p>
-      <p>
-        <span class="badge rounded-pill bg-dark">Sketch</span>
-        <span class="badge rounded-pill bg-dark">Adobe XD</span>
-        <span class="badge rounded-pill bg-dark">HTML</span>
-        <span class="badge rounded-pill bg-dark">SCSS</span>
-        <span class="badge rounded-pill bg-dark">Git</span>
-        <span class="badge rounded-pill bg-dark">OSS</span>
-      </p>
-      <ul class="icon-list">
-        <li>Senior Software Engineer
-          <ul><li>December 2018 - Present</li></ul>
-        </li>
-        <li class="text-muted">
-          Interaction Designer
-          <ul><li>July 2016 - December 2018</li></ul>
-        </li>
-      </ul>
     </div>
-    <div class="col-md-6">
-      <p>As a Senior Software Engineer on the User Experience Design team, my responsibilities included creating user flows, wireframes, mockups, and proof-of-concepts for products and websites across the Red Hat. As part of my role, I became a core contributor to the PatternFly design system, as well as lead the design of the Red Hat Developer Design Manual.</p>
-      <ul class="icon-list">
-        <li>UX Designer, OpenShift</li>
-        <li>designer/developer, developers.redhat.com</li>
-        <li>designer/developer, Red Hat Developer Design Manual</li>
-        <li>interaction designer, Red Hat Managed Integration
-        <li>Core Contributor to <a href="https://www.patternfly.org" target="top" alt="PatternFly website">PatternFly</a></li>
-        <li>designer/developer, kubevirt.io</li>
-      </ul>
+    <div class="col-md-6 d-none d-md-block">
+      <img src="{{ "/img/ajolicoeur_wordcloud_writing.png" | url }}" class="card-img-top" alt="Wordcloud">
     </div>
   </div>
-<hr class="col-3 col-md-2 mb-5">
-  <div class="row g-5">
-    <div class="col-md-6">
-      <h2>Saylent Technologies</h2>
-      <p class="mb-0">
-        User Experience Designer
-      </p>
-      <p>
-        <span class="badge rounded-pill bg-dark">Photoshop</span>
-        <span class="badge rounded-pill bg-dark">Visual studio</span>
-        <span class="badge rounded-pill bg-dark">HTML</span>
-        <span class="badge rounded-pill bg-dark">CSS</span>
-        <span class="badge rounded-pill bg-dark">Agile</span>
-      </p>
-      <ul class="icon-list">
-        <li>November 2014 - July 2016</li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <p>Led the design and user research for the Account360 and Card360 platforms, working with a team of developers to improve product usability. Focused primarily on easy to use and manageable interfaces for the financial industry, utilizing standards from across the industry.</p>
-      <ul class="icon-list">
-        <li>Lead designer, Account360 and Card360 platforms</li>
-        <li>Lead designer, product refreshes/corporate presentations and sales demonstrations</li>
-        <li>Created system for ux prototyping and usability testing</li>
-        <li>Developer, HTML/CSS for use in ASP.net applications</li>
-        <li>Created style guide/css framework for corporate products</li>
-      </ul>
+  <div class="row justify-content-end text-end px-3">
+    <div class="col-12 align-content-end">
+      <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="{{ "/resume" | url }}">
+        Resume
+      </a>
+      <i class="fa-sharp fa-regular fa-arrow-right"></i>
     </div>
   </div>
-  <hr class="col-3 col-md-2 mb-5">
-  <div class="row g-5">
+  <hr class="col col-md-6 mb-5">
+  <div class="row px-3 pb-3">
     <div class="col-md-6">
-      <h2>Switchback, Inc.</h2>
-      <p class="mb-0">
-        Vice President, Design
-      </p>
-      <p>
-        <span class="badge rounded-pill bg-dark">Sketch</span>
-        <span class="badge rounded-pill bg-dark">Adobe XD</span>
-        <span class="badge rounded-pill bg-dark">HTML</span>
-        <span class="badge rounded-pill bg-dark">SCSS</span>
-        <span class="badge rounded-pill bg-dark">Wireframes</span>
-      </p>
-      <ul class="icon-list">
-        <li>Vice President
-          <ul><li>November 2010 - Present</li></ul>
-        </li>
-        <li class="text-muted">
-          Visual Designer &amp; Developer
-          <ul><li>November 2010 - December 2013</li></ul>
-        </li>
-        <li class="text-muted">
-          Web Designer
-          <ul><li>January 2003 - June 2008</li></ul>
-        </li>
-      </ul>
+      <h2 class="mt-0">What I’ve done</h2>
     </div>
     <div class="col-md-6">
-      <p>Designed and implemented a redesign of an internal financial accounting product, interfacing directly with construction software and daily database updates.</p>
-      <ul class="icon-list">
-        <li>Worked on mobile-first web applications and data input tools for personal inventory systems and portfolios.</li>
-        <li>Part of design team from initial conception to finished product – creation of wireframes, Photoshop designs, test sites and integration of data</li>
-        <li>PHP Development on Desktop and Mobile Browsers</li>
-        <li>Built, managed and maintained an internal IIS 7.0 environment</li>
-        <li>DMS maintenance and creation – Joomla and Drupal</li>
-      </ul>
+      <div class="row">
+        <div class="col-6">
+          <p class="fs-4">UX Design</p>
+          <p class="fs-4">Wireframing</p>
+          <p class="fs-4">Development</p>
+          <p class="fs-4">Branding</p>
+          <p class="fs-4">Agile methodologies</p>
+        </div>
+        <div class="col-6">
+          <p class="fs-4">Prototyping</p>
+          <p class="fs-4">Email design</p>
+          <p class="fs-4">Iconography</p>
+          <p class="fs-4">User testing</p>
+          <p class="fs-4">Design systems</p>
+        </div>
+      </div>
     </div>
   </div>
-  <hr class="col-3 col-md-2 mb-5">
-  <div class="row g-5">
-    <div class="col-md-6">
-      <h2>Black Duck Software</h2>
-      <p class="mb-0">
-        UI Software Engineer
-      </p>
-      <p>
-        <span class="badge rounded-pill bg-dark">HTML</span>
-        <span class="badge rounded-pill bg-dark">CSS/LESS</span>
-        <span class="badge rounded-pill bg-dark">Bootstrap</span>
-        <span class="badge rounded-pill bg-dark">Agile</span>
-        <span class="badge rounded-pill bg-dark">Git</span>
-      </p>
-      <ul class="icon-list">
-        <li>February 2013 - October 2014</li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <p>As a UI Software Engineer, I worked with the development and design teams to turn the visual designs into working applications.</p>
-      <ul class="icon-list">
-        <li>Developer, software inventory and management system</li>
-        <li>Created and developed wireframes/templates/mockups with UX Designer and UI Architect</li>
-        <li>Developed/tested initial phases of mobile/tablet design framework</li>
-        <li>Daily Agile Scrum development practices</li>
-      </ul>
+  <div class="row justify-content-end text-end px-3">
+    <div class="col-12 align-content-end">
+      <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="{{ "/resume" | url }}">
+        Resume
+      </a>
+      <i class="fa-sharp fa-regular fa-arrow-right"></i>
     </div>
   </div>
-  <hr class="col-3 col-md-2 mb-5">
-  <div class="row g-5">
+  <hr class="col col-md-6 mb-5">
+  <div class="row px-3 pb-3">
     <div class="col-md-6">
-      <h2>Conservation Services Group</h2>
-      <p class="mb-0">
-        Help Desk Analyst
-      </p>
-      <p>
-        <span class="badge rounded-pill bg-dark">JIRA</span>
-        <span class="badge rounded-pill bg-dark">DevOps</span>
-        <span class="badge rounded-pill bg-dark">Ubuntu</span>
-        <span class="badge rounded-pill bg-dark">RHEL</span>
-        <span class="badge rounded-pill bg-dark">VMs</span>
-      </p>
-      <ul class="icon-list">
-        <li>June 2008 - November 2010</li>
-      </ul>
+      <h2 class="mt-0 mb-5">Where I've been</h2>
+      <p class="fs-4 mb-1">Amazon.com, Inc (ASBX) <span class="fs-6">2021 - Present</span></p>
+      <p>Senior User Experience Designer</p>
+      <p class="fs-4 mb-1">Red Hat, Inc <span class="fs-6">(July 2016 - August 2021)</span></p>
+      <p>Senior Software Engineer, UXD</p>
+      <p class="fs-4 mb-1">Saylent Technologies <span class="fs-6">(November 2014 - July 2016)</span></p>
+      <p>User Experience Designer</p>
+      <p class="fs-4 mb-1">Switchback, Inc <span class="fs-6">(November 2010 - November 2014)</span></p>
+      <p>Designer</p>
+      <p class="fs-4 mb-1">Black Duck Software <span class="fs-6">(February 2013 - October 2014)</span></p>
+      <p>User Interface Software Engineer</p>
+      <p class="fs-4 mb-1">Conservation Services Group <span class="fs-6">(July 2008 - November 2010)</span></p>
+      <p>Systems Engineering</p>
     </div>
     <div class="col-md-6">
-    <p>Managed and administered IT Help Desk system while maintaining and active system for automated email responses and user-focused ticketing system.</p>
-      <ul class="icon-list">
-        <li>Managed and administered IT Help Desk System (Spiceworks)</li>
-        <li>Managed and administered Blackberry Enterprise Server 5.0</li>
-        <li>Administered FTP Server and FTP account using SuSE 9 and Ubuntu 8.04 LTS</li>
-        <li>Created and managed POP3 mail servers on Ubuntu for JIRA</li>
-        <li>Implemented SFTP Server using RHEL 5.4</li>
-        <li>Populated applications through Citrix; managed access to applications through AD security groups and settings</li>
-        <li>Assisted with VMware 4.0 configurations on Linux Servers</li>
-        <li>Assisted Senior Systems Engineer and Senior Network Engineer with daily administrative tasks in Active Directory and Exchange 2007</li>
-      </ul>
+      <h2 class="mt-0 mb-5">How I got here</h2>
+      <p class="fs-4">Massachusetts College of Liberal Arts <span class="fs-6">2008</span></p>
+      <p>Bachelor of Arts. Fine and Performing Arts - Music</p>
+      <p>Bachelor of Arts. Arts, Entertainment, and Media Management</p>
+      <small>Alpha Chi. National Scholars Honor Society. Who’s Who in American Colleges and Universities.</small>
+    </div>
+  </div>
+  <div class="row justify-content-end text-end px-3">
+    <div class="col-12 align-content-end">
+      <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="{{ "/resume" | url }}">
+        Resume
+      </a>
+      <i class="fa-sharp fa-regular fa-arrow-right"></i>
     </div>
   </div>
 </div>

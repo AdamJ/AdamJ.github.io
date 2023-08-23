@@ -7,18 +7,7 @@ const markdownItAnchor = require("markdown-it-anchor");
 const packageVersion = require("./package.json").version;
 const fs = require("fs");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const Image = require("@11ty/eleventy-img");
-
-(async () => {
-  let url = "https://images.unsplash.com/photo-1608178398319-48f814d0750c";
-  let stats = await Image(url, {
-    widths: ["auto"],
-    urlPath: "./src/img/",
-    outputDir: "./docs/img/"
-  });
-
-  console.log( stats );
-})();
+// const Image = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
@@ -27,6 +16,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addWatchTarget("./src/sass/");
 
+  eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("./src/keybase.txt");
   eleventyConfig.addPassthroughCopy("./src/fonts");
   eleventyConfig.addPassthroughCopy("./src/webfonts");
@@ -40,22 +30,25 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
   eleventyConfig.addShortcode("packageVersion", () => `v${packageVersion}`);
 
-  eleventyConfig.addShortcode("image", async function(src, alt, sizes) {
-    let metadata = await Image(src, {
-      widths: ["auto"],
-      urlPath: "./src/img/",
-      outputDir: "./docs/img/"
-    });
+  // eleventyConfig.addShortcode("image", async function(src, alt, sizes) {
+  //   if(alt === undefined) {
+  //     // You bet we throw an error on missing alt (alt="" works okay)
+  //     throw new Error(`Missing \`alt\` on myImage from: ${src}`);
+  //   }
 
-    let imageAttributes = {
-      alt,
-      sizes,
-      loading: "lazy",
-      decoding: "async",
-    };
+  //   let metadata = await Image(src, {
+  //     widths: ["auto"],
+  //     urlPath: "/src/img/",
+  //     outputDir: "./docs/img/",
+  //     formats: "png",
+  //     loading: "lazy",
+  //     decoding: "async",
+  //   });
 
-    return Image.generateHTML(metadata, imageAttributes);
-  });
+  //   let data = metadata.png[metadata.png.length - 1];
+  //   return `<img src="${data.url}" width="${data.width}" height="${data.height}" alt="${alt}" loading="lazy" decoding="async">`;
+
+  // });
 
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {

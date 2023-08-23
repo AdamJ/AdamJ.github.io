@@ -25,7 +25,7 @@
 	},
 
 	{
-   "title":"Prototypes",
+   "title":"prototypes",
    "imgName":"prototypes"
 	},
 
@@ -40,22 +40,37 @@
 	},
 
 	{
-   "title":"About",
-   "imgName":"about"
+   "title":"development",
+   "imgName":"development"
 	},
 
 	{
-   "title":"Code Examples",
-   "imgName":"code-examples"
+   "title":"resume",
+   "imgName":"resume"
 	},
 
 	{
-   "title":"Designs",
+   "title":"designs",
    "imgName":"designs"
 	},
 
 	{
    "title":"TimeTrak by Switchback",
    "imgName":"timetrak-by-switchback"
+	},
+
+	{
+   "title":"about",
+   "imgName":"about"
+	},
+
+	{
+   "title":"contact",
+   "imgName":"contact"
+	},
+
+	{
+   "title":"redesign",
+   "imgName":"redesign"
 	}
 ]

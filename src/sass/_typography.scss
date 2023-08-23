@@ -1,0 +1,89 @@
+.sub-header {
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 1.6px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@include color-mode(dark) {
+  h1, h2, h3, h4, p, small {
+    color: $white;
+  }
+  h4 {
+    color: #adadad;
+  }
+}
+h1, h2, h3, h4, p, small {
+  font-family: "PT Sans";
+  font-weight: 400;
+  color: #010101;
+}
+h1 {
+  font-size: 36px;
+  letter-spacing: 0;
+  margin: 16px 0;
+}
+h2 {
+  font-size: 32px;
+  letter-spacing: 0;
+  margin: 16px 0;
+}
+h3 {
+  font-size: 24px;
+  letter-spacing: 0;
+  margin: 16px 0;
+}
+h4 {
+  font-size: 20px;
+  letter-spacing: 0;
+  margin: 0 0 8px 0;
+  color: rgba(0, 0, 0, 0.60);
+}
+
+.paragraph,
+p {
+  font-size: 16px;
+  letter-spacing: 0.80px;
+}
+.paragraph-bold,
+.bold,
+p.bold {
+  font-weight: 700;
+}
+small,
+.small {
+  font-size: 14px;
+  letter-spacing: 0;
+}
+code,
+.code {
+  font-family: "PT Mono";
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0
+}
+.footer-link {
+  font-weight: 700;
+  letter-spacing: .8px;
+  color: #02769B;
+  text-decoration-line: underline;
+  text-underline-offset: .25em;
+  &:hover, &:active {
+    color: #004b63;
+    font-weight: 900;
+  }
+}
+.link-secondary,
+a.link-secondary {
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: .8px;
+}
+.text-align-center {
+  text-align: center;
+}

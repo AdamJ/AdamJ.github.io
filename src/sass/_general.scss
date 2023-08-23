@@ -1,34 +1,9 @@
-html {
-  scrollbar-color: #666;
+.content {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
-html::-webkit-scrollbar {
-  width: 16px; /* width of the entire scrollbar */
-  height: 16px;
-}
-html::-webkit-scrollbar-track {
-  background: #101010; /* color of the tracking area */
-}
-html::-webkit-scrollbar-thumb {
-  background-color: rgba(4, 67, 71, 100%); /* color of the scroll thumb */
-  border: 1px solid rgba(2, 30, 32, 100%); /* creates padding around scroll thumb */
-  border-radius: 20px; /* roundness of the scroll thumb */
-}
-
-@media (prefers-color-scheme: dark) {
-  html::-webkit-scrollbar {
-    width: 16px; /* width of the entire scrollbar */
-  }
-  html::-webkit-scrollbar-track {
-    background: rgba(4, 67, 71, 100%); /* color of the tracking area */
-  }
-  html::-webkit-scrollbar-thumb {
-    background: rgb(8, 15, 48);
-    background: linear-gradient(180deg, rgb(0, 185, 228) 0%, rgb(4, 67, 71) 35%, rgba(4, 67, 71) 65%, rgba(0, 185, 228, 100%) 100%);
-    border: 1px solid #101010; /* creates padding around scroll thumb */
-    border-radius: 20px; /* roundness of the scroll thumb */
-  }
-}
-
 .divider-large {
   height: 3rem;
   background-color: rgba(0, 0, 0, 10%);
@@ -36,30 +11,99 @@ html::-webkit-scrollbar-thumb {
   border-width: 1px 0;
   box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, 10%), inset 0 .125em .5em rgba(0, 0, 0, 15%);
 }
-
-.text-shadow-1 {
-  text-shadow: 0 .125rem .25rem rgba(0, 0, 0, 25%);
+.navbar {
+  background-color: #010101;
 }
-
-.card-cover {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-.card-link {
-  color: #fff;
-  text-decoration: none;
-  &:hover {
-    color: inherit;
-    text-decoration: underline;
+footer,
+.footer {
+  display: flex;
+  padding: 16px 24px;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  border-top: 1px solid #E3E3E3;
+  .footer-left {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex: 1 0 0;
+    flex-wrap: wrap;
+    color: #212529;
+  }
+  .footer-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+    flex: 1 0 0;
   }
 }
-
-.rounded-5 {
-  border-radius: 1em;
+.button-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  min-height: 500px;
+  background:rgba(0,0,0, .8);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.imager {
+  background: url(../img/dashboard_minimal.png);
+  background-size: cover;
+  padding-right: 0;
+  padding-left: 0;
+}
+.portfolio-img-background {
+  background: url(../img/AdamJolicoeur_dot_com-minimal.png);
+  background-size: cover;
+  padding-right: 0;
+  padding-left: 0;
+}
+.paragraph-inset {
+  padding: 0 16px;
 }
 
-.card {
+.text-value-pairs {
+  display: flex;
+  padding: 0 16px;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  row-gap: 8px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+.job {
+  align-self: stretch;
+  font-family: PT Sans;
+  font-weight: 400;
+  word-wrap: break-word;
+  &--company-name {
+    margin-bottom: 8px;
+  }
+  &--company-role {
+    color: rgba(0, 0, 0, 0.60);
+    margin-bottom: 8px;
+  }
+  &--company-dates {
+    color: rgba(0, 0, 0, 0.60);
+    margin-bottom: 0;
+  }
+}
+.column-list-item {
+  align-self: stretch;
+  font-family: PT Sans;
+  font-weight: 400;
+  word-wrap: break-word;
+  margin-bottom: 0;
+}
+.card-transform {
   transform: translateZ(0);
   transition-duration: 0.7s;
   transition-property: transform;
@@ -68,30 +112,19 @@ html::-webkit-scrollbar-thumb {
     transform: scale(1.05);
   }
 }
-
-.bi {
-  vertical-align: -.125em;
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
-.icon-link {
-  text-decoration: none;
+.card-link {
+  color: $white;
+  font-size: 14px;
+  & > i {
+    color: #ffffff !important;
+  }
   &:hover {
+    color: inherit;
     text-decoration: underline;
   }
 }
-.icon-link > .bi {
-  margin-top: .125rem;
-  margin-left: .125rem;
-  transition: transform .25s ease-in-out;
-  fill: currentcolor;
-}
-.icon-link:hover > .bi {
-  transform: translate(.25rem);
-}
-
-.mockup-screenshot {
-  max-width: 1000px;
-  @media (max-width: 768px) {
-    max-width: 500px;
-  }
-}
-
