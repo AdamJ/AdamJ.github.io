@@ -2,12 +2,13 @@
 This is the repo for my portfolio site, adamjolicoeur.com, hosted on GitHub.
 
 ## Who am I?
-I'm a user experiener designer with a passion for creating data-intensive designs. With a background in web development, I enjoy turning my designs into living, usable products.
+I'm a user experience designer with a passion for creating data-intensive designs. With a background in web development, I enjoy turning my designs into living, usable products.
 
 ## Why here?
-I decided to build my own portfolio site on GitHub, rather than on a less code-oriented platform, in order to keep my skills sharp, up-to-date, and to do everything in the open. I see no reason to hide my work, just as I wouldn't in a design project.
+I decided to build my own portfolio site on GitHub, rather than on a less code-oriented platform, in order to keep my skills sharp, up-to-date, and to do everything in the open.
 
 ## How was it created?
+I used Figma for designing the site, VSCode w/iTerm as my development environment, Eleventy as the site generator, and Bootstrap as the toolkit.
 
 ### Figma
 For designing my portfolio, I used [Figma](https://www.figma.com) so that I could design in the open using the latest technology. 
