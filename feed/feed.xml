@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Adam Jolicoeur</title>
+	<subtitle>The portfolio site for Adam Jolicoeur, User Experience Designer and Developer</subtitle>
+	
+	<link href="http://localhost:8080/feed/" rel="self"/>
+	<link href="http://localhost:8080"/>
+	<updated>2023-08-23T01:46:45Z</updated>
+	<id>http://localhost:8080</id>
+	<author>
+		<name>Adam J. Jolicoeur</name>
+	</author>
+	
+	<entry>
+		<title>Customer Engagement App</title>
+		<link href="http://localhost:8080/designs/customer-engagement/"/>
+		<updated>2021-07-02T14:45:28Z</updated>
+		<id>http://localhost:8080/designs/customer-engagement/</id>
+		<content type="html">&lt;div class=&quot;container mb-5&quot;&gt;
+  &lt;dl class=&quot;row&quot;&gt;
+    &lt;dt class=&quot;col-sm-2&quot;&gt;Role&lt;/dt&gt;
+    &lt;dd class=&quot;col-sm-10&quot;&gt;Interaction Designer, Visual Designer&lt;/dd&gt;
+    &lt;dt class=&quot;col-sm-2&quot;&gt;Areas&lt;/dt&gt;
+    &lt;dd class=&quot;col-sm-10&quot;&gt;Wireframes, Visual Designs&lt;/dd&gt;
+    &lt;dt class=&quot;col-sm-2&quot;&gt;Challenge&lt;/dt&gt;
+    &lt;dd class=&quot;col-sm-10&quot;&gt;For this project, I was tasked with updating an old user interface to increase usability and visual styling to match a more modern aesthetic.&lt;/dd&gt;
+  &lt;/dl&gt;
+  &lt;hr class=&quot;my-5&quot; /&gt;
+  &lt;h2&gt;Goals&lt;/h2&gt;
+  &lt;p&gt;The goals of this project were to &lt;i&gt;improve&lt;/i&gt; efficiency, &lt;i&gt;upgrade&lt;/i&gt; the visual aesthetic, and &lt;i&gt;enhance&lt;/i&gt; visual awareness.&lt;/p&gt;
+  &lt;h2&gt;Sitemap (alpha)&lt;/h2&gt;
+  &lt;p&gt;Before starting on the updated design for the Customer Engagement App (CEA), I first took to creating an updated sitemap. This allowed me to set a basic path for users to navigate through the application, while also separating the pieces of the application into useful areas.&lt;/p&gt;
+  &lt;a href=&quot;http://localhost:8080/img/Sitemap_alpha.png&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/Sitemap_alpha.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Sitemap for the alpha version of the Customer Engagement App&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/a&gt;
+  &lt;h2&gt;Wireframes&lt;/h2&gt;
+  &lt;p&gt;I created a set of wireframes that could be quickly iterated on for presenting ideas to project stakeholders and other interested parties.&lt;/p&gt;
+  &lt;a href=&quot;http://localhost:8080/img/CEA_Dashboard_Overview.pdf&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/CEA_wireframe_first.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Example visual design for the navigation variations in the Customer Engagement App&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/a&gt;
+  &lt;h2&gt;Visual Designs&lt;/h2&gt;
+  &lt;p&gt;These visual designs are a small sampling of the final screens that were implemented as part of the completion of this project. The Dashboard, Reporting screen, and Settings page were considered the high-value items and contained the majority of the different components that would be used across the project. This set the baseline for future screens and allowed the development team to create a component library in which to build upon.&lt;/p&gt;
+  &lt;div class=&quot;row align-items-md-stretch&quot;&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+      &lt;div class=&quot;h-100 p-5 text-white rounded-3&quot; style=&quot;background-color: #333742;&quot;&gt;
+        &lt;h2 class=&quot;text-center&quot;&gt;Application Dashboard&lt;/h2&gt;
+        &lt;a href=&quot;http://localhost:8080/img/CEA_Dashboard.png&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/CEA_Dashboard.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Example visual design for the primary dashboard in the Customer Engagement App&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+      &lt;div class=&quot;h-100 p-5 text-dark bg-light rounded-3&quot;&gt;
+        &lt;h2&gt;Engagement Reporting&lt;/h2&gt;
+        &lt;a href=&quot;http://localhost:8080/img/CEA_Engagement.png&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/CEA_Engagement.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Example visual design for the engagement dashboard in the Customer Engagement App&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row align-items-md-stretch&quot;&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+      &lt;div class=&quot;h-100 p-5 text-dark bg-light rounded-3&quot;&gt;
+        &lt;h2 class=&quot;text-center&quot;&gt;Settings&lt;/h2&gt;
+        &lt;a href=&quot;http://localhost:8080/img/CEA_Settings.png&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/CEA_Settings.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Example visual design for the settings page in the Customer Engagement App&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br /&gt;
+  &lt;p class=&quot;lead&quot;&gt;The color palette and simplified component examples were some of the first items created, in order to provide the development team with a baseline in which to build the environment from.&lt;/p&gt;
+  &lt;div class=&quot;row align-items-md-stretch&quot;&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+      &lt;div class=&quot;h-100 p-5 text-white rounded-3&quot; style=&quot;background-color: #333742;&quot;&gt;
+        &lt;h2 class=&quot;text-center&quot;&gt;Color Palette&lt;/h2&gt;
+        &lt;a href=&quot;http://localhost:8080/img/CEA_Palette.png&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/CEA_Palette.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Color palette created for the Customer Engagement App&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+      &lt;div class=&quot;h-100 p-5 text-dark bg-light rounded-3&quot;&gt;
+        &lt;h2&gt;Component Examples&lt;/h2&gt;
+        &lt;a href=&quot;http://localhost:8080/img/CEA_AssetExamples.png&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/CEA_AssetExamples.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;An example of the types of components found in the Customer Engagement App&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row align-items-md-stretch&quot;&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+      &lt;div class=&quot;h-100 p-5 text-dark bg-light rounded-3&quot;&gt;
+        &lt;h2&gt;Navigation&lt;/h2&gt;
+        &lt;a href=&quot;http://localhost:8080/img/CEA_Navigation.png&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/CEA_Navigation.png&quot; class=&quot;d-block mx-lg-auto img-fluid img-thumbnail&quot; alt=&quot;Example visual design for the navigation variations in the Customer Engagement App&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;hr class=&quot;my-5&quot; /&gt;
+  &lt;div class=&quot;card text-dark bg-light my-3&quot;&gt;
+    &lt;div class=&quot;card-header&quot;&gt;&lt;h3&gt;Final thoughts&lt;/h3&gt;&lt;/div&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+      &lt;p class=&quot;card-text&quot;&gt;I believe that the process used for this project, albeit different, fit within the framework given and met all of the requirements as laid out by the Project Management Team. In the end, a new interface was created that met all of the requirements and was based off of clear steps and proper research. Competitively, this new design met, and often surpassed, expectations when compared to what was in use prior to this project.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>District 25 website</title>
+		<link href="http://localhost:8080/designs/district25/"/>
+		<updated>2021-07-02T14:45:28Z</updated>
+		<id>http://localhost:8080/designs/district25/</id>
+		<content type="html"></content>
+	</entry>
+	
+	<entry>
+		<title>Application Lifecycle Management</title>
+		<link href="http://localhost:8080/designs/alm/"/>
+		<updated>2021-07-02T15:43:25Z</updated>
+		<id>http://localhost:8080/designs/alm/</id>
+		<content type="html">&lt;div class=&quot;container mb-5&quot;&gt;
+  &lt;dl class=&quot;row&quot;&gt;
+    &lt;dt class=&quot;col-sm-2&quot;&gt;Role&lt;/dt&gt;
+    &lt;dd class=&quot;col-sm-10&quot;&gt;Interaction Designer, Prototypes&lt;/dd&gt;
+    &lt;dt class=&quot;col-sm-2&quot;&gt;Areas&lt;/dt&gt;
+    &lt;dd class=&quot;col-sm-10&quot;&gt;Wireframes, user paths, usability, prototyping&lt;/dd&gt;
+    &lt;dt class=&quot;col-sm-2&quot;&gt;Challenge&lt;/dt&gt;
+    &lt;dd class=&quot;col-sm-10&quot;&gt;The greater project team was using multiple project management tools, code repositories, and application development processes, with none of them talking to each other. This project takes all of those areas of concern and brings them together into a single, cohesive interface.&lt;/dd&gt;
+  &lt;/dl&gt;
+  &lt;hr class=&quot;my-5&quot; /&gt;
+  &lt;h2&gt;The Process&lt;/h2&gt;
+  &lt;p&gt;Before starting on the Application Lifecycle Management project, it was determined that the following areas would be need to be covered: list of target users, a user flow, wireframes, and, potentially, prototypes for user testings and feasibility.&lt;/p&gt;
+  &lt;h3&gt;Target Users&lt;/h3&gt;
+  &lt;p&gt;Through discussions with Stakeholders and Project Management, it was decided that the target users would be set in tiers - &lt;u&gt;General Users&lt;/u&gt; (those who need to add and interact with issues, update project assets, and interact daily - a mix of designers and developers); &lt;u&gt;Project Managers&lt;/u&gt; (organizers of work, set deadlines and release dates), and &lt;u&gt;Administrators&lt;/u&gt; (control any integrations, add-ons, and access).&lt;/p&gt;
+  &lt;h3&gt;Application Lifecycle Management flow&lt;/h3&gt;
+  &lt;a href=&quot;http://localhost:8080/img/ALM_workflow.png&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/ALM_workflow.png&quot; class=&quot;d-block mx-lg-auto img-fluid&quot; alt=&quot;ALM workflow&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/a&gt;
+  &lt;h3&gt;Wireframes and Workflows&lt;/h3&gt;
+  &lt;p&gt;For each section of the ALM application, workflows and wireframes were used to identify possible user paths, as well as to strategize initial designs before moving on to high fidelity mockups and prototypes.&lt;/p&gt;
+  &lt;h4&gt;From Work Items to Development&lt;/h4&gt;
+  &lt;p&gt;&lt;b&gt;Goals:&lt;/b&gt;
+    &lt;/p&gt;&lt;ul&gt;
+      &lt;li&gt;Communicates to the user that direct access to developing the Work Item is available in a single click.&lt;/li&gt;
+      &lt;li&gt;Implementation is unobtrusive and implies navigation.&lt;/li&gt;
+      &lt;li&gt;Location will not accidentally be clicked, allowing for enough real estate for line lengths and other meta data. The location of the integration should also imply moving forward.&lt;/li&gt;
+      &lt;li&gt;Ordered by recommendation - require users to fill in one area before moving on.&lt;/li&gt;
+      &lt;li&gt;As a button, it needs to have a prominent place yet not take the place of a primary button (in style).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;p&gt;&lt;/p&gt;
+  &lt;b&gt;Steps to complete the process:&lt;/b&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;card-group&quot;&gt;
+      &lt;div class=&quot;card&quot;&gt;
+        &lt;img src=&quot;http://localhost:8080/img/ALM_step1.png&quot; class=&quot;card-img-top&quot; alt=&quot;Step 1 of the ALM wireframes&quot; /&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+          &lt;h5 class=&quot;card-title&quot;&gt;Step 1&lt;/h5&gt;
+          &lt;!-- &lt;p class=&quot;card-text&quot;&gt;
+            &lt;ol&gt;
+              &lt;li&gt;I see a recommendation in the report.&lt;/li&gt;
+              &lt;li&gt;I click &#39;make a work item&#39;.&lt;/li&gt;
+              &lt;li&gt;I navigate to the Planner to see/comment on the new work item.&lt;/li&gt;
+              &lt;li&gt;If the same recommendation is suggested during another build process, it will generate a new work. At this time, detection for duplicate items does not exist.&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/p&gt; --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;
+        &lt;img src=&quot;http://localhost:8080/img/ALM_step2.png&quot; class=&quot;card-img-top&quot; alt=&quot;Step 2 of the ALM wireframes&quot; /&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+          &lt;h5 class=&quot;card-title&quot;&gt;Step 2&lt;/h5&gt;
+          &lt;!-- &lt;p class=&quot;card-text&quot;&gt;
+            &lt;ol&gt;
+              &lt;li&gt;I see a recommendation in the report.&lt;/li&gt;
+              &lt;li&gt;I click &#39;make a work item&#39;.&lt;/li&gt;
+              &lt;li&gt;I navigate to the Planner to see/comment on the new work item.&lt;/li&gt;
+              &lt;li&gt;If the same recommendation is suggested during another build process, it will generate a new work. At this time, detection for duplicate items does not exist.&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/p&gt; --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;
+        &lt;img src=&quot;http://localhost:8080/img/ALM_step3.png&quot; class=&quot;card-img-top&quot; alt=&quot;Step 3 of the ALM wireframes&quot; /&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+          &lt;h5 class=&quot;card-title&quot;&gt;Step 3&lt;/h5&gt;
+          &lt;!-- &lt;p class=&quot;card-text&quot;&gt;
+            &lt;ol&gt;
+              &lt;li&gt;I see a recommendation in the report.&lt;/li&gt;
+              &lt;li&gt;I click &#39;make a work item&#39;.&lt;/li&gt;
+              &lt;li&gt;I navigate to the Planner to see/comment on the new work item.&lt;/li&gt;
+              &lt;li&gt;If the same recommendation is suggested during another build process, it will generate a new work. At this time, detection for duplicate items does not exist.&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/p&gt; --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;card mt-3 mb-3 mx-2&quot;&gt;
+      &lt;div class=&quot;row g-0&quot;&gt;
+        &lt;div class=&quot;col-md-5&quot;&gt;
+          &lt;a href=&quot;http://localhost:8080/img/ALM_wireframe.png&quot; target=&quot;top&quot; alt=&quot;View larger image of the wireframe thumbnail&quot;&gt;
+            &lt;img src=&quot;http://localhost:8080/img/ALM_wireframe.png&quot; class=&quot;img-fluid rounded-start&quot; alt=&quot;Wireframe of the work item to coding experience&quot; /&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-7&quot;&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Wireframe&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;This wireframe was created with call outs in order to communicate my thoughts around the design to anyone who saw it, but could not talk with me. Specifically, this worked extremely well when working with colleagues in other time zones where our working ours did not match up.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;lead mt-3&quot;&gt;From these workflows and wireframes, it was determined that additional questions needed to be answered:
+    &lt;/p&gt;&lt;ul&gt;
+      &lt;li&gt;How do we handle accuracy between the linking of work items?&lt;/li&gt;
+      &lt;li&gt;If the work items has a fine name and line number, is the commit SHA also used to help identify the connection?&lt;/li&gt;
+      &lt;li&gt;Are we able to type the URL in a browser and navigate to the work item? (Does it have a unique link or is it randomly generated each time?)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;p&gt;&lt;/p&gt;
+  &lt;h3&gt;Visual Design&lt;/h3&gt;
+  &lt;p&gt;After completing the wireframes and flows, a sample visual design was created. This design was created using the in-house design component library.&lt;/p&gt;
+  &lt;a href=&quot;http://localhost:8080/img/ALM_planner.png&quot;&gt;&lt;img src=&quot;http://localhost:8080/img/ALM_planner.png&quot; class=&quot;d-block mx-lg-auto img-fluid&quot; alt=&quot;ALM Planner visual design&quot; width=&quot;700&quot; height=&quot;500&quot; loading=&quot;lazy&quot; /&gt;&lt;/a&gt;
+  &lt;h3 class=&quot;mt-3&quot;&gt;Prototyping&lt;/h3&gt;
+  &lt;p&gt;As part of the testing and usability study process, I created a prototype that demonstrated some of the basic layouts and IA for users to explore and provide feedback on. This process evolved over time and, eventually, became a full-fledged website that utilized static data and was continuously updated as users provided feedback.&lt;/p&gt;
+  &lt;a class=&quot;btn btn-outline-secondary&quot; href=&quot;https://www.adamjolicoeur.com/testing_environment/index.html&quot; target=&quot;top&quot; alt=&quot;Link to prototype example&quot;&gt;View prototype&lt;/a&gt;
+  &lt;hr class=&quot;my-5&quot; /&gt;
+  &lt;div class=&quot;card text-dark bg-light my-3&quot;&gt;
+    &lt;div class=&quot;card-header&quot;&gt;&lt;h3&gt;Final thoughts&lt;/h3&gt;&lt;/div&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+      &lt;p class=&quot;card-text&quot;&gt;In review, I believe that this process helped to flush out a great number of questions and concerns, while also demonstrating that their is a solid platform in which to build the full application on.&lt;br /&gt;The findings discovered through the process were taken to the Project Stakeholders, which were then used to create additional design stories and discussions with the development teams.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>prototypes</title>
+		<link href="http://localhost:8080/prototypes/prototypes/"/>
+		<updated>2023-06-29T18:18:02Z</updated>
+		<id>http://localhost:8080/prototypes/prototypes/</id>
+		<content type="html">&lt;div class=&quot;container-xxl mb-2 py-2 px-md-5&quot;&gt;
+  &lt;div class=&quot;row px-3&quot;&gt;
+    &lt;div class=&quot;col-12&quot;&gt;
+      &lt;h2&gt;
+        Sites
+      &lt;/h2&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row px-3&quot;&gt;
+    &lt;div class=&quot;col-12 align-content-start&quot;&gt;
+      &lt;h3&gt;PatternFly 4&lt;/h3&gt;
+      &lt;p class=&quot;text-body-secondary&quot;&gt;In support of the 4th release of PatternFly, I worked with a group of designers to create a modern, responsive take on the PatternFly website. Using a responsive layout with SVGs that move with the page, I create clean aesthetic that would flow through the rest of the site.&lt;/p&gt;
+      &lt;a class=&quot;btn btn-outline-secondary&quot; role=&quot;button&quot; href=&quot;https://pf4testbench.netlify.app/&quot; target=&quot;top&quot; alt=&quot;Click to view the PatternFly 4 demo site&quot;&gt;
+        View PatternFly 4 demo
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-12 align-content-start&quot;&gt;
+      &lt;h3&gt;Feature flags&lt;/h3&gt;
+      &lt;p class=&quot;text-body-secondary&quot;&gt;As part of a usability study, I worked with a UX Researcher to test out different variations of a Feature Flag, or notifier, for aspects and pages of an application that are either in a pre-release state, or have an unreleased element in use.&lt;/p&gt;
+      &lt;a class=&quot;btn btn-outline-secondary&quot; role=&quot;button&quot; href=&quot;https://www.adamjolicoeur.com/feature-flag-prototype/&quot; target=&quot;top&quot; alt=&quot;Click to view the Feature Flags demo site&quot;&gt;
+        View Feature Flags demo
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;container-xxl mb-2 py-2 px-md-5&quot;&gt;
+  &lt;div class=&quot;row px-3&quot;&gt;
+    &lt;div class=&quot;col-12&quot;&gt;
+      &lt;h2&gt;Additional examples:&lt;/h2&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row px-3&quot;&gt;
+    &lt;div class=&quot;col&quot;&gt;
+      &lt;a href=&quot;https://www.adamjolicoeur.com/design-tracker-template/&quot; target=&quot;top&quot;&gt;Design tracker &lt;i class=&quot;fa-sharp fa-solid fa-arrow-up-right-from-square&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;div class=&quot;col&quot;&gt;
+      &lt;a href=&quot;https://www.adamjolicoeur.com/leftnav-prototype/&quot; target=&quot;top&quot;&gt;Leftnav prototype &lt;i class=&quot;fa-sharp fa-solid fa-arrow-up-right-from-square&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;
+      &lt;a href=&quot;https://www.adamjolicoeur.com/DashboardPrototype/&quot; target=&quot;top&quot;&gt;Dashboard prototype &lt;i class=&quot;fa-sharp fa-solid fa-arrow-up-right-from-square&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;
+      &lt;a href=&quot;https://www.adamjolicoeur.com/testing_environment/index.html&quot; target=&quot;top&quot;&gt;Testing environment &lt;i class=&quot;fa-sharp fa-solid fa-arrow-up-right-from-square&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;container-xxl mb-2 py-2 px-3&quot;&gt;
+  &lt;h2&gt;
+    CodePens
+  &lt;/h2&gt;
+  &lt;p class=&quot;text-body-secondary&quot;&gt;
+    When I&#39;m trying out new ideas, I&#39;ll often go to &lt;a href=&quot;https://www.codepen.io/&quot; target=&quot;top&quot; alt=&quot;Link to CodePen.io&quot;&gt;CodePen&lt;/a&gt; to &quot;riff&quot; on them, but also to see what is already out there. Below is an example of an app that I&#39;ve been thinking on. &lt;a class=&quot;link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover&quot; href=&quot;https://codepen.io/AdamJolicoeur&quot;&gt;See my work on CodePen &lt;i class=&quot;fa-sharp fa-solid fa-arrow-up-right-from-square&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&quot;row px-3&quot;&gt;
+    &lt;p class=&quot;codepen&quot; data-height=&quot;550&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;NWjOzwm&quot; data-user=&quot;AdamJolicoeur&quot; style=&quot;height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+      &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/AdamJolicoeur/pen/NWjOzwm&quot;&gt;
+      SwitchTrack - Calendar&lt;/a&gt; by Adam Jolicoeur (&lt;a href=&quot;https://codepen.io/AdamJolicoeur&quot;&gt;@AdamJolicoeur&lt;/a&gt;)
+      on &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+    &lt;/p&gt;
+    &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+    &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+    &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Alfred Workflows</title>
+		<link href="http://localhost:8080/alfred/workflows/"/>
+		<updated>2023-07-30T17:28:05Z</updated>
+		<id>http://localhost:8080/alfred/workflows/</id>
+		<content type="html">&lt;h1 id=&quot;alfred-workflows&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;http://localhost:8080/alfred/workflows/#alfred-workflows&quot;&gt;&lt;span&gt;Alfred Workflows&lt;/span&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;A list of my favorite &lt;a href=&quot;https://www.alfredapp.com/workflows/&quot;&gt;Alfred Workflows&lt;/a&gt;, broken down by those that I have downloaded and those that I have created or modified.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: Requires the &lt;a href=&quot;https://www.alfredapp.com/powerpack/&quot;&gt;Alfred Powerpack&lt;/a&gt; to use.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;downloaded&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;http://localhost:8080/alfred/workflows/#downloaded&quot;&gt;&lt;span&gt;Downloaded&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/nikitavoloboev/alfred-web-searches#readme&quot;&gt;Alfred Web Searches&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Created by &lt;a href=&quot;https://github.com/nikitavoloboev&quot;&gt;nikitavoloboev on GitHub&lt;/a&gt; to use Alfred for searching the web.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;created-%2F-modified&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;http://localhost:8080/alfred/workflows/#created-%2F-modified&quot;&gt;&lt;span&gt;Created / Modified&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;New Obsidian
+&lt;ul&gt;
+&lt;li&gt;Create a new note using &lt;a href=&quot;https://obsidian.md/&quot;&gt;Obsidian&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Start my day
+&lt;ul&gt;
+&lt;li&gt;A workflow for starting my day. Open Microsoft Outlook, Firefox, and Slack.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;End my day
+&lt;ul&gt;
+&lt;li&gt;A workflow to quickly end my day. Closes all applications and asks if I want to shut down my machine.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Stream Deck examples</title>
+		<link href="http://localhost:8080/streamdeck/examples/"/>
+		<updated>2023-07-30T17:28:05Z</updated>
+		<id>http://localhost:8080/streamdeck/examples/</id>
+		<content type="html">&lt;div class=&quot;container&quot;&gt;
+&lt;h2 id=&quot;standard-icons&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;http://localhost:8080/streamdeck/examples/#standard-icons&quot;&gt;&lt;span&gt;Standard icons&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:8080/streamdeck/examples/streamdeck-preview.png&quot; alt=&quot;Preview image&quot; title=&quot;Cover image&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;solid-icons&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;http://localhost:8080/streamdeck/examples/#solid-icons&quot;&gt;&lt;span&gt;Solid icons&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;downloads&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;http://localhost:8080/streamdeck/examples/#downloads&quot;&gt;&lt;span&gt;Downloads&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/AdamJ/stream-deck-icon-packs/tree/main/com.elgato.jolicoeur-solid.sdIconPack&quot;&gt;jolicoeur-solid.sdIconPack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/AdamJ/stream-deck-icon-packs/tree/main/com.elgato.jolicoeur.sdIconPack&quot;&gt;jolicoeur.sdIconPack&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>TimeTrak by Switchback</title>
+		<link href="http://localhost:8080/designs/timetrak/"/>
+		<updated>2023-08-11T13:26:23Z</updated>
+		<id>http://localhost:8080/designs/timetrak/</id>
+		<content type="html"></content>
+	</entry>
+	
+	<entry>
+		<title>redesign</title>
+		<link href="http://localhost:8080/code/redesign/"/>
+		<updated>2023-08-23T01:46:45Z</updated>
+		<id>http://localhost:8080/code/redesign/</id>
+		<content type="html">&lt;div class=&quot;container-xxl mb-2 py-2 px-md-5&quot;&gt;
+  &lt;div class=&quot;row px-3 pb-3&quot;&gt;
+    &lt;div class=&quot;col-12&quot;&gt;
+      &lt;h2 class=&quot;mt-0&quot;&gt;What I used&lt;/h2&gt;
+      &lt;p class=&quot;fs-5 my-0&quot;&gt;
+        Bootstrap, VSCode, GitHub, Netlify, Figma, iOS Simulator
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+	</entry>
+</feed>
