@@ -30,26 +30,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
   eleventyConfig.addShortcode("packageVersion", () => `v${packageVersion}`);
 
-  // eleventyConfig.addShortcode("image", async function(src, alt, sizes) {
-  //   if(alt === undefined) {
-  //     // You bet we throw an error on missing alt (alt="" works okay)
-  //     throw new Error(`Missing \`alt\` on myImage from: ${src}`);
-  //   }
-
-  //   let metadata = await Image(src, {
-  //     widths: ["auto"],
-  //     urlPath: "/src/img/",
-  //     outputDir: "./docs/img/",
-  //     formats: "png",
-  //     loading: "lazy",
-  //     decoding: "async",
-  //   });
-
-  //   let data = metadata.png[metadata.png.length - 1];
-  //   return `<img src="${data.url}" width="${data.width}" height="${data.height}" alt="${alt}" loading="lazy" decoding="async">`;
-
-  // });
-
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
       ready: function(err, bs) {
