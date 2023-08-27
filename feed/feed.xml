@@ -5,7 +5,7 @@
 	
 	<link href="http://localhost:8080/feed/" rel="self"/>
 	<link href="http://localhost:8080"/>
-	<updated>2023-08-23T01:46:45Z</updated>
+	<updated>2023-08-23T02:14:25Z</updated>
 	<id>http://localhost:8080</id>
 	<author>
 		<name>Adam J. Jolicoeur</name>
@@ -223,78 +223,6 @@
 	</entry>
 	
 	<entry>
-		<title>prototypes</title>
-		<link href="http://localhost:8080/prototypes/prototypes/"/>
-		<updated>2023-06-29T18:18:02Z</updated>
-		<id>http://localhost:8080/prototypes/prototypes/</id>
-		<content type="html">&lt;div class=&quot;container-xxl mb-2 py-2 px-md-5&quot;&gt;
-  &lt;div class=&quot;row px-3&quot;&gt;
-    &lt;div class=&quot;col-12&quot;&gt;
-      &lt;h2&gt;
-        Sites
-      &lt;/h2&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;row px-3&quot;&gt;
-    &lt;div class=&quot;col-12 align-content-start&quot;&gt;
-      &lt;h3&gt;PatternFly 4&lt;/h3&gt;
-      &lt;p class=&quot;text-body-secondary&quot;&gt;In support of the 4th release of PatternFly, I worked with a group of designers to create a modern, responsive take on the PatternFly website. Using a responsive layout with SVGs that move with the page, I create clean aesthetic that would flow through the rest of the site.&lt;/p&gt;
-      &lt;a class=&quot;btn btn-outline-secondary&quot; role=&quot;button&quot; href=&quot;https://pf4testbench.netlify.app/&quot; target=&quot;top&quot; alt=&quot;Click to view the PatternFly 4 demo site&quot;&gt;
-        View PatternFly 4 demo
-      &lt;/a&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-12 align-content-start&quot;&gt;
-      &lt;h3&gt;Feature flags&lt;/h3&gt;
-      &lt;p class=&quot;text-body-secondary&quot;&gt;As part of a usability study, I worked with a UX Researcher to test out different variations of a Feature Flag, or notifier, for aspects and pages of an application that are either in a pre-release state, or have an unreleased element in use.&lt;/p&gt;
-      &lt;a class=&quot;btn btn-outline-secondary&quot; role=&quot;button&quot; href=&quot;https://www.adamjolicoeur.com/feature-flag-prototype/&quot; target=&quot;top&quot; alt=&quot;Click to view the Feature Flags demo site&quot;&gt;
-        View Feature Flags demo
-      &lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;container-xxl mb-2 py-2 px-md-5&quot;&gt;
-  &lt;div class=&quot;row px-3&quot;&gt;
-    &lt;div class=&quot;col-12&quot;&gt;
-      &lt;h2&gt;Additional examples:&lt;/h2&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;row px-3&quot;&gt;
-    &lt;div class=&quot;col&quot;&gt;
-      &lt;a href=&quot;https://www.adamjolicoeur.com/design-tracker-template/&quot; target=&quot;top&quot;&gt;Design tracker &lt;i class=&quot;fa-sharp fa-solid fa-arrow-up-right-from-square&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-    &lt;div class=&quot;col&quot;&gt;
-      &lt;a href=&quot;https://www.adamjolicoeur.com/leftnav-prototype/&quot; target=&quot;top&quot;&gt;Leftnav prototype &lt;i class=&quot;fa-sharp fa-solid fa-arrow-up-right-from-square&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col&quot;&gt;
-      &lt;a href=&quot;https://www.adamjolicoeur.com/DashboardPrototype/&quot; target=&quot;top&quot;&gt;Dashboard prototype &lt;i class=&quot;fa-sharp fa-solid fa-arrow-up-right-from-square&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col&quot;&gt;
-      &lt;a href=&quot;https://www.adamjolicoeur.com/testing_environment/index.html&quot; target=&quot;top&quot;&gt;Testing environment &lt;i class=&quot;fa-sharp fa-solid fa-arrow-up-right-from-square&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;container-xxl mb-2 py-2 px-3&quot;&gt;
-  &lt;h2&gt;
-    CodePens
-  &lt;/h2&gt;
-  &lt;p class=&quot;text-body-secondary&quot;&gt;
-    When I&#39;m trying out new ideas, I&#39;ll often go to &lt;a href=&quot;https://www.codepen.io/&quot; target=&quot;top&quot; alt=&quot;Link to CodePen.io&quot;&gt;CodePen&lt;/a&gt; to &quot;riff&quot; on them, but also to see what is already out there. Below is an example of an app that I&#39;ve been thinking on. &lt;a class=&quot;link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover&quot; href=&quot;https://codepen.io/AdamJolicoeur&quot;&gt;See my work on CodePen &lt;i class=&quot;fa-sharp fa-solid fa-arrow-up-right-from-square&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-  &lt;/p&gt;
-  &lt;div class=&quot;row px-3&quot;&gt;
-    &lt;p class=&quot;codepen&quot; data-height=&quot;550&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;NWjOzwm&quot; data-user=&quot;AdamJolicoeur&quot; style=&quot;height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
-      &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/AdamJolicoeur/pen/NWjOzwm&quot;&gt;
-      SwitchTrack - Calendar&lt;/a&gt; by Adam Jolicoeur (&lt;a href=&quot;https://codepen.io/AdamJolicoeur&quot;&gt;@AdamJolicoeur&lt;/a&gt;)
-      on &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
-    &lt;/p&gt;
-    &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-    &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-    &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-  &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</content>
-	</entry>
-	
-	<entry>
 		<title>Alfred Workflows</title>
 		<link href="http://localhost:8080/alfred/workflows/"/>
 		<updated>2023-07-30T17:28:05Z</updated>
@@ -360,7 +288,7 @@
 	<entry>
 		<title>redesign</title>
 		<link href="http://localhost:8080/code/redesign/"/>
-		<updated>2023-08-23T01:46:45Z</updated>
+		<updated>2023-08-23T02:14:25Z</updated>
 		<id>http://localhost:8080/code/redesign/</id>
 		<content type="html">&lt;div class=&quot;container-xxl mb-2 py-2 px-md-5&quot;&gt;
   &lt;div class=&quot;row px-3 pb-3&quot;&gt;
@@ -370,6 +298,78 @@
         Bootstrap, VSCode, GitHub, Netlify, Figma, iOS Simulator
       &lt;/p&gt;
     &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>prototypes</title>
+		<link href="http://localhost:8080/prototypes/prototypes/"/>
+		<updated>2023-08-23T02:14:25Z</updated>
+		<id>http://localhost:8080/prototypes/prototypes/</id>
+		<content type="html">&lt;div class=&quot;container-xxl mb-2 py-2 px-md-5&quot;&gt;
+  &lt;div class=&quot;row px-3&quot;&gt;
+    &lt;div class=&quot;col-12&quot;&gt;
+      &lt;h2&gt;
+        Sites
+      &lt;/h2&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row px-3&quot;&gt;
+    &lt;div class=&quot;col-12 align-content-start&quot;&gt;
+      &lt;h3&gt;PatternFly 4&lt;/h3&gt;
+      &lt;p class=&quot;text-body-secondary&quot;&gt;In support of the 4th release of PatternFly, I worked with a group of designers to create a modern, responsive take on the PatternFly website. Using a responsive layout with SVGs that move with the page, I create clean aesthetic that would flow through the rest of the site.&lt;/p&gt;
+      &lt;a class=&quot;btn btn-outline-secondary&quot; role=&quot;button&quot; href=&quot;https://pf4testbench.netlify.app/&quot; target=&quot;top&quot; alt=&quot;Click to view the PatternFly 4 demo site&quot;&gt;
+        View PatternFly 4 demo
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-12 align-content-start&quot;&gt;
+      &lt;h3&gt;Feature flags&lt;/h3&gt;
+      &lt;p class=&quot;text-body-secondary&quot;&gt;As part of a usability study, I worked with a UX Researcher to test out different variations of a Feature Flag, or notifier, for aspects and pages of an application that are either in a pre-release state, or have an unreleased element in use.&lt;/p&gt;
+      &lt;a class=&quot;btn btn-outline-secondary&quot; role=&quot;button&quot; href=&quot;https://www.adamjolicoeur.com/feature-flag-prototype/&quot; target=&quot;top&quot; alt=&quot;Click to view the Feature Flags demo site&quot;&gt;
+        View Feature Flags demo
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;container-xxl mb-2 py-2 px-md-5&quot;&gt;
+  &lt;div class=&quot;row px-3&quot;&gt;
+    &lt;div class=&quot;col-12&quot;&gt;
+      &lt;h2&gt;Additional examples:&lt;/h2&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row px-3&quot;&gt;
+    &lt;div class=&quot;col&quot;&gt;
+      &lt;a href=&quot;https://www.adamjolicoeur.com/design-tracker-template/&quot; target=&quot;top&quot;&gt;Design tracker &lt;i class=&quot;fa-sharp fa-solid fa-arrow-up-right-from-square&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;div class=&quot;col&quot;&gt;
+      &lt;a href=&quot;https://www.adamjolicoeur.com/leftnav-prototype/&quot; target=&quot;top&quot;&gt;Leftnav prototype &lt;i class=&quot;fa-sharp fa-solid fa-arrow-up-right-from-square&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;
+      &lt;a href=&quot;https://www.adamjolicoeur.com/DashboardPrototype/&quot; target=&quot;top&quot;&gt;Dashboard prototype &lt;i class=&quot;fa-sharp fa-solid fa-arrow-up-right-from-square&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;
+      &lt;a href=&quot;https://www.adamjolicoeur.com/testing_environment/index.html&quot; target=&quot;top&quot;&gt;Testing environment &lt;i class=&quot;fa-sharp fa-solid fa-arrow-up-right-from-square&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;container-xxl mb-2 py-2 px-3&quot;&gt;
+  &lt;h2&gt;
+    CodePens
+  &lt;/h2&gt;
+  &lt;p class=&quot;text-body-secondary&quot;&gt;
+    When I&#39;m trying out new ideas, I&#39;ll often go to &lt;a href=&quot;https://www.codepen.io/&quot; target=&quot;top&quot; alt=&quot;Link to CodePen.io&quot;&gt;CodePen&lt;/a&gt; to &quot;riff&quot; on them, but also to see what is already out there. Below is an example of an app that I&#39;ve been thinking on. &lt;a class=&quot;link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover&quot; href=&quot;https://codepen.io/AdamJolicoeur&quot;&gt;See my work on CodePen &lt;i class=&quot;fa-sharp fa-solid fa-arrow-up-right-from-square&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+  &lt;/p&gt;
+  &lt;div class=&quot;row px-3&quot;&gt;
+    &lt;p class=&quot;codepen&quot; data-height=&quot;550&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;NWjOzwm&quot; data-user=&quot;AdamJolicoeur&quot; style=&quot;height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+      &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/AdamJolicoeur/pen/NWjOzwm&quot;&gt;
+      SwitchTrack - Calendar&lt;/a&gt; by Adam Jolicoeur (&lt;a href=&quot;https://codepen.io/AdamJolicoeur&quot;&gt;@AdamJolicoeur&lt;/a&gt;)
+      on &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+    &lt;/p&gt;
+    &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+    &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+    &lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+  &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </content>
