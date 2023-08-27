@@ -25,11 +25,6 @@
 	},
 
 	{
-   "title":"prototypes",
-   "imgName":"prototypes"
-	},
-
-	{
    "title":"Alfred Workflows",
    "imgName":"alfred-workflows"
 	},
@@ -37,21 +32,6 @@
 	{
    "title":"Stream Deck examples",
    "imgName":"stream-deck-examples"
-	},
-
-	{
-   "title":"development",
-   "imgName":"development"
-	},
-
-	{
-   "title":"resume",
-   "imgName":"resume"
-	},
-
-	{
-   "title":"designs",
-   "imgName":"designs"
 	},
 
 	{
@@ -65,12 +45,32 @@
 	},
 
 	{
+   "title":"redesign",
+   "imgName":"redesign"
+	},
+
+	{
    "title":"contact",
    "imgName":"contact"
 	},
 
 	{
-   "title":"redesign",
-   "imgName":"redesign"
+   "title":"designs",
+   "imgName":"designs"
+	},
+
+	{
+   "title":"development",
+   "imgName":"development"
+	},
+
+	{
+   "title":"prototypes",
+   "imgName":"prototypes"
+	},
+
+	{
+   "title":"resume",
+   "imgName":"resume"
 	}
 ]
