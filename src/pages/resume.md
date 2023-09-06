@@ -37,7 +37,7 @@ primaryURL: "https://www.adamjolicoeur.com/downloads/resume.pdf"
     <div class="col-md-6">
       <h2 class="mt-0">Senior Software Engineer, UXD</h2>
       <p class="fs-5 my-0">Red Hat, Inc (Westford, MA)</p>
-      <p class="text-body-secondary">December 2018 - August 2021</p>
+      <p class="text-body-secondary">December 2016 - August 2021</p>
       <div class="container-fluid pb-3">
         <span class="badge rounded-pill bg-dark">Sketch</span>
         <span class="badge rounded-pill bg-dark">Adobe XD</span>
