@@ -8127,7 +8127,7 @@ textarea.form-control-lg {
   padding-bottom: 0.5rem !important;
 }
 
-.pb-3 {
+.pb-3, blockquote blockquote > p {
   padding-bottom: 1rem !important;
 }
 
@@ -8251,7 +8251,7 @@ textarea.form-control-lg {
   font-size: calc(1.3rem + 0.6vw) !important;
 }
 
-.fs-4 {
+.fs-4, blockquote > p {
   font-size: calc(1.275rem + 0.3vw) !important;
 }
 
@@ -8259,7 +8259,7 @@ textarea.form-control-lg {
   font-size: 1.25rem !important;
 }
 
-.fs-6 {
+.fs-6, blockquote blockquote > p {
   font-size: 1rem !important;
 }
 
@@ -8275,7 +8275,7 @@ textarea.form-control-lg {
   font-weight: lighter !important;
 }
 
-.fw-light {
+.fw-light, blockquote blockquote > p {
   font-weight: 300 !important;
 }
 
@@ -8436,7 +8436,7 @@ textarea.form-control-lg {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
-.text-body-secondary {
+.text-body-secondary, blockquote blockquote > p {
   --bs-text-opacity: 1;
   color: var(--bs-secondary-color) !important;
 }
@@ -11811,7 +11811,7 @@ textarea.form-control-lg {
   .fs-3 {
     font-size: 1.75rem !important;
   }
-  .fs-4 {
+  .fs-4, blockquote > p {
     font-size: 1.5rem !important;
   }
 }
@@ -11954,6 +11954,20 @@ a.link-secondary {
   text-align: center;
 }
 
+blockquote > p::before {
+  content: "'";
+}
+blockquote > p::after {
+  content: "'";
+}
+
+blockquote blockquote > p::before {
+  content: "- ";
+}
+blockquote blockquote > p::after {
+  content: " -";
+}
+
 .bd-btn-lg {
   border-radius: 0.75rem;
   padding: 1rem 2rem;
@@ -11966,6 +11980,9 @@ a.link-secondary {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  display: flex;
+  min-height: calc(100vh - 135px);
+  flex-direction: column;
 }
 
 .divider-large {

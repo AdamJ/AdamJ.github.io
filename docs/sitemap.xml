@@ -4,7 +4,7 @@
   <url>
     <loc>http://localhost:8080/</loc>
 		
-    <lastmod>2023-08-23T02:14:25Z</lastmod>
+    <lastmod>2023-09-20T14:12:30Z</lastmod>
     
   </url>
   
@@ -79,13 +79,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:8080/design/</loc>
-		
-    <lastmod>2023-08-23T02:14:25Z</lastmod>
-		
-  </url>
-  
-  <url>
     <loc>http://localhost:8080/development/</loc>
 		
     <lastmod>2023-08-23T02:14:25Z</lastmod>
@@ -102,7 +95,21 @@
   <url>
     <loc>http://localhost:8080/resume/</loc>
 		
-    <lastmod>2023-08-23T02:14:25Z</lastmod>
+    <lastmod>2023-09-06T13:54:13Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/designs/</loc>
+		
+    <lastmod>2023-09-06T13:57:52Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/testimonials/testimonials/</loc>
+		
+    <lastmod>2023-09-20T14:12:30Z</lastmod>
 		
   </url>
 </urlset>

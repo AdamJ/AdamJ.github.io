@@ -1,7 +1,8 @@
 ---
 title: "designs"
-abbreviation: "Designs"
-description: "A selection of user journeys and designs."
+abbreviation: "designs"
+description: "Collaborate. Learn. Delight."
+subheader: "Collaboration is the key to understanding and building trust. Intuition guides my initial direction and decisions, which are backed up by learnings from research and testing. Every decision that is made is done with the goal to delight users as they go about completing their tasks."
 eleventyNavigation:
   key: Designs
   order: 2
@@ -39,7 +40,7 @@ eleventyNavigation:
   </div>
 </div>
 
-<!-- AdamJolicoeur.com redesign -->
+<!-- AdamJolicoeur.com redesign
 <div class="container-xxl my-3">
   <div class="card text-center">
     <div class="card-header">
@@ -62,7 +63,7 @@ eleventyNavigation:
     </div>
   </div>
 </div>
-
+-->
 <!-- Switchback TimeTrak and Structure Cloud -->
 <div class="container-xxl py-3 my-3">
   <div class="row px-3 align-items-start">

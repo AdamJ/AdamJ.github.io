@@ -1,6 +1,6 @@
 ---
 title: "about"
-abbreviation: "About"
+abbreviation: "about"
 description: "Driven and passionate senior user experience designer with a background in software development."
 primaryURL: /resume
 primaryAction: resume
@@ -10,15 +10,6 @@ eleventyNavigation:
   order: 1
 ---
 
-<!-- <div class="container-xxl mb-2 py-2 px-md-5">
-  <div class="row px-3 pb-3">
-    <div class="col text-center">
-      <a class="btn btn-info btn-lg rounded-pill" role="button" href="{{ "/resume" | url }}">
-        resume
-      </a>
-    </div>
-  </div>
-</div> -->
 <div class="container-xxl mb-2 py-2 px-md-5">
   <div class="row px-3 pb-3">
     <div class="col-md-6">

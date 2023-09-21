@@ -2,6 +2,10 @@
 title: "Customer Engagement App"
 abbreviation: "customerengagement"
 description: "For this project, I was tasked with improving the overall user experience for tracking customer engagement and marketing campaigns. This project included creating color palettes, new UI components, personas, and user journeys."
+eleventyNavigation:
+  key: Designs
+  parent: Designs
+  order: 2
 ---
 
 <div class="container mb-5">

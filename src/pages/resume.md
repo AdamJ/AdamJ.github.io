@@ -4,6 +4,9 @@ abbreviation: "Resume"
 description: "Adam J. Jolicoeur"
 primaryAction: "Download"
 primaryURL: "https://www.adamjolicoeur.com/downloads/resume.pdf"
+eleventyNavigation:
+  key: Resume
+  parent: About
 ---
 
 <div class="container-xxl mb-2 py-2 px-md-5">

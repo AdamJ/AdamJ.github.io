@@ -14,8 +14,8 @@ description: "make first contact"
         <div class="col-12 col-lg-4">
           <div class="card-body">
             <h5 class="card-title">LinkedIn</h5>
-            <p class="card-text">Connect with me to see who we have in common.</p>
-            <a class="btn btn-dark" href="https://www.linkedin.com/in/ajjolicoeur" target="top" alt="Link to my LinkedIn profile">Connect on LinkedIn</a>
+            <p class="card-text">{{ meta.linkedinDescription }}</p>
+            <a class="btn btn-dark" href="{{ meta.linkedinURL | url }}" target="top" alt="Link to my LinkedIn profile">Connect on LinkedIn</a>
           </div>
         </div>
       </div>
@@ -29,7 +29,7 @@ description: "make first contact"
           <div class="card-body">
             <h5 class="card-title">GitHub</h5>
             <p class="card-text">Follow my work and contributions to the open source community.</p>
-            <a class="btn btn-dark" href="https://github.com/AdamJ" target="top" alt="Link to my GitHub profile">Connect on GitHub</a>
+            <a class="btn btn-dark" href="{{ meta.githubURL | url }}" target="top" alt="Link to my GitHub profile">Connect on GitHub</a>
           </div>
         </div>
       </div>

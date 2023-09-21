@@ -87,3 +87,24 @@ a.link-secondary {
 .text-align-center {
   text-align: center;
 }
+blockquote > p {
+  @extend .fs-4;
+  &::before {
+    content: "'";
+  }
+  &::after {
+    content: "'";
+  }
+}
+blockquote blockquote > p {
+  @extend .fw-light;
+  @extend .fs-6;
+  @extend .text-body-secondary;
+  @extend .pb-3;
+  &::before {
+    content: "- ";
+  }
+  &::after {
+    content: " -";
+  }
+}

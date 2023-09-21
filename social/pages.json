@@ -55,11 +55,6 @@
 	},
 
 	{
-   "title":"designs",
-   "imgName":"designs"
-	},
-
-	{
    "title":"development",
    "imgName":"development"
 	},
@@ -72,5 +67,15 @@
 	{
    "title":"resume",
    "imgName":"resume"
+	},
+
+	{
+   "title":"designs",
+   "imgName":"designs"
+	},
+
+	{
+   "title":"Testimonials",
+   "imgName":"testimonials"
 	}
 ]

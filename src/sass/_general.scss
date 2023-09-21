@@ -3,6 +3,9 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  display: flex;
+  min-height: calc(100vh - 135px);
+  flex-direction: column;
 }
 .divider-large {
   height: 3rem;
