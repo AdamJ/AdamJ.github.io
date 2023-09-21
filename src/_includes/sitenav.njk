@@ -5,18 +5,17 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse d-md-flex" id="navbarNavAltMarkup">
-        {% set navPages = collections.all | eleventyNavigation %}
         <div class="navbar-nav col-md-6 justify-content-md-center">
-          <a class="navbar-brand col-md-1 me-0 text-center" href="/">
+          <a class="navbar-brand col-md-1 me-0 text-center" {% if currentURL === '/' %} aria-current="page" {% endif %} href="/">
             <img src="{{ "/img/navbar-logo.png" | url }}" alt="Avatar" width="32" height="32">
           </a>
-          {%- for entry in navPages %}
-          {# <a class="nav-link" href="{{ entry.url }}" alt="{{entry.description}}">{{ entry.title }}</a> #}
-          <a class="nav-link {{ 'active' if 'entry.title' in entry.url }}" href="{{ entry.url }}" alt="{{ entry.abbreviation }}">{{ entry.title }}</a>
-          {%- endfor %}
+          <a class="nav-link {% if '/about' in page.url %}active{% endif %}" href="/about" alt="Link to my About page.">about</a>
+          <a class="nav-link {% if '/designs' in page.url %}active{% endif %}" href="/designs" alt="Link to Designs that I have created and worked on.">designs</a>
+          <a class="nav-link {% if '/development' in page.url %}active{% endif %}" href="/development" alt="Link to development examples.">development</a>
         </div>
         <div class="navbar-nav d-md-flex col-md-3 justify-content-md-end">
-          <a class="nav-link" href="{{ "/contact" | url }}" alt="Contact me">Contact</a>
+          <a class="nav-link {% if '/testimonials' in page.url %}active{% endif %}" href="{{ "/testimonials/testimonials" | url }}" alt="Testimonials">testimonials</a>
+          <a class="nav-link {% if '/contact' in page.url %}active{% endif %}" href="{{ "/contact" | url }}" alt="Contact me">contact</a>
         </div>
       </div>
     </div>

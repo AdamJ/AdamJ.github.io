@@ -2,6 +2,10 @@
 title: "Application Lifecycle Management"
 abbreviation: "alm"
 description: "A one-stop-shop for a team's planning and project lifecycle management."
+eleventyNavigation:
+  key: Designs
+  parent: Designs
+  order: 1
 ---
 <div class="container mb-5">
   <dl class="row">
