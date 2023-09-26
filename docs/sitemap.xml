@@ -4,29 +4,8 @@
   <url>
     <loc>http://localhost:8080/</loc>
 		
-    <lastmod>2023-09-20T14:12:30Z</lastmod>
+    <lastmod>2023-09-26T18:20:37Z</lastmod>
     
-  </url>
-  
-  <url>
-    <loc>http://localhost:8080/designs/customer-engagement/</loc>
-		
-    <lastmod>2021-07-02T14:45:28Z</lastmod>
-		
-  </url>
-  
-  <url>
-    <loc>http://localhost:8080/designs/district25/</loc>
-		
-    <lastmod>2021-07-02T14:45:28Z</lastmod>
-		
-  </url>
-  
-  <url>
-    <loc>http://localhost:8080/designs/alm/</loc>
-		
-    <lastmod>2021-07-02T15:43:25Z</lastmod>
-		
   </url>
   
   <url>
@@ -51,28 +30,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:8080/designs/timetrak/</loc>
-		
-    <lastmod>2023-08-11T13:26:23Z</lastmod>
-		
-  </url>
-  
-  <url>
-    <loc>http://localhost:8080/about/</loc>
-		
-    <lastmod>2023-08-23T02:14:25Z</lastmod>
-		
-  </url>
-  
-  <url>
     <loc>http://localhost:8080/code/redesign/</loc>
-		
-    <lastmod>2023-08-23T02:14:25Z</lastmod>
-		
-  </url>
-  
-  <url>
-    <loc>http://localhost:8080/contact/</loc>
 		
     <lastmod>2023-08-23T02:14:25Z</lastmod>
 		
@@ -93,23 +51,65 @@
   </url>
   
   <url>
-    <loc>http://localhost:8080/resume/</loc>
+    <loc>http://localhost:8080/about/</loc>
 		
-    <lastmod>2023-09-06T13:54:13Z</lastmod>
+    <lastmod>2023-09-21T18:55:26Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/contact/</loc>
+		
+    <lastmod>2023-09-21T18:55:26Z</lastmod>
 		
   </url>
   
   <url>
     <loc>http://localhost:8080/designs/</loc>
 		
-    <lastmod>2023-09-06T13:57:52Z</lastmod>
+    <lastmod>2023-09-21T18:55:26Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/designs/alm/</loc>
+		
+    <lastmod>2023-09-21T18:55:26Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/designs/customer-engagement/</loc>
+		
+    <lastmod>2023-09-21T18:55:26Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/designs/district25/</loc>
+		
+    <lastmod>2023-09-21T18:55:26Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/designs/timetrak/</loc>
+		
+    <lastmod>2023-09-21T18:55:26Z</lastmod>
 		
   </url>
   
   <url>
     <loc>http://localhost:8080/testimonials/testimonials/</loc>
 		
-    <lastmod>2023-09-20T14:12:30Z</lastmod>
+    <lastmod>2023-09-21T18:55:26Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/resume/</loc>
+		
+    <lastmod>2023-09-26T18:20:37Z</lastmod>
 		
   </url>
 </urlset>

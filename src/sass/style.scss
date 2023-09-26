@@ -7,6 +7,9 @@
 
 $color-mode-type: data;
 
+// importing Font Awesome combined file
+@import "fontawesome.scss";
+
 @import "colors";
 @import "typography";
 @import "variables";

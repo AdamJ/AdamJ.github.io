@@ -5,21 +5,6 @@
 	},
 
 	{
-   "title":"Customer Engagement App",
-   "imgName":"customer-engagement-app"
-	},
-
-	{
-   "title":"District 25 website",
-   "imgName":"district-25-website"
-	},
-
-	{
-   "title":"Application Lifecycle Management",
-   "imgName":"application-lifecycle-management"
-	},
-
-	{
    "title":"Oops! Not Found",
    "imgName":"oops-not-found"
 	},
@@ -35,23 +20,8 @@
 	},
 
 	{
-   "title":"TimeTrak by Switchback",
-   "imgName":"timetrak-by-switchback"
-	},
-
-	{
-   "title":"about",
-   "imgName":"about"
-	},
-
-	{
    "title":"redesign",
    "imgName":"redesign"
-	},
-
-	{
-   "title":"contact",
-   "imgName":"contact"
 	},
 
 	{
@@ -65,8 +35,13 @@
 	},
 
 	{
-   "title":"resume",
-   "imgName":"resume"
+   "title":"about",
+   "imgName":"about"
+	},
+
+	{
+   "title":"contact",
+   "imgName":"contact"
 	},
 
 	{
@@ -75,7 +50,32 @@
 	},
 
 	{
+   "title":"Application Lifecycle Management",
+   "imgName":"application-lifecycle-management"
+	},
+
+	{
+   "title":"Customer Engagement App",
+   "imgName":"customer-engagement-app"
+	},
+
+	{
+   "title":"District 25 website",
+   "imgName":"district-25-website"
+	},
+
+	{
+   "title":"TimeTrak by Switchback",
+   "imgName":"timetrak-by-switchback"
+	},
+
+	{
    "title":"Testimonials",
    "imgName":"testimonials"
+	},
+
+	{
+   "title":"resume",
+   "imgName":"resume"
 	}
 ]

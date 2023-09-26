@@ -67,7 +67,7 @@ eleventyNavigation:
           <ul class="d-flex list-unstyled mt-auto">
             <li class="me-auto">
               <a href="https://aj-design-manual.netlify.app" target="top" alt="Design Manual demo" class="card-link">
-                <i class="fa-sharp fa-solid fa-laptop-binary"></i>
+                <i class="fa-solid fa-laptop"></i>
                 Demo
               </a>
             </li>
@@ -88,7 +88,7 @@ eleventyNavigation:
           <ul class="d-flex list-unstyled mt-auto">
             <li class="me-auto">
               <a href="https://pf4testbench.netlify.app" target="top" alt="Design Manual demo" class="card-link">
-                <i class="fa-sharp fa-solid fa-laptop-binary"></i>
+                <i class="fa-solid fa-laptop"></i>
                 Demo
               </a>
             </li>
@@ -112,7 +112,7 @@ eleventyNavigation:
           <ul class="d-flex list-unstyled mt-auto">
             <li class="me-auto">
               <a href="https://kubevirtio-site.netlify.app" target="top" alt="KubeVirt.io demo" class="card-link">
-                <i class="fa-sharp fa-solid fa-laptop-binary"></i>
+                <i class="fa-solid fa-laptop"></i>
                 Demo
               </a>
             </li>
@@ -133,6 +133,7 @@ eleventyNavigation:
           <ul class="d-flex list-unstyled mt-auto">
             <li class="me-auto">
               <a href="https://www.npmjs.com/package/fabric8-pattern.library" target="_blank" alt="View library on npm" class="card-link">
+                <i class="fa-brands fa-npm"></i>
                 NPM
               </a>
             </li>

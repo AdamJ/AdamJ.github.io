@@ -13,7 +13,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
-  eleventyConfig.addWatchTarget("src/sass/");
+  eleventyConfig.addWatchTarget("src/sass/*.scss");
 
   eleventyConfig.addPassthroughCopy("src/keybase.txt");
   eleventyConfig.addPassthroughCopy("src/fonts");
