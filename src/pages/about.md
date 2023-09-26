@@ -27,7 +27,7 @@ eleventyNavigation:
       <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="{{ "/resume" | url }}">
         Resume
       </a>
-      <i class="fa-sharp fa-regular fa-arrow-right"></i>
+      <i class="fa-solid fa-arrow-right"></i>
     </div>
   </div>
   <hr class="col col-md-6 mb-5">
@@ -59,7 +59,7 @@ eleventyNavigation:
       <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="{{ "/resume" | url }}">
         Resume
       </a>
-      <i class="fa-sharp fa-regular fa-arrow-right"></i>
+      <i class="fa-solid fa-arrow-right"></i>
     </div>
   </div>
   <hr class="col col-md-6 mb-5">
@@ -92,7 +92,7 @@ eleventyNavigation:
       <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="{{ "/resume" | url }}">
         Resume
       </a>
-      <i class="fa-sharp fa-regular fa-arrow-right"></i>
+      <i class="fa-solid fa-arrow-right"></i>
     </div>
   </div>
 </div>
