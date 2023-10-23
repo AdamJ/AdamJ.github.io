@@ -15,15 +15,15 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addWatchTarget("src/sass/*.scss");
 
-  eleventyConfig.addPassthroughCopy("src/keybase.txt");
-  eleventyConfig.addPassthroughCopy("src/fonts");
-  eleventyConfig.addPassthroughCopy("src/webfonts");
   eleventyConfig.addPassthroughCopy("src/img");
-  eleventyConfig.addPassthroughCopy("src/favicon.*");
+  eleventyConfig.addPassthroughCopy("src/webfonts");
   eleventyConfig.addPassthroughCopy("src/cache-polyfill.js");
-  eleventyConfig.addPassthroughCopy("src/sw.js");
+  eleventyConfig.addPassthroughCopy("src/CNAME");
+  eleventyConfig.addPassthroughCopy("src/favicon.*");
   eleventyConfig.addPassthroughCopy("src/faviconData.json");
+  eleventyConfig.addPassthroughCopy("src/keybase.txt");
   eleventyConfig.addPassthroughCopy("src/manifest.json");
+  eleventyConfig.addPassthroughCopy("src/sw.js");
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
   eleventyConfig.addShortcode("packageVersion", () => `v${packageVersion}`);
