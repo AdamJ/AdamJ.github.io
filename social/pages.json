@@ -30,11 +30,6 @@
 	},
 
 	{
-   "title":"contact",
-   "imgName":"contact"
-	},
-
-	{
    "title":"designs",
    "imgName":"designs"
 	},
@@ -65,13 +60,18 @@
 	},
 
 	{
+   "title":"development",
+   "imgName":"development"
+	},
+
+	{
    "title":"about",
    "imgName":"about"
 	},
 
 	{
-   "title":"development",
-   "imgName":"development"
+   "title":"contact",
+   "imgName":"contact"
 	},
 
 	{
