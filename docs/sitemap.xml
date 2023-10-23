@@ -4,7 +4,7 @@
   <url>
     <loc>http://localhost:8080/</loc>
 		
-    <lastmod>2023-09-26T18:20:37Z</lastmod>
+    <lastmod>2023-10-23T14:33:19Z</lastmod>
     
   </url>
   
@@ -37,23 +37,9 @@
   </url>
   
   <url>
-    <loc>http://localhost:8080/development/</loc>
-		
-    <lastmod>2023-08-23T02:14:25Z</lastmod>
-		
-  </url>
-  
-  <url>
     <loc>http://localhost:8080/prototypes/prototypes/</loc>
 		
     <lastmod>2023-08-23T02:14:25Z</lastmod>
-		
-  </url>
-  
-  <url>
-    <loc>http://localhost:8080/about/</loc>
-		
-    <lastmod>2023-09-21T18:55:26Z</lastmod>
 		
   </url>
   
@@ -107,9 +93,23 @@
   </url>
   
   <url>
+    <loc>http://localhost:8080/about/</loc>
+		
+    <lastmod>2023-09-26T18:56:38Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/development/</loc>
+		
+    <lastmod>2023-09-26T18:56:38Z</lastmod>
+		
+  </url>
+  
+  <url>
     <loc>http://localhost:8080/resume/</loc>
 		
-    <lastmod>2023-09-26T18:20:37Z</lastmod>
+    <lastmod>2023-10-23T14:33:19Z</lastmod>
 		
   </url>
 </urlset>

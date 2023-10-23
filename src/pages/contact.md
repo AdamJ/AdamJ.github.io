@@ -6,30 +6,30 @@ description: "make first contact"
 
 <div class="container-xxl mb-2 py-2 px-md-5">
   <div class="row px-3 pb-3 justify-content-between gap-2">
-    <div class="col-12 col-md card mb-3"">
+    <div class="col-12 col-md card mb-3 px-0">
       <div class="row g-0">
-        <div class="col-12 col-lg-8">
-          <img src="{{ "/img/linkedin_card.png" | url }}" class="img-fluid rounded-start" alt="LinkedIn profile image">
-        </div>
         <div class="col-12 col-lg-4">
+          <img src="{{ "/img/headshot-hires.jpg" | url }}" class="img-fluid rounded-start" alt="Headshot image" height="150px" width="234px">
+        </div>
+        <div class="col-12 col-lg-8">
           <div class="card-body">
             <h5 class="card-title">LinkedIn</h5>
             <p class="card-text">{{ meta.linkedinDescription }}</p>
-            <a class="btn btn-dark" href="{{ meta.linkedinURL | url }}" target="top" alt="Link to my LinkedIn profile">Connect on LinkedIn</a>
+            <a class="btn btn-dark" href="{{ meta.linkedinURL | url }}" target="top" alt="Link to my LinkedIn profile">View profile</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-12 col-md card mb-3"">
+    <div class="col-12 col-md card mb-3 px-0">
       <div class="row g-0">
-        <div class="col-12 col-lg-8">
-          <img src="{{ "/img/GitHub_card.png" | url }}" class="img-fluid rounded-start" alt="LinkedIn profile image">
-        </div>
         <div class="col-12 col-lg-4">
+          <img src="{{ "/img/avatar-hires.jpg" | url }}" class="img-fluid rounded-start" alt="Avatar image">
+        </div>
+        <div class="col-12 col-lg-8">
           <div class="card-body">
             <h5 class="card-title">GitHub</h5>
             <p class="card-text">Follow my work and contributions to the open source community.</p>
-            <a class="btn btn-dark" href="{{ meta.githubURL | url }}" target="top" alt="Link to my GitHub profile">Connect on GitHub</a>
+            <a class="btn btn-dark" href="{{ meta.githubURL | url }}" target="top" alt="Link to my GitHub profile">Readme.md</a>
           </div>
         </div>
       </div>
