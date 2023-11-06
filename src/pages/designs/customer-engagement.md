@@ -5,7 +5,7 @@ description: "For this project, I was tasked with improving the overall user exp
 eleventyNavigation:
   key: Designs
   parent: Designs
-  order: 2
+  order: 3
 ---
 
 <div class="container mb-5">

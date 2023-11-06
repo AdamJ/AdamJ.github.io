@@ -58,6 +58,13 @@
   </url>
   
   <url>
+    <loc>http://localhost:8080/designs/task-it/</loc>
+		
+    <lastmod>2023-09-21T18:55:26Z</lastmod>
+		
+  </url>
+  
+  <url>
     <loc>http://localhost:8080/designs/customer-engagement/</loc>
 		
     <lastmod>2023-09-21T18:55:26Z</lastmod>

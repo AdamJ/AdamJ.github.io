@@ -5,7 +5,7 @@ description: "A one-stop-shop for a team's planning and project lifecycle manage
 eleventyNavigation:
   key: Designs
   parent: Designs
-  order: 1
+  order: 2
 ---
 <div class="container mb-5">
   <dl class="row">

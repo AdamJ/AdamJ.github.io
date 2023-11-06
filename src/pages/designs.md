@@ -11,6 +11,22 @@ eleventyNavigation:
 <!-- Application Lifecycle Management -->
 <div class="container-xxl py-3 mt-3 text-bg-light">
   <div class="row px-3 align-items-center">
+    <div class="col-md-6 text-center text-md-start">
+      <h2>Task-It!</h2>
+      <p class="text-body-secondary">One enterprise task management system to rule them all.</p>
+      <a href="/designs/task-it" role="button" class="btn btn-dark icon-link lead" alt="Click to experience the Customer Engagement journey">
+        the journey
+      </a>
+    </div>
+    <div class="col-md-6">
+      <img src="{{ "/img/CEA_Dashboard.png" | url }}" class="d-block mx-lg-auto img-fluid img-thumbnail" alt="Customer Engagement App Dashboard thumbnail" width="700" height="500" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<!-- Application Lifecycle Management -->
+<div class="container-xxl py-3 mt-3">
+  <div class="row px-3 align-items-center">
     <div class="col-md-6">
       <img src="{{ "/img/OSIO-laptop-screen-1200.png" | url }}" class="d-block mx-lg-auto img-fluid" alt="Application Lifecycle Management thumbnail" width="700" height="500" loading="lazy">
     </div>
@@ -25,7 +41,7 @@ eleventyNavigation:
 </div>
 
 <!-- Customer Engagement Application -->
-<div class="container-xxl py-3 mt-3">
+<div class="container-xxl py-3 mt-3 text-bg-light">
   <div class="row px-3 align-items-center">
     <div class="col-md-6 text-center text-md-start">
       <h2>Customer Engagement App</h2>
