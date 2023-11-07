@@ -5,5 +5,5 @@ description: "A website revamp for the 25th Masonic District of Masons in Massac
 eleventyNavigation:
   key: Designs
   parent: Designs
-  order: 4
+  order: 5
 ---
