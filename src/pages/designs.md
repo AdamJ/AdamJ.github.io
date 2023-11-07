@@ -8,24 +8,26 @@ eleventyNavigation:
   order: 2
 ---
 
-<!-- Application Lifecycle Management -->
-<div class="container-xxl py-3 mt-3 text-bg-light">
-  <div class="row px-3 align-items-center">
-    <div class="col-md-6 text-center text-md-start">
-      <h2>Task-It!</h2>
-      <p class="text-body-secondary">One enterprise task management system to rule them all.</p>
-      <a href="/designs/task-it" role="button" class="btn btn-dark icon-link lead" alt="Click to experience the Customer Engagement journey">
-        the journey
-      </a>
+<!-- Task-It! -->
+<div class="container-xxl py-3 mt-3">
+  <div class="position-relative overflow-hidden text-center bg-body-tertiary card-cover rounded" style="background-image: url({{ '/img/task-it_product.png' | url }});">
+    <div class="col p-lg-5" style="background-color: rgba(0, 0, 0, .8); height: 500px;">
+      <div class="position-absolute top-50 start-50 translate-middle">
+        <h1 class="display-3 fw-bold text-white">Task-It!</h1>
+        <h3 class="fw-normal mb-3 text-white">One enterprise task management system to rule them all.</h3>
+        <div class="d-flex gap-3 justify-content-center lead fw-normal">
+          <a href="/designs/task-it" role="button" class="btn btn-dark" alt="Click to experience the Task-It! journey">
+            the journey
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="col-md-6">
-      <img src="{{ "/img/CEA_Dashboard.png" | url }}" class="d-block mx-lg-auto img-fluid img-thumbnail" alt="Customer Engagement App Dashboard thumbnail" width="700" height="500" loading="lazy">
-    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
   </div>
 </div>
-
 <!-- Application Lifecycle Management -->
-<div class="container-xxl py-3 mt-3">
+<div class="container-xxl py-3 mt-5">
   <div class="row px-3 align-items-center">
     <div class="col-md-6">
       <img src="{{ "/img/OSIO-laptop-screen-1200.png" | url }}" class="d-block mx-lg-auto img-fluid" alt="Application Lifecycle Management thumbnail" width="700" height="500" loading="lazy">

@@ -22441,3 +22441,18 @@ footer .footer-right,
   color: inherit;
   text-decoration: underline;
 }
+
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+}
+
+.text-shadow-1 {
+  text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
