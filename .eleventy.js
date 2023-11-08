@@ -10,7 +10,11 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
-  eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(pluginRss, {
+    posthtmlRenderOptions: {
+      closingSingleTag: "default" // opt-out of <img/>-style XHTML single tags
+    }
+  });
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   eleventyConfig.addWatchTarget("src/sass/*.scss");

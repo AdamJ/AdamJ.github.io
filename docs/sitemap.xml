@@ -4,7 +4,7 @@
   <url>
     <loc>http://localhost:8080/</loc>
 		
-    <lastmod>2023-10-23T15:29:28Z</lastmod>
+    <lastmod>2023-11-07T20:00:08Z</lastmod>
     
   </url>
   
@@ -44,48 +44,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:8080/designs/</loc>
-		
-    <lastmod>2023-09-21T18:55:26Z</lastmod>
-		
-  </url>
-  
-  <url>
-    <loc>http://localhost:8080/designs/alm/</loc>
-		
-    <lastmod>2023-09-21T18:55:26Z</lastmod>
-		
-  </url>
-  
-  <url>
-    <loc>http://localhost:8080/designs/task-it/</loc>
-		
-    <lastmod>2023-09-21T18:55:26Z</lastmod>
-		
-  </url>
-  
-  <url>
-    <loc>http://localhost:8080/designs/customer-engagement/</loc>
-		
-    <lastmod>2023-09-21T18:55:26Z</lastmod>
-		
-  </url>
-  
-  <url>
-    <loc>http://localhost:8080/designs/district25/</loc>
-		
-    <lastmod>2023-09-21T18:55:26Z</lastmod>
-		
-  </url>
-  
-  <url>
-    <loc>http://localhost:8080/designs/timetrak/</loc>
-		
-    <lastmod>2023-09-21T18:55:26Z</lastmod>
-		
-  </url>
-  
-  <url>
     <loc>http://localhost:8080/testimonials/testimonials/</loc>
 		
     <lastmod>2023-09-21T18:55:26Z</lastmod>
@@ -117,6 +75,48 @@
     <loc>http://localhost:8080/resume/</loc>
 		
     <lastmod>2023-10-23T15:29:28Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/designs/</loc>
+		
+    <lastmod>2023-11-07T20:00:08Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/designs/alm/</loc>
+		
+    <lastmod>2023-11-07T20:00:08Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/designs/customer-engagement/</loc>
+		
+    <lastmod>2023-11-07T20:00:08Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/designs/district25/</loc>
+		
+    <lastmod>2023-11-07T20:00:08Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/designs/task-it/</loc>
+		
+    <lastmod>2023-11-07T20:00:08Z</lastmod>
+		
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/designs/timetrak/</loc>
+		
+    <lastmod>2023-11-07T20:00:08Z</lastmod>
 		
   </url>
 </urlset>
