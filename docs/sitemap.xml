@@ -1,122 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
-  <url>
-    <loc>http://localhost:8080/</loc>
-		
-    <lastmod>2023-11-08T15:45:26Z</lastmod>
-    
-  </url>
+    <url>
+      <loc>https://www.adamjolicoeur.com/</loc>
+      <lastmod>2021-06-04T15:24:58.930Z</lastmod>
+    </url>
   
-  <url>
-    <loc>http://localhost:8080/404.html</loc>
-		
-    <lastmod>2021-07-20T19:16:41Z</lastmod>
-		
-  </url>
+    <url>
+      <loc>https://www.adamjolicoeur.com/404.html</loc>
+      <lastmod>2021-07-20T19:16:41.416Z</lastmod>
+    </url>
   
-  <url>
-    <loc>http://localhost:8080/alfred/workflows/</loc>
-		
-    <lastmod>2023-07-30T17:28:05Z</lastmod>
-		
-  </url>
+    <url>
+      <loc>https://www.adamjolicoeur.com/alfred/workflows/</loc>
+      <lastmod>2023-07-30T17:28:05.677Z</lastmod>
+    </url>
   
-  <url>
-    <loc>http://localhost:8080/streamdeck/examples/</loc>
-		
-    <lastmod>2023-07-30T17:28:05Z</lastmod>
-		
-  </url>
+    <url>
+      <loc>https://www.adamjolicoeur.com/streamdeck/examples/</loc>
+      <lastmod>2023-07-30T17:28:05.678Z</lastmod>
+    </url>
   
-  <url>
-    <loc>http://localhost:8080/code/redesign/</loc>
-		
-    <lastmod>2023-08-23T02:14:25Z</lastmod>
-		
-  </url>
+    <url>
+      <loc>https://www.adamjolicoeur.com/code/redesign/</loc>
+      <lastmod>2023-08-23T02:14:25.085Z</lastmod>
+    </url>
   
-  <url>
-    <loc>http://localhost:8080/prototypes/prototypes/</loc>
-		
-    <lastmod>2023-08-23T02:14:25Z</lastmod>
-		
-  </url>
+    <url>
+      <loc>https://www.adamjolicoeur.com/prototypes/prototypes/</loc>
+      <lastmod>2023-08-23T02:14:25.085Z</lastmod>
+    </url>
   
-  <url>
-    <loc>http://localhost:8080/testimonials/testimonials/</loc>
-		
-    <lastmod>2023-09-21T18:55:26Z</lastmod>
-		
-  </url>
+    <url>
+      <loc>https://www.adamjolicoeur.com/testimonials/testimonials/</loc>
+      <lastmod>2023-09-21T18:55:26.375Z</lastmod>
+    </url>
   
-  <url>
-    <loc>http://localhost:8080/development/</loc>
-		
-    <lastmod>2023-09-26T18:56:38Z</lastmod>
-		
-  </url>
+    <url>
+      <loc>https://www.adamjolicoeur.com/development/</loc>
+      <lastmod>2023-09-26T18:56:38.549Z</lastmod>
+    </url>
   
-  <url>
-    <loc>http://localhost:8080/about/</loc>
-		
-    <lastmod>2023-10-23T15:29:28Z</lastmod>
-		
-  </url>
+    <url>
+      <loc>https://www.adamjolicoeur.com/about/</loc>
+      <lastmod>2023-10-23T15:29:28.034Z</lastmod>
+    </url>
   
-  <url>
-    <loc>http://localhost:8080/contact/</loc>
-		
-    <lastmod>2023-10-23T15:29:28Z</lastmod>
-		
-  </url>
+    <url>
+      <loc>https://www.adamjolicoeur.com/contact/</loc>
+      <lastmod>2023-10-23T15:29:28.035Z</lastmod>
+    </url>
   
-  <url>
-    <loc>http://localhost:8080/resume/</loc>
-		
-    <lastmod>2023-10-23T15:29:28Z</lastmod>
-		
-  </url>
+    <url>
+      <loc>https://www.adamjolicoeur.com/resume/</loc>
+      <lastmod>2023-10-23T15:29:28.035Z</lastmod>
+    </url>
   
-  <url>
-    <loc>http://localhost:8080/designs/</loc>
-		
-    <lastmod>2023-11-07T20:00:08Z</lastmod>
-		
-  </url>
+    <url>
+      <loc>https://www.adamjolicoeur.com/designs/</loc>
+      <lastmod>2023-11-07T20:00:08.700Z</lastmod>
+    </url>
   
-  <url>
-    <loc>http://localhost:8080/designs/alm/</loc>
-		
-    <lastmod>2023-11-07T20:00:08Z</lastmod>
-		
-  </url>
+    <url>
+      <loc>https://www.adamjolicoeur.com/designs/alm/</loc>
+      <lastmod>2023-11-07T20:00:08.700Z</lastmod>
+    </url>
   
-  <url>
-    <loc>http://localhost:8080/designs/district25/</loc>
-		
-    <lastmod>2023-11-07T20:00:08Z</lastmod>
-		
-  </url>
+    <url>
+      <loc>https://www.adamjolicoeur.com/designs/district25/</loc>
+      <lastmod>2023-11-07T20:00:08.700Z</lastmod>
+    </url>
   
-  <url>
-    <loc>http://localhost:8080/designs/timetrak/</loc>
-		
-    <lastmod>2023-11-07T20:00:08Z</lastmod>
-		
-  </url>
+    <url>
+      <loc>https://www.adamjolicoeur.com/designs/timetrak/</loc>
+      <lastmod>2023-11-07T20:00:08.701Z</lastmod>
+    </url>
   
-  <url>
-    <loc>http://localhost:8080/designs/customer-engagement/</loc>
-		
-    <lastmod>2023-11-08T15:45:26Z</lastmod>
-		
-  </url>
+    <url>
+      <loc>https://www.adamjolicoeur.com/designs/customer-engagement/</loc>
+      <lastmod>2023-11-08T15:45:26.750Z</lastmod>
+    </url>
   
-  <url>
-    <loc>http://localhost:8080/designs/task-it/</loc>
-		
-    <lastmod>2023-11-08T15:45:26Z</lastmod>
-		
-  </url>
+    <url>
+      <loc>https://www.adamjolicoeur.com/designs/task-it/</loc>
+      <lastmod>2023-11-08T15:45:26.750Z</lastmod>
+    </url>
+  
 </urlset>
