@@ -2,10 +2,6 @@
 title: "Task-It!"
 abbreviation: "task"
 description: "One enterprise task management system to rule them all."
-eleventyNavigation:
-  key: Designs
-  parent: Designs
-  order: 1
 ---
 <div class="container mb-5">
   <dl class="row">

@@ -1,6 +1,6 @@
 ---
 title: "Customer Engagement App"
-abbreviation: "customerengagement"
+abbreviation: "cea"
 description: "For this project, I was tasked with improving the overall user experience for tracking customer engagement and marketing campaigns. This project included creating color palettes, new UI components, personas, and user journeys."
 eleventyNavigation:
   key: Designs
