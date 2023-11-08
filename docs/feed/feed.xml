@@ -5,7 +5,7 @@
 	
 	<link href="http://localhost:8080/feed/" rel="self"/>
 	<link href="http://localhost:8080"/>
-	<updated>2023-11-07T20:00:08Z</updated>
+	<updated>2023-11-08T15:45:26Z</updated>
 	<id>http://localhost:8080</id>
 	<author>
 		<name>Adam J. Jolicoeur</name>
@@ -993,9 +993,25 @@
 	</entry>
 	
 	<entry>
+		<title>District 25 website</title>
+		<link href="http://localhost:8080/designs/district25/"/>
+		<updated>2023-11-07T20:00:08Z</updated>
+		<id>http://localhost:8080/designs/district25/</id>
+		<content type="html"></content>
+	</entry>
+	
+	<entry>
+		<title>TimeTrak by Switchback</title>
+		<link href="http://localhost:8080/designs/timetrak/"/>
+		<updated>2023-11-07T20:00:08Z</updated>
+		<id>http://localhost:8080/designs/timetrak/</id>
+		<content type="html"></content>
+	</entry>
+	
+	<entry>
 		<title>Customer Engagement App</title>
 		<link href="http://localhost:8080/designs/customer-engagement/"/>
-		<updated>2023-11-07T20:00:08Z</updated>
+		<updated>2023-11-08T15:45:26Z</updated>
 		<id>http://localhost:8080/designs/customer-engagement/</id>
 		<content type="html">&lt;div class=&quot;container mb-5&quot;&gt;
   &lt;dl class=&quot;row&quot;&gt;
@@ -1075,17 +1091,9 @@
 	</entry>
 	
 	<entry>
-		<title>District 25 website</title>
-		<link href="http://localhost:8080/designs/district25/"/>
-		<updated>2023-11-07T20:00:08Z</updated>
-		<id>http://localhost:8080/designs/district25/</id>
-		<content type="html"></content>
-	</entry>
-	
-	<entry>
 		<title>Task-It!</title>
 		<link href="http://localhost:8080/designs/task-it/"/>
-		<updated>2023-11-07T20:00:08Z</updated>
+		<updated>2023-11-08T15:45:26Z</updated>
 		<id>http://localhost:8080/designs/task-it/</id>
 		<content type="html">&lt;div class=&quot;container mb-5&quot;&gt;
   &lt;dl class=&quot;row&quot;&gt;
@@ -1261,13 +1269,5 @@
   &lt;/div&gt;
 &lt;/div&gt;
 </content>
-	</entry>
-	
-	<entry>
-		<title>TimeTrak by Switchback</title>
-		<link href="http://localhost:8080/designs/timetrak/"/>
-		<updated>2023-11-07T20:00:08Z</updated>
-		<id>http://localhost:8080/designs/timetrak/</id>
-		<content type="html"></content>
 	</entry>
 </feed>

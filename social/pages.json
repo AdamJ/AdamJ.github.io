@@ -65,22 +65,22 @@
 	},
 
 	{
-   "title":"Customer Engagement App",
-   "imgName":"customer-engagement-app"
-	},
-
-	{
    "title":"District 25 website",
    "imgName":"district-25-website"
 	},
 
 	{
-   "title":"Task-It!",
-   "imgName":"task-it"
+   "title":"TimeTrak by Switchback",
+   "imgName":"timetrak-by-switchback"
 	},
 
 	{
-   "title":"TimeTrak by Switchback",
-   "imgName":"timetrak-by-switchback"
+   "title":"Customer Engagement App",
+   "imgName":"customer-engagement-app"
+	},
+
+	{
+   "title":"Task-It!",
+   "imgName":"task-it"
 	}
 ]
