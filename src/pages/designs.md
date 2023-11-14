@@ -58,30 +58,6 @@ eleventyNavigation:
   </div>
 </div>
 
-<!-- AdamJolicoeur.com redesign
-<div class="container-xxl my-3">
-  <div class="card text-center">
-    <div class="card-header">
-      Coming soon!
-    </div>
-    <img src="{{ "/img/AdamJolicoeur_dot_com-minimal.png" | url }}" class="card-img-top" alt="Screenshot of the Figma file for the AdamJolicoeur.com redesign">
-    <div class="card-body">
-      <h5 class="card-title">AdamJolicoeur.com</h5>
-      <p class="card-text">A redesign of my portfolio site with links to Figma designs, GitHub pull requests, and process write-ups (coming soon!).</p>
-    </div>
-    <div class="card-footer text-body-secondary">
-      <div class="d-grid gap-2 d-md-block col-6 mx-auto">
-        <a class="btn btn-secondary" role="button" href="https://www.figma.com/@adamj" target="top" alt="Link to my Figma community profile">
-        <i class="fa-brands fa-figma"></i>
-        Figma</a>
-        <a class="btn btn-secondary" role="button" href="https://github.com/AdamJ/AdamJ.github.io/pull/234" target="top" alt="Link to GitHub pull request">
-        <i class="fa-brands fa-github"></i>
-        GitHub</a>
-      </div>
-    </div>
-  </div>
-</div>
--->
 <!-- Switchback TimeTrak and Structure Cloud -->
 <div class="container-xxl py-3 my-3">
   <div class="row px-3 align-items-start">
@@ -94,6 +70,34 @@ eleventyNavigation:
       <h2>Structure Cloud</h2>
       <p class="text-body-secondary">For this project, I was tasked with converting the UI of a COBOL application into something that would work with the modern web. The task was very challenging, in that one of the main requirements was to keep the layout as close to the original application as possible (in order to minimize the amount of relearning existing users would need to do), while also providing a clean UI that would attract new users to the platform.</p>
       <img src="{{ "/img/SC_demo.png" | url }}" class="d-block mx-lg-auto img-fluid img-thumbnail" alt="Structure Cloud UI screenshot" width="700" height="500" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="container-xxl py-3 mt-3">
+  <div class="row px-3 align-items-center">
+    <div class="col-md-12">
+      <h2>Presentations</h2>
+      <p class="text-body-secondary">I've created many presentations over the years and have transitioned many of them to Figma using the prototyping functionality. Below are a few examples of different presentations.
+      </p>
+    </div>
+  </div>
+  <div class="row align-items-start">
+    <div class="col-md-6 col-lg-4 px-md-3 my-2 my-md-0">
+      <div class="card px-0">
+        <img src="{{ '/img/portfolio/Slide0.png' | url }}" class="card-img-top" alt="Portfolio presentation slide example">
+        <div class="card-body">
+          <a class="card-title" href="/presentations/portfolio/" alt="Link to the portfolio carousel page">Portfolio slide</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4 px-md-3 my-2 my-md-0">
+      <div class="card px-0">
+        <img src="{{ '/img/colorPicker/slide0.png' | url }}" class="card-img-top" alt="Color Picker presentation slide example">
+        <div class="card-body">
+          <a class="card-title" href="/presentations/colorPicker/" alt="Link to the color picker carousel page">Color Picker slide</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
