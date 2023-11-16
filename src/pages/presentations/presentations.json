@@ -1,0 +1,5 @@
+{
+  "layout": "page",
+  "permalink": "/designs/presentations/{{ page.fileSlug }}/",
+  "tags": ["pages, presentations, designs"]
+}

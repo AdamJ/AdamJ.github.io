@@ -30,7 +30,7 @@ eleventyNavigation:
 <div class="container-xxl py-3 mt-5">
   <div class="row px-3 align-items-center">
     <div class="col-md-6">
-      <img src="{{ "/img/OSIO-laptop-screen-1200.png" | url }}" class="d-block mx-lg-auto img-fluid" alt="Application Lifecycle Management thumbnail" width="700" height="500" loading="lazy">
+      <img src="{{ '/img/OSIO-laptop-screen-1200.png' | url }}" class="d-block mx-lg-auto img-fluid" alt="Application Lifecycle Management thumbnail" width="700" height="500" loading="lazy">
     </div>
     <div class="col-md-6 text-center text-md-start">
       <h2>Application Lifecycle Management</h2>
@@ -53,23 +53,39 @@ eleventyNavigation:
       </a>
     </div>
     <div class="col-md-6">
-      <img src="{{ "/img/CEA_Dashboard.png" | url }}" class="d-block mx-lg-auto img-fluid img-thumbnail" alt="Customer Engagement App Dashboard thumbnail" width="700" height="500" loading="lazy">
+      <img src="{{ '/img/CEA_Dashboard.png' | url }}" class="d-block mx-lg-auto img-fluid img-thumbnail" alt="Customer Engagement App Dashboard thumbnail" width="700" height="500" loading="lazy">
     </div>
   </div>
 </div>
 
-<!-- Switchback TimeTrak and Structure Cloud -->
-<div class="container-xxl py-3 my-3">
-  <div class="row px-3 align-items-start">
-    <div class="col-md-6">
+<!-- Switchback TimeTrak -->
+<div class="container-xxl py-3 mt-3">
+  <div class="row px-3 align-items-center">
+    <div class="col-md-6 text-center text-md-start">
       <h2>Switchback TimeTrak</h2>
       <p class="text-body-secondary">The goal of this redesign was to create a simplistic system to easily access recent log entries, active projects, and team calendars. From this dashboard, users can quickly see these items, in addition to providing quick navigation items for in-depth reporting.</p>
-      <img src="../img/Timetrak.png" class="d-block mx-lg-auto img-fluid img-thumbnail" alt="Switchback Timetrak thumbnail" width="700" height="500" loading="lazy">
+      <p class="card-text">
+        <small class="text-body-secondary">Sketch / Bootstrap / Font Awesome</small>
+      </p>
     </div>
     <div class="col-md-6">
+      <img src="{{ '/img/Timetrak.png' | url }}" class="d-block mx-lg-auto img-fluid img-thumbnail" alt="Switchback Timetrak thumbnail" width="700" height="500" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<!-- Structure Cloud -->
+<div class="container-xxl py-3 mt-3">
+  <div class="row px-3 align-items-center">
+    <div class="col-md-6 text-center text-md-start">
       <h2>Structure Cloud</h2>
       <p class="text-body-secondary">For this project, I was tasked with converting the UI of a COBOL application into something that would work with the modern web. The task was very challenging, in that one of the main requirements was to keep the layout as close to the original application as possible (in order to minimize the amount of relearning existing users would need to do), while also providing a clean UI that would attract new users to the platform.</p>
-      <img src="{{ "/img/SC_demo.png" | url }}" class="d-block mx-lg-auto img-fluid img-thumbnail" alt="Structure Cloud UI screenshot" width="700" height="500" loading="lazy">
+      <p class="card-text">
+        <small class="text-body-secondary">Sketch / Font Awesome / Visual Studio</small>
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img src="{{ '/img/SC_demo.png' | url }}" class="d-block mx-lg-auto img-fluid img-thumbnail" alt="Structure Cloud UI screenshot" width="700" height="500" loading="lazy">
     </div>
   </div>
 </div>
@@ -101,7 +117,6 @@ eleventyNavigation:
     </div>
   </div>
 </div>
-
 <!-- Editor themes -->
 <div class="container-xxl py-3 mt-3">
   <div class="row px-3 align-items-center">

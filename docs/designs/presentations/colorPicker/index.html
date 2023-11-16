@@ -5,16 +5,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="@Adam, Adam Jolicoeur, Adam J. Jolicoeur, AdamJ, Jolicoeur, adamjolicoeur.com, www.adamjolicoeur.com, mindreeper2420, Portfolio, Design, UXD, UX Designer, UX Developer, UX Engineer, Design Technologist, CSS" />
-    <title>prototypes | Adam Jolicoeur</title>
+    <title>Color Picker presentation | Adam Jolicoeur</title>
     <meta
       name="description"
-      content="When I work on a design, I prototype as I go. This allows me to see what I&amp;#39;m doing in a working environment, while keeping expectations realistic."
+      content="The portfolio site for Adam Jolicoeur, User Experience Designer and Developer"
     />
     <meta name="generator" content="Eleventy">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="/manifest.json">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#333333">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#333333">
@@ -39,11 +39,11 @@
 
     <meta
       name="og:title"
-      content="prototypes | Adam Jolicoeur"
+      content="Color Picker presentation | Adam Jolicoeur"
     />
     <meta
       name="og:description"
-      content="When I work on a design, I prototype as I go. This allows me to see what I&amp;#39;m doing in a working environment, while keeping expectations realistic."
+      content="The portfolio site for Adam Jolicoeur, User Experience Designer and Developer"
     />
     <meta name="twitter:image" content="https://www.adamjolicoeur.com/img/AdamJolicoeur_social.png" />
     <meta property="og:image" content="https://www.adamjolicoeur.com/img/AdamJolicoeur_social.png" />
@@ -69,7 +69,7 @@
             <img src="/img/navbar-logo.png" alt="Avatar" width="32" height="32">
           </a>
           <a class="nav-link " href="/about" alt="Link to my About page.">about</a>
-          <a class="nav-link " href="/designs" alt="Link to Designs that I have created and worked on.">designs</a>
+          <a class="nav-link active" href="/designs" alt="Link to Designs that I have created and worked on.">designs</a>
           <a class="nav-link " href="/development" alt="Link to development examples.">development</a>
         </div>
         <div class="navbar-nav d-md-flex col-md-3 justify-content-md-end">
@@ -84,74 +84,61 @@
     <main class="content">
       
 <div class="container-xxl intro py-3 px-0 px-md-5 text-center">
-  <h1 class="display-1 fw-bold text-break">prototypes</h1>
+  <h1 class="display-1 fw-bold text-break">Color Picker presentation</h1>
   <p class="sub-header text-break px-2 px-md-0">
-    When I work on a design, I prototype as I go. This allows me to see what I&#39;m doing in a working environment, while keeping expectations realistic.
+    
   </p></div>
 
 <content>
   <div class="container-xxl mb-2 py-2 px-md-5">
   <div class="row px-3">
     <div class="col-12">
-      <h2>
-        Sites
-      </h2>
+      <div id="carouselExample" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/colorPicker/slide0.png" class="d-block w-100" alt="Introduction slide">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/colorPicker/slide1.png" class="d-block w-100" alt="Slide 1">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/colorPicker/slide2.png" class="d-block w-100" alt="Slide 2">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/colorPicker/slide3.png" class="d-block w-100" alt="Slide 3">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/colorPicker/slide4.png" class="d-block w-100" alt="Slide 4">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/colorPicker/slide5.png" class="d-block w-100" alt="Slide 5">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
   </div>
-  <div class="row px-3">
-    <div class="col-12 align-content-start">
-      <h3>PatternFly 4</h3>
-      <p class="text-body-secondary">In support of the 4th release of PatternFly, I worked with a group of designers to create a modern, responsive take on the PatternFly website. Using a responsive layout with SVGs that move with the page, I create clean aesthetic that would flow through the rest of the site.</p>
-      <a class="btn btn-outline-secondary" role="button" href="https://pf4testbench.netlify.app" target="top" alt="Click to view the PatternFly 4 demo site">
-        View PatternFly 4 demo
-      </a>
-    </div>
-    <div class="col-12 align-content-start">
-      <h3>Feature flags</h3>
-      <p class="text-body-secondary">As part of a usability study, I worked with a UX Researcher to test out different variations of a Feature Flag, or notifier, for aspects and pages of an application that are either in a pre-release state, or have an unreleased element in use.</p>
-      <a class="btn btn-outline-secondary" role="button" href="https://www.adamjolicoeur.com/feature-flag-prototype/" target="top" alt="Click to view the Feature Flags demo site">
-        View Feature Flags demo
-      </a>
-    </div>
-  </div>
-</div>
-<div class="container-xxl mb-2 py-2 px-md-5">
   <div class="row px-3">
     <div class="col-12">
-      <h2>Additional examples:</h2>
+      <p class="text-body-secondary">
+        If you would prefer to review the slide deck outside of the carousel, you can do so by visiting the image folder on GitHub: <a class="link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://github.com/AdamJ/AdamJ.github.io/tree/main/docs/img/colorPicker/" target="top" alt="Link to images on GitHub">view images</a>.
+      </p>
     </div>
-  </div>
-  <div class="row px-3">
-    <div class="col">
-      <a href="https://www.adamjolicoeur.com/design-tracker-template/" target="top">Design tracker <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-    <div class="col">
-      <a href="https://www.adamjolicoeur.com/leftnav-prototype/" target="top">Leftnav prototype <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-    </div>
-    <div class="col">
-      <a href="https://www.adamjolicoeur.com/DashboardPrototype/" target="top">Dashboard prototype <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-    </div>
-    <div class="col">
-      <a href="https://www.adamjolicoeur.com/testing_environment/index.html" target="top">Testing environment <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-    </div>
-  </div>
-</div>
-<div class="container-xxl mb-2 py-2 px-3">
-  <h2>
-    CodePens
-  </h2>
-  <p class="text-body-secondary">
-    When I'm trying out new ideas, I'll often go to <a href="https://www.CodePen.io" target="top" alt="Link to CodePen.io">CodePen</a> to "riff" on them, but also to see what is already out there. Below is an example of an app that I've been thinking on. <a class="link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://codepen.io/AdamJolicoeur">See my work on CodePen <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-  </p>
-  <div class="row px-3">
-    <p class="codepen" data-height="550" data-default-tab="result" data-slug-hash="NWjOzwm" data-user="AdamJolicoeur" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-      <span>See the Pen <a href="https://codepen.io/AdamJolicoeur/pen/NWjOzwm">
-      SwitchTrack - Calendar</a> by Adam Jolicoeur (<a href="https://codepen.io/AdamJolicoeur">@AdamJolicoeur</a>)
-      on <a href="https://codepen.io">CodePen</a>.</span>
-    </p>
-    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-  </div>
   </div>
 </div>
 
