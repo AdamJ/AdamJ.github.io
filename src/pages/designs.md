@@ -103,7 +103,7 @@ eleventyNavigation:
       <div class="card px-0">
         <img src="{{ '/img/portfolio/Slide0.png' | url }}" class="card-img-top" alt="Portfolio presentation slide example">
         <div class="card-body">
-          <a class="card-title" href="/presentations/portfolio/" alt="Link to the portfolio carousel page">Portfolio slide</a>
+          <a class="card-title" href="/designs/presentations/portfolio/" alt="Link to the portfolio carousel page">Portfolio slide</a>
         </div>
       </div>
     </div>
@@ -111,7 +111,7 @@ eleventyNavigation:
       <div class="card px-0">
         <img src="{{ '/img/colorPicker/slide0.png' | url }}" class="card-img-top" alt="Color Picker presentation slide example">
         <div class="card-body">
-          <a class="card-title" href="/presentations/colorPicker/" alt="Link to the color picker carousel page">Color Picker slide</a>
+          <a class="card-title" href="/designs/presentations/colorPicker/" alt="Link to the color picker carousel page">Color Picker slide</a>
         </div>
       </div>
     </div>
