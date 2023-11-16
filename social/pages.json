@@ -82,5 +82,15 @@
 	{
    "title":"Task-It!",
    "imgName":"task-it"
+	},
+
+	{
+   "title":"Portfolio presentation",
+   "imgName":"portfolio-presentation"
+	},
+
+	{
+   "title":"Color Picker presentation",
+   "imgName":"color-picker-presentation"
 	}
 ]
