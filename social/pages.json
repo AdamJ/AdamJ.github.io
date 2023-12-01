@@ -5,11 +5,6 @@
 	},
 
 	{
-   "title":"Oops! Not Found",
-   "imgName":"oops-not-found"
-	},
-
-	{
    "title":"Alfred Workflows",
    "imgName":"alfred-workflows"
 	},
@@ -92,5 +87,10 @@
 	{
    "title":"Portfolio presentation",
    "imgName":"portfolio-presentation"
+	},
+
+	{
+   "title":"Oops! Not Found",
+   "imgName":"oops-not-found"
 	}
 ]

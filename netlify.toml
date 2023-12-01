@@ -18,3 +18,14 @@
     from = "/feed/"
     to = "/feed/feed.xml"
     status = 200
+
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+  # optional, deploy the lighthouse report to a path under your site
+  [plugins.inputs.audits]
+    output_path = "reports/lighthouse.html"
+
+  # to audit a specific absolute url
+  [[plugins.inputs.audits]]
+    url = "https://www.adamjolicoeur.com"
