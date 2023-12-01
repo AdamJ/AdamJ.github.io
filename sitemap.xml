@@ -7,11 +7,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/404.html</loc>
-      <lastmod>2021-07-20T19:16:41.416Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/alfred/workflows/</loc>
       <lastmod>2023-07-30T17:28:05.677Z</lastmod>
     </url>
@@ -94,6 +89,11 @@
     <url>
       <loc>https://www.adamjolicoeur.com/designs/presentations/portfolio/</loc>
       <lastmod>2023-11-16T21:52:31.745Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/404.html</loc>
+      <lastmod>2023-12-01T16:30:13.175Z</lastmod>
     </url>
   
 </urlset>
