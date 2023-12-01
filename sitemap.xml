@@ -57,11 +57,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/designs/</loc>
-      <lastmod>2023-11-07T20:00:08.700Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/designs/alm/</loc>
       <lastmod>2023-11-07T20:00:08.700Z</lastmod>
     </url>
@@ -87,13 +82,18 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/designs/presentations/portfolio/</loc>
-      <lastmod>2023-11-14T14:53:29.426Z</lastmod>
+      <loc>https://www.adamjolicoeur.com/designs/</loc>
+      <lastmod>2023-11-16T21:52:31.744Z</lastmod>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/designs/presentations/colorPicker/</loc>
-      <lastmod>2023-11-14T15:11:38.682Z</lastmod>
+      <lastmod>2023-11-16T21:52:31.744Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/designs/presentations/portfolio/</loc>
+      <lastmod>2023-11-16T21:52:31.745Z</lastmod>
     </url>
   
 </urlset>
