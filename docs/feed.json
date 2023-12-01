@@ -11,17 +11,24 @@
   },
   "items": [
     {
-      "id": "https://www.adamjolicoeur.com/designs/presentations/colorPicker/",
-      "url": "https://www.adamjolicoeur.com/designs/presentations/colorPicker/",
-      "title": "Color Picker presentation",
-      "date_published": "2023-11-14T15:11:38Z"
-    }
-    ,
-    {
       "id": "https://www.adamjolicoeur.com/designs/presentations/portfolio/",
       "url": "https://www.adamjolicoeur.com/designs/presentations/portfolio/",
       "title": "Portfolio presentation",
-      "date_published": "2023-11-14T14:53:29Z"
+      "date_published": "2023-11-16T21:52:31Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/designs/presentations/colorPicker/",
+      "url": "https://www.adamjolicoeur.com/designs/presentations/colorPicker/",
+      "title": "Color Picker presentation",
+      "date_published": "2023-11-16T21:52:31Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/designs/",
+      "url": "https://www.adamjolicoeur.com/designs/",
+      "title": "designs",
+      "date_published": "2023-11-16T21:52:31Z"
     }
     ,
     {
@@ -56,13 +63,6 @@
       "id": "https://www.adamjolicoeur.com/designs/alm/",
       "url": "https://www.adamjolicoeur.com/designs/alm/",
       "title": "Application Lifecycle Management",
-      "date_published": "2023-11-07T20:00:08Z"
-    }
-    ,
-    {
-      "id": "https://www.adamjolicoeur.com/designs/",
-      "url": "https://www.adamjolicoeur.com/designs/",
-      "title": "designs",
       "date_published": "2023-11-07T20:00:08Z"
     }
     ,
