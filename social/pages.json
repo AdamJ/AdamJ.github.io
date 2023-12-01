@@ -55,11 +55,6 @@
 	},
 
 	{
-   "title":"designs",
-   "imgName":"designs"
-	},
-
-	{
    "title":"Application Lifecycle Management",
    "imgName":"application-lifecycle-management"
 	},
@@ -85,12 +80,17 @@
 	},
 
 	{
-   "title":"Portfolio presentation",
-   "imgName":"portfolio-presentation"
+   "title":"designs",
+   "imgName":"designs"
 	},
 
 	{
    "title":"Color Picker presentation",
    "imgName":"color-picker-presentation"
+	},
+
+	{
+   "title":"Portfolio presentation",
+   "imgName":"portfolio-presentation"
 	}
 ]
