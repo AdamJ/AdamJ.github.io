@@ -11,6 +11,20 @@ $blue-700: #2f5373;
 $blue-800: #1b314a;
 $blue-900: #0c1621;
 
+:root {
+  --grey-base: #212529;
+  --grey-10: color-mix(in srgb, var(--grey-base), #fff 10%);
+  --grey-20: color-mix(in srgb, var(--grey-base), #fff 20%);
+  --grey-30: color-mix(in srgb, var(--grey-base), #fff 30%);
+  --grey-40: color-mix(in srgb, var(--grey-base), #fff 40%);
+  --grey-50: color-mix(in srgb, var(--grey-base), #fff 50%);
+  --grey-60: color-mix(in srgb, var(--grey-base), #fff 60%);
+  --grey-70: color-mix(in srgb, var(--grey-base), #fff 70%);
+  --grey-80: color-mix(in srgb, var(--grey-base), #fff 80%);
+  --grey-90: color-mix(in srgb, var(--grey-base), #fff 90%);
+  --grey-100: color-mix(in srgb, var(--grey-base), #fff 100%);
+}
+
 // grey
 $grey-100: #f8f8f8;
 $grey-200: #e3e3e3;

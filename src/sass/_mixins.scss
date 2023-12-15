@@ -18,6 +18,9 @@
 @mixin font-family-work {
   font-family: 'Work Sans', sans-serif;
 }
+@mixin letter-spacing($size: 0) {
+  letter-spacing: $size;
+}
 
 // font weight
 
@@ -50,7 +53,7 @@
 
   @each $position, $option in meta.keywords($args) {
     .text-align-#{$position} {
-      text-align: $option;
+      text-align: $option !important;
     }
   }
 }
@@ -64,7 +67,7 @@
 
   @each $size, $option in meta.keywords($args) {
     .font-size-#{$size} {
-      font-size: $option;
+      font-size: $option !important;
     }
   }
 }
@@ -75,7 +78,7 @@
 
   @each $decoration, $option in meta.keywords($args) {
     .text-#{$decoration} {
-      text-decoration: $option;
+      text-decoration: $option !important;
     }
   }
 }
@@ -86,7 +89,7 @@
 
   @each $transform, $option in meta.keywords($args) {
     .text-transform-#{$transform} {
-      text-transform: $option;
+      text-transform: $option !important;
     }
   }
 }
@@ -97,7 +100,7 @@
 
   @each $style, $styles in meta.keywords($args) {
     .font-style-#{$style} {
-      font-style: $styles;
+      font-style: $styles !important;
     }
   }
 }
@@ -122,16 +125,16 @@
 
   @each $size, $spacer in meta.keywords($args) {
     .margin-#{$size} {
-      margin: $spacer;
+      margin: $spacer !important;
     }
     .margin-top-#{$size} {
-      margin-right: $spacer;
+      margin-right: $spacer !important;
     }
     .margin-bottom-#{$size} {
-      margin-bottom: $spacer;
+      margin-bottom: $spacer !important;
     }
     .margin-left-#{$size} {
-      margin-left: $spacer;
+      margin-left: $spacer !important;
     }
   }
 }
@@ -143,16 +146,16 @@
 
   @each $size, $spacer in meta.keywords($args) {
     .padding-#{$size} {
-      padding: $spacer;
+      padding: $spacer !important;
     }
     .padding-top-#{$size} {
-      padding-right: $spacer;
+      padding-right: $spacer !important;
     }
     .padding-bottom-#{$size} {
-      padding-bottom: $spacer;
+      padding-bottom: $spacer !important;
     }
     .padding-left-#{$size} {
-      padding-left: $spacer;
+      padding-left: $spacer !important;
     }
   }
 }
@@ -180,7 +183,7 @@
 @mixin display($args...) {
   @each $type, $types in meta.keywords($args) {
     .display-#{$type} {
-      padding: $types;
+      padding: $types !important;
     }
   }
 }

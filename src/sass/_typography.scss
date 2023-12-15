@@ -1,72 +1,57 @@
 @use "colors";
 
+@include color-mode(dark) {
+  h1, h2, h3, p, small {
+    color: var(--grey-100);
+  }
+  h4 {
+    color: var(--grey-70);
+  }
+}
+body{
+  @include font-family;
+}
+h1, h2, h3, h4, p, small {
+  @include font-weight(400);
+
+  color: var(--grey-10);
+}
+h1, h2, h3, h4 {
+  @include letter-spacing(0);
+}
+h1, h2, h3, h4 {
+  @include margin-top(16px);
+  @include margin-right(0);
+  @include margin-bottom(16px);
+  @include margin-left(0);
+}
+h1 {
+  @include font-size(40px);
+}
+h2 {
+  @include font-size(32px);
+}
+h3 {
+  @include font-size(24px);
+}
+h4 {
+  @include font-size(20px);
+  @include margin-bottom(8px);
+
+  color: rgba(0, 0, 0, 60%);
+}
 .sub-header {
   @include font-family-work;
   @include font-weight(400);
   @include font-size(24px);
   @extend .text-transform-uppercase;
-
-  letter-spacing: 1.6px;
+  @include letter-spacing(1.6px);
   line-height: normal;
 }
-
-@include color-mode(dark) {
-  h1, h2, h3, h4, p, small {
-    color: var(--color-white);
-  }
-  h4 {
-    color: var(--color-grey-300);
-  }
-}
-h1, h2, h3, h4, p, small {
-  @include font-family;
-  @include font-weight(400);
-
-  color: var(--color-grey-900);
-}
-h1 {
-  @include font-size(40px);
-  @include margin-top(16px);
-  @include margin-right(0);
-  @include margin-bottom(16px);
-  @include margin-left(0);
-
-  letter-spacing: 0;
-}
-h2 {
-  @include font-size(32px);
-  @include margin-top(16px);
-  @include margin-right(0);
-  @include margin-bottom(16px);
-  @include margin-left(0);
-
-  letter-spacing: 0;
-}
-h3 {
-  @include font-size(24px);
-  @include margin-top(16px);
-  @include margin-right(0);
-  @include margin-bottom(16px);
-  @include margin-left(0);
-
-  letter-spacing: 0;
-}
-h4 {
-  @include font-size(20px);
-  @include margin-top(0px);
-  @include margin-right(0);
-  @include margin-bottom(8px);
-  @include margin-left(0);
-
-  letter-spacing: 0;
-  color: rgba(0, 0, 0, 60%);
-}
-
 .paragraph,
 p {
-  @extend .font-size-md;
-
-  letter-spacing: 0.80px;
+  @include font-size(16px);
+  @include letter-spacing(.8px);
 }
 .paragraph-bold,
 .bold,
@@ -76,20 +61,25 @@ p.bold {
 small,
 .small {
   @include font-size(14px);
+  @include letter-spacing(0);
+}
+ul > li,
+.icon-list > li,
+dd, dt {
+  @include letter-spacing(.8px);
 
-  letter-spacing: 0;
+  color: var(--grey-10);
 }
 code,
 .code {
   @include font-family-mono;
   @include font-weight(400);
   @include font-size;
-
-  letter-spacing: 0
+  @include letter-spacing(0);
 }
 .footer-link {
   color: var(--link-color-primary);
-  &:hover, &:active {
+  &:is(:hover, :active) {
     color: var(--link-color-primary-hover);
   }
 }
@@ -99,9 +89,9 @@ a.link-secondary {
   @include font-weight(700);
   @include font-size;
   @extend .font-style-normal;
+  @include letter-spacing(.8px);
 
   line-height: normal;
-  letter-spacing: .8px;
 }
 blockquote > p {
   @extend .fs-4;
