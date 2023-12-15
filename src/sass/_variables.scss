@@ -1,21 +1,11 @@
 @import "colors";
 
 $fa-font-path: "../webfonts";
-//
-// Baseline sizing information
-// * starts at 16px as the default
-//
 $size-base: 16px;
-$size-sm: calc($size-base / 8); // 2px
-$size-md: calc($size-base / 4); // 4px
-$size-lg: calc($size-base / 2); // 8px
-$size-xxl: calc($size-base * 1.5 ); // 24px
-$size-xxxl: calc($size-base * 2); // 32px
-$size-xxxxl: calc($size-base * 4); // 64px
 
+// colors
 $color-primary: $blue-700;
 $color-secondary: $white;
-
 $background-color-default: $white;
 $background-color-highlight: $grey-100;
 $border-color-default: $grey-200;
@@ -24,13 +14,4 @@ $icon-default: $grey-600;
 $text-body-default: $grey-900;
 $text-body-light: $black-opacity-60;
 
-$font-size-base: calc($size-base * 1);
-$border-radius-base: calc($size-base / 4); // 16px / 4 = 4px
-
-$spacing-size-sm: $size-sm;
-$spacing-size-md: $size-md;
-$spacing-size-lg: $size-lg;
-$spacing-size-xl: $size-base; // 16px
-$spacing-size-xxl: $size-xxl;
-$spacing-size-xxxl: $size-xxxl;
-$spacing-size-xxxxl: $size-xxxxl;
+// scss-docs-end spacer-variables-maps

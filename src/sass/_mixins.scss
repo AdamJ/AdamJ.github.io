@@ -1,0 +1,188 @@
+@use "sass:list";
+@use "sass:map";
+@use "sass:meta";
+
+/* stylelint-disable custom-property-pattern */
+// used to reset elements to their defaults
+
+// font family
+@mixin font-family {
+  font-family: 'PT Sans', sans-serif;
+}
+@mixin font-family-mono {
+  font-family: 'PT Mono', monospace;
+}
+@mixin font-family-open {
+  font-family: 'Open Sans', sans-serif;
+}
+@mixin font-family-work {
+  font-family: 'Work Sans', sans-serif;
+}
+
+// font weight
+
+/*
+ heavy: 700;
+ bold: 600;
+ medium: 500;
+ regular: 400; set as the default
+ light: 300;
+*/
+@mixin font-weight($size: 400) {
+  font-weight: $size;
+}
+
+// border radius
+@mixin border-radius($args...) {
+  @debug meta.keywords($args);
+
+  @each $size, $option in meta.keywords($args) {
+    .border-radius-#{$size} {
+      border-radius: $option;
+    }
+  }
+}
+
+// text align
+
+@mixin text-align($args...) {
+  @debug meta.keywords($args);
+
+  @each $position, $option in meta.keywords($args) {
+    .text-align-#{$position} {
+      text-align: $option;
+    }
+  }
+}
+
+// font size
+@mixin font-size($size: 16px) {
+  font-size: $size;
+}
+@mixin text-size($args...) {
+  @debug meta.keywords($args);
+
+  @each $size, $option in meta.keywords($args) {
+    .font-size-#{$size} {
+      font-size: $option;
+    }
+  }
+}
+
+// text decoration
+@mixin text-decoration($args...) {
+  @debug meta.keywords($args);
+
+  @each $decoration, $option in meta.keywords($args) {
+    .text-#{$decoration} {
+      text-decoration: $option;
+    }
+  }
+}
+
+// text transform
+@mixin text-transform($args...) {
+  @debug meta.keywords($args);
+
+  @each $transform, $option in meta.keywords($args) {
+    .text-transform-#{$transform} {
+      text-transform: $option;
+    }
+  }
+}
+
+// font styles
+@mixin font-style($args...) {
+  @debug meta.keywords($args);
+
+  @each $style, $styles in meta.keywords($args) {
+    .font-style-#{$style} {
+      font-style: $styles;
+    }
+  }
+}
+
+// margins that are flexible
+@mixin margin-top($size: 16) {
+  margin-top: $size;
+}
+@mixin margin-right($size: 16) {
+  margin-right: $size;
+}
+@mixin margin-bottom($size: 16) {
+  margin-bottom: $size;
+}
+@mixin margin-left($size: 16) {
+  margin-left: $size;
+}
+
+// margin
+@mixin margin-size($args...) {
+  @debug meta.keywords($args);
+
+  @each $size, $spacer in meta.keywords($args) {
+    .margin-#{$size} {
+      margin: $spacer;
+    }
+    .margin-top-#{$size} {
+      margin-right: $spacer;
+    }
+    .margin-bottom-#{$size} {
+      margin-bottom: $spacer;
+    }
+    .margin-left-#{$size} {
+      margin-left: $spacer;
+    }
+  }
+}
+
+// padding
+
+@mixin padding-size($args...) {
+  @debug meta.keywords($args);
+
+  @each $size, $spacer in meta.keywords($args) {
+    .padding-#{$size} {
+      padding: $spacer;
+    }
+    .padding-top-#{$size} {
+      padding-right: $spacer;
+    }
+    .padding-bottom-#{$size} {
+      padding-bottom: $spacer;
+    }
+    .padding-left-#{$size} {
+      padding-left: $spacer;
+    }
+  }
+}
+
+// list styling
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin horizontal-list {
+  @include reset-list;
+
+  li {
+    display: inline-block;
+    margin: {
+      left: -2px;
+      right: 2em;
+    }
+  }
+}
+
+@mixin display($args...) {
+  @each $type, $types in meta.keywords($args) {
+    .display-#{$type} {
+      padding: $types;
+    }
+  }
+}
+
+/* stylelint-enable */

@@ -1,91 +1,107 @@
+@use "colors";
+
 .sub-header {
-  font-family: "Work Sans";
-  font-weight: 400;
-  font-size: 24px;
+  @include font-family-work;
+  @include font-weight(400);
+  @include font-size(24px);
+  @extend .text-transform-uppercase;
+
   letter-spacing: 1.6px;
   line-height: normal;
-  text-transform: uppercase;
 }
 
 @include color-mode(dark) {
   h1, h2, h3, h4, p, small {
-    color: $white;
+    color: var(--color-white);
   }
   h4 {
-    color: #adadad;
+    color: var(--color-grey-300);
   }
 }
 h1, h2, h3, h4, p, small {
-  font-family: "PT Sans";
-  font-weight: 400;
-  color: #010101;
+  @include font-family;
+  @include font-weight(400);
+
+  color: var(--color-grey-900);
 }
 h1 {
-  font-size: 36px;
+  @include font-size(40px);
+  @include margin-top(16px);
+  @include margin-right(0);
+  @include margin-bottom(16px);
+  @include margin-left(0);
+
   letter-spacing: 0;
-  margin: 16px 0;
 }
 h2 {
-  font-size: 32px;
+  @include font-size(32px);
+  @include margin-top(16px);
+  @include margin-right(0);
+  @include margin-bottom(16px);
+  @include margin-left(0);
+
   letter-spacing: 0;
-  margin: 16px 0;
 }
 h3 {
-  font-size: 24px;
+  @include font-size(24px);
+  @include margin-top(16px);
+  @include margin-right(0);
+  @include margin-bottom(16px);
+  @include margin-left(0);
+
   letter-spacing: 0;
-  margin: 16px 0;
 }
 h4 {
-  font-size: 20px;
+  @include font-size(20px);
+  @include margin-top(0px);
+  @include margin-right(0);
+  @include margin-bottom(8px);
+  @include margin-left(0);
+
   letter-spacing: 0;
-  margin: 0 0 8px 0;
-  color: rgba(0, 0, 0, 0.60);
+  color: rgba(0, 0, 0, 60%);
 }
 
 .paragraph,
 p {
-  font-size: 16px;
+  @extend .font-size-md;
+
   letter-spacing: 0.80px;
 }
 .paragraph-bold,
 .bold,
 p.bold {
-  font-weight: 700;
+  @include font-weight(700);
 }
 small,
 .small {
-  font-size: 14px;
+  @include font-size(14px);
+
   letter-spacing: 0;
 }
 code,
 .code {
-  font-family: "PT Mono";
-  font-weight: 400;
-  font-size: 16px;
+  @include font-family-mono;
+  @include font-weight(400);
+  @include font-size;
+
   letter-spacing: 0
 }
 .footer-link {
-  font-weight: 700;
-  letter-spacing: .8px;
-  color: #02769B;
-  text-decoration-line: underline;
-  text-underline-offset: .25em;
+  color: var(--link-color-primary);
   &:hover, &:active {
-    color: #004b63;
-    font-weight: 900;
+    color: var(--link-color-primary-hover);
   }
 }
 .link-secondary,
 a.link-secondary {
-  font-family: "PT Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
+  @include font-family;
+  @include font-weight(700);
+  @include font-size;
+  @extend .font-style-normal;
+
   line-height: normal;
   letter-spacing: .8px;
-}
-.text-align-center {
-  text-align: center;
 }
 blockquote > p {
   @extend .fs-4;

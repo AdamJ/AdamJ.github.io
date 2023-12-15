@@ -1,20 +1,14 @@
+/* stylelint-disable */
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
-
-:root,
-[data-bs-theme=light] {
-  --bs-font-sans-serif: "PT Sans", "Open Sans", "Work Sans";
-}
-
-$color-mode-type: data;
-
 // importing Font Awesome combined file
 @import "fontawesome.scss";
-
-@import "colors";
-@import "typography";
+/* stylelint-enable */
+$color-mode-type: data;
 @import "variables";
-
+@import "mixins";
+@import "colors";
+@import "helpers";
+@import "typography";
 @import "buttons";
 @import "general";
-
 @import "cards";
