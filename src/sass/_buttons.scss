@@ -1,6 +1,7 @@
 .bd-btn-lg {
-  border-radius: .75rem;
+  @extend .border-radius-sm;
+  @include font-weight(700);
+  @extend .font-size-xl;
+
   padding: 1rem 2rem;
-  font-weight: 700;
-  font-size: 1.5rem;
 }

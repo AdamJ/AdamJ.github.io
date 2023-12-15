@@ -9,9 +9,11 @@
   "main": "index.js",
   "scripts": {
     "stylelint": "npx stylelint '**/*.scss'",
+    "stylelint:fix": "npx stylelint --fix `src/sass/style.scss`",
     "watch:sass": "sass --no-source-map --watch src/sass:docs/css",
     "watch:eleventy": "eleventy --serve --port=8081",
-    "build:sass-site": "sass --no-source-map src/sass/style.scss docs/css/style.css",
+    "build:sass-nomap": "sass --no-source-map src/sass/style.scss docs/css/style.css",
+    "build:sass-site": "sass src/sass/style.scss docs/css/style.css",
     "build:sass": "npm-run-all --parallel build:sass-site",
     "build:eleventy": "eleventy",
     "postbuild": "postcss docs/css/*.css -u autoprefixer cssnano -r",
@@ -47,10 +49,10 @@
     "markdown-it-eleventy-img": "^0.10.1",
     "npm-run-all": "4.1.5",
     "postcss-cli": "10.1.0",
-    "sass": "1.63.2",
-    "stylelint": "^15.7.0",
-    "stylelint-config-standard-scss": "^9.0.0",
-    "stylelint-order": "^6.0.3"
+    "sass": "1.69.5",
+    "stylelint": "15.11.0",
+    "stylelint-config-standard-scss": "11.1.0",
+    "stylelint-order": "6.0.3"
   },
   "browserslist": [
     "last 2 versions"

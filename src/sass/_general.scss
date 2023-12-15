@@ -1,9 +1,10 @@
 .content {
+  @extend .display-flex;
+
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  display: flex;
   min-height: calc(100vh - 135px);
   flex-direction: column;
 }
@@ -15,18 +16,23 @@
   box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, 10%), inset 0 .125em .5em rgba(0, 0, 0, 15%);
 }
 .navbar {
-  background-color: #010101;
+  background-color: var(color-grey-900);
 }
 footer,
 .footer {
-  display: flex;
-  padding: 16px 24px;
+  @extend .display-flex;
+  @include padding-top(16px);
+  @include padding-right(24px);
+  @include padding-bottom(16px);
+  @include padding-left(24px);
+
   align-items: center;
   gap: 16px;
   align-self: stretch;
   border-top: 1px solid #E3E3E3;
   .footer-left {
-    display: flex;
+    @extend .display-flex;
+
     align-items: center;
     align-content: center;
     flex: 1 0 0;
@@ -34,7 +40,8 @@ footer,
     color: #212529;
   }
   .footer-right {
-    display: flex;
+    @extend .display-flex;
+
     justify-content: flex-end;
     align-items: center;
     gap: 24px;
@@ -42,69 +49,83 @@ footer,
   }
 }
 .button-overlay {
-  display: flex;
+  @extend .display-flex;
+
   flex-direction: column;
   justify-content: center;
 }
 .overlay {
-  display: flex;
+  @extend .display-flex;
+
   justify-content: center;
   align-items: center;
   height: 500px;
   min-height: 500px;
-  background:rgba(0,0,0, .8);
+  background:rgba(0,0,0, 80%);
   background-repeat: no-repeat;
   background-size: contain;
 }
 .imager {
-  background: url(../img/dashboard_minimal.png);
+  @include padding-right(0);
+  @include padding-left(0);
+
+  background: url('../img/dashboard_minimal.png');
   background-size: cover;
-  padding-right: 0;
-  padding-left: 0;
 }
 .portfolio-img-background {
-  background: url(../img/AdamJolicoeur_dot_com-minimal.png);
+  @include padding-right(0);
+  @include padding-left(0);
+
+  background: url('../img/AdamJolicoeur_dot_com-minimal.png');
   background-size: cover;
-  padding-right: 0;
-  padding-left: 0;
 }
 .paragraph-inset {
-  padding: 0 16px;
+  @include padding-top(0);
+  @include padding-right(16px);
+  @include padding-bottom(0);
+  @include padding-left(16px);
 }
 
 .text-value-pairs {
-  display: flex;
-  padding: 0 16px;
+  @extend .display-flex;
+  @include padding-top(0);
+  @include padding-right(16px);
+  @include padding-bottom(0);
+  @include padding-left(16px);
+
   justify-content: space-between;
   align-items: center;
-  align-content: center;
   row-gap: 8px;
   align-self: stretch;
   flex-wrap: wrap;
 }
 .job {
+  @include font-family;
+  @include font-weight(400);
+
   align-self: stretch;
-  font-family: PT Sans;
-  font-weight: 400;
   word-wrap: break-word;
   &--company-name {
-    margin-bottom: 8px;
+    @include margin-bottom(8px);
   }
   &--company-role {
-    color: rgba(0, 0, 0, 0.60);
-    margin-bottom: 8px;
+    @include margin-bottom(8px);
+
+    color: rgba(0, 0, 0, 60%);
   }
   &--company-dates {
-    color: rgba(0, 0, 0, 0.60);
-    margin-bottom: 0;
+    @include margin-bottom(0);
+
+    color: rgba(0, 0, 0, 60%);
   }
 }
 .column-list-item {
+  @include font-family;
+  @include font-weight(400);
+  @include margin-bottom(0);
+
   align-self: stretch;
-  font-family: PT Sans;
-  font-weight: 400;
   word-wrap: break-word;
-  margin-bottom: 0;
 }
 .card-transform {
   transform: translateZ(0);
@@ -121,10 +142,11 @@ footer,
   background-size: cover;
 }
 .card-link {
-  color: $white;
-  font-size: 14px;
+  @include font-size(14px);
+
+  color: var(--color-white);
   & > i {
-    color: #ffffff !important;
+    color: var(--color-white) !important;
   }
   &:hover {
     color: inherit;
