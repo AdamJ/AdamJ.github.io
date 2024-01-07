@@ -66,6 +66,8 @@ eleventyNavigation:
   <div class="row px-3 pb-3">
     <div class="col-md-6">
       <h2 class="mt-0 mb-5">Where I've been</h2>
+      <p class="fs-4 mb-1">Component Assembly Systems, Inc. <span class="fs-6">(January 2024 - Present)</span></p>
+      <p>Lead UX Designer &amp; Program Manager</p>
       <p class="fs-4 mb-1">Amazon.com, Inc (ASBX) <span class="fs-6">(August 2021 - September 2023)</span></p>
       <p>Senior User Experience Designer</p>
       <p class="fs-4 mb-1">Red Hat, Inc <span class="fs-6">(July 2016 - August 2021)</span></p>

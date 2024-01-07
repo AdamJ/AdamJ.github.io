@@ -1,5 +1,10 @@
 [
 	{
+   "title":"Oops! Not Found",
+   "imgName":"oops-not-found"
+	},
+
+	{
    "title":"Adam Jolicoeur",
    "imgName":"home"
 	},
@@ -10,8 +15,8 @@
 	},
 
 	{
-   "title":"Stream Deck examples",
-   "imgName":"stream-deck-examples"
+   "title":"about",
+   "imgName":"about"
 	},
 
 	{
@@ -20,33 +25,13 @@
 	},
 
 	{
-   "title":"prototypes",
-   "imgName":"prototypes"
-	},
-
-	{
-   "title":"Testimonials",
-   "imgName":"testimonials"
-	},
-
-	{
-   "title":"development",
-   "imgName":"development"
-	},
-
-	{
-   "title":"about",
-   "imgName":"about"
-	},
-
-	{
    "title":"contact",
    "imgName":"contact"
 	},
 
 	{
-   "title":"resume",
-   "imgName":"resume"
+   "title":"designs",
+   "imgName":"designs"
 	},
 
 	{
@@ -55,18 +40,13 @@
 	},
 
 	{
-   "title":"District 25 website",
-   "imgName":"district-25-website"
-	},
-
-	{
-   "title":"TimeTrak by Switchback",
-   "imgName":"timetrak-by-switchback"
-	},
-
-	{
    "title":"Customer Engagement App",
    "imgName":"customer-engagement-app"
+	},
+
+	{
+   "title":"District 25 website",
+   "imgName":"district-25-website"
 	},
 
 	{
@@ -75,8 +55,13 @@
 	},
 
 	{
-   "title":"designs",
-   "imgName":"designs"
+   "title":"TimeTrak by Switchback",
+   "imgName":"timetrak-by-switchback"
+	},
+
+	{
+   "title":"development",
+   "imgName":"development"
 	},
 
 	{
@@ -90,7 +75,22 @@
 	},
 
 	{
-   "title":"Oops! Not Found",
-   "imgName":"oops-not-found"
+   "title":"prototypes",
+   "imgName":"prototypes"
+	},
+
+	{
+   "title":"resume",
+   "imgName":"resume"
+	},
+
+	{
+   "title":"Stream Deck examples",
+   "imgName":"stream-deck-examples"
+	},
+
+	{
+   "title":"Testimonials",
+   "imgName":"testimonials"
 	}
 ]
