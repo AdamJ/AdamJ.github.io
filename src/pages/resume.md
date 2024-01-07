@@ -12,6 +12,27 @@ eleventyNavigation:
 <div class="container-xxl mb-2 py-2 px-md-5">
   <div class="row px-3 pb-3">
     <div class="col-md-6">
+      <h2 class="mt-0">Lead UX Designer &amp; Program Manager</h2>
+      <p class="fs-5 my-0">Component Assembly Systems, Inc. (Pelham, NY)</p>
+      <p class="text-body-secondary">January 2024 - Present</p>
+      <div class="container-fluid pb-3">
+        <span class="badge rounded-pill bg-dark">Program Management</span>
+        <span class="badge rounded-pill bg-dark">Figma</span>
+        <span class="badge rounded-pill bg-dark">Strategic Technology</span>
+        <span class="badge rounded-pill bg-dark">Design Systems</span>
+        <span class="badge rounded-pill bg-dark">Research</span>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <p class="pt-0">As the Lead UX Designer and Program Manager at Component Assembly Systems, Inc., I am responsible for the product roadmap, deliverables, and cohesive software suite for CAS offerings.</p>
+      <ul class="icon-list">
+        <li>Program Manager, CAS Strategic Technology</li>
+        <li>Lead Designer, StructureCloud</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row px-3 pb-3">
+    <div class="col-md-6">
       <h2 class="mt-0">Senior UX Designer</h2>
       <p class="fs-5 my-0">Amazon.com, Inc <br /> Amazon Software Builder Experience (Boston, MA)</p>
       <p class="text-body-secondary">August 2021 - September 2023</p>
@@ -30,7 +51,7 @@ eleventyNavigation:
         <li>Lead Designer, Task Management</li>
         <li>Led user testing and interview sessions</li>
         <li>Created prototypes (Figma and React-based) for internal testing and validation using organization design system</li>
-        <li>Contributor, Amazon Software Builder Experience - User Experience Design.
+        <li>Contributor, Amazon Software Builder Experience - User Experience Design.</li>
       </ul>
     </div>
   </div>
