@@ -17,11 +17,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/about/</loc>
-      <lastmod>2024-01-07T19:11:34.527Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/code/redesign/</loc>
       <lastmod>2024-01-07T19:11:34.527Z</lastmod>
     </url>
@@ -82,11 +77,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/resume/</loc>
-      <lastmod>2024-01-07T19:11:34.529Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/streamdeck/examples/</loc>
       <lastmod>2024-01-07T19:11:34.529Z</lastmod>
     </url>
@@ -94,6 +84,16 @@
     <url>
       <loc>https://www.adamjolicoeur.com/testimonials/testimonials/</loc>
       <lastmod>2024-01-07T19:11:34.531Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/about/</loc>
+      <lastmod>2024-01-07T19:32:55.265Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/resume/</loc>
+      <lastmod>2024-01-07T19:32:55.266Z</lastmod>
     </url>
   
 </urlset>

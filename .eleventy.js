@@ -24,6 +24,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/cache-polyfill.js");
   eleventyConfig.addPassthroughCopy("src/CNAME");
   eleventyConfig.addPassthroughCopy("src/favicon.*");
+  eleventyConfig.addPassthroughCopy("src/apple-touch-icon.png");
+  eleventyConfig.addPassthroughCopy("src/safari-pinned-tab.svg");
+  eleventyConfig.addPassthroughCopy("src/android-chrome-192x192.png");
+  eleventyConfig.addPassthroughCopy("src/android-chrome-512x512.png");
   eleventyConfig.addPassthroughCopy("src/faviconData.json");
   eleventyConfig.addPassthroughCopy("src/keybase.txt");
   eleventyConfig.addPassthroughCopy("src/manifest.json");

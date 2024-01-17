@@ -15,11 +15,6 @@
 	},
 
 	{
-   "title":"about",
-   "imgName":"about"
-	},
-
-	{
    "title":"redesign",
    "imgName":"redesign"
 	},
@@ -80,11 +75,6 @@
 	},
 
 	{
-   "title":"resume",
-   "imgName":"resume"
-	},
-
-	{
    "title":"Stream Deck examples",
    "imgName":"stream-deck-examples"
 	},
@@ -92,5 +82,15 @@
 	{
    "title":"Testimonials",
    "imgName":"testimonials"
+	},
+
+	{
+   "title":"about",
+   "imgName":"about"
+	},
+
+	{
+   "title":"resume",
+   "imgName":"resume"
 	}
 ]
