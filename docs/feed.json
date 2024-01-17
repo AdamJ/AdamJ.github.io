@@ -11,6 +11,20 @@
   },
   "items": [
     {
+      "id": "https://www.adamjolicoeur.com/resume/",
+      "url": "https://www.adamjolicoeur.com/resume/",
+      "title": "resume",
+      "date_published": "2024-01-07T19:32:55Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/about/",
+      "url": "https://www.adamjolicoeur.com/about/",
+      "title": "about",
+      "date_published": "2024-01-07T19:32:55Z"
+    }
+    ,
+    {
       "id": "https://www.adamjolicoeur.com/testimonials/testimonials/",
       "url": "https://www.adamjolicoeur.com/testimonials/testimonials/",
       "title": "Testimonials",
@@ -21,13 +35,6 @@
       "id": "https://www.adamjolicoeur.com/streamdeck/examples/",
       "url": "https://www.adamjolicoeur.com/streamdeck/examples/",
       "title": "Stream Deck examples",
-      "date_published": "2024-01-07T19:11:34Z"
-    }
-    ,
-    {
-      "id": "https://www.adamjolicoeur.com/resume/",
-      "url": "https://www.adamjolicoeur.com/resume/",
-      "title": "resume",
       "date_published": "2024-01-07T19:11:34Z"
     }
     ,
@@ -112,13 +119,6 @@
       "id": "https://www.adamjolicoeur.com/code/redesign/",
       "url": "https://www.adamjolicoeur.com/code/redesign/",
       "title": "redesign",
-      "date_published": "2024-01-07T19:11:34Z"
-    }
-    ,
-    {
-      "id": "https://www.adamjolicoeur.com/about/",
-      "url": "https://www.adamjolicoeur.com/about/",
-      "title": "about",
       "date_published": "2024-01-07T19:11:34Z"
     }
     ,

@@ -28,8 +28,8 @@ description: "make first contact"
         <div class="col-12 col-lg-8">
           <div class="card-body">
             <h5 class="card-title">GitHub</h5>
-            <p class="card-text">Follow my work and contributions to the open source community.</p>
-            <a class="btn btn-dark" href="{{ meta.githubURL | url }}" target="top" alt="Link to my GitHub profile">Readme.md</a>
+            <p class="card-text">{{ meta.githubDescription }}</p>
+            <a class="btn btn-dark" href="{{ meta.githubURL | url }}" target="top" alt="Link to my GitHub profile">View profile</a>
           </div>
         </div>
       </div>
