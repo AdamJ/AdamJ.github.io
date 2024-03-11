@@ -1,10 +1,5 @@
 [
 	{
-   "title":"Oops! Not Found",
-   "imgName":"oops-not-found"
-	},
-
-	{
    "title":"Adam Jolicoeur",
    "imgName":"home"
 	},
@@ -15,18 +10,28 @@
 	},
 
 	{
+   "title":"Stream Deck examples",
+   "imgName":"stream-deck-examples"
+	},
+
+	{
    "title":"redesign",
    "imgName":"redesign"
 	},
 
 	{
-   "title":"contact",
-   "imgName":"contact"
+   "title":"prototypes",
+   "imgName":"prototypes"
 	},
 
 	{
-   "title":"designs",
-   "imgName":"designs"
+   "title":"Testimonials",
+   "imgName":"testimonials"
+	},
+
+	{
+   "title":"development",
+   "imgName":"development"
 	},
 
 	{
@@ -35,18 +40,8 @@
 	},
 
 	{
-   "title":"Customer Engagement App",
-   "imgName":"customer-engagement-app"
-	},
-
-	{
    "title":"District 25 website",
    "imgName":"district-25-website"
-	},
-
-	{
-   "title":"Task-It!",
-   "imgName":"task-it"
 	},
 
 	{
@@ -55,8 +50,18 @@
 	},
 
 	{
-   "title":"development",
-   "imgName":"development"
+   "title":"Customer Engagement App",
+   "imgName":"customer-engagement-app"
+	},
+
+	{
+   "title":"Task-It!",
+   "imgName":"task-it"
+	},
+
+	{
+   "title":"designs",
+   "imgName":"designs"
 	},
 
 	{
@@ -70,23 +75,18 @@
 	},
 
 	{
-   "title":"prototypes",
-   "imgName":"prototypes"
-	},
-
-	{
-   "title":"Stream Deck examples",
-   "imgName":"stream-deck-examples"
-	},
-
-	{
-   "title":"Testimonials",
-   "imgName":"testimonials"
+   "title":"Oops! Not Found",
+   "imgName":"oops-not-found"
 	},
 
 	{
    "title":"about",
    "imgName":"about"
+	},
+
+	{
+   "title":"contact",
+   "imgName":"contact"
 	},
 
 	{
