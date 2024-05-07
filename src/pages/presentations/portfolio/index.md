@@ -8,6 +8,16 @@ eleventyNavigation:
   order: 1
 ---
 
+<div class="container-xxl">
+  <div class="row justify-content-center">
+    <div class="col-8">
+      <div class="alert alert-dismissible fade show" role="alert" style="background-color: rgba(0, 173, 239, .2); border-left: .25rem solid #00adef;">
+        <strong>Hello there!</strong> The carousel will automatically play after the first user interaction. Hovering over a slide will pause the auto-play of the carousel.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="container-xxl mb-2 py-2 px-md-5">
   <div class="row px-3">
     <div class="col-12">
