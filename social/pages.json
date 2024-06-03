@@ -45,16 +45,6 @@
 	},
 
 	{
-   "title":"Color Picker presentation",
-   "imgName":"color-picker-presentation"
-	},
-
-	{
-   "title":"Portfolio presentation",
-   "imgName":"portfolio-presentation"
-	},
-
-	{
    "title":"prototypes",
    "imgName":"prototypes"
 	},
@@ -92,5 +82,15 @@
 	{
    "title":"resume",
    "imgName":"resume"
+	},
+
+	{
+   "title":"Color Picker presentation",
+   "imgName":"color-picker-presentation"
+	},
+
+	{
+   "title":"Portfolio presentation",
+   "imgName":"portfolio-presentation"
 	}
 ]
