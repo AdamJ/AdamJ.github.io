@@ -15,13 +15,28 @@
 	},
 
 	{
+   "title":"about",
+   "imgName":"about"
+	},
+
+	{
    "title":"redesign",
    "imgName":"redesign"
 	},
 
 	{
+   "title":"contact",
+   "imgName":"contact"
+	},
+
+	{
    "title":"designs",
    "imgName":"designs"
+	},
+
+	{
+   "title":"Application Lifecycle Management",
+   "imgName":"application-lifecycle-management"
 	},
 
 	{
@@ -45,8 +60,28 @@
 	},
 
 	{
+   "title":"development",
+   "imgName":"development"
+	},
+
+	{
+   "title":"Color Picker presentation",
+   "imgName":"color-picker-presentation"
+	},
+
+	{
+   "title":"Portfolio presentation",
+   "imgName":"portfolio-presentation"
+	},
+
+	{
    "title":"prototypes",
    "imgName":"prototypes"
+	},
+
+	{
+   "title":"resume",
+   "imgName":"resume"
 	},
 
 	{
@@ -60,37 +95,7 @@
 	},
 
 	{
-   "title":"about",
-   "imgName":"about"
-	},
-
-	{
-   "title":"contact",
-   "imgName":"contact"
-	},
-
-	{
-   "title":"Application Lifecycle Management",
-   "imgName":"application-lifecycle-management"
-	},
-
-	{
-   "title":"development",
-   "imgName":"development"
-	},
-
-	{
-   "title":"resume",
-   "imgName":"resume"
-	},
-
-	{
-   "title":"Color Picker presentation",
-   "imgName":"color-picker-presentation"
-	},
-
-	{
-   "title":"Portfolio presentation",
-   "imgName":"portfolio-presentation"
+   "title":"Reference links",
+   "imgName":"reference-links"
 	}
 ]
