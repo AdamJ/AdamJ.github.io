@@ -1,4 +1,4 @@
-# Welcome!
+# Welcome
 
 This is the repo for my portfolio site, adamjolicoeur.com, hosted on GitHub.
 
