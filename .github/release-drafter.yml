@@ -20,7 +20,7 @@ exclude-labels:
   - 'Stale PR'
   - 'duplicate'
   - 'wontfix'
-change-template: '- #$NUMBER $TITLE (@$AUTHOR)'
+change-template: '- $TITLE by @$AUTHOR in #$NUMBER'
 version-resolver:
   major:
     labels:
@@ -41,13 +41,15 @@ version-resolver:
       - 'github-action'
   default: patch
 template: |
-  ## What changed?
+  # Changes
   $CHANGES
 
-  **Contributors to this release**
+  **Contributors**
   $CONTRIBUTORS
 
-  **Previous tag**
+  **Previously:**
   [$PREVIOUS_TAG](https://github.com/AdamJ/AdamJ.github.io/releases/tag/$PREVIOUS_TAG)
+  [All Tags](https://github.com/AdamJ/AdamJ.github.io/tags)
+  [All Releases](https://github.com/AdamJ/AdamJ.github.io/releases)
 no-changes-template: |
-  Confusingly, there are no changes in this release.
+  Nothing to see here...
