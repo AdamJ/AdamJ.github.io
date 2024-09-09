@@ -7,6 +7,9 @@
   "license": "Apache-2.0",
   "licenseUrl": "https://github.com/adamj/adamj.github.io/blob/main/LICENSE",
   "main": "index.js",
+  "engines": {
+    "node": "22"
+  },
   "scripts": {
     "stylelint": "npx stylelint '**/*.scss'",
     "stylelint:fix": "npx stylelint --fix `src/sass/style.scss`",
