@@ -75,7 +75,7 @@
 	},
 
 	{
-   "title":"prototypes",
+   "title":"Prototypes",
    "imgName":"prototypes"
 	},
 
@@ -95,7 +95,17 @@
 	},
 
 	{
+   "title":"Archived",
+   "imgName":"archived"
+	},
+
+	{
    "title":"Reference links",
    "imgName":"reference-links"
+	},
+
+	{
+   "title":"Archived Pages",
+   "imgName":"archived-pages"
 	}
 ]
