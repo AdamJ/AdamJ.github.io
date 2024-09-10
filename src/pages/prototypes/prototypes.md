@@ -1,5 +1,5 @@
 ---
-title: "prototypes"
+title: "Prototypes"
 abbreviation: "Prototypes"
 description: "When I work on a design, I prototype as I go. This allows me to see what I'm doing in a working environment, while keeping expectations realistic."
 eleventyNavigation:
@@ -50,6 +50,15 @@ eleventyNavigation:
     </div>
     <div class="col">
       <a href="https://www.adamjolicoeur.com/testing_environment/index.html" target="top">Testing environment <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+    </div>
+    <div class="col">
+      <a href="https://www.adamjolicoeur.com/megamenu/" target="top">Mega menu <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+    </div>
+    <div class="col">
+      <a href="https://www.adamjolicoeur.com/centernav/" target="top">Center navigation <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+    </div>
+    <div class="col">
+      <a href="https://www.adamjolicoeur.com/integration-prototype/index.html" target="top">Integration prototype <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
     </div>
   </div>
 </div>

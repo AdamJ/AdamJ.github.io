@@ -11,10 +11,24 @@
   },
   "items": [
     {
+      "id": "https://www.adamjolicoeur.com/archives/archives/",
+      "url": "https://www.adamjolicoeur.com/archives/archives/",
+      "title": "Archived Pages",
+      "date_published": "2024-09-10T14:04:54Z"
+    }
+    ,
+    {
       "id": "https://www.adamjolicoeur.com/reference/",
       "url": "https://www.adamjolicoeur.com/reference/",
       "title": "Reference links",
       "date_published": "2024-09-04T18:39:07Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/archives/town-selectman/",
+      "url": "https://www.adamjolicoeur.com/archives/town-selectman/",
+      "title": "Archived",
+      "date_published": "2024-06-10T18:56:16Z"
     }
     ,
     {
@@ -39,9 +53,9 @@
     }
     ,
     {
-      "id": "https://www.adamjolicoeur.com/prototypes/prototypes/",
-      "url": "https://www.adamjolicoeur.com/prototypes/prototypes/",
-      "title": "prototypes",
+      "id": "https://www.adamjolicoeur.com/prototypes/",
+      "url": "https://www.adamjolicoeur.com/prototypes/",
+      "title": "Prototypes",
       "date_published": "2024-06-10T18:56:16Z"
     }
     ,
