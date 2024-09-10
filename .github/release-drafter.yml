@@ -1,16 +1,17 @@
-name-template: 'v$RESOLVED_VERSION'
-tag-template: 'v$RESOLVED_VERSION'
 categories:
   - title: 'Features/Enhancements'
+    collapse-after: 5
     labels:
       - 'feature'
       - 'enhancement'
   - title: 'Fixes'
+    collapse-after: 3
     labels:
       - 'fix'
       - 'bugfix'
       - 'bug'
   - title: 'Maintenance'
+    collapse-after: 2
     labels:
       - 'dependencies'
       - 'security'
@@ -20,7 +21,6 @@ exclude-labels:
   - 'Stale PR'
   - 'duplicate'
   - 'wontfix'
-change-template: '- $TITLE by @$AUTHOR in #$NUMBER'
 version-resolver:
   major:
     labels:
@@ -40,8 +40,24 @@ version-resolver:
       - 'patch'
       - 'github-action'
   default: patch
+name-template: |
+  'v$NEXT_PATCH_VERSION'
+
+  **Draft for release**
+  $CHANGES
+tag-template: |
+  'v$NEXT_PATCH_VERSION'
+
+  **Draft for release**
+  $CHANGES
+version-template: |
+  '$MAJOR.$MINOR.$PATCH$PRERELEASE'
+  - Next Major: $NEXT_MAJOR_VERSION
+  - Next Minor: $NEXT_MINOR_VERSION
+  - Next Patch: $NEXT_PATCH_VERSION
+change-template: '- $TITLE by @$AUTHOR in #$NUMBER'
 template: |
-  # Changes
+  ## Changes
   $CHANGES
 
   **Contributors**
