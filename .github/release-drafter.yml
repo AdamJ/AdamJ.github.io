@@ -50,11 +50,7 @@ tag-template: |
 
   **Draft for release**
   $CHANGES
-version-template: |
-  '$MAJOR.$MINOR.$PATCH$PRERELEASE'
-  - Next Major: $NEXT_MAJOR_VERSION
-  - Next Minor: $NEXT_MINOR_VERSION
-  - Next Patch: $NEXT_PATCH_VERSION
+version-template: '$MAJOR.$MINOR.$PATCH$PRERELEASE'
 change-template: '- $TITLE by @$AUTHOR in #$NUMBER'
 template: |
   ## Changes
@@ -63,8 +59,8 @@ template: |
   **Contributors**
   $CONTRIBUTORS
 
-  **Previously:**
-  [$PREVIOUS_TAG](https://github.com/AdamJ/AdamJ.github.io/releases/tag/$PREVIOUS_TAG)
+  **Previously:** [$PREVIOUS_TAG](https://github.com/AdamJ/AdamJ.github.io/releases/tag/$PREVIOUS_TAG)
+
   [All Tags](https://github.com/AdamJ/AdamJ.github.io/tags)
   [All Releases](https://github.com/AdamJ/AdamJ.github.io/releases)
 no-changes-template: |
