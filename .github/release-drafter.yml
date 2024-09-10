@@ -40,16 +40,8 @@ version-resolver:
       - 'patch'
       - 'github-action'
   default: patch
-name-template: |
-  'v$NEXT_PATCH_VERSION'
-
-  **Draft for release**
-  $CHANGES
-tag-template: |
-  'v$NEXT_PATCH_VERSION'
-
-  **Draft for release**
-  $CHANGES
+name-template: 'v$NEXT_PATCH_VERSION'
+tag-template: 'v$NEXT_PATCH_VERSION'
 version-template: '$MAJOR.$MINOR.$PATCH$PRERELEASE'
 change-template: '- $TITLE by @$AUTHOR in #$NUMBER'
 template: |
