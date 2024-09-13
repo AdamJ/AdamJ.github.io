@@ -19,9 +19,10 @@
     "build:sass-site": "sass src/sass/style.scss docs/css/style.css",
     "build:sass": "npm-run-all --parallel build:sass-site",
     "build:eleventy": "eleventy",
+    "copy:css": "cp src/css/halfmoon.css docs/css/halfmoon.css",
     "postbuild": "postcss docs/css/*.css -u autoprefixer cssnano -r",
     "start": "cross-env ELEVENTY_ENV=dev npm-run-all build:sass --parallel watch:*",
-    "build": "cross-env ELEVENTY_ENV=prod npm-run-all build:sass",
+    "build": "cross-env ELEVENTY_ENV=prod npm-run-all build:sass copy:css",
     "lint": "stylelint 'src/sass/*.scss' 'src/sass/*.scss' 'src/sass/*.scss'",
     "lint:fix": "stylelint --fix 'src/sass/*.scss' 'src/sass/*.scss' 'src/sass/*.scss'",
     "bump": "npm --no-git-tag-version version"
@@ -61,6 +62,7 @@
     "last 2 versions"
   ],
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "halfmoon": "2.0.2"
   }
 }

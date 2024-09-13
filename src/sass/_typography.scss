@@ -104,7 +104,7 @@ a.link-secondary {
   letter-spacing: .8px;
 }
 blockquote > p {
-  @extend .fs-4;
+  @extend .fs-4 !optional;
   &::before {
     content: "'";
   }
@@ -113,10 +113,10 @@ blockquote > p {
   }
 }
 blockquote blockquote > p {
-  @extend .fw-light;
-  @extend .fs-6;
-  @extend .text-body-secondary;
-  @extend .pb-3;
+  @extend .fw-light !optional;
+  @extend .fs-6 !optional;
+  @extend .text-body-secondary !optional;
+  @extend .pb-3 !optional;
   &::before {
     content: "- ";
   }
