@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-core="modern">
 {%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
 {%- set pageDescription %}{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}{% endset -%}
 {%- set pageSocialImg %}{{ meta.url }}/previews/{% if title %}{{ title | slug }}{% else %}home{% endif %}.png{% endset -%}

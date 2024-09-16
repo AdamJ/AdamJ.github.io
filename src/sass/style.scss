@@ -20,3 +20,8 @@ $color-mode-type: data;
 @import "buttons";
 @import "general";
 @import "cards";
+
+:root {
+  --bs-body-font-family: 'PT Sans', sans-serif !important;
+  --bs-font-size-base: 1rem !important;
+}
