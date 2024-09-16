@@ -1,0 +1,161 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Adam J. Jolicoeur",
+  "language": "en",
+  "home_page_url": "https://www.adamjolicoeur.com/",
+  "feed_url": "https://www.adamjolicoeur.com/feed.json",
+  "description": "Portfolio for Adam J. Jolicoeur, User Experience Designer",
+  "author": {
+    "name": "Adam J. Jolicoeur",
+    "url": "https://www.adamjolicoeur.com/about"
+  },
+  "items": [
+    {
+      "id": "https://www.adamjolicoeur.com/apps/gamesandthings/",
+      "url": "https://www.adamjolicoeur.com/apps/gamesandthings/",
+      "title": "Games and Things",
+      "date_published": "2024-09-16T14:25:18Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/development/",
+      "url": "https://www.adamjolicoeur.com/development/",
+      "title": "development",
+      "date_published": "2024-09-16T14:25:18Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/prototypes/",
+      "url": "https://www.adamjolicoeur.com/prototypes/",
+      "title": "Prototypes",
+      "date_published": "2024-09-11T15:50:33Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/archives/town-selectman/",
+      "url": "https://www.adamjolicoeur.com/archives/town-selectman/",
+      "title": "Archived",
+      "date_published": "2024-09-11T15:50:33Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/archives/archives/",
+      "url": "https://www.adamjolicoeur.com/archives/archives/",
+      "title": "Archived Pages",
+      "date_published": "2024-09-11T15:50:33Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/reference/",
+      "url": "https://www.adamjolicoeur.com/reference/",
+      "title": "Reference links",
+      "date_published": "2024-09-04T18:39:07Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/testimonials/testimonials/",
+      "url": "https://www.adamjolicoeur.com/testimonials/testimonials/",
+      "title": "Testimonials",
+      "date_published": "2024-06-10T18:56:16Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/streamdeck/examples/",
+      "url": "https://www.adamjolicoeur.com/streamdeck/examples/",
+      "title": "Stream Deck examples",
+      "date_published": "2024-06-10T18:56:16Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/resume/",
+      "url": "https://www.adamjolicoeur.com/resume/",
+      "title": "resume",
+      "date_published": "2024-06-10T18:56:16Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/designs/presentations/portfolio/",
+      "url": "https://www.adamjolicoeur.com/designs/presentations/portfolio/",
+      "title": "Portfolio presentation",
+      "date_published": "2024-06-10T18:56:16Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/designs/presentations/colorPicker/",
+      "url": "https://www.adamjolicoeur.com/designs/presentations/colorPicker/",
+      "title": "Color Picker presentation",
+      "date_published": "2024-06-10T18:56:16Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/designs/timetrak/",
+      "url": "https://www.adamjolicoeur.com/designs/timetrak/",
+      "title": "TimeTrak by Switchback",
+      "date_published": "2024-06-10T18:56:16Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/designs/task-it/",
+      "url": "https://www.adamjolicoeur.com/designs/task-it/",
+      "title": "Task-It!",
+      "date_published": "2024-06-10T18:56:16Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/designs/district25/",
+      "url": "https://www.adamjolicoeur.com/designs/district25/",
+      "title": "District 25 website",
+      "date_published": "2024-06-10T18:56:16Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/designs/customer-engagement/",
+      "url": "https://www.adamjolicoeur.com/designs/customer-engagement/",
+      "title": "Customer Engagement App",
+      "date_published": "2024-06-10T18:56:16Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/designs/alm/",
+      "url": "https://www.adamjolicoeur.com/designs/alm/",
+      "title": "Application Lifecycle Management",
+      "date_published": "2024-06-10T18:56:16Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/designs/",
+      "url": "https://www.adamjolicoeur.com/designs/",
+      "title": "designs",
+      "date_published": "2024-06-10T18:56:16Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/contact/",
+      "url": "https://www.adamjolicoeur.com/contact/",
+      "title": "contact",
+      "date_published": "2024-06-10T18:56:16Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/code/redesign/",
+      "url": "https://www.adamjolicoeur.com/code/redesign/",
+      "title": "redesign",
+      "date_published": "2024-06-10T18:56:16Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/about/",
+      "url": "https://www.adamjolicoeur.com/about/",
+      "title": "about",
+      "date_published": "2024-06-10T18:56:16Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/alfred/workflows/",
+      "url": "https://www.adamjolicoeur.com/alfred/workflows/",
+      "title": "Alfred Workflows",
+      "date_published": "2024-06-10T18:56:16Z"
+    }
+    
+  ]
+}
