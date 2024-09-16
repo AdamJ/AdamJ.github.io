@@ -1,5 +1,13 @@
 /* stylelint-disable */
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+// @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+// @import "../../node_modules/bootstrap/scss/mixins.scss";
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/utilities";
 // importing Font Awesome combined file
 @import "fontawesome.scss";
 /* stylelint-enable */
@@ -8,7 +16,12 @@ $color-mode-type: data;
 @import "mixins";
 @import "colors";
 @import "helpers";
-@import "typography";
+// @import "typography";
 @import "buttons";
 @import "general";
 @import "cards";
+
+:root {
+  --bs-body-font-family: 'PT Sans', sans-serif !important;
+  --bs-font-size-base: 1rem !important;
+}
