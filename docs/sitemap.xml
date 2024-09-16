@@ -62,22 +62,12 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/development/</loc>
-      <lastmod>2024-06-10T18:56:16.542Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/designs/presentations/colorPicker/</loc>
       <lastmod>2024-06-10T18:56:16.542Z</lastmod>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/designs/presentations/portfolio/</loc>
-      <lastmod>2024-06-10T18:56:16.542Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/prototypes/</loc>
       <lastmod>2024-06-10T18:56:16.542Z</lastmod>
     </url>
   
@@ -97,18 +87,33 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/archives/town-selectman/</loc>
-      <lastmod>2024-06-10T18:56:16.549Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/reference/</loc>
       <lastmod>2024-09-04T18:39:07.857Z</lastmod>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/archives/archives/</loc>
-      <lastmod>2024-09-10T14:04:54.499Z</lastmod>
+      <lastmod>2024-09-11T15:50:33.458Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/archives/town-selectman/</loc>
+      <lastmod>2024-09-11T15:50:33.458Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/development/</loc>
+      <lastmod>2024-09-11T15:50:33.458Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/prototypes/</loc>
+      <lastmod>2024-09-11T15:50:33.459Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/apps/gamesandthings/</loc>
+      <lastmod>2024-09-13T19:55:08.607Z</lastmod>
     </url>
   
 </urlset>

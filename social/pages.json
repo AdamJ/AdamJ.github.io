@@ -60,11 +60,6 @@
 	},
 
 	{
-   "title":"development",
-   "imgName":"development"
-	},
-
-	{
    "title":"Color Picker presentation",
    "imgName":"color-picker-presentation"
 	},
@@ -72,11 +67,6 @@
 	{
    "title":"Portfolio presentation",
    "imgName":"portfolio-presentation"
-	},
-
-	{
-   "title":"Prototypes",
-   "imgName":"prototypes"
 	},
 
 	{
@@ -95,11 +85,6 @@
 	},
 
 	{
-   "title":"Archived",
-   "imgName":"archived"
-	},
-
-	{
    "title":"Reference links",
    "imgName":"reference-links"
 	},
@@ -107,5 +92,25 @@
 	{
    "title":"Archived Pages",
    "imgName":"archived-pages"
+	},
+
+	{
+   "title":"Archived",
+   "imgName":"archived"
+	},
+
+	{
+   "title":"development",
+   "imgName":"development"
+	},
+
+	{
+   "title":"Prototypes",
+   "imgName":"prototypes"
+	},
+
+	{
+   "title":"Games and Things",
+   "imgName":"games-and-things"
 	}
 ]
