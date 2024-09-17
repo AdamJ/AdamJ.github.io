@@ -7,6 +7,7 @@ const markdownItAnchor = require("markdown-it-anchor");
 const packageVersion = require("./package.json").version;
 const fs = require("fs");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
@@ -35,6 +36,11 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
   eleventyConfig.addShortcode("packageVersion", () => `v${packageVersion}`);
+
+  /* Use for v3 upgrade in order to bypass the reservation of Collections name */
+  eleventyConfig.setFreezeReservedData(false);
+
+  eleventyConfig.addPlugin(UpgradeHelper);
 
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {

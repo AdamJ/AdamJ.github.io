@@ -35,7 +35,7 @@
     "url": "https://github.com/AdamJ/AdamJ.github.io/issues"
   },
   "devDependencies": {
-    "@11ty/eleventy": "2.0.1",
+    "@11ty/eleventy": "^3.0.0-beta.1",
     "@11ty/eleventy-img": "^4.0.2",
     "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
@@ -61,6 +61,7 @@
     "last 2 versions"
   ],
   "dependencies": {
+    "@11ty/eleventy-upgrade-help": "^3.0.1",
     "bootstrap": "^5.3.3"
   }
 }
