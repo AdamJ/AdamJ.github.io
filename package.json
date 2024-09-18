@@ -61,7 +61,6 @@
     "last 2 versions"
   ],
   "dependencies": {
-    "@11ty/eleventy-upgrade-help": "^3.0.1",
     "bootstrap": "^5.3.3"
   }
 }
