@@ -34,7 +34,7 @@
 
 // border radius
 @mixin border-radius($args...) {
-  @debug meta.keywords($args);
+  // @debug meta.keywords($args);
 
   @each $size, $option in meta.keywords($args) {
     .border-radius-#{$size} {
@@ -46,7 +46,7 @@
 // text align
 
 @mixin text-align($args...) {
-  @debug meta.keywords($args);
+  // @debug meta.keywords($args);
 
   @each $position, $option in meta.keywords($args) {
     .text-align-#{$position} {
@@ -60,7 +60,7 @@
   font-size: $size;
 }
 @mixin text-size($args...) {
-  @debug meta.keywords($args);
+  // @debug meta.keywords($args);
 
   @each $size, $option in meta.keywords($args) {
     .font-size-#{$size} {
@@ -71,7 +71,7 @@
 
 // text decoration
 @mixin text-decoration($args...) {
-  @debug meta.keywords($args);
+  // @debug meta.keywords($args);
 
   @each $decoration, $option in meta.keywords($args) {
     .text-#{$decoration} {
@@ -82,7 +82,7 @@
 
 // text transform
 @mixin text-transform($args...) {
-  @debug meta.keywords($args);
+  // @debug meta.keywords($args);
 
   @each $transform, $option in meta.keywords($args) {
     .text-transform-#{$transform} {
@@ -93,7 +93,7 @@
 
 // font styles
 @mixin font-style($args...) {
-  @debug meta.keywords($args);
+  // @debug meta.keywords($args);
 
   @each $style, $styles in meta.keywords($args) {
     .font-style-#{$style} {
@@ -118,7 +118,7 @@
 
 // margin
 @mixin margin-size($args...) {
-  @debug meta.keywords($args);
+  // @debug meta.keywords($args);
 
   @each $size, $spacer in meta.keywords($args) {
     .margin-#{$size} {
@@ -139,7 +139,7 @@
 // padding
 
 @mixin padding-size($args...) {
-  @debug meta.keywords($args);
+  // @debug meta.keywords($args);
 
   @each $size, $spacer in meta.keywords($args) {
     .padding-#{$size} {

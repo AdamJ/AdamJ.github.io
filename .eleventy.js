@@ -36,6 +36,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
   eleventyConfig.addShortcode("packageVersion", () => `v${packageVersion}`);
 
+  /* Use for v3 upgrade in order to bypass the reservation of Collections name */
+  eleventyConfig.setFreezeReservedData(false);
+
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
       ready: function(err, bs) {
