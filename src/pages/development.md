@@ -23,7 +23,7 @@ eleventyNavigation:
               </a>
             </li>
             <li>
-              <a href="/apps/GamesAndThings" alt="Documentation for the app" class="card-link">
+              <a href="{{ "/apps/gamesandthings/" | url }}" alt="Documentation for the app" class="card-link">
                 <i class="fa-solid fa-link"></i>
                 Documentation
               </a>
