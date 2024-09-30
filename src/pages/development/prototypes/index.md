@@ -62,22 +62,3 @@ eleventyNavigation:
     </div>
   </div>
 </div>
-<div class="container-xxl mb-2 py-2 px-3">
-  <h2>
-    CodePens
-  </h2>
-  <p class="text-body-secondary">
-    When I'm trying out new ideas, I'll often go to <a href="https://www.CodePen.io" target="top" alt="Link to CodePen.io">CodePen</a> to "riff" on them, but also to see what is already out there. Below is an example of an app that I've been thinking on. <a class="link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://codepen.io/AdamJolicoeur">See my work on CodePen <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-  </p>
-  <div class="row px-3">
-    <p class="codepen" data-height="550" data-default-tab="result" data-slug-hash="NWjOzwm" data-user="AdamJolicoeur" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-      <span>See the Pen <a href="https://codepen.io/AdamJolicoeur/pen/NWjOzwm">
-      SwitchTrack - Calendar</a> by Adam Jolicoeur (<a href="https://codepen.io/AdamJolicoeur">@AdamJolicoeur</a>)
-      on <a href="https://codepen.io">CodePen</a>.</span>
-    </p>
-    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-  </div>
-  </div>
-</div>

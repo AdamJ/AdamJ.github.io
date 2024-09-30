@@ -1,0 +1,19 @@
+---
+layout: base.njk
+---
+
+<div class="container-xxl intro py-3 px-0 px-md-5 text-center">
+  <h1 class="display-1 fw-bold text-break">{{ title }}</h1>
+  <p class="sub-header text-break px-2 px-md-0">
+    {{ description }}
+  </p>
+  {%- if (headerButton) -%}
+  <a class="btn btn-outline-secondary btn-lg" href="{{ primaryURL}}" | url }}" type="button">{{ primaryAction }}</a>
+  {%- else -%}{%- endif -%}
+</div>
+
+<content>
+  <div class="container-xxl mb-2 py-2 px-md-5">
+    {{ content | safe }}
+  </div>
+</content>

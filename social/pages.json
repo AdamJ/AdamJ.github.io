@@ -20,11 +20,6 @@
 	},
 
 	{
-   "title":"redesign",
-   "imgName":"redesign"
-	},
-
-	{
    "title":"contact",
    "imgName":"contact"
 	},
@@ -37,6 +32,11 @@
 	{
    "title":"Application Lifecycle Management",
    "imgName":"application-lifecycle-management"
+	},
+
+	{
+   "title":"redesign",
+   "imgName":"redesign"
 	},
 
 	{
@@ -60,13 +60,13 @@
 	},
 
 	{
-   "title":"Color Picker presentation",
-   "imgName":"color-picker-presentation"
+   "title":"Color Picker",
+   "imgName":"color-picker"
 	},
 
 	{
-   "title":"Portfolio presentation",
-   "imgName":"portfolio-presentation"
+   "title":"Portfolio",
+   "imgName":"portfolio"
 	},
 
 	{
@@ -105,12 +105,22 @@
 	},
 
 	{
+   "title":"Games and Things",
+   "imgName":"games-and-things"
+	},
+
+	{
    "title":"development",
    "imgName":"development"
 	},
 
 	{
-   "title":"Games and Things",
-   "imgName":"games-and-things"
+   "title":"presentations",
+   "imgName":"presentations"
+	},
+
+	{
+   "title":"codepen examples",
+   "imgName":"codepen-examples"
 	}
 ]

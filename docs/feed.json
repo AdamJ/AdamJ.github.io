@@ -11,6 +11,27 @@
   },
   "items": [
     {
+      "id": "https://www.adamjolicoeur.com/development/examples/",
+      "url": "https://www.adamjolicoeur.com/development/examples/",
+      "title": "codepen examples",
+      "date_published": "2024-09-30T14:17:01Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/presentations/",
+      "url": "https://www.adamjolicoeur.com/presentations/",
+      "title": "presentations",
+      "date_published": "2024-09-30T13:57:09Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/development/",
+      "url": "https://www.adamjolicoeur.com/development/",
+      "title": "development",
+      "date_published": "2024-09-30T13:53:03Z"
+    }
+    ,
+    {
       "id": "https://www.adamjolicoeur.com/apps/gamesandthings/",
       "url": "https://www.adamjolicoeur.com/apps/gamesandthings/",
       "title": "Games and Things",
@@ -18,15 +39,8 @@
     }
     ,
     {
-      "id": "https://www.adamjolicoeur.com/development/",
-      "url": "https://www.adamjolicoeur.com/development/",
-      "title": "development",
-      "date_published": "2024-09-16T14:25:18Z"
-    }
-    ,
-    {
-      "id": "https://www.adamjolicoeur.com/prototypes/",
-      "url": "https://www.adamjolicoeur.com/prototypes/",
+      "id": "https://www.adamjolicoeur.com/development/prototypes/",
+      "url": "https://www.adamjolicoeur.com/development/prototypes/",
       "title": "Prototypes",
       "date_published": "2024-09-11T15:50:33Z"
     }
@@ -74,16 +88,16 @@
     }
     ,
     {
-      "id": "https://www.adamjolicoeur.com/designs/presentations/portfolio/",
-      "url": "https://www.adamjolicoeur.com/designs/presentations/portfolio/",
-      "title": "Portfolio presentation",
+      "id": "https://www.adamjolicoeur.com/presentations/portfolio/",
+      "url": "https://www.adamjolicoeur.com/presentations/portfolio/",
+      "title": "Portfolio",
       "date_published": "2024-06-10T18:56:16Z"
     }
     ,
     {
-      "id": "https://www.adamjolicoeur.com/designs/presentations/colorPicker/",
-      "url": "https://www.adamjolicoeur.com/designs/presentations/colorPicker/",
-      "title": "Color Picker presentation",
+      "id": "https://www.adamjolicoeur.com/presentations/color-picker/",
+      "url": "https://www.adamjolicoeur.com/presentations/color-picker/",
+      "title": "Color Picker",
       "date_published": "2024-06-10T18:56:16Z"
     }
     ,
@@ -116,6 +130,13 @@
     }
     ,
     {
+      "id": "https://www.adamjolicoeur.com/development/code/",
+      "url": "https://www.adamjolicoeur.com/development/code/",
+      "title": "redesign",
+      "date_published": "2024-06-10T18:56:16Z"
+    }
+    ,
+    {
       "id": "https://www.adamjolicoeur.com/designs/alm/",
       "url": "https://www.adamjolicoeur.com/designs/alm/",
       "title": "Application Lifecycle Management",
@@ -133,13 +154,6 @@
       "id": "https://www.adamjolicoeur.com/contact/",
       "url": "https://www.adamjolicoeur.com/contact/",
       "title": "contact",
-      "date_published": "2024-06-10T18:56:16Z"
-    }
-    ,
-    {
-      "id": "https://www.adamjolicoeur.com/code/redesign/",
-      "url": "https://www.adamjolicoeur.com/code/redesign/",
-      "title": "redesign",
       "date_published": "2024-06-10T18:56:16Z"
     }
     ,

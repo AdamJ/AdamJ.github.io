@@ -1,5 +1,6 @@
 ---
-title: "Portfolio presentation"
+title: "Portfolio"
+collections: presentations
 abbreviation: "Portfolio"
 description: ""
 eleventyNavigation:

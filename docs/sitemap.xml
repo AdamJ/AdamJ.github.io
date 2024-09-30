@@ -22,11 +22,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/code/redesign/</loc>
-      <lastmod>2024-06-10T18:56:16.541Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/contact/</loc>
       <lastmod>2024-06-10T18:56:16.541Z</lastmod>
     </url>
@@ -38,6 +33,11 @@
   
     <url>
       <loc>https://www.adamjolicoeur.com/designs/alm/</loc>
+      <lastmod>2024-06-10T18:56:16.541Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/development/code/</loc>
       <lastmod>2024-06-10T18:56:16.541Z</lastmod>
     </url>
   
@@ -62,12 +62,12 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/designs/presentations/colorPicker/</loc>
+      <loc>https://www.adamjolicoeur.com/presentations/color-picker/</loc>
       <lastmod>2024-06-10T18:56:16.542Z</lastmod>
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/designs/presentations/portfolio/</loc>
+      <loc>https://www.adamjolicoeur.com/presentations/portfolio/</loc>
       <lastmod>2024-06-10T18:56:16.542Z</lastmod>
     </url>
   
@@ -102,18 +102,28 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/prototypes/</loc>
+      <loc>https://www.adamjolicoeur.com/development/prototypes/</loc>
       <lastmod>2024-09-11T15:50:33.459Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/development/</loc>
-      <lastmod>2024-09-16T14:25:18.976Z</lastmod>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/apps/gamesandthings/</loc>
       <lastmod>2024-09-16T14:25:18.976Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/development/</loc>
+      <lastmod>2024-09-30T13:53:03.802Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/presentations/</loc>
+      <lastmod>2024-09-30T13:57:09.105Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/development/examples/</loc>
+      <lastmod>2024-09-30T14:17:01.975Z</lastmod>
     </url>
   
 </urlset>

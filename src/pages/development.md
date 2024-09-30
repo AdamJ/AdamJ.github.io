@@ -1,6 +1,6 @@
 ---
 title: "development"
-collections: primaryPages
+collections: development
 abbreviation: "Development"
 description: "A selection of code examples from various projects that I've worked on."
 eleventyNavigation:
@@ -8,19 +8,6 @@ eleventyNavigation:
   order: 3
 ---
 
-<!-- AdamJolicoeur.com redesign -->
-<!-- <div class="container-xxl py-3 mt-3">
-  <div class="row px-3 align-items-center">
-    <div class="col-md-6 text-center text-md-start">
-      <h2 class="display-6">Showcase</h2>
-      <h2>AdamJolicoeur dot com</h2>
-      <p class="text-body-secondary">This site - what you are looking at today.</p>
-    </div>
-  </div>
-  <div class="row px-3 align-items-start">
-    <img src="{{ "/img/AdamJolicoeur_dot_com-minimal.png" | url }}" class="d-block mx-lg-auto img-fluid img-thumbnail" alt="A screenshot of the Figma design file" width="700" height="500" loading="lazy">
-  </div>
-</div> -->
 <div class="container">
   <h2 class="display-6">Mobile apps</h2>
   <div class="row row-cols-1 row-cols-lg-2 align-items-stretch gy-5 pb-5">
@@ -177,7 +164,10 @@ eleventyNavigation:
   <h2 class="display-6">Additional examples</h2>
   <div class="row row-cols-1 row-cols-lg-2 align-items-stretch gy-5 pb-5">
     <div class="col">
-      <a href="/prototypes" alt="Link to prototypes and more" class="fs-6">Prototypes, testing, and CodePens</a>
+      <a href="/development/prototypes" alt="Link to prototypes and more" class="fs-6">prototypes for testing</a>
+    </div>
+    <div class="col">
+      <a href="/development/examples" alt="Link to a page listing out examples on Codepen.io" class="fs-6">codepen examples</a>
     </div>
   </div>
 </div>
