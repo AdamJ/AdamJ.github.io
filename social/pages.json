@@ -25,18 +25,8 @@
 	},
 
 	{
-   "title":"designs",
-   "imgName":"designs"
-	},
-
-	{
    "title":"Application Lifecycle Management",
    "imgName":"application-lifecycle-management"
-	},
-
-	{
-   "title":"redesign",
-   "imgName":"redesign"
 	},
 
 	{
@@ -57,16 +47,6 @@
 	{
    "title":"TimeTrak by Switchback",
    "imgName":"timetrak-by-switchback"
-	},
-
-	{
-   "title":"Color Picker",
-   "imgName":"color-picker"
-	},
-
-	{
-   "title":"Portfolio",
-   "imgName":"portfolio"
 	},
 
 	{
@@ -100,13 +80,13 @@
 	},
 
 	{
-   "title":"Prototypes",
-   "imgName":"prototypes"
+   "title":"Games and Things",
+   "imgName":"games-and-things"
 	},
 
 	{
-   "title":"Games and Things",
-   "imgName":"games-and-things"
+   "title":"designs",
+   "imgName":"designs"
 	},
 
 	{
@@ -115,12 +95,32 @@
 	},
 
 	{
-   "title":"presentations",
-   "imgName":"presentations"
+   "title":"redesign",
+   "imgName":"redesign"
 	},
 
 	{
    "title":"codepen examples",
    "imgName":"codepen-examples"
+	},
+
+	{
+   "title":"Prototypes",
+   "imgName":"prototypes"
+	},
+
+	{
+   "title":"presentations",
+   "imgName":"presentations"
+	},
+
+	{
+   "title":"Color Picker",
+   "imgName":"color-picker"
+	},
+
+	{
+   "title":"Portfolio",
+   "imgName":"portfolio"
 	}
 ]
