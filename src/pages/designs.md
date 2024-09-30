@@ -94,7 +94,7 @@ eleventyNavigation:
   <div class="row px-3 align-items-center">
     <div class="col-md-12">
       <h2>Presentations</h2>
-      <p class="text-body-secondary">I've created many presentations over the years and have transitioned many of them to Figma using the prototyping functionality. Below are a few examples of different presentations.
+      <p class="text-body-secondary">I've created many presentations over the years and recently began to transition them to Figma using the prototyping functionality. Below are a few examples of different presentations.
       </p>
     </div>
   </div>
@@ -103,7 +103,7 @@ eleventyNavigation:
       <div class="card px-0">
         <img src="{{ '/img/portfolio/Slide0.png' | url }}" class="card-img-top" alt="Portfolio presentation slide example">
         <div class="card-body">
-          <a class="card-title" href="/designs/presentations/portfolio/" alt="Link to the portfolio carousel page">Portfolio slide</a>
+          <a class="card-title" href="/presentations/portfolio/" alt="Link to the portfolio carousel page">Portfolio</a>
         </div>
       </div>
     </div>
@@ -111,7 +111,7 @@ eleventyNavigation:
       <div class="card px-0">
         <img src="{{ '/img/colorPicker/slide0.png' | url }}" class="card-img-top" alt="Color Picker presentation slide example">
         <div class="card-body">
-          <a class="card-title" href="/designs/presentations/colorPicker/" alt="Link to the color picker carousel page">Color Picker slide</a>
+          <a class="card-title" href="/presentations/color-picker/" alt="Link to the color picker carousel page">Color Picker</a>
         </div>
       </div>
     </div>

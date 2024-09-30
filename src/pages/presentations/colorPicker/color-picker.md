@@ -1,5 +1,6 @@
 ---
-title: "Color Picker presentation"
+title: "Color Picker"
+collections: presentations
 abbreviation: "ColorPicker"
 description: ""
 eleventyNavigation:

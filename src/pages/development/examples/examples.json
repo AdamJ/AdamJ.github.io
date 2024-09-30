@@ -1,0 +1,5 @@
+{
+  "layout": "markdown",
+  "permalink": "/development/{{ page.fileSlug }}/",
+  "tags": ["pages, prototypes"]
+}
