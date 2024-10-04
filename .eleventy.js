@@ -78,9 +78,9 @@ module.exports = function (eleventyConfig) {
     langPrefix: 'language-',
     linkify: true,
   })
-  .use(markdownItAnchor, {
-    permalink: markdownItAnchor.permalink.headerLink({ safariReaderFix: true })
-  })
+  // .use(markdownItAnchor, {
+  //   permalink: markdownItAnchor.permalink.headerLink({ safariReaderFix: true })
+  // })
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   return {

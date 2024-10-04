@@ -1,4 +1,5 @@
 ---
+layout: "markdown"
 title: "about"
 abbreviation: "about"
 description: "Driven and passionate senior user experience designer with a background in software development."
@@ -10,91 +11,59 @@ eleventyNavigation:
   order: 1
 ---
 
-<div class="container-xxl mb-2 py-2 px-md-5">
-  <div class="row px-3 pb-3">
-    <div class="col-md-6">
-      <h2 class="mt-0">Hello! I’m Adam Jolicoeur</h2>
-      <p class="fs-5 my-0">
-        I am a user experience designer and developer, based out of Massachusetts. I enjoy building user-centered, data-intensive designs to make user’s lives easier.
-      </p>
-    </div>
-    <div class="col-md-6 d-none d-md-block">
-      <img src="{{ "/img/ajolicoeur_wordcloud_writing.png" | url }}" class="card-img-top" alt="Wordcloud">
-    </div>
-  </div>
-  <div class="row justify-content-end text-end px-3">
-    <div class="col-12 align-content-end">
-      <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="{{ "/resume" | url }}">
-        Resume
-      </a>
-      <i class="fa-solid fa-arrow-right"></i>
-    </div>
-  </div>
-  <hr class="col col-md-6 mb-5">
-  <div class="row px-3 pb-3">
-    <div class="col-md-6">
-      <h2 class="mt-0">What I’ve done</h2>
-    </div>
-    <div class="col-md-6">
-      <div class="row">
-        <div class="col-6">
-          <p class="fs-4">UX Design</p>
-          <p class="fs-4">Wireframing</p>
-          <p class="fs-4">Development</p>
-          <p class="fs-4">Branding</p>
-          <p class="fs-4">Agile methodologies</p>
-        </div>
-        <div class="col-6">
-          <p class="fs-4">Prototyping</p>
-          <p class="fs-4">Email design</p>
-          <p class="fs-4">Iconography</p>
-          <p class="fs-4">User testing</p>
-          <p class="fs-4">Design systems</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row justify-content-end text-end px-3">
-    <div class="col-12 align-content-end">
-      <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="{{ "/resume" | url }}">
-        Resume
-      </a>
-      <i class="fa-solid fa-arrow-right"></i>
-    </div>
-  </div>
-  <hr class="col col-md-6 mb-5">
-  <div class="row px-3 pb-3">
-    <div class="col-md-6">
-      <h2 class="mt-0 mb-5">Where I've been</h2>
-      <p class="fs-4 mb-1">Component Assembly Systems, Inc. <span class="fs-6">(January 2024 - Present)</span></p>
-      <p>Lead Program Manager &amp; UX Designer</p>
-      <p class="fs-4 mb-1">Amazon.com, Inc (ASBX) <span class="fs-6">(August 2021 - September 2023)</span></p>
-      <p>Senior User Experience Designer</p>
-      <p class="fs-4 mb-1">Red Hat, Inc <span class="fs-6">(July 2016 - August 2021)</span></p>
-      <p>Senior Software Engineer, UXD</p>
-      <p class="fs-4 mb-1">Saylent Technologies <span class="fs-6">(November 2014 - July 2016)</span></p>
-      <p>User Experience Designer</p>
-      <p class="fs-4 mb-1">Switchback, Inc <span class="fs-6">(November 2010 - November 2014)</span></p>
-      <p>Designer</p>
-      <p class="fs-4 mb-1">Black Duck Software <span class="fs-6">(February 2013 - October 2014)</span></p>
-      <p>User Interface Software Engineer</p>
-      <p class="fs-4 mb-1">Conservation Services Group <span class="fs-6">(July 2008 - November 2010)</span></p>
-      <p>Systems Engineering</p>
-    </div>
-    <div class="col-md-6">
-      <h2 class="mt-0 mb-5">How I got here</h2>
-      <p class="fs-4">Massachusetts College of Liberal Arts <span class="fs-6">2008</span></p>
-      <p>Bachelor of Arts. Fine and Performing Arts - Music</p>
-      <p>Bachelor of Arts. Arts, Entertainment, and Media Management</p>
-      <small>Alpha Chi. National Scholars Honor Society. Who’s Who in American Colleges and Universities.</small>
-    </div>
-  </div>
-  <div class="row justify-content-end text-end px-3">
-    <div class="col-12 align-content-end">
-      <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="{{ "/resume" | url }}">
-        Resume
-      </a>
-      <i class="fa-solid fa-arrow-right"></i>
-    </div>
-  </div>
-</div>
+## Hello
+
+UX Designer, Developer, and Program Manager. Creating software for the construction world. Previously at Red Hat and AWS. Collector of nerdy things forever.
+
+---
+
+Adam Jolicoeur is a designer, developer, and program manager in Massachusetts. Starting as a help desk tech, he discovered a desire to create technology rather than fixing it, which lead to a leap into the software engineering space.
+
+While working at a small startup, Adam discovered the world of user experience design and realized that his future was before him. With a background in fine arts and knowledge in software development space (Backbone/Angular, anyone?), Adam took another step forward by becoming the first ux designer at a financial startup. Leading the next-generation of product design for card processors and financial institutions, Adam took that experience and used it to catapult into the large, corporate world.
+
+With a move to Red Hat (later acquired by IBM), Adam accelerated his career path (and filled up many pages in his passport) through working with industry experts and the open source community on enterprise software experiences. After five years at Red Hat, Adam joined a small team at Amazon in AWS's Safety Engineering group to work on a new issue tracking and management product. While this time at Amazon came to abrupt close during the layoffs of 2023, the knowledge gained from such an environment only strengthened his desire to create in a collaborative and forward-looking environment.
+
+Adam has continued his career at [Component Assembly Systems](https://www.componentassembly.com "Link to Component Assembly System's website") as their Lead Program Manager and Head of UX.
+
+## Background
+
+- **Lead Program Manager / Head of UX** @ Component Assembly Systems<br>2023-Present
+- **Senior UX Designer** @ Amazon (AWS)<br>2021-2023
+- **Senior UX Designer** @ Red Hat<br>2016-2021
+- **UX Designer** @ Saylent Technologies<br>2014-2016
+- **UI Developer** @ Black Duck Software<br>2013-2014
+- **Contractor** @ Switchback, Inc.<br>2010-2021
+- **Help Desk Analyst** @ Conservatin Services Group<br>2008-2010
+
+## Tools of my trade
+
+I tend to use what I know, but am always on the lookout for great open source products/projects. Below is a list of what is in my "bag of holding".
+
+### Hardware
+
+- MacBook Pro 16" (M3 Max)
+- Mac Mini (M1)
+- iPad Pro 11" (M4)
+- Elgato Streamdeck (for using shortcuts without programming keyboard macros)
+- Keychron keyboards with custom keycaps
+- Logitech MX Anywhere 3
+- Beats Studio Buds + (transparent because I liked how they look)
+- iPhone 15 Pro Max
+
+### Software & Services
+
+- **Figma**
+- **Zeplin**
+- **Visual Studio Code**
+- **iTerm 2 + ZSH**
+- **GitHub** (does this count as software?)
+
+#### Links
+
+- [Figma community profile](https://www.figma.com/@adamj "External link to my Figma community profile")
+- [Mac configuration files](https://www.github.com/AdamJ/config "External link to my configuration repository on GitHub")
+- [AdamJ.github.io](https://www.github.com/AdamJ "External link to my GitHub profile")
+
+### Education
+
+I attended MCLA (Massachusetts College of Liberal Arts, formerly North Adams State) and graduated with degrees in Fine and Performing Arts and Arts Management. While at MCLA, I was the President of the Lacrosse Club (now a recognized D3 sport) and received a variety of accolades such as Alpha Chi, National Scholars Honor Society, and the Who’s Who in American Colleges and Universities.
