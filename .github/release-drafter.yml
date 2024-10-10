@@ -37,13 +37,6 @@ version-resolver:
       - 'patch'
       - 'github-action'
   default: patch
-name-template: 'v$RESOLVED_VERSION'
-tag-template: 'v$RESOLVED_VERSION'
-version-template: |
-  '$MAJOR.$MINOR.$PATCH$PRERELEASE'
-  - Next Major: $NEXT_MAJOR_VERSION
-  - Next Minor: $NEXT_MINOR_VERSION
-  - Next Patch: $NEXT_PATCH_VERSION
 change-template: '- $TITLE by @$AUTHOR in #$NUMBER'
 template: |
   ## Changes
