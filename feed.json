@@ -11,6 +11,13 @@
   },
   "items": [
     {
+      "id": "https://www.adamjolicoeur.com/about/",
+      "url": "https://www.adamjolicoeur.com/about/",
+      "title": "about",
+      "date_published": "2024-10-04T16:15:30Z"
+    }
+    ,
+    {
       "id": "https://www.adamjolicoeur.com/presentations/portfolio/",
       "url": "https://www.adamjolicoeur.com/presentations/portfolio/",
       "title": "Portfolio",
@@ -154,13 +161,6 @@
       "id": "https://www.adamjolicoeur.com/contact/",
       "url": "https://www.adamjolicoeur.com/contact/",
       "title": "contact",
-      "date_published": "2024-06-10T18:56:16Z"
-    }
-    ,
-    {
-      "id": "https://www.adamjolicoeur.com/about/",
-      "url": "https://www.adamjolicoeur.com/about/",
-      "title": "about",
       "date_published": "2024-06-10T18:56:16Z"
     }
     ,

@@ -17,11 +17,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/about/</loc>
-      <lastmod>2024-06-10T18:56:16.541Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/contact/</loc>
       <lastmod>2024-06-10T18:56:16.541Z</lastmod>
     </url>
@@ -124,6 +119,11 @@
     <url>
       <loc>https://www.adamjolicoeur.com/presentations/portfolio/</loc>
       <lastmod>2024-09-30T18:26:06.125Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/about/</loc>
+      <lastmod>2024-10-04T16:15:30.923Z</lastmod>
     </url>
   
 </urlset>
