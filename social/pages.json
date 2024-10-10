@@ -15,11 +15,6 @@
 	},
 
 	{
-   "title":"about",
-   "imgName":"about"
-	},
-
-	{
    "title":"contact",
    "imgName":"contact"
 	},
@@ -122,5 +117,10 @@
 	{
    "title":"Portfolio",
    "imgName":"portfolio"
+	},
+
+	{
+   "title":"about",
+   "imgName":"about"
 	}
 ]
