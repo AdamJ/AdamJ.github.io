@@ -1,8 +1,12 @@
 minor:
-  - src/**/*.html
+  - src/_data/**
+  - src/_generate/**
+  - src/_includes/**
   - src/img/**
-  - src/sass/**/*.scss
-  - src/**/*.js
+  - src/js/**
+  - src/pages/**
+  - src/sass/**
+  - src/webfonts/**
   - src/**/*.njk
   - src/**/*.md
   - src/**/*.json
