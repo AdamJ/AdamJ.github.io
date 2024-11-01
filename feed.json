@@ -11,10 +11,24 @@
   },
   "items": [
     {
+      "id": "https://www.adamjolicoeur.com/icons-and-branding/",
+      "url": "https://www.adamjolicoeur.com/icons-and-branding/",
+      "title": "Icons and Branding",
+      "date_published": "2024-11-01T15:24:45Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/icons-and-branding/icons/",
+      "url": "https://www.adamjolicoeur.com/icons-and-branding/icons/",
+      "title": "Icons",
+      "date_published": "2024-11-01T15:20:42Z"
+    }
+    ,
+    {
       "id": "https://www.adamjolicoeur.com/about/",
       "url": "https://www.adamjolicoeur.com/about/",
       "title": "about",
-      "date_published": "2024-10-04T16:15:30Z"
+      "date_published": "2024-10-10T15:21:58Z"
     }
     ,
     {
