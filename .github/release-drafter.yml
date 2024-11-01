@@ -1,3 +1,5 @@
+name-template: 'v$RESOLVED_VERSION'
+tag-template: 'v$RESOLVED_VERSION'
 categories:
   - title: 'Features/Enhancements'
     labels:
@@ -37,7 +39,7 @@ version-resolver:
       - 'patch'
       - 'github-action'
   default: patch
-change-template: '- $TITLE by @$AUTHOR in #$NUMBER'
+change-template: '- #$NUMBER $TITLE (@$AUTHOR)'
 template: |
   ## Changes
   $CHANGES
@@ -45,7 +47,8 @@ template: |
   **Contributors**
   $CONTRIBUTORS
 
-  **Previously:** [$PREVIOUS_TAG](https://github.com/AdamJ/AdamJ.github.io/releases/tag/$PREVIOUS_TAG)
+  **Previously:**
+  [$PREVIOUS_TAG](https://github.com/AdamJ/AdamJ.github.io/releases/tag/$PREVIOUS_TAG)
 
   [All Tags](https://github.com/AdamJ/AdamJ.github.io/tags)
   [All Releases](https://github.com/AdamJ/AdamJ.github.io/releases)
