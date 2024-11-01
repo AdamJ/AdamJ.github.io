@@ -30,22 +30,13 @@ footer,
   gap: 16px;
   align-self: stretch;
   border-top: 1px solid #E3E3E3;
-  .footer-left {
-    @extend .display-flex;
-
-    align-items: center;
-    align-content: center;
-    flex: 1 0 0;
-    flex-wrap: wrap;
-    color: #212529;
-  }
-  .footer-right {
-    @extend .display-flex;
-
-    justify-content: flex-end;
-    align-items: center;
-    gap: 24px;
-    flex: 1 0 0;
+  min-height: 200px;
+  a {
+    text-decoration: none !important;
+    color: var(--bs-secondary-color);
+    &:hover {
+      color: inherit !important;
+    }
   }
 }
 .button-overlay {

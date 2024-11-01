@@ -122,5 +122,15 @@
 	{
    "title":"about",
    "imgName":"about"
+	},
+
+	{
+   "title":"Icons",
+   "imgName":"icons"
+	},
+
+	{
+   "title":"Icons and Branding",
+   "imgName":"icons-and-branding"
 	}
 ]

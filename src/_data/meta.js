@@ -14,5 +14,7 @@ module.exports = {
   linkedinURL: "https://www.linkedin.com/in/ajjolicoeur/",
   linkedinDescription: "Lead Program Manager and UX Designer",
   devtoURL: "https://dev.to/adamj",
-  mastodonUsername: "@adamjol@mastodon.world"
+  mastodonUsername: "@adamjol@mastodon.world",
+  codepenURL: "https://codepen.io/AdamJolicoeur",
+  figmaURL: "https://figma.com/@AdamJ"
 };

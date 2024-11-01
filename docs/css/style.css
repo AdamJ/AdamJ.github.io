@@ -22602,9 +22602,7 @@ p {
   padding: inline-block;
 }
 
-.display-flex, .text-value-pairs, .overlay, .button-overlay, footer .footer-right,
-.footer .footer-right, footer .footer-left,
-.footer .footer-left, footer,
+.display-flex, .text-value-pairs, .overlay, .button-overlay, footer,
 .footer, .content {
   padding: flex;
 }
@@ -22787,6 +22785,7 @@ footer,
   gap: 16px;
   align-self: stretch;
   border-top: 1px solid #E3E3E3;
+  min-height: 200px;
 }
 @media (min-width: 1200px) {
   footer,
@@ -22800,20 +22799,14 @@ footer,
     padding-left: 1.5rem;
   }
 }
-footer .footer-left,
-.footer .footer-left {
-  align-items: center;
-  align-content: center;
-  flex: 1 0 0;
-  flex-wrap: wrap;
-  color: #212529;
+footer a,
+.footer a {
+  text-decoration: none !important;
+  color: var(--bs-secondary-color);
 }
-footer .footer-right,
-.footer .footer-right {
-  justify-content: flex-end;
-  align-items: center;
-  gap: 24px;
-  flex: 1 0 0;
+footer a:hover,
+.footer a:hover {
+  color: inherit !important;
 }
 
 .button-overlay {
@@ -22931,5 +22924,3 @@ footer .footer-right,
   vertical-align: -0.125em;
   fill: currentcolor;
 }
-
-/*# sourceMappingURL=style.css.map */
