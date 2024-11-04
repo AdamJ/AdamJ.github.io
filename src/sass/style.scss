@@ -1,14 +1,20 @@
 /* stylelint-disable */
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
 // importing Font Awesome combined file
 @import "fontawesome.scss";
 /* stylelint-enable */
 $color-mode-type: data;
+@import "font-oswald";
+@import "font-lato";
 @import "variables";
 @import "mixins";
+@import "extenders";
 @import "colors";
 @import "helpers";
 @import "typography";
+@import "toc";
+@import "footer";
 @import "buttons";
-@import "general";
 @import "cards";
+@import "navigation";
+@import "general";

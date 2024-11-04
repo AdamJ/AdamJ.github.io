@@ -10,3 +10,34 @@
   vertical-align: -.125em;
   fill: currentcolor;
 }
+.card {
+  background-color: var(--sl-panel-background-color);
+  box-shadow: var(--sl-shadow-large);
+  @extend .border-radius-sm;
+}
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.card-link {
+  @include font-size(14px);
+
+  color: var(--color-white);
+  & > i {
+    color: var(--color-white) !important;
+  }
+  &:hover {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+.card-transform {
+  transform: translateZ(0);
+  transition-duration: 0.7s;
+  transition-property: transform;
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+}

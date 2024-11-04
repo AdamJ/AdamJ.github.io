@@ -12,6 +12,7 @@ $blue-800: #1b314a;
 $blue-900: #0c1621;
 
 // grey
+$grey-50: #e8e8ec;
 $grey-100: #f8f8f8;
 $grey-200: #e3e3e3;
 $grey-300: #bbb;
@@ -51,6 +52,7 @@ $light: $blue-50;
 :root {
   --link-color-primary: #{$blue-500};
   --link-color-primary-hover: #{$blue-800};
+  --color-grey-50: #{$grey-50};
   --color-grey-100: #{$grey-100};
   --color-grey-200: #{$grey-200};
   --color-grey-300: #{$grey-300};
@@ -67,4 +69,44 @@ $light: $blue-50;
   --color-blue-700: #{$blue-700};
   --color-blue-800: #{$blue-800};
   --color-blue-900: #{$blue-900};
+  --color-white: #{$white};
+  --color-black: #{$black};
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light dark;
+    --bs-body-bg: var(--color-grey-700);
+    --bs-body-color: var(--color-grey-50);
+    --bs-secondary-color: var(--color-grey-300);
+    // --bs-light-rgb: 248, 249, 250; //#f8f9fa
+    --bs-light-rgb: 105, 105, 105; //#f8f9fa
+    --aj-container-background: var(--bs-bg-opacity, .2);
+    --bs-text-dark: var(--color-grey-50);
+  }
+  body {
+    background-color: var(--color-grey-800) !important;
+    color: var(--color-grey-200) !important;
+  }
+  img {
+    filter: brightness(.8) contrast(1.2);
+  }
+  .fa-solid, .fa-brand, i {
+    color: var(--color-grey-200) !important;
+  }
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4, p, small, .small {
+    color: var(--color-grey-200);
+    font-weight: 350 !important;
+  }
+  .text-body-secondary, blockquote blockquote > p {
+    color: var(--sl-input-help-text-color);
+  }
+  .bg-light {
+    background-color: var(--aj-container-background) !important;
+  }
+  .text-dark {
+    color: var(--color-grey-950) !important;
+  }
+}
+.text-secondary, blockquote, blockquote > p {
+  color: var(--sl-input-help-text-color);
 }

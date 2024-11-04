@@ -18,11 +18,11 @@
   $xxl: 2rem,
   $display: 4rem,
 );
-@include font-style(
-  $normal: normal,
-  $bold: bold,
-  $italic: italic,
-);
+// @include font-style(
+//   $normal: normal,
+//   $bold: bold,
+//   $italic: italic,
+// );
 @include text-transform(
   $uppercase: uppercase,
   $capitalize: capitalize,
@@ -59,6 +59,7 @@
   $lg: 1.25rem,
   $xl: 1.5rem,
   $xxl: 2rem,
+  $circle: 10000rem,
 );
 @include display(
   $block: block,

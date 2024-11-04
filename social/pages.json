@@ -15,8 +15,8 @@
 	},
 
 	{
-   "title":"contact",
-   "imgName":"contact"
+   "title":"connect",
+   "imgName":"connect"
 	},
 
 	{
@@ -45,8 +45,8 @@
 	},
 
 	{
-   "title":"resume",
-   "imgName":"resume"
+   "title":"Adam J. Jolicoeur",
+   "imgName":"adam-j.-jolicoeur"
 	},
 
 	{
@@ -125,12 +125,32 @@
 	},
 
 	{
+   "title":"Icons and Branding",
+   "imgName":"icons-and-branding"
+	},
+
+	{
    "title":"Icons",
    "imgName":"icons"
 	},
 
 	{
-   "title":"Icons and Branding",
-   "imgName":"icons-and-branding"
+   "title":"Shoelace and Dark Mode",
+   "imgName":"shoelace-and-dark-mode"
+	},
+
+	{
+   "title":"Adam Jolicoeur",
+   "imgName":"home"
+	},
+
+	{
+   "title":"Creating a Blog",
+   "imgName":"creating-a-blog"
+	},
+
+	{
+   "title":"Adam Jolicoeur",
+   "imgName":"home"
 	}
 ]

@@ -1,7 +1,16 @@
-.bd-btn-lg {
-  @extend .border-radius-sm;
+sl-button::part(base) {
   @include font-weight(700);
-  @extend .font-size-xl;
+  @include fs(1);
+  @include font-family;
+}
+sl-button.card-button::part(base) {
+  display: flex;
+  justify-content: center;
+  @include font-weight(700);
+}
+.button-overlay {
+  @include display-flex;
 
-  padding: 1rem 2rem;
+  flex-direction: column;
+  justify-content: center;
 }

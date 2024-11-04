@@ -1,5 +1,4 @@
 {
-  "tags": "pages",
   "layout": "page",
   "permalink": "/icons-and-branding/{{ page.fileSlug }}/"
 }

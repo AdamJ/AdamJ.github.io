@@ -1,3 +1,6 @@
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/AdamJ/adamj.github.io?style=for-the-badge) ![Netlify](https://img.shields.io/netlify/89d7b30b-7d13-4c43-b362-4cc0b8bc5f4e?color=%2315847D&style=for-the-badge) ![GitHub last commit](https://img.shields.io/github/last-commit/AdamJ/adamj.github.io?color=%2321476b&style=for-the-badge) ![Static Badge](https://img.shields.io/badge/22-22?style=for-the-badge&logo=NVM&logoColor=%23F4DD4B&label=NVM&color=232147&link=https%3A%2F%2Fgithub.com%2FAdamJ%2FAdamJ.github.io%2Fblob%2Fmain%2F.nvmrc)
+
+
 # Welcome
 
 This is the repo for my portfolio site, adamjolicoeur.com, hosted on GitHub.
@@ -38,5 +41,15 @@ At the moment this repo is very personalized to my needs and my information, so 
 
 ----
 
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/AdamJ/adamj.github.io?style=for-the-badge) ![Netlify](https://img.shields.io/netlify/89d7b30b-7d13-4c43-b362-4cc0b8bc5f4e?color=%2315847D&style=for-the-badge)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/AdamJ/adamj.github.io/Release%20Drafter?label=Release%20Drafter&style=for-the-badge) ![GitHub last commit](https://img.shields.io/github/last-commit/AdamJ/adamj.github.io?color=%2321476b&style=for-the-badge)
+## References and Resources
+
+**Libraries**
+- [Shoelace](https://www.shoelace.style)
+- [Bootstrap](https://www.getbootstrap.com)
+- [Font Awesome](https://www.fontawesome.com)
+
+**Eleventy**
+- [Eleventy Documentation](https://www.11ty.dev/docs/)
+- [11ty Recipes](https://11ty.recipes/)
+- [The 11ty Bundle](https://11tybundle.dev/)
+[https://github.com/jdsteinbach](https://github.com/jdsteinbach/jdsteinbach.github.io/blob/blog/.eleventy.js)
