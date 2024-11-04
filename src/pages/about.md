@@ -13,7 +13,7 @@ eleventyNavigation:
 
 ## Hello
 
-UX Designer, Developer, Program Manager. Creating software for the construction world. Previously at Red Hat and AWS. Collector of nerdy things, forever.
+UX Designer, Developer, Program Manager. Creating software for the construction world. Previously at Red Hat and AWS. Collector of nerdy things...forever.
 
 ---
 
@@ -23,7 +23,7 @@ While working at a small startup, Adam discovered the world of user experience d
 
 With a move to Red Hat (later acquired by IBM), Adam accelerated his career path (and filled up many pages in his passport) by working with industry experts and the open source community on enterprise software experiences. After five years at Red Hat, Adam joined a small team at Amazon in AWS's Safety Engineering group to work on a new issue tracking and management product. While his time at Amazon came to abrupt end during the layoffs of 2023, the knowledge gained from such an environment only strengthened his desire to create in a collaborative and forward-looking space.
 
-Adam has continued his career at [Component Assembly Systems](https://www.componentassembly.com "Link to Component Assembly System's website") as their Lead Program Manager and Head of UX.
+Adam has continued his career at Component Assembly Systems as their Lead Program Manager and Head of UX.
 
 ## Background
 
@@ -33,7 +33,7 @@ Adam has continued his career at [Component Assembly Systems](https://www.compon
 - **UX Designer** @ Saylent Technologies<br>2014-2016
 - **UI Developer** @ Black Duck Software<br>2013-2014
 - **Contractor** @ Switchback, Inc.<br>2010-2021
-- **Help Desk Analyst** @ Conservatin Services Group<br>2008-2010
+- **Help Desk Analyst** @ Conservation Services Group<br>2008-2010
 
 ## Tools of my trade
 
@@ -60,9 +60,23 @@ I tend to use what I know, but am always on the lookout for great open source pr
 
 #### Links
 
-- [Figma community profile](https://www.figma.com/@adamj "External link to my Figma community profile")
-- [Mac configuration files](https://www.github.com/AdamJ/config "External link to my configuration repository on GitHub")
-- [AdamJ.github.io](https://www.github.com/AdamJ "External link to my GitHub profile")
+<sl-button href="https://www.figma.com/@adamj" variant="text" size="large">
+  Figma community profile
+  <sl-visually-hidden>External link to my Figma community profile</sl-visually-hidden>
+  <sl-icon slot="suffix" name="box-arrow-up-right"></sl-icon>
+</sl-button>
+
+<sl-button href="https://www.github.com/AdamJ/config" variant="text" size="large">
+  Mac configuration files
+  <sl-visually-hidden>External link to my configuration repository on GitHub</sl-visually-hidden>
+  <sl-icon slot="suffix" name="box-arrow-up-right"></sl-icon>
+</sl-button>
+
+<sl-button href="https://www.github.com/AdamJ" variant="text" size="large">
+  AdamJ.github.io
+  <sl-visually-hidden>External link to my GitHub profile</sl-visually-hidden>
+  <sl-icon slot="suffix" name="box-arrow-up-right"></sl-icon>
+</sl-button>
 
 ### Education
 

@@ -5,22 +5,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="@Adam, Adam Jolicoeur, Adam J. Jolicoeur, AdamJ, Jolicoeur, adamjolicoeur.com, www.adamjolicoeur.com, mindreeper2420, Portfolio, Design, UXD, UX Designer, UX Developer, UX Engineer, Design Technologist, CSS" />
-    <title>resume | Adam Jolicoeur</title>
+    <title>Adam J. Jolicoeur | Adam Jolicoeur</title>
     <meta
       name="description"
-      content="Adam J. Jolicoeur"
+      content="The portfolio site for Adam Jolicoeur."
     />
     <meta name="generator" content="Eleventy">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" size="48x48" href="/favicon.ico">
     <link rel="icon" type="image/png" size="72x72" href="/favicon.png">
     <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#333333">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" type="image/svg">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#333333">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=PT+Sans&family=Work+Sans&display=swap');
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      media="(prefers-color-scheme:light)"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/light.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(prefers-color-scheme:dark)"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/dark.css"
+      onload="document.documentElement.classList.add('sl-theme-dark');"
+    />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/shoelace.js" ></script>
     <link href="/css/style.css" rel="stylesheet" />
     <link href="/css/fontawesome.css" rel="stylesheet" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -39,11 +51,11 @@
 
     <meta
       name="og:title"
-      content="resume | Adam Jolicoeur"
+      content="Adam J. Jolicoeur | Adam Jolicoeur"
     />
     <meta
       name="og:description"
-      content="Adam J. Jolicoeur"
+      content="The portfolio site for Adam Jolicoeur."
     />
     <meta name="twitter:image" content="https://www.adamjolicoeur.com/img/AdamJolicoeur_social.png" />
     <meta property="og:image" content="https://www.adamjolicoeur.com/img/AdamJolicoeur_social.png" />
@@ -58,53 +70,100 @@
     <a rel="me" href="https://mastodon.world/@adamjol" aria-hidden="true" class="d-none">Mastodon</a>
     <body class="layout">
     <container>
-  <nav class="navbar navbar-expand-md bg-dark border-bottom border-body" data-bs-theme="dark">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse d-md-flex" id="navbarNavAltMarkup">
-        <div class="navbar-nav col-md-6 justify-content-md-center">
-          <a class="navbar-brand col-md-1 me-0 text-center"  href="/">
-            <img src="/img/navbar-logo.png" alt="Avatar" width="32" height="32">
-          </a>
-          <a class="nav-link " href="/about" alt="Link to my About page.">about</a>
-          <a class="nav-link " href="/designs" alt="Link to Designs that I have created and worked on.">designs</a>
-          <a class="nav-link " href="/development" alt="Link to development examples.">development</a>
-        </div>
-        <div class="navbar-nav d-md-flex col-md-3 justify-content-md-end">
-          <a class="nav-link " href="/testimonials/testimonials" alt="Testimonials">testimonials</a>
-          <a class="nav-link " href="/contact" alt="Contact me">contact</a>
-        </div>
-      </div>
+  <div class="nav">
+    <input type="checkbox" id="check" name="navigationCheckbox" aria-label="menu checkbox" />
+    <label for="check" class="menu">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        fill="currentColor"
+        class="bi bi-list"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+        />
+      </svg>
+    </label>
+    <a  href="/">
+    <div class="logo">
+      <svg width="32" height="32" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M91.29 89.4546L96.1838 82.1483L101.709 89.4546H91.29Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      <path d="M45.8939 89.1937L95.7557 13L145.915 89.1937C145.915 91.2812 143.385 95.3857 139.813 98.3266C136.804 100.804 134.693 101.892 130.882 103.284C126.925 104.73 124.184 105.372 120.166 105.372H56.4616L23.5677 156.124H13L50.8057 97.8047H91.2905H115.849C125.375 97.8047 130.882 92.1945 130.882 92.1945C130.882 92.1945 134.743 89.1937 130.882 83.4531C119.124 65.9703 95.7557 29.0477 95.7557 29.0477L56.4616 89.1937H45.8939Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      <path d="M64.7966 112.548H105.281H136.24C145.766 112.548 151.72 108.895 154.548 107.068C158.239 104.684 161.99 99.1094 161.99 99.1094H173.004C173.004 100.414 168.224 106.618 163.627 110.199C152.911 118.549 144.575 120.115 140.557 120.115H70.4526L46.4891 156.255H35.9214L64.7966 112.548Z" fill="#ffffff"/>
+      <path d="M157.674 89.7157L127.905 45.6172H138.324L168.39 89.7157H157.674Z" fill="#ffffff"/>
+      <path d="M64.7966 112.548H105.281H136.24C145.766 112.548 151.72 108.895 154.548 107.068C158.239 104.684 161.99 99.1094 161.99 99.1094H173.004C173.004 100.414 168.224 106.618 163.627 110.199C152.911 118.549 144.575 120.115 140.557 120.115H70.4526L46.4891 156.255H35.9214L64.7966 112.548Z" stroke="#ffffff" stroke-width="4"/>
+      <path d="M157.674 89.7157L127.905 45.6172H138.324L168.39 89.7157H157.674Z" stroke="#ffffff" stroke-width="4"/>
+      <path d="M34.1356 89.7157L63.9038 45.6172H53.4849L23.419 89.7157H34.1356Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      <path d="M146.362 156.516L127.608 128.595H138.027L156.781 156.516H146.362Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      <path d="M30.4144 116.331L18.0605 98.8485H28.4794L35.6238 109.025L30.4144 116.331Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      <path d="M169.581 156.377L149.19 126.899L157.525 123.768L180 156.377H169.581Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      <path d="M77.8945 136.554L72.6851 144.121L96.3508 180L122.525 140.598L117.04 132.118L96.3508 164.474L77.8945 136.554Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      <path d="M80.4247 87.4976H70.0059L95.6066 48.4874L117.04 80.9496C118.082 82.9312 119.868 84.6273 116.593 87.4976C113.319 90.3679 112.128 89.0632 111.086 87.4976L95.6066 64.4046L80.4247 87.4976Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      <path d="M108.556 128.204H92.6351L87.7183 135.51H103.45L108.556 128.204Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      </svg>
     </div>
-  </nav>
+    </a>
+    <div class="nav-items">
+      <ul class="overview">
+        <li>
+          <a href="/about" class="nav-link " alt="Link to my About page">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="/designs" class="nav-link " alt="Link to my Designs examples">
+            Designs
+          </a>
+        </li>
+        <li>
+          <a href="/development" class="nav-link " alt="Link to my Development examples">
+            Development
+          </a>
+        </li>
+      </ul>
+      <ul class="account">
+        <li>
+          <a href="/testimonials" class="nav-link " alt="Link to testimonials for former coworkers">
+            Testimonials
+          </a>
+        </li>
+        <li>
+          <a href="/connect" class="nav-link " alt="Connect with my through my social channels">
+            Connect
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </container>
 
     <main class="content">
       
-<div class="container-xxl intro py-3 px-0 px-md-5 text-center">
-  <h1 class="display-1 fw-bold text-break">resume</h1>
+<div class="container intro py-3 px-0 text-center">
+  <h1 class="display-1 fw-bold text-break">Adam J. Jolicoeur</h1>
   <p class="sub-header text-break px-2 px-md-0">
-    Adam J. Jolicoeur
+    
   </p></div>
 
 <content>
-  <div class="container-xxl mb-2 py-2 px-md-5">
-  <div class="row px-3 pb-3">
-    <div class="col-md-6">
+  <div class="container mb-2 py-2 px-0">
+  <div class="row px-0 pb-3 mx-0">
+    <div class="col-12 col-md-6">
       <h2 class="mt-0">Lead Program Manager &amp; UX Designer</h2>
       <p class="fs-5 my-0">Component Assembly Systems, Inc. (Pelham, NY)</p>
       <p class="text-body-secondary">January 2024 - Present</p>
-      <div class="container-fluid pb-3">
-        <span class="badge rounded-pill bg-dark">Program Management</span>
-        <span class="badge rounded-pill bg-dark">Figma</span>
-        <span class="badge rounded-pill bg-dark">Strategic Technology</span>
-        <span class="badge rounded-pill bg-dark">Design Systems</span>
-        <span class="badge rounded-pill bg-dark">Research</span>
+      <div class="pb-3">
+        <sl-badge variant="neutral" pill>Program Management</sl-badge>
+        <sl-badge variant="neutral" pill>Figma</sl-badge>
+        <sl-badge variant="neutral" pill>Strategic Technology</sl-badge>
+        <sl-badge variant="neutral" pill>Design Systems</sl-badge>
+        <sl-badge variant="neutral" pill>Research</sl-badge>
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-12 col-md-6">
       <p class="pt-0">As the Lead Program Manager and UX Designer at Component Assembly Systems, Inc., I am responsible for the product roadmap, deliverables, and cohesive software suite for CAS offerings.</p>
       <ul class="icon-list">
         <li>Lead Program Manager, CAS Strategic Technology Group</li>
@@ -112,44 +171,44 @@
       </ul>
     </div>
   </div>
-  <div class="row px-3 pb-3">
-    <div class="col-md-6">
+  <div class="row px-0 pb-3 mx-0">
+    <div class="col-12 col-md-6">
       <h2 class="mt-0">Senior UX Designer</h2>
       <p class="fs-5 my-0">Amazon.com, Inc <br /> Amazon Software Builder Experience (Boston, MA)</p>
       <p class="text-body-secondary">August 2021 - September 2023</p>
-      <div class="container-fluid pb-3">
-        <span class="badge rounded-pill bg-dark">Figma</span>
-        <span class="badge rounded-pill bg-dark">Prototypes</span>
-        <span class="badge rounded-pill bg-dark">UserTesting</span>
-        <span class="badge rounded-pill bg-dark">Design Systems</span>
-        <span class="badge rounded-pill bg-dark">Research</span>
-        <span class="badge rounded-pill bg-dark">React</span>
+      <div class="pb-3">
+        <sl-badge variant="neutral" pill>Figma</sl-badge>
+        <sl-badge variant="neutral" pill>Prototypes</sl-badge>
+        <sl-badge variant="neutral" pill>UserTesting</sl-badge>
+        <sl-badge variant="neutral" pill>Design Systems</sl-badge>
+        <sl-badge variant="neutral" pill>Research</sl-badge>
+        <sl-badge variant="neutral" pill>React</sl-badge>
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-12 col-md-6">
       <p class="pt-0">As a Senior UX Designer on the Amazon Software Builder Experience team, I was responsible for the task management solutions for Amazon Issue Management. As part of this responsibility, I oversaw the design, implementation, and feedback of Amazon's next-generation task management software. As the lead designer, it was my responsibility to provide a cohesive experience for all Amazon employees, regardless of role, for them to perform their duties with minimal churn and friction.</p>
       <ul class="icon-list">
         <li>Lead Designer, Task Management</li>
         <li>Led user testing and interview sessions</li>
         <li>Created prototypes (Figma and React-based) for internal testing and validation using organization design system</li>
-        <li>Contributor, Amazon Software Builder Experience - User Experience Design.</li>
+        <li>Contributor, Amazon Software Builder Experience - User Experience Design</li>
       </ul>
     </div>
   </div>
 </div>
-<div class="container-xxl mb-2 py-2 px-md-5">
-  <div class="row px-3 pb-3">
-    <div class="col-md-6">
+<div class="container mb-2 py-2 px-0">
+  <div class="row px-0 pb-3 mx-0">
+    <div class="col-12 col-md-6">
       <h2 class="mt-0">Senior Software Engineer, UXD</h2>
       <p class="fs-5 my-0">Red Hat, Inc (Westford, MA)</p>
       <p class="text-body-secondary">December 2016 - August 2021</p>
-      <div class="container-fluid pb-3">
-        <span class="badge rounded-pill bg-dark">Sketch</span>
-        <span class="badge rounded-pill bg-dark">Adobe XD</span>
-        <span class="badge rounded-pill bg-dark">HTML</span>
-        <span class="badge rounded-pill bg-dark">SCSS</span>
-        <span class="badge rounded-pill bg-dark">Git</span>
-        <span class="badge rounded-pill bg-dark">OSS</span>
+      <div class="pb-3">
+        <sl-badge variant="neutral" pill>Sketch</sl-badge>
+        <sl-badge variant="neutral" pill>Adobe XD</sl-badge>
+        <sl-badge variant="neutral" pill>HTML</sl-badge>
+        <sl-badge variant="neutral" pill>SCSS</sl-badge>
+        <sl-badge variant="neutral" pill>Git</sl-badge>
+        <sl-badge variant="neutral" pill>OSS</sl-badge>
       </div>
       <ul class="icon-list">
         <li class="text-muted">
@@ -158,7 +217,7 @@
         </li>
       </ul>
     </div>
-    <div class="col-md-6">
+    <div class="col-12 col-md-6">
       <p>As a Senior Software Engineer on the User Experience Design team, my responsibilities included creating user flows, wireframes, mockups, and proof-of-concepts for products and websites across Red Hat. In addition to my daily work, I was a core contributor to the PatternFly design system and lead the designer of the Red Hat Developer Design Manual.</p>
       <ul class="icon-list">
         <li>UX Designer, OpenShift</li>
@@ -170,21 +229,21 @@
     </div>
   </div>
 </div>
-<div class="container-xxl mb-2 py-2 px-md-5">
-  <div class="row px-3 pb-3">
-    <div class="col-md-6">
+<div class="container mb-2 py-2 px-0">
+  <div class="row px-0 pb-3 mx-0">
+    <div class="col-12 col-md-6">
       <h2 class="mt-0">User Experience Designer</h2>
       <p class="fs-5 my-0">Saylent Technologies (Franklin, MA)</p>
       <p class="text-body-secondary">November 2014 - July 2016</p>
-      <div class="container-fluid pb-3">
-        <span class="badge rounded-pill bg-dark">Photoshop</span>
-        <span class="badge rounded-pill bg-dark">Visual studio</span>
-        <span class="badge rounded-pill bg-dark">HTML</span>
-        <span class="badge rounded-pill bg-dark">CSS</span>
-        <span class="badge rounded-pill bg-dark">Agile</span>
+      <div class="pb-3">
+        <sl-badge variant="neutral" pill>Photoshop</sl-badge>
+        <sl-badge variant="neutral" pill>Visual studio</sl-badge>
+        <sl-badge variant="neutral" pill>HTML</sl-badge>
+        <sl-badge variant="neutral" pill>CSS</sl-badge>
+        <sl-badge variant="neutral" pill>Agile</sl-badge>
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-12 col-md-6">
       <p>As the User Experience Designer, I led the design and user research for the Account360 and Card360 platforms. Working with a team of developers to improve product usability, I focused primarily on easy to use and manageable interfaces for the financial industry, utilizing standards from across the industry.</p>
       <ul class="icon-list">
         <li>Lead designer, Account360 and Card360 platforms</li>
@@ -196,18 +255,18 @@
     </div>
   </div>
 </div>
-<div class="container-xxl mb-2 py-2 px-md-5">
-  <div class="row px-3 pb-3">
-    <div class="col-md-6">
+<div class="container mb-2 py-2 px-0">
+  <div class="row px-0 pb-3 mx-0">
+    <div class="col-12 col-md-6">
       <h2 class="mt-0">Vice President, Design</h2>
       <p class="fs-5 my-0">Switchback, Inc. (Holden, MA)</p>
       <p class="text-body-secondary">November 2010 - August 2021</p>
-      <div class="container-fluid pb-3">
-        <span class="badge rounded-pill bg-dark">Sketch</span>
-        <span class="badge rounded-pill bg-dark">Adobe XD</span>
-        <span class="badge rounded-pill bg-dark">HTML</span>
-        <span class="badge rounded-pill bg-dark">SCSS</span>
-        <span class="badge rounded-pill bg-dark">Wireframes</span>
+      <div class="pb-3">
+        <sl-badge variant="neutral" pill>Sketch</sl-badge>
+        <sl-badge variant="neutral" pill>Adobe XD</sl-badge>
+        <sl-badge variant="neutral" pill>HTML</sl-badge>
+        <sl-badge variant="neutral" pill>SCSS</sl-badge>
+        <sl-badge variant="neutral" pill>Wireframes</sl-badge>
       </div>
       <ul class="icon-list">
         <li class="text-muted">
@@ -220,7 +279,7 @@
         </li>
       </ul>
     </div>
-    <div class="col-md-6">
+    <div class="col-12 col-md-6">
       <p>As a contractor, I was responsible for redesigning various internal software interfaces, focusing on customer requests and usability improvements.</p>
       <ul class="icon-list">
         <li>Worked on mobile-first web applications and data input tools for personal inventory systems and portfolios</li>
@@ -231,21 +290,21 @@
     </div>
   </div>
 </div>
-<div class="container-xxl mb-2 py-2 px-md-5">
-  <div class="row px-3 pb-3">
-    <div class="col-md-6">
+<div class="container mb-2 py-2 px-0">
+  <div class="row px-0 pb-3 mx-0">
+    <div class="col-12 col-md-6">
       <h2 class="mt-0">UI Software Engineer</h2>
       <p class="fs-5 my-0">Black Duck Software (Burlington, MA)</p>
       <p class="text-body-secondary">February 2013 - October 2014</p>
-      <div class="container-fluid pb-3">
-        <span class="badge rounded-pill bg-dark">HTML</span>
-        <span class="badge rounded-pill bg-dark">CSS/LESS</span>
-        <span class="badge rounded-pill bg-dark">Bootstrap</span>
-        <span class="badge rounded-pill bg-dark">Agile</span>
-        <span class="badge rounded-pill bg-dark">Git</span>
+      <div class="pb-3">
+        <sl-badge variant="neutral" pill>HTML</sl-badge>
+        <sl-badge variant="neutral" pill>CSS/LESS</sl-badge>
+        <sl-badge variant="neutral" pill>Bootstrap</sl-badge>
+        <sl-badge variant="neutral" pill>Agile</sl-badge>
+        <sl-badge variant="neutral" pill>Git</sl-badge>
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-12 col-md-6">
       <p>As a UI Software Engineer, I worked with the development and design teams to turn the visual designs into working applications through best-practice usability techniques and user acceptance testing.</p>
       <ul class="icon-list">
         <li>Developer - software inventory and management system</li>
@@ -256,21 +315,21 @@
     </div>
   </div>
 </div>
-<div class="container-xxl mb-2 py-2 px-md-5">
-  <div class="row px-3 pb-3">
-    <div class="col-md-6">
+<div class="container mb-2 py-2 px-0">
+  <div class="row px-0 pb-3 mx-0">
+    <div class="col-12 col-md-6">
       <h2 class="mt-0">Help Desk Analyst</h2>
       <p class="fs-5 my-0">Conservation Services Group (Westborough, MA)</p>
       <p class="text-body-secondary">June 2008 - November 2010</p>
-      <div class="container-fluid pb-3">
-        <span class="badge rounded-pill bg-dark">JIRA</span>
-        <span class="badge rounded-pill bg-dark">DevOps</span>
-        <span class="badge rounded-pill bg-dark">Ubuntu</span>
-        <span class="badge rounded-pill bg-dark">RHEL</span>
-        <span class="badge rounded-pill bg-dark">VMs</span>
+      <div class="pb-3">
+        <sl-badge variant="neutral" pill>JIRA</sl-badge>
+        <sl-badge variant="neutral" pill>DevOps</sl-badge>
+        <sl-badge variant="neutral" pill>Ubuntu</sl-badge>
+        <sl-badge variant="neutral" pill>RHEL</sl-badge>
+        <sl-badge variant="neutral" pill>VMs</sl-badge>
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-12 col-md-6">
     <p>As a Help Desk Analyst, I managed and administered the internal IT Help Desk system while maintaining and active system for automated email responses and user-focused ticketing system.</p>
       <ul class="icon-list">
         <li>Managed and administered IT Help Desk System (Spiceworks)</li>
@@ -285,74 +344,78 @@
     </div>
   </div>
 </div>
-<div class="container-xxl py-3 mt-3 text-bg-light">
-  <div class="row px-3 pb-3">
+<div class="container py-3 mt-3 px-0 text-bg-light">
+  <div class="row px-0 pb-3 mx-0">
     <div class="col-12">
       <h2>Education</h2>
       <p class="paragraph-inset">Massachusetts College of Liberal Arts - North Adams, MA</p>
     </div>
   </div>
-  <div class="row px-3 align-items-center">
-    <div class="col-md-6">
-      <h3 class="job--company-name">Bachelor of Arts</h3>
-      <h4 class="job--company-role">Fine and Performing Arts, Music</h4>
-      <p class="job--company-dates">2003 - 2008</p>
+  <div class="row px-0 pb-3 mx-0">
+    <div class="col-12 col-md-6">
+      <h3 class="job--company-name px-0">Bachelor of Arts</h3>
+      <h4 class="job--company-role px-0">Fine and Performing Arts, Music</h4>
+      <p class="job--company-dates px-0">2003 - 2008</p>
     </div>
-    <div class="col-md-6">
-      <h3 class="job--company-name">Bachelor of Arts</h3>
-      <h4 class="job--company-role">Arts, Entertainment, and Media Management</h4>
-      <p class="job--company-dates">2003 - 2008</p>
+    <div class="col-12 col-md-6">
+      <h3 class="job--company-name px-0">Bachelor of Arts</h3>
+      <h4 class="job--company-role px-0">Arts, Entertainment, and Media Management</h4>
+      <p class="job--company-dates px-0">2003 - 2008</p>
     </div>
   </div>
-  <div class="row px-3 py-3">
+  <div class="row px-0 pb-3 mx-0">
     <p>Alpha Chi - National Scholars Honor Society - Who’s Who in American Colleges and Universities</p>
   </div>
 </div>
-<div class="container-xxl pb-3">
-  <div class="row px-3">
-    <div class="col-12">
-      <h2>Skills</h2>
-      <p class="paragraph-inset">If a project does not have a component library or design manual, I will often create one to assist in cross-team communications.</p>
+<div class="container py-3 mt-3 px-0">
+  <div class="row px-0 pb-3 mx-0">
+    <div class="row px-0 mx-0">
+      <div class="col-12">
+        <h2>Skills</h2>
+        <p class="paragraph-inset">If a project does not have a component library or design manual, I will often create one to assist in cross-team communications.</p>
+      </div>
     </div>
-  </div>
-  <div class="row px-3 justify-content-md-center text-center">
-    <div class="col-sm-6 col-md-3">
-      <p class="column-list-item"><strong>UX / UI Design</strong></p>
-      <p class="column-list-item">HTML / CSS</p>
-      <p class="column-list-item"><strong>Iconography</strong></p>
-    </div>
-    <div class="col-sm-6 col-md-3">
-      <p class="column-list-item">Prototyping</p>
-      <p class="column-list-item"><strong>Wireframes</strong></p>
-      <p class="column-list-item">User testing</p>
-    </div>
-    <div class="col-sm-6 col-md-3">
-      <p class="column-list-item"><strong>Figma / FigJam</strong></p>
-      <p class="column-list-item">Sketch</p>
-      <p class="column-list-item"><strong>Design systems</strong></p>
-    </div>
-    <div class="col-sm-6 col-md-3">
-      <p class="column-list-item">Product management</p>
-      <p class="column-list-item"><strong>Roadmapping</strong></p>
-      <p class="column-list-item">Agile methodologies</p>
+    <div class="row px-0 justify-content-md-center text-center">
+      <div class="col-sm-6 col-md-3">
+        <p class="column-list-item"><strong>UX / UI Design</strong></p>
+        <p class="column-list-item">HTML / CSS</p>
+        <p class="column-list-item"><strong>Iconography</strong></p>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <p class="column-list-item">Prototyping</p>
+        <p class="column-list-item"><strong>Wireframes</strong></p>
+        <p class="column-list-item">User testing</p>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <p class="column-list-item"><strong>Figma / FigJam</strong></p>
+        <p class="column-list-item">Sketch</p>
+        <p class="column-list-item"><strong>Design systems</strong></p>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <p class="column-list-item">Product management</p>
+        <p class="column-list-item"><strong>Roadmapping</strong></p>
+        <p class="column-list-item">Agile methodologies</p>
+      </div>
     </div>
   </div>
 </div>
-<div class="container-xxl py-3 my-3 text-bg-light">
-  <div class="row px-3 pb-3">
-    <div class="col-12">
-      <h2>Organizations</h2>
-      <p class="paragraph-inset">Various organizations that I have belonged to, past and present.</p>
+<div class="container py-3 mt-3 px-0">
+  <div class="pb-3 text-bg-light">
+    <div class="row px-0 mx-0">
+      <div class="col-12">
+        <h2>Organizations</h2>
+        <p class="paragraph-inset">Various organizations that I have belonged to, past and present.</p>
+      </div>
     </div>
-  </div>
-  <div class="row px-3 align-items-center">
-    <div class="col-md-6">
-      <h3 class="job--company-name">UXPA Boston</h3>
-      <p class="job--company-dates">2017 - Present</p>
-    </div>
-    <div class="col-md-6">
-      <h3 class="job--company-name">W3C CSS Working Group</h3>
-      <p class="job--company-dates">April 2020 - August 2021</p>
+    <div class="row px-0 pb-3 mx-0">
+      <div class="col-12 col-md-6">
+        <h3 class="job--company-name">UXPA Boston</h3>
+        <p class="job--company-dates">2017 - Present</p>
+      </div>
+      <div class="col-12 col-md-6">
+        <h3 class="job--company-name">W3C CSS Working Group</h3>
+        <p class="job--company-dates">April 2020 - August 2021</p>
+      </div>
     </div>
   </div>
 </div>
@@ -360,122 +423,125 @@
 </content>
 
     </main>
-    <footer class="footer d-flex flex-wrap flex-column bg-dark text-white" data-bs-theme="dark">
-      <div class="container">
-        <div class="row">
-          <div class="col-6 col-md-3">
-            <p class="mb-2">Journeys</p>
-            <ul class="list-unstyled">
-              <li class="mb-1">
-                <a class="icon-link" href="/designs/task-it" alt="Link to Task-It journey">
-                  <span>Task-It!</span>
-                </a>
-              </li>
-              <li class="mb-1">
-                <a class="icon-link" href="/designs/alm" alt="Link to Application Lifecycle Management (ALM) journey">
-                  <span>ALM</span>
-                </a>
-              </li>
-              <li class="mb-1">
-                <a class="icon-link" href="/designs/customer-engagement" alt="Link to Customer Engagement journey">
-                  <span>Customer Engagement App</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md-3">
-            <p class="mb-2">Prototypes</p>
-            <ul class="list-unstyled">
-              <li class="mb-1">
-                <a class="icon-link" href="https://www.adamjolicoeur.com/design-tracker-template/" alt="External link to design tracker example">
-                  <span>Design tracker</span>
-                </a>
-              </li>
-              <li class="mb-1">
-                <a class="icon-link" href="https://pf4testbench.netlify.app/" alt="External link to patternfly v4 prototype">
-                  PatternFly.org v4 <i class="fa-solid fa-square-up-right"></i>
-                </a>
-              </li>
-              <li class="mb-1">
-                <a class="icon-link" href="https://kubevirtio-site.netlify.app/" alt="External link to kubevirt landing page prototype">
-                  <span>Kubevirt&nbsp;community</span> <i class="fa-solid fa-square-up-right"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md-3">
-            <p class="mb-2">Icons &amp; Branding</p>
-            <ul class="list-unstyled">
-              <li class="mb-1">
-                <a href="/icons-and-branding" class="icon-link" alt="Link to tshirt designs">
-                  Icons and Branding
-                </a>
-              </li>
-              <li class="mb-1">
-                <a href="https://www.adamjolicoeur.com/stream-deck-icon-packs/" class="icon-link" target="top" alt="Link to Stream Deck icons on GitHub">
-                  Stream Deck Icons
-                </a>
-              </li>
-              <li class="mb-1">
-                <a href="https://www.figma.com/community/file/1287072958179215150/switchback-icon-library" class="icon-link" target="top" alt="External link to Figma library">
-                  Switchback Icon Library
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md-3">
-            <p class="mb-2">Social</p>
-            <ul class="list-unstyled">
-              <li class="mb-1">
-                <a href="https://www.linkedin.com/in/ajjolicoeur/" class="icon-link" target="top" alt="View my LinkedIn profile">
-                  <span>LinkedIn</span>
-                </a>
-              </li>
-              <li class="mb-1">
-                <a href="https://github.com/AdamJ" class="icon-link" target="top" alt="View my GitHub profile">
-                  <span>GitHub</span>
-                </a>
-              </li>
-              <li class="mb-1">
-                <a href="https://figma.com/@AdamJ" class="icon-link" target="top" alt="View my Figma community profile">
-                  <span>Figma Community</span>
-                </a>
-              </li>
-              <li class="mb-1">
-                <a href="https://dev.to/adamj" class="icon-link" target="top" alt="View my Dev.to profile">
-                  <span>Dev.to</span>
-                </a>
-              </li>
-              <li class="mb-1">
-                <a href="https://codepen.io/AdamJolicoeur" class="icon-link" target="top" alt="View my Codepen.io profile">
-                  <span>Codepen.io</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row justify-content-between">
-          <div class="col-12 text-md-center text-center">
-            <small>
-              Copyright &copy; 2008-2024
-              <a class="link-offset-2 text-light" href="/about" alt="Link to my about page">
-                Adam J. Jolicoeur
-              </a>
-            </small>
-          </div>
-        </div>
+    <footer class="footer d-flex flex-wrap flex-column mt-5">
+  <div class="container px-0 px-md-1">
+    <div class="row">
+      <div class="col-6 col-md-3 pt-3 pt-md-0">
+        <p class="mb-2">Journeys</p>
+        <ul class="list-unstyled">
+          <li class="mb-1">
+            <a class="icon-link" href="/designs/task-it" alt="Link to Task-It journey">
+              Task-It!
+            </a>
+          </li>
+          <li class="mb-1">
+            <a class="icon-link" href="/designs/alm" alt="Link to Application Lifecycle Management (ALM) journey">
+              ALM
+            </a>
+          </li>
+          <li class="mb-1">
+            <a class="icon-link" href="/designs/customer-engagement" alt="Link to Customer Engagement journey">
+              Customer Engagement App
+            </a>
+          </li>
+        </ul>
       </div>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQCZPW3PZN"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      <div class="col-6 col-md-3 pt-3 pt-md-0">
+        <p class="mb-2">Prototypes</p>
+        <ul class="list-unstyled">
+          <li class="mb-1">
+            <a class="icon-link" href="https://www.adamjolicoeur.com/design-tracker-template/" rel="noopener" target="_blank" alt="External link to design tracker example">
+              Design tracker
+            </a>
+          </li>
+          <li class="mb-1">
+            <a class="icon-link" href="https://pf4testbench.netlify.app/" rel="noopener" target="_blank" alt="External link to patternfly v4 prototype">
+              PatternFly.org v4 <sl-icon name="box-arrow-up-right"></sl-icon>
+            </a>
+          </li>
+          <li class="mb-1">
+            <a class="icon-link" href="https://kubevirtio-site.netlify.app/" rel="noopener" target="_blank" alt="External link to kubevirt landing page prototype">
+              Kubevirt&nbsp;community <sl-icon name="box-arrow-up-right"></sl-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-3 pt-3 pt-md-0">
+        <p class="mb-2">Graphic</p>
+        <ul class="list-unstyled">
+          <li class="mb-1">
+            <a href="/icons-and-branding" class="icon-link" alt="Link to tshirt designs">
+              Icons and Branding
+            </a>
+          </li>
+          <li class="mb-1">
+            <a href="https://www.adamjolicoeur.com/stream-deck-icon-packs/" rel="noopener" class="icon-link" target="_blank" alt="External link to Stream Deck icons on GitHub">
+              Stream Deck Icons <sl-icon name="box-arrow-up-right"></sl-icon>
+            </a>
+          </li>
+          <li class="mb-1">
+            <a href="https://www.figma.com/community/file/1287072958179215150/switchback-icon-library" rel="noopener" class="icon-link" target="_blank" alt="External link to Figma library">
+              Switchback Icon Library <sl-icon name="box-arrow-up-right"></sl-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-3 pt-3 pt-md-0">
+        <p class="mb-2">Social</p>
+        <ul class="list-unstyled">
+          
+          <li class="mb-1">
+            <a href="https://www.linkedin.com/in/ajjolicoeur/" rel="noopener" class="icon-link" target="_blank" alt="External link to view my LinkedIn profile">
+              <sl-icon name="linkedin"></sl-icon> LinkedIn
+            </a>
+          </li>
+          <li class="mb-1">
+            <a href="https://github.com/AdamJ" rel="noopener" class="icon-link" target="_blank" alt="External link to view my GitHub profile">
+              <sl-icon name="github"></sl-icon> GitHub
+            </a>
+          </li>
+          <li class="mb-1">
+            <a href="https://figma.com/@AdamJ" rel="noopener" class="icon-link" target="_blank" alt="External link to view my Figma community profile">
+              <sl-icon name="palette"></sl-icon> Figma Community
+            </a>
+          </li>
+          <li class="mb-1">
+            <a href="https://dev.to/adamj" rel="noopener" class="icon-link" target="_blank" alt="External link to view my Dev.to profile">
+              <sl-icon name="code"></sl-icon> Dev.to
+            </a>
+          </li>
+          <li class="mb-1">
+            <a href="https://codepen.io/AdamJolicoeur" rel="noopener" class="icon-link" target="_blank" alt="External link to view my Codepen.io profile">
+              <sl-icon name="braces"></sl-icon> Codepen.io
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row justify-content-between pt-3 pb-2 pb-md-0">
+      <div class="col-12 text-md-center text-center">
+        <small>
+          Copyright &copy; 2008-2024
+          <a href="/about" alt="Link to my about page">
+            Adam J. Jolicoeur
+          </a>
+        </small>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+  <script src="/js/jolicoeur.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQCZPW3PZN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        gtag('config', 'G-XQCZPW3PZN');
-      </script>
-    </footer>
+    gtag('config', 'G-XQCZPW3PZN');
+  </script>
+</footer>
+
   </body>
 </html>

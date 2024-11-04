@@ -1,7 +1,8 @@
 {
   "cSpell.ignoreWords": [
     "borderless",
-    "customerengagement"
+    "customerengagement",
+    "wireframe"
   ],
   "cSpell.words": [
     "cssnano",
@@ -13,5 +14,6 @@
     "stylelint",
     "syntaxhighlight",
     "webfonts"
-  ]
+  ],
+  "html.customData": ["./node_modules/@shoelace-style/shoelace/dist/vscode.html-custom-data.json"]
 }

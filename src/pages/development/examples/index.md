@@ -14,9 +14,12 @@ eleventyNavigation:
 [CAS Ripper](https://codepen.io/AdamJolicoeur/pen/XWpPmjw "Link to Codepen example demonstrating basic example of an architectural drawing library") | &nbsp;| Link to Codepen example demonstrating basic example of an architectural drawing library |
 [Animated Cards on Glass](https://codepen.io/AdamJolicoeur/pen/XWNbJvp "Link to Codepen example showing animated cards on simulated glass") | &nbsp;| Link to Codepen example showing animated cards on simulated glass |
 
-### [See all of my work on CodePen](https://codepen.io/AdamJolicoeur "See all of my work on CodePen")
+<sl-button href="[/development/examples](https://codepen.io/AdamJolicoeur)" target="_blank">
+  <sl-icon slot="suffix" name="box-arrow-up-right"></sl-icon>
+  See all of my work on CodePen
+</sl-button>
 
----
+<sl-divider></sl-divider>
 
 <div class="container-xxl mb-2 py-2 px-3">
   <h2>

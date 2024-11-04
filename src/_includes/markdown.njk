@@ -2,18 +2,29 @@
 layout: base.njk
 ---
 
-<div class="container-xxl intro py-3 px-0 px-md-5 text-center">
+<div class="container intro py-3 px-0 text-center">
   <h1 class="display-1 fw-bold text-break">{{ title }}</h1>
   <p class="sub-header text-break px-2 px-md-0">
     {{ description }}
   </p>
   {%- if (headerButton) -%}
-  <a class="btn btn-outline-secondary btn-lg" href="{{ primaryURL}}" | url }}" type="button">{{ primaryAction }}</a>
+  <sl-button href="{{ primaryURL}}" size="large" variant="primary" outline pill>{{ primaryAction }}</sl-button>
+  {# <a class="btn btn-outline-secondary btn-lg" href="{{ primaryURL}}" | url }}" type="button">{{ primaryAction }}</a> #}
   {%- else -%}{%- endif -%}
 </div>
 
 <content>
-  <div class="container-xxl mb-2 py-2 px-md-5">
-    {{ content | safe }}
+  <div class="container mb-2 py-2 px-0">
+    <div class="row px-0 pb-3 mx-0">
+      <article class="col-sm-12 col-md-9 order-2 order-md-1">
+        {{ content | safe }}
+      </article>
+      {%- if content | toc -%}
+      <aside class="col-sm-12 col-md-3 order-1 order-md-2" aria-label="complimentary">
+        {{ content | toc | safe }}
+      </aside>
+      {%- else -%}
+      {%- endif -%}
+    </div>
   </div>
 </content>

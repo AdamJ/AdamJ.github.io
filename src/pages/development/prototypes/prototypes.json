@@ -1,5 +1,4 @@
 {
   "layout": "page",
-  "permalink": "/development/{{ page.fileSlug }}/",
-  "tags": ["pages, prototypes"]
+  "permalink": "/development/{{ page.fileSlug }}/"
 }

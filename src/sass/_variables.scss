@@ -2,16 +2,19 @@
 
 $fa-font-path: "../webfonts";
 $size-base: 16px;
+:root {
+  --font-size-base: $size-base;
+}
 
 // colors
-$color-primary: $blue-700;
-$color-secondary: $white;
-$background-color-default: $white;
-$background-color-highlight: $grey-100;
-$border-color-default: $grey-200;
-$border-color-highlight: $blue-300;
-$icon-default: $grey-600;
-$text-body-default: $grey-900;
-$text-body-light: $black-opacity-60;
+// $color-primary: $blue-700;
+// $color-secondary: $white;
+// $background-color-default: $white;
+// $background-color-highlight: $grey-100;
+// $border-color-default: $grey-200;
+// $border-color-highlight: $blue-300;
+// $icon-default: $grey-600;
+// $text-body-default: $grey-900;
+// $text-body-light: $black-opacity-60;
 
 // scss-docs-end spacer-variables-maps

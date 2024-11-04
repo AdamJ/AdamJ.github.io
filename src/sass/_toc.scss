@@ -1,0 +1,31 @@
+.toc.markdown-toc {
+  --sl-link-color: var(--sl-color-primary-700);
+  @media (prefers-color-scheme: dark) {
+    --sl-link-color: var(--sl-color-primary-700);
+  }
+  background-color: var(--sl-color-neutral-50);
+  padding-top: var(--sl-spacing-medium);
+  padding-bottom: var(--sl-spacing-medium);
+  border-radius: var(--sl-border-radius-large);
+  box-shadow: var(--sl-shadow-medium);
+  position: sticky;
+  top: 16px;
+  a {
+    color: var(--sl-link-color);
+    &:hover {
+      color: var(--sl-color-primary-800);
+    }
+  }
+  @media only screen and (max-width: 776px) {
+    ul {
+      @include display(flex);
+      justify-content: space-between;
+      list-style: none;
+      padding-right: 2rem !important;
+      margin-bottom: 0 !important;
+      li ul li {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,12 +1,34 @@
 const emojiRegex = require("emoji-regex");
 const slugify = require("slugify");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const pluginTOC = require('eleventy-plugin-toc');
+const pluginDropcap = require('eleventy-plugin-dropcap');
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItHighlightJS = require('markdown-it-highlightjs')
 const packageVersion = require("./package.json").version;
 const fs = require("fs");
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const inclusiveLangPlugin = require("@11ty/eleventy-plugin-inclusive-language");
+
+const mdOptions = {
+  html: true,
+  breaks: true,
+  linkify: true,
+  typographer: true
+}
+
+const mdAnchorOpts = {
+  permalink: markdownItAnchor.permalink.linkInsideHeader({
+    symbol: '#',
+    class: 'anchor-link',
+  }),
+  level: [2, 3, 4]
+}
+
+// const formatDate = date => DateTime.fromJSDate(new Date(date)).toISO({includeOffset: true, suppressMilliseconds: true})
+// const formatDateYear = date => DateTime.fromJSDate(new Date(date)).get('year')
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
@@ -16,6 +38,13 @@ module.exports = function (eleventyConfig) {
     }
   });
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(inclusiveLangPlugin, {
+    templateFormats: ["md, html"], // default, add more file extensions here
+
+		// accepts an array or a comma-delimited string
+		words:
+			"simply,obviously,basically,of course,clearly,just,everyone knows,however,easy",
+  });
 
   eleventyConfig.addWatchTarget("src/sass/*.scss");
 
@@ -24,6 +53,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/cache-polyfill.js");
   eleventyConfig.addPassthroughCopy("src/CNAME");
   eleventyConfig.addPassthroughCopy("src/favicon.*");
+  eleventyConfig.addPassthroughCopy("src/favicon-16x16.png");
+  eleventyConfig.addPassthroughCopy("src/favicon-32x32.png");
   eleventyConfig.addPassthroughCopy("src/apple-touch-icon.png");
   eleventyConfig.addPassthroughCopy("src/safari-pinned-tab.svg");
   eleventyConfig.addPassthroughCopy("src/android-chrome-192x192.png");
@@ -32,6 +63,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/keybase.txt");
   eleventyConfig.addPassthroughCopy("src/manifest.json");
   eleventyConfig.addPassthroughCopy("src/sw.js");
+  eleventyConfig.addPassthroughCopy("src/js/jolicoeur.js");
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
   eleventyConfig.addShortcode("packageVersion", () => `v${packageVersion}`);
@@ -71,17 +103,81 @@ module.exports = function (eleventyConfig) {
     });
   });
 
-  /* Markdown Overrides */
-  let markdownLibrary = markdownIt({
-    html: true,
-    breaks: true,
-    langPrefix: 'language-',
-    linkify: true,
-  })
-  // .use(markdownItAnchor, {
-  //   permalink: markdownItAnchor.permalink.headerLink({ safariReaderFix: true })
-  // })
-  eleventyConfig.setLibrary("md", markdownLibrary);
+  // Markdown
+  eleventyConfig.setLibrary(
+    'md',
+    markdownIt(mdOptions)
+      .use(markdownItAnchor, mdAnchorOpts)
+      .use(markdownItHighlightJS)
+  );
+
+  // Plugins
+  // https://github.com/jdsteinbach/jdsteinbach.github.io/blob/blog/.eleventy.js
+  // https://github.com/jdsteinbach/eleventy-plugin-toc
+  eleventyConfig.addPlugin(pluginTOC, {
+    tags: ["h2", "h3", "h4"],
+    wrapper: "div",
+    wrapperClass: "toc markdown-toc",
+    ul: true,
+    flat: false
+  });
+  eleventyConfig.addPlugin(
+    pluginDropcap,
+    {skipFirstParagraphClass: 'precursor'}
+  );
+
+  // Create Posts Collection
+  // https://github.com/jdsteinbach/jdsteinbach.github.io/blob/blog/.eleventy.js
+  eleventyConfig.addCollection('posts', collection => {
+    return collection
+      .getAllSorted()
+      .reverse()
+      .filter(item => {
+        return item.inputPath.match(/^\.\/src\/posts\//) !== null
+      })
+  });
+
+  // Create Posts Index Collection
+  // https://github.com/jdsteinbach/jdsteinbach.github.io/blob/blog/.eleventy.js
+  eleventyConfig.addCollection('postsIndex', collection => {
+    return collection
+      .getAllSorted()
+      .reverse()
+      .filter(item => {
+        return item.inputPath.match(/^\.\/src\/posts\//) !== null
+      })
+      .slice(0, 8)
+  });
+
+  // Create Posts Feed Collection
+  // https://github.com/jdsteinbach/jdsteinbach.github.io/blob/blog/.eleventy.js
+  eleventyConfig.addCollection('postsFeed', collection => {
+    return collection
+      .getAllSorted()
+      .reverse()
+      .filter(item => {
+        return item.inputPath.match(/^\.\/src\/posts\//) !== null
+      })
+      .slice(0, 10)
+  });
+
+  // Create Category Collections
+  // https://github.com/jdsteinbach/jdsteinbach.github.io/blob/blog/.eleventy.js
+  Array.from(['development', 'general', 'design', 'portfolio']).map(cat => {
+    eleventyConfig.addCollection(cat, collection => {
+      return collection
+        .getAllSorted()
+        .filter(item => {
+          if ('categories' in item.data) {
+            return item.data.categories.filter(category => {
+              return category.toLowerCase() === cat.toLowerCase()
+            }).length > 0
+          }
+          return false
+        })
+        .reverse()
+    })
+  });
 
   return {
     passthroughFileCopy: true,

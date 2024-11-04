@@ -1,5 +1,0 @@
-{
-  "tags": ["pages, testimonials"],
-  "layout": "page",
-  "permalink": "/testimonials/{{ page.fileSlug }}/"
-}

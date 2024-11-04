@@ -1,0 +1,58 @@
+footer,
+.footer {
+  @include display-flex;
+  @include padding-top(16px);
+  @include padding-right(24px);
+  @include padding-bottom(16px);
+  @include padding-left(24px);
+
+  background: var(--sl-color-neutral-800);
+  & p {
+    color: var(--sl-color-neutral-50);
+    @media (prefers-color-scheme: dark) {
+      color: var(--sl-color-neutral-950);
+    }
+  }
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  border-top: 1px solid #E3E3E3;
+  // min-height: 200px;
+  @media (prefers-color-scheme: dark) {
+    background: var(--sl-color-neutral-100);
+    color: var(--sl-color-neutral-50);
+  }
+  a {
+    text-decoration: none !important;
+    color: var(--sl-color-primary-400) !important;
+    &:hover {
+      color: inherit !important;
+      color: var(--sl-color-primary-200) !important;
+    }
+    @media (prefers-color-scheme: dark) {
+      color: var(--sl-color-primary-600) !important;
+      &:hover {
+        color: var(--sl-color-primary-800) !important;
+      }
+    }
+  }
+  ul {
+    @include list-style-none;
+    @include margin-left(0);
+    margin-block-end: 0;
+    margin-block-start: 0;
+    padding-inline-start: 0;
+  }
+  & small, & .small {
+    color: var(--sl-color-neutral-50);
+    @media (prefers-color-scheme: dark) {
+      color: var(--sl-color-neutral-950);
+    }
+  }
+}
+.footer-link {
+  color: var(--link-color-primary);
+  &:hover, &:active {
+    color: var(--link-color-primary-hover);
+  }
+}

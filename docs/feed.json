@@ -11,17 +11,17 @@
   },
   "items": [
     {
-      "id": "https://www.adamjolicoeur.com/icons-and-branding/",
-      "url": "https://www.adamjolicoeur.com/icons-and-branding/",
-      "title": "Icons and Branding",
-      "date_published": "2024-11-01T15:24:45Z"
-    }
-    ,
-    {
       "id": "https://www.adamjolicoeur.com/icons-and-branding/icons/",
       "url": "https://www.adamjolicoeur.com/icons-and-branding/icons/",
       "title": "Icons",
-      "date_published": "2024-11-01T15:20:42Z"
+      "date_published": "2024-11-01T18:49:31Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/icons-and-branding/",
+      "url": "https://www.adamjolicoeur.com/icons-and-branding/",
+      "title": "Icons and Branding",
+      "date_published": "2024-11-01T18:49:31Z"
     }
     ,
     {
@@ -116,8 +116,8 @@
     }
     ,
     {
-      "id": "https://www.adamjolicoeur.com/testimonials/testimonials/",
-      "url": "https://www.adamjolicoeur.com/testimonials/testimonials/",
+      "id": "https://www.adamjolicoeur.com/testimonials/",
+      "url": "https://www.adamjolicoeur.com/testimonials/",
       "title": "Testimonials",
       "date_published": "2024-06-10T18:56:16Z"
     }
@@ -132,7 +132,7 @@
     {
       "id": "https://www.adamjolicoeur.com/resume/",
       "url": "https://www.adamjolicoeur.com/resume/",
-      "title": "resume",
+      "title": "Adam J. Jolicoeur",
       "date_published": "2024-06-10T18:56:16Z"
     }
     ,
@@ -172,9 +172,9 @@
     }
     ,
     {
-      "id": "https://www.adamjolicoeur.com/contact/",
-      "url": "https://www.adamjolicoeur.com/contact/",
-      "title": "contact",
+      "id": "https://www.adamjolicoeur.com/connect/",
+      "url": "https://www.adamjolicoeur.com/connect/",
+      "title": "connect",
       "date_published": "2024-06-10T18:56:16Z"
     }
     ,

@@ -1,0 +1,194 @@
+---
+layout: base.njk
+---
+
+<div class="container my-3">
+  <sl-button href="/designs/" pill>
+    <sl-icon slot="prefix" name="arrow-left-short"></sl-icon>
+    Back
+  </sl-button>
+</div>
+<div class="container mb-3">
+  <sl-carousel class="carousel-thumbnails" navigation loop style="--aspect-ratio: 3/2;">
+    <sl-carousel-item>
+      <img
+        alt="{{ image0-alt }}"
+        src="{{ image0 }}"
+      />
+    </sl-carousel-item>
+    <sl-carousel-item>
+      <img
+        alt="{{ image1-alt }}"
+        src="{{ image1 }}"
+      />
+    </sl-carousel-item>
+    <sl-carousel-item>
+      <img
+        alt="{{ image25-alt }}"
+        src="{{ image25 }}"
+      />
+    </sl-carousel-item>
+    <sl-carousel-item>
+      <img
+        alt="{{ image1-alt }}"
+        src="{{ image2 }}"
+      />
+    </sl-carousel-item>
+    <sl-carousel-item>
+      <img
+        alt="{{ image1-alt }}"
+        src="{{ image3 }}"
+      />
+    </sl-carousel-item>
+    <sl-carousel-item>
+      <img
+        alt="{{ image1-alt }}"
+        src="{{ image4 }}"
+      />
+    </sl-carousel-item>
+    <sl-carousel-item>
+      <img
+        alt="{{ image1-alt }}"
+        src="{{ image5 }}"
+      />
+    </sl-carousel-item>
+    <sl-carousel-item>
+      <img
+        alt="{{ image1-alt }}"
+        src="{{ image6 }}"
+      />
+    </sl-carousel-item>
+    <sl-carousel-item>
+      <img
+        alt="{{ image1-alt }}"
+        src="{{ image7 }}"
+      />
+    </sl-carousel-item>
+    <sl-carousel-item>
+      <img
+        alt="{{ image1-alt }}"
+        src="{{ image8 }}"
+      />
+    </sl-carousel-item>
+    <sl-carousel-item>
+      <img
+        alt="{{ image1-alt }}"
+        src="{{ image9 }}"
+      />
+    </sl-carousel-item>
+    <sl-carousel-item>
+      <img
+        alt="{{ image1-alt }}"
+        src="{{ image10 }}"
+      />
+    </sl-carousel-item>
+    <sl-carousel-item>
+      <img
+        alt="{{ image1-alt }}"
+        src="{{ image11 }}"
+      />
+    </sl-carousel-item>
+    <sl-carousel-item>
+      <img
+        alt="{{ image1-alt }}"
+        src="{{ image12 }}"
+      />
+    </sl-carousel-item>
+    <sl-carousel-item>
+      <img
+        alt="{{ image1-alt }}"
+        src="{{ image13 }}"
+      />
+    </sl-carousel-item>
+  </sl-carousel>
+
+  <div class="thumbnails">
+    <div class="thumbnails__scroller">
+      <img alt="{{image0-alt}}" class="thumbnails__image active" src="{{image0}}" />
+      <img alt="{{image1-alt}}" class="thumbnails__image" src="{{image1}}" />
+      <img alt="{{image25-alt}}" class="thumbnails__image" src="{{image25}}" />
+      <img alt="{{image2-alt}}" class="thumbnails__image" src="{{image2}}" />
+      <img alt="{{image3-alt}}" class="thumbnails__image" src="{{image3}}" />
+      <img alt="{{image4-alt}}" class="thumbnails__image" src="{{image4}}" />
+      <img alt="{{image5-alt}}" class="thumbnails__image" src="{{image5}}" />
+      <img alt="{{image6-alt}}" class="thumbnails__image" src="{{image6}}" />
+      <img alt="{{image7-alt}}" class="thumbnails__image" src="{{image7}}" />
+      <img alt="{{image8-alt}}" class="thumbnails__image" src="{{image8}}" />
+      <img alt="{{image9-alt}}" class="thumbnails__image" src="{{image9}}" />
+      <img alt="{{image10-alt}}" class="thumbnails__image" src="{{image10}}" />
+      <img alt="{{image11-alt}}" class="thumbnails__image" src="{{image11}}" />
+      <img alt="{{image12-alt}}" class="thumbnails__image" src="{{image12}}" />
+      <img alt="{{image13-alt}}" class="thumbnails__image" src="{{image13}}" />
+    </div>
+  </div>
+
+  <style>
+    .carousel-thumbnails {
+      --slide-aspect-ratio: 3 / 2;
+    }
+
+    .thumbnails {
+      display: flex;
+      justify-content: center;
+    }
+
+    .thumbnails__scroller {
+      display: flex;
+      gap: var(--sl-spacing-small);
+      overflow-x: auto;
+      scrollbar-width: none;
+      scroll-behavior: smooth;
+      scroll-padding: var(--sl-spacing-small);
+    }
+
+    .thumbnails__scroller::-webkit-scrollbar {
+      display: none;
+    }
+
+    .thumbnails__image {
+      width: 64px;
+      height: 32px;
+      object-fit: cover;
+
+      opacity: 0.3;
+      will-change: opacity;
+      transition: 250ms opacity;
+
+      cursor: pointer;
+    }
+
+    .thumbnails__image.active {
+      opacity: 1;
+    }
+  </style>
+
+  <script>
+    {
+      const carousel = document.querySelector('.carousel-thumbnails');
+      const scroller = document.querySelector('.thumbnails__scroller');
+      const thumbnails = document.querySelectorAll('.thumbnails__image');
+
+      scroller.addEventListener('click', e => {
+        const target = e.target;
+
+        if (target.matches('.thumbnails__image')) {
+          const index = [...thumbnails].indexOf(target);
+          carousel.goToSlide(index);
+        }
+      });
+
+      carousel.addEventListener('sl-slide-change', e => {
+        const slideIndex = e.detail.index;
+
+        [...thumbnails].forEach((thumb, i) => {
+          thumb.classList.toggle('active', i === slideIndex);
+          if (i === slideIndex) {
+            thumb.scrollIntoView({
+              block: 'nearest'
+            });
+          }
+        });
+      });
+    }
+  </script>
+</div>
