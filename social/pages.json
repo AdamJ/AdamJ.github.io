@@ -1,10 +1,5 @@
 [
 	{
-   "title":"Oops! Not Found",
-   "imgName":"oops-not-found"
-	},
-
-	{
    "title":"Adam Jolicoeur",
    "imgName":"home"
 	},
@@ -15,28 +10,8 @@
 	},
 
 	{
-   "title":"connect",
-   "imgName":"connect"
-	},
-
-	{
-   "title":"Application Lifecycle Management",
-   "imgName":"application-lifecycle-management"
-	},
-
-	{
-   "title":"Customer Engagement App",
-   "imgName":"customer-engagement-app"
-	},
-
-	{
    "title":"District 25 website",
    "imgName":"district-25-website"
-	},
-
-	{
-   "title":"Task-It!",
-   "imgName":"task-it"
 	},
 
 	{
@@ -45,18 +20,8 @@
 	},
 
 	{
-   "title":"Adam J. Jolicoeur",
-   "imgName":"adam-j.-jolicoeur"
-	},
-
-	{
    "title":"Stream Deck examples",
    "imgName":"stream-deck-examples"
-	},
-
-	{
-   "title":"Testimonials",
-   "imgName":"testimonials"
 	},
 
 	{
@@ -80,23 +45,8 @@
 	},
 
 	{
-   "title":"designs",
-   "imgName":"designs"
-	},
-
-	{
-   "title":"development",
-   "imgName":"development"
-	},
-
-	{
    "title":"redesign",
    "imgName":"redesign"
-	},
-
-	{
-   "title":"codepen examples",
-   "imgName":"codepen-examples"
 	},
 
 	{
@@ -115,16 +65,6 @@
 	},
 
 	{
-   "title":"Portfolio",
-   "imgName":"portfolio"
-	},
-
-	{
-   "title":"about",
-   "imgName":"about"
-	},
-
-	{
    "title":"Icons and Branding",
    "imgName":"icons-and-branding"
 	},
@@ -140,13 +80,78 @@
 	},
 
 	{
+   "title":"Creating a Blog",
+   "imgName":"creating-a-blog"
+	},
+
+	{
+   "title":"Custom Icons",
+   "imgName":"custom-icons"
+	},
+
+	{
+   "title":"Oops! Not Found",
+   "imgName":"oops-not-found"
+	},
+
+	{
    "title":"Adam Jolicoeur",
    "imgName":"home"
 	},
 
 	{
-   "title":"Creating a Blog",
-   "imgName":"creating-a-blog"
+   "title":"about",
+   "imgName":"about"
+	},
+
+	{
+   "title":"connect",
+   "imgName":"connect"
+	},
+
+	{
+   "title":"designs",
+   "imgName":"designs"
+	},
+
+	{
+   "title":"Application Lifecycle Management",
+   "imgName":"application-lifecycle-management"
+	},
+
+	{
+   "title":"Customer Engagement App",
+   "imgName":"customer-engagement-app"
+	},
+
+	{
+   "title":"Task-It!",
+   "imgName":"task-it"
+	},
+
+	{
+   "title":"development",
+   "imgName":"development"
+	},
+
+	{
+   "title":"codepen examples",
+   "imgName":"codepen-examples"
+	},
+
+	{
+   "title":"Portfolio",
+   "imgName":"portfolio"
+	},
+
+	{
+   "title":"Adam J. Jolicoeur",
+   "imgName":"adam-j.-jolicoeur"
+	},
+
+	{
+   "title":"Testimonials",
+   "imgName":"testimonials"
 	},
 
 	{

@@ -8,9 +8,9 @@ eleventyNavigation:
   order: 3
 ---
 
-<div class="container">
+<div class="container px-0">
   <h2 class="display-6">Mobile apps</h2>
-  <div class="row row-cols-1 row-cols-lg-2 align-items-stretch gy-5 pb-5">
+  <div class="row row-cols-1 row-cols-lg-2 align-items-stretch px-2 mx-0 gy-5 pb-5">
     <div class="col">
       <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/');">
         <div class="d-flex flex-column p-5 pb-3 text-white background-overlay rounded-5">
@@ -34,9 +34,9 @@ eleventyNavigation:
     </div>
   </div>
 </div>
-<div class="container">
+<div class="container px-0">
   <h2 class="display-6">Personal projects</h2>
-  <div class="row row-cols-1 row-cols-lg-2 align-items-stretch gy-5 pb-5">
+  <div class="row row-cols-1 row-cols-lg-2 align-items-stretch px-2 mx-0 gy-5 pb-5">
 <!-- Alfred workflows -->
     <div class="col">
       <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/thumbnail_Alfredlogo.png');">
@@ -72,7 +72,7 @@ eleventyNavigation:
   </div>
   <!-- RHD Design Manual & Patternfly.org -->
   <h2 class="display-6">Work-related projects</h2>
-  <div class="row row-cols-1 row-cols-lg-2 align-items-stretch gy-5 pb-5">
+  <div class="row row-cols-1 row-cols-lg-2 align-items-stretch px-2 mx-0 gy-5 pb-5">
     <div class="col">
       <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/thumbnail_RHDM.png');">
         <div class="d-flex flex-column h-100 p-5 text-white background-overlay rounded-5">
@@ -117,7 +117,7 @@ eleventyNavigation:
     </div>
   </div>
   <h2 class="display-6">Oldies but goodies</h2>
-  <div class="row row-cols-1 row-cols-lg-2 align-items-stretch gy-5 pb-5">
+  <div class="row row-cols-1 row-cols-lg-2 align-items-stretch px-2 mx-0 gy-5 pb-5">
     <div class="col">
       <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/thumbnail_kubevirtio.png');">
         <div class="d-flex flex-column h-100 p-5 text-white background-overlay rounded-5">
@@ -164,11 +164,11 @@ eleventyNavigation:
   </div>
   <sl-divider></sl-divider>
   <h2 class="display-6">Additional examples</h2>
-  <div class="row row-cols-1 row-cols-lg-2 align-items-stretch gy-5 pb-5">
-    <div class="col">
+  <div class="row row-cols-1 row-cols-lg-2 align-items-stretch px-0 mx-0 gy-5 pb-5">
+    <div class="col px-4">
       <sl-button href="/development/prototypes">prototypes for testing</sl-button>
     </div>
-    <div class="col">
+    <div class="col px-4">
       <sl-button href="/development/examples">codepen examples</sl-button>
     </div>
   </div>
