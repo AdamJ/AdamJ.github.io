@@ -3,6 +3,7 @@
 .DS_Store
 .idea
 .env
+.vscode
 npm-debug.log.*
 **/.cache/**
 # Ignore sketch files

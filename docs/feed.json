@@ -11,6 +11,83 @@
   },
   "items": [
     {
+      "id": "https://www.adamjolicoeur.com/testimonials/",
+      "url": "https://www.adamjolicoeur.com/testimonials/",
+      "title": "Testimonials",
+      "date_published": "2024-11-14T14:48:46Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/resume/",
+      "url": "https://www.adamjolicoeur.com/resume/",
+      "title": "Adam J. Jolicoeur",
+      "date_published": "2024-11-14T14:48:46Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/presentations/portfolio/",
+      "url": "https://www.adamjolicoeur.com/presentations/portfolio/",
+      "title": "Portfolio",
+      "date_published": "2024-11-14T14:48:46Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/development/examples/",
+      "url": "https://www.adamjolicoeur.com/development/examples/",
+      "title": "codepen examples",
+      "date_published": "2024-11-14T14:48:46Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/development/",
+      "url": "https://www.adamjolicoeur.com/development/",
+      "title": "development",
+      "date_published": "2024-11-14T14:48:46Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/designs/task-it/",
+      "url": "https://www.adamjolicoeur.com/designs/task-it/",
+      "title": "Task-It!",
+      "date_published": "2024-11-14T14:48:46Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/designs/customer-engagement/",
+      "url": "https://www.adamjolicoeur.com/designs/customer-engagement/",
+      "title": "Customer Engagement App",
+      "date_published": "2024-11-14T14:48:46Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/designs/alm/",
+      "url": "https://www.adamjolicoeur.com/designs/alm/",
+      "title": "Application Lifecycle Management",
+      "date_published": "2024-11-14T14:48:46Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/designs/",
+      "url": "https://www.adamjolicoeur.com/designs/",
+      "title": "designs",
+      "date_published": "2024-11-14T14:48:46Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/connect/",
+      "url": "https://www.adamjolicoeur.com/connect/",
+      "title": "connect",
+      "date_published": "2024-11-14T14:48:46Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/about/",
+      "url": "https://www.adamjolicoeur.com/about/",
+      "title": "about",
+      "date_published": "2024-11-14T14:48:46Z"
+    }
+    ,
+    {
       "id": "https://www.adamjolicoeur.com/icons-and-branding/icons/",
       "url": "https://www.adamjolicoeur.com/icons-and-branding/icons/",
       "title": "Icons",
@@ -22,20 +99,6 @@
       "url": "https://www.adamjolicoeur.com/icons-and-branding/",
       "title": "Icons and Branding",
       "date_published": "2024-11-01T18:49:31Z"
-    }
-    ,
-    {
-      "id": "https://www.adamjolicoeur.com/about/",
-      "url": "https://www.adamjolicoeur.com/about/",
-      "title": "about",
-      "date_published": "2024-10-10T15:21:58Z"
-    }
-    ,
-    {
-      "id": "https://www.adamjolicoeur.com/presentations/portfolio/",
-      "url": "https://www.adamjolicoeur.com/presentations/portfolio/",
-      "title": "Portfolio",
-      "date_published": "2024-09-30T18:26:06Z"
     }
     ,
     {
@@ -60,30 +123,9 @@
     }
     ,
     {
-      "id": "https://www.adamjolicoeur.com/development/examples/",
-      "url": "https://www.adamjolicoeur.com/development/examples/",
-      "title": "codepen examples",
-      "date_published": "2024-09-30T18:26:06Z"
-    }
-    ,
-    {
       "id": "https://www.adamjolicoeur.com/development/code/",
       "url": "https://www.adamjolicoeur.com/development/code/",
       "title": "redesign",
-      "date_published": "2024-09-30T18:26:06Z"
-    }
-    ,
-    {
-      "id": "https://www.adamjolicoeur.com/development/",
-      "url": "https://www.adamjolicoeur.com/development/",
-      "title": "development",
-      "date_published": "2024-09-30T18:26:06Z"
-    }
-    ,
-    {
-      "id": "https://www.adamjolicoeur.com/designs/",
-      "url": "https://www.adamjolicoeur.com/designs/",
-      "title": "designs",
       "date_published": "2024-09-30T18:26:06Z"
     }
     ,
@@ -116,23 +158,9 @@
     }
     ,
     {
-      "id": "https://www.adamjolicoeur.com/testimonials/",
-      "url": "https://www.adamjolicoeur.com/testimonials/",
-      "title": "Testimonials",
-      "date_published": "2024-06-10T18:56:16Z"
-    }
-    ,
-    {
       "id": "https://www.adamjolicoeur.com/streamdeck/examples/",
       "url": "https://www.adamjolicoeur.com/streamdeck/examples/",
       "title": "Stream Deck examples",
-      "date_published": "2024-06-10T18:56:16Z"
-    }
-    ,
-    {
-      "id": "https://www.adamjolicoeur.com/resume/",
-      "url": "https://www.adamjolicoeur.com/resume/",
-      "title": "Adam J. Jolicoeur",
       "date_published": "2024-06-10T18:56:16Z"
     }
     ,
@@ -144,37 +172,9 @@
     }
     ,
     {
-      "id": "https://www.adamjolicoeur.com/designs/task-it/",
-      "url": "https://www.adamjolicoeur.com/designs/task-it/",
-      "title": "Task-It!",
-      "date_published": "2024-06-10T18:56:16Z"
-    }
-    ,
-    {
       "id": "https://www.adamjolicoeur.com/designs/district25/",
       "url": "https://www.adamjolicoeur.com/designs/district25/",
       "title": "District 25 website",
-      "date_published": "2024-06-10T18:56:16Z"
-    }
-    ,
-    {
-      "id": "https://www.adamjolicoeur.com/designs/customer-engagement/",
-      "url": "https://www.adamjolicoeur.com/designs/customer-engagement/",
-      "title": "Customer Engagement App",
-      "date_published": "2024-06-10T18:56:16Z"
-    }
-    ,
-    {
-      "id": "https://www.adamjolicoeur.com/designs/alm/",
-      "url": "https://www.adamjolicoeur.com/designs/alm/",
-      "title": "Application Lifecycle Management",
-      "date_published": "2024-06-10T18:56:16Z"
-    }
-    ,
-    {
-      "id": "https://www.adamjolicoeur.com/connect/",
-      "url": "https://www.adamjolicoeur.com/connect/",
-      "title": "connect",
       "date_published": "2024-06-10T18:56:16Z"
     }
     ,

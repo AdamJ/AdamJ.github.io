@@ -25,3 +25,5 @@ Why create a blog? Why not?
 [https://dev.to/chaoocharles/responsive-navigation-bar-tutorial-html-css-3fb2](https://dev.to/chaoocharles/responsive-navigation-bar-tutorial-html-css-3fb2)
 [IBM Accessibility Toolkit](https://www.ibm.com/able/toolkit/design/overview)
 [https://11ty.rocks/posts/going-beyond-static-with-eleventy/#web-component-generator](https://11ty.rocks/posts/going-beyond-static-with-eleventy/#web-component-generator)
+[https://alexnorell.com/post/set-up-gpg/](https://alexnorell.com/post/set-up-gpg/)
+[https://www.creativebloq.com/typography/20-perfect-font-pairings-3132120](https://www.creativebloq.com/typography/20-perfect-font-pairings-3132120)

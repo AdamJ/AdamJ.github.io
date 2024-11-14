@@ -1,7 +1,7 @@
 {
   "name": "jolicoeur",
   "title": "Adam J. Jolicoeur",
-  "version": "9.0.0",
+  "version": "9.1.0",
   "author": "Adam J. Jolicoeur",
   "homepage": "https://www.adamjolicoeur.com",
   "license": "Apache-2.0",
@@ -13,6 +13,7 @@
   "scripts": {
     "stylelint": "npx stylelint '**/*.scss'",
     "stylelint:fix": "npx stylelint --fix `src/sass/style.scss`",
+    "shoelace": "cp -R node_modules/@shoelace-style/shoelace/dist/ src/shoelace/",
     "watch:sass": "sass --no-source-map --watch src/sass:docs/css",
     "watch:eleventy": "eleventy --serve --port=8081",
     "build:sass-nomap": "sass --no-source-map src/sass/style.scss docs/css/style.css",
@@ -35,19 +36,19 @@
     "url": "https://github.com/AdamJ/AdamJ.github.io/issues"
   },
   "devDependencies": {
-    "@netlify/plugin-lighthouse": "^6.0.0",
     "@11ty/eleventy": "^3.0.0-beta.1",
     "@11ty/eleventy-img": "^4.0.2",
     "@11ty/eleventy-navigation": "^0.3.5",
+    "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
     "@11ty/eleventy-plugin-rss": "^2.0.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
-    "eleventy-plugin-toc": "^1.1.5",
-    "eleventy-plugin-dropcap": "^1.1.0",
+    "@netlify/plugin-lighthouse": "^6.0.0",
     "autoprefixer": "10.4.14",
     "cross-env": "7.0.3",
     "cssnano": "6.0.1",
     "dotenv": "16.1.4",
+    "eleventy-plugin-dropcap": "^1.1.0",
+    "eleventy-plugin-toc": "^1.1.5",
     "emoji-regex": "10.2.1",
     "luxon": "3.3.0",
     "markdown-it": "13.0.1",
@@ -65,7 +66,7 @@
     "last 2 versions"
   ],
   "dependencies": {
-    "bootstrap": "^5.3.3",
-    "@shoelace-style/shoelace": "^2.18.0"
+    "@shoelace-style/shoelace": "^2.18.0",
+    "bootstrap": "^5.3.3"
   }
 }
