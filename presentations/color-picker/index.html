@@ -15,12 +15,24 @@
     <link rel="icon" type="image/png" size="48x48" href="/favicon.ico">
     <link rel="icon" type="image/png" size="72x72" href="/favicon.png">
     <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#333333">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" type="image/svg">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#333333">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=PT+Sans&family=Work+Sans&display=swap');
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      media="(prefers-color-scheme:light)"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/light.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(prefers-color-scheme:dark)"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/dark.css"
+      onload="document.documentElement.classList.add('sl-theme-dark');"
+    />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/shoelace.js" ></script>
     <link href="/css/style.css" rel="stylesheet" />
     <link href="/css/fontawesome.css" rel="stylesheet" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -58,39 +70,78 @@
     <a rel="me" href="https://mastodon.world/@adamjol" aria-hidden="true" class="d-none">Mastodon</a>
     <body class="layout">
     <container>
-  <nav class="navbar navbar-expand-md bg-dark border-bottom border-body" data-bs-theme="dark">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse d-md-flex" id="navbarNavAltMarkup">
-        <div class="navbar-nav col-md-6 justify-content-md-center">
-          <a class="navbar-brand col-md-1 me-0 text-center"  href="/">
-            <img src="/img/navbar-logo.png" alt="Avatar" width="32" height="32">
-          </a>
-          <a class="nav-link " href="/about" alt="Link to my About page.">about</a>
-          <a class="nav-link " href="/designs" alt="Link to Designs that I have created and worked on.">designs</a>
-          <a class="nav-link " href="/development" alt="Link to development examples.">development</a>
-        </div>
-        <div class="navbar-nav d-md-flex col-md-3 justify-content-md-end">
-          <a class="nav-link " href="/testimonials/testimonials" alt="Testimonials">testimonials</a>
-          <a class="nav-link " href="/contact" alt="Contact me">contact</a>
-        </div>
-      </div>
+  <div class="nav">
+    <input type="checkbox" id="check" name="navigationCheckbox" aria-label="menu checkbox" />
+    <label for="check" class="menu">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        fill="currentColor"
+        class="bi bi-list"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+        />
+      </svg>
+    </label>
+    <a  href="/">
+    <div class="logo">
+      <svg width="32" height="32" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M91.29 89.4546L96.1838 82.1483L101.709 89.4546H91.29Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      <path d="M45.8939 89.1937L95.7557 13L145.915 89.1937C145.915 91.2812 143.385 95.3857 139.813 98.3266C136.804 100.804 134.693 101.892 130.882 103.284C126.925 104.73 124.184 105.372 120.166 105.372H56.4616L23.5677 156.124H13L50.8057 97.8047H91.2905H115.849C125.375 97.8047 130.882 92.1945 130.882 92.1945C130.882 92.1945 134.743 89.1937 130.882 83.4531C119.124 65.9703 95.7557 29.0477 95.7557 29.0477L56.4616 89.1937H45.8939Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      <path d="M64.7966 112.548H105.281H136.24C145.766 112.548 151.72 108.895 154.548 107.068C158.239 104.684 161.99 99.1094 161.99 99.1094H173.004C173.004 100.414 168.224 106.618 163.627 110.199C152.911 118.549 144.575 120.115 140.557 120.115H70.4526L46.4891 156.255H35.9214L64.7966 112.548Z" fill="#ffffff"/>
+      <path d="M157.674 89.7157L127.905 45.6172H138.324L168.39 89.7157H157.674Z" fill="#ffffff"/>
+      <path d="M64.7966 112.548H105.281H136.24C145.766 112.548 151.72 108.895 154.548 107.068C158.239 104.684 161.99 99.1094 161.99 99.1094H173.004C173.004 100.414 168.224 106.618 163.627 110.199C152.911 118.549 144.575 120.115 140.557 120.115H70.4526L46.4891 156.255H35.9214L64.7966 112.548Z" stroke="#ffffff" stroke-width="4"/>
+      <path d="M157.674 89.7157L127.905 45.6172H138.324L168.39 89.7157H157.674Z" stroke="#ffffff" stroke-width="4"/>
+      <path d="M34.1356 89.7157L63.9038 45.6172H53.4849L23.419 89.7157H34.1356Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      <path d="M146.362 156.516L127.608 128.595H138.027L156.781 156.516H146.362Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      <path d="M30.4144 116.331L18.0605 98.8485H28.4794L35.6238 109.025L30.4144 116.331Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      <path d="M169.581 156.377L149.19 126.899L157.525 123.768L180 156.377H169.581Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      <path d="M77.8945 136.554L72.6851 144.121L96.3508 180L122.525 140.598L117.04 132.118L96.3508 164.474L77.8945 136.554Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      <path d="M80.4247 87.4976H70.0059L95.6066 48.4874L117.04 80.9496C118.082 82.9312 119.868 84.6273 116.593 87.4976C113.319 90.3679 112.128 89.0632 111.086 87.4976L95.6066 64.4046L80.4247 87.4976Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      <path d="M108.556 128.204H92.6351L87.7183 135.51H103.45L108.556 128.204Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      </svg>
     </div>
-  </nav>
+    </a>
+    <div class="nav-items">
+      <ul class="overview">
+        <li>
+          <a href="/about" class="nav-link " alt="Link to my About page">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="/designs" class="nav-link " alt="Link to my Designs examples">
+            Designs
+          </a>
+        </li>
+        <li>
+          <a href="/development" class="nav-link " alt="Link to my Development examples">
+            Development
+          </a>
+        </li>
+      </ul>
+      <ul class="account">
+        <li>
+          <a href="/testimonials" class="nav-link " alt="Link to testimonials for former coworkers">
+            Testimonials
+          </a>
+        </li>
+        <li>
+          <a href="/connect" class="nav-link " alt="Connect with my through my social channels">
+            Connect
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </container>
 
     <main class="content">
-      
-<div class="container-xxl intro py-3 px-0 px-md-5 text-center">
-  <h1 class="display-1 fw-bold text-break">Color Picker</h1>
-  <p class="sub-header text-break px-2 px-md-0">
-    
-  </p></div>
-
-<content>
-  <div class="container-xxl">
+      <div class="container-xxl">
   <div class="row justify-content-center">
     <div class="col-8">
       <div class="alert alert-dismissible fade show" role="alert" style="background-color: rgba(0, 173, 239, .2); border-left: .25rem solid #00adef;">
@@ -152,125 +203,126 @@
   </div>
 </div>
 
-</content>
-
     </main>
-    <footer class="footer d-flex flex-wrap flex-column bg-dark text-white" data-bs-theme="dark">
-      <div class="container">
-        <div class="row">
-          <div class="col-6 col-md-3">
-            <p class="mb-2">Journeys</p>
-            <ul class="list-unstyled">
-              <li class="mb-1">
-                <a class="icon-link" href="/designs/task-it" alt="Link to Task-It journey">
-                  <span>Task-It!</span>
-                </a>
-              </li>
-              <li class="mb-1">
-                <a class="icon-link" href="/designs/alm" alt="Link to Application Lifecycle Management (ALM) journey">
-                  <span>ALM</span>
-                </a>
-              </li>
-              <li class="mb-1">
-                <a class="icon-link" href="/designs/customer-engagement" alt="Link to Customer Engagement journey">
-                  <span>Customer Engagement App</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md-3">
-            <p class="mb-2">Prototypes</p>
-            <ul class="list-unstyled">
-              <li class="mb-1">
-                <a class="icon-link" href="https://www.adamjolicoeur.com/design-tracker-template/" alt="External link to design tracker example">
-                  <span>Design tracker</span>
-                </a>
-              </li>
-              <li class="mb-1">
-                <a class="icon-link" href="https://pf4testbench.netlify.app/" alt="External link to patternfly v4 prototype">
-                  PatternFly.org v4 <i class="fa-solid fa-square-up-right"></i>
-                </a>
-              </li>
-              <li class="mb-1">
-                <a class="icon-link" href="https://kubevirtio-site.netlify.app/" alt="External link to kubevirt landing page prototype">
-                  <span>Kubevirt&nbsp;community</span> <i class="fa-solid fa-square-up-right"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md-3">
-            <p class="mb-2">Icons &amp; Branding</p>
-            <ul class="list-unstyled">
-              <li class="mb-1">
-                <a href="/icons-and-branding" class="icon-link" alt="Link to tshirt designs">
-                  Icons and Branding
-                </a>
-              </li>
-              <li class="mb-1">
-                <a href="https://www.adamjolicoeur.com/stream-deck-icon-packs/" class="icon-link" target="top" alt="Link to Stream Deck icons on GitHub">
-                  Stream Deck Icons
-                </a>
-              </li>
-              <li class="mb-1">
-                <a href="https://www.figma.com/community/file/1287072958179215150/switchback-icon-library" class="icon-link" target="top" alt="External link to Figma library">
-                  Switchback Icon Library
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md-3">
-            <p class="mb-2">Social</p>
-            <ul class="list-unstyled">
-              <li class="mb-1">
-                <a href="https://www.linkedin.com/in/ajjolicoeur/" class="icon-link" target="top" alt="View my LinkedIn profile">
-                  <span>LinkedIn</span>
-                </a>
-              </li>
-              <li class="mb-1">
-                <a href="https://github.com/AdamJ" class="icon-link" target="top" alt="View my GitHub profile">
-                  <span>GitHub</span>
-                </a>
-              </li>
-              <li class="mb-1">
-                <a href="https://figma.com/@AdamJ" class="icon-link" target="top" alt="View my Figma community profile">
-                  <span>Figma Community</span>
-                </a>
-              </li>
-              <li class="mb-1">
-                <a href="https://dev.to/adamj" class="icon-link" target="top" alt="View my Dev.to profile">
-                  <span>Dev.to</span>
-                </a>
-              </li>
-              <li class="mb-1">
-                <a href="https://codepen.io/AdamJolicoeur" class="icon-link" target="top" alt="View my Codepen.io profile">
-                  <span>Codepen.io</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row justify-content-between">
-          <div class="col-12 text-md-center text-center">
-            <small>
-              Copyright &copy; 2008-2024
-              <a class="link-offset-2 text-light" href="/about" alt="Link to my about page">
-                Adam J. Jolicoeur
-              </a>
-            </small>
-          </div>
-        </div>
+    <footer class="footer d-flex flex-wrap flex-column mt-5">
+  <div class="container px-0 px-md-1">
+    <div class="row">
+      <div class="col-6 col-md-3 pt-3 pt-md-0">
+        <p class="mb-2">Journeys</p>
+        <ul class="list-unstyled">
+          <li class="mb-1">
+            <a class="icon-link" href="/designs/task-it" alt="Link to Task-It journey">
+              Task-It!
+            </a>
+          </li>
+          <li class="mb-1">
+            <a class="icon-link" href="/designs/alm" alt="Link to Application Lifecycle Management (ALM) journey">
+              ALM
+            </a>
+          </li>
+          <li class="mb-1">
+            <a class="icon-link" href="/designs/customer-engagement" alt="Link to Customer Engagement journey">
+              Customer Engagement App
+            </a>
+          </li>
+        </ul>
       </div>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQCZPW3PZN"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      <div class="col-6 col-md-3 pt-3 pt-md-0">
+        <p class="mb-2">Prototypes</p>
+        <ul class="list-unstyled">
+          <li class="mb-1">
+            <a class="icon-link" href="https://www.adamjolicoeur.com/design-tracker-template/" rel="noopener" target="_blank" alt="External link to design tracker example">
+              Design tracker
+            </a>
+          </li>
+          <li class="mb-1">
+            <a class="icon-link" href="https://pf4testbench.netlify.app/" rel="noopener" target="_blank" alt="External link to patternfly v4 prototype">
+              PatternFly.org v4 <sl-icon name="box-arrow-up-right"></sl-icon>
+            </a>
+          </li>
+          <li class="mb-1">
+            <a class="icon-link" href="https://kubevirtio-site.netlify.app/" rel="noopener" target="_blank" alt="External link to kubevirt landing page prototype">
+              Kubevirt&nbsp;community <sl-icon name="box-arrow-up-right"></sl-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-3 pt-3 pt-md-0">
+        <p class="mb-2">Graphic</p>
+        <ul class="list-unstyled">
+          <li class="mb-1">
+            <a href="/icons-and-branding" class="icon-link" alt="Link to tshirt designs">
+              Icons and Branding
+            </a>
+          </li>
+          <li class="mb-1">
+            <a href="https://www.adamjolicoeur.com/stream-deck-icon-packs/" rel="noopener" class="icon-link" target="_blank" alt="External link to Stream Deck icons on GitHub">
+              Stream Deck Icons <sl-icon name="box-arrow-up-right"></sl-icon>
+            </a>
+          </li>
+          <li class="mb-1">
+            <a href="https://www.figma.com/community/file/1287072958179215150/switchback-icon-library" rel="noopener" class="icon-link" target="_blank" alt="External link to Figma library">
+              Switchback Icon Library <sl-icon name="box-arrow-up-right"></sl-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-3 pt-3 pt-md-0">
+        <p class="mb-2">Social</p>
+        <ul class="list-unstyled">
+          
+          <li class="mb-1">
+            <a href="https://www.linkedin.com/in/ajjolicoeur/" rel="noopener" class="icon-link" target="_blank" alt="External link to view my LinkedIn profile">
+              <sl-icon name="linkedin"></sl-icon> LinkedIn
+            </a>
+          </li>
+          <li class="mb-1">
+            <a href="https://github.com/AdamJ" rel="noopener" class="icon-link" target="_blank" alt="External link to view my GitHub profile">
+              <sl-icon name="github"></sl-icon> GitHub
+            </a>
+          </li>
+          <li class="mb-1">
+            <a href="https://figma.com/@AdamJ" rel="noopener" class="icon-link" target="_blank" alt="External link to view my Figma community profile">
+              <sl-icon name="palette"></sl-icon> Figma Community
+            </a>
+          </li>
+          <li class="mb-1">
+            <a href="https://dev.to/adamj" rel="noopener" class="icon-link" target="_blank" alt="External link to view my Dev.to profile">
+              <sl-icon name="code"></sl-icon> Dev.to
+            </a>
+          </li>
+          <li class="mb-1">
+            <a href="https://codepen.io/AdamJolicoeur" rel="noopener" class="icon-link" target="_blank" alt="External link to view my Codepen.io profile">
+              <sl-icon name="braces"></sl-icon> Codepen.io
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row justify-content-between pt-3 pb-2 pb-md-0">
+      <div class="col-12 text-md-center text-center">
+        <small>
+          Copyright &copy; 2008-2024
+          <a href="/about" alt="Link to my about page">
+            Adam J. Jolicoeur
+          </a>
+        </small>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+  <script src="/js/jolicoeur.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQCZPW3PZN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        gtag('config', 'G-XQCZPW3PZN');
-      </script>
-    </footer>
+    gtag('config', 'G-XQCZPW3PZN');
+  </script>
+</footer>
+
   </body>
 </html>

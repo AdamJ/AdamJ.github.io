@@ -21,6 +21,18 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=PT+Sans&family=Work+Sans&display=swap');
     </style>
+    <link
+      rel="stylesheet"
+      media="(prefers-color-scheme:light)"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/light.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(prefers-color-scheme:dark)"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/dark.css"
+      onload="document.documentElement.classList.add('sl-theme-dark');"
+    />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/shoelace.js" ></script>
     <link href="/css/style.css" rel="stylesheet" />
     <link href="/css/fontawesome.css" rel="stylesheet" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -73,7 +85,7 @@
             </div>
             <div class="navbar-nav d-md-flex col-md-3 justify-content-md-end">
               <a class="nav-link" href="/testimonials/testimonials" alt="Testimonials">testimonials</a>
-              <a class="nav-link" href="/contact" alt="Contact me">contact</a>
+              <a class="nav-link" href="/connect" alt="Connect">connect</a>
             </div>
           </div>
         </div>
@@ -86,8 +98,24 @@
         </div>
         <h1>Looks like you lost your way...</h1>
         <p>Go back to the home page by clicking the button below.</p>
-        <a class="btn btn-primary" href="/" alt="Link to return to the home page">Take me home</a>
+        <sl-button variant="primary" size="large" href="/">Take me home</sl-button>
       </div>
     </main>
+    <sl-include src="/footer"></sl-include>
+    <script>
+      const include = document.querySelector('sl-include');
+
+      include.addEventListener('sl-load', event => {
+        if (event.eventPhase === Event.AT_TARGET) {
+          console.log('Success');
+        }
+      });
+
+      include.addEventListener('sl-error', event => {
+        if (event.eventPhase === Event.AT_TARGET) {
+          console.log('Error', event.detail.status);
+        }
+      });
+    </script>
   </body>
 </html>

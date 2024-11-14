@@ -5,22 +5,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="@Adam, Adam Jolicoeur, Adam J. Jolicoeur, AdamJ, Jolicoeur, adamjolicoeur.com, www.adamjolicoeur.com, mindreeper2420, Portfolio, Design, UXD, UX Designer, UX Developer, UX Engineer, Design Technologist, CSS" />
-    <title>Games and Things | Adam Jolicoeur</title>
+    <title>Shoelace and Dark Mode | Adam Jolicoeur</title>
     <meta
       name="description"
-      content="An app for cataloging your collections."
+      content="The portfolio site for Adam Jolicoeur."
     />
     <meta name="generator" content="Eleventy">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" size="48x48" href="/favicon.ico">
     <link rel="icon" type="image/png" size="72x72" href="/favicon.png">
     <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" type="image/svg">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#333333">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#333333">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald&display=swap" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=PT+Sans&family=Work+Sans&display=swap');
+    </style>
     <link
       rel="stylesheet"
       media="(prefers-color-scheme:light)"
@@ -48,18 +48,16 @@
       name="twitter:description"
       content="Driven and passionate user experience designer with a background in software development. Looking for a role where I can continue to utilize my UX/UI skills and create interfaces that will allows users to perform their work seamlessly."
     />
-
     <meta
       name="og:title"
-      content="Games and Things | Adam Jolicoeur"
+      content="Shoelace and Dark Mode | Adam Jolicoeur"
     />
     <meta
       name="og:description"
-      content="An app for cataloging your collections."
+      content="The portfolio site for Adam Jolicoeur."
     />
     <meta name="twitter:image" content="https://www.adamjolicoeur.com/img/AdamJolicoeur_social.png" />
     <meta property="og:image" content="https://www.adamjolicoeur.com/img/AdamJolicoeur_social.png" />
-
     <link
       rel="alternate"
       type="application/rss+xml"
@@ -141,23 +139,48 @@
 </container>
 
     <main class="content">
-      
-<div class="container intro py-3 px-0 text-center">
-  <h1 class="display-1 fw-bold text-break">Games and Things</h1>
-  <p class="sub-header text-break px-2 px-md-0">
-    An app for cataloging your collections.
-  </p></div>
+      <div class="container py-3">
+        <div class="row">
+          <article class="col-sm-12 col-md-9">
+            <sl-badge variant="primary" pill>
+  <sl-format-date month="long" day="numeric" year="numeric" date="Sat Nov 02 2024 00:00:00 GMT+0000 (Coordinated Universal Time)"></sl-format-date>
+</sl-badge>
+<sl-badge variant="neutral" pill>
+  postshoelacedevelopment
+</sl-badge>
+<h1>Shoelace &amp; Dark Mode</h1>
+<h2 id="why%3F" tabindex="-1">Why? <a class="anchor-link" href="#why%3F">#</a></h2>
+<p>As part of my update to utilize web components through Shoelace, I decided to go into dark mode as well given that Shoelace has built-in dark mode theme capabilities.</p>
+<h3 id="shoelace" tabindex="-1">Shoelace <a class="anchor-link" href="#shoelace">#</a></h3>
+<p>Using Shoelace is a no-brainer for a few reasons:</p>
+<ol>
+<li>I’ll be using Web Awesome as soon as it is released (early backer) and well, Font Awesome acquired Shoelace. Moving over to Web Awesome <em>should</em> be straightforward.</li>
+<li>Desire to learn and try something new</li>
+</ol>
+<ul>
+<li>I’ve long believed that if you are stagnant in your learning and development of skills, then you’ll be left behind in the blink of an eye.</li>
+</ul>
+<ol start="3">
+<li>I want to move away from “frameworks”</li>
+</ol>
+<ul>
+<li>everywhere I go, React is the default front-end library with the entire framework built on top. Moving to a more agnostic and web standards method allows me to create something not reliant on javascript running.</li>
+</ul>
+<h3 id="dark-mode" tabindex="-1">Dark Mode <a class="anchor-link" href="#dark-mode">#</a></h3>
+<p>With the majority of my applications utilizing dark mode (or a semblance of it) throughout the day, I knew it was time to at least <strong>offer</strong> that to those viewing my site. It also allows me to test out dark mode styles and accessibility options in a controlled environment.</p>
+<h2 id="resources" tabindex="-1">Resources <a class="anchor-link" href="#resources">#</a></h2>
+<ul>
+<li><a href="https://www.shoelace.style">Shoelace</a></li>
+<li><a href="https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/#aa-using-separate-stylesheets">A complete guide to dark mode on the web</a></li>
+<li><a href="https://css-tricks.com/dark-mode-and-variable-fonts/">Dark mode and variables fonts</a></li>
+</ul>
 
-<content>
-  <div class="d-flex justify-content-center">
-  <div class="alert alert-light" role="alert">
-    My app is currently available through TestFlight while I get it to a releasable state. If you'd like to give it a try, <a href="mailto:design@adamjolicoeur.me" alt="Email design@adamjolicoeur.me for access" target="top">reach out</a> today!
-    <i class="fa-brands fa-app-store-ios"></i>
-  </div>
-</div>
-
-</content>
-
+          </article><aside class="col-sm-12 col-md-3">
+            <div class="toc markdown-toc" >
+        <ul><li><a href="#why%3F">Why?</a><ul><li><a href="#shoelace">Shoelace</a></li><li><a href="#dark-mode">Dark Mode</a></li></ul></li><li><a href="#resources">Resources</a></li></ul>
+      </div>
+          </aside></div>
+      </div>
     </main>
     <footer class="footer d-flex flex-wrap flex-column mt-5">
   <div class="container px-0 px-md-1">
