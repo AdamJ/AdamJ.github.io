@@ -90,11 +90,6 @@
 	},
 
 	{
-   "title":"about",
-   "imgName":"about"
-	},
-
-	{
    "title":"connect",
    "imgName":"connect"
 	},
@@ -102,11 +97,6 @@
 	{
    "title":"designs",
    "imgName":"designs"
-	},
-
-	{
-   "title":"Task-It!",
-   "imgName":"task-it"
 	},
 
 	{
@@ -145,13 +135,23 @@
 	},
 
 	{
+   "title":"Customer Engagement App",
+   "imgName":"customer-engagement-app"
+	},
+
+	{
+   "title":"about",
+   "imgName":"about"
+	},
+
+	{
    "title":"Application Lifecycle Management",
    "imgName":"application-lifecycle-management"
 	},
 
 	{
-   "title":"Customer Engagement App",
-   "imgName":"customer-engagement-app"
+   "title":"Task-It!",
+   "imgName":"task-it"
 	},
 
 	{

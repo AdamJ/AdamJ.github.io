@@ -14,20 +14,34 @@
       "id": "https://www.adamjolicoeur.com/development/",
       "url": "https://www.adamjolicoeur.com/development/",
       "title": "development",
-      "date_published": "2024-11-15T17:58:15Z"
+      "date_published": "2024-11-15T19:15:33Z"
     }
     ,
     {
-      "id": "https://www.adamjolicoeur.com/designs/customer-engagement/",
-      "url": "https://www.adamjolicoeur.com/designs/customer-engagement/",
-      "title": "Customer Engagement App",
-      "date_published": "2024-11-15T17:58:15Z"
+      "id": "https://www.adamjolicoeur.com/designs/task-it/",
+      "url": "https://www.adamjolicoeur.com/designs/task-it/",
+      "title": "Task-It!",
+      "date_published": "2024-11-15T19:15:33Z"
     }
     ,
     {
       "id": "https://www.adamjolicoeur.com/designs/alm/",
       "url": "https://www.adamjolicoeur.com/designs/alm/",
       "title": "Application Lifecycle Management",
+      "date_published": "2024-11-15T19:15:33Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/about/",
+      "url": "https://www.adamjolicoeur.com/about/",
+      "title": "about",
+      "date_published": "2024-11-15T19:15:33Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/designs/customer-engagement/",
+      "url": "https://www.adamjolicoeur.com/designs/customer-engagement/",
+      "title": "Customer Engagement App",
       "date_published": "2024-11-15T17:58:15Z"
     }
     ,
@@ -60,13 +74,6 @@
     }
     ,
     {
-      "id": "https://www.adamjolicoeur.com/designs/task-it/",
-      "url": "https://www.adamjolicoeur.com/designs/task-it/",
-      "title": "Task-It!",
-      "date_published": "2024-11-14T14:48:46Z"
-    }
-    ,
-    {
       "id": "https://www.adamjolicoeur.com/designs/",
       "url": "https://www.adamjolicoeur.com/designs/",
       "title": "designs",
@@ -77,13 +84,6 @@
       "id": "https://www.adamjolicoeur.com/connect/",
       "url": "https://www.adamjolicoeur.com/connect/",
       "title": "connect",
-      "date_published": "2024-11-14T14:48:46Z"
-    }
-    ,
-    {
-      "id": "https://www.adamjolicoeur.com/about/",
-      "url": "https://www.adamjolicoeur.com/about/",
-      "title": "about",
       "date_published": "2024-11-14T14:48:46Z"
     }
     ,
