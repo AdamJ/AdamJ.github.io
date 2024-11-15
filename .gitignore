@@ -2,6 +2,7 @@
 .git
 .DS_Store
 .idea
+.env
 npm-debug.log.*
 **/.cache/**
 # Ignore sketch files
