@@ -92,22 +92,12 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/about/</loc>
-      <lastmod>2024-11-14T14:48:46.327Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/connect/</loc>
       <lastmod>2024-11-14T14:48:46.329Z</lastmod>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/designs/</loc>
-      <lastmod>2024-11-14T14:48:46.330Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/designs/task-it/</loc>
       <lastmod>2024-11-14T14:48:46.330Z</lastmod>
     </url>
   
@@ -147,18 +137,28 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/designs/alm/</loc>
-      <lastmod>2024-11-15T17:58:15.155Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/designs/customer-engagement/</loc>
       <lastmod>2024-11-15T17:58:15.155Z</lastmod>
     </url>
   
     <url>
+      <loc>https://www.adamjolicoeur.com/about/</loc>
+      <lastmod>2024-11-15T19:15:33.958Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/designs/alm/</loc>
+      <lastmod>2024-11-15T19:15:33.958Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/designs/task-it/</loc>
+      <lastmod>2024-11-15T19:15:33.958Z</lastmod>
+    </url>
+  
+    <url>
       <loc>https://www.adamjolicoeur.com/development/</loc>
-      <lastmod>2024-11-15T17:58:15.155Z</lastmod>
+      <lastmod>2024-11-15T19:15:33.958Z</lastmod>
     </url>
   
 </urlset>
