@@ -144,7 +144,7 @@ eleventyNavigation:
       <p>As part of the testing and usability study process, I created a prototype that demonstrated some of the basic layouts and IA for users to explore and provide feedback on. This process evolved over time and, eventually, became a full-fledged website that utilized static data and was continuously updated as users provided feedback.</p>
       <div class="col-md-4 offset-md-4">
         <sl-button href="https://www.adamjolicoeur.com/testing_environment/index.html" size="large" variant="neutral"  target="_blank" style="width: 80%;" outline pill>View prototype<sl-visually-hidden>open link in a new window</sl-visually-hidden>
-        <sl-icon name="box-arrow-up-right"></sl-icon></sl-button>
+         <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon></sl-button>
       </div>
       <div class="mt-5 mb-3">
         <sl-card class="card-header">

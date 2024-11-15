@@ -18,8 +18,7 @@ eleventyNavigation:
           <ul class="d-flex list-unstyled mt-auto">
             <li class="me-auto">
               <a href="https://github.com/AdamJ/CollectSomeMore" target="top" alt="Link to app code on GitHub" class="card-link">
-                <i class="fa-brands fa-github"></i>
-                GitHub
+                GitHub <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
               </a>
             </li>
             <li>
@@ -45,8 +44,7 @@ eleventyNavigation:
           <ul class="d-flex list-unstyled mt-auto">
             <li>
               <a href="https://github.com/AdamJ/AdamJ.github.io/tree/main/src/pages/Alfred" target="top" alt="My Alfred workflows on GitHub" class="card-link">
-                <i class="fa-brands fa-github"></i>
-                GitHub
+                GitHub <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
               </a>
             </li>
           </ul>
@@ -61,8 +59,7 @@ eleventyNavigation:
           <ul class="d-flex list-unstyled mt-auto">
             <li>
               <a href="https://github.com/AdamJ/stream-deck-icon-packs" target="top" alt="Streamdeck icon packs on GitHub" class="card-link">
-                <i class="fa-brands fa-github"></i>
-                GitHub
+                GitHub <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
               </a>
             </li>
           </ul>
@@ -86,8 +83,7 @@ eleventyNavigation:
             </li>
             <li>
               <a href="https://github.com/AdamJ/design-manual" target="top" alt="Design Manual on GitHub" class="card-link">
-                <i class="fa-brands fa-github"></i>
-                GitHub
+                GitHub <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
               </a>
             </li>
           </ul>
@@ -107,8 +103,7 @@ eleventyNavigation:
             </li>
             <li>
               <a href="https://github.com/AdamJ/pf4website" target="top" alt="Design Manual on GitHub" class="card-link">
-                <i class="fa-brands fa-github"></i>
-                GitHub
+                GitHub <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
               </a>
             </li>
           </ul>
@@ -131,8 +126,7 @@ eleventyNavigation:
             </li>
             <li>
               <a href="https://github.com/AdamJ/design-manual" target="top" alt="KubeVirt.io on GitHub" class="card-link">
-                <i class="fa-brands fa-github"></i>
-                GitHub
+                GitHub <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
               </a>
             </li>
           </ul>
@@ -146,15 +140,13 @@ eleventyNavigation:
           <ul class="d-flex list-unstyled mt-auto">
             <li class="me-auto">
               <a href="https://www.npmjs.com/package/fabric8-pattern.library" target="_blank" alt="View library on npm" class="card-link">
-                <i class="fa-brands fa-npm"></i>
-                NPM
+                NPM <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
               </a>
             </li>
             <li>
               <i class="bi bi-github"></i>
               <a href="https://github.com/AdamJ/fabric8-pattern.library" target="_blank" alt="view library on GitHub" class="card-link">
-                <i class="fa-brands fa-github"></i>
-                GitHub
+                GitHub <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
               </a>
             </li>
           </ul>
@@ -166,10 +158,12 @@ eleventyNavigation:
   <h2 class="display-6">Additional examples</h2>
   <div class="row row-cols-1 row-cols-lg-2 align-items-stretch px-0 mx-0 gy-5 pb-5">
     <div class="col px-4">
-      <sl-button href="/development/prototypes">prototypes for testing</sl-button>
+      <sl-button href="/development/prototypes">Prototype examples</sl-button>
     </div>
     <div class="col px-4">
-      <sl-button href="/development/examples">codepen examples</sl-button>
+      <sl-button href="/development/examples">
+        Examples on Codepen <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
+      </sl-button>
     </div>
   </div>
 </div>

@@ -104,8 +104,8 @@ description: "One enterprise task management system to rule them all."
             <img src="../../img/task-it_user-flow.png" class="figure-img img-fluid rounded" alt="Image of the user flow" loading="lazy">
             <figcaption class="figure-caption text-center">Basic user flow
               <sl-button href="../../img/task-it_user-flow.png" variant="text" size="medium" >
-                <sl-icon slot="suffix" name="arrows-angle-expand"></sl-icon>
                 Expand
+                <fa-icon type="duotone" weight="solid" name="expand" size="md" style="padding: 0 4px;"></fa-icon>
                 <sl-visually-hidden>open image in a new window</sl-visually-hidden>
               </sl-button>
             </figcaption>
@@ -117,8 +117,8 @@ description: "One enterprise task management system to rule them all."
             <img src="../../img/task-it_user-states.png" class="figure-img img-fluid rounded" alt="Image of the various user flow states" loading="lazy">
             <figcaption class="figure-caption text-center">User flow states
               <sl-button href="../../img/task-it_user-states.png" variant="text" size="medium" >
-                <sl-icon slot="suffix" name="arrows-angle-expand"></sl-icon>
                 Expand
+                <fa-icon type="duotone" weight="solid" name="expand" size="md" style="padding: 0 4px;"></fa-icon>
                 <sl-visually-hidden>open image in a new window</sl-visually-hidden>
               </sl-button>
             </figcaption>
@@ -136,8 +136,8 @@ description: "One enterprise task management system to rule them all."
             <img src="../../img/task-it_task-details_wireframe.png" class="figure-img img-fluid rounded" alt="Image of the task details wireframe" loading="lazy">
             <figcaption class="figure-caption text-center">Task details wireframe
               <sl-button href="../../img/task-it_task-details_wireframe.png" variant="text" size="medium" >
-                <sl-icon slot="suffix" name="arrows-angle-expand"></sl-icon>
                 Expand
+                <fa-icon type="duotone" weight="solid" name="expand" size="md" style="padding: 0 4px;"></fa-icon>
                 <sl-visually-hidden>open image in a new window</sl-visually-hidden>
               </sl-button>
             </figcaption>
@@ -150,8 +150,8 @@ description: "One enterprise task management system to rule them all."
             <img src="../../img/task-it_task-details_mockup1.png" class="figure-img img-fluid rounded" alt="Image of the first version of the task details mockup" loading="lazy">
             <figcaption class="figure-caption text-center">Task details mockup
               <sl-button href="../../img/task-it_task-details_mockup1.png" variant="text" size="medium" >
-                <sl-icon slot="suffix" name="arrows-angle-expand"></sl-icon>
                 Expand
+                <fa-icon type="duotone" weight="solid" name="expand" size="md" style="padding: 0 4px;"></fa-icon>
                 <sl-visually-hidden>open image in a new window</sl-visually-hidden>
               </sl-button>
             </figcaption>
@@ -174,8 +174,8 @@ description: "One enterprise task management system to rule them all."
             <img src="../../img/task-it_task-details_mockup2.png" class="figure-img img-fluid rounded" alt="Image of the first version of the task details mockup">
             <figcaption class="figure-caption text-center">Version 2
               <sl-button href="../../img/task-it_task-details_mockup2.png" variant="text" size="medium" >
-                <sl-icon slot="suffix" name="arrows-angle-expand"></sl-icon>
                 Expand
+                <fa-icon type="duotone" weight="solid" name="expand" size="md" style="padding: 0 4px;"></fa-icon>
                 <sl-visually-hidden>open image in a new window</sl-visually-hidden>
               </sl-button>
             </figcaption>
@@ -186,8 +186,8 @@ description: "One enterprise task management system to rule them all."
             <img src="../../img/task-it_task-details_mockup3.png" class="figure-img img-fluid rounded" alt="Image of the first version of the task details mockup">
             <figcaption class="figure-caption text-center">Version 3
               <sl-button href="../../img/task-it_task-details_mockup3.png" variant="text" size="medium" >
-                <sl-icon slot="suffix" name="arrows-angle-expand"></sl-icon>
                 Expand
+                <fa-icon type="duotone" weight="solid" name="expand" size="md" style="padding: 0 4px;"></fa-icon>
                 <sl-visually-hidden>open image in a new window</sl-visually-hidden>
               </sl-button>
             </figcaption>
@@ -198,8 +198,8 @@ description: "One enterprise task management system to rule them all."
             <img src="../../img/task-it_task-details_mockup4.png" class="figure-img img-fluid rounded" alt="Image of the first version of the task details mockup">
             <figcaption class="figure-caption text-center">Version 4
               <sl-button href="../../img/task-it_task-details_mockup4.png" variant="text" size="medium" >
-                <sl-icon slot="suffix" name="arrows-angle-expand"></sl-icon>
                 Expand
+                <fa-icon type="duotone" weight="solid" name="expand" size="md" style="padding: 0 4px;"></fa-icon>
                 <sl-visually-hidden>open image in a new window</sl-visually-hidden>
               </sl-button>
             </figcaption>
