@@ -5245,6 +5245,10 @@ sl-button.card-button::part(base) {
   text-decoration: underline;
 }
 
+.background-overlay .card-link:hover {
+  color: var(--sl-color-primary-400);
+}
+
 .card-transform {
   transform: translateZ(0);
   transition-duration: 0.7s;
@@ -5519,5 +5523,3 @@ body {
   margin-bottom: 0.5rem;
   line-height: 1;
 }
-
-/*# sourceMappingURL=style.css.map */

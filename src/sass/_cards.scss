@@ -32,6 +32,11 @@
     text-decoration: underline;
   }
 }
+.background-overlay {
+  .card-link:hover {
+    color: var(--sl-color-primary-400);
+  }
+}
 .card-transform {
   transform: translateZ(0);
   transition-duration: 0.7s;

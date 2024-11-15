@@ -63,19 +63,19 @@ I tend to use what I know, but am always on the lookout for great open source pr
 <sl-button href="https://www.figma.com/@adamj" variant="text" size="large">
   Figma community profile
   <sl-visually-hidden>External link to my Figma community profile</sl-visually-hidden>
-  <sl-icon slot="suffix" name="box-arrow-up-right"></sl-icon>
+  <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
 </sl-button>
 
 <sl-button href="https://www.github.com/AdamJ/config" variant="text" size="large">
   Mac configuration files
   <sl-visually-hidden>External link to my configuration repository on GitHub</sl-visually-hidden>
-  <sl-icon slot="suffix" name="box-arrow-up-right"></sl-icon>
+  <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
 </sl-button>
 
 <sl-button href="https://www.github.com/AdamJ" variant="text" size="large">
   AdamJ.github.io
   <sl-visually-hidden>External link to my GitHub profile</sl-visually-hidden>
-  <sl-icon slot="suffix" name="box-arrow-up-right"></sl-icon>
+  <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
 </sl-button>
 
 ### Education

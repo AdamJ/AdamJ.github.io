@@ -90,16 +90,6 @@
 	},
 
 	{
-   "title":"Oops! Not Found",
-   "imgName":"oops-not-found"
-	},
-
-	{
-   "title":"Adam Jolicoeur",
-   "imgName":"home"
-	},
-
-	{
    "title":"about",
    "imgName":"about"
 	},
@@ -115,23 +105,8 @@
 	},
 
 	{
-   "title":"Application Lifecycle Management",
-   "imgName":"application-lifecycle-management"
-	},
-
-	{
-   "title":"Customer Engagement App",
-   "imgName":"customer-engagement-app"
-	},
-
-	{
    "title":"Task-It!",
    "imgName":"task-it"
-	},
-
-	{
-   "title":"development",
-   "imgName":"development"
 	},
 
 	{
@@ -157,5 +132,30 @@
 	{
    "title":"Adam Jolicoeur",
    "imgName":"home"
+	},
+
+	{
+   "title":"Oops! Not Found",
+   "imgName":"oops-not-found"
+	},
+
+	{
+   "title":"Adam Jolicoeur",
+   "imgName":"home"
+	},
+
+	{
+   "title":"Application Lifecycle Management",
+   "imgName":"application-lifecycle-management"
+	},
+
+	{
+   "title":"Customer Engagement App",
+   "imgName":"customer-engagement-app"
+	},
+
+	{
+   "title":"development",
+   "imgName":"development"
 	}
 ]
