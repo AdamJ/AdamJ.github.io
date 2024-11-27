@@ -11,6 +11,7 @@ const markdownItHighlightJS = require('markdown-it-highlightjs')
 const packageVersion = require("./package.json").version;
 const fs = require("fs");
 const inclusiveLangPlugin = require("@11ty/eleventy-plugin-inclusive-language");
+const emojiReadTime = require("@11tyrocks/eleventy-plugin-emoji-readtime");
 
 const mdOptions = {
   html: true,
@@ -45,6 +46,7 @@ module.exports = function (eleventyConfig) {
 		words:
 			"simply,obviously,basically,of course,clearly,just,everyone knows,however,easy",
   });
+  eleventyConfig.addPlugin(emojiReadTime);
 
   eleventyConfig.addWatchTarget("src/sass/*.scss");
 

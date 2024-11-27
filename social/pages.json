@@ -75,21 +75,6 @@
 	},
 
 	{
-   "title":"Shoelace and Dark Mode",
-   "imgName":"shoelace-and-dark-mode"
-	},
-
-	{
-   "title":"Creating a Blog",
-   "imgName":"creating-a-blog"
-	},
-
-	{
-   "title":"Custom Icons",
-   "imgName":"custom-icons"
-	},
-
-	{
    "title":"connect",
    "imgName":"connect"
 	},
@@ -125,11 +110,6 @@
 	},
 
 	{
-   "title":"Oops! Not Found",
-   "imgName":"oops-not-found"
-	},
-
-	{
    "title":"Customer Engagement App",
    "imgName":"customer-engagement-app"
 	},
@@ -155,7 +135,7 @@
 	},
 
 	{
-   "title":"Goodbye Twitter",
-   "imgName":"goodbye-twitter"
+   "title":"Oops! Not Found",
+   "imgName":"oops-not-found"
 	}
 ]
