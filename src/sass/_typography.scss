@@ -12,7 +12,7 @@ body {
   @include font-weight(400);
   @include font-size(16px);
 }
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   @include font-family-work;
   @include font-weight(400);
 
@@ -55,7 +55,7 @@ h4, .h4 {
   letter-spacing: 0;
 }
 h5, .h5 {
-  @include fs(1.25);
+  @include font-size(18px);
   @include margin-top(0px);
   @include margin-right(0);
   @include margin-bottom(4px);

@@ -12,9 +12,9 @@ eleventyNavigation:
   <div class="row px-0 pb-3 mx-0">
     <div class="col-12 col-md-6">
       <h2 class="mt-0">Lead Program Manager &amp; UX Designer</h2>
-      <p class="fs-5 my-0">Component Assembly Systems, Inc. (Pelham, NY)</p>
+      <h4 class="my-0">Component Assembly Systems, Inc. (Pelham, NY)</h4>
       <p class="text-body-secondary">January 2024 - Present</p>
-      <div class="pb-3">
+      <div class="pb-3 row-badges">
         <sl-badge variant="neutral" pill>Program Management</sl-badge>
         <sl-badge variant="neutral" pill>Figma</sl-badge>
         <sl-badge variant="neutral" pill>Strategic Technology</sl-badge>
@@ -33,9 +33,9 @@ eleventyNavigation:
   <div class="row px-0 pb-3 mx-0">
     <div class="col-12 col-md-6">
       <h2 class="mt-0">Senior UX Designer</h2>
-      <p class="fs-5 my-0">Amazon.com, Inc <br /> Amazon Software Builder Experience (Boston, MA)</p>
+      <h4 class="my-0">Amazon.com, Inc <br /> Amazon Software Builder Experience (Boston, MA)</h4>
       <p class="text-body-secondary">August 2021 - September 2023</p>
-      <div class="pb-3">
+      <div class="pb-3 row-badges">
         <sl-badge variant="neutral" pill>Figma</sl-badge>
         <sl-badge variant="neutral" pill>Prototypes</sl-badge>
         <sl-badge variant="neutral" pill>UserTesting</sl-badge>
@@ -59,9 +59,9 @@ eleventyNavigation:
   <div class="row px-0 pb-3 mx-0">
     <div class="col-12 col-md-6">
       <h2 class="mt-0">Senior Software Engineer, UXD</h2>
-      <p class="fs-5 my-0">Red Hat, Inc (Westford, MA)</p>
+      <h4 class="my-0">Red Hat, Inc (Westford, MA)</h4>
       <p class="text-body-secondary">December 2016 - August 2021</p>
-      <div class="pb-3">
+      <div class="pb-3 row-badges">
         <sl-badge variant="neutral" pill>Sketch</sl-badge>
         <sl-badge variant="neutral" pill>Adobe XD</sl-badge>
         <sl-badge variant="neutral" pill>HTML</sl-badge>
@@ -69,12 +69,6 @@ eleventyNavigation:
         <sl-badge variant="neutral" pill>Git</sl-badge>
         <sl-badge variant="neutral" pill>OSS</sl-badge>
       </div>
-      <ul class="icon-list">
-        <li class="text-muted">
-          Interaction Designer
-          <ul><li>July 2016 - December 2018</li></ul>
-        </li>
-      </ul>
     </div>
     <div class="col-12 col-md-6">
       <p>As a Senior Software Engineer on the User Experience Design team, my responsibilities included creating user flows, wireframes, mockups, and proof-of-concepts for products and websites across Red Hat. In addition to my daily work, I was a core contributor to the PatternFly design system and lead the designer of the Red Hat Developer Design Manual.</p>
@@ -92,9 +86,9 @@ eleventyNavigation:
   <div class="row px-0 pb-3 mx-0">
     <div class="col-12 col-md-6">
       <h2 class="mt-0">User Experience Designer</h2>
-      <p class="fs-5 my-0">Saylent Technologies (Franklin, MA)</p>
+      <h4 class="my-0">Saylent Technologies (Franklin, MA)</h4>
       <p class="text-body-secondary">November 2014 - July 2016</p>
-      <div class="pb-3">
+      <div class="pb-3 row-badges">
         <sl-badge variant="neutral" pill>Photoshop</sl-badge>
         <sl-badge variant="neutral" pill>Visual studio</sl-badge>
         <sl-badge variant="neutral" pill>HTML</sl-badge>
@@ -118,9 +112,9 @@ eleventyNavigation:
   <div class="row px-0 pb-3 mx-0">
     <div class="col-12 col-md-6">
       <h2 class="mt-0">Vice President, Design</h2>
-      <p class="fs-5 my-0">Switchback, Inc. (Holden, MA)</p>
+      <h4 class="my-0">Switchback, Inc. (Holden, MA)</h4>
       <p class="text-body-secondary">November 2010 - August 2021</p>
-      <div class="pb-3">
+      <div class="pb-3 row-badges">
         <sl-badge variant="neutral" pill>Sketch</sl-badge>
         <sl-badge variant="neutral" pill>Adobe XD</sl-badge>
         <sl-badge variant="neutral" pill>HTML</sl-badge>
@@ -153,9 +147,9 @@ eleventyNavigation:
   <div class="row px-0 pb-3 mx-0">
     <div class="col-12 col-md-6">
       <h2 class="mt-0">UI Software Engineer</h2>
-      <p class="fs-5 my-0">Black Duck Software (Burlington, MA)</p>
+      <h4 class="my-0">Black Duck Software (Burlington, MA)</h4>
       <p class="text-body-secondary">February 2013 - October 2014</p>
-      <div class="pb-3">
+      <div class="pb-3 row-badges">
         <sl-badge variant="neutral" pill>HTML</sl-badge>
         <sl-badge variant="neutral" pill>CSS/LESS</sl-badge>
         <sl-badge variant="neutral" pill>Bootstrap</sl-badge>
@@ -178,9 +172,9 @@ eleventyNavigation:
   <div class="row px-0 pb-3 mx-0">
     <div class="col-12 col-md-6">
       <h2 class="mt-0">Help Desk Analyst</h2>
-      <p class="fs-5 my-0">Conservation Services Group (Westborough, MA)</p>
+      <h4 class="my-0">Conservation Services Group (Westborough, MA)</h4>
       <p class="text-body-secondary">June 2008 - November 2010</p>
-      <div class="pb-3">
+      <div class="pb-3 row-badges">
         <sl-badge variant="neutral" pill>JIRA</sl-badge>
         <sl-badge variant="neutral" pill>DevOps</sl-badge>
         <sl-badge variant="neutral" pill>Ubuntu</sl-badge>
@@ -204,21 +198,21 @@ eleventyNavigation:
   </div>
 </div>
 <div class="container py-3 mt-3 px-0 text-bg-light">
-  <div class="row px-0 pb-3 mx-0">
+  <div class="row px-0 mx-0">
     <div class="col-12">
       <h2>Education</h2>
-      <p class="paragraph-inset">Massachusetts College of Liberal Arts - North Adams, MA</p>
+      <h3>Massachusetts College of Liberal Arts - North Adams, MA</h3>
     </div>
   </div>
   <div class="row px-0 pb-3 mx-0">
     <div class="col-12 col-md-6">
-      <h3 class="job--company-name px-0">Bachelor of Arts</h3>
-      <h4 class="job--company-role px-0">Fine and Performing Arts, Music</h4>
+      <h4 class="job--company-name px-0">Bachelor of Arts</h4>
+      <h5 class="job--company-role px-0">Fine and Performing Arts, Music</h5>
       <p class="job--company-dates px-0">2003 - 2008</p>
     </div>
     <div class="col-12 col-md-6">
-      <h3 class="job--company-name px-0">Bachelor of Arts</h3>
-      <h4 class="job--company-role px-0">Arts, Entertainment, and Media Management</h4>
+      <h4 class="job--company-name px-0">Bachelor of Arts</h4>
+      <h5 class="job--company-role px-0">Arts, Entertainment, and Media Management</h5>
       <p class="job--company-dates px-0">2003 - 2008</p>
     </div>
   </div>
@@ -226,7 +220,7 @@ eleventyNavigation:
     <p>Alpha Chi - National Scholars Honor Society - Who’s Who in American Colleges and Universities</p>
   </div>
 </div>
-<div class="container py-3 mt-3 px-0">
+<div class="container py-3 mt-3 px-0 hide-on-print">
   <div class="row px-0 pb-3 mx-0">
     <div class="row px-0 mx-0">
       <div class="col-12">
@@ -263,7 +257,7 @@ eleventyNavigation:
     <div class="row px-0 mx-0">
       <div class="col-12">
         <h2>Organizations</h2>
-        <p class="paragraph-inset">Various organizations that I have belonged to, past and present.</p>
+        <p class="paragraph-inset hide-on-print">Various organizations that I have belonged to, past and present.</p>
       </div>
     </div>
     <div class="row px-0 pb-3 mx-0">

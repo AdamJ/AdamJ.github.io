@@ -4083,6 +4083,10 @@
   }
 }
 /* stylelint-enable */
+/**
+ ** Copyright 2008-2024 Adam J. Jolicoeur
+ ** https://www.adamjolicoeur.com
+**/
 .oswald-light {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
@@ -4773,7 +4777,7 @@ body {
   font-size: 1rem;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   color: var(--sl-color-neutral-900);
@@ -4831,7 +4835,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  font-size: 20px;
+  font-size: 1.125rem;
   margin-top: 0px;
   margin-right: 0;
   margin-bottom: 4px;
@@ -5411,6 +5415,10 @@ body {
   margin: 0;
 }
 
+.print {
+  display: none !important;
+}
+
 .content {
   display: flex;
   max-width: 1920px;
@@ -5523,5 +5531,3 @@ body {
   margin-bottom: 0.5rem;
   line-height: 1;
 }
-
-/*# sourceMappingURL=style.css.map */
