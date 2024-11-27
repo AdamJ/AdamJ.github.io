@@ -1,6 +1,9 @@
 body {
   @include margin(0);
 }
+.print {
+  display: none !important;
+}
 .content {
   @include display-flex;
 
