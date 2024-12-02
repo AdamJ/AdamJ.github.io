@@ -57,8 +57,5 @@ eleventyNavigation:
     <div class="col">
       <a href="https://www.adamjolicoeur.com/centernav/" target="top">Center navigation <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
     </div>
-    <div class="col">
-      <a href="https://www.adamjolicoeur.com/integration-prototype/index.html" target="top">Integration prototype <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-    </div>
   </div>
 </div>

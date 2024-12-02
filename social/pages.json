@@ -95,11 +95,6 @@
 	},
 
 	{
-   "title":"Adam J. Jolicoeur",
-   "imgName":"adam-j.-jolicoeur"
-	},
-
-	{
    "title":"Testimonials",
    "imgName":"testimonials"
 	},
@@ -137,5 +132,10 @@
 	{
    "title":"Oops! Not Found",
    "imgName":"oops-not-found"
+	},
+
+	{
+   "title":"Adam J. Jolicoeur",
+   "imgName":"adam-j.-jolicoeur"
 	}
 ]
