@@ -9,41 +9,21 @@ eleventyNavigation:
 ---
 
 <div class="container px-0">
-  <h2 class="display-6">Mobile apps</h2>
+  <h2 class="display-6">Prototypes</h2>
   <div class="row row-cols-1 row-cols-lg-2 align-items-stretch px-2 mx-0 gy-5 pb-5">
+<!-- Red Hat Integration -->
     <div class="col">
-      <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/');">
-        <div class="d-flex flex-column p-5 pb-3 text-white background-overlay rounded-5">
-          <h2 class="my-5 display-6 lh-1 fw-bold text-center text-white text-shadow-1">Games and Things</h2>
+      <div class="card card-cover" style="background-image: url('../img/rh_integration.png');">
+        <div class="d-flex flex-column h-100 p-5 text-white background-overlay rounded-5">
+          <h2 class="my-5 display-6 lh-1 fw-bold text-center text-white text-shadow-1">Integration Walkthrough</h2>
           <ul class="d-flex list-unstyled mt-auto">
             <li class="me-auto">
-              <a href="https://github.com/AdamJ/CollectSomeMore" target="top" alt="Link to app code on GitHub" class="card-link">
-                GitHub <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
+              <a href="https://www.adamjolicoeur.com/integration-prototype/index.html" target="top" alt="View the integration walkthrough prototype" class="card-link">
+                Demo <fa-icon type="duotone" weight="solid" name="laptop" size="md"></fa-icon>
               </a>
             </li>
             <li>
-              <a href="{{ "/apps/gamesandthings/" | url }}" alt="Documentation for the app" class="card-link">
-                <i class="fa-solid fa-link"></i>
-                Documentation
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container px-0">
-  <h2 class="display-6">Personal projects</h2>
-  <div class="row row-cols-1 row-cols-lg-2 align-items-stretch px-2 mx-0 gy-5 pb-5">
-<!-- Alfred workflows -->
-    <div class="col">
-      <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/thumbnail_Alfredlogo.png');">
-        <div class="d-flex flex-column p-5 pb-3 text-white background-overlay rounded-5">
-          <h2 class="my-5 display-6 lh-1 fw-bold text-center text-white text-shadow-1">Alfred</h2>
-          <ul class="d-flex list-unstyled mt-auto">
-            <li>
-              <a href="https://github.com/AdamJ/AdamJ.github.io/tree/main/src/pages/Alfred" target="top" alt="My Alfred workflows on GitHub" class="card-link">
+              <a href="https://github.com/AdamJ/integration-prototype" target="top" alt="Integration prototype on GitHub" class="card-link">
                 GitHub <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
               </a>
             </li>
@@ -51,14 +31,19 @@ eleventyNavigation:
         </div>
       </div>
     </div>
-<!-- Streamdeck configurations -->
     <div class="col">
-      <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/thumbnail_streamdeck.png');">
-        <div class="d-flex flex-column p-5 pb-3 text-white background-overlay rounded-5">
-          <h2 class="my-5 display-6 lh-1 fw-bold text-center text-white text-shadow-1">Stream Deck icons</h2>
+      <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/thumbnail_kubevirtio.png');">
+        <div class="d-flex flex-column h-100 p-5 text-white background-overlay rounded-5">
+          <h2 class="my-5 display-6 lh-1 fw-bold text-center text-white text-shadow-1">kubevirt.io</h2>
           <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <a href="https://kubevirtio-site.netlify.app" target="top" alt="KubeVirt.io demo" class="card-link">
+                <i class="fa-solid fa-laptop"></i>
+                Demo
+              </a>
+            </li>
             <li>
-              <a href="https://github.com/AdamJ/stream-deck-icon-packs" target="top" alt="Streamdeck icon packs on GitHub" class="card-link">
+              <a href="https://github.com/AdamJ/design-manual" target="top" alt="KubeVirt.io on GitHub" class="card-link">
                 GitHub <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
               </a>
             </li>
@@ -67,9 +52,8 @@ eleventyNavigation:
       </div>
     </div>
   </div>
-  <!-- RHD Design Manual & Patternfly.org -->
-  <h2 class="display-6">Work-related projects</h2>
   <div class="row row-cols-1 row-cols-lg-2 align-items-stretch px-2 mx-0 gy-5 pb-5">
+    <!-- RHD Design Manual & Patternfly.org -->
     <div class="col">
       <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/thumbnail_RHDM.png');">
         <div class="d-flex flex-column h-100 p-5 text-white background-overlay rounded-5">
@@ -111,21 +95,18 @@ eleventyNavigation:
       </div>
     </div>
   </div>
-  <h2 class="display-6">Oldies but goodies</h2>
+</div>
+<div class="container px-0">
+  <h2 class="display-6">Personal projects</h2>
   <div class="row row-cols-1 row-cols-lg-2 align-items-stretch px-2 mx-0 gy-5 pb-5">
+<!-- Alfred workflows -->
     <div class="col">
-      <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/thumbnail_kubevirtio.png');">
-        <div class="d-flex flex-column h-100 p-5 text-white background-overlay rounded-5">
-          <h2 class="my-5 display-6 lh-1 fw-bold text-center text-white text-shadow-1">kubevirt.io</h2>
+      <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/thumbnail_Alfredlogo.png');">
+        <div class="d-flex flex-column p-5 pb-3 text-white background-overlay rounded-5">
+          <h2 class="my-5 display-6 lh-1 fw-bold text-center text-white text-shadow-1">Alfred</h2>
           <ul class="d-flex list-unstyled mt-auto">
-            <li class="me-auto">
-              <a href="https://kubevirtio-site.netlify.app" target="top" alt="KubeVirt.io demo" class="card-link">
-                <i class="fa-solid fa-laptop"></i>
-                Demo
-              </a>
-            </li>
             <li>
-              <a href="https://github.com/AdamJ/design-manual" target="top" alt="KubeVirt.io on GitHub" class="card-link">
+              <a href="https://github.com/AdamJ/AdamJ.github.io/tree/main/src/pages/Alfred" target="top" alt="My Alfred workflows on GitHub" class="card-link">
                 GitHub <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
               </a>
             </li>
@@ -133,6 +114,45 @@ eleventyNavigation:
         </div>
       </div>
     </div>
+<!-- Streamdeck configurations -->
+    <div class="col">
+      <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/thumbnail_streamdeck.png');">
+        <div class="d-flex flex-column p-5 pb-3 text-white background-overlay rounded-5">
+          <h2 class="my-5 display-6 lh-1 fw-bold text-center text-white text-shadow-1">Stream Deck icons</h2>
+          <ul class="d-flex list-unstyled mt-auto">
+            <li>
+              <a href="https://github.com/AdamJ/stream-deck-icon-packs" target="top" alt="Streamdeck icon packs on GitHub" class="card-link">
+                GitHub <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+<div class="col">
+      <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/');">
+        <div class="d-flex flex-column p-5 pb-3 text-white background-overlay rounded-5">
+          <h2 class="mt-5 mb-1 display-6 lh-1 fw-bold text-center text-white text-shadow-1">Games and Things</h2>
+          <p class="text-center text-white mt-1 mb-4">a collections app for iOS</p>
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <a href="https://github.com/AdamJ/CollectSomeMore" target="top" alt="Link to app code on GitHub" class="card-link">
+                GitHub <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
+              </a>
+            </li>
+            <li>
+              <a href="{{ "/apps/gamesandthings/" | url }}" alt="Documentation for the app" class="card-link">
+                <i class="fa-solid fa-link"></i>
+                Documentation
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2 class="display-6">Oldies but goodies</h2>
+  <div class="row row-cols-1 row-cols-lg-2 align-items-stretch px-2 mx-0 gy-5 pb-5">
     <div class="col">
       <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/fabric8-package.png');">
         <div class="d-flex flex-column h-100 p-5 text-white background-overlay rounded-5">

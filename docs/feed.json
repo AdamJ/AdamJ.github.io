@@ -11,6 +11,13 @@
   },
   "items": [
     {
+      "id": "https://www.adamjolicoeur.com/resume/",
+      "url": "https://www.adamjolicoeur.com/resume/",
+      "title": "Adam J. Jolicoeur",
+      "date_published": "2024-11-27T20:26:01Z"
+    }
+    ,
+    {
       "id": "https://www.adamjolicoeur.com/development/",
       "url": "https://www.adamjolicoeur.com/development/",
       "title": "development",
@@ -49,13 +56,6 @@
       "id": "https://www.adamjolicoeur.com/testimonials/",
       "url": "https://www.adamjolicoeur.com/testimonials/",
       "title": "Testimonials",
-      "date_published": "2024-11-14T14:48:46Z"
-    }
-    ,
-    {
-      "id": "https://www.adamjolicoeur.com/resume/",
-      "url": "https://www.adamjolicoeur.com/resume/",
-      "title": "Adam J. Jolicoeur",
       "date_published": "2024-11-14T14:48:46Z"
     }
     ,
