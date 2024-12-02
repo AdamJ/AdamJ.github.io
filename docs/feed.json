@@ -11,17 +11,24 @@
   },
   "items": [
     {
-      "id": "https://www.adamjolicoeur.com/resume/",
-      "url": "https://www.adamjolicoeur.com/resume/",
-      "title": "Adam J. Jolicoeur",
-      "date_published": "2024-11-27T20:26:01Z"
+      "id": "https://www.adamjolicoeur.com/development/prototypes/",
+      "url": "https://www.adamjolicoeur.com/development/prototypes/",
+      "title": "Prototypes",
+      "date_published": "2024-12-02T15:27:28Z"
     }
     ,
     {
       "id": "https://www.adamjolicoeur.com/development/",
       "url": "https://www.adamjolicoeur.com/development/",
       "title": "development",
-      "date_published": "2024-11-15T19:15:33Z"
+      "date_published": "2024-12-02T15:27:28Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/resume/",
+      "url": "https://www.adamjolicoeur.com/resume/",
+      "title": "Adam J. Jolicoeur",
+      "date_published": "2024-11-27T20:26:01Z"
     }
     ,
     {
@@ -112,13 +119,6 @@
       "id": "https://www.adamjolicoeur.com/presentations/",
       "url": "https://www.adamjolicoeur.com/presentations/",
       "title": "presentations",
-      "date_published": "2024-09-30T18:26:06Z"
-    }
-    ,
-    {
-      "id": "https://www.adamjolicoeur.com/development/prototypes/",
-      "url": "https://www.adamjolicoeur.com/development/prototypes/",
-      "title": "Prototypes",
       "date_published": "2024-09-30T18:26:06Z"
     }
     ,

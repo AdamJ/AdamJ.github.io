@@ -50,11 +50,6 @@
 	},
 
 	{
-   "title":"Prototypes",
-   "imgName":"prototypes"
-	},
-
-	{
    "title":"presentations",
    "imgName":"presentations"
 	},
@@ -125,11 +120,6 @@
 	},
 
 	{
-   "title":"development",
-   "imgName":"development"
-	},
-
-	{
    "title":"Oops! Not Found",
    "imgName":"oops-not-found"
 	},
@@ -137,5 +127,15 @@
 	{
    "title":"Adam J. Jolicoeur",
    "imgName":"adam-j.-jolicoeur"
+	},
+
+	{
+   "title":"development",
+   "imgName":"development"
+	},
+
+	{
+   "title":"Prototypes",
+   "imgName":"prototypes"
 	}
 ]
