@@ -33,12 +33,6 @@ content {
   margin: 0;
   float: none;
 }
-// .content:after {
-//   content: "Copyright (c) Adam J. Jolicoeur 2008-2024";
-//   color: #010101 !important;
-//   font-size: 10pt;
-//   padding-top: 32px !important;
-// }
 .row {
   display: block !important;
 }
@@ -149,7 +143,7 @@ ol,
 dl {
   page-break-before: avoid;
 }
-/* Displaying link color and link behaviour */
+/* Displaying link color and link behavior */
 a:link,
 a:visited,
 a {

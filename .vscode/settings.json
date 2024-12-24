@@ -12,6 +12,7 @@
     "postbuild",
     "Shortcode",
     "stylelint",
+    "stylesheet",
     "syntaxhighlight",
     "webfonts"
   ],

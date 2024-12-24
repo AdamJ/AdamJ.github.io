@@ -70,11 +70,6 @@
 	},
 
 	{
-   "title":"connect",
-   "imgName":"connect"
-	},
-
-	{
    "title":"designs",
    "imgName":"designs"
 	},
@@ -137,5 +132,10 @@
 	{
    "title":"Prototypes",
    "imgName":"prototypes"
+	},
+
+	{
+   "title":"connect",
+   "imgName":"connect"
 	}
 ]

@@ -11,6 +11,13 @@
   },
   "items": [
     {
+      "id": "https://www.adamjolicoeur.com/connect/",
+      "url": "https://www.adamjolicoeur.com/connect/",
+      "title": "connect",
+      "date_published": "2024-12-02T16:01:47Z"
+    }
+    ,
+    {
       "id": "https://www.adamjolicoeur.com/development/prototypes/",
       "url": "https://www.adamjolicoeur.com/development/prototypes/",
       "title": "Prototypes",
@@ -84,13 +91,6 @@
       "id": "https://www.adamjolicoeur.com/designs/",
       "url": "https://www.adamjolicoeur.com/designs/",
       "title": "designs",
-      "date_published": "2024-11-14T14:48:46Z"
-    }
-    ,
-    {
-      "id": "https://www.adamjolicoeur.com/connect/",
-      "url": "https://www.adamjolicoeur.com/connect/",
-      "title": "connect",
       "date_published": "2024-11-14T14:48:46Z"
     }
     ,
