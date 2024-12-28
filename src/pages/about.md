@@ -25,7 +25,7 @@ With a move to Red Hat (later acquired by IBM), Adam accelerated his career path
 
 Adam has continued his career at Component Assembly Systems as their Lead Program Manager and Head of UX.
 
-## Background
+## Career
 
 - **Lead Program Manager / Head of UX** @ Component Assembly Systems<br>2023-Present
 - **Senior UX Designer** @ Amazon (AWS)<br>2021-2023
@@ -58,23 +58,9 @@ I tend to use what I know, but am always on the lookout for great open source pr
 - **iTerm 2 + ZSH**
 - **GitHub** (does this count as software?)
 
-#### Links
-
-<sl-button href="https://www.figma.com/@adamj" variant="text" size="large" target="_blank">
-  Figma community profile
-  <sl-visually-hidden>External link to my Figma community profile</sl-visually-hidden>
-  <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
-</sl-button>
-
 <sl-button href="https://www.adamjolicoeur.com/config" variant="text" size="large" target="_blank">
   Mac configuration files
   <sl-visually-hidden>External link to my configuration repository on GitHub</sl-visually-hidden>
-  <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
-</sl-button>
-
-<sl-button href="https://www.github.com/AdamJ" variant="text" size="large" target="_blank">
-  AdamJ.github.io
-  <sl-visually-hidden>External link to my GitHub profile</sl-visually-hidden>
   <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
 </sl-button>
 

@@ -102,7 +102,7 @@ description: "One enterprise task management system to rule them all."
           <p class="font-weight-semibold mb-0 text-body-emphasis">User flows</p>
           <figure class="figure">
             <img src="../../img/task-it_user-flow.png" class="figure-img img-fluid rounded" alt="Image of the user flow" loading="lazy">
-            <figcaption class="figure-caption text-center">Basic user flow
+            <figcaption class="figure-caption text-align-center">Basic user flow
               <sl-button href="../../img/task-it_user-flow.png" variant="text" size="medium" >
                 Expand
                 <fa-icon type="duotone" weight="solid" name="expand" size="md" style="padding: 0 4px;"></fa-icon>
@@ -115,7 +115,7 @@ description: "One enterprise task management system to rule them all."
           <p class="fw-semibold mb-0 text-body-emphasis">User states</p>
           <figure class="figure">
             <img src="../../img/task-it_user-states.png" class="figure-img img-fluid rounded" alt="Image of the various user flow states" loading="lazy">
-            <figcaption class="figure-caption text-center">User flow states
+            <figcaption class="figure-caption text-align-center">User flow states
               <sl-button href="../../img/task-it_user-states.png" variant="text" size="medium" >
                 Expand
                 <fa-icon type="duotone" weight="solid" name="expand" size="md" style="padding: 0 4px;"></fa-icon>
@@ -134,7 +134,7 @@ description: "One enterprise task management system to rule them all."
           <p>When creating wireframes, I start by taking an existing components (whether already in the application or from the component library in use) and lay out my page. From there, I begin to add some details (using the <code>redacted script</code> font) and basic headings. This is then reviewed with PM, Development, and, if available, fellow UX designers.</p>
           <figure class="figure">
             <img src="../../img/task-it_task-details_wireframe.png" class="figure-img img-fluid rounded" alt="Image of the task details wireframe" loading="lazy">
-            <figcaption class="figure-caption text-center">Task details wireframe
+            <figcaption class="figure-caption text-align-center">Task details wireframe
               <sl-button href="../../img/task-it_task-details_wireframe.png" variant="text" size="medium" >
                 Expand
                 <fa-icon type="duotone" weight="solid" name="expand" size="md" style="padding: 0 4px;"></fa-icon>
@@ -148,7 +148,7 @@ description: "One enterprise task management system to rule them all."
           <p>After reviews have been completed on the wireframes, mockups are created. In my process, I utilize mockups to get the full look/feel of the page without interactions. Once completed, these are used for user testing as well as final review with the development team.</p>
           <figure class="figure">
             <img src="../../img/task-it_task-details_mockup1.png" class="figure-img img-fluid rounded" alt="Image of the first version of the task details mockup" loading="lazy">
-            <figcaption class="figure-caption text-center">Task details mockup
+            <figcaption class="figure-caption text-align-center">Task details mockup
               <sl-button href="../../img/task-it_task-details_mockup1.png" variant="text" size="medium" >
                 Expand
                 <fa-icon type="duotone" weight="solid" name="expand" size="md" style="padding: 0 4px;"></fa-icon>
@@ -163,7 +163,7 @@ description: "One enterprise task management system to rule them all."
       <p>As part of the testing process, I created a card-sorting survey for users, where I included all of the existing attributes, as well as some future-planned attributes, and asked users to order them by priority. Priority was determined by the user, with the only prompt being "what attribute(s) are required for you to get your work done in the most efficient manner?".</p>
       <figure class="figure">
         <img src="../../img/task-it_user-survey.png" class="figure-img img-fluid rounded" alt="Image of the user testing process" loading="lazy">
-        <figcaption class="figure-caption text-center">User testing card sorting
+        <figcaption class="figure-caption text-align-center">User testing card sorting
         </figcaption>
       </figure>
       <h2>Revisions</h2>
@@ -172,7 +172,7 @@ description: "One enterprise task management system to rule them all."
         <div class="col-md-4">
           <figure class="figure">
             <img src="../../img/task-it_task-details_mockup2.png" class="figure-img img-fluid rounded" alt="Image of the first version of the task details mockup">
-            <figcaption class="figure-caption text-center">Version 2
+            <figcaption class="figure-caption text-align-center">Version 2
               <sl-button href="../../img/task-it_task-details_mockup2.png" variant="text" size="medium" >
                 Expand
                 <fa-icon type="duotone" weight="solid" name="expand" size="md" style="padding: 0 4px;"></fa-icon>
@@ -184,7 +184,7 @@ description: "One enterprise task management system to rule them all."
         <div class="col-md-4">
           <figure class="figure">
             <img src="../../img/task-it_task-details_mockup3.png" class="figure-img img-fluid rounded" alt="Image of the first version of the task details mockup">
-            <figcaption class="figure-caption text-center">Version 3
+            <figcaption class="figure-caption text-align-center">Version 3
               <sl-button href="../../img/task-it_task-details_mockup3.png" variant="text" size="medium" >
                 Expand
                 <fa-icon type="duotone" weight="solid" name="expand" size="md" style="padding: 0 4px;"></fa-icon>
@@ -196,7 +196,7 @@ description: "One enterprise task management system to rule them all."
         <div class="col-md-4">
           <figure class="figure">
             <img src="../../img/task-it_task-details_mockup4.png" class="figure-img img-fluid rounded" alt="Image of the first version of the task details mockup">
-            <figcaption class="figure-caption text-center">Version 4
+            <figcaption class="figure-caption text-align-center">Version 4
               <sl-button href="../../img/task-it_task-details_mockup4.png" variant="text" size="medium" >
                 Expand
                 <fa-icon type="duotone" weight="solid" name="expand" size="md" style="padding: 0 4px;"></fa-icon>

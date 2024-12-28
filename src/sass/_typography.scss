@@ -1,16 +1,16 @@
 @use "colors";
 
 :root {
-  --sl-font-sans: "Oswald", sans-serif;
-  --sl-font-mono: "Fira Mono", monospace;
-  --sl-font-serif: "Lato", sans-serif;
-  --bs-font-sans-serif: "Lato", sans-serif;
+  --sl-font-sans: "Oswald", system-ui, -apple-system, blinkmacsystemfont, avenir next, avenir, segoe ui, sans-serif;
+  --sl-font-mono: "Fira Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  --sl-font-serif: "Lato", system-ui, -apple-system, blinkmacsystemfont, avenir next, avenir, segoe ui, sans-serif;
+  --bs-font-sans-serif: "Lato", system-ui, -apple-system, blinkmacsystemfont, avenir next, avenir, segoe ui, sans-serif;
 }
 
 body {
   @include font-family;
   @include font-weight(400);
-  @include font-size(16px);
+  @include fs(1);
 }
 h1, h2, h3, h4, h5 {
   @include font-family-work;
@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5 {
   color: var(--sl-color-neutral-900);
 }
 h1, .h1 {
-  @include font-size(40px);
+  @include fs(2.5);
   @include margin-top(16px);
   @include margin-right(0);
   @include margin-bottom(16px);
@@ -28,7 +28,7 @@ h1, .h1 {
   letter-spacing: 0;
 }
 h2, .h2 {
-  @include font-size(32px);
+  @include fs(2);
   @include margin-top(16px);
   @include margin-right(0);
   @include margin-bottom(16px);
@@ -37,7 +37,7 @@ h2, .h2 {
   letter-spacing: 0;
 }
 h3, .h3 {
-  @include font-size(24px);
+  @include fs(1.5);
   @include margin-top(16px);
   @include margin-right(0);
   @include margin-bottom(16px);
@@ -46,7 +46,7 @@ h3, .h3 {
   letter-spacing: 0;
 }
 h4, .h4 {
-  @include font-size(20px);
+  @include fs(1.25);
   @include margin-top(0px);
   @include margin-right(0);
   @include margin-bottom(8px);
@@ -55,7 +55,7 @@ h4, .h4 {
   letter-spacing: 0;
 }
 h5, .h5 {
-  @include font-size(18px);
+  @include fs(1.125);
   @include margin-top(0px);
   @include margin-right(0);
   @include margin-bottom(4px);
@@ -64,7 +64,8 @@ h5, .h5 {
   letter-spacing: 0;
 }
 .paragraph,
-p {
+p,
+li {
   @include fs(1);
   @include font-weight(400);
   @include margin-top(0);
@@ -79,7 +80,7 @@ p {
 .paragraph-bold,
 .bold,
 p.bold {
-  @include font-weight(700);
+  font-weight: 700 !important;
 }
 p.lead, .lead {
   @include fs(1.25);
@@ -94,9 +95,9 @@ small,
   color: var(--sl-color-neutral-900);
 }
 li {
-  @include fs(1);
-  letter-spacing: 0.20px;
-  color: var(--sl-color-neutral-900);
+  @include margin-bottom(.25rem);
+
+  letter-spacing: 0;
 }
 code,
 .code {
@@ -104,12 +105,16 @@ code,
   @include font-weight(400);
   @include fs(1);
 
-  letter-spacing: 0
+  letter-spacing: 0;
+
+  background-color: var(--sl-color-primary-100);
+  padding: 2px;
+  border-radius: 4px;
 }
 .sub-header {
   @include font-family-work;
   @include font-weight(400);
-  @include font-size(24px);
+  @include fs(1.5);
   // @extend .text-transform-uppercase;
   color: var(--sl-color-neutral-600);
 
@@ -128,7 +133,7 @@ a.link-secondary {
 }
 a, .icon-link {
   @include font-family;
-  @include fs;
+  @include fs(1);
   @include font-style(normal);
 
   line-height: normal;
@@ -203,20 +208,20 @@ u, .underline {
   flex-wrap: wrap;
 }
 .text-center {
-  text-align: center;
+  @include text-align(center);
   &-small {
     @media (min-width: 576px) {
-      text-align: center;
+      @include text-align(center);
     }
   }
   &-medium {
     @media (min-width: 768px) {
-      text-align: center;
+      @include text-align(center);
     }
   }
   &-large {
     @media (min-width: 992px)  {
-      text-align: center;
+      @include text-align(center);
     }
   }
 }
@@ -224,17 +229,17 @@ u, .underline {
   text-align: left;
   &-small {
     @media (min-width: 576px) {
-      text-align: left;
+      @include text-align(left);
     }
   }
   &-medium {
     @media (min-width: 768px) {
-      text-align: left;
+      @include text-align(left);
     }
   }
   &-large {
     @media (min-width: 992px)  {
-      text-align: left;
+      @include text-align(left);
     }
   }
 }
@@ -249,7 +254,7 @@ u, .underline {
   text-transform: uppercase !important;
 }
 .text-bg-light {
-  background-color: var(--sl-color-neutral-200);
+  background-color: var(--sl-color-neutral-100);
 }
 .text-break {
   word-wrap: break-word !important;

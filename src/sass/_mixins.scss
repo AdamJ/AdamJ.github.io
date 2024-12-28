@@ -1,6 +1,7 @@
 @use "sass:list";
 @use "sass:map";
 @use "sass:meta";
+@use "variables";
 
 /* stylelint-disable custom-property-pattern */
 // used to reset elements to their defaults
@@ -27,16 +28,16 @@
 
 // font family
 @mixin font-family {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", system-ui, -apple-system, blinkmacsystemfont, avenir next, avenir, segoe ui, sans-serif;
 }
 @mixin font-family-mono {
-  font-family: "Fira Mono", monospace;
+  font-family: "Fira Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 }
 @mixin font-family-open {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", system-ui, -apple-system, blinkmacsystemfont, avenir next, avenir, segoe ui, sans-serif;
 }
 @mixin font-family-work {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", system-ui, -apple-system, blinkmacsystemfont, avenir next, avenir, segoe ui, sans-serif;
 }
 
 // font weight
@@ -46,7 +47,7 @@
 
 // font size
 @mixin fs($size: 1) {
-  font-size: calc(16px * $size);
+  font-size: calc($size-base * $size);
 }
 
 // border radius
@@ -103,13 +104,6 @@
 
 // font styles
 @mixin font-style($style: regular) {
-  // @debug meta.keywords($args);
-
-  // @each $style, $styles in meta.keywords($args) {
-  //   .font-style-#{$style} {
-  //     font-style: $styles;
-  //   }
-  // }
   font-style: $style;
 }
 

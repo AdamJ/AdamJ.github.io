@@ -25,7 +25,7 @@ eleventyNavigation:
   <section class="aj-banner-image d-flex flex-md-equal w-100 justify-content-center align-items-center">
     <div class="d-md-flex pt-3 px-3 pt-md-5 px-md-5 overflow-hidden">
       <div class="d-flex flex-column justify-content-center align-items-center my-3 py-3 w-100 text-white">
-        <h1 class="mb-3 text-center">Adam J. Jolicoeur</h1>
+        <h1 class="mb-3 text-align-center">Adam J. Jolicoeur</h1>
         <h3 class="mb-3">Ideas for the future</h3>
       </div>
     </div>

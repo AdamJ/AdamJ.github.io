@@ -15,7 +15,7 @@ eleventyNavigation:
     <div class="col">
       <div class="card card-cover" style="background-image: url('../img/rh_integration.png');">
         <div class="d-flex flex-column h-100 p-5 text-white background-overlay rounded-5">
-          <h2 class="my-5 display-6 lh-1 fw-bold text-center text-white text-shadow-1">Integration Walkthrough</h2>
+          <h2 class="my-5 display-6 lh-1 fw-bold text-align-center text-white text-shadow-1">Integration Walkthrough</h2>
           <ul class="d-flex list-unstyled mt-auto">
             <li class="me-auto">
               <a href="https://www.adamjolicoeur.com/integration-prototype/index.html" target="top" alt="View the integration walkthrough prototype" class="card-link">
@@ -34,7 +34,7 @@ eleventyNavigation:
     <div class="col">
       <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/thumbnail_kubevirtio.png');">
         <div class="d-flex flex-column h-100 p-5 text-white background-overlay rounded-5">
-          <h2 class="my-5 display-6 lh-1 fw-bold text-center text-white text-shadow-1">kubevirt.io</h2>
+          <h2 class="my-5 display-6 lh-1 fw-bold text-align-center text-white text-shadow-1">kubevirt.io</h2>
           <ul class="d-flex list-unstyled mt-auto">
             <li class="me-auto">
               <a href="https://kubevirtio-site.netlify.app" target="top" alt="KubeVirt.io demo" class="card-link">
@@ -57,7 +57,7 @@ eleventyNavigation:
     <div class="col">
       <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/thumbnail_RHDM.png');">
         <div class="d-flex flex-column h-100 p-5 text-white background-overlay rounded-5">
-          <h2 class="my-5 display-6 lh-1 fw-bold text-center text-shadow-1 text-white">Red Hat Developer Design Manual</h2>
+          <h2 class="my-5 display-6 lh-1 fw-bold text-align-center text-shadow-1 text-white">Red Hat Developer Design Manual</h2>
           <ul class="d-flex list-unstyled mt-auto">
             <li class="me-auto">
               <a href="https://aj-design-manual.netlify.app" target="top" alt="Design Manual demo" class="card-link">
@@ -77,7 +77,7 @@ eleventyNavigation:
     <div class="col">
       <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/thumbnail_PatternFly.png');">
         <div class="d-flex flex-column h-100 p-5 text-white background-overlay rounded-5">
-          <h2 class="my-5 display-6 lh-1 fw-bold text-center text-shadow-1 text-white">PatternFly.org</h2>
+          <h2 class="my-5 display-6 lh-1 fw-bold text-align-center text-shadow-1 text-white">PatternFly.org</h2>
           <ul class="d-flex list-unstyled mt-auto">
             <li class="me-auto">
               <a href="https://pf4testbench.netlify.app" target="top" alt="Design Manual demo" class="card-link">
@@ -103,7 +103,7 @@ eleventyNavigation:
     <div class="col">
       <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/thumbnail_Alfredlogo.png');">
         <div class="d-flex flex-column p-5 pb-3 text-white background-overlay rounded-5">
-          <h2 class="my-5 display-6 lh-1 fw-bold text-center text-white text-shadow-1">Alfred</h2>
+          <h2 class="my-5 display-6 lh-1 fw-bold text-align-center text-white text-shadow-1">Alfred</h2>
           <ul class="d-flex list-unstyled mt-auto">
             <li>
               <a href="https://github.com/AdamJ/AdamJ.github.io/tree/main/src/pages/Alfred" target="top" alt="My Alfred workflows on GitHub" class="card-link">
@@ -118,7 +118,7 @@ eleventyNavigation:
     <div class="col">
       <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/thumbnail_streamdeck.png');">
         <div class="d-flex flex-column p-5 pb-3 text-white background-overlay rounded-5">
-          <h2 class="my-5 display-6 lh-1 fw-bold text-center text-white text-shadow-1">Stream Deck icons</h2>
+          <h2 class="my-5 display-6 lh-1 fw-bold text-align-center text-white text-shadow-1">Stream Deck icons</h2>
           <ul class="d-flex list-unstyled mt-auto">
             <li>
               <a href="https://github.com/AdamJ/stream-deck-icon-packs" target="top" alt="Streamdeck icon packs on GitHub" class="card-link">
@@ -132,8 +132,8 @@ eleventyNavigation:
 <div class="col">
       <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/');">
         <div class="d-flex flex-column p-5 pb-3 text-white background-overlay rounded-5">
-          <h2 class="mt-5 mb-1 display-6 lh-1 fw-bold text-center text-white text-shadow-1">Games and Things</h2>
-          <p class="text-center text-white mt-1 mb-4">a collections app for iOS</p>
+          <h2 class="mt-5 mb-1 display-6 lh-1 fw-bold text-align-center text-white text-shadow-1">Games and Things</h2>
+          <p class="text-align-center text-white mt-1 mb-4">a collections app for iOS</p>
           <ul class="d-flex list-unstyled mt-auto">
             <li class="me-auto">
               <a href="https://github.com/AdamJ/CollectSomeMore" target="top" alt="Link to app code on GitHub" class="card-link">
@@ -156,7 +156,7 @@ eleventyNavigation:
     <div class="col">
       <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/fabric8-package.png');">
         <div class="d-flex flex-column h-100 p-5 text-white background-overlay rounded-5">
-          <h2 class="my-5 display-6 lh-1 fw-bold text-center text-shadow-1 text-white">fabric8-pattern.library</h2>
+          <h2 class="my-5 display-6 lh-1 fw-bold text-align-center text-shadow-1 text-white">fabric8-pattern.library</h2>
           <ul class="d-flex list-unstyled mt-auto">
             <li class="me-auto">
               <a href="https://www.npmjs.com/package/fabric8-pattern.library" target="_blank" alt="View library on npm" class="card-link">

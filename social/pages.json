@@ -137,5 +137,20 @@
 	{
    "title":"connect",
    "imgName":"connect"
+	},
+
+	{
+   "title":"Credits",
+   "imgName":"credits"
+	},
+
+	{
+   "title":"Journeys",
+   "imgName":"journeys"
+	},
+
+	{
+   "title":"How to Use the Site",
+   "imgName":"how-to-use-the-site"
 	}
 ]

@@ -9,7 +9,7 @@ eleventyNavigation:
 
 <div class="container">
   <div class="row">
-    <div class="col text-center">
+    <div class="col text-align-center">
       <div class="btn-group">
         <a class="btn btn-outline disabled" aria-disabled="true">Icons</a>
         <a class="btn btn-outline disabled" aria-disabled="true">Logos</a>

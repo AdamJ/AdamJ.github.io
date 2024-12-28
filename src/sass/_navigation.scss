@@ -2,7 +2,6 @@
 .nav {
   @extend .display-flex;
   height: 70px;
-  // background: rgb(20, 20, 20);
   background: var(--sl-color-neutral-950);
   @media (prefers-color-scheme: dark) {
     background: var(--sl-color-neutral-50);
@@ -11,8 +10,6 @@
   padding: 0 2rem;
   justify-content: space-between;
   align-items: center;
-  // position: sticky;
-  // top: 0;
   z-index: var(--sl-z-index-drawer);
 }
 .logo h2 {
@@ -32,6 +29,7 @@
 .overview,
 .account {
   @extend .display-flex;
+  align-items: center;
 }
 .overview {
   @include margin-right(4rem);
@@ -116,13 +114,19 @@
     position: fixed;
     top: .5rem;
     right: .5rem;
-    background: var(--sl-color-neutral-950);
+    background: #131316;
     border-radius: var(--sl-border-radius-circle);
     @media (prefers-color-scheme: dark) {
-      background: var(--sl-color-neutral-50);
+      background: #131316;
       color: var(--sl-color-neutral-950);
     }
     z-index: calc(var(--sl-z-index-drawer) + 1);
+    &:hover {
+      background: lighten(#131316, 90%);
+      color: darken(#ffffff, 90%);
+      transition: all ease-in-out 300ms;
+      cursor: pointer;
+    }
   }
   #check:checked ~ .nav-items {
     right: 0;

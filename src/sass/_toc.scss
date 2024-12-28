@@ -1,13 +1,16 @@
+aside {
+  background-color: var(--sl-color-neutral-50);
+  box-shadow: 0 0 0 1px var(--sl-color-neutral-200);
+  border-radius: var(--sl-border-radius-medium);
+}
 .toc.markdown-toc {
   --sl-link-color: var(--sl-color-primary-700);
   @media (prefers-color-scheme: dark) {
     --sl-link-color: var(--sl-color-primary-700);
   }
-  background-color: var(--sl-color-neutral-50);
   padding-top: var(--sl-spacing-medium);
   padding-bottom: var(--sl-spacing-medium);
   border-radius: var(--sl-border-radius-large);
-  box-shadow: var(--sl-shadow-medium);
   position: sticky;
   top: 16px;
   a {

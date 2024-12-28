@@ -67,12 +67,12 @@ body {
   &--company-role {
     @include margin-bottom(8px);
 
-    color: rgba(0, 0, 0, 60%);
+    color: var(--sl-color-neutral-700);
   }
   &--company-dates {
     @include margin-bottom(0);
 
-    color: rgba(0, 0, 0, 60%);
+    color: var(--sl-color-neutral-700);
   }
 }
 .column-list-item {
@@ -127,4 +127,16 @@ body {
 .figure-img {
   margin-bottom: .5rem;
   line-height: 1;
+}
+.banner {
+  @include font-weight(600);
+  @include fs(1);
+  // position: relative;
+  // top: -2rem;
+  padding: 0.5rem 1rem;
+  margin: .5rem 0;
+  background-color: hsl(202.1 80.5% 44.3%);
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: 0 1px 0 0 hsl(240 9.1% 91.8%);
 }

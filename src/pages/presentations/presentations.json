@@ -1,4 +1,4 @@
 {
-  "layout": "base",
+  "layout": "carousel",
   "permalink": "/presentations/{{ page.fileSlug }}/"
 }

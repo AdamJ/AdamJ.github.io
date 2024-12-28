@@ -1,4 +1,5 @@
 module.exports = {
+  env: process.env.ELEVENTY_ENV,
   url: process.env.URL || "http://localhost:8080",
   siteName: "Adam Jolicoeur",
   siteDescription: "The portfolio site for Adam Jolicoeur.",

@@ -63,7 +63,8 @@
     "stylelint-order": "6.0.3"
   },
   "browserslist": [
-    "last 2 versions"
+    "> 5%, not dead, not ie",
+    "last 2 major versions"
   ],
   "dependencies": {
     "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",

@@ -30,15 +30,16 @@
     <link
       rel="stylesheet"
       media="(prefers-color-scheme:light)"
-      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/light.css"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/themes/light.css"
     />
     <link
       rel="stylesheet"
       media="(prefers-color-scheme:dark)"
-      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/dark.css"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/themes/dark.css"
       onload="document.documentElement.classList.add('sl-theme-dark');"
     />
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/shoelace.js" ></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/shoelace-autoloader.js"></script>
+    <link href="{{ '/css/prism.css' | url }}" rel="stylesheet" />
     <link href="{{ '/css/style.css' | url }}" rel="stylesheet" />
     <meta
       name="og:title"
@@ -63,7 +64,9 @@
       <div class="container py-3">
         <div class="row">
           <article class="col-sm-12 col-md-9">
-            <sl-badge variant="neutral">{{ content | emojiReadTime }}</sl-badge>
+            {%- if (readTime) -%}
+              <sl-badge variant="neutral">{{ content | emojiReadTime }}</sl-badge>
+            {%- endif -%}
             {{ content | safe }}
           </article>
           {%- if content | toc -%}
