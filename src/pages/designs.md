@@ -1,5 +1,5 @@
 ---
-title: "designs"
+title: "Designs"
 abbreviation: "designs"
 description: "Collaborate. Learn. Delight."
 subheader: "Collaboration is the key to understanding and building trust. Intuition guides my initial direction and decisions, which are backed up by learnings from research and testing. Every decision that is made is done with the goal to delight users as they go about completing their tasks."

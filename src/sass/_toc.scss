@@ -19,6 +19,9 @@ aside {
       color: var(--sl-color-primary-800);
     }
   }
+  ul ul {
+    padding-left: var(--sl-spacing-medium);
+  }
   @media only screen and (max-width: 776px) {
     ul {
       @include display(flex);

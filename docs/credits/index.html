@@ -35,7 +35,6 @@
       onload="document.documentElement.classList.add('sl-theme-dark');"
     />
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/shoelace-autoloader.js"></script>
-    <link href="/css/prism.css" rel="stylesheet" />
     <link href="/css/style.css" rel="stylesheet" />
     <meta
       name="og:title"
@@ -46,6 +45,7 @@
       content="The portfolio site for Adam Jolicoeur."
     />
     <meta property="og:image" content="https://www.adamjolicoeur.com/img/AdamJolicoeur_social.png" />
+
     <link
       rel="alternate"
       type="application/rss+xml"
@@ -126,10 +126,18 @@
 </container>
 
     <main class="content">
-      <div class="container py-3">
-        <div class="row">
-          <article class="col-sm-12 col-md-9"><h1>Credits</h1>
-<p>Giving credit where credit is due, this page is based off of the <a href="https://raw.githubusercontent.com/LeaVerou/lea.verou.me/refs/heads/main/credits/index.md">Credits</a> page from <a href="https://lea.verou.me/">Lea Verou</a>.</p>
+      
+<div class="container intro py-3 px-0 text-align-center">
+  <h1 class="display-1 fw-bold text-break">Credits</h1>
+  <p class="sub-header text-break px-2 px-md-0">
+    
+  </p></div>
+
+<content>
+  <div class="container mb-2 py-2 px-0">
+    <div class="row px-0 pb-3 mx-0">
+      <article class="col-sm-12 col-md-9 order-2 order-md-1">
+        <p>Giving credit where credit is due, this page is based off of the <a href="https://raw.githubusercontent.com/LeaVerou/lea.verou.me/refs/heads/main/credits/index.md">Credits</a> page from <a href="https://lea.verou.me/">Lea Verou</a>.</p>
 <hr>
 <p>This site was built using <a href="https://www.11ty.dev/">Eleventy</a>, hosted on <a href="https://pages.github.com/">GitHub Pages</a>, with previews deployed with <a href="https://www.netlify.com/">Netlify</a>. Certificate courtesy of GitHub Pages and <a href="https://letsencrypt.org/">Let’s Encrypt</a>.</p>
 <h2 id="libraries" tabindex="-1">Libraries <a class="anchor-link" href="#libraries">#</a></h2>
@@ -164,7 +172,8 @@
 </ul>
 <h2 id="icons" tabindex="-1">Icons <a class="anchor-link" href="#icons">#</a></h2>
 <p>A custom icon component (<a href="https://github.com/AdamJ/adamjolicoeur.com/blob/main/src/js/icon-component.js">icon-component.js</a>) is used to render icons as web components with <a href="https://fontawesome.com/">Font Awesome</a> as the preferred icon library.</p>
-<pre class="language-html"><code class="hljs language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>fa-icon</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>brands<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>github<span class="token punctuation">"</span></span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>md<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>fa-icon</span><span class="token punctuation">></span></span></code></pre>
+<pre><code class="hljs">  &lt;fa-icon type=&quot;brands&quot; name=&quot;github&quot; size=&quot;md&quot;&gt;&lt;/fa-icon&gt;
+</code></pre>
 <h2 id="plugins" tabindex="-1">Plugins <a class="anchor-link" href="#plugins">#</a></h2>
 <ul>
 <li><a href="https://github.com/11ty/eleventy-plugin-inclusive-language">eleventy-plugin-inclusive-language</a> to check for inclusive language</li>
@@ -200,12 +209,14 @@
 </li>
 </ul>
 
-          </article><aside class="col-sm-12 col-md-3">
-            <div class="toc markdown-toc" >
+      </article><aside class="col-sm-12 col-md-3 order-1 order-md-2" aria-label="complimentary">
+        <div class="toc markdown-toc" >
         <ul><li><a href="#libraries">Libraries</a></li><li><a href="#fonts">Fonts</a></li><li><a href="#icons">Icons</a></li><li><a href="#plugins">Plugins</a></li><li><a href="#tools">Tools</a></li></ul>
       </div>
-          </aside></div>
-      </div>
+      </aside></div>
+  </div>
+</content>
+
     </main>
     <footer id="footer" class="footer d-flex flex-wrap flex-column mt-5">
   <div class="container px-0 px-md-1">

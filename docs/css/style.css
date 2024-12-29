@@ -4951,9 +4951,15 @@ code,
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 0;
-  background-color: var(--sl-color-primary-100);
+  background-color: var(--sl-color-neutral-200);
   padding: 2px;
   border-radius: 4px;
+}
+
+pre {
+  background-color: var(--sl-color-neutral-200);
+  border-radius: 4px;
+  padding: var(--sl-spacing-small);
 }
 
 .sub-header {
@@ -5109,6 +5115,9 @@ aside {
 }
 .toc.markdown-toc a:hover {
   color: var(--sl-color-primary-800);
+}
+.toc.markdown-toc ul ul {
+  padding-left: var(--sl-spacing-medium);
 }
 @media only screen and (max-width: 776px) {
   .toc.markdown-toc ul {

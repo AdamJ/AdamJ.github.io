@@ -1,5 +1,5 @@
 ---
-title: "connect"
+title: "Connect"
 abbreviation: "connect"
 description:
 header: "Reach out, let's connect"

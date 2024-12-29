@@ -1,6 +1,6 @@
 ---
 layout: "markdown"
-title: "about"
+title: "About"
 abbreviation: "about"
 description: "Driven and passionate senior user experience designer with a background in software development."
 primaryURL: /resume
@@ -35,35 +35,6 @@ Adam has continued his career at Component Assembly Systems as their Lead Progra
 - **Contractor** @ Switchback, Inc.<br>2010-2021
 - **Help Desk Analyst** @ Conservation Services Group<br>2008-2010
 
-## Tools of my trade
-
-I tend to use what I know, but am always on the lookout for great open source products/projects. Below is a list of what is in my "bag of holding".
-
-### Hardware
-
-- MacBook Pro 16" (M3 Max)
-- Mac Mini (M1)
-- iPad Pro 11" (M4)
-- Elgato Streamdeck (for using shortcuts without programming keyboard macros)
-- Keychron keyboards with custom keycaps
-- Logitech MX Anywhere 3
-- Beats Studio Buds + (transparent because I liked how they look)
-- iPhone 15 Pro Max
-
-### Software & Services
-
-- **Figma**
-- **Zeplin**
-- **Visual Studio Code**
-- **iTerm 2 + ZSH**
-- **GitHub** (does this count as software?)
-
-<sl-button href="https://www.adamjolicoeur.com/config" variant="text" size="large" target="_blank">
-  Mac configuration files
-  <sl-visually-hidden>External link to my configuration repository on GitHub</sl-visually-hidden>
-  <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
-</sl-button>
-
-### Education
+## Education
 
 I attended MCLA (Massachusetts College of Liberal Arts, formerly North Adams State) graduating with degrees in Fine and Performing Arts and Arts Management. While at MCLA, I was the President of the Lacrosse Club (now a recognized D3 sport) while also receiving a variety of accolades such as Alpha Chi, National Scholars Honor Society, and the Who’s Who in American Colleges and Universities.

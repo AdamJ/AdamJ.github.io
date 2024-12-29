@@ -1,10 +1,8 @@
 ---
 title: Credits
-layout: blog
+layout: markdown
 readTime: false
 ---
-
-# {{ title }}
 
 Giving credit where credit is due, this page is based off of the [Credits](https://raw.githubusercontent.com/LeaVerou/lea.verou.me/refs/heads/main/credits/index.md) page from [Lea Verou](https://lea.verou.me/).
 
@@ -40,7 +38,7 @@ This site was built using [Eleventy](https://www.11ty.dev/), hosted on [GitHub P
 
 A custom icon component ([icon-component.js](https://github.com/AdamJ/adamjolicoeur.com/blob/main/src/js/icon-component.js)) is used to render icons as web components with [Font Awesome](https://fontawesome.com/) as the preferred icon library.
 
-```html
+```
   <fa-icon type="brands" name="github" size="md"></fa-icon>
 ```
 
