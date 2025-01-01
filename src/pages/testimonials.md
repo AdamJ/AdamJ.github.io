@@ -1,6 +1,7 @@
 ---
 title: "Testimonials"
 abbreviation: "Testimonials"
+description: "I've been fortunate to work with some great people over the years. Here are some of the things they've said about me."
 ---
 <div class="container mb-2 py-2 px-0">
 
@@ -8,7 +9,7 @@ abbreviation: "Testimonials"
 
 ***
 
-  > Adam is highly engaged across 6+ major features at any given time an is somehow never the blocker. Designers like this don't come around often.
+  > Adam is highly engaged across 6+ major features at any given time and is somehow never the blocker. Designers like this don't come around often.
   >> Senior developer engineer
 
 ***

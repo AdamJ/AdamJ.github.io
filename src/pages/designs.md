@@ -1,5 +1,5 @@
 ---
-title: "designs"
+title: "Designs"
 abbreviation: "designs"
 description: "Collaborate. Learn. Delight."
 subheader: "Collaboration is the key to understanding and building trust. Intuition guides my initial direction and decisions, which are backed up by learnings from research and testing. Every decision that is made is done with the goal to delight users as they go about completing their tasks."
@@ -10,7 +10,7 @@ eleventyNavigation:
 
 <!-- Task-It! -->
 <div class="container mx-auto mx-md-auto py-3 px-0 px-md-5">
-  <div class="row mx-0 text-center card-cover" style="background-image: url({{ '/img/task-it_product.png' | url }});">
+  <div class="row mx-0 text-align-center card-cover" style="background-image: url({{ '/img/task-it_product.png' | url }});">
     <div class="col p-md-0 p-lg-5 background-overlay" style="height: 500px;">
       <div style="position: relative; top: 25%;">
         <h1 class="display-3 fw-bold text-white">Task-It!</h1>
@@ -30,7 +30,7 @@ eleventyNavigation:
     <div class="col-12 col-md-6">
       <img src="{{ '/img/OSIO-laptop-screen-1200.png' | url }}" class="d-block mx-lg-auto img-fluid" alt="Application Lifecycle Management thumbnail" width="700" height="500" loading="lazy">
     </div>
-    <div class="col-12 col-md-6 text-center text-md-start">
+    <div class="col-12 col-md-6 text-align-center text-md-start">
       <h2>Application Lifecycle Management</h2>
       <p class="text-body-secondary">A one-stop-shop for a team's planning and project lifecycle management.</p>
       <sl-button href="/designs/alm" variant="neutral" pill>the journey</sl-button>
@@ -41,7 +41,7 @@ eleventyNavigation:
 <!-- Customer Engagement Application -->
 <div class="container py-3 px-0 px-md-5 text-bg-light">
   <div class="row mx-0 px-0 px-md-3 align-items-center">
-    <div class="col-12 col-md-6 text-center text-md-start">
+    <div class="col-12 col-md-6 text-align-center text-md-start">
       <h2>Customer Engagement App</h2>
       <p >End-to-end tracking of customer engagement and marketing campaigns.</p>
       <sl-button href="/designs/customer-engagement" variant="neutral" pill>the journey</sl-button>
@@ -58,7 +58,7 @@ eleventyNavigation:
     <div class="col-12 col-md-6">
       <img src="{{ '/img/Timetrak.png' | url }}" class="d-block mx-lg-auto img-fluid img-thumbnail" alt="Switchback Timetrak thumbnail" width="700" height="500" loading="lazy">
     </div>
-    <div class="col-12 col-md-6 text-center text-md-start">
+    <div class="col-12 col-md-6 text-align-center text-md-start">
       <h2>Switchback TimeTrak</h2>
       <p>The goal of this redesign was to create a simplistic system to easily access recent log entries, active projects, and team calendars. From this dashboard, users can quickly see these items, in addition to providing quick navigation items for in-depth reporting.</p>
       <p class="card-text">
@@ -71,7 +71,7 @@ eleventyNavigation:
 <!-- Structure Cloud -->
 <div class="container py-3 px-0 px-md-5">
   <div class="row mx-0 px-0 px-md-3 align-items-center">
-    <div class="col-12 col-md-6 text-center text-md-start">
+    <div class="col-12 col-md-6 text-align-center text-md-start">
       <h2>Structure Cloud</h2>
       <p>For this project, I was tasked with converting the UI of a COBOL application into something that would work with the modern web. The task was very challenging, in that one of the main requirements was to keep the layout as close to the original application as possible (in order to minimize the amount of relearning existing users would need to do), while also providing a clean UI that would attract new users to the platform.</p>
       <p class="card-text pb-2 pb-md-0">
@@ -92,7 +92,7 @@ eleventyNavigation:
       </p>
     </div>
   </div>
-  <div class="row align-items-start mx-0 py-4 py-md-3">
+  <div class="row justify-content-center mx-0 py-4 py-md-3">
     <div class="col-12 col-md-6 col-lg-4 mx-0 px-md-3 my-2 my-md-0">
       <sl-card class="card-image">
         <img

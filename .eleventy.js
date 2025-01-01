@@ -31,7 +31,11 @@ const mdAnchorOpts = {
 // const formatDate = date => DateTime.fromJSDate(new Date(date)).toISO({includeOffset: true, suppressMilliseconds: true})
 // const formatDateYear = date => DateTime.fromJSDate(new Date(date)).get('year')
 
+
 module.exports = function (eleventyConfig) {
+  if (process.env.ELEVENTY_ENV === "prod") {
+    eleventyConfig.ignores.add("./src/posts/");
+  };
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss, {
     posthtmlRenderOptions: {

@@ -61,7 +61,7 @@ eleventyNavigation:
       <div class="row align-items-md-stretch">
         <div class="col-md-6">
           <div class="h-100 p-5 rounded-3" style="background-color: #333742;">
-            <h2 class="text-center text-white">Application Dashboard</h2>
+            <h2 class="text-align-center text-white">Application Dashboard</h2>
             <div class="text-align-center">
               <sl-dialog label="CEA Application Dashboard" class="cea-dashboard" style="--width: 80vw;">
                 <img src="../../img/CEA_Dashboard.png" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the primary dashboard in the Customer Engagement App">
@@ -105,7 +105,7 @@ eleventyNavigation:
       <div class="row align-items-md-stretch">
         <div class="col-md-6">
           <div class="h-100 p-5 text-dark bg-light rounded-3">
-            <h2 class="text-center">Settings</h2>
+            <h2 class="text-align-center">Settings</h2>
             <div class="text-align-center">
               <sl-dialog label="CEA Settings" class="cea-settings" style="--width: 80vw;">
                 <img src="../../img/CEA_Settings.png" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the settings page in the Customer Engagement App">
@@ -130,7 +130,7 @@ eleventyNavigation:
       <div class="row align-items-md-stretch">
         <div class="col-md-6">
           <div class="h-100 p-5 rounded-3" style="background-color: #333742;">
-            <h2 class="text-center text-white">Color Palette</h2>
+            <h2 class="text-align-center text-white">Color Palette</h2>
             <div class="text-align-center">
               <sl-dialog label="Color palette" class="cea-palette" style="--width: 80vw;">
                 <img src="../../img/CEA_Palette.png" class="d-block mx-lg-auto img-fluid" alt="Color palette created for the Customer Engagement App">

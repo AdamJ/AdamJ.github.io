@@ -15,11 +15,11 @@ eleventyNavigation:
       <h4 class="my-0">Component Assembly Systems, Inc. (Pelham, NY)</h4>
       <p class="text-body-secondary">January 2024 - Present</p>
       <div class="pb-3 row-badges">
-        <sl-badge variant="neutral" pill>Program Management</sl-badge>
-        <sl-badge variant="neutral" pill>Figma</sl-badge>
-        <sl-badge variant="neutral" pill>Strategic Technology</sl-badge>
-        <sl-badge variant="neutral" pill>Design Systems</sl-badge>
-        <sl-badge variant="neutral" pill>Research</sl-badge>
+        <sl-badge variant="primary" pill>Program Management</sl-badge>
+        <sl-badge variant="primary" pill>Figma</sl-badge>
+        <sl-badge variant="primary" pill>Strategic Technology</sl-badge>
+        <sl-badge variant="primary" pill>Design Systems</sl-badge>
+        <sl-badge variant="primary" pill>Research</sl-badge>
       </div>
     </div>
     <div class="col-12 col-md-6">
@@ -36,12 +36,12 @@ eleventyNavigation:
       <h4 class="my-0">Amazon.com, Inc <br /> Amazon Software Builder Experience (Boston, MA)</h4>
       <p class="text-body-secondary">August 2021 - September 2023</p>
       <div class="pb-3 row-badges">
-        <sl-badge variant="neutral" pill>Figma</sl-badge>
-        <sl-badge variant="neutral" pill>Prototypes</sl-badge>
-        <sl-badge variant="neutral" pill>UserTesting</sl-badge>
-        <sl-badge variant="neutral" pill>Design Systems</sl-badge>
-        <sl-badge variant="neutral" pill>Research</sl-badge>
-        <sl-badge variant="neutral" pill>React</sl-badge>
+        <sl-badge variant="primary" pill>Figma</sl-badge>
+        <sl-badge variant="primary" pill>Prototypes</sl-badge>
+        <sl-badge variant="primary" pill>UserTesting</sl-badge>
+        <sl-badge variant="primary" pill>Design Systems</sl-badge>
+        <sl-badge variant="primary" pill>Research</sl-badge>
+        <sl-badge variant="primary" pill>React</sl-badge>
       </div>
     </div>
     <div class="col-12 col-md-6">
@@ -62,12 +62,12 @@ eleventyNavigation:
       <h4 class="my-0">Red Hat, Inc (Westford, MA)</h4>
       <p class="text-body-secondary">December 2016 - August 2021</p>
       <div class="pb-3 row-badges">
-        <sl-badge variant="neutral" pill>Sketch</sl-badge>
-        <sl-badge variant="neutral" pill>Adobe XD</sl-badge>
-        <sl-badge variant="neutral" pill>HTML</sl-badge>
-        <sl-badge variant="neutral" pill>SCSS</sl-badge>
-        <sl-badge variant="neutral" pill>Git</sl-badge>
-        <sl-badge variant="neutral" pill>OSS</sl-badge>
+        <sl-badge variant="primary" pill>Sketch</sl-badge>
+        <sl-badge variant="primary" pill>Adobe XD</sl-badge>
+        <sl-badge variant="primary" pill>HTML</sl-badge>
+        <sl-badge variant="primary" pill>SCSS</sl-badge>
+        <sl-badge variant="primary" pill>Git</sl-badge>
+        <sl-badge variant="primary" pill>OSS</sl-badge>
       </div>
     </div>
     <div class="col-12 col-md-6">
@@ -89,11 +89,11 @@ eleventyNavigation:
       <h4 class="my-0">Saylent Technologies (Franklin, MA)</h4>
       <p class="text-body-secondary">November 2014 - July 2016</p>
       <div class="pb-3 row-badges">
-        <sl-badge variant="neutral" pill>Photoshop</sl-badge>
-        <sl-badge variant="neutral" pill>Visual studio</sl-badge>
-        <sl-badge variant="neutral" pill>HTML</sl-badge>
-        <sl-badge variant="neutral" pill>CSS</sl-badge>
-        <sl-badge variant="neutral" pill>Agile</sl-badge>
+        <sl-badge variant="primary" pill>Photoshop</sl-badge>
+        <sl-badge variant="primary" pill>Visual studio</sl-badge>
+        <sl-badge variant="primary" pill>HTML</sl-badge>
+        <sl-badge variant="primary" pill>CSS</sl-badge>
+        <sl-badge variant="primary" pill>Agile</sl-badge>
       </div>
     </div>
     <div class="col-12 col-md-6">
@@ -115,11 +115,11 @@ eleventyNavigation:
       <h4 class="my-0">Switchback, Inc. (Holden, MA)</h4>
       <p class="text-body-secondary">November 2010 - August 2021</p>
       <div class="pb-3 row-badges">
-        <sl-badge variant="neutral" pill>Sketch</sl-badge>
-        <sl-badge variant="neutral" pill>Adobe XD</sl-badge>
-        <sl-badge variant="neutral" pill>HTML</sl-badge>
-        <sl-badge variant="neutral" pill>SCSS</sl-badge>
-        <sl-badge variant="neutral" pill>Wireframes</sl-badge>
+        <sl-badge variant="primary" pill>Sketch</sl-badge>
+        <sl-badge variant="primary" pill>Adobe XD</sl-badge>
+        <sl-badge variant="primary" pill>HTML</sl-badge>
+        <sl-badge variant="primary" pill>SCSS</sl-badge>
+        <sl-badge variant="primary" pill>Wireframes</sl-badge>
       </div>
       <ul class="icon-list">
         <li class="text-muted">
@@ -150,11 +150,11 @@ eleventyNavigation:
       <h4 class="my-0">Black Duck Software (Burlington, MA)</h4>
       <p class="text-body-secondary">February 2013 - October 2014</p>
       <div class="pb-3 row-badges">
-        <sl-badge variant="neutral" pill>HTML</sl-badge>
-        <sl-badge variant="neutral" pill>CSS/LESS</sl-badge>
-        <sl-badge variant="neutral" pill>Bootstrap</sl-badge>
-        <sl-badge variant="neutral" pill>Agile</sl-badge>
-        <sl-badge variant="neutral" pill>Git</sl-badge>
+        <sl-badge variant="primary" pill>HTML</sl-badge>
+        <sl-badge variant="primary" pill>CSS/LESS</sl-badge>
+        <sl-badge variant="primary" pill>Bootstrap</sl-badge>
+        <sl-badge variant="primary" pill>Agile</sl-badge>
+        <sl-badge variant="primary" pill>Git</sl-badge>
       </div>
     </div>
     <div class="col-12 col-md-6">
@@ -175,11 +175,11 @@ eleventyNavigation:
       <h4 class="my-0">Conservation Services Group (Westborough, MA)</h4>
       <p class="text-body-secondary">June 2008 - November 2010</p>
       <div class="pb-3 row-badges">
-        <sl-badge variant="neutral" pill>JIRA</sl-badge>
-        <sl-badge variant="neutral" pill>DevOps</sl-badge>
-        <sl-badge variant="neutral" pill>Ubuntu</sl-badge>
-        <sl-badge variant="neutral" pill>RHEL</sl-badge>
-        <sl-badge variant="neutral" pill>VMs</sl-badge>
+        <sl-badge variant="primary" pill>JIRA</sl-badge>
+        <sl-badge variant="primary" pill>DevOps</sl-badge>
+        <sl-badge variant="primary" pill>Ubuntu</sl-badge>
+        <sl-badge variant="primary" pill>RHEL</sl-badge>
+        <sl-badge variant="primary" pill>VMs</sl-badge>
       </div>
     </div>
     <div class="col-12 col-md-6">
@@ -197,78 +197,48 @@ eleventyNavigation:
     </div>
   </div>
 </div>
-<div class="container py-3 mt-3 px-0 text-bg-light">
-  <div class="row px-0 mx-0">
-    <div class="col-12">
-      <h2>Education</h2>
-      <h3>Massachusetts College of Liberal Arts - North Adams, MA</h3>
-    </div>
-  </div>
-  <div class="row px-0 pb-3 mx-0">
-    <div class="col-12 col-md-6">
-      <h4 class="job--company-name px-0">Bachelor of Arts</h4>
-      <h5 class="job--company-role px-0">Fine and Performing Arts, Music</h5>
-      <p class="job--company-dates px-0">2003 - 2008</p>
-    </div>
-    <div class="col-12 col-md-6">
-      <h4 class="job--company-name px-0">Bachelor of Arts</h4>
-      <h5 class="job--company-role px-0">Arts, Entertainment, and Media Management</h5>
-      <p class="job--company-dates px-0">2003 - 2008</p>
-    </div>
-  </div>
-  <div class="row px-0 pb-3 mx-0">
-    <p>Alpha Chi - National Scholars Honor Society - Who’s Who in American Colleges and Universities</p>
-  </div>
-</div>
-<div class="container py-3 mt-3 px-0 hide-on-print">
-  <div class="row px-0 pb-3 mx-0">
-    <div class="row px-0 mx-0">
-      <div class="col-12">
-        <h2>Skills</h2>
-        <p class="paragraph-inset">If a project does not have a component library or design manual, I will often create one to assist in cross-team communications.</p>
-      </div>
-    </div>
-    <div class="row px-0 justify-content-md-center text-center">
-      <div class="col-sm-6 col-md-3">
-        <p class="column-list-item"><strong>UX / UI Design</strong></p>
-        <p class="column-list-item">HTML / CSS</p>
-        <p class="column-list-item"><strong>Iconography</strong></p>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <p class="column-list-item">Prototyping</p>
-        <p class="column-list-item"><strong>Wireframes</strong></p>
-        <p class="column-list-item">User testing</p>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <p class="column-list-item"><strong>Figma / FigJam</strong></p>
-        <p class="column-list-item">Sketch</p>
-        <p class="column-list-item"><strong>Design systems</strong></p>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <p class="column-list-item">Product management</p>
-        <p class="column-list-item"><strong>Roadmapping</strong></p>
-        <p class="column-list-item">Agile methodologies</p>
-      </div>
-    </div>
-  </div>
-</div>
 <div class="container py-3 mt-3 px-0">
-  <div class="pb-3 text-bg-light">
-    <div class="row px-0 mx-0">
-      <div class="col-12">
-        <h2>Organizations</h2>
-        <p class="paragraph-inset hide-on-print">Various organizations that I have belonged to, past and present.</p>
+  <div class="details-group-example">
+    <sl-details summary="Education" open>
+      <sl-icon name="caret-right-square" slot="expand-icon"></sl-icon>
+      <sl-icon name="caret-left-square" slot="collapse-icon"></sl-icon>
+      <p class="bold mb-1">Massachusetts College of Liberal Arts - North Adams, MA</p>
+      <date>2003 - 2008</date>
+      <p class="mt-3">Bachelor of Arts, Fine and Performing Arts, Music</p>
+      <p>Bachelor of Arts, Arts, Entertainment, and Media Management</p>
+      <p>Alpha Chi - National Scholars Honor Society - Who’s Who in American Colleges and Universities</p>
+    </sl-details>
+    <sl-details summary="Skills">
+      <sl-icon name="caret-right-square" slot="expand-icon"></sl-icon>
+      <sl-icon name="caret-left-square" slot="collapse-icon"></sl-icon>
+      <div style="display: flex; align-items: center; flex-direction: row; flex-wrap: wrap; gap: 0.5rem;">
+        <sl-tag size="medium" pill>Product Design</sl-tag>
+        <sl-tag size="medium" pill>HTML / CSS</sl-tag>
+        <sl-tag size="medium" pill>Iconography</sl-tag>
+        <sl-tag size="medium" pill>Prototyping</sl-tag>
+        <sl-tag size="medium" pill>Wireframes</sl-tag>
+        <sl-tag size="medium" pill>User research</sl-tag>
+        <sl-tag size="medium" pill>Figma / FigJam</sl-tag>
+        <sl-tag size="medium" pill>Sketch</sl-tag>
+        <sl-tag size="medium" pill>Design systems</sl-tag>
+        <sl-tag size="medium" pill>Product management</sl-tag>
+        <sl-tag size="medium" pill>Roadmapping</sl-tag>
       </div>
-    </div>
-    <div class="row px-0 pb-3 mx-0">
-      <div class="col-12 col-md-6">
-        <h3 class="job--company-name">UXPA Boston</h3>
-        <p class="job--company-dates">2017 - Present</p>
-      </div>
-      <div class="col-12 col-md-6">
-        <h3 class="job--company-name">W3C CSS Working Group</h3>
-        <p class="job--company-dates">April 2020 - August 2021</p>
-      </div>
-    </div>
+    </sl-details>
+    <sl-details summary="Organizations">
+      <sl-icon name="caret-right-square" slot="expand-icon"></sl-icon>
+      <sl-icon name="caret-left-square" slot="collapse-icon"></sl-icon>
+      <p>Various organizations that I have belonged to, past and present.</p>
+      <p class="bold mb-1">UXPA Boston</p>
+      <date>2017 - Present</date>
+      <p class="bold mt-3 mb-1">W3C CSS Working Group</p>
+      <date>April 2020 - August 2021</date>
+    </sl-details>
   </div>
 </div>
+  <style>
+  sl-details.custom-icons::part(summary-icon) {
+    /* Disable the expand/collapse animation */
+    rotate: none !important;
+  }
+  </style>

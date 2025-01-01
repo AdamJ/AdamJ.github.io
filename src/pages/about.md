@@ -1,6 +1,6 @@
 ---
 layout: "markdown"
-title: "about"
+title: "About"
 abbreviation: "about"
 description: "Driven and passionate senior user experience designer with a background in software development."
 primaryURL: /resume
@@ -25,7 +25,7 @@ With a move to Red Hat (later acquired by IBM), Adam accelerated his career path
 
 Adam has continued his career at Component Assembly Systems as their Lead Program Manager and Head of UX.
 
-## Background
+## Career
 
 - **Lead Program Manager / Head of UX** @ Component Assembly Systems<br>2023-Present
 - **Senior UX Designer** @ Amazon (AWS)<br>2021-2023
@@ -35,49 +35,6 @@ Adam has continued his career at Component Assembly Systems as their Lead Progra
 - **Contractor** @ Switchback, Inc.<br>2010-2021
 - **Help Desk Analyst** @ Conservation Services Group<br>2008-2010
 
-## Tools of my trade
-
-I tend to use what I know, but am always on the lookout for great open source products/projects. Below is a list of what is in my "bag of holding".
-
-### Hardware
-
-- MacBook Pro 16" (M3 Max)
-- Mac Mini (M1)
-- iPad Pro 11" (M4)
-- Elgato Streamdeck (for using shortcuts without programming keyboard macros)
-- Keychron keyboards with custom keycaps
-- Logitech MX Anywhere 3
-- Beats Studio Buds + (transparent because I liked how they look)
-- iPhone 15 Pro Max
-
-### Software & Services
-
-- **Figma**
-- **Zeplin**
-- **Visual Studio Code**
-- **iTerm 2 + ZSH**
-- **GitHub** (does this count as software?)
-
-#### Links
-
-<sl-button href="https://www.figma.com/@adamj" variant="text" size="large">
-  Figma community profile
-  <sl-visually-hidden>External link to my Figma community profile</sl-visually-hidden>
-  <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
-</sl-button>
-
-<sl-button href="https://www.github.com/AdamJ/config" variant="text" size="large">
-  Mac configuration files
-  <sl-visually-hidden>External link to my configuration repository on GitHub</sl-visually-hidden>
-  <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
-</sl-button>
-
-<sl-button href="https://www.github.com/AdamJ" variant="text" size="large">
-  AdamJ.github.io
-  <sl-visually-hidden>External link to my GitHub profile</sl-visually-hidden>
-  <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
-</sl-button>
-
-### Education
+## Education
 
 I attended MCLA (Massachusetts College of Liberal Arts, formerly North Adams State) graduating with degrees in Fine and Performing Arts and Arts Management. While at MCLA, I was the President of the Lacrosse Club (now a recognized D3 sport) while also receiving a variety of accolades such as Alpha Chi, National Scholars Honor Society, and the Who’s Who in American Colleges and Universities.

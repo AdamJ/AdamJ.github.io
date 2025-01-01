@@ -6,7 +6,7 @@ footer,
   @include padding-bottom(16px);
   @include padding-left(24px);
 
-  background: var(--sl-color-neutral-800);
+  background: hsl(240 3.7% 15.9%);
   & p {
     color: var(--sl-color-neutral-50);
     @media (prefers-color-scheme: dark) {
@@ -16,7 +16,7 @@ footer,
   align-items: center;
   gap: 16px;
   align-self: stretch;
-  border-top: 1px solid #E3E3E3;
+  border-top: 1px solid var(--sl-color-neutral-600);
   // min-height: 200px;
   @media (prefers-color-scheme: dark) {
     background: var(--sl-color-neutral-100);
@@ -39,9 +39,6 @@ footer,
   ul {
     @include list-style-none;
     @include margin-left(0);
-    margin-block-end: 0;
-    margin-block-start: 0;
-    padding-inline-start: 0;
   }
   & small, & .small {
     color: var(--sl-color-neutral-50);

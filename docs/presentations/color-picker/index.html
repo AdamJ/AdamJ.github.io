@@ -8,7 +8,7 @@
     <title>Color Picker | Adam Jolicoeur</title>
     <meta
       name="description"
-      content="The portfolio site for Adam Jolicoeur."
+      content="Creating an accessible color picker."
     />
     <meta name="generator" content="Eleventy">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -26,15 +26,15 @@
     <link
       rel="stylesheet"
       media="(prefers-color-scheme:light)"
-      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/light.css"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/themes/light.css"
     />
     <link
       rel="stylesheet"
       media="(prefers-color-scheme:dark)"
-      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/dark.css"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/themes/dark.css"
       onload="document.documentElement.classList.add('sl-theme-dark');"
     />
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/shoelace.js" ></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/shoelace-autoloader.js"></script>
     <link href="/css/style.css" rel="stylesheet" />
     <meta
       name="og:title"
@@ -42,7 +42,7 @@
     />
     <meta
       name="og:description"
-      content="The portfolio site for Adam Jolicoeur."
+      content="Creating an accessible color picker."
     />
     <meta property="og:image" content="https://www.adamjolicoeur.com/img/AdamJolicoeur_social.png" />
 
@@ -63,7 +63,7 @@
         xmlns="http://www.w3.org/2000/svg"
         width="30"
         height="30"
-        fill="currentColor"
+        fill="#131316"
         class="bi bi-list"
         viewBox="0 0 16 16"
       >
@@ -109,16 +109,15 @@
             Development
           </a>
         </li>
-      </ul>
-      <ul class="account">
+      
         <li>
           <a href="/testimonials" class="nav-link " alt="Link to testimonials for former coworkers">
             Testimonials
           </a>
         </li>
         <li>
-          <a href="/connect" class="nav-link " alt="Connect with my through my social channels">
-            Connect
+          <a href="https://www.github.com/adamj/adamj.github.io" rel="noopener" class="icon-link pe-1" target="_blank" alt="External link to view my GitHub profile">
+            <fa-icon type="brands" name="github" size="lg"></fa-icon>
           </a>
         </li>
       </ul>
@@ -127,98 +126,79 @@
 </container>
 
     <main class="content">
-      <div class="container-xxl">
-  <div class="row justify-content-center">
-    <div class="col-8">
-      <div class="alert alert-dismissible fade show" role="alert" style="background-color: rgba(0, 173, 239, .2); border-left: .25rem solid #00adef;">
-        <strong>Hello there!</strong> The carousel will automatically play after the first user interaction. Hovering over a slide will pause the auto-play of the carousel.
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      </div>
-    </div>
-  </div>
+      
+<div class="container my-3">
+  <sl-button href="/designs/" pill>
+    <sl-icon slot="prefix" name="arrow-left-short"></sl-icon>
+    Back
+  </sl-button>
 </div>
-<div class="container-xxl mb-2 py-2 px-md-5">
-  <div class="row px-3">
-    <div class="col-12">
-      <div id="carouselExample" class="carousel slide" data-bs-ride="true">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 5"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/img/colorPicker/slide0.png" class="d-block w-100" alt="Introduction slide">
-          </div>
-          <div class="carousel-item">
-            <img src="/img/colorPicker/slide1.png" class="d-block w-100" alt="Slide 1">
-          </div>
-          <div class="carousel-item">
-            <img src="/img/colorPicker/slide2.png" class="d-block w-100" alt="Slide 2">
-          </div>
-          <div class="carousel-item">
-            <img src="/img/colorPicker/slide3.png" class="d-block w-100" alt="Slide 3">
-          </div>
-          <div class="carousel-item">
-            <img src="/img/colorPicker/slide4.png" class="d-block w-100" alt="Slide 4">
-          </div>
-          <div class="carousel-item">
-            <img src="/img/colorPicker/slide5.png" class="d-block w-100" alt="Slide 5">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </div>
-  <div class="row px-3">
-    <div class="col-12">
-      <p class="text-body-secondary">
-        If you would prefer to review the slide deck outside of the carousel, you can do so by visiting the image folder on GitHub: <a class="link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://github.com/AdamJ/AdamJ.github.io/tree/main/docs/img/colorPicker/" target="top" alt="Link to images on GitHub">view images</a>.
-      </p>
-    </div>
-  </div>
+
+<div class="container mb-3">
+  <sl-carousel pagination navigation mouse-dragging loop style="--aspect-ratio: 3/2;">
+    <sl-carousel-item>
+      <img
+        alt="Introduction slide"
+        src="/img/colorPicker/slide0.png"
+      />
+    </sl-carousel-item>
+    <sl-carousel-item>
+      <img
+        alt="Slide 2"
+        src="/img/colorPicker/slide1.png"
+      />
+    </sl-carousel-item>
+    <sl-carousel-item>
+      <img
+        alt="Slide 3"
+        src="/img/colorPicker/slide2.png"
+      />
+    </sl-carousel-item>
+    <sl-carousel-item>
+      <img
+        alt="Slide 4"
+        src="/img/colorPicker/slide3.png"
+      />
+    </sl-carousel-item>
+    <sl-carousel-item>
+      <img
+        alt="Slide 5"
+        src="/img/colorPicker/slide4.png"
+      />
+    </sl-carousel-item>
+    <sl-carousel-item>
+      <img
+        alt="Slide 6"
+        src="/img/colorPicker/slide5.png"
+      />
+    </sl-carousel-item>
+  </sl-carousel>
 </div>
+
+
 
     </main>
     <footer id="footer" class="footer d-flex flex-wrap flex-column mt-5">
   <div class="container px-0 px-md-1">
+    
     <div class="row">
       <div class="col-6 col-md-3 pt-3 pt-md-0">
-        <p class="mb-2">Pages</p>
-        <ul class="list-unstyled">
-          <li class="mb-1">
+        <div class="banner">Here</div>
+        <ul class="list-unstyled mt-0 ps-0">
+          <li class="mb-2">
             <a class="icon-link" href="/about" alt="Link to the about page">
               About
             </a>
           </li>
-          <li class="mb-1">
+          <li class="mb-2">
             <a class="icon-link" href="/designs" alt="Link to the designs page">
               Designs
             </a>
           </li>
-          <li class="mb-1">
-            <a class="icon-link" href="/development" alt="Link to the development page">
-              Development
-            </a>
-          </li>
-          <li class="mb-1">
-            <a class="icon-link" href="/testimonials" alt="Link to the testimonials page">
-              Testimonials
-            </a>
-          </li>
-          <li class="mb-1">
-            <a class="icon-link" href="/connect" alt="Link to the connect page">
-              Connect
+          
+          <li class="mb-2">
+            <a class="icon-link" href="/credits" alt="Link to credits page">
+              Credits
             </a>
           </li>
           <!-- <li class="mb-1">
@@ -229,78 +209,58 @@
         </ul>
       </div>
       <div class="col-6 col-md-3 pt-3 pt-md-0">
-        <p class="mb-2">Journeys</p>
-        <ul class="list-unstyled">
-          <li class="mb-1">
-            <a class="icon-link" href="/designs/task-it" alt="Link to Task-It journey">
-              Task-It!
+        <div>&nbsp;</div>
+        <ul class="list-unstyled mt-3 ps-0">
+          <li class="mb-2">
+            <a class="icon-link" href="/development" alt="Link to the development page">
+              Development
             </a>
           </li>
-          <li class="mb-1">
-            <a class="icon-link" href="/designs/alm" alt="Link to Application Lifecycle Management (ALM) journey">
-              ALM
-            </a>
-          </li>
-          <li class="mb-1">
-            <a class="icon-link" href="/designs/customer-engagement" alt="Link to Customer Engagement journey">
-              Customer Engagement App
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-6 col-md-3 pt-3 pt-md-0">
-        <p class="mb-2">Prototypes</p>
-        <ul class="list-unstyled">
-          <li class="mb-1">
-            <a class="icon-link" href="https://www.adamjolicoeur.com/design-tracker-template/" rel="noopener" target="_blank" alt="External link to design tracker example">
-              Design tracker
-            </a>
-          </li>
-          <li class="mb-1">
+          <li class="mb-2">
             <a class="icon-link" href="https://pf4testbench.netlify.app/" rel="noopener" target="_blank" alt="External link to patternfly v4 prototype">
               PatternFly.org v4 <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
             </a>
           </li>
-          <li class="mb-1">
+          <li class="mb-2">
             <a class="icon-link" href="https://kubevirtio-site.netlify.app/" rel="noopener" target="_blank" alt="External link to kubevirt landing page prototype">
-              Kubevirt&nbsp;community <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
+              Kubevirt.io <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
             </a>
           </li>
         </ul>
       </div>
       <div class="col-6 col-md-3 pt-3 pt-md-0">
-        <p class="mb-2">Socials</p>
-        <ul class="list-unstyled">
-          <li class="mb-1">
-            <a href="https://www.linkedin.com/in/ajjolicoeur/" rel="noopener" class="icon-link" target="_blank" alt="External link to view my LinkedIn profile">
-              <fa-icon type="brands" name="linkedin" size="md"></fa-icon> LinkedIn
+        <div class="banner">There</div>
+        <ul class="list-unstyled mt-0 ps-0">
+          <li class="mb-2">
+            <a href="https://www.linkedin.com/in/ajjolicoeur/" rel="noopener" class="icon-link pe-1" target="_blank" alt="External link to view my LinkedIn profile">
+              <fa-icon type="brands" name="linkedin" size="lg"></fa-icon> LinkedIn
             </a>
           </li>
-          <li class="mb-1">
-            <a href="https://github.com/AdamJ" rel="noopener" class="icon-link" target="_blank" alt="External link to view my GitHub profile">
-              <fa-icon type="brands" name="github" size="md"></fa-icon> GitHub
+          <li class="mb-2">
+            <a href="https://github.com/AdamJ" rel="noopener" class="icon-link pe-1" target="_blank" alt="External link to view my GitHub profile">
+              <fa-icon type="brands" name="github" size="lg"></fa-icon> GitHub
             </a>
           </li>
-          <li class="mb-1">
-            <a href="https://figma.com/@AdamJ" rel="noopener" class="icon-link" target="_blank" alt="External link to view my Figma community profile">
-              <fa-icon type="brands" name="figma" size="md"></fa-icon> Figma Community
+        </ul>
+      </div>
+      <div class="col-6 col-md-3 pt-3 pt-md-0">
+        <div>&nbsp;</div>
+        <ul class="list-unstyled mt-3 ps-0">
+          <li class="mb-2">
+            <a href="https://bsky.app/profile/adamjol.bsky.social" rel="noopener" class="icon-link pe-1" target="_blank" alt="External link to view my Figma community profile">
+              <fa-icon type="brands" name="bluesky" size="lg"></fa-icon> Bluesky
             </a>
           </li>
-          <li class="mb-1">
-            <a href="https://dev.to/adamj" rel="noopener" class="icon-link" target="_blank" alt="External link to view my Dev.to profile">
-              <fa-icon type="brands" name="dev" size="md"></fa-icon> Dev.to
-            </a>
-          </li>
-          <li class="mb-1">
+          <li class="mb-2">
             <a href="https://codepen.io/AdamJolicoeur" rel="noopener" class="icon-link" target="_blank" alt="External link to view my Codepen.io profile">
-              <fa-icon type="brands" name="codepen" size="md"></fa-icon> Codepen.io
+              <fa-icon type="brands" name="codepen" size="lg"></fa-icon> Codepen
             </a>
           </li>
         </ul>
       </div>
     </div>
     <div class="row justify-content-between pt-3 pb-2 pb-md-0">
-      <div class="col-12 text-md-center text-center">
+      <div class="col-12 text-md-center text-align-center">
         <small>
           Copyright &copy; 2008-2024
           <a href="/about" alt="Link to my about page">
@@ -313,6 +273,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/0ea2a7621c.js" crossorigin="anonymous"></script>
+  <script src="/js/prism.js"></script>
   <script src="/js/icon-component.js"></script>
   <script src="/js/jolicoeur.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->

@@ -6,7 +6,7 @@
         xmlns="http://www.w3.org/2000/svg"
         width="30"
         height="30"
-        fill="currentColor"
+        fill="#131316"
         class="bi bi-list"
         viewBox="0 0 16 16"
       >
@@ -52,16 +52,16 @@
             Development
           </a>
         </li>
-      </ul>
-      <ul class="account">
+      {# </ul>
+      <ul class="account"> #}
         <li>
           <a href="/testimonials" class="nav-link {% if '/testimonials' in page.url %}active{% endif %}" alt="Link to testimonials for former coworkers">
             Testimonials
           </a>
         </li>
         <li>
-          <a href="/connect" class="nav-link {% if '/connect' in page.url %}active{% endif %}" alt="Connect with my through my social channels">
-            Connect
+          <a href="https://www.github.com/adamj/adamj.github.io" rel="noopener" class="icon-link pe-1" target="_blank" alt="External link to view my GitHub profile">
+            <fa-icon type="brands" name="github" size="lg"></fa-icon>
           </a>
         </li>
       </ul>

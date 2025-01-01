@@ -11,6 +11,27 @@
   },
   "items": [
     {
+      "id": "https://www.adamjolicoeur.com/journeys/journeys/",
+      "url": "https://www.adamjolicoeur.com/journeys/journeys/",
+      "title": "Journeys",
+      "date_published": "2024-12-27T16:10:16Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/credits/",
+      "url": "https://www.adamjolicoeur.com/credits/",
+      "title": "Credits",
+      "date_published": "2024-12-26T15:17:27Z"
+    }
+    ,
+    {
+      "id": "https://www.adamjolicoeur.com/connect/",
+      "url": "https://www.adamjolicoeur.com/connect/",
+      "title": "Connect",
+      "date_published": "2024-12-02T16:01:47Z"
+    }
+    ,
+    {
       "id": "https://www.adamjolicoeur.com/development/prototypes/",
       "url": "https://www.adamjolicoeur.com/development/prototypes/",
       "title": "Prototypes",
@@ -20,7 +41,7 @@
     {
       "id": "https://www.adamjolicoeur.com/development/",
       "url": "https://www.adamjolicoeur.com/development/",
-      "title": "development",
+      "title": "Development",
       "date_published": "2024-12-02T15:27:28Z"
     }
     ,
@@ -48,7 +69,7 @@
     {
       "id": "https://www.adamjolicoeur.com/about/",
       "url": "https://www.adamjolicoeur.com/about/",
-      "title": "about",
+      "title": "About",
       "date_published": "2024-11-15T19:15:33Z"
     }
     ,
@@ -83,14 +104,7 @@
     {
       "id": "https://www.adamjolicoeur.com/designs/",
       "url": "https://www.adamjolicoeur.com/designs/",
-      "title": "designs",
-      "date_published": "2024-11-14T14:48:46Z"
-    }
-    ,
-    {
-      "id": "https://www.adamjolicoeur.com/connect/",
-      "url": "https://www.adamjolicoeur.com/connect/",
-      "title": "connect",
+      "title": "Designs",
       "date_published": "2024-11-14T14:48:46Z"
     }
     ,
@@ -118,7 +132,7 @@
     {
       "id": "https://www.adamjolicoeur.com/presentations/",
       "url": "https://www.adamjolicoeur.com/presentations/",
-      "title": "presentations",
+      "title": "Presentations",
       "date_published": "2024-09-30T18:26:06Z"
     }
     ,

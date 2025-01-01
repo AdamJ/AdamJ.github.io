@@ -50,7 +50,7 @@
 	},
 
 	{
-   "title":"presentations",
+   "title":"Presentations",
    "imgName":"presentations"
 	},
 
@@ -70,12 +70,7 @@
 	},
 
 	{
-   "title":"connect",
-   "imgName":"connect"
-	},
-
-	{
-   "title":"designs",
+   "title":"Designs",
    "imgName":"designs"
 	},
 
@@ -105,7 +100,7 @@
 	},
 
 	{
-   "title":"about",
+   "title":"About",
    "imgName":"about"
 	},
 
@@ -130,12 +125,32 @@
 	},
 
 	{
-   "title":"development",
+   "title":"Development",
    "imgName":"development"
 	},
 
 	{
    "title":"Prototypes",
    "imgName":"prototypes"
+	},
+
+	{
+   "title":"Connect",
+   "imgName":"connect"
+	},
+
+	{
+   "title":"Credits",
+   "imgName":"credits"
+	},
+
+	{
+   "title":"Journeys",
+   "imgName":"journeys"
+	},
+
+	{
+   "title":"How to Use the Site",
+   "imgName":"how-to-use-the-site"
 	}
 ]
