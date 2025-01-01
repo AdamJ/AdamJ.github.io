@@ -63,7 +63,7 @@
     "stylelint-order": "6.0.3"
   },
   "browserslist": [
-    "> 5%, not dead, not ie",
+    "> 5%, not dead",
     "last 2 major versions"
   ],
   "dependencies": {

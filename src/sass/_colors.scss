@@ -71,12 +71,6 @@ $light: $blue-50;
   --color-blue-900: #{$blue-900};
   --color-white: #{$white};
   --color-black: #{$black};
-  --cas-background: #{$cas-primary};
-  --cas-background-hover: #{$cas-secondary};
-  --cas-border: #{$cas-secondary};
-  --cas-border-hover: #{$cas-secondary};
-  --cas-text: #{$cas-text};
-  --cas-text-hover: #{$cas-text-hover};
 }
 @media (prefers-color-scheme: dark) {
   :root {
