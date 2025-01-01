@@ -50,6 +50,11 @@
 	},
 
 	{
+   "title":"Adam Jolicoeur",
+   "imgName":"home"
+	},
+
+	{
    "title":"Application Lifecycle Management",
    "imgName":"application-lifecycle-management"
 	},
@@ -142,5 +147,10 @@
 	{
    "title":"Testimonials",
    "imgName":"testimonials"
+	},
+
+	{
+   "title":"How to Use the Site",
+   "imgName":"how-to-use-the-site"
 	}
 ]
