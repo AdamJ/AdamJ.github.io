@@ -16,15 +16,21 @@ layout: base.njk
 <content>
   <div class="container mb-2 py-2 px-0">
     <div class="row px-0 pb-3 mx-0">
-      <article class="col-sm-12 col-md-9 order-2 order-md-1">
+      <article class="col-sm-12 order-2 order-md-1">
+        {%- if content | toc -%}
+        <sl-details summary="TOC">
+          {{ content | toc | safe }}
+        </sl-details>
+        {%- else -%}
+        {%- endif -%}
         {{ content | safe }}
       </article>
-      {%- if content | toc -%}
+      <!--{%- if content | toc -%}
       <aside class="col-sm-12 col-md-3 order-1 order-md-2" aria-label="complimentary">
         {{ content | toc | safe }}
       </aside>
       {%- else -%}
-      {%- endif -%}
+      {%- endif -%} -->
     </div>
   </div>
 </content>

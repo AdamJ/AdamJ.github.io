@@ -8,8 +8,8 @@ aside {
   @media (prefers-color-scheme: dark) {
     --sl-link-color: var(--sl-color-primary-700);
   }
-  padding-top: var(--sl-spacing-medium);
-  padding-bottom: var(--sl-spacing-medium);
+  padding-top: var(--sl-spacing-x-small);
+  padding-bottom: var(--sl-spacing-x-small);
   border-radius: var(--sl-border-radius-large);
   position: sticky;
   top: 16px;
@@ -19,8 +19,18 @@ aside {
       color: var(--sl-color-primary-800);
     }
   }
-  ul ul {
-    padding-left: var(--sl-spacing-medium);
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: var(--sl-spacing-small);
+    margin-bottom: var(--sl-spacing-small);
+    padding-left: var(--sl-spacing-large);
+    list-style: decimal-leading-zero;
+    & ul {
+    padding-left: var(--sl-spacing-large);
+    }
   }
   @media only screen and (max-width: 776px) {
     ul {

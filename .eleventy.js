@@ -124,7 +124,7 @@ module.exports = function (eleventyConfig) {
     wrapper: "div",
     wrapperClass: "toc markdown-toc",
     ul: true,
-    flat: false
+    flat: true
   });
   eleventyConfig.addPlugin(
     pluginDropcap,

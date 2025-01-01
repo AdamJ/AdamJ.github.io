@@ -14,3 +14,24 @@ sl-button.card-button::part(base) {
   flex-direction: column;
   justify-content: center;
 }
+// <sl-button class="cas-button">
+.cas-button::part(base) {
+  background: #915B02;
+  border: solid 1px #DEA500;
+}
+
+.cas-button::part(base):hover {
+  background: #DEA500;
+}
+
+.cas-button::part(base):active {
+  background: #DEA500;
+}
+
+.cas-button::part(base):focus-visible {
+  box-shadow: 0 0 0 3px rgba(138, 90, 9, 0.80);
+}
+
+.cas-button::part(label) {
+  color: #915B02;
+}
