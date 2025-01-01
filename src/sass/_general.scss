@@ -131,8 +131,6 @@ body {
 .banner {
   @include font-weight(600);
   @include fs(1);
-  // position: relative;
-  // top: -2rem;
   padding: 0.5rem 1rem;
   margin: .5rem 0;
   background-color: hsl(202.1 80.5% 44.3%);

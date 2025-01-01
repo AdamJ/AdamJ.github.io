@@ -35,11 +35,6 @@
 	},
 
 	{
-   "title":"Archived",
-   "imgName":"archived"
-	},
-
-	{
    "title":"Games and Things",
    "imgName":"games-and-things"
 	},
@@ -50,58 +45,8 @@
 	},
 
 	{
-   "title":"Presentations",
-   "imgName":"presentations"
-	},
-
-	{
-   "title":"Color Picker",
-   "imgName":"color-picker"
-	},
-
-	{
-   "title":"Icons and Branding",
-   "imgName":"icons-and-branding"
-	},
-
-	{
    "title":"Icons",
    "imgName":"icons"
-	},
-
-	{
-   "title":"Designs",
-   "imgName":"designs"
-	},
-
-	{
-   "title":"codepen examples",
-   "imgName":"codepen-examples"
-	},
-
-	{
-   "title":"Portfolio",
-   "imgName":"portfolio"
-	},
-
-	{
-   "title":"Testimonials",
-   "imgName":"testimonials"
-	},
-
-	{
-   "title":"Adam Jolicoeur",
-   "imgName":"home"
-	},
-
-	{
-   "title":"Customer Engagement App",
-   "imgName":"customer-engagement-app"
-	},
-
-	{
-   "title":"About",
-   "imgName":"about"
 	},
 
 	{
@@ -110,28 +55,23 @@
 	},
 
 	{
-   "title":"Task-It!",
-   "imgName":"task-it"
-	},
-
-	{
    "title":"Oops! Not Found",
    "imgName":"oops-not-found"
 	},
 
 	{
-   "title":"Adam J. Jolicoeur",
-   "imgName":"adam-j.-jolicoeur"
-	},
-
-	{
-   "title":"Development",
-   "imgName":"development"
-	},
-
-	{
    "title":"Prototypes",
    "imgName":"prototypes"
+	},
+
+	{
+   "title":"About",
+   "imgName":"about"
+	},
+
+	{
+   "title":"Archived",
+   "imgName":"archived"
 	},
 
 	{
@@ -145,12 +85,62 @@
 	},
 
 	{
+   "title":"Designs",
+   "imgName":"designs"
+	},
+
+	{
+   "title":"Customer Engagement App",
+   "imgName":"customer-engagement-app"
+	},
+
+	{
+   "title":"Task-It!",
+   "imgName":"task-it"
+	},
+
+	{
+   "title":"Development",
+   "imgName":"development"
+	},
+
+	{
+   "title":"codepen examples",
+   "imgName":"codepen-examples"
+	},
+
+	{
+   "title":"Icons and Branding",
+   "imgName":"icons-and-branding"
+	},
+
+	{
    "title":"Journeys",
    "imgName":"journeys"
 	},
 
 	{
-   "title":"How to Use the Site",
-   "imgName":"how-to-use-the-site"
+   "title":"Presentations",
+   "imgName":"presentations"
+	},
+
+	{
+   "title":"Color Picker",
+   "imgName":"color-picker"
+	},
+
+	{
+   "title":"Portfolio",
+   "imgName":"portfolio"
+	},
+
+	{
+   "title":"Adam J. Jolicoeur",
+   "imgName":"adam-j.-jolicoeur"
+	},
+
+	{
+   "title":"Testimonials",
+   "imgName":"testimonials"
 	}
 ]
