@@ -1,7 +1,7 @@
 {
   "name": "jolicoeur",
   "title": "Adam J. Jolicoeur",
-  "version": "9.7.0",
+  "version": "9.12.1",
   "author": "Adam J. Jolicoeur",
   "homepage": "https://www.adamjolicoeur.com",
   "license": "Apache-2.0",
@@ -25,7 +25,8 @@
     "build": "cross-env ELEVENTY_ENV=prod npm-run-all build:sass build:eleventy",
     "lint": "stylelint 'src/sass/*.scss' 'src/sass/*.scss' 'src/sass/*.scss'",
     "lint:fix": "stylelint --fix 'src/sass/*.scss' 'src/sass/*.scss' 'src/sass/*.scss'",
-    "bump": "npm --no-git-tag-version version"
+    "bump": "npm --no-git-tag-version version",
+    "semver": "npm version minor"
   },
   "repository": {
     "type": "git",
@@ -37,7 +38,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@11ty/eleventy-img": "^5.0.0",
+    "@11ty/eleventy-img": "^6.0.0",
     "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
     "@11ty/eleventy-plugin-rss": "^2.0.2",
