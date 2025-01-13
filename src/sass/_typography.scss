@@ -18,6 +18,9 @@ h1, h2, h3, h4, h5 {
 
   color: var(--sl-color-neutral-900);
 }
+.hero {
+  @include fs(4);
+}
 h1, .h1 {
   @include fs(2.5);
   @include margin-top(16px);

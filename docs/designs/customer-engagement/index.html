@@ -23,14 +23,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald&display=swap" rel="stylesheet">
-    <link
+    <!--<link
       rel="stylesheet"
       media="(prefers-color-scheme:light)"
       href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/themes/light.css"
-    />
+    /> -->
     <link
       rel="stylesheet"
-      media="(prefers-color-scheme:dark)"
+      
       href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/themes/dark.css"
       onload="document.documentElement.classList.add('sl-theme-dark');"
     />
@@ -54,7 +54,10 @@
     />
   </head>
     <a rel="me" href="https://mastodon.world/@adamjol" aria-hidden="true" class="d-none">Mastodon</a>
-    <body class="layout">
+    <body style="
+          height: 100vh;
+          position: relative;">
+    
     <container id="navigation">
   <div class="nav">
     <input type="checkbox" id="check" name="navigationCheckbox" aria-label="menu checkbox" />
@@ -110,12 +113,8 @@
           </a>
         </li>
       
-        <li>
-          <a href="/testimonials" class="nav-link " alt="Link to testimonials for former coworkers">
-            Testimonials
-          </a>
-        </li>
-        <li>
+        
+        <li class="nav-icon">
           <a href="https://www.github.com/adamj/adamj.github.io" rel="noopener" class="icon-link pe-1" target="_blank" alt="External link to view my GitHub profile">
             <fa-icon type="brands" name="github" size="lg"></fa-icon>
           </a>
@@ -125,7 +124,6 @@
   </div>
 </container>
 
-    <main class="content">
       
 <div class="container intro py-3 px-0 text-align-center">
   <h1 class="display-1 fw-bold text-break">Customer Engagement App</h1>
@@ -350,7 +348,6 @@
 
 </content>
 
-    </main>
     <footer id="footer" class="footer d-flex flex-wrap flex-column mt-5">
   <div class="container px-0 px-md-1">
     
@@ -364,8 +361,8 @@
             </a>
           </li>
           <li class="mb-2">
-            <a class="icon-link" href="/designs" alt="Link to the designs page">
-              Designs
+            <a class="icon-link" href="/testimonials" alt="Link to the testimonials page">
+              Testimonials
             </a>
           </li>
           
@@ -461,5 +458,6 @@
   <link media="print" href="/css/print.css" rel="stylesheet" />
 </footer>
 
+    
   </body>
 </html>

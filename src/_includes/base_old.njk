@@ -27,14 +27,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald&display=swap" rel="stylesheet">
-    <!--<link
+    <link
       rel="stylesheet"
       media="(prefers-color-scheme:light)"
       href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/themes/light.css"
-    /> -->
+    />
     <link
       rel="stylesheet"
-      {# media="(prefers-color-scheme:dark)" #}
+      media="(prefers-color-scheme:dark)"
       href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/themes/dark.css"
       onload="document.documentElement.classList.add('sl-theme-dark');"
     />
@@ -58,13 +58,11 @@
     />
   </head>
     <a rel="me" href="https://mastodon.world/@adamjol" aria-hidden="true" class="d-none">Mastodon</a>
-    <body style="
-          height: 100vh;
-          position: relative;">
-    {# <main> #}
+    <body class="layout">
     {% include 'sitenav.njk' %}
+    <main class="content">
       {{ content | safe }}
+    </main>
     {% include 'footer.njk' %}
-    {# </main> #}
   </body>
 </html>
