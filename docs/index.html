@@ -181,14 +181,16 @@ html {
   .section-block {
     position: relative;
     display: flex;
-    padding: 80px 32px;
+    padding: 5rem 2rem;
+    @media only screen and (max-width: 720px) {
+      padding: 1rem 1rem 5rem 1rem;
+    }
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(rgba(1,1,1, .2), rgba(1, 1, 1, .8)), url("/img/curved-lines@2x.png");
     background-repeat: no-repeat;
     background-position: center;
-    
     background-clip: border-box;
     background-size: contain;
     height: calc(100% - 170px);
@@ -215,6 +217,14 @@ html {
       font-size: 2rem !important;
       color: rgba(255, 255, 255, 0.7) !important;
     }
+    @media only screen and (max-width: 720px) {
+      .hero {
+        font-size: 3rem !important;
+      }
+      p {
+        font-size: 1.25rem !important;
+      }
+    }
   }
   .showcase {
     padding: 0;
@@ -236,7 +246,8 @@ html {
     height: 22rem;
     flex: 1 0 0;
     border-radius: 1rem !important;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: top;
   }
   .project-information {
     h3, h4, p {
@@ -308,6 +319,9 @@ html {
   position: sticky;
   top: 0;
   padding-top: calc(var(--index)* var(--card-top-offset));
+  @media only screen and (max-width: 720px) {
+    padding-top: calc(var(--index)* 2);
+  }
   height: 800px;
 }
 .project-row__content {
@@ -378,7 +392,7 @@ html {
               Experience the Journey
             </sl-button>
           </div>
-          <img src="/img/task-it_intro.png" alt="Task-It! thumbnail" class="project-image col" />
+          <img src="/img/task-it_intro.png" alt="Task-It! thumbnail" class="project-image col" style="object-fit: contain !important;" />
         </div>
       </div>
       <div class="project-row" id="row_2">
@@ -417,7 +431,7 @@ html {
               Follow along
             </sl-button>
           </div>
-          <img src="/img/colorPicker/slide0.png" alt="A thumbnail of the first slide in the presentation" class="project-image col" />
+          <img src="/img/colorPicker/slide0.png" alt="A thumbnail of the first slide in the presentation" class="project-image col" style="object-fit: contain !important;" />
         </div>
       </div>
     </div>

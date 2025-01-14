@@ -5229,16 +5229,6 @@ footer,
     padding-left: 1.5rem;
   }
 }
-footer p,
-.footer p {
-  color: var(--sl-color-neutral-50);
-}
-@media (prefers-color-scheme: dark) {
-  footer p,
-  .footer p {
-    color: var(--sl-color-neutral-950);
-  }
-}
 @media (prefers-color-scheme: dark) {
   footer,
   .footer {
@@ -5619,4 +5609,5 @@ body {
   border-top-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   box-shadow: 0 1px 0 0 rgba(232, 232, 236, 0.5);
+  color: var(--color-white);
 }

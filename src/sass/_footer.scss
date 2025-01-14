@@ -7,12 +7,12 @@ footer,
   @include padding-left(24px);
 
   background: rgba(39, 39, 42, 1);
-  & p {
-    color: var(--sl-color-neutral-50);
-    @media (prefers-color-scheme: dark) {
-      color: var(--sl-color-neutral-950);
-    }
-  }
+  // & p {
+  //   color: var(--sl-color-neutral-50);
+  //   @media (prefers-color-scheme: dark) {
+  //     color: var(--sl-color-neutral-950);
+  //   }
+  // }
   align-items: center;
   gap: 16px;
   align-self: stretch;
