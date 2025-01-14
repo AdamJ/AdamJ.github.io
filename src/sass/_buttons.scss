@@ -14,3 +14,11 @@ sl-button.card-button::part(base) {
   flex-direction: column;
   justify-content: center;
 }
+sl-button.project-button::part(base) {
+  border-color: #e6f4f1;
+  color: #e6f4f1;
+  &:hover {
+    border-color: #86adbf;
+    color: #86adbf;
+  }
+}

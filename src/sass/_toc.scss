@@ -4,10 +4,10 @@ aside {
   border-radius: var(--sl-border-radius-medium);
 }
 .toc.markdown-toc {
-  --sl-link-color: var(--sl-color-primary-700);
-  @media (prefers-color-scheme: dark) {
+  // --sl-link-color: var(--sl-color-primary-700);
+  // @media (prefers-color-scheme: dark) {
     --sl-link-color: var(--sl-color-primary-700);
-  }
+  // }
   padding-top: var(--sl-spacing-x-small);
   padding-bottom: var(--sl-spacing-x-small);
   border-radius: var(--sl-border-radius-large);

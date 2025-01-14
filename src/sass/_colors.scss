@@ -2,14 +2,23 @@ $black: #000;
 $white: #fff;
 
 // blue
-$blue-50: #dce6f2;
-$blue-100: #badbff;
-$blue-200: #04b2d9;
-$blue-300: #439fff;
-$blue-500: #26609c;
-$blue-700: #2f5373;
-$blue-800: #1b314a;
-$blue-900: #0c1621;
+$blue-600: #384B70;
+$blue-500:#507687;
+$blue-400: #6b91a3;
+$blue-300: #86adbf;
+$blue-200: #a2cadc;
+$blue-100: #bfe7fa;
+$blue-50: #e6f4f1;
+$blue-highlight: #00c3ff;
+
+// $blue-50: #dce6f2;
+// $blue-100: #badbff;
+// $blue-200: #04b2d9;
+// $blue-300: #439fff;
+// $blue-500: #26609c;
+// $blue-700: #2f5373;
+// $blue-800: #1b314a;
+// $blue-900: #0c1621;
 
 // grey
 $grey-50: #e8e8ec;
@@ -46,12 +55,14 @@ $yellow: #fce827;
 
 // additional
 $black-opacity-60: rgba(0, 0, 0, 60%);
-$dark: $blue-900;
+$dark: $blue-600;
+// $dark: $blue-900;
 $light: $blue-50;
 
 :root {
   --link-color-primary: #{$blue-500};
-  --link-color-primary-hover: #{$blue-800};
+  --link-color-primary-hover: #{$blue-600};
+  // --link-color-primary-hover: #{$blue-800};
   --color-grey-50: #{$grey-50};
   --color-grey-100: #{$grey-100};
   --color-grey-200: #{$grey-200};
@@ -65,10 +76,14 @@ $light: $blue-50;
   --color-blue-100: #{$blue-100};
   --color-blue-200: #{$blue-200};
   --color-blue-300: #{$blue-300};
-  --color-blue-500: #{$blue-500};
-  --color-blue-700: #{$blue-700};
-  --color-blue-800: #{$blue-800};
-  --color-blue-900: #{$blue-900};
+  --color-blue-500: #{$blue-400};
+  // --color-blue-500: #{$blue-500};
+  --color-blue-700: #{$blue-500};
+  --color-blue-800: #{$blue-600};
+  --color-blue-900: #{$blue-600};
+  // --color-blue-700: #{$blue-700};
+  // --color-blue-800: #{$blue-800};
+  // --color-blue-900: #{$blue-900};
   --color-white: #{$white};
   --color-black: #{$black};
 }
