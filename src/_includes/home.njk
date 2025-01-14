@@ -124,7 +124,7 @@ html {
     height: 22rem;
     flex: 1 0 0;
     border-radius: 1rem !important;
-    object-fit: cover;
+    object-fit: contain;
     object-position: top;
   }
   .project-information {
@@ -210,7 +210,7 @@ html {
   display: flex;
   flex: 1 0 0;
   align-items: stretch;
-  align-content: center;
+  align-content: space-around;
   outline: var(--outline-width) solid blue;
   padding: 2rem;
   height: 700px;
@@ -270,7 +270,7 @@ html {
               Experience the Journey
             </sl-button>
           </div>
-          <img src="{{ '/img/task-it_intro.png' | url }}" alt="Task-It! thumbnail" class="project-image col" style="object-fit: contain !important;" />
+          <img src="{{ '/img/task-it_intro.png' | url }}" alt="Task-It! thumbnail" class="project-image col" />
         </div>
       </div>
       <div class="project-row" id="row_2">
@@ -309,7 +309,7 @@ html {
               Follow along
             </sl-button>
           </div>
-          <img src="{{ '/img/colorPicker/slide0.png' | url }}" alt="A thumbnail of the first slide in the presentation" class="project-image col" style="object-fit: contain !important;" />
+          <img src="{{ '/img/colorPicker/slide0.png' | url }}" alt="A thumbnail of the first slide in the presentation" class="project-image col" />
         </div>
       </div>
     </div>
