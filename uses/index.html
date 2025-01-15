@@ -5,10 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="@Adam, Adam Jolicoeur, Adam J. Jolicoeur, AdamJ, Jolicoeur, adamjolicoeur.com, www.adamjolicoeur.com, mindreeper2420, Portfolio, Design, UXD, UX Designer, UX Developer, UX Engineer, Design Technologist, CSS" />
-    <title>Alfred Workflows | Adam Jolicoeur</title>
+    <title>Uses | Adam Jolicoeur</title>
     <meta
       name="description"
-      content="A list of my favorite Alfred workflows"
+      content="What I use as a designer."
     />
     <meta name="generator" content="Eleventy">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -38,11 +38,11 @@
     <link href="/css/style.css" rel="stylesheet" />
     <meta
       name="og:title"
-      content="Alfred Workflows | Adam Jolicoeur"
+      content="Uses | Adam Jolicoeur"
     />
     <meta
       name="og:description"
-      content="A list of my favorite Alfred workflows"
+      content="What I use as a designer."
     />
     <meta property="og:image" content="https://www.adamjolicoeur.com/img/AdamJolicoeur_social.png" />
 
@@ -126,41 +126,93 @@
 
       
 <div class="container intro py-3 px-0 text-align-center">
-  <h1 class="display-1 fw-bold text-break">Alfred Workflows</h1>
+  <h1 class="display-1 fw-bold text-break">Uses</h1>
   <p class="sub-header text-break px-2 px-md-0">
-    A list of my favorite Alfred workflows
+    What I use as a designer.
   </p></div>
 
 <content>
-  <h1>Alfred Workflows</h1>
-<p>A list of my favorite <a href="https://www.alfredapp.com/workflows/">Alfred Workflows</a>, broken down by those that I have downloaded and those that I have created or modified.</p>
-<p><em>Note: Requires the <a href="https://www.alfredapp.com/powerpack/">Alfred Powerpack</a> to use.</em></p>
-<h2 id="downloaded" tabindex="-1">Downloaded <a class="anchor-link" href="#downloaded">#</a></h2>
+  <style>
+  content {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    a {
+      color: var(--sl-color-primary-900) !important;
+    }
+  }
+  h2 {
+    position: relative;
+    background: linear-gradient(90deg, var(--sl-color-primary-900) 0%, var(--sl-color-primary-600) 100%);
+    color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    @media (prefer-color-scheme: light) {
+      color: #000;
+      background: transparent;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      left: -1rem;
+      bottom: 0;
+      background: linear-gradient(90deg, var(--sl-color-primary-900) 0%, var(--sl-color-primary-600) 100%);
+      border-radius: 1rem;
+      width: 4rem;
+      height: .25rem;
+      z-index: -1;
+    }
+  }
+  /* Use the CODE block for general alert-style blocks when TEXT is specified as the language */
+  .code-toolbar {
+    pre.language-text {
+      border: 1px solid var(--color-blue-100);
+      & + .toolbar {
+        display: none; /* remove the toolbar when the language is TEXT */
+      }
+    }
+  }
+</style>
+<h2 id="desk" tabindex="-1">Desk <a class="anchor-link" href="#desk">#</a></h2>
 <ul>
-<li><a href="https://github.com/nikitavoloboev/alfred-web-searches#readme">Alfred Web Searches</a>
+<li>My primary computer is a <a href="https://www.apple.com/macbook-pro/">MacBook Pro 16&quot; (M3)</a>, connected to an LG 32&quot; ultrawide running at ## x ## resolution, with an external Keychron keyboard and Logitech mouse.</li>
+<li>The MacBook sits inside of a RainDesign vertical stand, as I use a sit-stand desk and there is no room to have the MacBook open.</li>
+<li>As part of my setup, I use an <a href="https://www.elgato.com/us/en/p/stream-deck-mk2-white">Elgato Streamdeck MK.2 (white)</a> to help with switching between applications and not having to memorize keyboard shortcuts.</li>
+<li>All of my hardware and accessories are plugged into a <a href="https://www.caldigit.com/ts3-plus/">Caldigit TS3 Plus</a> and I’ll never go without one again!</li>
+<li>Everything sits on top of a custom, hand-made table that I built :-D</li>
+</ul>
+<h2 id="software" tabindex="-1">Software <a class="anchor-link" href="#software">#</a></h2>
+<h3 id="design" tabindex="-1">Design <a class="anchor-link" href="#design">#</a></h3>
 <ul>
-<li>Created by <a href="https://github.com/nikitavoloboev">nikitavoloboev on GitHub</a> to use Alfred for searching the web.</li>
+<li><a href="https://www.figma.com">Figma</a>: current design tool for creating wireframes, mockups, and logos. I sync designs to Zeplin using the Figma plugin.</li>
+<li><a href="https://www.zeplin.io">Zeplin</a>: for sharing designs with development and product teams. I’ve found it great for reviews, comment tracking on revisions, and exporting assets.</li>
 </ul>
-</li>
-</ul>
-<h2 id="created-%2F-modified" tabindex="-1">Created / Modified <a class="anchor-link" href="#created-%2F-modified">#</a></h2>
+<h3 id="development" tabindex="-1">Development <a class="anchor-link" href="#development">#</a></h3>
 <ul>
-<li>New Obsidian
+<li>While I’ve used <a href="https://code.visualstudio.com/">VSCode</a> since its release, I’m writing this in <a href="https://www.cursor.com">Cursor</a> to give it a try. While I find the “AI” stuff nice, I’m not sure I’ll pay for it.</li>
+<li>Currently using <a href="https://iterm2.com/">iTerm2</a> as my terminal, though I’m giving <a href="https://www.warp.dev/">Warp</a> a try after hearing about it from <a href="https://wesbos.com">Wes Bos</a>.</li>
+</ul>
+<h3 id="services" tabindex="-1">Services <a class="anchor-link" href="#services">#</a></h3>
 <ul>
-<li>Create a new note using <a href="https://obsidian.md/">Obsidian</a>.</li>
+<li>I like to set my device DNS to <a href="https://one.one.one.one/">1.1.1.1</a>, which is a free, private DNS from Cloudflare.</li>
+<li>Speaking of <a href="https://www.cloudflare.com/">Cloudflare</a>, I use it to monitor site traffic and such. Basic usage but I find it helpful.</li>
+<li>For the last six years, I’ve used <a href="https://www.netlify.com/">Netlify</a> for previewing pull requests, running prototype sites, and user testing.</li>
+<li>All of my sites are published using <a href="https://pages.github.com/">GitHub Pages</a> with various actions (repository dependent) dictating how they are published.</li>
 </ul>
-</li>
-<li>Start my day
+<h2 id="desktop-apps" tabindex="-1">Desktop Apps <a class="anchor-link" href="#desktop-apps">#</a></h2>
 <ul>
-<li>A workflow for starting my day. Open Microsoft Outlook, Firefox, and Slack.</li>
+<li><a href="https://arc.net/download">Arc browser</a>: my primary browser, though I also use Safari for creating web apps (Bluesky / Threads / GitHub).</li>
+<li><a href="https://www.parallels.com/products/desktop/use-cases/developers/?extensionid=%7Bextensionid%7D&amp;matchtype=b&amp;device=c&amp;devicemodel=&amp;creative=&amp;network=o&amp;placement=&amp;x-source=ppc">Parallels Desktop</a>: sometimes I need to use different operating systems and I turn to this for Windows 11, Ubuntu, and Fedora.</li>
+<li>Apple Notes: why use something else when this does the job? Tags, Smart Folders, and shortcuts are key.</li>
+<li><a href="https://www.raycast.com/">Raycast</a>: switched off of Alfred a while back and found this to be indispensable in my daily work.</li>
 </ul>
-</li>
-<li>End my day
-<ul>
-<li>A workflow to quickly end my day. Closes all applications and asks if I want to shut down my machine.</li>
-</ul>
-</li>
-</ul>
+<h2 id="travel-gear" tabindex="-1">Travel Gear <a class="anchor-link" href="#travel-gear">#</a></h2>
+<p>All of my travel gear fits into a <a href="https://www.peakdesign.com/products/everyday-backpack">Peak Design 20L</a> 20L bag and a small “tech pouch” for cables, charging bricks, Beats Studio Buds, and my Logitech mouse.</p>
+<h2 id="adamjolicoeur%5Bdot%5Dcom" tabindex="-1">AdamJolicoeur[dot]com <a class="anchor-link" href="#adamjolicoeur%5Bdot%5Dcom">#</a></h2>
+<p>This site was created using <a href="https://www.11ty.dev/">Eleventy</a> (Markdown + Nunjucks), after many years of trying out essentially everything that was “hip” at a given time. In the end, I just needed something simple that I could build upon, but also could be used for other projects (with an easy-to-simplify structure). For the UI, I use the <a href="https://getbootstrap.com/docs/5.3/layout/grid/">Bootstrap Grid</a> system as I didn’t want to write one from scratch. Various UI elements of the site are made using <a href="https://shoelace.style/">Shoelace</a> (buttons, carousel, details - I’m really starting to get into <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components">Web Components</a>) with custom pieces on top.</p>
+<pre class="language-text"><code class="hljs language-text">Be sure to check out uses.tech to see other /uses pages!</code></pre>
 
 </content>
 
