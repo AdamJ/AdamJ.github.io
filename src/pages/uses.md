@@ -91,6 +91,9 @@ eleventyNavigation:
 
 All of my travel gear fits into a [Peak Design 20L](https://www.peakdesign.com/products/everyday-backpack) 20L bag and a small "tech pouch" for cables, charging bricks, Beats Studio Buds, and my Logitech mouse.
 
+## AdamJolicoeur[dot]com
+
+This site was created using [Eleventy](https://www.11ty.dev/) (Markdown + Nunjucks), after many years of trying out essentially everything that was "hip" at a given time. In the end, I just needed something simple that I could build upon, but also could be used for other projects (with an easy-to-simplify structure). For the UI, I use the [Bootstrap Grid](https://getbootstrap.com/docs/5.3/layout/grid/) system as I didn't want to write one from scratch. Various UI elements of the site are made using [Shoelace](https://shoelace.style/) (buttons, carousel, details - I'm really starting to get into [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components)) with custom pieces on top.
 
 ```text
 Be sure to check out uses.tech to see other /uses pages!
