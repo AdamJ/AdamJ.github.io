@@ -44,6 +44,9 @@ eleventyNavigation:
   }
   /* Use the CODE block for general alert-style blocks when TEXT is specified as the language */
   .code-toolbar {
+    pre {
+      text-wrap: auto;
+    }
     pre.language-text {
       border: 1px solid var(--color-blue-100);
       & + .toolbar {
@@ -55,7 +58,7 @@ eleventyNavigation:
 
 ## Desk
 
-- My primary computer is a [MacBook Pro 16" (M3)](https://www.apple.com/macbook-pro/), connected to an LG 32" ultrawide running at ## x ## resolution, with an external Keychron keyboard and Logitech mouse.
+- My primary computer is a [MacBook Pro 16" (M3)](https://www.apple.com/macbook-pro/), connected to an LG 32" ultrawide running at 2560 x 1440 resolution, with an external Keychron keyboard and Logitech mouse.
 - The MacBook sits inside of a RainDesign vertical stand, as I use a sit-stand desk and there is no room to have the MacBook open.
 - As part of my setup, I use an [Elgato Streamdeck MK.2 (white)](https://www.elgato.com/us/en/p/stream-deck-mk2-white) to help with switching between applications and not having to memorize keyboard shortcuts.
 - All of my hardware and accessories are plugged into a [Caldigit TS3 Plus](https://www.caldigit.com/ts3-plus/) and I'll never go without one again!
@@ -91,7 +94,7 @@ eleventyNavigation:
 
 All of my travel gear fits into a [Peak Design 20L](https://www.peakdesign.com/products/everyday-backpack) 20L bag and a small "tech pouch" for cables, charging bricks, Beats Studio Buds, and my Logitech mouse.
 
-## AdamJolicoeur[dot]com
+## This Site
 
 This site was created using [Eleventy](https://www.11ty.dev/) (Markdown + Nunjucks), after many years of trying out essentially everything that was "hip" at a given time. In the end, I just needed something simple that I could build upon, but also could be used for other projects (with an easy-to-simplify structure). For the UI, I use the [Bootstrap Grid](https://getbootstrap.com/docs/5.3/layout/grid/) system as I didn't want to write one from scratch. Various UI elements of the site are made using [Shoelace](https://shoelace.style/) (buttons, carousel, details - I'm really starting to get into [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components)) with custom pieces on top.
 
