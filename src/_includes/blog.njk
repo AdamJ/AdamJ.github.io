@@ -27,19 +27,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald&display=swap" rel="stylesheet">
-    <link
+    <!--<link
       rel="stylesheet"
       media="(prefers-color-scheme:light)"
       href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/themes/light.css"
-    />
+    /> -->
     <link
       rel="stylesheet"
-      media="(prefers-color-scheme:dark)"
+      {# media="(prefers-color-scheme:dark)" #}
       href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/themes/dark.css"
       onload="document.documentElement.classList.add('sl-theme-dark');"
     />
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/shoelace-autoloader.js"></script>
-    <link href="{{ '/css/prism.css' | url }}" rel="stylesheet" />
     <link href="{{ '/css/style.css' | url }}" rel="stylesheet" />
     <meta
       name="og:title"
@@ -50,6 +49,7 @@
       content="{{pageDescription}}"
     />
     <meta property="og:image" content="https://www.adamjolicoeur.com/img/AdamJolicoeur_social.png" />
+
     <link
       rel="alternate"
       type="application/rss+xml"
@@ -58,7 +58,9 @@
     />
   </head>
     <a rel="me" href="https://mastodon.world/@adamjol" aria-hidden="true" class="d-none">Mastodon</a>
-    <body class="layout">
+    <body style="
+          height: 100vh;
+          position: relative;">
     {% include 'sitenav.njk' %}
     <main class="content">
       <div class="container py-3">
