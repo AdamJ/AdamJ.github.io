@@ -1,5 +1,6 @@
 ---
 title: "Task-It!"
+date: git Last Modified
 abbreviation: "task"
 description: "One enterprise task management system to rule them all."
 ---

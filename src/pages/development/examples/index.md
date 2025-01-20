@@ -1,5 +1,6 @@
 ---
 title: "codepen examples"
+date: git Last Modified
 abbreviation: "codepen"
 description: "When I'm trying out new ideas, I'll often go to codepen to riff on them, but also to see what is already out there."
 eleventyNavigation:

@@ -1,5 +1,6 @@
 ---
 title: "Icons"
+date: git Last Modified
 abbreviation: "icons"
 description: "Various icons and libraries that I've created."
 eleventyNavigation:

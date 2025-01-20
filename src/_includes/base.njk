@@ -56,6 +56,27 @@
       title="RSS Feed for {{ meta.siteName }}"
       href="/feed/"
     />
+    <style>
+      body {
+        opacity: 0;
+      }
+
+      body.ready {
+        opacity: 1;
+        transition: 0.25s opacity;
+      }
+    </style>
+
+    <script type="module">
+      await Promise.allSettled([
+        customElements.whenDefined('sl-button'),
+        customElements.whenDefined('sl-dialog')
+      ]);
+
+      // Button, card, and rating are registered now! Add
+      // the `ready` class so the UI fades in.
+      document.body.classList.add('ready');
+    </script>
   </head>
     <a rel="me" href="https://mastodon.world/@adamjol" aria-hidden="true" class="d-none">Mastodon</a>
     <body style="
@@ -65,6 +86,14 @@
     {% include 'sitenav.njk' %}
       {{ content | safe }}
     {% include 'footer.njk' %}
+    <script>
+      const dialog = document.querySelector('.dialog-overview');
+      const openButton = dialog.nextElementSibling;
+      const closeButton = dialog.querySelector('sl-button[slot="footer"]');
+
+      openButton.addEventListener('click', () => dialog.show());
+      closeButton.addEventListener('click', () => dialog.hide());
+    </script>
     {# </main> #}
   </body>
 </html>

@@ -32,7 +32,8 @@
       "id": "{{ absolutePostUrl }}",
       "url": "{{ absolutePostUrl }}",
       "title": "{{ post.data.title }}",
-      "date_published": "{{ post.date | dateToRfc3339 }}"
+      "date_published": "{{ post.date | dateToRfc3339 }}",
+      "date": "{{ post.date | dateToRfc3339 }}"
     }
     {% if not loop.last %},{% endif %}
     {%- endfor %}

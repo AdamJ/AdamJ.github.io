@@ -1,5 +1,6 @@
 ---
 title: "Color Picker"
+date: git Last Modified
 collections: presentations
 abbreviation: "ColorPicker"
 description: "Creating an accessible color picker."

@@ -1,5 +1,6 @@
 ---
 title: "Development"
+date: git Last Modified
 collections: development
 abbreviation: "Development"
 description: "A selection of code examples from various projects that I've worked on."

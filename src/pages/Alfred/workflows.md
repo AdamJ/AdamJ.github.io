@@ -1,5 +1,6 @@
 ---
 title: "Alfred Workflows"
+date: git Last Modified
 abbreviation: "alfred"
 description: "A list of my favorite Alfred workflows"
 ---

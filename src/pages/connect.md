@@ -1,6 +1,7 @@
 ---
 title: "Connect"
 abbreviation: "connect"
+date: git Last Modified
 description:
 header: "Reach out, let's connect"
 ---
