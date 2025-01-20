@@ -1,5 +1,6 @@
 ---
 title: "Games and Things"
+date: git Last Modified
 abbreviation: "games"
 description: "An app for cataloging your collections."
 ---

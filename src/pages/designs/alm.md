@@ -1,5 +1,6 @@
 ---
 title: "Application Lifecycle Management"
+date: git Last Modified
 abbreviation: "alm"
 description: "A one-stop-shop for a team's planning and project lifecycle management."
 eleventyNavigation:

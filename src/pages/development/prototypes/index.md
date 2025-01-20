@@ -1,5 +1,6 @@
 ---
 title: "Prototypes"
+date: git Last Modified
 abbreviation: "Prototypes"
 description: "When I work on a design, I prototype as I go. This allows me to see what I'm doing in a working environment, while keeping expectations realistic."
 eleventyNavigation:

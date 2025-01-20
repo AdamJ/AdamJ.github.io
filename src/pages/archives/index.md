@@ -1,5 +1,6 @@
 ---
 title: "Archived Pages"
+date: git Last Modified
 abbreviation: "Archives"
 description: ""
 eleventyNavigation:

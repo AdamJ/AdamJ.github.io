@@ -114,9 +114,19 @@
       
         
         <li class="nav-icon">
-          <a href="https://www.github.com/adamj/adamj.github.io" rel="noopener" class="icon-link pe-1" target="_blank" alt="External link to view my GitHub profile">
-            <fa-icon type="brands" name="github" size="lg"></fa-icon>
-          </a>
+          <sl-dialog label="About Me" class="dialog-overview">
+            <p>UX Designer, Developer, Program Manager. Creating software for the construction world. Previously at Red Hat and AWS. Collector of nerdy things...forever.</p>
+            <sl-button variant="text" href="https://www.linkedin.com/in/ajjolicoeur/">
+              <sl-icon slot="prefix" name="linkedin"></sl-icon>
+              LinkedIn profile
+            </sl-button>
+            <sl-button variant="text" href="https://github.com/AdamJ">
+              <sl-icon slot="prefix" name="github"></sl-icon>
+              GitHub README
+            </sl-button>
+            <sl-button slot="footer" variant="default" href="/about">Learn More</sl-button>
+          </sl-dialog>
+          <sl-icon-button name="info-square" label="Information" style="font-size: 1.5rem;"></sl-icon-button>
         </li>
       </ul>
     </div>

@@ -1,5 +1,6 @@
 ---
 title: "Portfolio"
+date: git Last Modified
 collections: presentations
 abbreviation: "Portfolio"
 description: ""

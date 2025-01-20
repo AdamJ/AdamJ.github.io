@@ -1,6 +1,7 @@
 ---
 layout: "page"
 title: "Uses"
+date: git Last Modified
 abbreviation: "uses"
 description: "What I use as a designer."
 headerButton: false
@@ -101,3 +102,5 @@ This site was created using [Eleventy](https://www.11ty.dev/) (Markdown + Nunjuc
 ```text
 Be sure to check out uses.tech to see other /uses pages!
 ```
+
+You can also find me on the [Eleventy Leaderboards](https://www.11ty.dev/speedlify/adamjolicoeur-com/)!

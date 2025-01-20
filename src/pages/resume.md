@@ -1,6 +1,7 @@
 ---
 title: "Adam J. Jolicoeur"
 abbreviation: "Resume"
+date: git Last Modified
 primaryAction: "View PDF"
 primaryURL: "https://www.adamjolicoeur.com/downloads/resume.pdf"
 eleventyNavigation:

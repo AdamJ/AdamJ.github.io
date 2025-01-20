@@ -1,5 +1,6 @@
 ---
 title: "Icons and Branding"
+date: git Last Modified
 collections: icons-and-branding
 abbreviation: "branding"
 description: "Various icons, icon packs, and branding elements from over the years."

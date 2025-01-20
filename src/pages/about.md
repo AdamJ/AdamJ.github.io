@@ -1,6 +1,7 @@
 ---
 layout: "markdown"
 title: "About"
+date: git Last Modified
 abbreviation: "about"
 description: "Driven and passionate senior user experience designer with a background in software development."
 primaryURL: /resume

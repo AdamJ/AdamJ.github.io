@@ -52,6 +52,27 @@
       title="RSS Feed for Adam Jolicoeur"
       href="/feed/"
     />
+    <style>
+      body {
+        opacity: 0;
+      }
+
+      body.ready {
+        opacity: 1;
+        transition: 0.25s opacity;
+      }
+    </style>
+
+    <script type="module">
+      await Promise.allSettled([
+        customElements.whenDefined('sl-button'),
+        customElements.whenDefined('sl-dialog')
+      ]);
+
+      // Button, card, and rating are registered now! Add
+      // the `ready` class so the UI fades in.
+      document.body.classList.add('ready');
+    </script>
   </head>
     <a rel="me" href="https://mastodon.world/@adamjol" aria-hidden="true" class="d-none">Mastodon</a>
     <body style="
@@ -115,9 +136,19 @@
       
         
         <li class="nav-icon">
-          <a href="https://www.github.com/adamj/adamj.github.io" rel="noopener" class="icon-link pe-1" target="_blank" alt="External link to view my GitHub profile">
-            <fa-icon type="brands" name="github" size="lg"></fa-icon>
-          </a>
+          <sl-dialog label="About Me" class="dialog-overview">
+            <p>UX Designer, Developer, Program Manager. Creating software for the construction world. Previously at Red Hat and AWS. Collector of nerdy things...forever.</p>
+            <sl-button variant="text" href="https://www.linkedin.com/in/ajjolicoeur/">
+              <sl-icon slot="prefix" name="linkedin"></sl-icon>
+              LinkedIn profile
+            </sl-button>
+            <sl-button variant="text" href="https://github.com/AdamJ">
+              <sl-icon slot="prefix" name="github"></sl-icon>
+              GitHub README
+            </sl-button>
+            <sl-button slot="footer" variant="default" href="/about">Learn More</sl-button>
+          </sl-dialog>
+          <sl-icon-button name="info-square" label="Information" style="font-size: 1.5rem;"></sl-icon-button>
         </li>
       </ul>
     </div>
@@ -253,6 +284,14 @@
   <link media="print" href="/css/print.css" rel="stylesheet" />
 </footer>
 
+    <script>
+      const dialog = document.querySelector('.dialog-overview');
+      const openButton = dialog.nextElementSibling;
+      const closeButton = dialog.querySelector('sl-button[slot="footer"]');
+
+      openButton.addEventListener('click', () => dialog.show());
+      closeButton.addEventListener('click', () => dialog.hide());
+    </script>
     
   </body>
 </html>

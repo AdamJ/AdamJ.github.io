@@ -1,17 +1,18 @@
 const emojiRegex = require("emoji-regex");
+const fs = require("fs");
 const slugify = require("slugify");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+// const eleventyImageTransformPlugin = require("@11ty/eleventy-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const inclusiveLangPlugin = require("@11ty/eleventy-plugin-inclusive-language");
 const pluginTOC = require('eleventy-plugin-toc');
 const pluginDropcap = require('eleventy-plugin-dropcap');
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItHighlightJS = require('markdown-it-highlightjs')
-const packageVersion = require("./package.json").version;
-const fs = require("fs");
-const inclusiveLangPlugin = require("@11ty/eleventy-plugin-inclusive-language");
 const emojiReadTime = require("@11tyrocks/eleventy-plugin-emoji-readtime");
+const packageVersion = require("./package.json").version;
 
 const mdOptions = {
   html: true,
@@ -46,10 +47,21 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(inclusiveLangPlugin, {
     templateFormats: ["md, html"], // default, add more file extensions here
 
-		// accepts an array or a comma-delimited string
-		words:
-			"simply,obviously,basically,of course,clearly,just,everyone knows,however,easy",
+    // accepts an array or a comma-delimited string
+    words:
+      "simply,obviously,basically,of course,clearly,just,everyone knows,however,easy",
   });
+  // @11ty Image Plugin
+  // eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+  //   // optional, attributes assigned on <img> nodes override these values
+  //   htmlOptions: {
+  //     imgAttributes: {
+  //       loading: "lazy",
+  //       decoding: "async",
+  //     },
+  //     pictureAttributes: {}
+  //   },
+  // });
   eleventyConfig.addPlugin(emojiReadTime);
 
   eleventyConfig.addWatchTarget("src/sass/*.scss");

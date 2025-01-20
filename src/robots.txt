@@ -1,4 +1,4 @@
-Sitemap: https://www.adamjolicoeur.com/sitemap.xml
-
 User-agent: *
 Disallow:
+
+Sitemap: https://www.adamjolicoeur.com/sitemap.xml

@@ -1,5 +1,6 @@
 ---
 title: "redesign"
+date: git Last Modified
 abbreviation: "Redesign"
 description: "A walkthrough of how I redesigned adamjolicoeur.com."
 eleventyNavigation:

@@ -1,161 +1,193 @@
 [
 	{
-   "title":"Adam Jolicoeur",
-   "imgName":"home"
-	},
-
-	{
-   "title":"Alfred Workflows",
-   "imgName":"alfred-workflows"
-	},
-
-	{
    "title":"District 25 website",
-   "imgName":"district-25-website"
+   "imgName":"district-25-website",
+   "date":"district-25-website"
 	},
 
 	{
    "title":"TimeTrak by Switchback",
-   "imgName":"timetrak-by-switchback"
-	},
-
-	{
-   "title":"Stream Deck examples",
-   "imgName":"stream-deck-examples"
-	},
-
-	{
-   "title":"Reference links",
-   "imgName":"reference-links"
-	},
-
-	{
-   "title":"Archived Pages",
-   "imgName":"archived-pages"
-	},
-
-	{
-   "title":"Games and Things",
-   "imgName":"games-and-things"
-	},
-
-	{
-   "title":"redesign",
-   "imgName":"redesign"
-	},
-
-	{
-   "title":"Icons",
-   "imgName":"icons"
+   "imgName":"timetrak-by-switchback",
+   "date":"timetrak-by-switchback"
 	},
 
 	{
    "title":"Adam Jolicoeur",
-   "imgName":"home"
+   "imgName":"home",
+   "date":"home"
+	},
+
+	{
+   "title":"Stream Deck examples",
+   "imgName":"stream-deck-examples",
+   "date":"stream-deck-examples"
+	},
+
+	{
+   "title":"Reference links",
+   "imgName":"reference-links",
+   "date":"reference-links"
+	},
+
+	{
+   "title":"Archived Pages",
+   "imgName":"archived-pages",
+   "date":"archived-pages"
+	},
+
+	{
+   "title":"Games and Things",
+   "imgName":"games-and-things",
+   "date":"games-and-things"
+	},
+
+	{
+   "title":"redesign",
+   "imgName":"redesign",
+   "date":"redesign"
+	},
+
+	{
+   "title":"Icons",
+   "imgName":"icons",
+   "date":"icons"
+	},
+
+	{
+   "title":"Adam Jolicoeur",
+   "imgName":"home",
+   "date":"home"
 	},
 
 	{
    "title":"Application Lifecycle Management",
-   "imgName":"application-lifecycle-management"
+   "imgName":"application-lifecycle-management",
+   "date":"application-lifecycle-management"
 	},
 
 	{
    "title":"Oops! Not Found",
-   "imgName":"oops-not-found"
+   "imgName":"oops-not-found",
+   "date":"oops-not-found"
 	},
 
 	{
    "title":"Prototypes",
-   "imgName":"prototypes"
-	},
-
-	{
-   "title":"About",
-   "imgName":"about"
-	},
-
-	{
-   "title":"Archived",
-   "imgName":"archived"
-	},
-
-	{
-   "title":"Connect",
-   "imgName":"connect"
-	},
-
-	{
-   "title":"Credits",
-   "imgName":"credits"
-	},
-
-	{
-   "title":"Designs",
-   "imgName":"designs"
+   "imgName":"prototypes",
+   "date":"prototypes"
 	},
 
 	{
    "title":"Customer Engagement App",
-   "imgName":"customer-engagement-app"
+   "imgName":"customer-engagement-app",
+   "date":"customer-engagement-app"
 	},
 
 	{
    "title":"Task-It!",
-   "imgName":"task-it"
-	},
-
-	{
-   "title":"Development",
-   "imgName":"development"
-	},
-
-	{
-   "title":"codepen examples",
-   "imgName":"codepen-examples"
+   "imgName":"task-it",
+   "date":"task-it"
 	},
 
 	{
    "title":"Icons and Branding",
-   "imgName":"icons-and-branding"
-	},
-
-	{
-   "title":"Journeys",
-   "imgName":"journeys"
-	},
-
-	{
-   "title":"Presentations",
-   "imgName":"presentations"
+   "imgName":"icons-and-branding",
+   "date":"icons-and-branding"
 	},
 
 	{
    "title":"Color Picker",
-   "imgName":"color-picker"
+   "imgName":"color-picker",
+   "date":"color-picker"
 	},
 
 	{
    "title":"Portfolio",
-   "imgName":"portfolio"
+   "imgName":"portfolio",
+   "date":"portfolio"
 	},
 
 	{
    "title":"Adam J. Jolicoeur",
-   "imgName":"adam-j.-jolicoeur"
+   "imgName":"adam-j.-jolicoeur",
+   "date":"adam-j.-jolicoeur"
 	},
 
 	{
    "title":"Testimonials",
-   "imgName":"testimonials"
+   "imgName":"testimonials",
+   "date":"testimonials"
+	},
+
+	{
+   "title":"About",
+   "imgName":"about",
+   "date":"about"
+	},
+
+	{
+   "title":"Credits",
+   "imgName":"credits",
+   "date":"credits"
+	},
+
+	{
+   "title":"Designs",
+   "imgName":"designs",
+   "date":"designs"
+	},
+
+	{
+   "title":"Development",
+   "imgName":"development",
+   "date":"development"
+	},
+
+	{
+   "title":"codepen examples",
+   "imgName":"codepen-examples",
+   "date":"codepen-examples"
+	},
+
+	{
+   "title":"Presentations",
+   "imgName":"presentations",
+   "date":"presentations"
+	},
+
+	{
+   "title":"Connect",
+   "imgName":"connect",
+   "date":"connect"
+	},
+
+	{
+   "title":"Archived",
+   "imgName":"archived",
+   "date":"archived"
+	},
+
+	{
+   "title":"Journeys",
+   "imgName":"journeys",
+   "date":"journeys"
 	},
 
 	{
    "title":"How to Use the Site",
-   "imgName":"how-to-use-the-site"
+   "imgName":"how-to-use-the-site",
+   "date":"how-to-use-the-site"
 	},
 
 	{
    "title":"Uses",
-   "imgName":"uses"
+   "imgName":"uses",
+   "date":"uses"
+	},
+
+	{
+   "title":"Alfred Workflows",
+   "imgName":"alfred-workflows",
+   "date":"alfred-workflows"
 	}
 ]
