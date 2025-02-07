@@ -52,6 +52,27 @@
       title="RSS Feed for Adam Jolicoeur"
       href="/feed/"
     />
+    <style>
+      body {
+        opacity: 0;
+      }
+
+      body.ready {
+        opacity: 1;
+        transition: 0.25s opacity;
+      }
+    </style>
+
+    <script type="module">
+      await Promise.allSettled([
+        customElements.whenDefined('sl-button'),
+        customElements.whenDefined('sl-dialog')
+      ]);
+
+      // Button, card, and rating are registered now! Add
+      // the `ready` class so the UI fades in.
+      document.body.classList.add('ready');
+    </script>
   </head>
     <a rel="me" href="https://mastodon.world/@adamjol" aria-hidden="true" class="d-none">Mastodon</a>
     <body style="
@@ -115,9 +136,19 @@
       
         
         <li class="nav-icon">
-          <a href="https://www.github.com/adamj/adamj.github.io" rel="noopener" class="icon-link pe-1" target="_blank" alt="External link to view my GitHub profile">
-            <fa-icon type="brands" name="github" size="lg"></fa-icon>
-          </a>
+          <sl-dialog label="About Me" class="dialog-overview">
+            <p>UX Designer, Developer, Program Manager. Creating software for the construction world. Previously at Red Hat and AWS. Collector of nerdy things...forever.</p>
+            <sl-button variant="text" href="https://www.linkedin.com/in/ajjolicoeur/">
+              <sl-icon slot="prefix" name="linkedin"></sl-icon>
+              LinkedIn profile
+            </sl-button>
+            <sl-button variant="text" href="https://github.com/AdamJ">
+              <sl-icon slot="prefix" name="github"></sl-icon>
+              GitHub README
+            </sl-button>
+            <sl-button slot="footer" variant="default" href="/about">Learn More</sl-button>
+          </sl-dialog>
+          <sl-icon-button name="info-square" label="Information" style="font-size: 1.5rem;"></sl-icon-button>
         </li>
       </ul>
     </div>
@@ -173,96 +204,107 @@
   <div class="container-fluid px-0 px-md-1">
     
     <div class="row">
-      <div class="col-6 col-md-3 pt-3 pt-md-0">
-        <div class="banner">Here</div>
-        <ul class="list-unstyled mt-0 ps-0">
-          <li class="mb-2">
-            <a class="icon-link" href="/about" alt="Link to the about page">
-              About
-            </a>
-          </li>
-          <li class="mb-2">
-            <a class="icon-link" href="/testimonials" alt="Link to the testimonials page">
-              Testimonials
-            </a>
-          </li>
-          
-          <li class="mb-2">
-            <a class="icon-link" href="/credits" alt="Link to credits page">
-              Credits
-            </a>
-          </li>
-          <li class="mb-2">
-            <a class="icon-link" href="/uses" alt="Link to uses page">
-              Uses
-            </a>
-          </li>
-          <!-- <li class="mb-1">
-            <a class="icon-link" href="/posts" alt="Link to page of posts">
-              Posts
-            </a>
-          </li> -->
-        </ul>
+      <div class="col-12 col-md-10 pt-3 pt-md-0">
+        
+        <div class="text-white pb-2">Site</div>
+        <div class="row">
+          <div class="col-4">
+            <ul class="d-flex my-0 px-0" style="flex-direction: column;">
+              <li>
+                <a class="icon-link" href="/" alt="Link to the home page">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a class="icon-link" href="/about" alt="Link to the about page">
+                  About
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul class="d-flex my-0 px-0" style="flex-direction: column;">
+              <li>
+                <a class="icon-link" href="/designs" alt="Link to designs page">
+                  Designs
+                </a>
+              </li>
+              <li>
+                <a class="icon-link" href="/development" alt="Link to development page">
+                  Development
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul class="d-flex my-0 px-0" style="flex-direction: column;">
+              <li>
+                <a class="icon-link" href="/testimonials" alt="Link to the testimonials page">
+                  Testimonials
+                </a>
+              </li>
+              <li>
+                <a class="icon-link" href="/uses" alt="Link to uses page">
+                  Uses
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="col-6 col-md-3 pt-3 pt-md-0">
-        <div>&nbsp;</div>
-        <ul class="list-unstyled mt-3 ps-0">
-          <li class="mb-2">
-            <a class="icon-link" href="/development" alt="Link to the development page">
-              Development
-            </a>
-          </li>
-          <li class="mb-2">
-            <a class="icon-link" href="https://pf4testbench.netlify.app/" rel="noopener" target="_blank" alt="External link to patternfly v4 prototype">
-              PatternFly.org v4 <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
-            </a>
-          </li>
-          <li class="mb-2">
-            <a class="icon-link" href="https://kubevirtio-site.netlify.app/" rel="noopener" target="_blank" alt="External link to kubevirt landing page prototype">
-              Kubevirt.io <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-6 col-md-3 pt-3 pt-md-0">
-        <div class="banner">There</div>
-        <ul class="list-unstyled mt-0 ps-0">
-          <li class="mb-2">
-            <a href="https://www.linkedin.com/in/ajjolicoeur/" rel="noopener" class="icon-link pe-1" target="_blank" alt="External link to view my LinkedIn profile">
-              <fa-icon type="brands" name="linkedin" size="lg"></fa-icon> LinkedIn
-            </a>
-          </li>
-          <li class="mb-2">
-            <a href="https://github.com/AdamJ" rel="noopener" class="icon-link pe-1" target="_blank" alt="External link to view my GitHub profile">
-              <fa-icon type="brands" name="github" size="lg"></fa-icon> GitHub
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-6 col-md-3 pt-3 pt-md-0">
-        <div>&nbsp;</div>
-        <ul class="list-unstyled mt-3 ps-0">
-          <li class="mb-2">
-            <a href="https://bsky.app/profile/adamjol.bsky.social" rel="noopener" class="icon-link pe-1" target="_blank" alt="External link to view my Figma community profile">
-              <fa-icon type="brands" name="bluesky" size="lg"></fa-icon> Bluesky
-            </a>
-          </li>
-          <li class="mb-2">
-            <a href="https://codepen.io/AdamJolicoeur" rel="noopener" class="icon-link" target="_blank" alt="External link to view my Codepen.io profile">
-              <fa-icon type="brands" name="codepen" size="lg"></fa-icon> Codepen
-            </a>
-          </li>
-        </ul>
+      <div class="col-12 col-md-2 pt-3 pt-md-0">
+        
+        <div class="text-white pb-2">Social</div>
+        <div class="row">
+          <div class="col-3">
+            <ul class="d-flex my-0 px-0" style="flex-direction: column;">
+              <li>
+                <a href="https://www.linkedin.com/in/ajjolicoeur/" rel="noopener" class="icon-link pe-1" target="_blank" alt="External link to view my LinkedIn profile">
+                  <fa-icon type="brands" name="linkedin" size="lg"></fa-icon>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/AdamJ" rel="noopener" class="icon-link pe-1" target="_blank" alt="External link to view my GitHub profile">
+                  <fa-icon type="brands" name="github" size="lg"></fa-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul class="d-flex my-0 px-0" style="flex-direction: column;">
+              <li>
+                <a href="/adamjol.bsky.social" rel="noopener" class="icon-link pe-1" target="_blank" alt="External link to view my Figma community profile">
+                  <fa-icon type="brands" name="bluesky" size="lg"></fa-icon>
+                </a>
+              </li>
+              <li>
+                <a href="https://codepen.io/AdamJolicoeur" rel="noopener" class="icon-link" target="_blank" alt="External link to view my Codepen.io profile">
+                  <fa-icon type="brands" name="codepen" size="lg"></fa-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="row justify-content-between pt-3 pb-2 pb-md-0">
+    <div class="row my-4">
+      <hr style="margin: 0; border-color: rgba(255, 255, 255, .1);" />
+    </div>
+    <div class="row justify-content-between pt-0 pb-2 pb-md-0">
+      <div class="col-12 text-md-center text-align-center small">
+        Copyright &copy; 2008-2025
+        <a href="/about" alt="Link to my about page">
+          Adam J. Jolicoeur
+        </a>
+      </div>
       <div class="col-12 text-md-center text-align-center">
-        <small>
-          Copyright &copy; 2008-2025
-          <a href="/about" alt="Link to my about page">
-            Adam J. Jolicoeur
-          </a>
-        </small>
+        <a class="small" href="/sitemap.xml" alt="Link to the sitemap">
+          Sitemap
+        </a>
+        <span class="small text-secondary px-2">&#9830;</span>
+        <a class="small" href="/credits" alt="Link to credits page">
+          Credits
+        </a>
       </div>
     </div>
   </div>
@@ -284,6 +326,14 @@
   <link media="print" href="/css/print.css" rel="stylesheet" />
 </footer>
 
+    <script>
+      const dialog = document.querySelector('.dialog-overview');
+      const openButton = dialog.nextElementSibling;
+      const closeButton = dialog.querySelector('sl-button[slot="footer"]');
+
+      openButton.addEventListener('click', () => dialog.show());
+      closeButton.addEventListener('click', () => dialog.hide());
+    </script>
     
   </body>
 </html>
