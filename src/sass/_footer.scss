@@ -44,6 +44,7 @@ footer,
     // color: var(--sl-color-neutral-50);
     // @media (prefers-color-scheme: dark) {
       color: var(--sl-color-neutral-950);
+      @include fs(.75);
     // }
   }
 }
