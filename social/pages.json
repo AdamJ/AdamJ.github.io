@@ -1,17 +1,5 @@
 [
 	{
-   "title":"District 25 website",
-   "imgName":"district-25-website",
-   "date":"district-25-website"
-	},
-
-	{
-   "title":"TimeTrak by Switchback",
-   "imgName":"timetrak-by-switchback",
-   "date":"timetrak-by-switchback"
-	},
-
-	{
    "title":"Adam Jolicoeur",
    "imgName":"home",
    "date":"home"
@@ -30,39 +18,9 @@
 	},
 
 	{
-   "title":"Archived Pages",
-   "imgName":"archived-pages",
-   "date":"archived-pages"
-	},
-
-	{
-   "title":"Games and Things",
-   "imgName":"games-and-things",
-   "date":"games-and-things"
-	},
-
-	{
-   "title":"redesign",
-   "imgName":"redesign",
-   "date":"redesign"
-	},
-
-	{
-   "title":"Icons",
-   "imgName":"icons",
-   "date":"icons"
-	},
-
-	{
    "title":"Adam Jolicoeur",
    "imgName":"home",
    "date":"home"
-	},
-
-	{
-   "title":"Application Lifecycle Management",
-   "imgName":"application-lifecycle-management",
-   "date":"application-lifecycle-management"
 	},
 
 	{
@@ -72,9 +30,57 @@
 	},
 
 	{
-   "title":"Prototypes",
-   "imgName":"prototypes",
-   "date":"prototypes"
+   "title":"Archived",
+   "imgName":"archived",
+   "date":"archived"
+	},
+
+	{
+   "title":"Journeys",
+   "imgName":"journeys",
+   "date":"journeys"
+	},
+
+	{
+   "title":"howto",
+   "imgName":"howto",
+   "date":"howto"
+	},
+
+	{
+   "title":"About",
+   "imgName":"about",
+   "date":"about"
+	},
+
+	{
+   "title":"Archived Pages",
+   "imgName":"archived-pages",
+   "date":"archived-pages"
+	},
+
+	{
+   "title":"Connect",
+   "imgName":"connect",
+   "date":"connect"
+	},
+
+	{
+   "title":"Credits",
+   "imgName":"credits",
+   "date":"credits"
+	},
+
+	{
+   "title":"Designs",
+   "imgName":"designs",
+   "date":"designs"
+	},
+
+	{
+   "title":"Application Lifecycle Management",
+   "imgName":"application-lifecycle-management",
+   "date":"application-lifecycle-management"
 	},
 
 	{
@@ -84,15 +90,69 @@
 	},
 
 	{
+   "title":"District 25 website",
+   "imgName":"district-25-website",
+   "date":"district-25-website"
+	},
+
+	{
    "title":"Task-It!",
    "imgName":"task-it",
    "date":"task-it"
 	},
 
 	{
+   "title":"TimeTrak by Switchback",
+   "imgName":"timetrak-by-switchback",
+   "date":"timetrak-by-switchback"
+	},
+
+	{
+   "title":"Development",
+   "imgName":"development",
+   "date":"development"
+	},
+
+	{
+   "title":"redesign",
+   "imgName":"redesign",
+   "date":"redesign"
+	},
+
+	{
+   "title":"codepen examples",
+   "imgName":"codepen-examples",
+   "date":"codepen-examples"
+	},
+
+	{
+   "title":"Prototypes",
+   "imgName":"prototypes",
+   "date":"prototypes"
+	},
+
+	{
+   "title":"Games and Things",
+   "imgName":"games-and-things",
+   "date":"games-and-things"
+	},
+
+	{
    "title":"Icons and Branding",
    "imgName":"icons-and-branding",
    "date":"icons-and-branding"
+	},
+
+	{
+   "title":"Icons",
+   "imgName":"icons",
+   "date":"icons"
+	},
+
+	{
+   "title":"Presentations",
+   "imgName":"presentations",
+   "date":"presentations"
 	},
 
 	{
@@ -117,66 +177,6 @@
    "title":"Testimonials",
    "imgName":"testimonials",
    "date":"testimonials"
-	},
-
-	{
-   "title":"About",
-   "imgName":"about",
-   "date":"about"
-	},
-
-	{
-   "title":"Credits",
-   "imgName":"credits",
-   "date":"credits"
-	},
-
-	{
-   "title":"Designs",
-   "imgName":"designs",
-   "date":"designs"
-	},
-
-	{
-   "title":"Development",
-   "imgName":"development",
-   "date":"development"
-	},
-
-	{
-   "title":"codepen examples",
-   "imgName":"codepen-examples",
-   "date":"codepen-examples"
-	},
-
-	{
-   "title":"Presentations",
-   "imgName":"presentations",
-   "date":"presentations"
-	},
-
-	{
-   "title":"Connect",
-   "imgName":"connect",
-   "date":"connect"
-	},
-
-	{
-   "title":"Archived",
-   "imgName":"archived",
-   "date":"archived"
-	},
-
-	{
-   "title":"Journeys",
-   "imgName":"journeys",
-   "date":"journeys"
-	},
-
-	{
-   "title":"How to Use the Site",
-   "imgName":"how-to-use-the-site",
-   "date":"how-to-use-the-site"
 	},
 
 	{

@@ -4,6 +4,15 @@ date: git Last Modified
 abbreviation: "task"
 description: "One enterprise task management system to rule them all."
 ---
+<script type="module">
+  await Promise.allSettled([
+    customElements.whenDefined('sl-image-comparer')
+  ]);
+
+  // Button, card, and rating are registered now! Add
+  // the `ready` class so the UI fades in.
+  document.body.classList.add('ready');
+</script>
 <div class="container px-0 mb-5">
   <div class="row mx-0">
     <div class="col">
@@ -133,7 +142,7 @@ description: "One enterprise task management system to rule them all."
         <div class="col-md-6">
           <h3>Wireframes</h3>
           <p>When creating wireframes, I start by taking an existing components (whether already in the application or from the component library in use) and lay out my page. From there, I begin to add some details (using the <code>redacted script</code> font) and basic headings. This is then reviewed with PM, Development, and, if available, fellow UX designers.</p>
-          <figure class="figure">
+          <!-- <figure class="figure">
             <img src="../../img/task-it_task-details_wireframe.png" class="figure-img img-fluid rounded" alt="Image of the task details wireframe" loading="lazy">
             <figcaption class="figure-caption text-align-center">Task details wireframe
               <sl-button href="../../img/task-it_task-details_wireframe.png" variant="text" size="medium" >
@@ -142,12 +151,12 @@ description: "One enterprise task management system to rule them all."
                 <sl-visually-hidden>open image in a new window</sl-visually-hidden>
               </sl-button>
             </figcaption>
-          </figure>
+          </figure> -->
         </div>
         <div class="col-md-6">
           <h3>Mockups</h3>
           <p>After reviews have been completed on the wireframes, mockups are created. In my process, I utilize mockups to get the full look/feel of the page without interactions. Once completed, these are used for user testing as well as final review with the development team.</p>
-          <figure class="figure">
+          <!-- <figure class="figure">
             <img src="../../img/task-it_task-details_mockup1.png" class="figure-img img-fluid rounded" alt="Image of the first version of the task details mockup" loading="lazy">
             <figcaption class="figure-caption text-align-center">Task details mockup
               <sl-button href="../../img/task-it_task-details_mockup1.png" variant="text" size="medium" >
@@ -156,7 +165,19 @@ description: "One enterprise task management system to rule them all."
                 <sl-visually-hidden>open image in a new window</sl-visually-hidden>
               </sl-button>
             </figcaption>
-          </figure>
+          </figure> -->
+        </div>
+      </div>
+      <div class="row pt-3">
+        <div class="col-md-8 offset-md-2">
+          <sl-image-comparer position="50">
+            <img
+              slot="after"
+              src="../../img/task-it_task-details_wireframe.png" class="figure-img img-fluid rounded" alt="Image of the task details wireframe" loading="lazy">
+            <img
+              slot="before"
+              src="../../img/task-it_task-details_mockup1.png" class="figure-img img-fluid rounded" alt="Image of the first version of the task details mockup" loading="lazy">
+          </sl-image-comparer>
         </div>
       </div>
       <h2>Testing and Revisions</h2>

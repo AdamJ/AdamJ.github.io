@@ -14,6 +14,38 @@ const markdownItHighlightJS = require('markdown-it-highlightjs')
 const emojiReadTime = require("@11tyrocks/eleventy-plugin-emoji-readtime");
 const packageVersion = require("./package.json").version;
 
+// async function run() {
+//   const { Importer } = await import("@11ty/import");
+
+//   let importer = new Importer();
+
+//   importer.setOutputFolder("./src/social/"); // --output
+//   importer.setCacheDuration("24h"); // --cacheduration
+//   importer.setVerbose(true); // --quiet
+//   importer.setSafeMode(false); // --overwrite
+//   importer.setDryRun(false); // --dryrun
+//   importer.setDraftsFolder("drafts");
+//   importer.setAssetsFolder("assets");
+//   importer.setAssetReferenceType("relative"); // --assetrefs
+
+//   // Sources (one or more)
+//   importer.addSource("bluesky", "adamjol.bsky.social");
+
+//   let entries = await importer.getEntries({
+//       contentType: "markdown", // --format
+//   });
+
+//   await importer.toFiles(entries);
+
+//   importer.logResults();
+// }
+
+// Execute the async function
+// run().catch(console.error);
+
+// Execute the async function
+// run().catch(console.error);
+
 const mdOptions = {
   html: true,
   breaks: true,
@@ -28,10 +60,6 @@ const mdAnchorOpts = {
   }),
   level: [2, 3, 4]
 }
-
-// const formatDate = date => DateTime.fromJSDate(new Date(date)).toISO({includeOffset: true, suppressMilliseconds: true})
-// const formatDateYear = date => DateTime.fromJSDate(new Date(date)).get('year')
-
 
 module.exports = function (eleventyConfig) {
   if (process.env.ELEVENTY_ENV === "prod") {
@@ -51,17 +79,12 @@ module.exports = function (eleventyConfig) {
     words:
       "simply,obviously,basically,of course,clearly,just,everyone knows,however,easy",
   });
-  // @11ty Image Plugin
-  // eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-  //   // optional, attributes assigned on <img> nodes override these values
-  //   htmlOptions: {
-  //     imgAttributes: {
-  //       loading: "lazy",
-  //       decoding: "async",
-  //     },
-  //     pictureAttributes: {}
-  //   },
-  // });
+
+  // Create a custom key for Bluesky using "type"
+  eleventyConfig.addCollection("specialCollection", function (collection) {
+    return collection.getAll().filter((item) => item.data.type);
+  });
+
   eleventyConfig.addPlugin(emojiReadTime);
 
   eleventyConfig.addWatchTarget("src/sass/*.scss");

@@ -5258,6 +5258,7 @@ footer small, footer .small,
 .footer small,
 .footer .small {
   color: var(--sl-color-neutral-950);
+  font-size: 13.5px;
 }
 
 .footer-link {
@@ -5611,5 +5612,3 @@ body {
   box-shadow: 0 1px 0 0 rgba(232, 232, 236, 0.5);
   color: var(--color-white);
 }
-
-/*# sourceMappingURL=style.css.map */

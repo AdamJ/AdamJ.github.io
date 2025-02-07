@@ -23,6 +23,7 @@
     <link rel="icon" type="image/png" size="32x32" href="{{ '/favicon-32x32.png' | url }}">
     <link rel="icon" type="image/png" size="72x72" href="{{ '/favicon.png' | url }}">
     <link rel="manifest" href="{{ '/site.webmanifest' | url }}">
+    <link rel="alternate" href="/follow.rss" title="Adam's Activity Feed" type="application/rss+xml">
     <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,6 +57,27 @@
       title="RSS Feed for {{ meta.siteName }}"
       href="/feed/"
     />
+    <style>
+      body {
+        opacity: 0;
+      }
+
+      body.ready {
+        opacity: 1;
+        transition: 0.25s opacity;
+      }
+    </style>
+
+    <script type="module">
+      await Promise.allSettled([
+        customElements.whenDefined('sl-button'),
+        customElements.whenDefined('sl-dialog')
+      ]);
+
+      // Button, card, and rating are registered now! Add
+      // the `ready` class so the UI fades in.
+      document.body.classList.add('ready');
+    </script>
   </head>
     <a rel="me" href="https://mastodon.world/@adamjol" aria-hidden="true" class="d-none">Mastodon</a>
     <body style="
@@ -80,5 +102,13 @@
       </div>
     </main>
     {% include 'footer.njk' %}
+    <script>
+      const dialog = document.querySelector('.dialog-overview');
+      const openButton = dialog.nextElementSibling;
+      const closeButton = dialog.querySelector('sl-button[slot="footer"]');
+
+      openButton.addEventListener('click', () => dialog.show());
+      closeButton.addEventListener('click', () => dialog.hide());
+    </script>
   </body>
 </html>

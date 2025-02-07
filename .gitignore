@@ -11,3 +11,4 @@ npm-debug.log.*
 src/drafts/
 drafts/
 notes.txt
+.cache

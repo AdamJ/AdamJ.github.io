@@ -1,5 +1,6 @@
 ---
-title: How to Use the Site
+title: howto
+tag: post
 ---
 
 ## How to Use the Site
