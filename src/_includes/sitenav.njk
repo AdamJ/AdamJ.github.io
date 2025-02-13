@@ -16,7 +16,7 @@
         />
       </svg>
     </label>
-    <a {% if currentURL === '/' %} aria-current="page" {% endif %} href="/">
+    <a {% if currentURL === '/' %} aria-current="page" {% endif %} href="/" title="Home">
     <div class="logo">
       <svg width="32" height="32" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M91.29 89.4546L96.1838 82.1483L101.709 89.4546H91.29Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
@@ -52,21 +52,14 @@
             Development
           </a>
         </li>
-      {# </ul>
-      <ul class="account"> #}
-        {# <li>
-          <a href="/testimonials" class="nav-link {% if '/testimonials' in page.url %}active{% endif %}" alt="Link to testimonials for former coworkers">
-            Testimonials
-          </a>
-        </li> #}
         <li class="nav-icon">
           <sl-dialog label="About Me" class="dialog-overview">
             <p>UX Designer, Developer, Program Manager. Creating software for the construction world. Previously at Red Hat and AWS. Collector of nerdy things...forever.</p>
-            <sl-button variant="text" href="{{ meta.linkedinURL | url }}">
+            <sl-button variant="text" href="{{ meta.linkedinURL | url }}" title="External link to LinkedIn profile">
               <sl-icon slot="prefix" name="linkedin"></sl-icon>
               LinkedIn profile
             </sl-button>
-            <sl-button variant="text" href="{{ meta.githubURL | url }}">
+            <sl-button variant="text" href="{{ meta.githubURL | url }}" title="External link to GitHub profile">
               <sl-icon slot="prefix" name="github"></sl-icon>
               GitHub README
             </sl-button>

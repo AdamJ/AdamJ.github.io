@@ -1,0 +1,11 @@
+{
+  "strict-transport-security": "ignore",
+  "minified-js": "ignore",
+  "ignoredUrls": [{
+    "domain": [
+      ".*\\googleapis\\.com/.*",
+      "cdn.\\jsdelivr\\.net/.*",
+      "kit.\\fontawesome\\.com/.*"],
+    "hints": ["*"]
+  }]
+}

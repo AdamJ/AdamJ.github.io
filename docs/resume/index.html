@@ -18,11 +18,11 @@
     <link rel="icon" type="image/png" size="16x16" href="/favicon-16x16.png">
     <link rel="icon" type="image/png" size="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" size="72x72" href="/favicon.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link type="application/manifest+json" rel="manifest" href="/site.webmanifest">
     <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald&display=swap" rel="stylesheet" crossorigin="anonymous">
     <!--<link
       rel="stylesheet"
       media="(prefers-color-scheme:light)"
@@ -30,12 +30,13 @@
     /> -->
     <link
       rel="stylesheet"
+      crossorigin="anonymous"
       
       href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/themes/dark.css"
       onload="document.documentElement.classList.add('sl-theme-dark');"
     />
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/shoelace-autoloader.js"></script>
-    <link href="/css/style.css" rel="stylesheet" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/shoelace-autoloader.js" crossorigin="anonymous"></script>
+    <link type="text/css" href="/css/style.css" rel="stylesheet" />
     <meta
       name="og:title"
       content="Adam J. Jolicoeur | Adam Jolicoeur"
@@ -97,7 +98,7 @@
         />
       </svg>
     </label>
-    <a  href="/">
+    <a  href="/" title="Home">
     <div class="logo">
       <svg width="32" height="32" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M91.29 89.4546L96.1838 82.1483L101.709 89.4546H91.29Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
@@ -133,16 +134,14 @@
             Development
           </a>
         </li>
-      
-        
         <li class="nav-icon">
           <sl-dialog label="About Me" class="dialog-overview">
             <p>UX Designer, Developer, Program Manager. Creating software for the construction world. Previously at Red Hat and AWS. Collector of nerdy things...forever.</p>
-            <sl-button variant="text" href="https://www.linkedin.com/in/ajjolicoeur/">
+            <sl-button variant="text" href="https://www.linkedin.com/in/ajjolicoeur/" title="External link to LinkedIn profile">
               <sl-icon slot="prefix" name="linkedin"></sl-icon>
               LinkedIn profile
             </sl-button>
-            <sl-button variant="text" href="https://github.com/AdamJ">
+            <sl-button variant="text" href="https://github.com/AdamJ" title="External link to GitHub profile">
               <sl-icon slot="prefix" name="github"></sl-icon>
               GitHub README
             </sl-button>
@@ -178,7 +177,8 @@
       </div>
     </div>
     <div class="col-12 col-md-6">
-      <p class="pt-0">As the Lead Program Manager and UX Designer at Component Assembly Systems, Inc., I am responsible for the product roadmap, deliverables, and cohesive software suite for CAS offerings.</p>
+      <p class="pt-0">As the Lead Program Manager and UX Designer, I am responsible for creating product roadmaps,
+maintaining team goals in order to complete deliverables, and managing the internal software suite.</p>
       <ul class="icon-list">
         <li>Lead Program Manager, CAS Strategic Technology Group</li>
         <li>Lead UX Designer, StructureCloud</li>
@@ -200,12 +200,11 @@
       </div>
     </div>
     <div class="col-12 col-md-6">
-      <p class="pt-0">As a Senior UX Designer on the Amazon Software Builder Experience team, I was responsible for the task management solutions for Amazon Issue Management. As part of this responsibility, I oversaw the design, implementation, and feedback of Amazon's next-generation task management software. As the lead designer, it was my responsibility to provide a cohesive experience for all Amazon employees, regardless of role, for them to perform their duties with minimal churn and friction.</p>
+      <p class="pt-0">As a Senior UXD on the Amazon Software Builder Experience team, I was responsible for the next generation of task management solutions for Amazon Issue Management. In this role, I oversaw the overall design and deliverables, implementation, collected feedback from internal users. As the lead designer on the project, I was responsible for providing cohesive experiences for all Amazon employees, regardless of role, in order to perform their duties with minimal friction.</p>
       <ul class="icon-list">
         <li>Lead Designer, Task Management</li>
         <li>Led user testing and interview sessions</li>
         <li>Created prototypes (Figma and React-based) for internal testing and validation using organization design system</li>
-        <li>Contributor, Amazon Software Builder Experience - User Experience Design</li>
       </ul>
     </div>
   </div>
@@ -226,13 +225,13 @@
       </div>
     </div>
     <div class="col-12 col-md-6">
-      <p>As a Senior Software Engineer on the User Experience Design team, my responsibilities included creating user flows, wireframes, mockups, and proof-of-concepts for products and websites across Red Hat. In addition to my daily work, I was a core contributor to the PatternFly design system and lead the designer of the Red Hat Developer Design Manual.</p>
+      <p>As a Senior Interaction Designer on the User Experience Design team, my responsibilities included creating user flows, wireframes, mockups, and proofs-of-concepts for products and websites across Red Hat. As part of my role, I became a core contributor to the PatternFly design system and lead designer of the Red Hat Developer Design Manual.</p>
       <ul class="icon-list">
         <li>UX Designer, OpenShift</li>
-        <li>designer/developer: Red Hat Developer Design Manual, developers.redhat.com</li>
-        <li>designer/developer, kubevirt.io </li>
-        <li>interaction designer, Red Hat Managed Integration</li>
-        <li>Core Contributor to PatternFly Design System</li>
+        <li>Designer/Developer, Red Hat Developer Design Manual, developers.redhat.com</li>
+        <li>Designer/Developer, kubevirt.io</li>
+        <li>Interaction Designer, Red Had Managed Integration</li>
+        <li>Core Contributor, PatternFly Design System</li>
       </ul>
     </div>
   </div>
@@ -252,7 +251,7 @@
       </div>
     </div>
     <div class="col-12 col-md-6">
-      <p>As the User Experience Designer, I led the design and user research for the Account360 and Card360 platforms. Working with a team of developers to improve product usability, I focused primarily on easy to use and manageable interfaces for the financial industry, utilizing standards from across the industry.</p>
+      <p>As the first in-house designer, I led the design and user research for the Account360 and Card360 platforms, working with a team of developers to improve product usability. The primary focus for this work was on easy-to-use and manageable interfaces for the financial industry.</p>
       <ul class="icon-list">
         <li>Lead designer, Account360 and Card360 platforms</li>
         <li>Lead designer, product refreshes/corporate presentations and sales demonstrations</li>
@@ -268,7 +267,7 @@
     <div class="col-12 col-md-6">
       <h2 class="mt-0">Vice President, Design</h2>
       <h4 class="my-0">Switchback, Inc. (Holden, MA)</h4>
-      <p class="text-body-secondary">November 2010 - August 2021</p>
+      <p class="text-body-secondary">November 2010 - August 2021 / September 2023 - January 2025</p>
       <div class="pb-3 row-badges">
         <sl-badge variant="primary" pill>Sketch</sl-badge>
         <sl-badge variant="primary" pill>Adobe XD</sl-badge>
@@ -276,24 +275,22 @@
         <sl-badge variant="primary" pill>SCSS</sl-badge>
         <sl-badge variant="primary" pill>Wireframes</sl-badge>
       </div>
-      <ul class="icon-list">
-        <li class="text-muted">
-          Visual Designer &amp; Developer
-          <ul><li>November 2010 - December 2013</li></ul>
-        </li>
-        <li class="text-muted">
-          Web Designer
-          <ul><li>January 2003 - June 2008</li></ul>
-        </li>
-      </ul>
     </div>
     <div class="col-12 col-md-6">
-      <p>As a contractor, I was responsible for redesigning various internal software interfaces, focusing on customer requests and usability improvements.</p>
+      <p>As a contractor, I was the lead designer for multiple products and web interfaces including a redesign of an internal financial accounting product, an architectural drawing reference interface, and a time management system.</p>
       <ul class="icon-list">
-        <li>Worked on mobile-first web applications and data input tools for personal inventory systems and portfolios</li>
-        <li>Product designer from initial conception to finished product – creation of wireframes, Photoshop designs, test sites, and integration of data</li>
-        <li>PHP Development</li>
-        <li>Joomla and Drupal development and design</li>
+        <li class="text-muted">
+          Product Design
+          <ul><li>September 2024 - January 2025</li></ul>
+        </li>
+        <li class="text-muted">
+          Visual Design &amp; Development
+          <ul><li>November 2010 - December 2021</li></ul>
+        </li>
+        <li class="text-muted">
+          Web Design
+          <ul><li>January 2003 - June 2008</li></ul>
+        </li>
       </ul>
     </div>
   </div>
@@ -313,12 +310,12 @@
       </div>
     </div>
     <div class="col-12 col-md-6">
-      <p>As a UI Software Engineer, I worked with the development and design teams to turn the visual designs into working applications through best-practice usability techniques and user acceptance testing.</p>
+      <p>As a UI Software Engineer, I worked with the development and design teams to turn the visual designs into working applications.</p>
       <ul class="icon-list">
-        <li>Developer - software inventory and management system</li>
-        <li>Created and implemented wireframes/templates/mockups with UX Designer and UI Architect</li>
-        <li>Developed/tested initial phases of mobile/tablet design framework</li>
-        <li>Participated in daily Agile Scrum development practices</li>
+        <li>Developed and implemented a software inventory and management system</li>
+        <li>Created and developed wireframes, templates, and live mockups for development team</li>
+        <li>Developed continuity and usability structure for high-interaction areas</li>
+        <li>Assisted design and development with a fluid and responsive navigation structure</li>
       </ul>
     </div>
   </div>
@@ -411,13 +408,13 @@
           <div class="col-4">
             <ul class="d-flex my-0 px-0" style="flex-direction: column;">
               <li>
-                <a class="icon-link" href="/" alt="Link to the home page">
-                  Home
+                <a class="icon-link" href="/about" alt="Link to the about page">
+                  About
                 </a>
               </li>
               <li>
-                <a class="icon-link" href="/about" alt="Link to the about page">
-                  About
+                <a class="icon-link" href="https://www.adamjolicoeur.com/researchandesign/blog" alt="Link to the home page">
+                  Blog
                 </a>
               </li>
             </ul>
@@ -459,12 +456,12 @@
           <div class="col-3">
             <ul class="d-flex my-0 px-0" style="flex-direction: column;">
               <li>
-                <a href="https://www.linkedin.com/in/ajjolicoeur/" rel="noopener" class="icon-link pe-1" target="_blank" alt="External link to view my LinkedIn profile">
+                <a href="https://www.linkedin.com/in/ajjolicoeur/" rel="noopener noreferrer" class="icon-link pe-1" target="_blank" alt="External link to view my LinkedIn profile">
                   <fa-icon type="brands" name="linkedin" size="lg"></fa-icon>
                 </a>
               </li>
               <li>
-                <a href="https://github.com/AdamJ" rel="noopener" class="icon-link pe-1" target="_blank" alt="External link to view my GitHub profile">
+                <a href="https://github.com/AdamJ" rel="noopener noreferrer" class="icon-link pe-1" target="_blank" alt="External link to view my GitHub profile">
                   <fa-icon type="brands" name="github" size="lg"></fa-icon>
                 </a>
               </li>
@@ -473,12 +470,12 @@
           <div class="col-3">
             <ul class="d-flex my-0 px-0" style="flex-direction: column;">
               <li>
-                <a href="/adamjol.bsky.social" rel="noopener" class="icon-link pe-1" target="_blank" alt="External link to view my Figma community profile">
+                <a href="/adamjol.bsky.social" rel="noopener noreferrer" class="icon-link pe-1" target="_blank" alt="External link to view my Figma community profile">
                   <fa-icon type="brands" name="bluesky" size="lg"></fa-icon>
                 </a>
               </li>
               <li>
-                <a href="https://codepen.io/AdamJolicoeur" rel="noopener" class="icon-link" target="_blank" alt="External link to view my Codepen.io profile">
+                <a href="https://codepen.io/AdamJolicoeur" rel="noopener noreferrer" class="icon-link" target="_blank" alt="External link to view my Codepen.io profile">
                   <fa-icon type="brands" name="codepen" size="lg"></fa-icon>
                 </a>
               </li>
@@ -511,11 +508,11 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/0ea2a7621c.js" crossorigin="anonymous"></script>
-  <script src="/js/prism.js"></script>
-  <script src="/js/icon-component.js"></script>
-  <script src="/js/jolicoeur.js"></script>
+  <script type="application/javascript" src="/js/prism.js"></script>
+  <script type="application/javascript" src="/js/icon-component.js"></script>
+  <script type="application/javascript" src="/js/jolicoeur.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQCZPW3PZN"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQCZPW3PZN" crossorigin="anonymous"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -523,7 +520,7 @@
 
     gtag('config', 'G-XQCZPW3PZN');
   </script>
-  <link media="print" href="/css/print.css" rel="stylesheet" />
+  <link type="text/css" media="print" href="/css/print.css" rel="stylesheet" />
 </footer>
 
     <script>

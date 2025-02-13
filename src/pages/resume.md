@@ -24,7 +24,8 @@ eleventyNavigation:
       </div>
     </div>
     <div class="col-12 col-md-6">
-      <p class="pt-0">As the Lead Program Manager and UX Designer at Component Assembly Systems, Inc., I am responsible for the product roadmap, deliverables, and cohesive software suite for CAS offerings.</p>
+      <p class="pt-0">As the Lead Program Manager and UX Designer, I am responsible for creating product roadmaps,
+maintaining team goals in order to complete deliverables, and managing the internal software suite.</p>
       <ul class="icon-list">
         <li>Lead Program Manager, CAS Strategic Technology Group</li>
         <li>Lead UX Designer, StructureCloud</li>
@@ -46,12 +47,11 @@ eleventyNavigation:
       </div>
     </div>
     <div class="col-12 col-md-6">
-      <p class="pt-0">As a Senior UX Designer on the Amazon Software Builder Experience team, I was responsible for the task management solutions for Amazon Issue Management. As part of this responsibility, I oversaw the design, implementation, and feedback of Amazon's next-generation task management software. As the lead designer, it was my responsibility to provide a cohesive experience for all Amazon employees, regardless of role, for them to perform their duties with minimal churn and friction.</p>
+      <p class="pt-0">As a Senior UXD on the Amazon Software Builder Experience team, I was responsible for the next generation of task management solutions for Amazon Issue Management. In this role, I oversaw the overall design and deliverables, implementation, collected feedback from internal users. As the lead designer on the project, I was responsible for providing cohesive experiences for all Amazon employees, regardless of role, in order to perform their duties with minimal friction.</p>
       <ul class="icon-list">
         <li>Lead Designer, Task Management</li>
         <li>Led user testing and interview sessions</li>
         <li>Created prototypes (Figma and React-based) for internal testing and validation using organization design system</li>
-        <li>Contributor, Amazon Software Builder Experience - User Experience Design</li>
       </ul>
     </div>
   </div>
@@ -72,13 +72,13 @@ eleventyNavigation:
       </div>
     </div>
     <div class="col-12 col-md-6">
-      <p>As a Senior Software Engineer on the User Experience Design team, my responsibilities included creating user flows, wireframes, mockups, and proof-of-concepts for products and websites across Red Hat. In addition to my daily work, I was a core contributor to the PatternFly design system and lead the designer of the Red Hat Developer Design Manual.</p>
+      <p>As a Senior Interaction Designer on the User Experience Design team, my responsibilities included creating user flows, wireframes, mockups, and proofs-of-concepts for products and websites across Red Hat. As part of my role, I became a core contributor to the PatternFly design system and lead designer of the Red Hat Developer Design Manual.</p>
       <ul class="icon-list">
         <li>UX Designer, OpenShift</li>
-        <li>designer/developer: Red Hat Developer Design Manual, developers.redhat.com</li>
-        <li>designer/developer, kubevirt.io </li>
-        <li>interaction designer, Red Hat Managed Integration</li>
-        <li>Core Contributor to PatternFly Design System</li>
+        <li>Designer/Developer, Red Hat Developer Design Manual, developers.redhat.com</li>
+        <li>Designer/Developer, kubevirt.io</li>
+        <li>Interaction Designer, Red Had Managed Integration</li>
+        <li>Core Contributor, PatternFly Design System</li>
       </ul>
     </div>
   </div>
@@ -98,7 +98,7 @@ eleventyNavigation:
       </div>
     </div>
     <div class="col-12 col-md-6">
-      <p>As the User Experience Designer, I led the design and user research for the Account360 and Card360 platforms. Working with a team of developers to improve product usability, I focused primarily on easy to use and manageable interfaces for the financial industry, utilizing standards from across the industry.</p>
+      <p>As the first in-house designer, I led the design and user research for the Account360 and Card360 platforms, working with a team of developers to improve product usability. The primary focus for this work was on easy-to-use and manageable interfaces for the financial industry.</p>
       <ul class="icon-list">
         <li>Lead designer, Account360 and Card360 platforms</li>
         <li>Lead designer, product refreshes/corporate presentations and sales demonstrations</li>
@@ -114,7 +114,7 @@ eleventyNavigation:
     <div class="col-12 col-md-6">
       <h2 class="mt-0">Vice President, Design</h2>
       <h4 class="my-0">Switchback, Inc. (Holden, MA)</h4>
-      <p class="text-body-secondary">November 2010 - August 2021</p>
+      <p class="text-body-secondary">November 2010 - August 2021 / September 2023 - January 2025</p>
       <div class="pb-3 row-badges">
         <sl-badge variant="primary" pill>Sketch</sl-badge>
         <sl-badge variant="primary" pill>Adobe XD</sl-badge>
@@ -122,24 +122,22 @@ eleventyNavigation:
         <sl-badge variant="primary" pill>SCSS</sl-badge>
         <sl-badge variant="primary" pill>Wireframes</sl-badge>
       </div>
-      <ul class="icon-list">
-        <li class="text-muted">
-          Visual Designer &amp; Developer
-          <ul><li>November 2010 - December 2013</li></ul>
-        </li>
-        <li class="text-muted">
-          Web Designer
-          <ul><li>January 2003 - June 2008</li></ul>
-        </li>
-      </ul>
     </div>
     <div class="col-12 col-md-6">
-      <p>As a contractor, I was responsible for redesigning various internal software interfaces, focusing on customer requests and usability improvements.</p>
+      <p>As a contractor, I was the lead designer for multiple products and web interfaces including a redesign of an internal financial accounting product, an architectural drawing reference interface, and a time management system.</p>
       <ul class="icon-list">
-        <li>Worked on mobile-first web applications and data input tools for personal inventory systems and portfolios</li>
-        <li>Product designer from initial conception to finished product – creation of wireframes, Photoshop designs, test sites, and integration of data</li>
-        <li>PHP Development</li>
-        <li>Joomla and Drupal development and design</li>
+        <li class="text-muted">
+          Product Design
+          <ul><li>September 2024 - January 2025</li></ul>
+        </li>
+        <li class="text-muted">
+          Visual Design &amp; Development
+          <ul><li>November 2010 - December 2021</li></ul>
+        </li>
+        <li class="text-muted">
+          Web Design
+          <ul><li>January 2003 - June 2008</li></ul>
+        </li>
       </ul>
     </div>
   </div>
@@ -159,12 +157,12 @@ eleventyNavigation:
       </div>
     </div>
     <div class="col-12 col-md-6">
-      <p>As a UI Software Engineer, I worked with the development and design teams to turn the visual designs into working applications through best-practice usability techniques and user acceptance testing.</p>
+      <p>As a UI Software Engineer, I worked with the development and design teams to turn the visual designs into working applications.</p>
       <ul class="icon-list">
-        <li>Developer - software inventory and management system</li>
-        <li>Created and implemented wireframes/templates/mockups with UX Designer and UI Architect</li>
-        <li>Developed/tested initial phases of mobile/tablet design framework</li>
-        <li>Participated in daily Agile Scrum development practices</li>
+        <li>Developed and implemented a software inventory and management system</li>
+        <li>Created and developed wireframes, templates, and live mockups for development team</li>
+        <li>Developed continuity and usability structure for high-interaction areas</li>
+        <li>Assisted design and development with a fluid and responsive navigation structure</li>
       </ul>
     </div>
   </div>
