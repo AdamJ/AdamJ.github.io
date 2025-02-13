@@ -37,11 +37,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/howto/</loc>
-      <lastmod>2025-01-01T18:28:28.789Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/about/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
     </url>
@@ -78,11 +73,6 @@
   
     <url>
       <loc>https://www.adamjolicoeur.com/designs/district25/</loc>
-      <lastmod>2025-01-20T21:13:03.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/designs/task-it/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
     </url>
   
@@ -157,8 +147,18 @@
     </url>
   
     <url>
+      <loc>https://www.adamjolicoeur.com/designs/task-it/</loc>
+      <lastmod>2025-02-07T16:20:37.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/howto/</loc>
+      <lastmod>2025-02-07T19:04:52.227Z</lastmod>
+    </url>
+  
+    <url>
       <loc>https://www.adamjolicoeur.com/alfred/workflows/</loc>
-      <lastmod>2025-02-07T16:19:49.676Z</lastmod>
+      <lastmod>2025-02-13T18:28:27.166Z</lastmod>
     </url>
   
 </urlset>

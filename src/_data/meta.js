@@ -3,6 +3,7 @@ module.exports = {
   url: process.env.URL || "http://localhost:8080",
   siteName: "Adam Jolicoeur",
   siteDescription: "The portfolio site for Adam Jolicoeur.",
+  siteURL: "https://www.adamjolicoeur.com",
   authorName: "Adam J. Jolicoeur",
   siteMeta:"Adam, Adam Jolicoeur, Adam J. Jolicoeur, AdamJ, Jolicoeur, adamjolicoeur.com, www.adamjolicoeur.com, mindreeper2420, Portfolio, Design, UXD, UX Designer, UX Developer, UX Engineer, Design Technologist, CSS",
   packageVersion: "packageVersion",

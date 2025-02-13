@@ -1,0 +1,22 @@
+{
+  "connector": {
+      "name": "puppeteer"
+  },
+  "extends": [
+      "development",
+      "progressive-web-apps"
+  ],
+  "formatters": [
+      "html",
+      "summary"
+  ],
+  "hints": {
+      "babel-config/is-valid": "error",
+      "disown-opener": "error",
+      "highest-available-document-mode": "error",
+      "manifest-exists": "off",
+      "meta-charset-utf-8": "error",
+      "meta-viewport": "error"
+  },
+  "hintsTimeout": 10000
+}

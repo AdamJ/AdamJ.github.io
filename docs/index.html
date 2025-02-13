@@ -18,11 +18,11 @@
     <link rel="icon" type="image/png" size="16x16" href="/favicon-16x16.png">
     <link rel="icon" type="image/png" size="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" size="72x72" href="/favicon.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link type="application/manifest+json" rel="manifest" href="/site.webmanifest">
     <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald&display=swap" rel="stylesheet" crossorigin="anonymous">
     <!--<link
       rel="stylesheet"
       media="(prefers-color-scheme:light)"
@@ -30,12 +30,13 @@
     /> -->
     <link
       rel="stylesheet"
+      crossorigin="anonymous"
       
       href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/themes/dark.css"
       onload="document.documentElement.classList.add('sl-theme-dark');"
     />
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/shoelace-autoloader.js"></script>
-    <link href="/css/style.css" rel="stylesheet" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/shoelace-autoloader.js" crossorigin="anonymous"></script>
+    <link type="text/css" href="/css/style.css" rel="stylesheet" />
     <meta
       name="og:title"
       content="Adam Jolicoeur"
@@ -97,7 +98,7 @@
         />
       </svg>
     </label>
-    <a  href="/">
+    <a  href="/" title="Home">
     <div class="logo">
       <svg width="32" height="32" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M91.29 89.4546L96.1838 82.1483L101.709 89.4546H91.29Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
@@ -133,16 +134,14 @@
             Development
           </a>
         </li>
-      
-        
         <li class="nav-icon">
           <sl-dialog label="About Me" class="dialog-overview">
             <p>UX Designer, Developer, Program Manager. Creating software for the construction world. Previously at Red Hat and AWS. Collector of nerdy things...forever.</p>
-            <sl-button variant="text" href="https://www.linkedin.com/in/ajjolicoeur/">
+            <sl-button variant="text" href="https://www.linkedin.com/in/ajjolicoeur/" title="External link to LinkedIn profile">
               <sl-icon slot="prefix" name="linkedin"></sl-icon>
               LinkedIn profile
             </sl-button>
-            <sl-button variant="text" href="https://github.com/AdamJ">
+            <sl-button variant="text" href="https://github.com/AdamJ" title="External link to GitHub profile">
               <sl-icon slot="prefix" name="github"></sl-icon>
               GitHub README
             </sl-button>
@@ -390,16 +389,16 @@ html {
 <section class="section">
   <div class="section-block">
     <div class="hero-content">
-      <div class="title-content" style="margin-bottom: 2rem;">
+      <div class="title-content mb-4 pb-2">
         <h1 class="hero">Hi! I’m Adam, a Product Designer creating data-driven enterprise experiences.</h1>
         <p class="sub-header">My solutions help users traverse technical information with minimal friction.</p>
       </div>
-      <sl-button variant="primary" size="large" outline href="/resume">
+      <sl-button variant="primary" size="large" outline href="/resume" title="Jump to my resume">
         Resume
       </sl-button>
     </div>
-    <div style="position: absolute; bottom: 10%; text-align: center;">
-      <sl-button href="#recentProjects" variant="text">
+    <div class="position-absolute bottom-90 text-align-center">
+      <sl-button href="#recentProjects" variant="text" title="Jump to Recent Projects">
       <svg class="arrows">
         <path class="a1" d="M0 0 L30 32 L60 0"></path>
         <path class="a2" d="M0 20 L30 52 L60 20"></path>
@@ -418,7 +417,7 @@ html {
           <div class="project-information col">
             <h3 class="display-2">Task-It!</h3>
             <p class="display-3">Innovative work management system with clear presentation and project customization, <u>growing from a dozen users to 500 daily in 18 months.</u></p>
-            <sl-button variant="secondary" size="large" pill outline class="project-button" href="/designs/task-it/">
+            <sl-button variant="secondary" size="large" pill outline class="project-button" href="/designs/task-it/" title="Jump to Task-It page">
               <sl-icon slot="suffix" name="arrow-right"></sl-icon>
               Experience the Journey
             </sl-button>
@@ -431,7 +430,7 @@ html {
           <div class="project-information col">
             <h3 class="display-2">Application Lifecycle Management</h3>
             <p class="display-3">Creating a single source for team planning, <u>cutting delivery time through simplified project management.</u></p>
-            <sl-button variant="secondary" size="large" pill outline class="project-button" href="/designs/alm/">
+            <sl-button variant="secondary" size="large" pill outline class="project-button" href="/designs/alm/" title="Jump to ALM page">
               <sl-icon slot="suffix" name="arrow-right"></sl-icon>
               Experience the Journey
             </sl-button>
@@ -444,7 +443,7 @@ html {
           <div class="project-information col">
             <h3 class="display-2">Customer Engagement</h3>
             <p class="display-3">Informing users how best to reach their customers, <u>improving engagement rates by 10%.</u></p>
-            <sl-button variant="secondary" size="large" pill outline class="project-button" href="/designs/customer-engagement/">
+            <sl-button variant="secondary" size="large" pill outline class="project-button" href="/designs/customer-engagement/" title="Jump to Customer Engagement page">
               <sl-icon slot="suffix" name="arrow-right"></sl-icon>
               Experience the Journey
             </sl-button>
@@ -457,7 +456,7 @@ html {
           <div class="project-information col">
             <h3 class="display-2">Presentations</h3>
             <p class="display-3">Standardizing how information is shared, <u>improving communication and driving efficiency.</u></p>
-            <sl-button variant="secondary" size="large" pill outline class="project-button" href="/presentations/color-picker/">
+            <sl-button variant="secondary" size="large" pill outline class="project-button" href="/presentations/color-picker/" title="Jump to color picker presentation page">
               <sl-icon slot="suffix" name="arrow-right"></sl-icon>
               Follow along
             </sl-button>
@@ -480,13 +479,13 @@ html {
           <div class="col-4">
             <ul class="d-flex my-0 px-0" style="flex-direction: column;">
               <li>
-                <a class="icon-link" href="/" alt="Link to the home page">
-                  Home
+                <a class="icon-link" href="/about" alt="Link to the about page">
+                  About
                 </a>
               </li>
               <li>
-                <a class="icon-link" href="/about" alt="Link to the about page">
-                  About
+                <a class="icon-link" href="https://www.adamjolicoeur.com/researchandesign/blog" alt="Link to the home page">
+                  Blog
                 </a>
               </li>
             </ul>
@@ -528,12 +527,12 @@ html {
           <div class="col-3">
             <ul class="d-flex my-0 px-0" style="flex-direction: column;">
               <li>
-                <a href="https://www.linkedin.com/in/ajjolicoeur/" rel="noopener" class="icon-link pe-1" target="_blank" alt="External link to view my LinkedIn profile">
+                <a href="https://www.linkedin.com/in/ajjolicoeur/" rel="noopener noreferrer" class="icon-link pe-1" target="_blank" alt="External link to view my LinkedIn profile">
                   <fa-icon type="brands" name="linkedin" size="lg"></fa-icon>
                 </a>
               </li>
               <li>
-                <a href="https://github.com/AdamJ" rel="noopener" class="icon-link pe-1" target="_blank" alt="External link to view my GitHub profile">
+                <a href="https://github.com/AdamJ" rel="noopener noreferrer" class="icon-link pe-1" target="_blank" alt="External link to view my GitHub profile">
                   <fa-icon type="brands" name="github" size="lg"></fa-icon>
                 </a>
               </li>
@@ -542,12 +541,12 @@ html {
           <div class="col-3">
             <ul class="d-flex my-0 px-0" style="flex-direction: column;">
               <li>
-                <a href="/adamjol.bsky.social" rel="noopener" class="icon-link pe-1" target="_blank" alt="External link to view my Figma community profile">
+                <a href="/adamjol.bsky.social" rel="noopener noreferrer" class="icon-link pe-1" target="_blank" alt="External link to view my Figma community profile">
                   <fa-icon type="brands" name="bluesky" size="lg"></fa-icon>
                 </a>
               </li>
               <li>
-                <a href="https://codepen.io/AdamJolicoeur" rel="noopener" class="icon-link" target="_blank" alt="External link to view my Codepen.io profile">
+                <a href="https://codepen.io/AdamJolicoeur" rel="noopener noreferrer" class="icon-link" target="_blank" alt="External link to view my Codepen.io profile">
                   <fa-icon type="brands" name="codepen" size="lg"></fa-icon>
                 </a>
               </li>
@@ -580,11 +579,11 @@ html {
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/0ea2a7621c.js" crossorigin="anonymous"></script>
-  <script src="/js/prism.js"></script>
-  <script src="/js/icon-component.js"></script>
-  <script src="/js/jolicoeur.js"></script>
+  <script type="application/javascript" src="/js/prism.js"></script>
+  <script type="application/javascript" src="/js/icon-component.js"></script>
+  <script type="application/javascript" src="/js/jolicoeur.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQCZPW3PZN"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQCZPW3PZN" crossorigin="anonymous"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -592,7 +591,7 @@ html {
 
     gtag('config', 'G-XQCZPW3PZN');
   </script>
-  <link media="print" href="/css/print.css" rel="stylesheet" />
+  <link type="text/css" media="print" href="/css/print.css" rel="stylesheet" />
 </footer>
 
     <script>
