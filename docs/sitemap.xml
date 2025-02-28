@@ -132,11 +132,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/resume/</loc>
-      <lastmod>2025-01-20T21:13:03.000Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/testimonials/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
     </url>
@@ -157,8 +152,13 @@
     </url>
   
     <url>
+      <loc>https://www.adamjolicoeur.com/resume/</loc>
+      <lastmod>2025-02-13T18:29:42.000Z</lastmod>
+    </url>
+  
+    <url>
       <loc>https://www.adamjolicoeur.com/alfred/workflows/</loc>
-      <lastmod>2025-02-13T18:28:27.166Z</lastmod>
+      <lastmod>2025-02-28T14:40:37.135Z</lastmod>
     </url>
   
 </urlset>
