@@ -2,8 +2,8 @@
 permalink: /sitemap.xml
 eleventyExcludeFromCollections: true
 ---
-<?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset version="3.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sitemap="http://www.sitemaps.org/schemas/sitemap/0.9">
   {% for page in collections.all %}
     <url>
       <loc>https://www.adamjolicoeur.com{{ page.url | url }}</loc>

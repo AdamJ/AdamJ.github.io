@@ -156,12 +156,6 @@
 	},
 
 	{
-   "title":"Adam J. Jolicoeur",
-   "imgName":"adam-j.-jolicoeur",
-   "date":"adam-j.-jolicoeur"
-	},
-
-	{
    "title":"Testimonials",
    "imgName":"testimonials",
    "date":"testimonials"
@@ -183,6 +177,12 @@
    "title":"howto",
    "imgName":"howto",
    "date":"howto"
+	},
+
+	{
+   "title":"Adam J. Jolicoeur",
+   "imgName":"adam-j.-jolicoeur",
+   "date":"adam-j.-jolicoeur"
 	},
 
 	{

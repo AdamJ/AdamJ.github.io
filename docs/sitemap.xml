@@ -1,164 +1,196 @@
-<?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset version="3.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sitemap="http://www.sitemaps.org/schemas/sitemap/0.9">
   
     <url>
       <loc>https://www.adamjolicoeur.com/</loc>
       <lastmod>2024-06-10T18:56:16.540Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/streamdeck/examples/</loc>
       <lastmod>2024-06-10T18:56:16.543Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/reference/</loc>
       <lastmod>2024-09-04T18:39:07.857Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/posts/</loc>
       <lastmod>2024-11-14T14:48:46.333Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/404.html</loc>
       <lastmod>2024-11-18T20:28:10.028Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/archives/town-selectman/</loc>
       <lastmod>2025-01-01T18:28:28.784Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/journeys/journeys/</loc>
       <lastmod>2025-01-01T18:28:28.787Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/about/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/archives/archives/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/connect/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/credits/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/designs/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/designs/alm/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/designs/customer-engagement/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/designs/district25/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/designs/timetrak/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/development/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/development/code/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/development/examples/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/development/prototypes/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/apps/gamesandthings/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/icons-and-branding/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/icons-and-branding/icons/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/presentations/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/presentations/color-picker/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/presentations/portfolio/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/resume/</loc>
-      <lastmod>2025-01-20T21:13:03.000Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/testimonials/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/uses/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/designs/task-it/</loc>
       <lastmod>2025-02-07T16:20:37.000Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/howto/</loc>
       <lastmod>2025-02-07T19:04:52.227Z</lastmod>
+      <changefreq></changefreq>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/resume/</loc>
+      <lastmod>2025-02-13T18:29:42.000Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/alfred/workflows/</loc>
-      <lastmod>2025-02-13T18:28:27.166Z</lastmod>
+      <lastmod>2025-02-13T20:20:28.491Z</lastmod>
+      <changefreq></changefreq>
     </url>
   
 </urlset>
