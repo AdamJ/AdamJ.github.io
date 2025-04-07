@@ -1,7 +1,7 @@
 {
   "name": "jolicoeur",
   "title": "Adam J. Jolicoeur",
-  "version": "9.7.0",
+  "version": "9.17.1",
   "author": "Adam J. Jolicoeur",
   "homepage": "https://www.adamjolicoeur.com",
   "license": "Apache-2.0",
@@ -40,11 +40,11 @@
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-activity-feed": "^2.0.0",
     "@11ty/eleventy-img": "^6.0.1",
-    "@11ty/eleventy-navigation": "^0.3.5",
+    "@11ty/eleventy-navigation": "^1.0.4",
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
-    "@11ty/eleventy-plugin-rss": "^2.0.2",
+    "@11ty/eleventy-plugin-rss": "^2.0.3",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "@11ty/import": "^1.0.9",
+    "@11ty/import": "^1.0.15",
     "@hint/hint-axe": "^4.4.21",
     "@netlify/plugin-lighthouse": "^6.0.0",
     "autoprefixer": "10.4.14",
@@ -73,7 +73,7 @@
   ],
   "dependencies": {
     "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",
-    "@shoelace-style/shoelace": "^2.18.0",
-    "bootstrap": "^5.3.3"
+    "@shoelace-style/shoelace": "^2.20.1",
+    "bootstrap": "^5.3.5"
   }
 }
