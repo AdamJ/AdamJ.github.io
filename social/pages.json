@@ -18,12 +18,6 @@
 	},
 
 	{
-   "title":"Adam Jolicoeur",
-   "imgName":"home",
-   "date":"home"
-	},
-
-	{
    "title":"Oops! Not Found",
    "imgName":"oops-not-found",
    "date":"oops-not-found"
@@ -171,12 +165,6 @@
    "title":"Task-It!",
    "imgName":"task-it",
    "date":"task-it"
-	},
-
-	{
-   "title":"howto",
-   "imgName":"howto",
-   "date":"howto"
 	},
 
 	{
