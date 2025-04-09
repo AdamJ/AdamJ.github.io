@@ -17,6 +17,11 @@
     </url>
   
     <url>
+      <loc>https://www.adamjolicoeur.com/posts/</loc>
+      <lastmod>2024-11-14T14:48:46.333Z</lastmod>
+    </url>
+  
+    <url>
       <loc>https://www.adamjolicoeur.com/404.html</loc>
       <lastmod>2024-11-18T20:28:10.028Z</lastmod>
     </url>
@@ -142,13 +147,28 @@
     </url>
   
     <url>
+      <loc>https://www.adamjolicoeur.com/howto/</loc>
+      <lastmod>2025-02-07T19:04:52.227Z</lastmod>
+    </url>
+  
+    <url>
       <loc>https://www.adamjolicoeur.com/resume/</loc>
       <lastmod>2025-02-13T18:29:42.000Z</lastmod>
     </url>
   
     <url>
+      <loc>https://www.adamjolicoeur.com/support/</loc>
+      <lastmod>2025-03-16T00:30:01.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/marketing/</loc>
+      <lastmod>2025-04-09T15:51:10.333Z</lastmod>
+    </url>
+  
+    <url>
       <loc>https://www.adamjolicoeur.com/alfred/workflows/</loc>
-      <lastmod>2025-04-08T14:08:24.076Z</lastmod>
+      <lastmod>2025-04-09T19:28:26.607Z</lastmod>
     </url>
   
 </urlset>

@@ -14,38 +14,6 @@ const markdownItHighlightJS = require('markdown-it-highlightjs')
 const emojiReadTime = require("@11tyrocks/eleventy-plugin-emoji-readtime");
 const packageVersion = require("./package.json").version;
 
-// async function run() {
-//   const { Importer } = await import("@11ty/import");
-
-//   let importer = new Importer();
-
-//   importer.setOutputFolder("./src/social/"); // --output
-//   importer.setCacheDuration("24h"); // --cacheduration
-//   importer.setVerbose(true); // --quiet
-//   importer.setSafeMode(false); // --overwrite
-//   importer.setDryRun(false); // --dryrun
-//   importer.setDraftsFolder("drafts");
-//   importer.setAssetsFolder("assets");
-//   importer.setAssetReferenceType("relative"); // --assetrefs
-
-//   // Sources (one or more)
-//   importer.addSource("bluesky", "adamjol.bsky.social");
-
-//   let entries = await importer.getEntries({
-//       contentType: "markdown", // --format
-//   });
-
-//   await importer.toFiles(entries);
-
-//   importer.logResults();
-// }
-
-// Execute the async function
-// run().catch(console.error);
-
-// Execute the async function
-// run().catch(console.error);
-
 const mdOptions = {
   html: true,
   breaks: true,
@@ -93,12 +61,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/webfonts");
   eleventyConfig.addPassthroughCopy("src/cache-polyfill.js");
   eleventyConfig.addPassthroughCopy("src/CNAME");
-  eleventyConfig.addPassthroughCopy("src/favicon.*");
-  eleventyConfig.addPassthroughCopy("src/favicon-16x16.png");
-  eleventyConfig.addPassthroughCopy("src/favicon-32x32.png");
-  eleventyConfig.addPassthroughCopy("src/apple-touch-icon.png");
-  eleventyConfig.addPassthroughCopy("src/android-chrome-192x192.png");
-  eleventyConfig.addPassthroughCopy("src/android-chrome-512x512.png");
+  eleventyConfig.addPassthroughCopy("src/icon-16.png");
+  eleventyConfig.addPassthroughCopy("src/icon-32.png");
+  eleventyConfig.addPassthroughCopy("src/icon-180.png");
+  eleventyConfig.addPassthroughCopy("src/icon-192.png");
+  eleventyConfig.addPassthroughCopy("src/icon-512.png");
+  eleventyConfig.addPassthroughCopy("src/android-launchericon-72-72.png");
   eleventyConfig.addPassthroughCopy("src/keybase.txt");
   eleventyConfig.addPassthroughCopy("src/manifest.json");
   eleventyConfig.addPassthroughCopy("src/site.webmanifest");

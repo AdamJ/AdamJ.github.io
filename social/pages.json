@@ -18,6 +18,12 @@
 	},
 
 	{
+   "title":"Adam Jolicoeur",
+   "imgName":"home",
+   "date":"home"
+	},
+
+	{
    "title":"Oops! Not Found",
    "imgName":"oops-not-found",
    "date":"oops-not-found"
@@ -168,9 +174,27 @@
 	},
 
 	{
+   "title":"howto",
+   "imgName":"howto",
+   "date":"howto"
+	},
+
+	{
    "title":"Adam J. Jolicoeur",
    "imgName":"adam-j.-jolicoeur",
    "date":"adam-j.-jolicoeur"
+	},
+
+	{
+   "title":"Support",
+   "imgName":"support",
+   "date":"support"
+	},
+
+	{
+   "title":"Marketing",
+   "imgName":"marketing",
+   "date":"marketing"
 	},
 
 	{
