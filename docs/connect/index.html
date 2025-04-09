@@ -5,21 +5,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="@Adam, Adam Jolicoeur, Adam J. Jolicoeur, AdamJ, Jolicoeur, adamjolicoeur.com, www.adamjolicoeur.com, mindreeper2420, Portfolio, Design, UXD, UX Designer, UX Developer, UX Engineer, Design Technologist, CSS" />
+    <meta name="robots" content="noindex, nofollow">
     <title>Connect | Adam Jolicoeur</title>
     <meta
       name="description"
       content="The portfolio site for Adam Jolicoeur."
     />
     <meta name="generator" content="Eleventy">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" size="192x192" href="/icons-192.png">
-    <link rel="icon" type="image/png" size="512x512" href="/icons-512.png">
-    <link rel="icon" type="image/png" size="48x48" href="/favicon.ico">
-    <link rel="icon" type="image/png" size="16x16" href="/favicon-16x16.png">
-    <link rel="icon" type="image/png" size="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" size="72x72" href="/favicon.png">
-    <link type="application/manifest+json" rel="manifest" href="/site.webmanifest">
-    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Adam J. Jolicoeur" />
+    <meta property="og:url" content="https://www.adamjolicoeur.me" />
+    <meta property="og:description" content="The portfolio site for Adam Jolicoeur.">
+    <meta property="og:site_name" content="Adam J. Jolicoeur">
+    <meta property="og:type" content="website">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon-180.png">
+    <link rel="icon" type="image/png" size="16x16" href="/icon-16.png">
+    <link rel="icon" type="image/png" size="32x32" href="/icon-32.png">
+    <link rel="icon" type="image/png" size="192x192" href="/icon-192.png">
+    <link rel="icon" type="image/png" size="512x512" href="/icon-512.png">
+    <link rel="icon" type="image/png" size="72x72" href="/android-launchericon-72-72.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#111519">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="PWA Starter" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald&display=swap" rel="stylesheet" crossorigin="anonymous">
@@ -327,6 +337,15 @@
 
       openButton.addEventListener('click', () => dialog.show());
       closeButton.addEventListener('click', () => dialog.hide());
+    </script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.onload = () => {
+          navigator.serviceWorker.register(
+            '/sw.js'
+          );
+        }
+      }
     </script>
     
   </body>

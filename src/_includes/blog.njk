@@ -117,5 +117,14 @@
       openButton.addEventListener('click', () => dialog.show());
       closeButton.addEventListener('click', () => dialog.hide());
     </script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.onload = () => {
+          navigator.serviceWorker.register(
+            '/sw.js'
+          );
+        }
+      }
+    </script>
   </body>
 </html>
