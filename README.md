@@ -1,4 +1,4 @@
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/AdamJ/adamj.github.io?style=for-the-badge) ![Netlify](https://img.shields.io/netlify/89d7b30b-7d13-4c43-b362-4cc0b8bc5f4e?color=%2315847D&style=for-the-badge) ![GitHub last commit](https://img.shields.io/github/last-commit/AdamJ/adamj.github.io?color=%2321476b&style=for-the-badge) ![Static Badge](https://img.shields.io/badge/22-22?style=for-the-badge&logo=NVM&logoColor=%23F4DD4B&label=NVM&color=232147&link=https%3A%2F%2Fgithub.com%2FAdamJ%2FAdamJ.github.io%2Fblob%2Fmain%2F.nvmrc)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/AdamJ/adamj.github.io?style=for-the-badge) ![GitHub last commit](https://img.shields.io/github/last-commit/AdamJ/adamj.github.io?color=%2321476b&style=for-the-badge) ![Static Badge](https://img.shields.io/badge/22-22?style=for-the-badge&logo=NVM&logoColor=%23F4DD4B&label=NVM&color=232147&link=https%3A%2F%2Fgithub.com%2FAdamJ%2FAdamJ.github.io%2Fblob%2Fmain%2F.nvmrc)
 
 
 # Welcome
@@ -31,7 +31,7 @@ The project uses NodeJS as it's runtime environment. Currently, `22.6.0` is the 
 
 ### Automation & Releases
 
-**Automation** is handled by GitHub Actions, which sets Labels for pull requests and Releases versioning. I use [Netlify](https://www.netlify.com) to create pull request previews.
+**Automation** is handled by GitHub Actions, which sets Labels for pull requests and Releases versioning. I use [Cloudflare](https://www.cloudflare.com) to create pull request previews.
 
 **Releases** are done via the [release-drafter](https://github.com/marketplace/actions/release-drafter) GitHub Action. Release notes are automatically generated from the pull request title and description.
 
