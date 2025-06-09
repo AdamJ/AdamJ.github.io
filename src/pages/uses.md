@@ -81,8 +81,8 @@ eleventyNavigation:
 
 - I like to set my device DNS to [1.1.1.1](https://one.one.one.one/), which is a free, private DNS from Cloudflare.
 - Speaking of [Cloudflare](https://www.cloudflare.com/), I use it to monitor site traffic and such. Basic usage but I find it helpful.
-- For the last six years, I've used [Netlify](https://www.netlify.com/) for previewing pull requests, running prototype sites, and user testing.
-- All of my sites are published using [GitHub Pages](https://pages.github.com/) with various actions (repository dependent) dictating how they are published.
+- For the last six years, I've used [Netlify](https://www.netlify.com/) for previewing pull requests, running prototype sites, and user testing, but have recently switched to [Cloudflare Workers](https://workers.cloudflare.com).
+- All of my sites are published using [Cloudflare Pages](https://pages.cloudflare.com/) with various actions (repository dependent) dictating how they are published.
 
 ## Desktop Apps
 

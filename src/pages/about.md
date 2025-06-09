@@ -7,6 +7,7 @@ description: "Driven and passionate senior user experience designer with a backg
 primaryURL: /resume
 primaryAction: resume
 headerButton: true
+tocBlock: true
 eleventyNavigation:
   key: About
   order: 1

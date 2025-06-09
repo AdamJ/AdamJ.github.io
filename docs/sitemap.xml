@@ -22,11 +22,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/404.html</loc>
-      <lastmod>2024-11-18T20:28:10.028Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/archives/town-selectman/</loc>
       <lastmod>2025-01-01T18:28:28.784Z</lastmod>
     </url>
@@ -43,11 +38,6 @@
   
     <url>
       <loc>https://www.adamjolicoeur.com/archives/archives/</loc>
-      <lastmod>2025-01-20T21:13:03.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/connect/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
     </url>
   
@@ -157,18 +147,38 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/support/</loc>
-      <lastmod>2025-03-16T00:30:01.000Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/marketing/</loc>
       <lastmod>2025-04-09T15:51:10.333Z</lastmod>
     </url>
   
     <url>
+      <loc>https://www.adamjolicoeur.com/connect/</loc>
+      <lastmod>2025-04-17T15:34:36.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/404.html</loc>
+      <lastmod>2025-05-17T15:21:56.768Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/apps/</loc>
+      <lastmod>2025-06-09T11:37:54.124Z</lastmod>
+    </url>
+  
+    <url>
       <loc>https://www.adamjolicoeur.com/alfred/workflows/</loc>
-      <lastmod>2025-04-09T19:28:26.607Z</lastmod>
+      <lastmod>2025-06-09T11:37:54.975Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/apps/gamesandthings/releases/</loc>
+      <lastmod>2025-06-09T11:37:56.187Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/apps/gamesandthings/support/</loc>
+      <lastmod>2025-06-09T11:37:56.278Z</lastmod>
     </url>
   
 </urlset>
