@@ -17,6 +17,11 @@
     </url>
   
     <url>
+      <loc>https://www.adamjolicoeur.com/contact/</loc>
+      <lastmod>2024-11-04T14:31:55.000Z</lastmod>
+    </url>
+  
+    <url>
       <loc>https://www.adamjolicoeur.com/posts/</loc>
       <lastmod>2024-11-14T14:48:46.333Z</lastmod>
     </url>
@@ -32,17 +37,7 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/about/</loc>
-      <lastmod>2025-01-20T21:13:03.000Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/archives/archives/</loc>
-      <lastmod>2025-01-20T21:13:03.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/credits/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
     </url>
   
@@ -92,11 +87,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/apps/gamesandthings/</loc>
-      <lastmod>2025-01-20T21:13:03.000Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/icons-and-branding/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
     </url>
@@ -127,11 +117,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/uses/</loc>
-      <lastmod>2025-01-20T21:13:03.000Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/designs/task-it/</loc>
       <lastmod>2025-02-07T16:20:37.000Z</lastmod>
     </url>
@@ -139,11 +124,6 @@
     <url>
       <loc>https://www.adamjolicoeur.com/howto/</loc>
       <lastmod>2025-02-07T19:04:52.227Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/resume/</loc>
-      <lastmod>2025-02-13T18:29:42.000Z</lastmod>
     </url>
   
     <url>
@@ -162,23 +142,53 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/apps/</loc>
-      <lastmod>2025-06-09T11:37:54.124Z</lastmod>
+      <loc>https://www.adamjolicoeur.com/about/</loc>
+      <lastmod>2025-06-09T12:20:32.000Z</lastmod>
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/alfred/workflows/</loc>
-      <lastmod>2025-06-09T11:37:54.975Z</lastmod>
+      <loc>https://www.adamjolicoeur.com/apps/</loc>
+      <lastmod>2025-06-09T12:20:32.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/credits/</loc>
+      <lastmod>2025-06-09T12:20:32.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/apps/gamesandthings/</loc>
+      <lastmod>2025-06-09T12:20:32.000Z</lastmod>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/apps/gamesandthings/releases/</loc>
-      <lastmod>2025-06-09T11:37:56.187Z</lastmod>
+      <lastmod>2025-06-09T12:20:32.000Z</lastmod>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/apps/gamesandthings/support/</loc>
-      <lastmod>2025-06-09T11:37:56.278Z</lastmod>
+      <lastmod>2025-06-09T12:20:32.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/resume/</loc>
+      <lastmod>2025-06-09T12:20:32.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/uses/</loc>
+      <lastmod>2025-06-09T12:20:32.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/alfred/workflows/</loc>
+      <lastmod>2025-06-09T15:39:32.215Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/apps/privacy/</loc>
+      <lastmod>2025-06-09T15:39:33.259Z</lastmod>
     </url>
   
 </urlset>
