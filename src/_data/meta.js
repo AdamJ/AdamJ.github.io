@@ -18,5 +18,6 @@ module.exports = {
   devtoURL: "https://dev.to/adamj",
   mastodonUsername: "@adamjol@mastodon.world",
   codepenURL: "https://codepen.io/AdamJolicoeur",
-  figmaURL: "https://figma.com/@AdamJ"
+  figmaURL: "https://figma.com/@AdamJ",
+  blogURL: "https://blog.adamjolicoeur.com"
 };

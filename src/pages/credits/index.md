@@ -9,7 +9,7 @@ Giving credit where credit is due, this page is based off of the [Credits](https
 
 ---
 
-This site was built using [Eleventy](https://www.11ty.dev/), hosted on [GitHub Pages](https://pages.github.com/), with previews deployed with [Netlify](https://www.netlify.com/). Certificate courtesy of GitHub Pages and [Let's Encrypt](https://letsencrypt.org/).
+This site was built using [Eleventy](https://www.11ty.dev/), hosted on [Cloudflare Pages](https://cloudflare.com/), with previews deployed with [Cloudflare](https://www.cloudflare.com/). Certificate courtesy of Cloudflare and [Let's Encrypt](https://letsencrypt.org/).
 
 ## Libraries
 
@@ -62,5 +62,5 @@ A custom icon component ([icon-component.js](https://github.com/AdamJ/adamjolico
   - design tool for creating the overall design, color palette, and a11y checking.
 - [GitHub](https://github.com/)
   - for hosting code and site deployment.
-- [Netlify](https://www.netlify.com/)
+- [Cloudflare](https://www.cloudflare.com/)
   - testing any site changes via pull requests before merging to main.

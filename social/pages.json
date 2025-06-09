@@ -24,12 +24,6 @@
 	},
 
 	{
-   "title":"Oops! Not Found",
-   "imgName":"oops-not-found",
-   "date":"oops-not-found"
-	},
-
-	{
    "title":"Archived",
    "imgName":"archived",
    "date":"archived"
@@ -51,12 +45,6 @@
    "title":"Archived Pages",
    "imgName":"archived-pages",
    "date":"archived-pages"
-	},
-
-	{
-   "title":"Connect",
-   "imgName":"connect",
-   "date":"connect"
 	},
 
 	{
@@ -186,20 +174,44 @@
 	},
 
 	{
-   "title":"Support",
-   "imgName":"support",
-   "date":"support"
-	},
-
-	{
    "title":"Marketing",
    "imgName":"marketing",
    "date":"marketing"
 	},
 
 	{
+   "title":"Connect",
+   "imgName":"connect",
+   "date":"connect"
+	},
+
+	{
+   "title":"Oops! Not Found",
+   "imgName":"oops-not-found",
+   "date":"oops-not-found"
+	},
+
+	{
+   "title":"Apps",
+   "imgName":"apps",
+   "date":"apps"
+	},
+
+	{
    "title":"Alfred Workflows",
    "imgName":"alfred-workflows",
    "date":"alfred-workflows"
+	},
+
+	{
+   "title":"GamesAndThings Releases",
+   "imgName":"gamesandthings-releases",
+   "date":"gamesandthings-releases"
+	},
+
+	{
+   "title":"Support",
+   "imgName":"support",
+   "date":"support"
 	}
 ]

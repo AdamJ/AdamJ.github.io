@@ -12,7 +12,7 @@ eleventyNavigation:
 <div class="container mb-2 py-2 px-0">
   <div class="row px-0 pb-3 mx-0">
     <div class="col-12 col-md-6">
-      <h2 class="mt-0">Lead Program Manager &amp; UX Designer</h2>
+      <h2 class="mt-0">Lead Program Manager &amp; Designer</h2>
       <h4 class="my-0">Component Assembly Systems, Inc. (Pelham, NY)</h4>
       <p class="text-body-secondary">January 2024 - Present</p>
       <div class="pb-3 row-badges">
@@ -24,8 +24,7 @@ eleventyNavigation:
       </div>
     </div>
     <div class="col-12 col-md-6">
-      <p class="pt-0">As the Lead Program Manager and UX Designer, I am responsible for creating product roadmaps,
-maintaining team goals in order to complete deliverables, and managing the internal software suite.</p>
+      <p class="pt-0">As the Lead Program Manager and Designer, I am responsible for creating product roadmaps, maintaining team goals in order to complete deliverables, and managing the internal software suite.</p>
       <ul class="icon-list">
         <li>Lead Program Manager, CAS Strategic Technology Group</li>
         <li>Lead UX Designer, StructureCloud</li>
