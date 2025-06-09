@@ -18,6 +18,12 @@
 	},
 
 	{
+   "title":"Contact",
+   "imgName":"contact",
+   "date":"contact"
+	},
+
+	{
    "title":"Adam Jolicoeur",
    "imgName":"home",
    "date":"home"
@@ -36,21 +42,9 @@
 	},
 
 	{
-   "title":"About",
-   "imgName":"about",
-   "date":"about"
-	},
-
-	{
    "title":"Archived Pages",
    "imgName":"archived-pages",
    "date":"archived-pages"
-	},
-
-	{
-   "title":"Credits",
-   "imgName":"credits",
-   "date":"credits"
 	},
 
 	{
@@ -108,12 +102,6 @@
 	},
 
 	{
-   "title":"Games and Things",
-   "imgName":"games-and-things",
-   "date":"games-and-things"
-	},
-
-	{
    "title":"Icons and Branding",
    "imgName":"icons-and-branding",
    "date":"icons-and-branding"
@@ -150,12 +138,6 @@
 	},
 
 	{
-   "title":"Uses",
-   "imgName":"uses",
-   "date":"uses"
-	},
-
-	{
    "title":"Task-It!",
    "imgName":"task-it",
    "date":"task-it"
@@ -165,12 +147,6 @@
    "title":"howto",
    "imgName":"howto",
    "date":"howto"
-	},
-
-	{
-   "title":"Adam J. Jolicoeur",
-   "imgName":"adam-j.-jolicoeur",
-   "date":"adam-j.-jolicoeur"
 	},
 
 	{
@@ -192,15 +168,27 @@
 	},
 
 	{
+   "title":"About",
+   "imgName":"about",
+   "date":"about"
+	},
+
+	{
    "title":"Apps",
    "imgName":"apps",
    "date":"apps"
 	},
 
 	{
-   "title":"Alfred Workflows",
-   "imgName":"alfred-workflows",
-   "date":"alfred-workflows"
+   "title":"Credits",
+   "imgName":"credits",
+   "date":"credits"
+	},
+
+	{
+   "title":"Games and Things",
+   "imgName":"games-and-things",
+   "date":"games-and-things"
 	},
 
 	{
@@ -213,5 +201,29 @@
    "title":"Support",
    "imgName":"support",
    "date":"support"
+	},
+
+	{
+   "title":"Adam J. Jolicoeur",
+   "imgName":"adam-j.-jolicoeur",
+   "date":"adam-j.-jolicoeur"
+	},
+
+	{
+   "title":"Uses",
+   "imgName":"uses",
+   "date":"uses"
+	},
+
+	{
+   "title":"Alfred Workflows",
+   "imgName":"alfred-workflows",
+   "date":"alfred-workflows"
+	},
+
+	{
+   "title":"Privacy Policy",
+   "imgName":"privacy-policy",
+   "date":"privacy-policy"
 	}
 ]
