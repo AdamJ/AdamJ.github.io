@@ -130,11 +130,11 @@ eleventyNavigation:
         </div>
       </div>
     </div>
-<!-- Games and Things -->
+<!-- Collect Some More -->
     <div class="col">
       <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/');">
         <div class="d-flex flex-column p-5 pb-3 text-white background-overlay rounded-5">
-          <h2 class="mt-5 mb-1 text-align-center text-white text-shadow-1">Games and Things</h2>
+          <h2 class="mt-5 mb-1 text-align-center text-white text-shadow-1">Collect Some More</h2>
           <p class="text-align-center text-white mt-1 mb-4">a collections app for iOS</p>
           <ul class="d-flex list-unstyled mt-auto">
             <li class="me-auto">
@@ -143,7 +143,7 @@ eleventyNavigation:
               </a>
             </li>
             <li>
-              <a href="{{ "/apps/gamesandthings/" | url }}" alt="Documentation for the app" class="card-link">
+              <a href="{{ "/apps/collectsomemore/" | url }}" alt="Documentation for the app" class="card-link">
                 <i class="fa-solid fa-link"></i>
                 Documentation
               </a>
