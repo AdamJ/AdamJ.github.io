@@ -1,8 +1,8 @@
 ---
-title: "GamesAndThings Releases"
+title: "CollectSomeMore Releases"
 date: git Last Modified
 abbreviation: "gamereleases"
-description: "A list of releases of games and things."
+description: "A list of releases of the CollectSomeMore app"
 eleventyNavigation:
   key: releases
   order: 21

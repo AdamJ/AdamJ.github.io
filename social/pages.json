@@ -18,12 +18,6 @@
 	},
 
 	{
-   "title":"Contact",
-   "imgName":"contact",
-   "date":"contact"
-	},
-
-	{
    "title":"Adam Jolicoeur",
    "imgName":"home",
    "date":"home"
@@ -186,24 +180,6 @@
 	},
 
 	{
-   "title":"Games and Things",
-   "imgName":"games-and-things",
-   "date":"games-and-things"
-	},
-
-	{
-   "title":"GamesAndThings Releases",
-   "imgName":"gamesandthings-releases",
-   "date":"gamesandthings-releases"
-	},
-
-	{
-   "title":"Support",
-   "imgName":"support",
-   "date":"support"
-	},
-
-	{
    "title":"Adam J. Jolicoeur",
    "imgName":"adam-j.-jolicoeur",
    "date":"adam-j.-jolicoeur"
@@ -216,14 +192,38 @@
 	},
 
 	{
+   "title":"Contact",
+   "imgName":"contact",
+   "date":"contact"
+	},
+
+	{
    "title":"Alfred Workflows",
    "imgName":"alfred-workflows",
    "date":"alfred-workflows"
 	},
 
 	{
+   "title":"Collect Some More",
+   "imgName":"collect-some-more",
+   "date":"collect-some-more"
+	},
+
+	{
    "title":"Privacy Policy",
    "imgName":"privacy-policy",
    "date":"privacy-policy"
+	},
+
+	{
+   "title":"CollectSomeMore Releases",
+   "imgName":"collectsomemore-releases",
+   "date":"collectsomemore-releases"
+	},
+
+	{
+   "title":"Support",
+   "imgName":"support",
+   "date":"support"
 	}
 ]

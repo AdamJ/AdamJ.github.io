@@ -27,19 +27,51 @@
   },
   "items": [
     {
-      "id": "/apps/privacy/",
-      "url": "/apps/privacy/",
+      "id": "/apps/collectsomemore/support/",
+      "url": "/apps/collectsomemore/support/",
+      "title": "Support",
+      "date_published": "2025-06-12T18:43:29Z",
+      "date": "2025-06-12T18:43:29Z"
+    }
+    ,
+    {
+      "id": "/apps/collectsomemore/releases/",
+      "url": "/apps/collectsomemore/releases/",
+      "title": "CollectSomeMore Releases",
+      "date_published": "2025-06-12T18:43:29Z",
+      "date": "2025-06-12T18:43:29Z"
+    }
+    ,
+    {
+      "id": "/apps/collectsomemore/privacy/",
+      "url": "/apps/collectsomemore/privacy/",
       "title": "Privacy Policy",
-      "date_published": "2025-06-09T15:39:33Z",
-      "date": "2025-06-09T15:39:33Z"
+      "date_published": "2025-06-12T18:43:29Z",
+      "date": "2025-06-12T18:43:29Z"
+    }
+    ,
+    {
+      "id": "/apps/collectsomemore/",
+      "url": "/apps/collectsomemore/",
+      "title": "Collect Some More",
+      "date_published": "2025-06-12T18:43:28Z",
+      "date": "2025-06-12T18:43:28Z"
     }
     ,
     {
       "id": "/alfred/workflows/",
       "url": "/alfred/workflows/",
       "title": "Alfred Workflows",
-      "date_published": "2025-06-09T15:39:32Z",
-      "date": "2025-06-09T15:39:32Z"
+      "date_published": "2025-06-12T18:43:28Z",
+      "date": "2025-06-12T18:43:28Z"
+    }
+    ,
+    {
+      "id": "/contact/",
+      "url": "/contact/",
+      "title": "Contact",
+      "date_published": "2025-06-09T16:14:30Z",
+      "date": "2025-06-09T16:14:30Z"
     }
     ,
     {
@@ -54,30 +86,6 @@
       "id": "/resume/",
       "url": "/resume/",
       "title": "Adam J. Jolicoeur",
-      "date_published": "2025-06-09T12:20:32Z",
-      "date": "2025-06-09T12:20:32Z"
-    }
-    ,
-    {
-      "id": "/apps/gamesandthings/support/",
-      "url": "/apps/gamesandthings/support/",
-      "title": "Support",
-      "date_published": "2025-06-09T12:20:32Z",
-      "date": "2025-06-09T12:20:32Z"
-    }
-    ,
-    {
-      "id": "/apps/gamesandthings/releases/",
-      "url": "/apps/gamesandthings/releases/",
-      "title": "GamesAndThings Releases",
-      "date_published": "2025-06-09T12:20:32Z",
-      "date": "2025-06-09T12:20:32Z"
-    }
-    ,
-    {
-      "id": "/apps/gamesandthings/",
-      "url": "/apps/gamesandthings/",
-      "title": "Games and Things",
       "date_published": "2025-06-09T12:20:32Z",
       "date": "2025-06-09T12:20:32Z"
     }
@@ -272,14 +280,6 @@
       "title": "Archived",
       "date_published": "2025-01-01T18:28:28Z",
       "date": "2025-01-01T18:28:28Z"
-    }
-    ,
-    {
-      "id": "/contact/",
-      "url": "/contact/",
-      "title": "Contact",
-      "date_published": "2024-11-04T14:31:55Z",
-      "date": "2024-11-04T14:31:55Z"
     }
     ,
     {

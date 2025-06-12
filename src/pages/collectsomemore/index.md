@@ -1,10 +1,10 @@
 ---
-title: "Games and Things"
+title: "Collect Some More"
 date: git Last Modified
 abbreviation: "games"
 description: "An app for cataloging your collections."
 eleventyNavigation:
-  key: gamesandthings
+  key: collectsomemore
   order: 20
 ---
 
@@ -14,4 +14,8 @@ My app is currently available through TestFlight while I get it to a releasable 
 
 ### Releases
 
-Releases are detailed here: [releases](releases)
+Releases are listed on the [releases](releases) page.
+
+### Privacy Policy
+
+Read the privacy policy [here](privacy).

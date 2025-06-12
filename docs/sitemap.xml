@@ -17,11 +17,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/contact/</loc>
-      <lastmod>2024-11-04T14:31:55.000Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/posts/</loc>
       <lastmod>2024-11-14T14:48:46.333Z</lastmod>
     </url>
@@ -157,21 +152,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/apps/gamesandthings/</loc>
-      <lastmod>2025-06-09T12:20:32.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/apps/gamesandthings/releases/</loc>
-      <lastmod>2025-06-09T12:20:32.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/apps/gamesandthings/support/</loc>
-      <lastmod>2025-06-09T12:20:32.000Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/resume/</loc>
       <lastmod>2025-06-09T12:20:32.000Z</lastmod>
     </url>
@@ -182,13 +162,33 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/alfred/workflows/</loc>
-      <lastmod>2025-06-09T15:39:32.215Z</lastmod>
+      <loc>https://www.adamjolicoeur.com/contact/</loc>
+      <lastmod>2025-06-09T16:14:30.000Z</lastmod>
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/apps/privacy/</loc>
-      <lastmod>2025-06-09T15:39:33.259Z</lastmod>
+      <loc>https://www.adamjolicoeur.com/alfred/workflows/</loc>
+      <lastmod>2025-06-12T18:43:28.565Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/apps/collectsomemore/</loc>
+      <lastmod>2025-06-12T18:43:28.652Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/apps/collectsomemore/privacy/</loc>
+      <lastmod>2025-06-12T18:43:29.516Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/apps/collectsomemore/releases/</loc>
+      <lastmod>2025-06-12T18:43:29.606Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/apps/collectsomemore/support/</loc>
+      <lastmod>2025-06-12T18:43:29.694Z</lastmod>
     </url>
   
 </urlset>
