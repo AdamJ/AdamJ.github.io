@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* stylelint-disable */
 /*!
- * Bootstrap Grid v5.3.5 (https://getbootstrap.com/)
+ * Bootstrap Grid v5.3.6 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
@@ -5470,8 +5470,8 @@ sl-button.project-button::part(base):hover {
 }
 @media (max-width: 776px) {
   .menu:hover {
-    background: #fafafa;
-    color: #1a1a1a;
+    background: rgb(249.6341463415, 249.6341463415, 250.3658536585);
+    color: rgb(25.5, 25.5, 25.5);
     transition: all ease-in-out 300ms;
     cursor: pointer;
   }
