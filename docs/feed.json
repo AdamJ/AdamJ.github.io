@@ -27,43 +27,59 @@
   },
   "items": [
     {
+      "id": "/alfred/workflows/",
+      "url": "/alfred/workflows/",
+      "title": "Alfred Workflows",
+      "date_published": "2025-06-13T15:52:22Z",
+      "date": "2025-06-13T15:52:22Z"
+    }
+    ,
+    {
+      "id": "/reference/",
+      "url": "/reference/",
+      "title": "Reference links",
+      "date_published": "2025-06-13T15:17:40Z",
+      "date": "2025-06-13T15:17:40Z"
+    }
+    ,
+    {
+      "id": "/development/",
+      "url": "/development/",
+      "title": "Development",
+      "date_published": "2025-06-12T18:44:37Z",
+      "date": "2025-06-12T18:44:37Z"
+    }
+    ,
+    {
       "id": "/apps/collectsomemore/support/",
       "url": "/apps/collectsomemore/support/",
       "title": "Support",
-      "date_published": "2025-06-12T18:43:29Z",
-      "date": "2025-06-12T18:43:29Z"
+      "date_published": "2025-06-12T18:44:37Z",
+      "date": "2025-06-12T18:44:37Z"
     }
     ,
     {
       "id": "/apps/collectsomemore/releases/",
       "url": "/apps/collectsomemore/releases/",
       "title": "CollectSomeMore Releases",
-      "date_published": "2025-06-12T18:43:29Z",
-      "date": "2025-06-12T18:43:29Z"
+      "date_published": "2025-06-12T18:44:37Z",
+      "date": "2025-06-12T18:44:37Z"
     }
     ,
     {
       "id": "/apps/collectsomemore/privacy/",
       "url": "/apps/collectsomemore/privacy/",
       "title": "Privacy Policy",
-      "date_published": "2025-06-12T18:43:29Z",
-      "date": "2025-06-12T18:43:29Z"
+      "date_published": "2025-06-12T18:44:37Z",
+      "date": "2025-06-12T18:44:37Z"
     }
     ,
     {
       "id": "/apps/collectsomemore/",
       "url": "/apps/collectsomemore/",
       "title": "Collect Some More",
-      "date_published": "2025-06-12T18:43:28Z",
-      "date": "2025-06-12T18:43:28Z"
-    }
-    ,
-    {
-      "id": "/alfred/workflows/",
-      "url": "/alfred/workflows/",
-      "title": "Alfred Workflows",
-      "date_published": "2025-06-12T18:43:28Z",
-      "date": "2025-06-12T18:43:28Z"
+      "date_published": "2025-06-12T18:44:37Z",
+      "date": "2025-06-12T18:44:37Z"
     }
     ,
     {
@@ -211,14 +227,6 @@
     }
     ,
     {
-      "id": "/development/",
-      "url": "/development/",
-      "title": "Development",
-      "date_published": "2025-01-20T21:13:03Z",
-      "date": "2025-01-20T21:13:03Z"
-    }
-    ,
-    {
       "id": "/designs/timetrak/",
       "url": "/designs/timetrak/",
       "title": "TimeTrak by Switchback",
@@ -280,14 +288,6 @@
       "title": "Archived",
       "date_published": "2025-01-01T18:28:28Z",
       "date": "2025-01-01T18:28:28Z"
-    }
-    ,
-    {
-      "id": "/reference/",
-      "url": "/reference/",
-      "title": "Reference links",
-      "date_published": "2024-09-04T18:39:07Z",
-      "date": "2024-09-04T18:39:07Z"
     }
     ,
     {

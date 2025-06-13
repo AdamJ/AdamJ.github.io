@@ -12,12 +12,6 @@
 	},
 
 	{
-   "title":"Reference links",
-   "imgName":"reference-links",
-   "date":"reference-links"
-	},
-
-	{
    "title":"Adam Jolicoeur",
    "imgName":"home",
    "date":"home"
@@ -69,12 +63,6 @@
    "title":"TimeTrak by Switchback",
    "imgName":"timetrak-by-switchback",
    "date":"timetrak-by-switchback"
-	},
-
-	{
-   "title":"Development",
-   "imgName":"development",
-   "date":"development"
 	},
 
 	{
@@ -198,12 +186,6 @@
 	},
 
 	{
-   "title":"Alfred Workflows",
-   "imgName":"alfred-workflows",
-   "date":"alfred-workflows"
-	},
-
-	{
    "title":"Collect Some More",
    "imgName":"collect-some-more",
    "date":"collect-some-more"
@@ -225,5 +207,23 @@
    "title":"Support",
    "imgName":"support",
    "date":"support"
+	},
+
+	{
+   "title":"Development",
+   "imgName":"development",
+   "date":"development"
+	},
+
+	{
+   "title":"Reference links",
+   "imgName":"reference-links",
+   "date":"reference-links"
+	},
+
+	{
+   "title":"Alfred Workflows",
+   "imgName":"alfred-workflows",
+   "date":"alfred-workflows"
 	}
 ]

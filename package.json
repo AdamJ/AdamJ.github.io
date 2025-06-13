@@ -37,35 +37,34 @@
     "url": "https://github.com/AdamJ/AdamJ.github.io/issues"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy": "^3.1.1",
     "@11ty/eleventy-activity-feed": "^2.0.0",
-    "@11ty/eleventy-img": "^6.0.1",
+    "@11ty/eleventy-img": "^6.0.4",
     "@11ty/eleventy-navigation": "^1.0.4",
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
-    "@11ty/eleventy-plugin-rss": "^2.0.3",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@11ty/eleventy-plugin-rss": "^2.0.4",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.1",
     "@11ty/import": "^1.0.15",
     "@hint/hint-axe": "^4.4.21",
-    "@netlify/plugin-lighthouse": "^6.0.0",
-    "autoprefixer": "10.4.14",
-    "cross-env": "7.0.3",
-    "cssnano": "6.0.1",
-    "dotenv": "16.1.4",
+    "autoprefixer": "^10.4.21",
+    "cross-env": "^7.0.3",
+    "cssnano": "^7.0.7",
+    "dotenv": "^16.5.0",
     "eleventy-plugin-dropcap": "^1.1.0",
     "eleventy-plugin-toc": "^1.1.5",
-    "emoji-regex": "10.2.1",
+    "emoji-regex": "^10.4.0",
     "hint": "^7.1.13",
-    "luxon": "3.3.0",
-    "markdown-it": "13.0.1",
-    "markdown-it-anchor": "8.6.7",
-    "markdown-it-eleventy-img": "^0.10.1",
+    "luxon": "^3.6.1",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^9.2.0",
+    "markdown-it-eleventy-img": "^0.10.2",
     "markdown-it-highlightjs": "^4.2.0",
-    "npm-run-all": "4.1.5",
-    "postcss-cli": "10.1.0",
-    "sass": "1.69.5",
-    "stylelint": "15.11.0",
-    "stylelint-config-standard-scss": "11.1.0",
-    "stylelint-order": "6.0.3"
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^11.0.1",
+    "sass": "^1.89.2",
+    "stylelint": "^16.20.0",
+    "stylelint-config-standard-scss": "^15.0.1",
+    "stylelint-order": "^7.0.0"
   },
   "browserslist": [
     "> 5%, not dead",
@@ -74,6 +73,6 @@
   "dependencies": {
     "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",
     "@shoelace-style/shoelace": "^2.20.1",
-    "bootstrap": "^5.3.5"
+    "bootstrap": "^5.3.6"
   }
 }
