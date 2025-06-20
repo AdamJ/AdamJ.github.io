@@ -22,7 +22,7 @@ image6: "/img/colorPicker/slide5.png"
 image6-alt: "Slide 6"
 ---
 
-<div class="container mb-3">
+<section class="responsive">
   <sl-carousel pagination navigation mouse-dragging loop style="--aspect-ratio: 3/2;">
     <sl-carousel-item>
       <img
@@ -61,4 +61,4 @@ image6-alt: "Slide 6"
       />
     </sl-carousel-item>
   </sl-carousel>
-</div>
+</section>

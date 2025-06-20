@@ -9,105 +9,99 @@ eleventyNavigation:
   parent: About
 ---
 
-<div class="container mb-2 py-2 px-0">
-  <div class="row px-0 pb-3 mx-0">
-    <div class="col-12 col-md-6">
-      <h2 class="mt-0">Lead Program Manager &amp; Designer</h2>
-      <h4 class="my-0">Component Assembly Systems, Inc. (Pelham, NY)</h4>
-      <p class="text-body-secondary">January 2024 - Present</p>
-      <div class="pb-3 row-badges">
-        <sl-badge variant="primary" pill>Program Management</sl-badge>
-        <sl-badge variant="primary" pill>Figma</sl-badge>
-        <sl-badge variant="primary" pill>Strategic Technology</sl-badge>
-        <sl-badge variant="primary" pill>Design Systems</sl-badge>
-        <sl-badge variant="primary" pill>Research</sl-badge>
-      </div>
-    </div>
-    <div class="col-12 col-md-6">
-      <p class="pt-0">As the Lead Program Manager and Designer, I am responsible for creating product roadmaps, maintaining team goals in order to complete deliverables, and managing the internal software suite.</p>
-      <ul class="icon-list">
-        <li>Lead Program Manager, CAS Strategic Technology Group</li>
-        <li>Lead UX Designer, StructureCloud</li>
-      </ul>
+<article>
+  <div>
+    <h2 class="mt-0">Lead Program Manager &amp; Designer</h2>
+    <h4 class="my-0">Component Assembly Systems, Inc. (Pelham, NY)</h4>
+    <p class="text-body-secondary">January 2024 - Present</p>
+    <div class="pb-3 row-badges">
+      <sl-badge variant="primary" pill>Program Management</sl-badge>
+      <sl-badge variant="primary" pill>Figma</sl-badge>
+      <sl-badge variant="primary" pill>Strategic Technology</sl-badge>
+      <sl-badge variant="primary" pill>Design Systems</sl-badge>
+      <sl-badge variant="primary" pill>Research</sl-badge>
     </div>
   </div>
-  <div class="row px-0 pb-3 mx-0">
-    <div class="col-12 col-md-6">
-      <h2 class="mt-0">Senior UX Designer</h2>
-      <h4 class="my-0">Amazon.com, Inc <br /> Amazon Software Builder Experience (Boston, MA)</h4>
-      <p class="text-body-secondary">August 2021 - September 2023</p>
-      <div class="pb-3 row-badges">
-        <sl-badge variant="primary" pill>Figma</sl-badge>
-        <sl-badge variant="primary" pill>Prototypes</sl-badge>
-        <sl-badge variant="primary" pill>UserTesting</sl-badge>
-        <sl-badge variant="primary" pill>Design Systems</sl-badge>
-        <sl-badge variant="primary" pill>Research</sl-badge>
-        <sl-badge variant="primary" pill>React</sl-badge>
-      </div>
-    </div>
-    <div class="col-12 col-md-6">
-      <p class="pt-0">As a Senior UXD on the Amazon Software Builder Experience team, I was responsible for the next generation of task management solutions for Amazon Issue Management. In this role, I oversaw the overall design and deliverables, implementation, collected feedback from internal users. As the lead designer on the project, I was responsible for providing cohesive experiences for all Amazon employees, regardless of role, in order to perform their duties with minimal friction.</p>
-      <ul class="icon-list">
-        <li>Lead Designer, Task Management</li>
-        <li>Led user testing and interview sessions</li>
-        <li>Created prototypes (Figma and React-based) for internal testing and validation using organization design system</li>
-      </ul>
+  <div>
+    <p class="pt-0">As the Lead Program Manager and Designer, I am responsible for creating product roadmaps, maintaining team goals in order to complete deliverables, and managing the internal software suite.</p>
+    <ul class="icon-list">
+      <li>Lead Program Manager, CAS Strategic Technology Group</li>
+      <li>Lead UX Designer, StructureCloud</li>
+    </ul>
+  </div>
+</article>
+<article>
+  <div>
+    <h2>Senior UX Designer</h2>
+    <h4>Amazon.com, Inc <br /> Amazon Software Builder Experience (Boston, MA)</h4>
+    <p>August 2021 - September 2023</p>
+    <div>
+      <sl-badge variant="primary" pill>Figma</sl-badge>
+      <sl-badge variant="primary" pill>Prototypes</sl-badge>
+      <sl-badge variant="primary" pill>UserTesting</sl-badge>
+      <sl-badge variant="primary" pill>Design Systems</sl-badge>
+      <sl-badge variant="primary" pill>Research</sl-badge>
+      <sl-badge variant="primary" pill>React</sl-badge>
     </div>
   </div>
-</div>
-<div class="container mb-2 py-2 px-0">
-  <div class="row px-0 pb-3 mx-0">
-    <div class="col-12 col-md-6">
-      <h2 class="mt-0">Senior Software Engineer, UXD</h2>
-      <h4 class="my-0">Red Hat, Inc (Westford, MA)</h4>
-      <p class="text-body-secondary">December 2016 - August 2021</p>
-      <div class="pb-3 row-badges">
-        <sl-badge variant="primary" pill>Sketch</sl-badge>
-        <sl-badge variant="primary" pill>Adobe XD</sl-badge>
-        <sl-badge variant="primary" pill>HTML</sl-badge>
-        <sl-badge variant="primary" pill>SCSS</sl-badge>
-        <sl-badge variant="primary" pill>Git</sl-badge>
-        <sl-badge variant="primary" pill>OSS</sl-badge>
-      </div>
-    </div>
-    <div class="col-12 col-md-6">
-      <p>As a Senior Interaction Designer on the User Experience Design team, my responsibilities included creating user flows, wireframes, mockups, and proofs-of-concepts for products and websites across Red Hat. As part of my role, I became a core contributor to the PatternFly design system and lead designer of the Red Hat Developer Design Manual.</p>
-      <ul class="icon-list">
-        <li>UX Designer, OpenShift</li>
-        <li>Designer/Developer, Red Hat Developer Design Manual, developers.redhat.com</li>
-        <li>Designer/Developer, kubevirt.io</li>
-        <li>Interaction Designer, Red Had Managed Integration</li>
-        <li>Core Contributor, PatternFly Design System</li>
-      </ul>
+  <div>
+    <p>As a Senior UXD on the Amazon Software Builder Experience team, I was responsible for the next generation of task management solutions for Amazon Issue Management. In this role, I oversaw the overall design and deliverables, implementation, collected feedback from internal users. As the lead designer on the project, I was responsible for providing cohesive experiences for all Amazon employees, regardless of role, in order to perform their duties with minimal friction.</p>
+    <ul>
+      <li>Lead Designer, Task Management</li>
+      <li>Led user testing and interview sessions</li>
+      <li>Created prototypes (Figma and React-based) for internal testing and validation using organization design system</li>
+    </ul>
+  </div>
+</article>
+<article>
+  <div>
+    <h2>Senior Software Engineer, UXD</h2>
+    <h4>Red Hat, Inc (Westford, MA)</h4>
+    <p>December 2016 - August 2021</p>
+    <div class="row-badges">
+      <sl-badge variant="primary" pill>Sketch</sl-badge>
+      <sl-badge variant="primary" pill>Adobe XD</sl-badge>
+      <sl-badge variant="primary" pill>HTML</sl-badge>
+      <sl-badge variant="primary" pill>SCSS</sl-badge>
+      <sl-badge variant="primary" pill>Git</sl-badge>
+      <sl-badge variant="primary" pill>OSS</sl-badge>
     </div>
   </div>
-</div>
-<div class="container mb-2 py-2 px-0">
-  <div class="row px-0 pb-3 mx-0">
-    <div class="col-12 col-md-6">
-      <h2 class="mt-0">User Experience Designer</h2>
-      <h4 class="my-0">Saylent Technologies (Franklin, MA)</h4>
-      <p class="text-body-secondary">November 2014 - July 2016</p>
-      <div class="pb-3 row-badges">
-        <sl-badge variant="primary" pill>Photoshop</sl-badge>
-        <sl-badge variant="primary" pill>Visual studio</sl-badge>
-        <sl-badge variant="primary" pill>HTML</sl-badge>
-        <sl-badge variant="primary" pill>CSS</sl-badge>
-        <sl-badge variant="primary" pill>Agile</sl-badge>
-      </div>
-    </div>
-    <div class="col-12 col-md-6">
-      <p>As the first in-house designer, I led the design and user research for the Account360 and Card360 platforms, working with a team of developers to improve product usability. The primary focus for this work was on easy-to-use and manageable interfaces for the financial industry.</p>
-      <ul class="icon-list">
-        <li>Lead designer, Account360 and Card360 platforms</li>
-        <li>Lead designer, product refreshes/corporate presentations and sales demonstrations</li>
-        <li>Created system for UX prototyping and usability testing</li>
-        <li>Developer, HTML/CSS for use in ASP.net applications</li>
-        <li>Created style guide/css framework for corporate products</li>
-      </ul>
+  <div>
+    <p>As a Senior Interaction Designer on the User Experience Design team, my responsibilities included creating user flows, wireframes, mockups, and proofs-of-concepts for products and websites across Red Hat. As part of my role, I became a core contributor to the PatternFly design system and lead designer of the Red Hat Developer Design Manual.</p>
+    <ul class="icon-list">
+      <li>UX Designer, OpenShift</li>
+      <li>Designer/Developer, Red Hat Developer Design Manual, developers.redhat.com</li>
+      <li>Designer/Developer, kubevirt.io</li>
+      <li>Interaction Designer, Red Had Managed Integration</li>
+      <li>Core Contributor, PatternFly Design System</li>
+    </ul>
+  </div>
+</article>
+<article>
+  <div>
+    <h2>User Experience Designer</h2>
+    <h4>Saylent Technologies (Franklin, MA)</h4>
+    <p>November 2014 - July 2016</p>
+    <div class="row-badges">
+      <sl-badge variant="primary" pill>Photoshop</sl-badge>
+      <sl-badge variant="primary" pill>Visual studio</sl-badge>
+      <sl-badge variant="primary" pill>HTML</sl-badge>
+      <sl-badge variant="primary" pill>CSS</sl-badge>
+      <sl-badge variant="primary" pill>Agile</sl-badge>
     </div>
   </div>
-</div>
+  <div>
+    <p>As the first in-house designer, I led the design and user research for the Account360 and Card360 platforms, working with a team of developers to improve product usability. The primary focus for this work was on easy-to-use and manageable interfaces for the financial industry.</p>
+    <ul>
+      <li>Lead designer, Account360 and Card360 platforms</li>
+      <li>Lead designer, product refreshes/corporate presentations and sales demonstrations</li>
+      <li>Created system for UX prototyping and usability testing</li>
+      <li>Developer, HTML/CSS for use in ASP.net applications</li>
+      <li>Created style guide/css framework for corporate products</li>
+    </ul>
+  </div>
+</article>
 <div class="container mb-2 py-2 px-0">
   <div class="row px-0 pb-3 mx-0">
     <div class="col-12 col-md-6">

@@ -25,7 +25,7 @@ image13: /img/portfolio/Slide13.png
 image14: /img/portfolio/Slide14.png
 ---
 
-<div class="container mb-3">
+<section class="responsive">
   <sl-carousel pagination navigation mouse-dragging loop style="--aspect-ratio: 3/2;">
     <sl-carousel-item>
       <img
@@ -118,4 +118,4 @@ image14: /img/portfolio/Slide14.png
       />
     </sl-carousel-item>
   </sl-carousel>
-</div>
+</section>

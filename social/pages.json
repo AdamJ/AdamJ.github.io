@@ -12,6 +12,12 @@
 	},
 
 	{
+   "title":"Adam Jolicoeur",
+   "imgName":"home",
+   "date":"home"
+	},
+
+	{
    "title":"Archived",
    "imgName":"archived",
    "date":"archived"
@@ -117,6 +123,12 @@
    "title":"Task-It!",
    "imgName":"task-it",
    "date":"task-it"
+	},
+
+	{
+   "title":"howto",
+   "imgName":"howto",
+   "date":"howto"
 	},
 
 	{

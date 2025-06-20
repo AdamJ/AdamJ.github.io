@@ -73,6 +73,8 @@
   "dependencies": {
     "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",
     "@shoelace-style/shoelace": "^2.20.1",
-    "bootstrap": "^5.3.6"
+    "beercss": "^3.11.17",
+    "bootstrap": "^5.3.6",
+    "material-dynamic-colors": "^1.1.2"
   }
 }
