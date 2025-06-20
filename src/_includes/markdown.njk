@@ -2,38 +2,34 @@
 layout: base.njk
 ---
 
-<div class="container intro py-3 px-0 text-align-center">
-  <h1 class="display-1 fw-bold text-break">{{ title }}</h1>
-  <p class="sub-header text-break px-2 px-md-0">
-    {{ description }}
-  </p>
-  {%- if (headerButton) -%}
-  <sl-button href="{{ primaryURL}}" size="large" variant="primary" outline pill>{{ primaryAction }}</sl-button>
-  {# <a class="btn btn-outline-secondary btn-lg" href="{{ primaryURL}}" | url }}" type="button">{{ primaryAction }}</a> #}
-  {%- else -%}{%- endif -%}
+<section class="responsive">
+  <div class="center-align">
+    <h1>{{ title }}</h1>
+    <h5>
+      {{ description }}
+    </h5>
+    {%- if (headerButton) -%}
+    <div class="small-space"></div>
+    <a href="{{ primaryURL}}" alt="Primary action">
+      <button class="large small-elevate">{{ primaryAction }}</button>
+    </a>
+    <div class="medium-space"></div>
+    {%- else -%}{%- endif -%}
+  </div>
 </div>
 
-<content>
-  <div class="container mb-2 py-2 px-0">
-    <div class="row px-0 pb-3 mx-0">
-      <article class="col-sm-12 order-2 order-md-1">
-        {%- if (tocBlock) -%}
-          {%- if content | toc -%}
-          <sl-details summary="TOC">
-            {{ content | toc | safe }}
-          </sl-details>
-          {%- else -%}
-          {%- endif -%}
-        {%- else -%}
-        {%- endif -%}
-        {{ content | safe }}
-      </article>
-      <!--{%- if content | toc -%}
-      <aside class="col-sm-12 col-md-3 order-1 order-md-2" aria-label="complimentary">
-        {{ content | toc | safe }}
-      </aside>
-      {%- else -%}
-      {%- endif -%} -->
-    </div>
+<section class="responsive">
+  {%- if (tocBlock) -%}
+    {%- if content | toc -%}
+    <sl-details summary="Table of Contents">
+      {{ content | toc | safe }}
+    </sl-details>
+    {%- else -%}
+    {%- endif -%}
+  {%- else -%}
+  {%- endif -%}
+  <div class="medium-space"></div>
+  <div class="page right active">
+    {{ content | safe }}
   </div>
-</content>
+</section>

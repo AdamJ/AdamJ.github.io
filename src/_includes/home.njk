@@ -2,239 +2,202 @@
 layout : base.njk
 templateEngineOverride : md, njk
 ---
-<style>
-  :root {
-    --outline-width: 0; /* Change to show outlines */
-    --card-top-offset: 5rem;
-  /* Colors */
-  --silver-accent: linear-gradient(
-    180deg,
-    rgba(223, 228, 232, 1) 0%,
-    rgba(150, 153, 156, 1) 100%
-  );
-  --text-gradient-fill: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0) 50.33257007598877%,
-      rgba(255, 255, 255, 0.2) 100%
-    ),
-    linear-gradient(90deg, rgba(184, 246, 255, 1) 0%, rgba(29, 0, 216, 1) 100%);
-  --retro-blue-50: #e6f4f1;
-  --retro-blue-100: #bfe7fa;
-  --retro-blue-200: #a2cadc;
-  --retro-blue-300: #86adbf;
-  --retro-blue-400: #6b91a3;
-  --retro-blue-500: #507687;
-  --retro-blue-600: #384b70;
-  --retro-text: #1a2732;
-  --retro-background: #fafafa;
-
-  /* Effects */
-  --device-shadow-1-box-shadow: 150px 50px 250px 0px rgba(9, 20, 50, 0.15);
-  --2-screens-device-shadow-left-box-shadow: 150px 50px 250px 0px
-    rgba(9, 20, 50, 0.15);
-  --2-screens-device-shadow-right-box-shadow: 25px 15px 250px 0px
-    rgba(9, 20, 50, 0.1);
-}
-html {
-  scroll-behavior: smooth;
-}
-  body {
-    background-color: var(--color-grey-900);
-    font-family: "Oswald", system-ui, -apple-system, blinkmacsystemfont, avenir next, avenir, segoe ui, sans-serif; !important;
-  }
-  h2 {
-    font-size: 3rem !important;
-  }
-  .display-2 {
-    font-size: 2.5rem !important;
-  }
-  .display-3 {
-    font-size: 1.5rem !important;
-  }
-  .section {
-    position: relative;
-    height: 100%;
-    background: var(--color-grey-700);
-  }
-  .section-block {
-    position: relative;
-    display: flex;
-    padding: 5rem 2rem;
-    @media only screen and (max-width: 720px) {
-      padding: 1rem 1rem 5rem 1rem;
-    }
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(rgba(1,1,1, .2), rgba(1, 1, 1, .8)), url("{{ '/img/curved-lines@2x.png' | url }}");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-clip: border-box;
-    background-size: contain;
-    height: calc(100% - 170px);
-  }
-  .hero-content {
-    max-height: 100vh;
-    outline: 0;
-    overflow-y: auto;
-    width: 75%;
-    @media only screen and (max-width: 720px) {
-      width: 100%;
-    }
-  }
-  .title-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: .5rem;
-    align-self: stretch;
-    h1, h2, h3 {
-      color: var(--color-white);
-    }
-    p {
-      font-size: 2rem !important;
-      color: rgba(255, 255, 255, 0.7) !important;
-    }
-    @media only screen and (max-width: 720px) {
-      .hero {
-        font-size: 3rem !important;
-      }
-      p {
-        font-size: 1.25rem !important;
-      }
-    }
-  }
-  .showcase {
-    padding: 0;
-    .title-content {
-      padding: .5rem 1rem;
-    }
-  }
-  .project-row {
-    display: flex;
-    padding: 1.5rem;
-    align-items: center;
-    gap: 6rem;
-    align-self: stretch;
-
-    /* Drop Shadow/400 */
-    box-shadow: 0 16px 32px -4px rgba(12, 12, 13, 0.1), 0 4px 4px -4px rgba(12, 12, 13, 0.05);
-  }
-  .project-image {
-    height: 22rem;
-    flex: 1 0 0;
-    border-radius: 1rem !important;
-    object-fit: contain;
-    object-position: top;
-  }
-  .project-information {
-    h3, h4, p {
-      color: var(--color-white);
-    }
-    h3 {
-      line-height: 120%; /* 1.8rem */
-      letter-spacing: -0.03rem;
-    }
-  }
-  .footer {
-    display: flex;
-    padding: 2rem;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: flex-start;
-    row-gap: 1rem;
-    align-self: stretch;
-    flex-wrap: wrap;
-  }
-
-.project-row {
-  --index0: calc(var(--index) - 1); /* 0-based index */
-  --reverse-index: calc(var(--numcards) - var(--index0)); /* reverse index */
-  --reverse-index0: calc(var(--reverse-index) - 1); /* 0-based reverse index */
-}
-@keyframes scale {
-  to {
-    transform:
-      scale(calc(1.1 - calc(0.1 * var(--reverse-index))));
-  }
-}
-
-#projectRow {
-  --numcards: 3;
-  view-timeline-name: --cards-element-scrolls-in-body;
-}
-
-.project-row__content {
-  --start-range: calc(var(--index0) / var(--numcards) * 100%);
-  --end-range: calc((var(--index)) / var(--numcards) * 100%);
-
-  animation: linear scale forwards;
-  animation-timeline: --cards-element-scrolls-in-body;
-  animation-range: exit-crossing var(--start-range) exit-crossing var(--end-range);
-}
-#projectRow {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(var(--numcards), var(--card-height));
-  gap: var(--card-margin);
-  padding-bottom: calc(var(--numcards) * var(--card-top-offset));
-  margin-bottom: var(--card-margin);
-}
-#row_1 {
-  --index: 1;
-}
-#row_2 {
-  --index: 2;
-}
-#row_3 {
-  --index: 3;
-}
-#row_4 {
-  --index: 4;
-}
-.project-row {
-  outline: var(--outline-width) solid lime;
-  position: sticky;
-  top: 0;
-  padding-top: calc(var(--index)* var(--card-top-offset));
-  @media only screen and (max-width: 720px) {
-    padding-top: calc(var(--index)* 2);
-  }
-  height: 800px;
-}
-.project-row__content {
-  box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
-  color: rgb(10, 5, 7);
-  border-radius: 1em;
-  overflow: hidden;
-  display: flex;
-  flex: 1 0 0;
-  align-items: stretch;
-  align-content: space-around;
-  outline: var(--outline-width) solid blue;
-  padding: 2rem;
-  height: 700px;
-  border: 1px solid rgba(255,255,255,.1);
-  border-top: none;
-}
-.gradient-one {
-  background-image: linear-gradient(to left top, #507687, #5c7695, #75739b, #926e97, #ac6986);
-}
-.gradient-two {
-  background-image: linear-gradient(to bottom left, #507687, #5c7695, #75739b, #926e97, #ac6986);
-}
-.gradient-three {
-  background-image: linear-gradient(to left top, #507687, #5c7695, #75739b, #926e97, #ac6986);
-}
-.gradient-framer {
-  background-image: linear-gradient(to bottom, rgba(0,0,0,.9), rgba(5, 28, 68, 1), rgba(8, 53, 137, 1),rgb(0, 90, 163));
-}
-.project-row__content {
-  transform-origin: 50% 0%;
-  will-change: transform;
-}
-</style>
-<section class="section">
+<div class="large-spacer"></div>
+<div class="grid">
+  <div class="s12 m6 l6">
+    <div class="page bottom active">
+      <article class="no-elevate round large large-padding middle-align">
+        <div class="large-padding s-small-padding">
+          <h1 class="large">Hi!</h1>
+          <h6>I'm Adam, a Product Manager and Designer creating data-driven experiences.</h6>
+          <nav>
+            <a href="/designs" alt="Link to designs page">
+              <button class="small-elevate primary extra ripple">My Designs</button>
+            </a>
+          </nav>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="s12 m6 l6">
+    <div class="page top active">
+      <article class="no-elevate round large no-padding" style="background-color: transparent;">
+        <img src="{{ '/img/avatar.png' | url }}" alt="Avatar thumbnail" style="max-height: 100%;" />
+      </article>
+    </div>
+  </div>
+</div>
+<div class="large-space"></div>
+<div class="large-space"></div>
+<section class="responsive">
+  <h2>Recent Work</h2>
+  <div class="grid">
+    <div class="s12 l6">
+      <article class="no-padding">
+        <div class="grid no-space">
+          <div class="s6">
+            <img class="responsive" src="{{ '/img/task-it_product.png' | url }}" alt="Thumbnail of task tracker">
+            <div class="absolute top left right padding top-shadow white-text">
+              <h5>Design System</h5>
+              <p>Component Assembly Systems</p>
+            </div>
+          </div>
+          <div class="s6">
+            <div class="padding">
+              <h5>CAS Design</h5>
+              <p>As the lead designer at Component Assembly System, one of the top priorities was to create a design system that all of the internal projects.</p>
+              <nav>
+                <button class="border tertiary" disabled>Coming Soon</button>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="s12 l6">
+      <article class="no-padding">
+        <div class="grid no-space">
+          <div class="s6">
+            <img class="responsive" src="{{ '/img/task-it_product.png' | url }}" alt="Thumbnail of task tracker">
+            <div class="absolute top left right padding top-shadow white-text">
+              <h5>Task Tracker</h5>
+              <p>AWS</p>
+            </div>
+          </div>
+          <div class="s6">
+            <div class="padding">
+              <h5>Task-It!</h5>
+              <p>As part of the software builder team, I was responsible for designing the next-generation task management system for internal ASBX users.</p>
+              <nav>
+                <a href="/designs/task-it/" alt="Link to the Task-It! project story">
+                  <button class="round tertiary">The Story</button>
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="s12 l4">
+      <article class="no-padding">
+        <img class="responsive medium" src="{{ '/img/OSIO-laptop-screen-1200.png' | url }}" alt="Thumbnail of application management screen">
+        <div class="absolute bottom left right padding bottom-shadow white-text">
+          <nav>
+            <h6>Application Management</h6>
+            <div class="max"></div>
+            <a href="/designs/alm/" alt="Link to application management page">
+              <button class="circle tertiary">
+                <i>arrow_right</i>
+              </button>
+            </a>
+          </nav>
+        </div>
+      </article>
+    </div>
+    <div class="s12 l4">
+      <article class="no-padding">
+        <img class="responsive medium" src="{{ '/img/CEA_Dashboard.png' | url }}" alt="Thumbnail of customer engagement screen">
+        <div class="absolute bottom left right padding bottom-shadow white-text">
+          <nav>
+            <h6>Customer Engagement</h6>
+            <div class="max"></div>
+            <a href="/designs/customer-engagement/" alt="Link to customer engagement page">
+              <button class="circle tertiary">
+                <i>arrow_right</i>
+              </button>
+            </a>
+          </nav>
+        </div>
+      </article>
+    </div>
+    <div class="s12 l4">
+      <article class="no-padding">
+        <img class="responsive medium" src="{{ '/img/colorPicker/slide0.png' | url }}" alt="Thumbnail of color picker slide">
+        <div class="absolute bottom left right padding bottom-shadow white-text">
+          <nav>
+            <h5>Color Picker</h5>
+            <div class="max"></div>
+            <a href="/presentations/color-picker/" alt="Link to color picker presentation">
+              <button class="circle tertiary">
+                <i>arrow_right</i>
+              </button>
+            </a>
+          </nav>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<div class="large-space"></div>
+<div class="large-space"></div>
+<section class="responsive">
+  <h2>Currently on GitHub</h2>
+  <div class="grid">
+    <div class="s12 l6">
+      <article class="no-elevate large-padding wave">
+        <div class="row">
+          <img class="circle large" src="{{ '/img/Jolicoeur_iOS.png' | url }}" />
+          <div class="max">
+            <h5>AdamJ.GitHub.io</h5>
+            <p>Where this website lives - take a look around.</p>
+          </div>
+        </div>
+        <nav>
+          <a href="https://github.com/AdamJ/AdamJ.github.io" alt="Link to GitHub repo">
+            <button>View on GitHub</button>
+          </a>
+      </article>
+    </div>
+    <div class="s12 l6">
+      <article class="no-elevate large-padding wave">
+        <div class="row">
+          <img class="circle large" src="{{ '/img/game-tracker.png' | url }}" />
+          <div class="max">
+            <h5>Game Tracker</h5>
+            <p>My first attempt at a PWA - Vite, Shoelace, and Lit.</p>
+          </div>
+        </div>
+        <nav>
+          <a href="https://github.com/AdamJ/game-tracker" alt="Link to GitHub repo">
+            <button>View on GitHub</button>
+          </a>
+      </article>
+    </div>
+    <div class="s12 l6">
+      <article class="no-elevate large-padding wave">
+        <div class="row">
+          <img class="circle large" src="{{ '/img/jolicoeur-blog.svg' | url }}" />
+          <div class="max">
+            <h5>Blog</h5>
+            <p>A simple blog, found at blog.adamjolicoeur.com.</p>
+          </div>
+        </div>
+        <nav>
+          <a href="https://github.com/AdamJ/researchandesign" alt="Link to GitHub repo">
+            <button>View on GitHub</button>
+          </a>
+      </article>
+    </div>
+    <div class="s12 l6">
+      <article class="no-elevate large-padding wave">
+        <div class="row">
+          <img class="circle large" src="{{ '/img/my-mtg-app.png' | url }}" />
+          <div class="max">
+            <h5>My MTG App</h5>
+            <p>Another PWA for 1v1 games of MTG with Scryfall integration.</p>
+          </div>
+        </div>
+        <nav>
+          <a href="https://github.com/AdamJ/my-mtg-app" alt="Link to GitHub repo">
+            <button>View on GitHub</button>
+          </a>
+      </article>
+    </div>
+  </div>
+</section>
+<div class="large-space"></div>
+<div class="large-space"></div>
+<!--
   <div class="section-block">
     <div class="hero-content">
       <div class="title-content mb-4 pb-2">
@@ -315,3 +278,4 @@ html {
     </div>
   </div>
 </div>
+-->

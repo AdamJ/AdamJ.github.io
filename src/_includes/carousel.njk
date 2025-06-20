@@ -2,12 +2,14 @@
 layout: base.njk
 ---
 
-<div class="container my-3">
-  <sl-button href="/designs/" pill>
-    <sl-icon slot="prefix" name="arrow-left-short"></sl-icon>
-    Back
-  </sl-button>
-</div>
-
+<nav class="responsive">
+  <a href="/designs/" alt="Back to the Designs page">
+    <button class="border large small-elevate">
+      <i>arrow_back</i>
+      <span>Back</span>
+    </button>
+  </a>
+</nav>
+<div class="medium-space"></div>
 {{ content | safe }}
 

@@ -2,16 +2,16 @@
 layout: base.njk
 ---
 
-<div class="container intro py-3 px-0 text-align-center">
-  <h1 class="display-1 fw-bold text-break">{{ title }}</h1>
-  <p class="sub-header text-break px-2 px-md-0">
-    {{ description }}
-  </p>
+<section class="responsive">
+  <h1>{{ title }}</h1>
+  <h5>{{ description }}</h5>
   {%- if (headerButton) -%}
-  <sl-button href="{{ primaryURL}}" size="large" variant="primary" outline pill>{{ primaryAction }}</sl-button>
+  <a href="{{ primaryURL}}">
+    <button class="large fill">{{ primaryAction }}</button>
+  </a>
   {%- else -%}{%- endif -%}
-</div>
+</section>
+<div class="large-space"></div>
 
-<content>
-  {{ content | safe }}
-</content>
+{{ content | safe }}
+
