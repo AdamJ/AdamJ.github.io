@@ -36,18 +36,6 @@
 	},
 
 	{
-   "title":"Designs",
-   "imgName":"designs",
-   "date":"designs"
-	},
-
-	{
-   "title":"Application Lifecycle Management",
-   "imgName":"application-lifecycle-management",
-   "date":"application-lifecycle-management"
-	},
-
-	{
    "title":"Customer Engagement App",
    "imgName":"customer-engagement-app",
    "date":"customer-engagement-app"
@@ -102,27 +90,9 @@
 	},
 
 	{
-   "title":"Color Picker",
-   "imgName":"color-picker",
-   "date":"color-picker"
-	},
-
-	{
-   "title":"Portfolio",
-   "imgName":"portfolio",
-   "date":"portfolio"
-	},
-
-	{
    "title":"Testimonials",
    "imgName":"testimonials",
    "date":"testimonials"
-	},
-
-	{
-   "title":"Task-It!",
-   "imgName":"task-it",
-   "date":"task-it"
 	},
 
 	{
@@ -165,12 +135,6 @@
    "title":"Credits",
    "imgName":"credits",
    "date":"credits"
-	},
-
-	{
-   "title":"Adam J. Jolicoeur",
-   "imgName":"adam-j.-jolicoeur",
-   "date":"adam-j.-jolicoeur"
 	},
 
 	{
@@ -219,6 +183,42 @@
    "title":"Reference links",
    "imgName":"reference-links",
    "date":"reference-links"
+	},
+
+	{
+   "title":"Designs",
+   "imgName":"designs",
+   "date":"designs"
+	},
+
+	{
+   "title":"Application Lifecycle Management",
+   "imgName":"application-lifecycle-management",
+   "date":"application-lifecycle-management"
+	},
+
+	{
+   "title":"Task-It!",
+   "imgName":"task-it",
+   "date":"task-it"
+	},
+
+	{
+   "title":"Color Picker",
+   "imgName":"color-picker",
+   "date":"color-picker"
+	},
+
+	{
+   "title":"Portfolio",
+   "imgName":"portfolio",
+   "date":"portfolio"
+	},
+
+	{
+   "title":"Adam J. Jolicoeur",
+   "imgName":"adam-j.-jolicoeur",
+   "date":"adam-j.-jolicoeur"
 	},
 
 	{
