@@ -19,7 +19,7 @@ layout: base.njk
 </div>
 
 <section class="responsive">
-  {%- if (tocBlock) -%}
+  <!-- {%- if (tocBlock) -%}
     {%- if content | toc -%}
     <sl-details summary="Table of Contents">
       {{ content | toc | safe }}
@@ -27,7 +27,7 @@ layout: base.njk
     {%- else -%}
     {%- endif -%}
   {%- else -%}
-  {%- endif -%}
+  {%- endif -%} -->
   <div class="medium-space"></div>
   <div class="page right active">
     {{ content | safe }}

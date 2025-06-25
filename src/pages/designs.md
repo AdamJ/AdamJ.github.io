@@ -360,7 +360,7 @@ eleventyNavigation:
             <h5>Portfolio</h5>
             <div class="max"></div>
             <a href="/presentations/portfolio/" alt="Link to portfolio presentation">
-              <button class="large transparent">
+              <button class="large secondary">
                 <i>book</i>
                 <span>Review Presentation</span>
               </button>
@@ -377,7 +377,7 @@ eleventyNavigation:
             <h5>Color Picker</h5>
             <div class="max"></div>
             <a href="/presentations/portfolio/" alt="Link to portfolio presentation">
-              <button class="large transparent">
+              <button class="large secondary">
                 <i>colorize</i>
                 <span>Review Presentation</span>
               </button>
