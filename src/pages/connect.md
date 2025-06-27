@@ -2,7 +2,7 @@
 title: "Connect"
 abbreviation: "connect"
 date: git Last Modified
-description:
+description: "Reach out, let's connect"
 header: "Reach out, let's connect"
 ---
 <div class="container px-0 mx-0 mx-md-auto">

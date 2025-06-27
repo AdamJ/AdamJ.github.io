@@ -2,6 +2,7 @@
 title: Credits
 date: git Last Modified
 layout: markdown
+description: "Credits and callouts from building this site"
 readTime: false
 tocBlock: true
 ---

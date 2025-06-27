@@ -189,9 +189,8 @@
 <h2 id="travel-gear" tabindex="-1">Travel Gear <a class="anchor-link" href="#travel-gear">#</a></h2>
 <p>All of my travel gear fits into a <a href="https://www.peakdesign.com/products/everyday-backpack">Peak Design 20L</a> 20L bag and a small “tech pouch” for cables, charging bricks, Beats Studio Buds, and my Logitech mouse.</p>
 <h2 id="this-site" tabindex="-1">This Site <a class="anchor-link" href="#this-site">#</a></h2>
-<p>This site was created using <a href="https://www.11ty.dev/">Eleventy</a> (Markdown + Nunjucks), after many years of trying out essentially everything that was “hip” at a given time. In the end, I just needed something simple that I could build upon, but also could be used for other projects (with an easy-to-simplify structure). For the UI, I use the <a href="https://getbootstrap.com/docs/5.3/layout/grid/">Bootstrap Grid</a> system as I didn’t want to write one from scratch. Various UI elements of the site are made using <a href="https://shoelace.style/">Shoelace</a> (buttons, carousel, details - I’m really starting to get into <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components">Web Components</a>) with custom pieces on top.</p>
+<p>This site was created using <a href="https://www.11ty.dev/">Eleventy</a> (Markdown + Nunjucks), after many years of trying out essentially everything that was “hip” at a given time. In the end, I just needed something simple that I could build upon, but also could be used for other projects (with an easy-to-simplify structure). For the UI, I use the layout templates from BeerCSS, as I didn’t want to write one from scratch. Various UI elements of the site are made using <a href="https://shoelace.style/">Shoelace</a> (buttons, carousel, details - I’m really starting to get into <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components">Web Components</a>) with custom pieces on top.</p>
 <pre class="language-text"><code class="hljs language-text">Be sure to check out uses.tech to see other /uses pages!</code></pre>
-<p>You can also find me on the <a href="https://www.11ty.dev/speedlify/adamjolicoeur-com/">Eleventy Leaderboards</a>!</p>
 
   </main>
 </section>
@@ -222,19 +221,20 @@
           </a>
         </nav>
         <nav>
-          <div class="display: flex; flex-direction: column;">
-            <p class="italic">Eleventy Leaderboard Scores</p>
-              <!-- <a href="https://www.adamjolicoeur.com" class="speedlify-link"> -->
-            <a href="https://www.11ty.dev/speedlify/adamjolicoeur-com/" class="link" alt="Link to 11ty leaderboard">
+          <div class="display: flex; flex-direction: row;">
+            <p class="italic">My Speedlify Scores</p>
+            <a href="https://speedlify-aj.netlify.app/adamjolicoeur.com" class="link" alt="Link to 11ty leaderboard">
               <!-- Preferred -->
-              <!-- <speedlify-score speedlify-url="https://speedlify-aj.netlify.app/" hash="b2d9d426"> -->
-              <speedlify-score speedlify-url="https://www.11ty.dev/speedlify" hash="78bc8a2a"></speedlify-score>
+              <speedlify-score speedlify-url="https://speedlify-aj.netlify.app/" hash="78bc8a2a">
             </a>
+            <p>or find me on the
+            <a href="https://www.11ty.dev/speedlify/adamjolicoeur-com/" alt="Link to the Eleventy Leaderboard" class="link">Eleventy Leaderboard</a>
+            </p>
           </div>
         </nav>
       </div>
       <div class="s12 l6">
-        <div class="grid large-line">
+        <div class="grid">
           <div class="s4">
             <p class="bold">Designs</p>
             <p>
@@ -249,7 +249,7 @@
           </div>
           <div class="s4">
             <p class="bold">
-              <a href="/development" alt="Link to development page">Demos</a>
+              Demos
             </p>
             <p>
               <a href="https://pf4testbench.netlify.app" class="link" alt="External link to PF$ demo site">PatternFly4 Demo</a>
