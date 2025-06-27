@@ -27,11 +27,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/archives/archives/</loc>
-      <lastmod>2025-01-20T21:13:03.000Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/designs/district25/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
     </url>
@@ -79,11 +74,6 @@
     <url>
       <loc>https://www.adamjolicoeur.com/marketing/</loc>
       <lastmod>2025-04-09T15:51:10.333Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/connect/</loc>
-      <lastmod>2025-04-17T15:34:36.000Z</lastmod>
     </url>
   
     <url>
@@ -162,11 +152,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/credits/</loc>
-      <lastmod>2025-06-27T19:40:57.000Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/designs/</loc>
       <lastmod>2025-06-27T19:40:57.000Z</lastmod>
     </url>
@@ -182,13 +167,28 @@
     </url>
   
     <url>
+      <loc>https://www.adamjolicoeur.com/archives/archives/</loc>
+      <lastmod>2025-06-27T20:06:38.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/connect/</loc>
+      <lastmod>2025-06-27T20:06:38.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/credits/</loc>
+      <lastmod>2025-06-27T20:06:38.000Z</lastmod>
+    </url>
+  
+    <url>
       <loc>https://www.adamjolicoeur.com/uses/</loc>
-      <lastmod>2025-06-27T19:40:57.000Z</lastmod>
+      <lastmod>2025-06-27T20:06:38.000Z</lastmod>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/alfred/workflows/</loc>
-      <lastmod>2025-06-27T20:05:38.650Z</lastmod>
+      <lastmod>2025-06-27T20:20:35.591Z</lastmod>
     </url>
   
 </urlset>
