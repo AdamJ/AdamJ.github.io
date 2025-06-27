@@ -43,6 +43,7 @@
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.11.15/dist/cdn/beer.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+    <link href="https:///prismjs@v1.x/themes/prism.css" rel="stylesheet" />
     <link type="text/css" href="/css/style.css" rel="stylesheet" />
     
     <meta
@@ -68,7 +69,8 @@
   <header>
     <nav>
       <a href="/" alt="Link to home">
-        <img src="/img/Jolicoeur_iOS.png" class="circle" />
+        <span class="display-none">Link to home</span>
+        <img src="/img/Jolicoeur_iOS.png" class="circle" alt="Site logo" />
       </a>
     </nav>
   </header>
@@ -113,7 +115,8 @@
 </nav>
 
       <main class="responsive">
-        
+        <div class="page right active">
+          
 <section class="responsive">
   <h1>Designs</h1>
   <h5>Collaborate. Learn. Delight.</h5></section>
@@ -125,7 +128,8 @@
     <div class="s12">
       <article class="no-padding fill no-elevate round">
         <div class="grid">
-          <div class="s12 s"><img class="responsive large" src="/img/task-it_product.png" />
+          <div class="s12 s">
+            <img class="responsive large" src="/img/task-it_product.png" alt="Thumbnail of Task It project screen" />
             <div class="absolute left bottom right bottom-shadow s padding white-text">
               <div>Project One</div>
               <h5 class="no-margin">Task-It!</h5>
@@ -184,9 +188,12 @@
               </div>
             </div>
           </div>
-          <div class="s6 m l large-padding"><img class="responsive large round" src="/img/task-it_product.png" />
+          <div class="s6 m l large-padding">
+            <img class="responsive large round" src="/img/task-it_product.png" alt="Thumbnail of Task It project screen" />
             <div class="space l"></div>
-            <div class="row l"><img class="round extra" src="/img/task-it_user-states.png" /><img class="round extra" src="/img/task-it_user-survey.png"/>
+            <div class="row l">
+              <img class="round extra" src="/img/task-it_user-states.png" alt="Thumbnail of project screen" />
+              <img class="round extra" src="/img/task-it_user-survey.png" alt="Thumbnail of project screen"/>
               <div class="max"></div>
             </div>
           </div>
@@ -201,7 +208,7 @@
     <div class="s12">
       <article class="no-padding fill no-elevate round">
         <div class="grid">
-          <div class="s12 s"><img class="responsive large" src="/img/OSIO-laptop-screen-1200.png" />
+          <div class="s12 s"><img class="responsive large" src="/img/OSIO-laptop-screen-1200.png" alt="Thumbnail of ALM project screen" />
             <div class="absolute left bottom right bottom-shadow s padding white-text">
               <div>Project Two</div>
               <h5 class="no-margin">Application Management</h5>
@@ -260,9 +267,9 @@
               </div>
             </div>
           </div>
-          <div class="s6 m l large-padding"><img class="responsive large round" src="/img/OSIO-laptop-screen-1200.png" />
+          <div class="s6 m l large-padding"><img class="responsive large round" src="/img/OSIO-laptop-screen-1200.png" alt="Thumbnail of ALM project screen" />
             <div class="space l"></div>
-            <div class="row l"><img class="round extra" src="/img/ALM_wireframe.png" /><img class="round extra" src="/img/ALM_workflow.png"/>
+            <div class="row l"><img class="round extra" src="/img/ALM_wireframe.png" alt="Thumbnail of project screen" /><img class="round extra" src="/img/ALM_workflow.png" alt="Thumbnail of project screen"/>
               <div class="max"></div>
             </div>
           </div>
@@ -277,7 +284,7 @@
     <div class="s12">
       <article class="no-padding fill no-elevate round">
         <div class="grid">
-          <div class="s12 s"><img class="responsive large" src="/img/CEA_Dashboard.png" />
+          <div class="s12 s"><img class="responsive large" src="/img/CEA_Dashboard.png" alt="Thumbnail of Customer Engagement project screen" />
             <div class="absolute left bottom right bottom-shadow s padding white-text">
               <div>Project Three</div>
               <h5 class="no-margin">Customer Engagement</h5>
@@ -324,7 +331,7 @@
               </div>
             </div>
           </div>
-          <div class="s6 m l large-padding"><img class="responsive large round" src="/img/CEA_Dashboard.png" />
+          <div class="s6 m l large-padding"><img class="responsive large round" src="/img/CEA_Dashboard.png" alt="Thumbnail of Customer Engagement project screen" />
             <div class="space l"></div>
           </div>
         </div>
@@ -339,7 +346,7 @@
     <div class="s12">
       <article class="no-padding fill no-elevate round">
         <div class="grid">
-          <div class="s12 s"><img class="responsive large" src="/img/Timetrak.png" />
+          <div class="s12 s"><img class="responsive large" src="/img/Timetrak.png" alt="Thumbnail of Timetrak project screen" />
             <div class="absolute left bottom right bottom-shadow s padding white-text">
               <div>Project Four</div>
               <h5 class="no-margin">Switchback TimeTrak</h5>
@@ -386,7 +393,7 @@
               </div>
             </div>
           </div>
-          <div class="s6 m l large-padding"><img class="responsive large round" src="/img/Timetrak.png" />
+          <div class="s6 m l large-padding"><img class="responsive large round" src="/img/Timetrak.png" alt="Thumbnail of Timetrak project screen" />
             <div class="space l"></div>
           </div>
         </div>
@@ -401,7 +408,7 @@
     <div class="s12">
       <article class="no-padding fill no-elevate round">
         <div class="grid">
-          <div class="s12 s"><img class="responsive large" src="/img/SC_demo.png" />
+          <div class="s12 s"><img class="responsive large" src="/img/SC_demo.png" alt="Thumbnail of demo screen" />
             <div class="absolute left bottom right bottom-shadow s padding white-text">
               <div>Project Five</div>
               <h5 class="no-margin">Structure Cloud</h5>
@@ -443,7 +450,7 @@
               </div>
             </div>
           </div>
-          <div class="s6 m l large-padding"><img class="responsive large round" src="/img/SC_demo.png" />
+          <div class="s6 m l large-padding"><img class="responsive large round" src="/img/SC_demo.png" alt="Thumbnail of demo screen" />
             <div class="space l"></div>
           </div>
         </div>
@@ -468,7 +475,7 @@
             <a href="/presentations/portfolio/" alt="Link to portfolio presentation">
               <button class="large secondary">
                 <i>book</i>
-                <span>Review Presentation</span>
+                <span>Review</span>
               </button>
             </a>
           </nav>
@@ -485,7 +492,7 @@
             <a href="/presentations/portfolio/" alt="Link to portfolio presentation">
               <button class="large secondary">
                 <i>colorize</i>
-                <span>Review Presentation</span>
+                <span>Review</span>
               </button>
             </a>
           </nav>
@@ -497,6 +504,7 @@
 
 
 
+        </div>
       <footer>
   <div class="large-space"></div>
   <div class="large-space"></div>
@@ -507,9 +515,9 @@
       <div class="s12 l6">
         <div>
           <a  href="/" title="Home">
-            <img src="/img/Jolicoeur_iOS.png" class="circle" />
+            <img src="/img/Jolicoeur_iOS.png" class="circle" alt="Site logo" />
           </a></div>
-        <p>A designer, developer, and program manager in Massachusetts. Starting as a help desk tech kicked off a desire to create technology, rather than fixing it, which lead to a leap into the software engineering space. My career has me currently at Component Assembly Systems as their Lead Program Manager and Head of UX.</p>
+        <p>A designer, developer, and program manager in Massachusetts. Starting as a help desk tech kicked off a desire to create technology, rather than fixing it, which lead to a leap into the software engineering space. My career has me currently at Component Assembly Systems as their Lead Program Manager and Designer.</p>
         <nav>
           <a href="/about" class="link" alt="Link to the about page">
             About
@@ -520,6 +528,17 @@
           <a href="/uses" class="link" alt="Link to uses page">
             Uses
           </a>
+        </nav>
+        <nav>
+          <div class="display: flex; flex-direction: column;">
+            <p class="italic">Eleventy Leaderboard Scores</p>
+              <!-- <a href="https://www.adamjolicoeur.com" class="speedlify-link"> -->
+            <a href="https://www.11ty.dev/speedlify/adamjolicoeur-com/" class="link" alt="Link to 11ty leaderboard">
+              <!-- Preferred -->
+              <!-- <speedlify-score speedlify-url="https://speedlify-aj.netlify.app/" hash="b2d9d426"> -->
+              <speedlify-score speedlify-url="https://www.11ty.dev/speedlify" hash="78bc8a2a"></speedlify-score>
+            </a>
+          </div>
         </nav>
       </div>
       <div class="s12 l6">
@@ -587,8 +606,10 @@
     </div>
   </section>
   <script src="https://kit.fontawesome.com/0ea2a7621c.js" crossorigin="anonymous"></script>
-  
+  <script src="https:///prismjs@v1.x/components/prism-core.min.js"></script>
+  <script src="https:///prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
   <script type="application/javascript" src="/js/jolicoeur.js"></script>
+  <script type="application/javascript" src="/js/speedlify-score.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQCZPW3PZN" crossorigin="anonymous"></script>
   <script>

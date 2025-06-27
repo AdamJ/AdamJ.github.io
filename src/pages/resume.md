@@ -9,17 +9,17 @@ eleventyNavigation:
   parent: About
 ---
 
-<article>
+<article class="primary-container">
   <div>
-    <h2 class="mt-0">Lead Program Manager &amp; Designer</h2>
-    <h4 class="my-0">Component Assembly Systems, Inc. (Pelham, NY)</h4>
-    <p class="text-body-secondary">January 2024 - Present</p>
-    <div class="pb-3 row-badges">
-      <sl-badge variant="primary" pill>Program Management</sl-badge>
-      <sl-badge variant="primary" pill>Figma</sl-badge>
-      <sl-badge variant="primary" pill>Strategic Technology</sl-badge>
-      <sl-badge variant="primary" pill>Design Systems</sl-badge>
-      <sl-badge variant="primary" pill>Research</sl-badge>
+    <h2>Lead Program Manager &amp; Designer</h2>
+    <h4>Component Assembly Systems, Inc. (Pelham, NY)</h4>
+    <p>January 2024 - Present</p>
+    <div class="grid">
+      <div class="s2 chip fill small-elevate">Program Management</div>
+      <div class="s2 chip fill small-elevate">Figma</div>
+      <div class="s2 chip fill small-elevate">Strategic Technology</div>
+      <div class="s2 chip fill small-elevate">Design Systems</div>
+      <div class="s2 chip fill small-elevate">Research</div>
     </div>
   </div>
   <div>
@@ -30,18 +30,18 @@ eleventyNavigation:
     </ul>
   </div>
 </article>
-<article>
+<article class="fill">
   <div>
     <h2>Senior UX Designer</h2>
     <h4>Amazon.com, Inc <br /> Amazon Software Builder Experience (Boston, MA)</h4>
     <p>August 2021 - September 2023</p>
-    <div>
-      <sl-badge variant="primary" pill>Figma</sl-badge>
-      <sl-badge variant="primary" pill>Prototypes</sl-badge>
-      <sl-badge variant="primary" pill>UserTesting</sl-badge>
-      <sl-badge variant="primary" pill>Design Systems</sl-badge>
-      <sl-badge variant="primary" pill>Research</sl-badge>
-      <sl-badge variant="primary" pill>React</sl-badge>
+    <div class="grid">
+      <div class="s2 chip primary-container small-elevate">Figma</div>
+      <div class="s2 chip primary-container small-elevate">Prototypes</div>
+      <div class="s2 chip primary-container small-elevate">UserTesting</div>
+      <div class="s2 chip primary-container small-elevate">Design Systems</div>
+      <div class="s2 chip primary-container small-elevate">Research</div>
+      <div class="s2 chip primary-container small-elevate">React</div>
     </div>
   </div>
   <div>
@@ -53,18 +53,18 @@ eleventyNavigation:
     </ul>
   </div>
 </article>
-<article>
+<article class="primary-container">
   <div>
     <h2>Senior Software Engineer, UXD</h2>
     <h4>Red Hat, Inc (Westford, MA)</h4>
     <p>December 2016 - August 2021</p>
-    <div class="row-badges">
-      <sl-badge variant="primary" pill>Sketch</sl-badge>
-      <sl-badge variant="primary" pill>Adobe XD</sl-badge>
-      <sl-badge variant="primary" pill>HTML</sl-badge>
-      <sl-badge variant="primary" pill>SCSS</sl-badge>
-      <sl-badge variant="primary" pill>Git</sl-badge>
-      <sl-badge variant="primary" pill>OSS</sl-badge>
+    <div class="grid">
+      <div class="s2 chip fill small-elevate">Sketch</div>
+      <div class="s2 chip fill small-elevate">Adobe XD</div>
+      <div class="s2 chip fill small-elevate">HTML</div>
+      <div class="s2 chip fill small-elevate">SCSS</div>
+      <div class="s2 chip fill small-elevate">Git</div>
+      <div class="s2 chip fill small-elevate">OSS</div>
     </div>
   </div>
   <div>
@@ -78,17 +78,17 @@ eleventyNavigation:
     </ul>
   </div>
 </article>
-<article>
+<article class="fill">
   <div>
     <h2>User Experience Designer</h2>
     <h4>Saylent Technologies (Franklin, MA)</h4>
     <p>November 2014 - July 2016</p>
-    <div class="row-badges">
-      <sl-badge variant="primary" pill>Photoshop</sl-badge>
-      <sl-badge variant="primary" pill>Visual studio</sl-badge>
-      <sl-badge variant="primary" pill>HTML</sl-badge>
-      <sl-badge variant="primary" pill>CSS</sl-badge>
-      <sl-badge variant="primary" pill>Agile</sl-badge>
+    <div class="grid">
+      <div class="s2 chip primary-container small-elevate">Photoshop</div>
+      <div class="s2 chip primary-container small-elevate">Visual studio</div>
+      <div class="s2 chip primary-container small-elevate">HTML</div>
+      <div class="s2 chip primary-container small-elevate">CSS</div>
+      <div class="s2 chip primary-container small-elevate">Agile</div>
     </div>
   </div>
   <div>
@@ -102,56 +102,54 @@ eleventyNavigation:
     </ul>
   </div>
 </article>
-<div class="container mb-2 py-2 px-0">
-  <div class="row px-0 pb-3 mx-0">
-    <div class="col-12 col-md-6">
-      <h2 class="mt-0">Vice President, Design</h2>
-      <h4 class="my-0">Switchback, Inc. (Holden, MA)</h4>
-      <p class="text-body-secondary">November 2010 - August 2021 / September 2023 - January 2025</p>
-      <div class="pb-3 row-badges">
-        <sl-badge variant="primary" pill>Sketch</sl-badge>
-        <sl-badge variant="primary" pill>Adobe XD</sl-badge>
-        <sl-badge variant="primary" pill>HTML</sl-badge>
-        <sl-badge variant="primary" pill>SCSS</sl-badge>
-        <sl-badge variant="primary" pill>Wireframes</sl-badge>
-      </div>
+<article class="primary-container">
+  <div>
+    <h2>Vice President, Design</h2>
+    <h4>Switchback, Inc. (Holden, MA)</h4>
+    <p>November 2010 - August 2021 / September 2023 - January 2025</p>
+    <div class="grid">
+      <div class="s2 chip fill small-elevate">Sketch</div>
+      <div class="s2 chip fill small-elevate">Adobe XD</div>
+      <div class="s2 chip fill small-elevate">HTML</div>
+      <div class="s2 chip fill small-elevate">SCSS</div>
+      <div class="s2 chip fill small-elevate">Wireframes</div>
     </div>
-    <div class="col-12 col-md-6">
+    <div class="s12 l6">
       <p>As a contractor, I was the lead designer for multiple products and web interfaces including a redesign of an internal financial accounting product, an architectural drawing reference interface, and a time management system.</p>
-      <ul class="icon-list">
-        <li class="text-muted">
+      <ul>
+        <li>
           Product Design
           <ul><li>September 2024 - January 2025</li></ul>
         </li>
-        <li class="text-muted">
+        <li>
           Visual Design &amp; Development
           <ul><li>November 2010 - December 2021</li></ul>
         </li>
-        <li class="text-muted">
+        <li>
           Web Design
           <ul><li>January 2003 - June 2008</li></ul>
         </li>
       </ul>
     </div>
   </div>
-</div>
-<div class="container mb-2 py-2 px-0">
-  <div class="row px-0 pb-3 mx-0">
-    <div class="col-12 col-md-6">
-      <h2 class="mt-0">UI Software Engineer</h2>
-      <h4 class="my-0">Black Duck Software (Burlington, MA)</h4>
-      <p class="text-body-secondary">February 2013 - October 2014</p>
-      <div class="pb-3 row-badges">
-        <sl-badge variant="primary" pill>HTML</sl-badge>
-        <sl-badge variant="primary" pill>CSS/LESS</sl-badge>
-        <sl-badge variant="primary" pill>Bootstrap</sl-badge>
-        <sl-badge variant="primary" pill>Agile</sl-badge>
-        <sl-badge variant="primary" pill>Git</sl-badge>
+</article>
+<article class="fill">
+  <div>
+    <div class="s12 l6">
+      <h2>UI Software Engineer</h2>
+      <h4>Black Duck Software (Burlington, MA)</h4>
+      <p>February 2013 - October 2014</p>
+      <div class="grid">
+        <div class="s2 chip primary-container small-elevate">HTML</div>
+        <div class="s2 chip primary-container small-elevate">CSS/LESS</div>
+        <div class="s2 chip primary-container small-elevate">Bootstrap</div>
+        <div class="s2 chip primary-container small-elevate">Agile</div>
+        <div class="s2 chip primary-container small-elevate">Git</div>
       </div>
     </div>
-    <div class="col-12 col-md-6">
+    <div class="s12 l6">
       <p>As a UI Software Engineer, I worked with the development and design teams to turn the visual designs into working applications.</p>
-      <ul class="icon-list">
+      <ul>
         <li>Developed and implemented a software inventory and management system</li>
         <li>Created and developed wireframes, templates, and live mockups for development team</li>
         <li>Developed continuity and usability structure for high-interaction areas</li>
@@ -159,24 +157,24 @@ eleventyNavigation:
       </ul>
     </div>
   </div>
-</div>
-<div class="container mb-2 py-2 px-0">
-  <div class="row px-0 pb-3 mx-0">
-    <div class="col-12 col-md-6">
-      <h2 class="mt-0">Help Desk Analyst</h2>
-      <h4 class="my-0">Conservation Services Group (Westborough, MA)</h4>
-      <p class="text-body-secondary">June 2008 - November 2010</p>
-      <div class="pb-3 row-badges">
-        <sl-badge variant="primary" pill>JIRA</sl-badge>
-        <sl-badge variant="primary" pill>DevOps</sl-badge>
-        <sl-badge variant="primary" pill>Ubuntu</sl-badge>
-        <sl-badge variant="primary" pill>RHEL</sl-badge>
-        <sl-badge variant="primary" pill>VMs</sl-badge>
+</article>
+<article class="primary-container">
+  <div>
+    <div class="s12 l6">
+      <h2>Help Desk Analyst</h2>
+      <h4>Conservation Services Group (Westborough, MA)</h4>
+      <p>June 2008 - November 2010</p>
+      <div class="grid">
+        <div class="s2 chip fill small-elevate">JIRA</div>
+        <div class="s2 chip fill small-elevate">DevOps</div>
+        <div class="s2 chip fill small-elevate">Ubuntu</div>
+        <div class="s2 chip fill small-elevate">RHEL</div>
+        <div class="s2 chip fill small-elevate">VMs</div>
       </div>
     </div>
-    <div class="col-12 col-md-6">
+    <div class="s12 l6">
     <p>As a Help Desk Analyst, I managed and administered the internal IT Help Desk system while maintaining and active system for automated email responses and user-focused ticketing system.</p>
-      <ul class="icon-list">
+      <ul>
         <li>Managed and administered IT Help Desk System (Spiceworks)</li>
         <li>Managed and administered Blackberry Enterprise Server 5.0</li>
         <li>Administered FTP Server and FTP account using SuSE 9 and Ubuntu 8.04 LTS</li>
@@ -188,49 +186,76 @@ eleventyNavigation:
       </ul>
     </div>
   </div>
-</div>
-<div class="container py-3 mt-3 px-0">
-  <div class="details-group-example">
-    <sl-details summary="Education" open>
-      <sl-icon name="caret-right-square" slot="expand-icon"></sl-icon>
-      <sl-icon name="caret-left-square" slot="collapse-icon"></sl-icon>
-      <p class="bold mb-1">Massachusetts College of Liberal Arts - North Adams, MA</p>
-      <date>2003 - 2008</date>
-      <p class="mt-3">Bachelor of Arts, Fine and Performing Arts, Music</p>
+</article>
+<div class="medium-space"></div>
+<div class="max hide-on-print">
+  <details>
+    <summary>
+      <article class="secondary-container">
+        <nav>
+          <h6 class="max">Education</h6>
+          <i>expand_more</i>
+        </nav>
+      </article>
+    </summary>
+    <article>
+      <p><strong>Massachusetts College of Liberal Arts - North Adams, MA</strong></p>
+      <p><date>2003 - 2008</date></p>
+      <p>Bachelor of Arts, Fine and Performing Arts, Music</p>
       <p>Bachelor of Arts, Arts, Entertainment, and Media Management</p>
       <p>Alpha Chi - National Scholars Honor Society - Who’s Who in American Colleges and Universities</p>
-    </sl-details>
-    <sl-details summary="Skills">
-      <sl-icon name="caret-right-square" slot="expand-icon"></sl-icon>
-      <sl-icon name="caret-left-square" slot="collapse-icon"></sl-icon>
-      <div style="display: flex; align-items: center; flex-direction: row; flex-wrap: wrap; gap: 0.5rem;">
-        <sl-tag size="medium" pill>Product Design</sl-tag>
-        <sl-tag size="medium" pill>HTML / CSS</sl-tag>
-        <sl-tag size="medium" pill>Iconography</sl-tag>
-        <sl-tag size="medium" pill>Prototyping</sl-tag>
-        <sl-tag size="medium" pill>Wireframes</sl-tag>
-        <sl-tag size="medium" pill>User research</sl-tag>
-        <sl-tag size="medium" pill>Figma / FigJam</sl-tag>
-        <sl-tag size="medium" pill>Sketch</sl-tag>
-        <sl-tag size="medium" pill>Design systems</sl-tag>
-        <sl-tag size="medium" pill>Product management</sl-tag>
-        <sl-tag size="medium" pill>Roadmapping</sl-tag>
-      </div>
-    </sl-details>
-    <sl-details summary="Organizations">
-      <sl-icon name="caret-right-square" slot="expand-icon"></sl-icon>
-      <sl-icon name="caret-left-square" slot="collapse-icon"></sl-icon>
-      <p>Various organizations that I have belonged to, past and present.</p>
-      <p class="bold mb-1">UXPA Boston</p>
-      <date>2017 - Present</date>
-      <p class="bold mt-3 mb-1">W3C CSS Working Group</p>
-      <date>April 2020 - August 2021</date>
-    </sl-details>
-  </div>
+    </article>
+  </details>
 </div>
-  <style>
-  sl-details.custom-icons::part(summary-icon) {
-    /* Disable the expand/collapse animation */
-    rotate: none !important;
-  }
-  </style>
+<div class="small-space"></div>
+<div class="max hide-on-print">
+  <details>
+    <summary>
+      <article class="secondary-container">
+        <nav>
+          <h6 class="max">Skills</h6>
+          <i>expand_more</i>
+        </nav>
+      </article>
+    </summary>
+    <article>
+      <div class="grid">
+        <div class="s2 chip small-elevate">Product Design</div>
+        <div class="s2 chip small-elevate">HTML / CSS</div>
+        <div class="s2 chip small-elevate">Iconography</div>
+        <div class="s2 chip small-elevate">Prototyping</div>
+        <div class="s2 chip small-elevate">Wireframes</div>
+        <div class="s2 chip small-elevate">User research</div>
+        <div class="s2 chip small-elevate">Figma / FigJam</div>
+        <div class="s2 chip small-elevate">Sketch</div>
+        <div class="s2 chip small-elevate">Design systems</div>
+        <div class="s2 chip small-elevate">Product management</div>
+        <div class="s2 chip small-elevate">Roadmapping</div>
+      </div>
+    </article>
+  </details>
+</div>
+<div class="small-space"></div>
+<div class="max hide-on-print">
+  <details>
+    <summary>
+      <article class="secondary-container">
+        <nav>
+          <h6 class="max">Groups</h6>
+          <i>expand_more</i>
+        </nav>
+      </article>
+    </summary>
+    <article>
+      <div class="responsive">
+        <p><strong>UXPA Boston</strong><br />2017 - Present</p>
+        <p><strong>W3C CSS Working Group</strong>
+          <br />
+          <em>Red Hat, Inc.</em>
+          <br />
+          April 2020 - August 2021
+        </p>
+      </div>
+    </article>
+  </details>
+</div>

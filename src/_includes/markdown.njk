@@ -18,18 +18,25 @@ layout: base.njk
   </div>
 </div>
 
+<style>
+  nav:is(.left) {
+    background-color: transparent !important;
+    z-index: 0 !important;
+  }
+</style>
 <section class="responsive">
-  <!-- {%- if (tocBlock) -%}
+  {%- if (tocBlock) -%}
     {%- if content | toc -%}
-    <sl-details summary="Table of Contents">
+    <nav class="left max">
+    <!--<sl-details summary="Table of Contents">-->
       {{ content | toc | safe }}
-    </sl-details>
+    <!--</sl-details>-->
+    </nav>
     {%- else -%}
     {%- endif -%}
   {%- else -%}
-  {%- endif -%} -->
-  <div class="medium-space"></div>
-  <div class="page right active">
+  {%- endif -%}
+  <main class="responsive">
     {{ content | safe }}
-  </div>
+  </main>
 </section>

@@ -90,12 +90,6 @@
 	},
 
 	{
-   "title":"Testimonials",
-   "imgName":"testimonials",
-   "date":"testimonials"
-	},
-
-	{
    "title":"howto",
    "imgName":"howto",
    "date":"howto"
@@ -174,21 +168,9 @@
 	},
 
 	{
-   "title":"Development",
-   "imgName":"development",
-   "date":"development"
-	},
-
-	{
    "title":"Reference links",
    "imgName":"reference-links",
    "date":"reference-links"
-	},
-
-	{
-   "title":"Designs",
-   "imgName":"designs",
-   "date":"designs"
 	},
 
 	{
@@ -219,6 +201,24 @@
    "title":"Adam J. Jolicoeur",
    "imgName":"adam-j.-jolicoeur",
    "date":"adam-j.-jolicoeur"
+	},
+
+	{
+   "title":"Designs",
+   "imgName":"designs",
+   "date":"designs"
+	},
+
+	{
+   "title":"Development",
+   "imgName":"development",
+   "date":"development"
+	},
+
+	{
+   "title":"Testimonials",
+   "imgName":"testimonials",
+   "date":"testimonials"
 	},
 
 	{

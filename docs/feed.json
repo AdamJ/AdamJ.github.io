@@ -30,8 +30,32 @@
       "id": "/alfred/workflows/",
       "url": "/alfred/workflows/",
       "title": "Alfred Workflows",
-      "date_published": "2025-06-25T20:10:27Z",
-      "date": "2025-06-25T20:10:27Z"
+      "date_published": "2025-06-27T19:38:53Z",
+      "date": "2025-06-27T19:38:53Z"
+    }
+    ,
+    {
+      "id": "/testimonials/",
+      "url": "/testimonials/",
+      "title": "Testimonials",
+      "date_published": "2025-06-25T20:11:48Z",
+      "date": "2025-06-25T20:11:48Z"
+    }
+    ,
+    {
+      "id": "/development/",
+      "url": "/development/",
+      "title": "Development",
+      "date_published": "2025-06-25T20:11:48Z",
+      "date": "2025-06-25T20:11:48Z"
+    }
+    ,
+    {
+      "id": "/designs/",
+      "url": "/designs/",
+      "title": "Designs",
+      "date_published": "2025-06-25T20:11:48Z",
+      "date": "2025-06-25T20:11:48Z"
     }
     ,
     {
@@ -75,27 +99,11 @@
     }
     ,
     {
-      "id": "/designs/",
-      "url": "/designs/",
-      "title": "Designs",
-      "date_published": "2025-06-20T18:51:06Z",
-      "date": "2025-06-20T18:51:06Z"
-    }
-    ,
-    {
       "id": "/reference/",
       "url": "/reference/",
       "title": "Reference links",
       "date_published": "2025-06-13T15:17:40Z",
       "date": "2025-06-13T15:17:40Z"
-    }
-    ,
-    {
-      "id": "/development/",
-      "url": "/development/",
-      "title": "Development",
-      "date_published": "2025-06-12T18:44:37Z",
-      "date": "2025-06-12T18:44:37Z"
     }
     ,
     {
@@ -184,14 +192,6 @@
       "title": "Marketing",
       "date_published": "2025-04-09T15:51:10Z",
       "date": "2025-04-09T15:51:10Z"
-    }
-    ,
-    {
-      "id": "/testimonials/",
-      "url": "/testimonials/",
-      "title": "Testimonials",
-      "date_published": "2025-01-20T21:13:03Z",
-      "date": "2025-01-20T21:13:03Z"
     }
     ,
     {

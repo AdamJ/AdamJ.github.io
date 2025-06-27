@@ -26,7 +26,8 @@
     "build": "cross-env ELEVENTY_ENV=prod npm-run-all build:sass build:eleventy",
     "lint": "stylelint 'src/sass/*.scss' 'src/sass/*.scss' 'src/sass/*.scss'",
     "lint:fix": "stylelint --fix 'src/sass/*.scss' 'src/sass/*.scss' 'src/sass/*.scss'",
-    "bump": "npm --no-git-tag-version version"
+    "bump": "npm --no-git-tag-version version",
+    "copy-speedlify": "cp node_modules/speedlify-score/speedlify-score.js src/js/"
   },
   "repository": {
     "type": "git",
@@ -39,6 +40,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.1.1",
     "@11ty/eleventy-activity-feed": "^2.0.0",
+    "@11ty/eleventy-cache-assets": "^2.3.0",
     "@11ty/eleventy-img": "^6.0.4",
     "@11ty/eleventy-navigation": "^1.0.4",
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
@@ -74,7 +76,7 @@
     "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",
     "@shoelace-style/shoelace": "^2.20.1",
     "beercss": "^3.11.17",
-    "bootstrap": "^5.3.6",
-    "material-dynamic-colors": "^1.1.2"
+    "material-dynamic-colors": "^1.1.2",
+    "speedlify-score": "^4.0.4"
   }
 }

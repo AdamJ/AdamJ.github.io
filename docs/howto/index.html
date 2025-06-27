@@ -90,7 +90,8 @@
   <header>
     <nav>
       <a href="/" alt="Link to home">
-        <img src="/img/Jolicoeur_iOS.png" class="circle" />
+        <span class="display-none">Link to home</span>
+        <img src="/img/Jolicoeur_iOS.png" class="circle" alt="Site logo" />
       </a>
     </nav>
   </header>
@@ -141,7 +142,7 @@
 
           </article><aside class="col-sm-12 col-md-3">
             <div class="toc markdown-toc" >
-        <ul><li><a href="#how-to-use-the-site">How to Use the Site</a></li></ul>
+        <ol><li><a href="#how-to-use-the-site">How to Use the Site</a></li></ol>
       </div>
           </aside></div>
       </div>
@@ -156,9 +157,9 @@
       <div class="s12 l6">
         <div>
           <a  href="/" title="Home">
-            <img src="/img/Jolicoeur_iOS.png" class="circle" />
+            <img src="/img/Jolicoeur_iOS.png" class="circle" alt="Site logo" />
           </a></div>
-        <p>A designer, developer, and program manager in Massachusetts. Starting as a help desk tech kicked off a desire to create technology, rather than fixing it, which lead to a leap into the software engineering space. My career has me currently at Component Assembly Systems as their Lead Program Manager and Head of UX.</p>
+        <p>A designer, developer, and program manager in Massachusetts. Starting as a help desk tech kicked off a desire to create technology, rather than fixing it, which lead to a leap into the software engineering space. My career has me currently at Component Assembly Systems as their Lead Program Manager and Designer.</p>
         <nav>
           <a href="/about" class="link" alt="Link to the about page">
             About
@@ -169,6 +170,17 @@
           <a href="/uses" class="link" alt="Link to uses page">
             Uses
           </a>
+        </nav>
+        <nav>
+          <div class="display: flex; flex-direction: column;">
+            <p class="italic">Eleventy Leaderboard Scores</p>
+              <!-- <a href="https://www.adamjolicoeur.com" class="speedlify-link"> -->
+            <a href="https://www.11ty.dev/speedlify/adamjolicoeur-com/" class="link" alt="Link to 11ty leaderboard">
+              <!-- Preferred -->
+              <!-- <speedlify-score speedlify-url="https://speedlify-aj.netlify.app/" hash="b2d9d426"> -->
+              <speedlify-score speedlify-url="https://www.11ty.dev/speedlify" hash="78bc8a2a"></speedlify-score>
+            </a>
+          </div>
         </nav>
       </div>
       <div class="s12 l6">
@@ -236,8 +248,10 @@
     </div>
   </section>
   <script src="https://kit.fontawesome.com/0ea2a7621c.js" crossorigin="anonymous"></script>
-  
+  <script src="https:///prismjs@v1.x/components/prism-core.min.js"></script>
+  <script src="https:///prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
   <script type="application/javascript" src="/js/jolicoeur.js"></script>
+  <script type="application/javascript" src="/js/speedlify-score.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQCZPW3PZN" crossorigin="anonymous"></script>
   <script>

@@ -1,48 +1,17 @@
 ---
-layout: "page"
+layout: markdown
 title: "Uses"
 date: git Last Modified
 abbreviation: "uses"
-description: "What I use as a designer."
-headerButton: false
+description: "Daily carries and useful tools"
+readTime: false
+tocBlock: true
 eleventyNavigation:
   key: Uses
   order: 10
 ---
 
 <style>
-  content {
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0 auto;
-    a {
-      color: var(--sl-color-primary-900) !important;
-    }
-  }
-  h2 {
-    position: relative;
-    background: linear-gradient(90deg, var(--sl-color-primary-900) 0%, var(--sl-color-primary-600) 100%);
-    color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    @media (prefer-color-scheme: light) {
-      color: #000;
-      background: transparent;
-    }
-    &:before {
-      content: "";
-      position: absolute;
-      left: -1rem;
-      bottom: 0;
-      background: linear-gradient(90deg, var(--sl-color-primary-900) 0%, var(--sl-color-primary-600) 100%);
-      border-radius: 1rem;
-      width: 4rem;
-      height: .25rem;
-      z-index: -1;
-    }
-  }
   /* Use the CODE block for general alert-style blocks when TEXT is specified as the language */
   .code-toolbar {
     pre {
@@ -86,7 +55,8 @@ eleventyNavigation:
 
 ## Desktop Apps
 
-- [Arc browser](https://arc.net/download): my primary browser, though I also use Safari for creating web apps (Bluesky / Threads / GitHub).
+- <span class="overline">Arc browser: my primary browser, though I also use Safari for creating web apps (Bluesky / Threads / GitHub).</span>
+- Microsoft Edge: for development (disabling all of the extra stuff) with Safari as my casual browser.
 - [Parallels Desktop](https://www.parallels.com/products/desktop/use-cases/developers/?extensionid=%7Bextensionid%7D&matchtype=b&device=c&devicemodel=&creative=&network=o&placement=&x-source=ppc): sometimes I need to use different operating systems and I turn to this for Windows 11, Ubuntu, and Fedora.
 - Apple Notes: why use something else when this does the job? Tags, Smart Folders, and shortcuts are key.
 - [Raycast](https://www.raycast.com/): switched off of Alfred a while back and found this to be indispensable in my daily work.

@@ -43,6 +43,7 @@
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.11.15/dist/cdn/beer.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+    <link href="https:///prismjs@v1.x/themes/prism.css" rel="stylesheet" />
     <link type="text/css" href="/css/style.css" rel="stylesheet" />
     
     <meta
@@ -68,7 +69,8 @@
   <header>
     <nav>
       <a href="/" alt="Link to home">
-        <img src="/img/Jolicoeur_iOS.png" class="circle" />
+        <span class="display-none">Link to home</span>
+        <img src="/img/Jolicoeur_iOS.png" class="circle" alt="Site logo" />
       </a>
     </nav>
   </header>
@@ -113,7 +115,8 @@
 </nav>
 
       <main class="responsive">
-        
+        <div class="page right active">
+          
 <section class="responsive">
   <div class="center-align">
     <h1>Credits</h1>
@@ -122,47 +125,35 @@
     </h5></div>
 </div>
 
-<section class="responsive">
-  <!---->
-  <div class="medium-space"></div>
-  <div class="page right active">
+<style>
+  nav:is(.left) {
+    background-color: transparent !important;
+    z-index: 0 !important;
+  }
+</style>
+<section class="responsive"><nav class="left max">
+    <!--<sl-details summary="Table of Contents">-->
+      <div class="toc markdown-toc" >
+        <ol><li><a href="#libraries">Libraries</a></li><li><a href="#fonts">Fonts</a></li><li><a href="#icons">Icons</a></li><li><a href="#plugins">Plugins</a></li><li><a href="#performance-testing">Performance Testing</a></li><li><a href="#tools">Tools</a></li></ol>
+      </div>
+    <!--</sl-details>-->
+    </nav><main class="responsive">
     <p>Giving credit where credit is due, this page is based off of the <a href="https://raw.githubusercontent.com/LeaVerou/lea.verou.me/refs/heads/main/credits/index.md">Credits</a> page from <a href="https://lea.verou.me/">Lea Verou</a>.</p>
 <hr>
 <p>This site was built using <a href="https://www.11ty.dev/">Eleventy</a>, hosted on <a href="https://cloudflare.com/">Cloudflare Pages</a>, with previews deployed with <a href="https://www.cloudflare.com/">Cloudflare</a>. Certificate courtesy of Cloudflare and <a href="https://letsencrypt.org/">Let’s Encrypt</a>.</p>
 <h2 id="libraries" tabindex="-1">Libraries <a class="anchor-link" href="#libraries">#</a></h2>
 <ul>
 <li><a href="https://www.11ty.dev/">Eleventy</a></li>
+<li><a href="https://www.beercss.com">BeerCSS</a></li>
 <li><a href="https://shoelace.style/">Shoelace</a></li>
-<li><a href="https://getbootstrap.com/">Bootstrap</a></li>
 </ul>
 <h2 id="fonts" tabindex="-1">Fonts <a class="anchor-link" href="#fonts">#</a></h2>
-<pre class="language-css"><code class="hljs language-css">  <span class="token selector">:root</span> <span class="token punctuation">{</span>
-    <span class="token property">--sl-font-sans</span><span class="token punctuation">:</span> <span class="token string">"Oswald"</span><span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
-    <span class="token property">--sl-font-mono</span><span class="token punctuation">:</span> <span class="token string">"Fira Mono"</span><span class="token punctuation">,</span> monospace<span class="token punctuation">;</span>
-    <span class="token property">--sl-font-serif</span><span class="token punctuation">:</span> <span class="token string">"Lato"</span><span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
-    <span class="token property">--bs-font-sans-serif</span><span class="token punctuation">:</span> <span class="token string">"Lato"</span><span class="token punctuation">,</span> serif<span class="token punctuation">;</span>
-  <span class="token punctuation">}</span></code></pre>
-<ul>
-<li><a href="https://fonts.google.com/specimen/Oswald">Oswald</a>
-<ul>
-<li>Headers, specified through general <code>&lt;H&gt;</code> tags and CSS classes</li>
-</ul>
-</li>
-<li><a href="https://fonts.google.com/specimen/Lato">Lato</a>
-<ul>
-<li>Paragraphs, specified through general <code>&lt;p&gt;</code> tags and CSS classes</li>
-</ul>
-</li>
-<li><a href="https://fonts.google.com/specimen/Fira+Mono">Fira Mono</a>
-<ul>
-<li>Code blocks, specified through general <code>&lt;code&gt;</code> tags and CSS classes</li>
-</ul>
-</li>
-</ul>
-<h2 id="icons" tabindex="-1">Icons <a class="anchor-link" href="#icons">#</a></h2>
-<p>A custom icon component (<a href="https://github.com/AdamJ/adamjolicoeur.com/blob/main/src/js/icon-component.js">icon-component.js</a>) is used to render icons as web components with <a href="https://fontawesome.com/">Font Awesome</a> as the preferred icon library.</p>
-<pre><code class="hljs">  &lt;fa-icon type=&quot;brands&quot; name=&quot;github&quot; size=&quot;md&quot;&gt;&lt;/fa-icon&gt;
+<pre class="language-css"><code class="hljs language-css">  <span class="token property">--font</span><span class="token punctuation">:</span> Inter<span class="token punctuation">,</span> Roboto<span class="token punctuation">,</span> <span class="token string">"Helvetica Neue"</span><span class="token punctuation">,</span> <span class="token string">"Arial Nova"</span><span class="token punctuation">,</span> <span class="token string">"Nimbus Sans"</span><span class="token punctuation">,</span> <span class="token string">"Noto Sans"</span><span class="token punctuation">,</span> Arial<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
 </code></pre>
+<p><em>These are the defaults that come with BeerCSS. They can be changed by following the <a href="https://github.com/beercss/beercss/blob/main/docs/SETTINGS.md#fonts">documentation</a></em></p>
+<h2 id="icons" tabindex="-1">Icons <a class="anchor-link" href="#icons">#</a></h2>
+<p>As BeerCSS uses Material Symbols, I’ve swapped out previous custom icons to use the built-in options.</p>
+<pre class="language-css"><code class="hljs language-css">  <span class="token property">--font-icon</span><span class="token punctuation">:</span> <span class="token string">"Material Symbols Outlined"</span><span class="token punctuation">;</span></code></pre>
 <h2 id="plugins" tabindex="-1">Plugins <a class="anchor-link" href="#plugins">#</a></h2>
 <ul>
 <li><a href="https://github.com/11ty/eleventy-plugin-inclusive-language">eleventy-plugin-inclusive-language</a> to check for inclusive language</li>
@@ -173,6 +164,14 @@
 <li><a href="https://github.com/11ty/eleventy-img">markdown-it-eleventy-img</a> used for image processing of vector and raster images.</li>
 <li><a href="https://github.com/11ty/eleventy-plugin-syntaxhighlight">markdown-it-highlightjs</a> - highlights code blocks at build time utilizing <a href="https://prismjs.com/">PrismJS</a> syntax highlighting.</li>
 <li><a href="https://github.com/11tyrocks/eleventy-plugin-emoji-readtime">eleventy-plugin-emoji-readtime</a> calculates the reading time of blog posts (i.e. any page using the <code>blog</code> layout) based on the number of words. A tag with the time to read is added to the top of a page where the FrontMatter has <code>readtime: true</code>.</li>
+</ul>
+<h2 id="performance-testing" tabindex="-1">Performance Testing <a class="anchor-link" href="#performance-testing">#</a></h2>
+<p>After reading Zach Leatherman’s post on <a href="https://www.zachleat.com/web/lighthouse-in-footer/">adding lighthouse scores to a site’s footer</a>, I decided to give it a go myself. I followed that up with Zach’s other post on <a href="https://www.zachleat.com/web/speedlify/">using speedlify to continuously measure performance</a>. Both are great reads.</p>
+<p>Check out the latest speedlify scores: <a href="https://speedlify-aj.netlify.app">https://speedlify-aj.netlify.app</a></p>
+<ul>
+<li><a href="https://github.com/zachleat/performance-leaderboard">performance-leaderboard</a> is a plugin to run lighthouse “scoring” against a set of urls to gauge who is the fastest.</li>
+<li><a href="https://lighthouse-metrics.com">Lighthouse Metrics</a> for gauging how two different versions of my site compare to one another. Helpful after pushing any updates to see what might have changed in “live” version, even after testing locally.</li>
+<li><a href="https://googlechrome.github.io/lighthouse-ci/viewer/">Lighthouse Report Diff Tool</a> upload your two reports (one before and one after any changes) to see the differences.</li>
 </ul>
 <h2 id="tools" tabindex="-1">Tools <a class="anchor-link" href="#tools">#</a></h2>
 <ul>
@@ -198,9 +197,10 @@
 </li>
 </ul>
 
-  </div>
+  </main>
 </section>
 
+        </div>
       <footer>
   <div class="large-space"></div>
   <div class="large-space"></div>
@@ -211,9 +211,9 @@
       <div class="s12 l6">
         <div>
           <a  href="/" title="Home">
-            <img src="/img/Jolicoeur_iOS.png" class="circle" />
+            <img src="/img/Jolicoeur_iOS.png" class="circle" alt="Site logo" />
           </a></div>
-        <p>A designer, developer, and program manager in Massachusetts. Starting as a help desk tech kicked off a desire to create technology, rather than fixing it, which lead to a leap into the software engineering space. My career has me currently at Component Assembly Systems as their Lead Program Manager and Head of UX.</p>
+        <p>A designer, developer, and program manager in Massachusetts. Starting as a help desk tech kicked off a desire to create technology, rather than fixing it, which lead to a leap into the software engineering space. My career has me currently at Component Assembly Systems as their Lead Program Manager and Designer.</p>
         <nav>
           <a href="/about" class="link" alt="Link to the about page">
             About
@@ -224,6 +224,17 @@
           <a href="/uses" class="link" alt="Link to uses page">
             Uses
           </a>
+        </nav>
+        <nav>
+          <div class="display: flex; flex-direction: column;">
+            <p class="italic">Eleventy Leaderboard Scores</p>
+              <!-- <a href="https://www.adamjolicoeur.com" class="speedlify-link"> -->
+            <a href="https://www.11ty.dev/speedlify/adamjolicoeur-com/" class="link" alt="Link to 11ty leaderboard">
+              <!-- Preferred -->
+              <!-- <speedlify-score speedlify-url="https://speedlify-aj.netlify.app/" hash="b2d9d426"> -->
+              <speedlify-score speedlify-url="https://www.11ty.dev/speedlify" hash="78bc8a2a"></speedlify-score>
+            </a>
+          </div>
         </nav>
       </div>
       <div class="s12 l6">
@@ -291,8 +302,10 @@
     </div>
   </section>
   <script src="https://kit.fontawesome.com/0ea2a7621c.js" crossorigin="anonymous"></script>
-  
+  <script src="https:///prismjs@v1.x/components/prism-core.min.js"></script>
+  <script src="https:///prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
   <script type="application/javascript" src="/js/jolicoeur.js"></script>
+  <script type="application/javascript" src="/js/speedlify-score.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQCZPW3PZN" crossorigin="anonymous"></script>
   <script>

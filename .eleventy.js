@@ -126,7 +126,7 @@ module.exports = function (eleventyConfig) {
     tags: ["h2", "h3", "h4"],
     wrapper: "div",
     wrapperClass: "toc markdown-toc",
-    ul: true,
+    ul: false,
     flat: true
   });
   eleventyConfig.addPlugin(

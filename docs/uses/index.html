@@ -8,12 +8,12 @@
     <title>Uses | Adam Jolicoeur</title>
     <meta
       name="description"
-      content="What I use as a designer."
+      content="Daily carries and useful tools"
     />
     <meta name="generator" content="Eleventy">
     <meta property="og:title" content="Adam J. Jolicoeur" />
     <meta property="og:url" content="https://www.adamjolicoeur.me" />
-    <meta property="og:description" content="What I use as a designer.">
+    <meta property="og:description" content="Daily carries and useful tools">
     <meta property="og:site_name" content="Adam J. Jolicoeur">
     <meta property="og:type" content="website">
     <link rel="apple-touch-icon" sizes="180x180" href="/icon-180.png">
@@ -43,6 +43,7 @@
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.11.15/dist/cdn/beer.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+    <link href="https:///prismjs@v1.x/themes/prism.css" rel="stylesheet" />
     <link type="text/css" href="/css/style.css" rel="stylesheet" />
     
     <meta
@@ -51,7 +52,7 @@
     />
     <meta
       name="og:description"
-      content="What I use as a designer."
+      content="Daily carries and useful tools"
     />
     <meta property="og:image" content="https://www.adamjolicoeur.com/img/AdamJolicoeur_social.png" />
 
@@ -68,7 +69,8 @@
   <header>
     <nav>
       <a href="/" alt="Link to home">
-        <img src="/img/Jolicoeur_iOS.png" class="circle" />
+        <span class="display-none">Link to home</span>
+        <img src="/img/Jolicoeur_iOS.png" class="circle" alt="Site logo" />
       </a>
     </nav>
   </header>
@@ -113,45 +115,30 @@
 </nav>
 
       <main class="responsive">
-        
+        <div class="page right active">
+          
 <section class="responsive">
-  <h1>Uses</h1>
-  <h5>What I use as a designer.</h5></section>
-<div class="large-space"></div>
+  <div class="center-align">
+    <h1>Uses</h1>
+    <h5>
+      Daily carries and useful tools
+    </h5></div>
+</div>
 
 <style>
-  content {
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0 auto;
-    a {
-      color: var(--sl-color-primary-900) !important;
-    }
+  nav:is(.left) {
+    background-color: transparent !important;
+    z-index: 0 !important;
   }
-  h2 {
-    position: relative;
-    background: linear-gradient(90deg, var(--sl-color-primary-900) 0%, var(--sl-color-primary-600) 100%);
-    color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    @media (prefer-color-scheme: light) {
-      color: #000;
-      background: transparent;
-    }
-    &:before {
-      content: "";
-      position: absolute;
-      left: -1rem;
-      bottom: 0;
-      background: linear-gradient(90deg, var(--sl-color-primary-900) 0%, var(--sl-color-primary-600) 100%);
-      border-radius: 1rem;
-      width: 4rem;
-      height: .25rem;
-      z-index: -1;
-    }
-  }
+</style>
+<section class="responsive"><nav class="left max">
+    <!--<sl-details summary="Table of Contents">-->
+      <div class="toc markdown-toc" >
+        <ol><li><a href="#desk">Desk</a></li><li><a href="#software">Software</a></li><li><a href="#design">Design</a></li><li><a href="#development">Development</a></li><li><a href="#services">Services</a></li><li><a href="#desktop-apps">Desktop Apps</a></li><li><a href="#travel-gear">Travel Gear</a></li><li><a href="#this-site">This Site</a></li></ol>
+      </div>
+    <!--</sl-details>-->
+    </nav><main class="responsive">
+    <style>
   /* Use the CODE block for general alert-style blocks when TEXT is specified as the language */
   .code-toolbar {
     pre {
@@ -193,7 +180,8 @@
 </ul>
 <h2 id="desktop-apps" tabindex="-1">Desktop Apps <a class="anchor-link" href="#desktop-apps">#</a></h2>
 <ul>
-<li><a href="https://arc.net/download">Arc browser</a>: my primary browser, though I also use Safari for creating web apps (Bluesky / Threads / GitHub).</li>
+<li><span class="overline">Arc browser: my primary browser, though I also use Safari for creating web apps (Bluesky / Threads / GitHub).</span></li>
+<li>Microsoft Edge: for development (disabling all of the extra stuff) with Safari as my casual browser.</li>
 <li><a href="https://www.parallels.com/products/desktop/use-cases/developers/?extensionid=%7Bextensionid%7D&amp;matchtype=b&amp;device=c&amp;devicemodel=&amp;creative=&amp;network=o&amp;placement=&amp;x-source=ppc">Parallels Desktop</a>: sometimes I need to use different operating systems and I turn to this for Windows 11, Ubuntu, and Fedora.</li>
 <li>Apple Notes: why use something else when this does the job? Tags, Smart Folders, and shortcuts are key.</li>
 <li><a href="https://www.raycast.com/">Raycast</a>: switched off of Alfred a while back and found this to be indispensable in my daily work.</li>
@@ -205,8 +193,10 @@
 <pre class="language-text"><code class="hljs language-text">Be sure to check out uses.tech to see other /uses pages!</code></pre>
 <p>You can also find me on the <a href="https://www.11ty.dev/speedlify/adamjolicoeur-com/">Eleventy Leaderboards</a>!</p>
 
+  </main>
+</section>
 
-
+        </div>
       <footer>
   <div class="large-space"></div>
   <div class="large-space"></div>
@@ -217,9 +207,9 @@
       <div class="s12 l6">
         <div>
           <a  href="/" title="Home">
-            <img src="/img/Jolicoeur_iOS.png" class="circle" />
+            <img src="/img/Jolicoeur_iOS.png" class="circle" alt="Site logo" />
           </a></div>
-        <p>A designer, developer, and program manager in Massachusetts. Starting as a help desk tech kicked off a desire to create technology, rather than fixing it, which lead to a leap into the software engineering space. My career has me currently at Component Assembly Systems as their Lead Program Manager and Head of UX.</p>
+        <p>A designer, developer, and program manager in Massachusetts. Starting as a help desk tech kicked off a desire to create technology, rather than fixing it, which lead to a leap into the software engineering space. My career has me currently at Component Assembly Systems as their Lead Program Manager and Designer.</p>
         <nav>
           <a href="/about" class="link" alt="Link to the about page">
             About
@@ -230,6 +220,17 @@
           <a href="/uses" class="link" alt="Link to uses page">
             Uses
           </a>
+        </nav>
+        <nav>
+          <div class="display: flex; flex-direction: column;">
+            <p class="italic">Eleventy Leaderboard Scores</p>
+              <!-- <a href="https://www.adamjolicoeur.com" class="speedlify-link"> -->
+            <a href="https://www.11ty.dev/speedlify/adamjolicoeur-com/" class="link" alt="Link to 11ty leaderboard">
+              <!-- Preferred -->
+              <!-- <speedlify-score speedlify-url="https://speedlify-aj.netlify.app/" hash="b2d9d426"> -->
+              <speedlify-score speedlify-url="https://www.11ty.dev/speedlify" hash="78bc8a2a"></speedlify-score>
+            </a>
+          </div>
         </nav>
       </div>
       <div class="s12 l6">
@@ -297,8 +298,10 @@
     </div>
   </section>
   <script src="https://kit.fontawesome.com/0ea2a7621c.js" crossorigin="anonymous"></script>
-  
+  <script src="https:///prismjs@v1.x/components/prism-core.min.js"></script>
+  <script src="https:///prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
   <script type="application/javascript" src="/js/jolicoeur.js"></script>
+  <script type="application/javascript" src="/js/speedlify-score.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQCZPW3PZN" crossorigin="anonymous"></script>
   <script>
