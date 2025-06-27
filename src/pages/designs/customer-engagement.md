@@ -13,12 +13,14 @@ eleventyNavigation:
   <div class="row mx-0">
     <div class="col">
       <sl-card class="card-basic" style="--border-color: var(--sl-color-primary-400); --border-width: 2px;">
+      <dl>
         <dt class="col-sm-2">Role</dt>
         <dd class="col-sm-10">Interaction Designer, Visual Designer</dd>
         <dt class="col-sm-2">Areas</dt>
         <dd class="col-sm-10">Wireframes, Visual Designs</dd>
         <dt class="col-sm-2">Challenge</dt>
         <dd class="col-sm-10">For this project, I was tasked with updating an old user interface to increase usability and visual styling to match a more modern aesthetic.</dd>
+      </dl>
       </sl-card>
     </div>
   </div>

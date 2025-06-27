@@ -1,5 +1,5 @@
 ---
-layout: "markdown"
+layout: markdown
 title: "About"
 date: git Last Modified
 abbreviation: "about"

@@ -3,6 +3,7 @@ title: Credits
 date: git Last Modified
 layout: markdown
 readTime: false
+tocBlock: true
 ---
 
 Giving credit where credit is due, this page is based off of the [Credits](https://raw.githubusercontent.com/LeaVerou/lea.verou.me/refs/heads/main/credits/index.md) page from [Lea Verou](https://lea.verou.me/).
@@ -14,33 +15,24 @@ This site was built using [Eleventy](https://www.11ty.dev/), hosted on [Cloudfla
 ## Libraries
 
 - [Eleventy](https://www.11ty.dev/)
+- [BeerCSS](https://www.beercss.com)
 - [Shoelace](https://shoelace.style/)
-- [Bootstrap](https://getbootstrap.com/)
 
 ## Fonts
 
 ```css
-  :root {
-    --sl-font-sans: "Oswald", sans-serif;
-    --sl-font-mono: "Fira Mono", monospace;
-    --sl-font-serif: "Lato", sans-serif;
-    --bs-font-sans-serif: "Lato", serif;
-  }
+  --font: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", "Noto Sans", Arial, sans-serif;
+
 ```
 
-- [Oswald](https://fonts.google.com/specimen/Oswald)
-  - Headers, specified through general `<H>` tags and CSS classes
-- [Lato](https://fonts.google.com/specimen/Lato)
-  - Paragraphs, specified through general `<p>` tags and CSS classes
-- [Fira Mono](https://fonts.google.com/specimen/Fira+Mono)
-  - Code blocks, specified through general `<code>` tags and CSS classes
+_These are the defaults that come with BeerCSS. They can be changed by following the [documentation](https://github.com/beercss/beercss/blob/main/docs/SETTINGS.md#fonts)_
 
 ## Icons
 
-A custom icon component ([icon-component.js](https://github.com/AdamJ/adamjolicoeur.com/blob/main/src/js/icon-component.js)) is used to render icons as web components with [Font Awesome](https://fontawesome.com/) as the preferred icon library.
+As BeerCSS uses Material Symbols, I've swapped out previous custom icons to use the built-in options.
 
-```
-  <fa-icon type="brands" name="github" size="md"></fa-icon>
+```css
+  --font-icon: "Material Symbols Outlined";
 ```
 
 ## Plugins
@@ -53,6 +45,16 @@ A custom icon component ([icon-component.js](https://github.com/AdamJ/adamjolico
 - [markdown-it-eleventy-img](https://github.com/11ty/eleventy-img) used for image processing of vector and raster images.
 - [markdown-it-highlightjs](https://github.com/11ty/eleventy-plugin-syntaxhighlight) - highlights code blocks at build time utilizing [PrismJS](https://prismjs.com/) syntax highlighting.
 - [eleventy-plugin-emoji-readtime](https://github.com/11tyrocks/eleventy-plugin-emoji-readtime) calculates the reading time of blog posts (i.e. any page using the `blog` layout) based on the number of words. A tag with the time to read is added to the top of a page where the FrontMatter has `readtime: true`.
+
+## Performance Testing
+
+After reading Zach Leatherman's post on [adding lighthouse scores to a site's footer](https://www.zachleat.com/web/lighthouse-in-footer/), I decided to give it a go myself. I followed that up with Zach's other post on [using speedlify to continuously measure performance](https://www.zachleat.com/web/speedlify/). Both are great reads.
+
+Check out the latest speedlify scores: [https://speedlify-aj.netlify.app](https://speedlify-aj.netlify.app)
+
+- [performance-leaderboard](https://github.com/zachleat/performance-leaderboard) is a plugin to run lighthouse "scoring" against a set of urls to gauge who is the fastest.
+- [Lighthouse Metrics](https://lighthouse-metrics.com) for gauging how two different versions of my site compare to one another. Helpful after pushing any updates to see what might have changed in "live" version, even after testing locally.
+- [Lighthouse Report Diff Tool](https://googlechrome.github.io/lighthouse-ci/viewer/) upload your two reports (one before and one after any changes) to see the differences.
 
 ## Tools
 

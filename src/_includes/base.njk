@@ -47,6 +47,7 @@
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.11.15/dist/cdn/beer.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+    <link href="https:///prismjs@v1.x/themes/prism.css" rel="stylesheet" />
     <link type="text/css" href="{{ '/css/style.css' | url }}" rel="stylesheet" />
     {# <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script> #}
     <meta
@@ -70,7 +71,9 @@
     <body class="light">
       {% include 'sitenav.njk' %}
       <main class="responsive">
-        {{ content | safe }}
+        <div class="page right active">
+          {{ content | safe }}
+        </div>
       {% include 'footer.njk' %}
       </main>
     <script>
