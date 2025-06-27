@@ -30,12 +30,6 @@
 	},
 
 	{
-   "title":"Archived Pages",
-   "imgName":"archived-pages",
-   "date":"archived-pages"
-	},
-
-	{
    "title":"District 25 website",
    "imgName":"district-25-website",
    "date":"district-25-website"
@@ -93,12 +87,6 @@
    "title":"Marketing",
    "imgName":"marketing",
    "date":"marketing"
-	},
-
-	{
-   "title":"Connect",
-   "imgName":"connect",
-   "date":"connect"
 	},
 
 	{
@@ -192,12 +180,6 @@
 	},
 
 	{
-   "title":"Credits",
-   "imgName":"credits",
-   "date":"credits"
-	},
-
-	{
    "title":"Designs",
    "imgName":"designs",
    "date":"designs"
@@ -213,6 +195,24 @@
    "title":"Adam J. Jolicoeur",
    "imgName":"adam-j.-jolicoeur",
    "date":"adam-j.-jolicoeur"
+	},
+
+	{
+   "title":"Archived Pages",
+   "imgName":"archived-pages",
+   "date":"archived-pages"
+	},
+
+	{
+   "title":"Connect",
+   "imgName":"connect",
+   "date":"connect"
+	},
+
+	{
+   "title":"Credits",
+   "imgName":"credits",
+   "date":"credits"
 	},
 
 	{
