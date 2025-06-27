@@ -30,8 +30,56 @@
       "id": "/alfred/workflows/",
       "url": "/alfred/workflows/",
       "title": "Alfred Workflows",
-      "date_published": "2025-06-27T19:38:53Z",
-      "date": "2025-06-27T19:38:53Z"
+      "date_published": "2025-06-27T20:05:38Z",
+      "date": "2025-06-27T20:05:38Z"
+    }
+    ,
+    {
+      "id": "/uses/",
+      "url": "/uses/",
+      "title": "Uses",
+      "date_published": "2025-06-27T19:40:57Z",
+      "date": "2025-06-27T19:40:57Z"
+    }
+    ,
+    {
+      "id": "/resume/",
+      "url": "/resume/",
+      "title": "Adam J. Jolicoeur",
+      "date_published": "2025-06-27T19:40:57Z",
+      "date": "2025-06-27T19:40:57Z"
+    }
+    ,
+    {
+      "id": "/designs/customer-engagement/",
+      "url": "/designs/customer-engagement/",
+      "title": "Customer Engagement App",
+      "date_published": "2025-06-27T19:40:57Z",
+      "date": "2025-06-27T19:40:57Z"
+    }
+    ,
+    {
+      "id": "/designs/",
+      "url": "/designs/",
+      "title": "Designs",
+      "date_published": "2025-06-27T19:40:57Z",
+      "date": "2025-06-27T19:40:57Z"
+    }
+    ,
+    {
+      "id": "/credits/",
+      "url": "/credits/",
+      "title": "Credits",
+      "date_published": "2025-06-27T19:40:57Z",
+      "date": "2025-06-27T19:40:57Z"
+    }
+    ,
+    {
+      "id": "/about/",
+      "url": "/about/",
+      "title": "About",
+      "date_published": "2025-06-27T19:40:57Z",
+      "date": "2025-06-27T19:40:57Z"
     }
     ,
     {
@@ -48,22 +96,6 @@
       "title": "Development",
       "date_published": "2025-06-25T20:11:48Z",
       "date": "2025-06-25T20:11:48Z"
-    }
-    ,
-    {
-      "id": "/designs/",
-      "url": "/designs/",
-      "title": "Designs",
-      "date_published": "2025-06-25T20:11:48Z",
-      "date": "2025-06-25T20:11:48Z"
-    }
-    ,
-    {
-      "id": "/resume/",
-      "url": "/resume/",
-      "title": "Adam J. Jolicoeur",
-      "date_published": "2025-06-20T18:51:06Z",
-      "date": "2025-06-20T18:51:06Z"
     }
     ,
     {
@@ -147,33 +179,9 @@
     }
     ,
     {
-      "id": "/uses/",
-      "url": "/uses/",
-      "title": "Uses",
-      "date_published": "2025-06-09T12:20:32Z",
-      "date": "2025-06-09T12:20:32Z"
-    }
-    ,
-    {
-      "id": "/credits/",
-      "url": "/credits/",
-      "title": "Credits",
-      "date_published": "2025-06-09T12:20:32Z",
-      "date": "2025-06-09T12:20:32Z"
-    }
-    ,
-    {
       "id": "/apps/",
       "url": "/apps/",
       "title": "Apps",
-      "date_published": "2025-06-09T12:20:32Z",
-      "date": "2025-06-09T12:20:32Z"
-    }
-    ,
-    {
-      "id": "/about/",
-      "url": "/about/",
-      "title": "About",
       "date_published": "2025-06-09T12:20:32Z",
       "date": "2025-06-09T12:20:32Z"
     }
@@ -254,14 +262,6 @@
       "id": "/designs/district25/",
       "url": "/designs/district25/",
       "title": "District 25 website",
-      "date_published": "2025-01-20T21:13:03Z",
-      "date": "2025-01-20T21:13:03Z"
-    }
-    ,
-    {
-      "id": "/designs/customer-engagement/",
-      "url": "/designs/customer-engagement/",
-      "title": "Customer Engagement App",
       "date_published": "2025-01-20T21:13:03Z",
       "date": "2025-01-20T21:13:03Z"
     }

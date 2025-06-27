@@ -36,12 +36,6 @@
 	},
 
 	{
-   "title":"Customer Engagement App",
-   "imgName":"customer-engagement-app",
-   "date":"customer-engagement-app"
-	},
-
-	{
    "title":"District 25 website",
    "imgName":"district-25-website",
    "date":"district-25-website"
@@ -114,27 +108,9 @@
 	},
 
 	{
-   "title":"About",
-   "imgName":"about",
-   "date":"about"
-	},
-
-	{
    "title":"Apps",
    "imgName":"apps",
    "date":"apps"
-	},
-
-	{
-   "title":"Credits",
-   "imgName":"credits",
-   "date":"credits"
-	},
-
-	{
-   "title":"Uses",
-   "imgName":"uses",
-   "date":"uses"
 	},
 
 	{
@@ -198,18 +174,6 @@
 	},
 
 	{
-   "title":"Adam J. Jolicoeur",
-   "imgName":"adam-j.-jolicoeur",
-   "date":"adam-j.-jolicoeur"
-	},
-
-	{
-   "title":"Designs",
-   "imgName":"designs",
-   "date":"designs"
-	},
-
-	{
    "title":"Development",
    "imgName":"development",
    "date":"development"
@@ -219,6 +183,42 @@
    "title":"Testimonials",
    "imgName":"testimonials",
    "date":"testimonials"
+	},
+
+	{
+   "title":"About",
+   "imgName":"about",
+   "date":"about"
+	},
+
+	{
+   "title":"Credits",
+   "imgName":"credits",
+   "date":"credits"
+	},
+
+	{
+   "title":"Designs",
+   "imgName":"designs",
+   "date":"designs"
+	},
+
+	{
+   "title":"Customer Engagement App",
+   "imgName":"customer-engagement-app",
+   "date":"customer-engagement-app"
+	},
+
+	{
+   "title":"Adam J. Jolicoeur",
+   "imgName":"adam-j.-jolicoeur",
+   "date":"adam-j.-jolicoeur"
+	},
+
+	{
+   "title":"Uses",
+   "imgName":"uses",
+   "date":"uses"
 	},
 
 	{

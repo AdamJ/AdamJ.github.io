@@ -2,7 +2,7 @@
 title: "Archived Pages"
 date: git Last Modified
 abbreviation: "Archives"
-description: ""
+description: "A list of archived pages"
 eleventyNavigation:
   key: archives
   parent:

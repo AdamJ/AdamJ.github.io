@@ -32,11 +32,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/designs/customer-engagement/</loc>
-      <lastmod>2025-01-20T21:13:03.000Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/designs/district25/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
     </url>
@@ -97,22 +92,7 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/about/</loc>
-      <lastmod>2025-06-09T12:20:32.000Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/apps/</loc>
-      <lastmod>2025-06-09T12:20:32.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/credits/</loc>
-      <lastmod>2025-06-09T12:20:32.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/uses/</loc>
       <lastmod>2025-06-09T12:20:32.000Z</lastmod>
     </url>
   
@@ -167,16 +147,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/resume/</loc>
-      <lastmod>2025-06-20T18:51:06.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/designs/</loc>
-      <lastmod>2025-06-25T20:11:48.000Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/development/</loc>
       <lastmod>2025-06-25T20:11:48.000Z</lastmod>
     </url>
@@ -187,8 +157,38 @@
     </url>
   
     <url>
+      <loc>https://www.adamjolicoeur.com/about/</loc>
+      <lastmod>2025-06-27T19:40:57.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/credits/</loc>
+      <lastmod>2025-06-27T19:40:57.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/designs/</loc>
+      <lastmod>2025-06-27T19:40:57.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/designs/customer-engagement/</loc>
+      <lastmod>2025-06-27T19:40:57.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/resume/</loc>
+      <lastmod>2025-06-27T19:40:57.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/uses/</loc>
+      <lastmod>2025-06-27T19:40:57.000Z</lastmod>
+    </url>
+  
+    <url>
       <loc>https://www.adamjolicoeur.com/alfred/workflows/</loc>
-      <lastmod>2025-06-27T19:38:53.234Z</lastmod>
+      <lastmod>2025-06-27T20:05:38.650Z</lastmod>
     </url>
   
 </urlset>
