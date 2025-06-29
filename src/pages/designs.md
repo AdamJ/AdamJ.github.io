@@ -380,7 +380,7 @@ eleventyNavigation:
           <nav>
             <h5>Color Picker</h5>
             <div class="max"></div>
-            <a href="/presentations/portfolio/" alt="Link to portfolio presentation">
+            <a href="/presentations/color-picker/" alt="Link to portfolio presentation">
               <button class="large secondary">
                 <i>colorize</i>
                 <span>Review</span>
