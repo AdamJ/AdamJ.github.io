@@ -27,6 +27,14 @@
   },
   "items": [
     {
+      "id": "/designs/",
+      "url": "/designs/",
+      "title": "Designs",
+      "date_published": "2025-06-29T22:25:49Z",
+      "date": "2025-06-29T22:25:49Z"
+    }
+    ,
+    {
       "id": "/uses/",
       "url": "/uses/",
       "title": "Uses",
@@ -62,14 +70,6 @@
       "id": "/designs/customer-engagement/",
       "url": "/designs/customer-engagement/",
       "title": "Customer Engagement App",
-      "date_published": "2025-06-27T19:40:57Z",
-      "date": "2025-06-27T19:40:57Z"
-    }
-    ,
-    {
-      "id": "/designs/",
-      "url": "/designs/",
-      "title": "Designs",
       "date_published": "2025-06-27T19:40:57Z",
       "date": "2025-06-27T19:40:57Z"
     }

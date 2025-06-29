@@ -156,12 +156,6 @@
 	},
 
 	{
-   "title":"Designs",
-   "imgName":"designs",
-   "date":"designs"
-	},
-
-	{
    "title":"Customer Engagement App",
    "imgName":"customer-engagement-app",
    "date":"customer-engagement-app"
@@ -189,5 +183,11 @@
    "title":"Uses",
    "imgName":"uses",
    "date":"uses"
+	},
+
+	{
+   "title":"Designs",
+   "imgName":"designs",
+   "date":"designs"
 	}
 ]

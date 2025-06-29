@@ -124,7 +124,7 @@ eleventyNavigation:
               <h5>Blog</h5>
               <p>A site collecting thoughts and documentation.</p>
               <nav>
-                <a class="link" href="https://blog.adamjolicoeur.com" alt="View blog page">
+                <a class="link" href="https://blog.adamjolicoeur.com/blog" target="top" alt="View blog page">
                   View
                 </a>
                 <a class="link" href="https://github.com/AdamJ/researchandesign" target="top" alt="Link to GitHub repo">
