@@ -12,12 +12,6 @@
 	},
 
 	{
-   "title":"Adam Jolicoeur",
-   "imgName":"home",
-   "date":"home"
-	},
-
-	{
    "title":"Archived",
    "imgName":"archived",
    "date":"archived"
@@ -66,21 +60,9 @@
 	},
 
 	{
-   "title":"Icons",
-   "imgName":"icons",
-   "date":"icons"
-	},
-
-	{
    "title":"Presentations",
    "imgName":"presentations",
    "date":"presentations"
-	},
-
-	{
-   "title":"howto",
-   "imgName":"howto",
-   "date":"howto"
 	},
 
 	{
@@ -129,12 +111,6 @@
    "title":"Support",
    "imgName":"support",
    "date":"support"
-	},
-
-	{
-   "title":"Reference links",
-   "imgName":"reference-links",
-   "date":"reference-links"
 	},
 
 	{
@@ -198,12 +174,6 @@
 	},
 
 	{
-   "title":"Archived Pages",
-   "imgName":"archived-pages",
-   "date":"archived-pages"
-	},
-
-	{
    "title":"Connect",
    "imgName":"connect",
    "date":"connect"
@@ -219,11 +189,5 @@
    "title":"Uses",
    "imgName":"uses",
    "date":"uses"
-	},
-
-	{
-   "title":"Alfred Workflows",
-   "imgName":"alfred-workflows",
-   "date":"alfred-workflows"
 	}
 ]
