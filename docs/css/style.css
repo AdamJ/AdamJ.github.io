@@ -154,6 +154,11 @@ body {
   display: none !important;
 }
 
+@media only screen and (max-width: 601px) {
+  .s-display-none {
+    display: none !important;
+  }
+}
 main a {
   color: var(--primary) !important;
 }
@@ -166,4 +171,6 @@ main a:hover {
   font-size: 1.25rem !important;
 }
 
-/*# sourceMappingURL=style.css.map */
+.text-center {
+  text-align: center !important;
+}
