@@ -9,10 +9,10 @@ eleventyNavigation:
   order: 3
 ---
 
-<div class="container px-0 mb-5">
-  <div class="row mx-0">
-    <div class="col">
-      <sl-card class="card-basic" style="--border-color: var(--sl-color-primary-400); --border-width: 2px;">
+<section class="responsive">
+  <div class="grid">
+    <div class="s12">
+      <article class="no-elevate secondary-container">
       <dl>
         <dt class="col-sm-2">Role</dt>
         <dd class="col-sm-10">Interaction Designer, Visual Designer</dd>
@@ -21,13 +21,18 @@ eleventyNavigation:
         <dt class="col-sm-2">Challenge</dt>
         <dd class="col-sm-10">For this project, I was tasked with updating an old user interface to increase usability and visual styling to match a more modern aesthetic.</dd>
       </dl>
-      </sl-card>
+      </article>
     </div>
   </div>
-  <div class="row px-0 mx-0">
-    <div class="col">
+</section>
+<div class="small-space"></div>
+<section class="responsive">
+  <div class="grid">
+    <div class="s12">
       <h2>Goals</h2>
       <p>The goals of this project were to <i>improve</i> efficiency, <i>upgrade</i> the visual aesthetic, and <i>enhance</i> visual awareness.</p>
+    </div>
+    <div class="s12">
       <h2>Sitemap (alpha)</h2>
       <p>Before starting on the updated design for the Customer Engagement App (CEA), I first took to creating an updated sitemap. This allowed me to set a basic path for users to navigate through the application, while also separating the pieces of the application into useful areas.</p>
       <div class="text-align-center">
@@ -46,9 +51,11 @@ eleventyNavigation:
           closeButton.addEventListener('click', () => dialog.hide());
         </script>
       </div>
+    </div>
+    <div class="s12">
       <h2>Wireframes</h2>
       <p>I created a set of wireframes that could be quickly iterated on for presenting ideas to project stakeholders and other interested parties.</p>
-      <div class="text-align-center">
+      <div class="text-center">
         <img src="../../img/CEA_wireframe_first.png" class="d-block mx-lg-auto img-fluid mb-3"  width="500" height="300" loading="lazy" alt="Example visual design for the navigation variations in the Customer Engagement App">
         <sl-button href="../../img/CEA_Dashboard_Overview.pdf" target="_blank">View PDF<sl-visually-hidden>Open PDF in new window</sl-visually-hidden></sl-button>
         <script>

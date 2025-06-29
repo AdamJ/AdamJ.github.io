@@ -138,12 +138,6 @@
 	},
 
 	{
-   "title":"Development",
-   "imgName":"development",
-   "date":"development"
-	},
-
-	{
    "title":"Testimonials",
    "imgName":"testimonials",
    "date":"testimonials"
@@ -189,5 +183,11 @@
    "title":"Designs",
    "imgName":"designs",
    "date":"designs"
+	},
+
+	{
+   "title":"Development",
+   "imgName":"development",
+   "date":"development"
 	}
 ]
