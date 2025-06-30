@@ -3,23 +3,8 @@
 * https://www.adamjolicoeur.com
 **/
 
-// $color-mode-type: data;
 @use "animations";
-// @import "font-oswald";
-// @import "font-lato";
-// @import "variables";
-// @import "mixins";
-// @import "extenders";
-// @import "colors";
-// @import "helpers";
-// @import "typography";
-// @import "toc";
-// @import "footer";
-// @import "buttons";
-// @import "cards";
-// @import "carousel";
-// @import "navigation";
-// @import "general";
+
 :root,
 body.light {
   --primary:#0061a4;
@@ -125,25 +110,3 @@ main a {
 .text-center {
   text-align: center !important;
 }
-// h2 {
-//   position: relative;
-//   background: linear-gradient(90deg, var(--sl-color-primary-900) 0%, var(--sl-color-primary-600) 100%);
-//   color: transparent;
-//   background-clip: text;
-//   text-fill-color: transparent;
-//   @media (prefer-color-scheme: light) {
-//     color: #000;
-//     background: transparent;
-//   }
-//   &:before {
-//     content: "";
-//     position: absolute;
-//     left: -1rem;
-//     bottom: 0;
-//     background: linear-gradient(90deg, var(--sl-color-primary-900) 0%, var(--sl-color-primary-600) 100%);
-//     border-radius: 1rem;
-//     width: 4rem;
-//     height: .25rem;
-//     z-index: -1;
-//   }
-// }
