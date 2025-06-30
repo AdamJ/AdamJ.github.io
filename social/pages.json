@@ -150,12 +150,6 @@
 	},
 
 	{
-   "title":"Customer Engagement App",
-   "imgName":"customer-engagement-app",
-   "date":"customer-engagement-app"
-	},
-
-	{
    "title":"Adam J. Jolicoeur",
    "imgName":"adam-j.-jolicoeur",
    "date":"adam-j.-jolicoeur"
@@ -189,5 +183,11 @@
    "title":"Development",
    "imgName":"development",
    "date":"development"
+	},
+
+	{
+   "title":"Customer Engagement App",
+   "imgName":"customer-engagement-app",
+   "date":"customer-engagement-app"
 	}
 ]

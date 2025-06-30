@@ -27,6 +27,14 @@
   },
   "items": [
     {
+      "id": "/designs/customer-engagement/",
+      "url": "/designs/customer-engagement/",
+      "title": "Customer Engagement App",
+      "date_published": "2025-06-29T22:36:22Z",
+      "date": "2025-06-29T22:36:22Z"
+    }
+    ,
+    {
       "id": "/development/",
       "url": "/development/",
       "title": "Development",
@@ -70,14 +78,6 @@
       "id": "/resume/",
       "url": "/resume/",
       "title": "Adam J. Jolicoeur",
-      "date_published": "2025-06-27T19:40:57Z",
-      "date": "2025-06-27T19:40:57Z"
-    }
-    ,
-    {
-      "id": "/designs/customer-engagement/",
-      "url": "/designs/customer-engagement/",
-      "title": "Customer Engagement App",
       "date_published": "2025-06-27T19:40:57Z",
       "date": "2025-06-27T19:40:57Z"
     }

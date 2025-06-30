@@ -116,23 +116,21 @@
       <main class="responsive">
         <div class="page right active">
           
-<section class="responsive">
+<header class="responsive">
   <h1>Customer Engagement App</h1>
-  <h5>For this project, I was tasked with improving the overall user experience for tracking customer engagement and marketing campaigns. This project included creating color palettes, new UI components, personas, and user journeys.</h5></section>
+  <h5>For this project, I was tasked with improving the overall user experience for tracking customer engagement and marketing campaigns. This project included creating color palettes, new UI components, personas, and user journeys.</h5></header>
 <div class="large-space"></div>
 
 <section class="responsive">
   <div class="grid">
     <div class="s12">
       <article class="no-elevate secondary-container">
-      <dl>
-        <dt class="col-sm-2">Role</dt>
-        <dd class="col-sm-10">Interaction Designer, Visual Designer</dd>
-        <dt class="col-sm-2">Areas</dt>
-        <dd class="col-sm-10">Wireframes, Visual Designs</dd>
-        <dt class="col-sm-2">Challenge</dt>
-        <dd class="col-sm-10">For this project, I was tasked with updating an old user interface to increase usability and visual styling to match a more modern aesthetic.</dd>
-      </dl>
+        <h6>Role</h6>
+        <p>Interaction Designer, Visual Designer</p>
+        <h6>Areas</h6>
+        <p>Wireframes, Visual Designs</p>
+        <h6>Challenge</h6>
+        <p>For this project, I was tasked with updating an old user interface to increase usability and visual styling to match a more modern aesthetic.</p>
       </article>
     </div>
   </div>
@@ -142,19 +140,19 @@
   <div class="grid">
     <div class="s12">
       <h2>Goals</h2>
-      <p>The goals of this project were to <i>improve</i> efficiency, <i>upgrade</i> the visual aesthetic, and <i>enhance</i> visual awareness.</p>
+      <p>The goals of this project were to <em>improve</em> efficiency, <em>upgrade</em> the visual aesthetic, and <em>enhance</em> visual awareness.</p>
     </div>
     <div class="s12">
-      <h2>Sitemap (alpha)</h2>
+      <h3>Sitemap (alpha)</h3>
       <p>Before starting on the updated design for the Customer Engagement App (CEA), I first took to creating an updated sitemap. This allowed me to set a basic path for users to navigate through the application, while also separating the pieces of the application into useful areas.</p>
       <div class="text-align-center">
         <sl-dialog label="Dialog" class="alm-workflow" style="--width: 80vw;">
-          <img src="../../img/Sitemap_alpha.png" class="d-block mx-lg-auto img-fluid" alt="Sitemap for the alpha version of the Customer Engagement App">
+          <img src="/img/Sitemap_alpha.png" class="d-block mx-lg-auto img-fluid" alt="Sitemap for the alpha version of the Customer Engagement App">
           <sl-button slot="footer" variant="neutral">
             Close
           </sl-button>
         </sl-dialog>
-        <sl-button><img src="../../img/Sitemap_alpha.png" class="d-block mx-lg-auto img-fluid" alt="Sitemap for the alpha version of the Customer Engagement App" width="500" height="300" loading="lazy"></sl-button>
+        <sl-button><img src="/img/Sitemap_alpha.png" class="d-block mx-lg-auto img-fluid" alt="Sitemap for the alpha version of the Customer Engagement App" width="500" height="300" loading="lazy"></sl-button>
         <script>
           const dialog = document.querySelector('.alm-workflow');
           const openButton = dialog.nextElementSibling;
@@ -165,11 +163,12 @@
       </div>
     </div>
     <div class="s12">
-      <h2>Wireframes</h2>
+      <h3>Wireframes</h3>
       <p>I created a set of wireframes that could be quickly iterated on for presenting ideas to project stakeholders and other interested parties.</p>
       <div class="text-center">
-        <img src="../../img/CEA_wireframe_first.png" class="d-block mx-lg-auto img-fluid mb-3"  width="500" height="300" loading="lazy" alt="Example visual design for the navigation variations in the Customer Engagement App">
-        <sl-button href="../../img/CEA_Dashboard_Overview.pdf" target="_blank">View PDF<sl-visually-hidden>Open PDF in new window</sl-visually-hidden></sl-button>
+        <img src="/img/CEA_wireframe_first.png" class="d-block mx-lg-auto img-fluid mb-3"  width="500" height="300" loading="lazy" alt="Example visual design for the navigation variations in the Customer Engagement App">
+        <br />
+        <sl-button pill href="/img/CEA_Dashboard_Overview.pdf" target="_blank">View PDF<sl-visually-hidden>Open PDF in new window</sl-visually-hidden></sl-button>
         <script>
           const wireframeDialog = document.querySelector('.cea-wireframe');
           const openWireframe = wireframeDialog.nextElementSibling;
@@ -178,175 +177,134 @@
           closeWireframe.addEventListener('click', () => wireframeDialog.hide());
         </script>
       </div>
-      <h2>Visual Designs</h2>
+    </div>
+    <div class="s12">
+      <h3>Visual Designs</h3>
       <p>These visual designs are a small sampling of the final screens that were implemented as part of the completion of this project. The Dashboard, Reporting screen, and Settings page were considered the high-value items and contained the majority of the different components that would be used across the project. This set the baseline for future screens and allowed the development team to create a component library in which to build upon.</p>
-      <div class="row align-items-md-stretch">
-        <div class="col-md-6">
-          <div class="h-100 p-5 rounded-3" style="background-color: #333742;">
-            <h2 class="text-align-center text-white">Application Dashboard</h2>
-            <div class="text-align-center">
-              <sl-dialog label="CEA Application Dashboard" class="cea-dashboard" style="--width: 80vw;">
-                <img src="../../img/CEA_Dashboard.png" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the primary dashboard in the Customer Engagement App">
-                <sl-button slot="footer" variant="neutral">
-                  Close
-                </sl-button>
-              </sl-dialog>
-              <sl-button><img src="../../img/CEA_Dashboard.png" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the primary dashboard in the Customer Engagement App" width="500" height="300" loading="lazy"></sl-button>
-              <script>
-                const dashboardDialog = document.querySelector('.cea-dashboard');
-                const openDashboardButton = dashboardDialog.nextElementSibling;
-                const closeDashboardButton = dashboardDialog.querySelector('sl-button[slot="footer"]');
-                openDashboardButton.addEventListener('click', () => dashboardDialog.show());
-                closeDashboardButton.addEventListener('click', () => dashboardDialog.hide());
-              </script>
-            </div>
+      <div class="grid">
+        <div class="s12 m6 l6">
+          <article class="no-padding tertiary-container">
+            <img class="responsive medium" src="/img/CEA_Dashboard.png" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the primary dashboard in the Customer Engagement App" loading="lazy" />
+          </article>
+          <div class="absolute bottom left right padding bottom-shadow white-text">
+            <nav>
+              <h5>Application Dashboard</h5>
+              <div class="max"></div>
+              <a href="/img/CEA_Dashboard.png" alt="Example visual design for the primary dashboard in the Customer Engagement App" target="blank">
+                <button class="circle tertiary-border">
+                  <i>expand_content</i>
+                </button>
+              </a>
+            </nav>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="h-100 p-5 text-dark bg-light rounded-3">
-            <h2>Engagement Reporting</h2>
-            <div class="text-align-center">
-              <sl-dialog label="CEA Engagement Dashboard" class="cea-engagement" style="--width: 80vw;">
-                <img src="../../img/CEA_Engagement.png" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the engagement dashboard in the Customer Engagement App">
-                <sl-button slot="footer" variant="neutral">
-                  Close
-                </sl-button>
-              </sl-dialog>
-              <sl-button><img src="../../img/CEA_Engagement.png" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the engagement dashboard in the Customer Engagement App" width="500" height="300" loading="lazy"></sl-button>
-              <script>
-                const engagementDialog = document.querySelector('.cea-engagement');
-                const openEngagementButton = engagementDialog.nextElementSibling;
-                const closeEngagementButton = engagementDialog.querySelector('sl-button[slot="footer"]');
-                openEngagementButton.addEventListener('click', () => engagementDialog.show());
-                closeEngagementButton.addEventListener('click', () => engagementDialog.hide());
-              </script>
-            </div>
+        <div class="s12 m6 l6">
+          <article class="no-padding tertiary-container">
+            <img class="responsive medium" src="/img/CEA_Engagement.png" class="d-block mx-lg-auto img-fluid" alt="CEA Engagement Dashboard" loading="lazy" />
+          </article>
+          <div class="absolute bottom left right padding bottom-shadow white-text">
+            <nav>
+              <h5>Engagement Reporting</h5>
+              <div class="max"></div>
+              <a href="/img/CEA_Engagement.png" alt="Open the CEA Engagement Dashboard example in a new tab" target="blank">
+                <button class="circle tertiary-border">
+                  <i>expand_content</i>
+                </button>
+              </a>
+            </nav>
           </div>
         </div>
       </div>
-      <div class="row align-items-md-stretch">
-        <div class="col-md-6">
-          <div class="h-100 p-5 text-dark bg-light rounded-3">
-            <h2 class="text-align-center">Settings</h2>
-            <div class="text-align-center">
-              <sl-dialog label="CEA Settings" class="cea-settings" style="--width: 80vw;">
-                <img src="../../img/CEA_Settings.png" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the settings page in the Customer Engagement App">
-                <sl-button slot="footer" variant="neutral">
-                  Close
-                </sl-button>
-              </sl-dialog>
-              <sl-button><img src="../../img/CEA_Settings.png" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the settings page in the Customer Engagement App" width="500" height="300" loading="lazy"></sl-button>
-              <script>
-                const settingsDialog = document.querySelector('.cea-settings');
-                const openSettingsButton = settingsDialog.nextElementSibling;
-                const closeSettingsButton = settingsDialog.querySelector('sl-button[slot="footer"]');
-                openSettingsButton.addEventListener('click', () => settingsDialog.show());
-                closeSettingsButton.addEventListener('click', () => settingsDialog.hide());
-              </script>
-            </div>
+      <div class="grid">
+        <div class="s12 m6 l6">
+          <article class="no-padding tertiary-container">
+            <img class="responsive medium" src="/img/CEA_Settings.png" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the settings page in the Customer Engagement App" loading="lazy" />
+          </article>
+          <div class="absolute bottom left right padding bottom-shadow white-text">
+            <nav>
+              <h5>Settings</h5>
+              <div class="max"></div>
+              <a href="/img/CEA_Settings.png" alt="Open the CEA Settings example in a new tab" target="blank">
+                <button class="circle tertiary-border">
+                  <i>expand_content</i>
+                </button>
+              </a>
+            </nav>
           </div>
         </div>
       </div>
-      <br>
-      <p class="lead">The color palette and simplified component examples were some of the first items created, in order to provide the development team with a baseline in which to build the environment from.</p>
-      <div class="row align-items-md-stretch">
-        <div class="col-md-6">
-          <div class="h-100 p-5 rounded-3" style="background-color: #333742;">
-            <h2 class="text-align-center text-white">Color Palette</h2>
-            <div class="text-align-center">
-              <sl-dialog label="Color palette" class="cea-palette" style="--width: 80vw;">
-                <img src="../../img/CEA_Palette.png" class="d-block mx-lg-auto img-fluid" alt="Color palette created for the Customer Engagement App">
-                <sl-button slot="footer" variant="neutral">
-                  Close
-                </sl-button>
-              </sl-dialog>
-              <sl-button><img src="../../img/CEA_Palette.png" class="d-block mx-lg-auto img-fluid" alt="Color palette created for the Customer Engagement App" width="500" height="300" loading="lazy"></sl-button>
-              <script>
-                const paletteDialog = document.querySelector('.cea-palette');
-                const openPaletteButton = paletteDialog.nextElementSibling;
-                const closePaletteButton = paletteDialog.querySelector('sl-button[slot="footer"]');
-                openPaletteButton.addEventListener('click', () => paletteDialog.show());
-                closePaletteButton.addEventListener('click', () => paletteDialog.hide());
-              </script>
-            </div>
+      <div class="small-space"></div>
+      <p class="italic">The color palette and simplified component examples were some of the first items created, in order to provide the development team with a baseline in which to build the environment from.</p>
+      <div class="small-space"></div>
+      <div class="grid">
+        <div class="s12 m6">
+          <article class="no-padding tertiary-container">
+            <img class="responsive medium" src="/img/CEA_Palette.png" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the settings page in the Customer Engagement App" loading="lazy" />
+          </article>
+          <div class="absolute bottom left right padding bottom-shadow white-text">
+            <nav>
+            <h5>Color palette</h5>
+            <div class="max"></div>
+            <a href="/img/CEA_Palette.png" alt="Open the CEA Color Palette example in a new tab" target="blank">
+              <button class="circle tertiary-border">
+                <i>expand_content</i>
+              </button>
+            </a>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="h-100 p-5 text-dark bg-light rounded-3">
-            <h2>Component Examples</h2>
-            <div class="text-align-center">
-              <sl-dialog label="Asset examples" class="cea-assets" style="--width: 80vw;">
-                <img src="../../img/CEA_AssetExamples.png" class="d-block mx-lg-auto img-fluid" alt="An example of the types of components found in the Customer Engagement App">
-                <sl-button slot="footer" variant="neutral">
-                  Close
-                </sl-button>
-              </sl-dialog>
-              <sl-button><img src="../../img/CEA_AssetExamples.png" class="d-block mx-lg-auto img-fluid" alt="An example of the types of components found in the Customer Engagement App" width="500" height="300" loading="lazy"></sl-button>
-              <script>
-                const assetsDialog = document.querySelector('.cea-assets');
-                const openAssetsButton = assetsDialog.nextElementSibling;
-                const closeAssetsButton = assetsDialog.querySelector('sl-button[slot="footer"]');
-                openAssetsButton.addEventListener('click', () => assetsDialog.show());
-                closeAssetsButton.addEventListener('click', () => assetsDialog.hide());
-              </script>
-            </div>
+        <div class="s12 m6">
+          <article class="no-padding tertiary-container">
+            <img class="responsive medium" src="/img/CEA_AssetExamples.png" class="d-block mx-lg-auto img-fluid" alt="An example of the types of components found in the Customer Engagement App" loading="lazy" />
+          </article>
+          <div class="absolute bottom left right padding bottom-shadow white-text">
+            <nav>
+            <h5>Component Examples</h5>
+            <div class="max"></div>
+            <a href="/img/CEA_AssetExamples.png" alt="Open the CEA Assets example in a new tab" target="blank">
+              <button class="circle tertiary-border">
+                <i>expand_content</i>
+              </button>
+            </a>
           </div>
         </div>
       </div>
-      <div class="row align-items-md-stretch">
-        <div class="col-md-6">
-          <div class="h-100 p-5 text-dark bg-light rounded-3">
-            <h2>Navigation</h2>
-            <div class="text-align-center">
-              <sl-dialog label="Navigation" class="cea-navigation" style="--width: 80vw;">
-                <img src="../../img/CEA_Navigation.png" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the navigation variations in the Customer Engagement App">
-                <sl-button slot="footer" variant="neutral">
-                  Close
-                </sl-button>
-              </sl-dialog>
-              <sl-button><img src="../../img/CEA_Navigation.png" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the navigation variations in the Customer Engagement App" width="500" height="300" loading="lazy"></sl-button>
-              <script>
-                const navigationDialog = document.querySelector('.cea-navigation');
-                const openNavigationButton = navigationDialog.nextElementSibling;
-                const closeNavigationButton = navigationDialog.querySelector('sl-button[slot="footer"]');
-                openNavigationButton.addEventListener('click', () => navigationDialog.show());
-                closeNavigationButton.addEventListener('click', () => navigationDialog.hide());
-              </script>
-            </div>
+    </div>
+    <div class="s12">
+      <div class="grid">
+        <div class="s12 m6">
+          <article class="no-padding tertiary-container">
+            <img class="responsive medium" src="/img/CEA_Navigation.png" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the navigation variations in the Customer Engagement App" loading="lazy" />
+          </article>
+          <div class="absolute bottom left right padding bottom-shadow white-text">
+            <nav>
+            <h5>Component Examples</h5>
+            <div class="max"></div>
+            <a href="/img/CEA_Navigation.png" alt="Open the CEA navigation example in a new tab" target="blank">
+              <button class="circle tertiary-border">
+                <i>expand_content</i>
+              </button>
+            </a>
           </div>
         </div>
-      </div>
-      <div class="mt-5 mb-3">
-        <sl-card class="card-header">
-          <div slot="header">
-            <h3 class="p-0">Final thoughts</h3>
-          </div>
-          <p>I believe that the process used for this project, albeit different, fit within the framework given and met all of the requirements as laid out by the Project Management Team. In the end, a new interface was created that met all of the requirements and was based off of clear steps and proper research. Competitively, this new design met, and often surpassed, expectations when compared to what was in use prior to this project.</p>
-        </sl-card>
-        <style>
-          .card-header::part(base) {
-            background-color: var(--sl-color-neutral-50);
-          }
-          .card-header [slot='header'] {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-          }
-          .card-header h3 {
-            margin: 0;
-          }
-          .card-header sl-icon-button {
-            font-size: var(--sl-font-size-medium);
-          }
-        </style>
       </div>
     </div>
   </div>
-</div>
+  <div class="medium-space"></div>
+  <div class="grid">
+    <div class="s12">
+      <article class="primary-container">
+        <h5>Final thoughts</h5>
+        <p>I believe that the process used for this project, albeit different, fit within the framework given and met all of the requirements as laid out by the Project Management Team. In the end, a new interface was created that met all of the requirements and was based off of clear steps and proper research. Competitively, this new design met, and often surpassed, expectations when compared to what was in use prior to this project.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
 
 
 
         </div>
+      </main>
       <footer>
   <div class="large-space"></div>
   <div class="large-space"></div>
@@ -468,7 +426,6 @@
   <link type="text/css" media="print" href="/css/print.css" rel="stylesheet" />
 </footer>
 
-      </main>
     <script>
       if ('serviceWorker' in navigator) {
         window.onload = () => {
