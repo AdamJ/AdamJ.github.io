@@ -28,7 +28,6 @@ permalink: 404.html
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.11.15/dist/cdn/beer.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
-    <link href="https:///prismjs@v1.x/themes/prism.css" rel="stylesheet" />
     <link type="text/css" href="{{ '/css/style.css' | url }}" rel="stylesheet" />
     <meta
       name="og:title"
@@ -48,15 +47,24 @@ permalink: 404.html
     />
   </head>
   <body>
-    <main class="max">
-      <div style="display: flex; flex-direction: column; align-items: center;">
-        <div style="margin: 24px 0;">
-          <img src="{{ "/img/404_outdoors.svg" | url }}" alt="Lost in the mountains" height="400" width="400" loading="lazy">
+    {% include 'sitenav.njk' %}
+    <main>
+      <article class="absolute fill center middle">
+        <div>
+          <img src="{{ '/img/404_outdoors.svg' | url }}" alt="Lost in the mountains" class="responsive" loading="lazy" />
+          <h5 class="center-align">Looks like you lost your way...</h5>
+          <p class="center-align">Go back to the home page by clicking the button below.</p>
+          <div class="space"></div>
+          <nav class="center-align">
+            <a href="{{ '/' | url }}" alt="Link to go back to the home page">
+              <button class="responsive round large small-elevate primary">
+                <i>home</i>
+                <span>Go home</span>
+              </button>
+            </a>
+          </nav>
         </div>
-        <h1>Looks like you lost your way...</h1>
-        <p>Go back to the home page by clicking the button below.</p>
-        <sl-button variant="primary" size="large" href="{{ '/' | url }}">Take me home</sl-button>
-      </div>
+      </article>
     </main>
     <script>
       if ('serviceWorker' in navigator) {
@@ -67,5 +75,7 @@ permalink: 404.html
         }
       }
     </script>
+    <script src="https://kit.fontawesome.com/0ea2a7621c.js" crossorigin="anonymous"></script>
+    <script type="application/javascript" src="{{ '/js/jolicoeur.js' | url }}"></script>
   </body>
 </html>

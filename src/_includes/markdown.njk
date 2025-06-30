@@ -27,7 +27,7 @@ layout: base.njk
 <section class="responsive">
   {%- if (tocBlock) -%}
     {%- if content | toc -%}
-    <nav class="left max">
+    <nav class="left max s-display-none">
     <!--<sl-details summary="Table of Contents">-->
       {{ content | toc | safe }}
     <!--</sl-details>-->
