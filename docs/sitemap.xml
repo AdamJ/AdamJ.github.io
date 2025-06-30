@@ -127,11 +127,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/designs/customer-engagement/</loc>
-      <lastmod>2025-06-27T19:40:57.000Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/resume/</loc>
       <lastmod>2025-06-27T19:40:57.000Z</lastmod>
     </url>
@@ -159,6 +154,11 @@
     <url>
       <loc>https://www.adamjolicoeur.com/development/</loc>
       <lastmod>2025-06-29T22:29:04.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/designs/customer-engagement/</loc>
+      <lastmod>2025-06-29T22:36:22.000Z</lastmod>
     </url>
   
 </urlset>

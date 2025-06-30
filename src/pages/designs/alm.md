@@ -37,7 +37,7 @@ eleventyNavigation:
       <div class="grid">
         <div class="s12 md6 l6">
           <article class="no-padding tertiary-container">
-            <img class="responsive medium" src="../../img/ALM_workflow.png" alt="Image of the ALM workflow" loading="lazy">
+            <img class="responsive medium" src="{{ '/img/ALM_workflow.png' | url }}" alt="Image of the ALM workflow" loading="lazy">
           </article>
           <div class="absolute bottom left right padding bottom-shadow white-text">
             <nav>
@@ -72,13 +72,13 @@ eleventyNavigation:
           <article class="no-padding">
             <div class="grid no-space">
               <div class="s12 m4">
-                <img src="../../img/ALM_step1.png" class="responsive" alt="Step 1 of the ALM wireframes">
+                <img src="{{ '/img/ALM_step1.png' | url }}" class="responsive" alt="Step 1 of the ALM wireframes">
               </div>
               <div class="s12 m4">
-                <img src="../../img/ALM_step2.png" class="responsive" alt="Step 2 of the ALM wireframes">
+                <img src="{{ '/img/ALM_step2.png' | url }}" class="responsive" alt="Step 2 of the ALM wireframes">
               </div>
               <div class="s12 m4">
-                <img src="../../img/ALM_step3.png" class="responsive" alt="Step 3 of the ALM wireframes">
+                <img src="{{ '/img/ALM_step3.png' | url }}" class="responsive" alt="Step 3 of the ALM wireframes">
               </div>
             </div>
           </article>
@@ -90,7 +90,7 @@ eleventyNavigation:
           <article class="no-padding fill">
             <div class="grid no-space">
               <div class="s12 m6">
-                <img src="../../img/ALM_wireframe.png" class="responsive" alt="Wireframe of the work item to coding experience">
+                <img src="{{ '/img/ALM_wireframe.png' | url }}" class="responsive" alt="Wireframe of the work item to coding experience">
               </div>
               <div class="s12 m6">
                 <div class="padding">
@@ -120,7 +120,7 @@ eleventyNavigation:
       <div class="grid">
         <div class="s12 md6 l6">
           <article class="no-padding tertiary-container">
-            <img class="responsive medium" src="../../img/ALM_planner.png" alt="Image of the user flow" loading="lazy">
+            <img class="responsive medium" src="{{ '/img/ALM_planner.png' | url }}" alt="Image of the user flow" loading="lazy">
           </article>
           <div class="absolute bottom left right padding bottom-shadow white-text">
             <nav>
