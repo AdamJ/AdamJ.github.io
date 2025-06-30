@@ -24,7 +24,6 @@
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.11.15/dist/cdn/beer.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
-    <link href="https:///prismjs@v1.x/themes/prism.css" rel="stylesheet" />
     <link type="text/css" href="/css/style.css" rel="stylesheet" />
     <meta
       name="og:title"
@@ -44,15 +43,77 @@
     />
   </head>
   <body>
-    <main class="max">
-      <div style="display: flex; flex-direction: column; align-items: center;">
-        <div style="margin: 24px 0;">
-          <img src="/img/404_outdoors.svg" alt="Lost in the mountains" height="400" width="400" loading="lazy">
+    <nav id="nav" class="l max top">
+  <header>
+    <nav>
+      <a href="/" alt="Link to home">
+        <span class="display-none">Link to home</span>
+        <img src="/img/Jolicoeur_iOS.png" class="circle" alt="Site logo" />
+      </a>
+    </nav>
+  </header>
+  <div class="max"></div>
+  <a href="/about" class="active secondary" alt="Link to my About page">
+    <i>info</i>
+    <span>About</span>
+  </a>
+  <a href="/designs" class="active secondary" alt="Link to my Design examples">
+    <i>palette</i>
+    <span>Designs</span>
+  </a>
+  <a href="/development" class="active secondary" alt="Link to my Development examples">
+    <i>code</i>
+    <span>Code</span>
+  </a>
+  <div class="medium-space"></div>
+  <button class="fill circle" color-theme-toggle aria-label="Change theme">
+    <i>light_mode</i>
+  </button>
+</nav>
+<nav class="bottom s m max">
+  <header>
+    <nav>
+      <a href="/" alt="Link to home">
+        <img src="/img/Jolicoeur_iOS.png" class="circle" />
+      </a>
+    </nav>
+  </header>
+  <div class="max"></div>
+  <a href="/about" class="active secondary" alt="Link to my About page">
+    <i>info</i>
+    <span>About</span>
+  </a>
+  <a href="/designs" class="active secondary" alt="Link to my Design examples">
+    <i>palette</i>
+    <span>Designs</span>
+  </a>
+  <a href="/development" class="active secondary" alt="Link to my Development examples">
+    <i>code</i>
+    <span>Code</span>
+  </a>
+  <div class="max"></div>
+  <button class="fill circle" color-theme-toggle aria-label="Change theme">
+    <i>light_mode</i>
+  </button>
+</nav>
+
+    <main>
+      <article class="absolute fill center middle">
+        <div>
+          <img src="/img/404_outdoors.svg" alt="Lost in the mountains" class="responsive" loading="lazy" />
+          <h5 class="center-align">Looks like you lost your way...</h5>
+          <p class="center-align">Go back to the home page by clicking the button below.</p>
+          <div class="space"></div>
+          <nav class="center-align">
+            <a href="/" alt="Link to go back to the home page">
+              <button class="responsive round large small-elevate primary">
+                <i>home</i>
+                <span>Go home</span>
+              </button>
+            </a>
+          </nav>
         </div>
-        <h1>Looks like you lost your way...</h1>
-        <p>Go back to the home page by clicking the button below.</p>
-        <sl-button variant="primary" size="large" href="/">Take me home</sl-button>
-      </div>
+      </article>
     </main>
     <script>
       if ('serviceWorker' in navigator) {
@@ -63,5 +124,7 @@
         }
       }
     </script>
+    <script src="https://kit.fontawesome.com/0ea2a7621c.js" crossorigin="anonymous"></script>
+    <script type="application/javascript" src="/js/jolicoeur.js"></script>
   </body>
 </html>

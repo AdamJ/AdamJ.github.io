@@ -8,20 +8,20 @@
     </nav>
   </header>
   <div class="max"></div>
-  <a href="/about" class="nav-link {% if '/about' in page.url %}active{% endif %}" alt="Link to my About page">
+  <a href="/about" class="{% if '/about' in page.url %}active secondary{% endif %}" alt="Link to my About page">
     <i>info</i>
     <span>About</span>
   </a>
-  <a href="/designs" class="nav-link {% if '/designs' in page.url %}active{% endif %}" alt="Link to my Designs examples">
+  <a href="/designs" class="{% if '/designs' in page.url %}active secondary{%endif%}" alt="Link to my Design examples">
     <i>palette</i>
     <span>Designs</span>
   </a>
-  <a href="/development" class="nav-link {% if '/development' in page.url %}active{% endif %}" alt="Link to my Development examples">
+  <a href="/development" class="{% if '/development' in page.url %}active secondary{% endif %}" alt="Link to my Development examples">
     <i>code</i>
     <span>Code</span>
   </a>
   <div class="medium-space"></div>
-  <button class="circle" onclick="mode()">
+  <button class="fill circle" color-theme-toggle aria-label="Change theme">
     <i>light_mode</i>
   </button>
 </nav>
@@ -33,16 +33,21 @@
       </a>
     </nav>
   </header>
-  <a href="/about" class="nav-link {% if '/about' in page.url %}active{% endif %}" alt="Link to my About page">
+  <div class="max"></div>
+  <a href="/about" class="{% if '/about' in page.url %}active secondary{% endif %}" alt="Link to my About page">
     <i>info</i>
     <span>About</span>
   </a>
-  <a href="/designs" class="nav-link {% if '/designs' in page.url %}active{% endif %}" alt="Link to my Designs examples">
+  <a href="/designs" class="{% if '/designs' in page.url %}active secondary{% endif %}" alt="Link to my Design examples">
     <i>palette</i>
     <span>Designs</span>
   </a>
-  <a href="/development" class="nav-link {% if '/development' in page.url %}active{% endif %}" alt="Link to my Development examples">
+  <a href="/development" class="{% if '/development' in page.url %}active secondary{% endif %}" alt="Link to my Development examples">
     <i>code</i>
     <span>Code</span>
   </a>
+  <div class="max"></div>
+  <button class="fill circle" color-theme-toggle aria-label="Change theme">
+    <i>light_mode</i>
+  </button>
 </nav>

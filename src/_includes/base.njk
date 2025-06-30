@@ -67,7 +67,7 @@
     />
   </head>
     <a rel="me" href="https://mastodon.world/@adamjol" aria-hidden="true" style="display: none !important;">Mastodon</a>
-    <body class="light">
+    <body {% if iconLight %} class="light" {% else %} class="dark" {% endif %}>
       {% include 'sitenav.njk' %}
       <main class="responsive">
         <div class="page right active">
