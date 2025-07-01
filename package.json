@@ -14,12 +14,13 @@
     "webhint": "hint http://localhost:8081",
     "stylelint": "npx stylelint '**/*.scss'",
     "stylelint:fix": "npx stylelint --fix `src/sass/style.scss`",
-    "shoelace": "cp -R node_modules/@shoelace-style/shoelace/dist/ src/shoelace/",
+    "cp-shoelace": "cp -R node_modules/@shoelace-style/shoelace/dist/ src/shoelace/",
     "watch:sass": "sass --no-source-map --watch src/sass:docs/css",
     "watch:eleventy": "eleventy --serve --port=8081",
     "build:sass-nomap": "sass --no-source-map src/sass/style.scss docs/css/style.css",
+    "build:print": "sass --no-source-map src/sass/print.scss docs/css/print.min.css",
     "build:sass-site": "sass src/sass/style.scss docs/css/style.css",
-    "build:sass": "npm-run-all --parallel build:sass-site",
+    "build:sass": "npm-run-all --parallel build:sass-site build:print",
     "build:eleventy": "eleventy",
     "postbuild": "postcss docs/css/*.css -u autoprefixer cssnano -r",
     "start": "cross-env ELEVENTY_ENV=dev npm-run-all build:sass --parallel watch:*",
@@ -27,7 +28,7 @@
     "lint": "stylelint 'src/sass/*.scss' 'src/sass/*.scss' 'src/sass/*.scss'",
     "lint:fix": "stylelint --fix 'src/sass/*.scss' 'src/sass/*.scss' 'src/sass/*.scss'",
     "bump": "npm --no-git-tag-version version",
-    "copy-speedlify": "cp node_modules/speedlify-score/speedlify-score.js src/js/"
+    "cp-speedlify": "cp node_modules/speedlify-score/speedlify-score.js src/js/"
   },
   "repository": {
     "type": "git",
@@ -56,6 +57,7 @@
     "eleventy-plugin-toc": "^1.1.5",
     "emoji-regex": "^10.4.0",
     "hint": "^7.1.13",
+    "html-minifier-terser": "^7.2.0",
     "luxon": "^3.6.1",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.2.0",
@@ -76,6 +78,7 @@
     "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",
     "@shoelace-style/shoelace": "^2.20.1",
     "beercss": "^3.11.17",
+    "clean-css": "^5.3.3",
     "material-dynamic-colors": "^1.1.2",
     "speedlify-score": "^4.0.4"
   }

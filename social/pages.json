@@ -72,12 +72,6 @@
 	},
 
 	{
-   "title":"Oops! Not Found",
-   "imgName":"oops-not-found",
-   "date":"oops-not-found"
-	},
-
-	{
    "title":"Apps",
    "imgName":"apps",
    "date":"apps"
@@ -189,5 +183,11 @@
    "title":"Task-It!",
    "imgName":"task-it",
    "date":"task-it"
+	},
+
+	{
+   "title":"Oops! Not Found",
+   "imgName":"oops-not-found",
+   "date":"oops-not-found"
 	}
 ]

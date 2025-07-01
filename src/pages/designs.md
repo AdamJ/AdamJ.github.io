@@ -16,7 +16,7 @@ eleventyNavigation:
       <article class="no-padding fill no-elevate round">
         <div class="grid">
           <div class="s12 s">
-            <img class="responsive large" src="{{ '/img/task-it_product.png' | url }}" alt="Thumbnail of Task It project screen" />
+            <img class="responsive large" src="{{ '/img/task-it_product.webp' | url }}" alt="Thumbnail of Task It project screen" />
             <div class="absolute left bottom right bottom-shadow s padding white-text">
               <div>Project One</div>
               <h5 class="no-margin">Task-It!</h5>
@@ -76,11 +76,11 @@ eleventyNavigation:
             </div>
           </div>
           <div class="s6 m l large-padding">
-            <img class="responsive large round" src="{{ '/img/task-it_product.png' | url }}" alt="Thumbnail of Task It project screen" />
+            <img class="responsive large round" src="{{ '/img/task-it_product.webp' | url }}" alt="Thumbnail of Task It project screen" />
             <div class="space l"></div>
             <div class="row l">
-              <img class="round extra" src="{{ '/img/task-it_user-states.png' | url }}" alt="Thumbnail of project screen" />
-              <img class="round extra" src="{{ '/img/task-it_user-survey.png' | url }}" alt="Thumbnail of project screen"/>
+              <img class="round extra" src="{{ '/img/task-it_user-states.webp' | url }}" alt="Thumbnail of project screen" />
+              <img class="round extra" src="{{ '/img/task-it_user-survey.webp' | url }}" alt="Thumbnail of project screen"/>
               <div class="max"></div>
             </div>
           </div>
@@ -95,7 +95,7 @@ eleventyNavigation:
     <div class="s12">
       <article class="no-padding fill no-elevate round">
         <div class="grid">
-          <div class="s12 s"><img class="responsive large" src="{{ '/img/OSIO-laptop-screen-1200.png' | url }}" alt="Thumbnail of ALM project screen" />
+          <div class="s12 s"><img class="responsive large" src="{{ '/img/OSIO-laptop-screen-1200.webp' | url }}" alt="Thumbnail of ALM project screen" />
             <div class="absolute left bottom right bottom-shadow s padding white-text">
               <div>Project Two</div>
               <h5 class="no-margin">Application Management</h5>
@@ -154,9 +154,9 @@ eleventyNavigation:
               </div>
             </div>
           </div>
-          <div class="s6 m l large-padding"><img class="responsive large round" src="{{ '/img/OSIO-laptop-screen-1200.png' | url }}" alt="Thumbnail of ALM project screen" />
+          <div class="s6 m l large-padding"><img class="responsive large round" src="{{ '/img/OSIO-laptop-screen-1200.webp' | url }}" alt="Thumbnail of ALM project screen" />
             <div class="space l"></div>
-            <div class="row l"><img class="round extra" src="{{ '/img/ALM_wireframe.png' | url }}" alt="Thumbnail of project screen" /><img class="round extra" src="{{ '/img/ALM_workflow.png' | url }}" alt="Thumbnail of project screen"/>
+            <div class="row l"><img class="round extra" src="{{ '/img/ALM_wireframe.webp' | url }}" alt="Thumbnail of project screen" /><img class="round extra" src="{{ '/img/ALM_workflow.webp' | url }}" alt="Thumbnail of project screen"/>
               <div class="max"></div>
             </div>
           </div>
@@ -172,7 +172,7 @@ eleventyNavigation:
     <div class="s12">
       <article class="no-padding fill no-elevate round">
         <div class="grid">
-          <div class="s12 s"><img class="responsive large" src="{{ '/img/CEA_Dashboard.png' | url }}" alt="Thumbnail of Customer Engagement project screen" />
+          <div class="s12 s"><img class="responsive large" src="{{ '/img/CEA_Dashboard.webp' | url }}" alt="Thumbnail of Customer Engagement project screen" />
             <div class="absolute left bottom right bottom-shadow s padding white-text">
               <div>Project Three</div>
               <h5 class="no-margin">Customer Engagement</h5>
@@ -219,7 +219,7 @@ eleventyNavigation:
               </div>
             </div>
           </div>
-          <div class="s6 m l large-padding"><img class="responsive large round" src="{{ '/img/CEA_Dashboard.png' | url }}" alt="Thumbnail of Customer Engagement project screen" />
+          <div class="s6 m l large-padding"><img class="responsive large round" src="{{ '/img/CEA_Dashboard.webp' | url }}" alt="Thumbnail of Customer Engagement project screen" />
             <div class="space l"></div>
           </div>
         </div>
@@ -235,7 +235,7 @@ eleventyNavigation:
     <div class="s12">
       <article class="no-padding fill no-elevate round">
         <div class="grid">
-          <div class="s12 s"><img class="responsive large" src="{{ '/img/Timetrak.png' | url }}" alt="Thumbnail of Timetrak project screen" />
+          <div class="s12 s"><img class="responsive large" src="{{ '/img/Timetrak.webp' | url }}" alt="Thumbnail of Timetrak project screen" />
             <div class="absolute left bottom right bottom-shadow s padding white-text">
               <div>Project Four</div>
               <h5 class="no-margin">Switchback TimeTrak</h5>
@@ -282,7 +282,7 @@ eleventyNavigation:
               </div>
             </div>
           </div>
-          <div class="s6 m l large-padding"><img class="responsive large round" src="{{ '/img/Timetrak.png' | url }}" alt="Thumbnail of Timetrak project screen" />
+          <div class="s6 m l large-padding"><img class="responsive large round" src="{{ '/img/Timetrak.webp' | url }}" alt="Thumbnail of Timetrak project screen" />
             <div class="space l"></div>
           </div>
         </div>
@@ -298,7 +298,7 @@ eleventyNavigation:
     <div class="s12">
       <article class="no-padding fill no-elevate round">
         <div class="grid">
-          <div class="s12 s"><img class="responsive large" src="{{ '/img/SC_demo.png' | url }}" alt="Thumbnail of demo screen" />
+          <div class="s12 s"><img class="responsive large" src="{{ '/img/SC_demo.webp' | url }}" alt="Thumbnail of demo screen" />
             <div class="absolute left bottom right bottom-shadow s padding white-text">
               <div>Project Five</div>
               <h5 class="no-margin">Structure Cloud</h5>
@@ -340,7 +340,7 @@ eleventyNavigation:
               </div>
             </div>
           </div>
-          <div class="s6 m l large-padding"><img class="responsive large round" src="{{ '/img/SC_demo.png' | url }}" alt="Thumbnail of demo screen" />
+          <div class="s6 m l large-padding"><img class="responsive large round" src="{{ '/img/SC_demo.webp' | url }}" alt="Thumbnail of demo screen" />
             <div class="space l"></div>
           </div>
         </div>
@@ -358,7 +358,7 @@ eleventyNavigation:
   <div class="grid">
     <div class="s12 l6">
       <article class="no-padding round fill">
-        <img class="responsive medium" src="{{ '/img/portfolio/Slide0.png' | url }}" alt="Portfolio presentation slide image">
+        <img class="responsive medium" src="{{ '/img/portfolio/Slide0.webp' | url }}" alt="Portfolio presentation slide image">
         <div class="absolute bottom left right padding bottom-shadow bottom-round white-text">
           <nav>
             <h5>Portfolio</h5>
@@ -375,7 +375,7 @@ eleventyNavigation:
     </div>
     <div class="s12 l6">
       <article class="no-padding round fill">
-        <img class="responsive medium" src="{{ '/img/colorPicker/slide0.png' | url }}" alt="Color Picker presentation slide example">
+        <img class="responsive medium" src="{{ '/img/colorPicker/slide0.webp' | url }}" alt="Color Picker presentation slide example">
         <div class="absolute bottom left right padding bottom-shadow bottom-round white-text">
           <nav>
             <h5>Color Picker</h5>

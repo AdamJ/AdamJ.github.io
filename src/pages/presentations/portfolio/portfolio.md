@@ -8,21 +8,21 @@ eleventyNavigation:
   key: portfolio
   parent: Presentations
   order: 1
-image0: /img/portfolio/Slide0.png
-image1: /img/portfolio/Slide1.png
-image2: /img/portfolio/Slide2-5.png
-image3: /img/portfolio/Slide2.png
-image4: /img/portfolio/Slide3.png
-image5: /img/portfolio/Slide4.png
-image6: /img/portfolio/Slide5.png
-image7: /img/portfolio/Slide6.png
-image8: /img/portfolio/Slide7.png
-image9: /img/portfolio/Slide8.png
-image10: /img/portfolio/Slide10.png
-image11: /img/portfolio/Slide11.png
-image12: /img/portfolio/Slide12.png
-image13: /img/portfolio/Slide13.png
-image14: /img/portfolio/Slide14.png
+image0: /img/portfolio/Slide0.webp
+image1: /img/portfolio/Slide1.webp
+image2: /img/portfolio/Slide2-5.webp
+image3: /img/portfolio/Slide2.webp
+image4: /img/portfolio/Slide3.webp
+image5: /img/portfolio/Slide4.webp
+image6: /img/portfolio/Slide5.webp
+image7: /img/portfolio/Slide6.webp
+image8: /img/portfolio/Slide7.webp
+image9: /img/portfolio/Slide8.webp
+image10: /img/portfolio/Slide10.webp
+image11: /img/portfolio/Slide11.webp
+image12: /img/portfolio/Slide12.webp
+image13: /img/portfolio/Slide13.webp
+image14: /img/portfolio/Slide14.webp
 ---
 
 <section class="responsive">

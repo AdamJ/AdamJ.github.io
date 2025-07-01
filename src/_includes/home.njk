@@ -9,7 +9,7 @@ templateEngineOverride : md, njk
       <article class="no-elevate round large large-padding middle-align">
         <div class="large-padding s-small-padding">
           <h1 class="large">Hi!</h1>
-          <h6>I'm Adam, a Product Manager and Designer creating data-driven experiences.</h6>
+          <p class="subtitle-h6">I'm Adam, a Product Manager and Designer creating data-driven experiences.</p>
           <nav>
             <a href="/designs" alt="Link to designs page">
               <button class="small-elevate primary extra ripple">My Designs</button>
@@ -21,8 +21,8 @@ templateEngineOverride : md, njk
   </div>
   <div class="m6 l6 s-display-none">
     <div class="page top active">
-      <article class="no-elevate round large no-padding" style="background-color: transparent;">
-        <img src="{{ '/img/avatar.png' | url }}" alt="Avatar thumbnail" style="max-height: 100%;" />
+      <article class="no-elevate round large no-padding background-transparent">
+        <img src="{{ '/img/avatar_500x500.webp' | url }}" alt="Avatar thumbnail" />
       </article>
     </div>
   </div>
@@ -36,9 +36,9 @@ templateEngineOverride : md, njk
       <article class="no-padding">
         <div class="grid no-space">
           <div class="s6">
-            <img class="responsive" src="{{ '/img/CAS_Figma_Cover.png' | url }}" alt="Thumbnail of the CAS design system cover page">
+            <img class="responsive" src="{{ '/img/CAS_Figma_Cover.webp' | url }}" alt="Thumbnail of the CAS design system cover page" style="max-height: 100%;">
             <div class="absolute top left right padding top-shadow white-text">
-              <h5>Design System</h5>
+              <p class="subtitle-h5">Design System</p>
               <p>Component Assembly Systems</p>
             </div>
           </div>
@@ -58,9 +58,9 @@ templateEngineOverride : md, njk
       <article class="no-padding">
         <div class="grid no-space">
           <div class="s6">
-            <img class="responsive" src="{{ '/img/task-it_thumbnail.png' | url }}" alt="Thumbnail of task tracker">
+            <img class="responsive" src="{{ '/img/task-it_thumbnail.webp' | url }}" alt="Thumbnail of task tracker" style="max-height: 100%;">
             <div class="absolute top left right padding top-shadow white-text">
-              <h5>Task Tracker</h5>
+              <p class="subtitle-h5">Task Tracker</p>
               <p>AWS</p>
             </div>
           </div>
@@ -81,12 +81,18 @@ templateEngineOverride : md, njk
   </div>
   <div class="small-space"></div>
   <div class="grid">
-    <div class="s12 l4">
+    <div class="s12 m6 l4">
       <article class="no-padding">
-        <img class="responsive medium" src="{{ '/img/OSIO_thumbnail.png' | url }}" alt="Thumbnail of application management screen">
+        <img
+          class="responsive medium"
+          src="{{ '/img/OSIO_thumbnail.webp' | url }}"
+          srcset="{{ '/img/OSIO-laptop-screen-1200.webp 1.25x'}}"
+          alt="Thumbnail of application management screen"
+          style="max-height: 100%;"
+        >
         <div class="absolute bottom left right padding bottom-shadow white-text">
           <nav>
-            <h6>Application<br />Management</h6>
+            <p class="subtitle-h5">Application<br />Management</p>
             <div class="max"></div>
             <a href="/designs/alm/" alt="Link to application management page">
               <button class="circle tertiary">
@@ -97,12 +103,12 @@ templateEngineOverride : md, njk
         </div>
       </article>
     </div>
-    <div class="s12 l4">
+    <div class="s12 m6 l4">
       <article class="no-padding">
-        <img class="responsive medium" src="{{ '/img/CE_thumbnail.png' | url }}" alt="Thumbnail of customer engagement screen">
+        <img class="responsive medium" src="{{ '/img/CE_thumbnail.webp' | url }}" alt="Thumbnail of customer engagement screen" style="max-height: 100%;">
         <div class="absolute bottom left right padding bottom-shadow white-text">
           <nav>
-            <h6>Customer<br />Engagement</h6>
+            <p class="subtitle-h5">Customer<br />Engagement</p>
             <div class="max"></div>
             <a href="/designs/customer-engagement/" alt="Link to customer engagement page">
               <button class="circle tertiary">
@@ -113,12 +119,12 @@ templateEngineOverride : md, njk
         </div>
       </article>
     </div>
-    <div class="s12 l4">
+    <div class="s12 m6 l4">
       <article class="no-padding">
-        <img class="responsive medium" src="{{ '/img/colorPicker/thumbnail.png' | url }}" alt="Thumbnail of color picker slide">
+        <img class="responsive medium" src="{{ '/img/colorPicker/thumbnail.webp' | url }}" alt="Thumbnail of color picker slide" style="max-height: 100%;">
         <div class="absolute bottom left right padding bottom-shadow white-text">
           <nav>
-            <h5>Color Picker</h5>
+            <p class="subtitle-h5">Color Picker</p>
             <div class="max"></div>
             <a href="/presentations/color-picker/" alt="Link to color picker presentation">
               <button class="circle tertiary">
@@ -139,9 +145,9 @@ templateEngineOverride : md, njk
     <div class="s12 l6">
       <article class="no-elevate large-padding wave">
         <div class="row">
-          <img class="circle large" src="{{ '/img/Jolicoeur_iOS.png' | url }}" alt="Site logo" />
+          <img class="circle large" src="{{ '/img/Jolicoeur_iOS-small.webp' | url }}" alt="Site logo" />
           <div class="max">
-            <h5>AdamJ.GitHub.io</h5>
+            <p class="subtitle-h5">AdamJ.GitHub.io</p>
             <p>Where this website lives - take a look around.</p>
           </div>
         </div>
@@ -154,9 +160,9 @@ templateEngineOverride : md, njk
     <div class="s12 l6">
       <article class="no-elevate large-padding wave">
         <div class="row">
-          <img class="circle large" src="{{ '/img/game-tracker.png' | url }}" alt="Game Tracker logo" />
+          <img class="circle large" src="{{ '/img/game-tracker.webp' | url }}" alt="Game Tracker logo" />
           <div class="max">
-            <h5>Game Tracker</h5>
+            <p class="subtitle-h5">Game Tracker</p>
             <p>My first attempt at a PWA - Vite, Shoelace, and Lit.</p>
           </div>
         </div>
@@ -171,7 +177,7 @@ templateEngineOverride : md, njk
         <div class="row">
           <img class="circle large" src="{{ '/img/jolicoeur-blog.svg' | url }}" alt="Blog logo" />
           <div class="max">
-            <h5>Blog</h5>
+            <p class="subtitle-h5">Blog</p>
             <p>A simple blog, found at blog.adamjolicoeur.com.</p>
           </div>
         </div>
@@ -184,9 +190,9 @@ templateEngineOverride : md, njk
     <div class="s12 l6">
       <article class="no-elevate large-padding wave">
         <div class="row">
-          <img class="circle large" src="{{ '/img/my-mtg-app.png' | url }}" alt="MTG app logo" />
+          <img class="circle large" src="{{ '/img/my-mtg-app.webp' | url }}" alt="MTG app logo" />
           <div class="max">
-            <h5>My MTG App</h5>
+            <p class="subtitle-h5">My MTG App</p>
             <p>For 1v1 games of MTG with Scryfall integration.</p>
           </div>
         </div>

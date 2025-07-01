@@ -3,69 +3,6 @@
 * Copyright 2008-2025 Adam J. Jolicoeur
 * https://www.adamjolicoeur.com
 **/
-/*
-** Arrow animations from https://codepen.io/postor/pen/vYpNYg
-*/
-.arrows {
-  width: 60px;
-  height: 72px;
-  position: absolute;
-  left: 50%;
-  margin-left: -30px;
-  bottom: 20px;
-}
-
-.arrows path {
-  stroke: #bfe7fa;
-  fill: transparent;
-  stroke-width: 1px;
-  animation: arrow 2s infinite;
-  -webkit-animation: arrow 2s infinite;
-}
-
-@keyframes arrow {
-  0% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@-webkit-keyframes arrow /*Safari and Chrome*/ {
-  0% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-.arrows path.a1 {
-  animation-delay: -1s;
-  -webkit-animation-delay: -1s; /* Safari 和 Chrome */
-}
-
-.arrows path.a2 {
-  animation-delay: -0.5s;
-  -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
-}
-
-.arrows path.a3 {
-  animation-delay: 0s;
-  -webkit-animation-delay: 0s; /* Safari 和 Chrome */
-}
-
 :root,
 body.light {
   --primary:#0061a4;
@@ -146,6 +83,69 @@ body.dark {
   --surface-container-highest:#333538;
 }
 
+/*
+** Arrow animations from https://codepen.io/postor/pen/vYpNYg
+*/
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 20px;
+}
+
+.arrows path {
+  stroke: #bfe7fa;
+  fill: transparent;
+  stroke-width: 1px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s; /* Safari 和 Chrome */
+}
+
 body {
   font-size: 1rem !important;
 }
@@ -159,13 +159,6 @@ body {
     display: none !important;
   }
 }
-main a {
-  color: var(--primary) !important;
-}
-main a:hover {
-  text-decoration: underline !important;
-}
-
 .toc.markdown-toc {
   text-align: left !important;
   font-size: 1.25rem !important;
@@ -175,4 +168,26 @@ main a:hover {
   text-align: center !important;
 }
 
-/*# sourceMappingURL=style.css.map */
+.subtitle-h5 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  display: block;
+  align-items: center;
+  line-height: normal;
+}
+
+.subtitle-h6 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  display: block;
+  align-items: center;
+  line-height: normal;
+}
+
+/*
+* Adjust Speedlify colors
+*/
+:host span.circle.circle-ok {
+  color: var(--tertiary) !important;
+  border-color: var(--tertiary) !important;
+}

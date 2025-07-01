@@ -6,7 +6,7 @@
   <head>
     <!-- Generated from the 11ty Netlify Jumpstart: https://github.com/5t3ph/11ty-netlify-jumpstart -->
     <!-- Modified for usage/content provided by Adam J. Jolicoeur: https://github.com/AdamJ -->
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="@{{ meta.siteMeta }}" />
     <title>{{pageTitle}}</title>
@@ -33,9 +33,6 @@
     <meta name="apple-mobile-web-app-title" content="PWA Starter" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald&display=swap" rel="stylesheet" crossorigin="anonymous">
     <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -43,12 +40,16 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
       })(window, document, "clarity", "script", "qgxupe8qx2");
     </script>
-    <link href="https://cdn.jsdelivr.net/npm/beercss@3.11.15/dist/cdn/beer.min.css" rel="stylesheet">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.11.15/dist/cdn/beer.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
-    <link type="text/css" href="{{ '/css/style.css' | url }}" rel="stylesheet" />
-    {# <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script> #}
+    <link href="{{ '/css/beer.min.css' | url }}" rel="stylesheet">
+    <link href="{{ '/css/style.css' | url }}" rel="stylesheet">
+    <script type="module" src="{{ '/js/beer.min.js' | url }}"></script>
+
+    {# {% set css %} {% include "site.css" %} {% endset %}
+    <style>
+      {{ css | cssmin | safe }}
+    </style> #}
     <meta
       name="og:title"
       content="{{pageTitle}}"
@@ -66,7 +67,7 @@
       href="/feed/"
     />
   </head>
-    <a rel="me" href="https://mastodon.world/@adamjol" aria-hidden="true" style="display: none !important;">Mastodon</a>
+    <a rel="me" href="https://mastodon.world/@adamjol" aria-hidden="true" class="display-none">Mastodon</a>
     <body {% if iconLight %} class="light" {% else %} class="dark" {% endif %}>
       {% include 'sitenav.njk' %}
       <main class="responsive">

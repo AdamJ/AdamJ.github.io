@@ -13,6 +13,8 @@ const markdownItAnchor = require("markdown-it-anchor");
 const markdownItHighlightJS = require('markdown-it-highlightjs')
 const emojiReadTime = require("@11tyrocks/eleventy-plugin-emoji-readtime");
 const packageVersion = require("./package.json").version;
+const htmlmin = require("html-minifier-terser");
+const CleanCSS = require("clean-css");
 
 const mdOptions = {
   html: true,
@@ -30,6 +32,30 @@ const mdAnchorOpts = {
 }
 
 module.exports = function (eleventyConfig) {
+
+  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+    if (outputPath && outputPath.endsWith(".html")) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true,
+        // You can add more options from the html-minifier-terser documentation
+        // For example, to minify CSS and JS within HTML:
+        // minifyCSS: true,
+        // minifyJS: true,
+        ignoreCustomComments: true,
+        collapseWhitespace: true,
+        collapseInlineTagWhitespace: true,
+      });
+      return minified;
+    }
+    return content; // If not an HTML output, return content as-is
+  });
+
+  eleventyConfig.addFilter("cssmin", function (code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
+
   if (process.env.ELEVENTY_ENV === "prod") {
     eleventyConfig.ignores.add("./src/posts/");
   };
@@ -55,9 +81,13 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(emojiReadTime);
 
-  eleventyConfig.addWatchTarget("src/sass/*.scss");
+  eleventyConfig.addWatchTarget("src/css/*.css");
 
-  eleventyConfig.addPassthroughCopy("src/img");
+  eleventyConfig.addPassthroughCopy("src/img/*.webp");
+  eleventyConfig.addPassthroughCopy("src/img/**/*.webp");
+  eleventyConfig.addPassthroughCopy("src/img/touch/**");
+  eleventyConfig.addPassthroughCopy("src/img/*.svg");
+  eleventyConfig.addPassthroughCopy("src/css/**");
   eleventyConfig.addPassthroughCopy("src/webfonts");
   eleventyConfig.addPassthroughCopy("src/cache-polyfill.js");
   eleventyConfig.addPassthroughCopy("src/CNAME");

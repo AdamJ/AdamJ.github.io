@@ -113,13 +113,13 @@ description: "One enterprise task management system to rule them all."
       <div class="grid">
         <div class="s12 md6 l6">
           <article class="no-padding tertiary-container">
-            <img class="responsive medium" src="{{ '/img/task-it_user-flow.png' | url }}" alt="Image of the user flow" loading="lazy">
+            <img class="responsive medium" src="{{ '/img/task-it_user-flow.webp' | url }}" alt="Image of the user flow" loading="lazy">
           </article>
           <div class="absolute bottom left right padding bottom-shadow white-text">
             <nav>
               <h5>User flows</h5>
               <div class="max"></div>
-              <a href="{{ '/img/task-it_user-flow.png' | url }}" alt="Click to enlarge in new window" target="blank">
+              <a href="{{ '/img/task-it_user-flow.webp' | url }}" alt="Click to enlarge in new window" target="blank">
                 <button class="circle tertiary-border">
                   <i>expand_content</i>
                 </button>
@@ -129,13 +129,13 @@ description: "One enterprise task management system to rule them all."
         </div>
         <div class="s12 md6 l6">
           <article class="no-padding tertiary-container">
-            <img class="responsive medium" src="{{ '/img/task-it_user-states.png' | url }}" alt="Image of the various user flow states" loading="lazy">
+            <img class="responsive medium" src="{{ '/img/task-it_user-states.webp' | url }}" alt="Image of the various user flow states" loading="lazy">
           </article>
           <div class="absolute bottom left right padding bottom-shadow white-text">
             <nav>
               <h5>User states</h5>
               <div class="max"></div>
-              <a href="{{ '/img/task-it_user-states.png' | url }}" alt="Click to enlarge in new window" target="blank">
+              <a href="{{ '/img/task-it_user-states.webp' | url }}" alt="Click to enlarge in new window" target="blank">
                 <button class="circle tertiary-border">
                   <i>expand_content</i>
                 </button>
@@ -170,10 +170,10 @@ description: "One enterprise task management system to rule them all."
           <sl-image-comparer position="50">
             <img
               slot="after"
-              src="{{ '/img/task-it_task-details_wireframe.png' | url }}" class="figure-img img-fluid rounded" alt="Image of the task details wireframe" loading="lazy" style="width:100%;">
+              src="{{ '/img/task-it_task-details_wireframe.webp' | url }}" class="figure-img img-fluid rounded" alt="Image of the task details wireframe" loading="lazy" style="width:100%;">
             <img
               slot="before"
-              src="{{ '/img/task-it_task-details_mockup1.png' | url }}" class="figure-img img-fluid rounded" alt="Image of the first version of the task details mockup" loading="lazy" style="width:100%;">
+              src="{{ '/img/task-it_task-details_mockup1.webp' | url }}" class="figure-img img-fluid rounded" alt="Image of the first version of the task details mockup" loading="lazy" style="width:100%;">
           </sl-image-comparer>
         </div>
       </div>
@@ -185,13 +185,13 @@ description: "One enterprise task management system to rule them all."
       <p>As part of the testing process, I created a card-sorting survey for users, where I included all of the existing attributes, as well as some future-planned attributes, and asked users to order them by priority. Priority was determined by the user, with the only prompt being "what attribute(s) are required for you to get your work done in the most efficient manner?".</p>
       <div class="s12 md6 l6">
         <article class="no-padding tertiary-container">
-          <img class="responsive medium" src="{{ '/img/task-it_user-survey.png' | url }}" alt="Image of the user testing process" loading="lazy">
+          <img class="responsive medium" src="{{ '/img/task-it_user-survey.webp' | url }}" alt="Image of the user testing process" loading="lazy">
         </article>
         <div class="absolute bottom left right padding bottom-shadow white-text">
           <nav>
             <h5>User testing card sorting</h5>
             <div class="max"></div>
-            <a href="{{ '/img/task-it_user-survey.png' | url }}" alt="Click to enlarge in new window" target="blank">
+            <a href="{{ '/img/task-it_user-survey.webp' | url }}" alt="Click to enlarge in new window" target="blank">
               <button class="circle tertiary-border">
                 <i>expand_content</i>
               </button>
@@ -207,13 +207,13 @@ description: "One enterprise task management system to rule them all."
       <div class="grid">
         <div class="s12 m4">
           <article class="no-padding tertiary-container">
-            <img class="responsive medium" src="{{ '/img/task-it_task-details_mockup2.png' | url }}" alt="Image of the user testing process" loading="lazy">
+            <img class="responsive medium" src="{{ '/img/task-it_task-details_mockup2.webp' | url }}" alt="Image of the user testing process" loading="lazy">
           </article>
           <div class="absolute bottom left right padding bottom-shadow white-text">
             <nav>
               <h5>Version 2</h5>
               <div class="max"></div>
-              <a href="{{ '/img/task-it_task-details_mockup2.png' | url }}" alt="Click to enlarge in new window" target="blank">
+              <a href="{{ '/img/task-it_task-details_mockup2.webp' | url }}" alt="Click to enlarge in new window" target="blank">
                 <button class="circle tertiary-border">
                   <i>expand_content</i>
                 </button>
@@ -223,13 +223,13 @@ description: "One enterprise task management system to rule them all."
         </div>
         <div class="s12 m4">
           <article class="no-padding tertiary-container">
-            <img class="responsive medium" src="{{ '/img/task-it_task-details_mockup3.png' | url }}" alt="Image of the user testing process" loading="lazy">
+            <img class="responsive medium" src="{{ '/img/task-it_task-details_mockup3.webp' | url }}" alt="Image of the user testing process" loading="lazy">
           </article>
           <div class="absolute bottom left right padding bottom-shadow white-text">
             <nav>
               <h5>Version 3</h5>
               <div class="max"></div>
-              <a href="{{ '/img/task-it_task-details_mockup3.png' | url }}" alt="Click to enlarge in new window" target="blank">
+              <a href="{{ '/img/task-it_task-details_mockup3.webp' | url }}" alt="Click to enlarge in new window" target="blank">
                 <button class="circle tertiary-border">
                   <i>expand_content</i>
                 </button>
@@ -239,13 +239,13 @@ description: "One enterprise task management system to rule them all."
         </div>
         <div class="s12 m4">
           <article class="no-padding tertiary-container">
-            <img class="responsive medium" src="{{ '/img/task-it_task-details_mockup4.png' | url }}" alt="Image of the user testing process" loading="lazy">
+            <img class="responsive medium" src="{{ '/img/task-it_task-details_mockup4.webp' | url }}" alt="Image of the user testing process" loading="lazy">
           </article>
           <div class="absolute bottom left right padding bottom-shadow white-text">
             <nav>
               <h5>Version 4</h5>
               <div class="max"></div>
-              <a href="{{ '/img/task-it_task-details_mockup4.png' | url }}" alt="Click to enlarge in new window" target="blank">
+              <a href="{{ '/img/task-it_task-details_mockup4.webp' | url }}" alt="Click to enlarge in new window" target="blank">
                 <button class="circle tertiary-border">
                   <i>expand_content</i>
                 </button>

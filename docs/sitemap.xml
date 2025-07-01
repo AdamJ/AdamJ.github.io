@@ -62,11 +62,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/404.html</loc>
-      <lastmod>2025-05-17T15:21:56.768Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/apps/</loc>
       <lastmod>2025-06-09T12:20:32.000Z</lastmod>
     </url>
@@ -159,6 +154,11 @@
     <url>
       <loc>https://www.adamjolicoeur.com/designs/task-it/</loc>
       <lastmod>2025-06-30T17:28:48.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/404.html</loc>
+      <lastmod>2025-07-01T14:40:09.839Z</lastmod>
     </url>
   
 </urlset>

@@ -17,7 +17,7 @@ eleventyNavigation:
       <article class="no-padding">
         <div class="grid no-space">
           <div class="s6">
-            <img class="responsive medium" src="{{ '/img/rh_integration.png' | url }}" target="top" alt="Thumbnail of integration screen" />
+            <img class="responsive medium" src="{{ '/img/rh_integration.webp' | url }}" target="top" alt="Thumbnail of integration screen" />
           </div>
           <div class="s6">
             <div class="padding">
@@ -36,7 +36,7 @@ eleventyNavigation:
       <article class="no-padding">
         <div class="grid no-space">
           <div class="s6">
-            <img class="responsive medium" src="{{ '/img/thumbnail_kubevirtio.png' | url }}" target="top" alt="Thumbnail of kubevirt.io screen" />
+            <img class="responsive medium" src="{{ '/img/thumbnail_kubevirtio.webp' | url }}" target="top" alt="Thumbnail of kubevirt.io screen" />
           </div>
           <div class="s6">
             <div class="padding">
@@ -67,7 +67,7 @@ eleventyNavigation:
       <article class="no-padding">
         <div class="grid no-space">
           <div class="s6">
-            <img class="responsive medium" src="{{ '/img/thumbnail_RHDM.png' | url }}" target="top" alt="Thumbnail of design manual screen" />
+            <img class="responsive medium" src="{{ '/img/thumbnail_RHDM.webp' | url }}" target="top" alt="Thumbnail of design manual screen" />
           </div>
           <div class="s6">
             <div class="padding">
@@ -86,7 +86,7 @@ eleventyNavigation:
       <article class="no-padding">
         <div class="grid no-space">
           <div class="s6">
-            <img class="responsive medium" src="{{ '/img/thumbnail_PatternFly.png' | url }}" target="top" alt="Thumbnail of PatternFly 4 screen" />
+            <img class="responsive medium" src="{{ '/img/thumbnail_PatternFly.webp' | url }}" target="top" alt="Thumbnail of PatternFly 4 screen" />
           </div>
           <div class="s6">
             <div class="padding">
@@ -117,7 +117,7 @@ eleventyNavigation:
       <article class="secondary-container no-padding">
         <div class="grid no-space">
           <div class="s6">
-            <img class="responsive medium" src="{{ '/img/blog_screenshot.png' | url }}" target="top" alt="Thumbnail of my blog" />
+            <img class="responsive medium" src="{{ '/img/blog_screenshot.webp' | url }}" target="top" alt="Thumbnail of my blog" />
           </div>
           <div class="s6">
             <div class="padding">
@@ -141,7 +141,7 @@ eleventyNavigation:
       <article class="secondary-container no-padding">
         <div class="grid no-space">
           <div class="s6">
-            <img class="responsive medium" src="{{ '/img/GamesAndThings_1024.png' | url }}" target="top" alt="Thumbnail of Games and Things app icon" />
+            <img class="responsive medium" src="{{ '/img/GamesAndThings_1024.webp' | url }}" target="top" alt="Thumbnail of Games and Things app icon" />
           </div>
           <div class="s6">
             <div class="padding">
