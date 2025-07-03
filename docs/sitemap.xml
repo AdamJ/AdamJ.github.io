@@ -12,11 +12,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/posts/</loc>
-      <lastmod>2024-11-14T14:48:46.333Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/archives/town-selectman/</loc>
       <lastmod>2025-01-01T18:28:28.784Z</lastmod>
     </url>
@@ -24,26 +19,6 @@
     <url>
       <loc>https://www.adamjolicoeur.com/journeys/journeys/</loc>
       <lastmod>2025-01-01T18:28:28.787Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/archives/archives/</loc>
-      <lastmod>2025-01-20T21:13:03.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/designs/</loc>
-      <lastmod>2025-01-20T21:13:03.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/designs/alm/</loc>
-      <lastmod>2025-01-20T21:13:03.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/designs/customer-engagement/</loc>
-      <lastmod>2025-01-20T21:13:03.000Z</lastmod>
     </url>
   
     <url>
@@ -77,38 +52,8 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/icons-and-branding/icons/</loc>
-      <lastmod>2025-01-20T21:13:03.000Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/presentations/</loc>
       <lastmod>2025-01-20T21:13:03.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/presentations/color-picker/</loc>
-      <lastmod>2025-01-20T21:13:03.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/presentations/portfolio/</loc>
-      <lastmod>2025-01-20T21:13:03.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/testimonials/</loc>
-      <lastmod>2025-01-20T21:13:03.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/designs/task-it/</loc>
-      <lastmod>2025-02-07T16:20:37.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/howto/</loc>
-      <lastmod>2025-02-07T19:04:52.227Z</lastmod>
     </url>
   
     <url>
@@ -117,37 +62,7 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/connect/</loc>
-      <lastmod>2025-04-17T15:34:36.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/404.html</loc>
-      <lastmod>2025-05-17T15:21:56.768Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/about/</loc>
-      <lastmod>2025-06-09T12:20:32.000Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/apps/</loc>
-      <lastmod>2025-06-09T12:20:32.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/credits/</loc>
-      <lastmod>2025-06-09T12:20:32.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/resume/</loc>
-      <lastmod>2025-06-09T12:20:32.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/uses/</loc>
       <lastmod>2025-06-09T12:20:32.000Z</lastmod>
     </url>
   
@@ -177,18 +92,73 @@
     </url>
   
     <url>
+      <loc>https://www.adamjolicoeur.com/presentations/color-picker/</loc>
+      <lastmod>2025-06-20T18:51:06.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/presentations/portfolio/</loc>
+      <lastmod>2025-06-20T18:51:06.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/testimonials/</loc>
+      <lastmod>2025-06-25T20:11:48.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/about/</loc>
+      <lastmod>2025-06-27T19:40:57.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/resume/</loc>
+      <lastmod>2025-06-27T19:40:57.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/connect/</loc>
+      <lastmod>2025-06-27T20:06:38.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/credits/</loc>
+      <lastmod>2025-06-27T20:06:38.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/uses/</loc>
+      <lastmod>2025-06-27T20:06:38.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/designs/</loc>
+      <lastmod>2025-06-29T22:25:49.000Z</lastmod>
+    </url>
+  
+    <url>
       <loc>https://www.adamjolicoeur.com/development/</loc>
-      <lastmod>2025-06-12T18:44:37.000Z</lastmod>
+      <lastmod>2025-06-29T22:29:04.000Z</lastmod>
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/reference/</loc>
-      <lastmod>2025-06-13T15:17:40.610Z</lastmod>
+      <loc>https://www.adamjolicoeur.com/designs/alm/</loc>
+      <lastmod>2025-06-30T17:28:48.000Z</lastmod>
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/alfred/workflows/</loc>
-      <lastmod>2025-06-13T15:52:22.911Z</lastmod>
+      <loc>https://www.adamjolicoeur.com/designs/customer-engagement/</loc>
+      <lastmod>2025-06-30T17:28:48.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/designs/task-it/</loc>
+      <lastmod>2025-06-30T17:28:48.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/404.html</loc>
+      <lastmod>2025-07-01T14:40:09.839Z</lastmod>
     </url>
   
 </urlset>

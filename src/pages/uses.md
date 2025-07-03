@@ -1,48 +1,17 @@
 ---
-layout: "page"
+layout: markdown
 title: "Uses"
 date: git Last Modified
 abbreviation: "uses"
-description: "What I use as a designer."
-headerButton: false
+description: "Daily carries and useful tools"
+readTime: false
+tocBlock: true
 eleventyNavigation:
   key: Uses
   order: 10
 ---
 
 <style>
-  content {
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0 auto;
-    a {
-      color: var(--sl-color-primary-900) !important;
-    }
-  }
-  h2 {
-    position: relative;
-    background: linear-gradient(90deg, var(--sl-color-primary-900) 0%, var(--sl-color-primary-600) 100%);
-    color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    @media (prefer-color-scheme: light) {
-      color: #000;
-      background: transparent;
-    }
-    &:before {
-      content: "";
-      position: absolute;
-      left: -1rem;
-      bottom: 0;
-      background: linear-gradient(90deg, var(--sl-color-primary-900) 0%, var(--sl-color-primary-600) 100%);
-      border-radius: 1rem;
-      width: 4rem;
-      height: .25rem;
-      z-index: -1;
-    }
-  }
   /* Use the CODE block for general alert-style blocks when TEXT is specified as the language */
   .code-toolbar {
     pre {
@@ -86,7 +55,8 @@ eleventyNavigation:
 
 ## Desktop Apps
 
-- [Arc browser](https://arc.net/download): my primary browser, though I also use Safari for creating web apps (Bluesky / Threads / GitHub).
+- <span class="overline">Arc browser: my primary browser, though I also use Safari for creating web apps (Bluesky / Threads / GitHub).</span>
+- Microsoft Edge: for development (disabling all of the extra stuff) with Safari as my casual browser.
 - [Parallels Desktop](https://www.parallels.com/products/desktop/use-cases/developers/?extensionid=%7Bextensionid%7D&matchtype=b&device=c&devicemodel=&creative=&network=o&placement=&x-source=ppc): sometimes I need to use different operating systems and I turn to this for Windows 11, Ubuntu, and Fedora.
 - Apple Notes: why use something else when this does the job? Tags, Smart Folders, and shortcuts are key.
 - [Raycast](https://www.raycast.com/): switched off of Alfred a while back and found this to be indispensable in my daily work.
@@ -97,10 +67,8 @@ All of my travel gear fits into a [Peak Design 20L](https://www.peakdesign.com/p
 
 ## This Site
 
-This site was created using [Eleventy](https://www.11ty.dev/) (Markdown + Nunjucks), after many years of trying out essentially everything that was "hip" at a given time. In the end, I just needed something simple that I could build upon, but also could be used for other projects (with an easy-to-simplify structure). For the UI, I use the [Bootstrap Grid](https://getbootstrap.com/docs/5.3/layout/grid/) system as I didn't want to write one from scratch. Various UI elements of the site are made using [Shoelace](https://shoelace.style/) (buttons, carousel, details - I'm really starting to get into [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components)) with custom pieces on top.
+This site was created using [Eleventy](https://www.11ty.dev/) (Markdown + Nunjucks), after many years of trying out essentially everything that was "hip" at a given time. In the end, I just needed something simple that I could build upon, but also could be used for other projects (with an easy-to-simplify structure). For the UI, I use the layout templates from BeerCSS, as I didn't want to write one from scratch. Various UI elements of the site are made using [Shoelace](https://shoelace.style/) (buttons, carousel, details - I'm really starting to get into [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components)) with custom pieces on top.
 
 ```text
 Be sure to check out uses.tech to see other /uses pages!
 ```
-
-You can also find me on the [Eleventy Leaderboards](https://www.11ty.dev/speedlify/adamjolicoeur-com/)!

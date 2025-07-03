@@ -33,6 +33,9 @@ content {
   margin: 0;
   float: none;
 }
+article {
+  box-shadow: none !important;
+}
 .row {
   display: block !important;
 }
@@ -67,6 +70,11 @@ table,
 img,
 svg {
   break-inside: avoid;
+}
+.large-space,
+.medium-space,
+.small-space {
+  display: none !important;
 }
 .text-bg-light {
   background-color: transparent !important;
