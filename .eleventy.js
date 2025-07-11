@@ -57,7 +57,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addWatchTarget("src/sass/*.scss");
 
-  eleventyConfig.addPassthroughCopy("src/img");
+  eleventyConfig.addPassthroughCopy("src/assets/img");
   eleventyConfig.addPassthroughCopy("src/webfonts");
   eleventyConfig.addPassthroughCopy("src/cache-polyfill.js");
   eleventyConfig.addPassthroughCopy("src/CNAME");

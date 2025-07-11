@@ -8,21 +8,21 @@ eleventyNavigation:
   key: portfolio
   parent: Presentations
   order: 1
-image0: /img/portfolio/Slide0.png
-image1: /img/portfolio/Slide1.png
-image2: /img/portfolio/Slide2-5.png
-image3: /img/portfolio/Slide2.png
-image4: /img/portfolio/Slide3.png
-image5: /img/portfolio/Slide4.png
-image6: /img/portfolio/Slide5.png
-image7: /img/portfolio/Slide6.png
-image8: /img/portfolio/Slide7.png
-image9: /img/portfolio/Slide8.png
-image10: /img/portfolio/Slide10.png
-image11: /img/portfolio/Slide11.png
-image12: /img/portfolio/Slide12.png
-image13: /img/portfolio/Slide13.png
-image14: /img/portfolio/Slide14.png
+image0: /assets/img/portfolio0.webp
+image1: /assets/img/portfolio1.webp
+image2: /assets/img/portfolio2-5.webp
+image3: /assets/img/portfolio2.webp
+image4: /assets/img/portfolio3.webp
+image5: /assets/img/portfolio4.webp
+image6: /assets/img/portfolio5.webp
+image7: /assets/img/portfolio6.webp
+image8: /assets/img/portfolio7.webp
+image9: /assets/img/portfolio8.webp
+image10: /assets/img/portfolio10.webp
+image11: /assets/img/portfolio11.webp
+image12: /assets/img/portfolio12.webp
+image13: /assets/img/portfolio13.webp
+image14: /assets/img/portfolio14.webp
 ---
 
 <div class="container mb-3">

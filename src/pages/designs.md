@@ -11,7 +11,7 @@ eleventyNavigation:
 
 <!-- Task-It! -->
 <div class="container mx-auto mx-md-auto py-3 px-0 px-md-5">
-  <div class="row mx-0 text-align-center card-cover" style="background-image: url({{ '/img/task-it_product.png' | url }});">
+  <div class="row mx-0 text-align-center card-cover" style="background-image: url({{ '/assets/img/task-it_product.webp' | url }});">
     <div class="col p-md-0 p-lg-5 background-overlay" style="height: 500px;">
       <div style="position: relative; top: 25%;">
         <h1 class="display-3 fw-bold text-white">Task-It!</h1>
@@ -29,7 +29,7 @@ eleventyNavigation:
 <div class="container py-3 px-0 px-md-5">
   <div class="row mx-0 px-0 px-md-3 align-items-center">
     <div class="col-12 col-md-6">
-      <img src="{{ '/img/OSIO-laptop-screen-1200.png' | url }}" class="d-block mx-lg-auto img-fluid" alt="Application Lifecycle Management thumbnail" width="700" height="500" loading="lazy">
+      <img src="{{ '/assets/img/OSIO-laptop-screen-1200.webp' | url }}" class="d-block mx-lg-auto img-fluid" alt="Application Lifecycle Management thumbnail" width="700" height="500" loading="lazy">
     </div>
     <div class="col-12 col-md-6 text-align-center text-md-start">
       <h2>Application Lifecycle Management</h2>
@@ -48,7 +48,7 @@ eleventyNavigation:
       <sl-button href="/designs/customer-engagement" variant="neutral" pill>the journey</sl-button>
     </div>
     <div class="col-12 col-md-6 py-2 py-md-0">
-      <img src="{{ '/img/CEA_Dashboard.png' | url }}" class="d-block mx-lg-auto img-fluid img-thumbnail" alt="Customer Engagement App Dashboard thumbnail" width="700" height="500" loading="lazy">
+      <img src="{{ '/assets/img/CEA_Dashboard.webp' | url }}" class="d-block mx-lg-auto img-fluid img-thumbnail" alt="Customer Engagement App Dashboard thumbnail" width="700" height="500" loading="lazy">
     </div>
   </div>
 </div>
@@ -57,7 +57,7 @@ eleventyNavigation:
 <div class="container py-3 px-0 px-md-5">
   <div class="row mx-0 px-0 px-md-3 align-items-center">
     <div class="col-12 col-md-6">
-      <img src="{{ '/img/Timetrak.png' | url }}" class="d-block mx-lg-auto img-fluid img-thumbnail" alt="Switchback Timetrak thumbnail" width="700" height="500" loading="lazy">
+      <img src="{{ '/assets/img/Timetrak.webp' | url }}" class="d-block mx-lg-auto img-fluid img-thumbnail" alt="Switchback Timetrak thumbnail" width="700" height="500" loading="lazy">
     </div>
     <div class="col-12 col-md-6 text-align-center text-md-start">
       <h2>Switchback TimeTrak</h2>
@@ -80,7 +80,7 @@ eleventyNavigation:
       </p>
     </div>
     <div class="col-12 col-md-6">
-      <img src="{{ '/img/SC_demo.png' | url }}" class="d-block mx-lg-auto img-fluid img-thumbnail" alt="Structure Cloud UI screenshot" width="700" height="500" loading="lazy">
+      <img src="{{ '/assets/img/SC_demo.webp' | url }}" class="d-block mx-lg-auto img-fluid img-thumbnail" alt="Structure Cloud UI screenshot" width="700" height="500" loading="lazy">
     </div>
   </div>
 </div>
@@ -98,7 +98,7 @@ eleventyNavigation:
       <sl-card class="card-image">
         <img
           slot="image"
-          src="{{ '/img/portfolio/Slide0.png' | url }}"
+          src="{{ '/assets/img/portfolio0.webp' | url }}"
           alt="Portfolio presentation slide image"
         />
         <sl-button href="/presentations/portfolio/" variant="neutral" size="large" outline class="card-button">Portfolio Review</sl-button>
@@ -108,7 +108,7 @@ eleventyNavigation:
       <sl-card class="card-image">
         <img
           slot="image"
-          src="{{ '/img/colorPicker/slide0.png' | url }}"
+          src="{{ '/assets/img/colorPicker0.webp' | url }}"
           alt="Color Picker presentation slide example"
         />
         <sl-button href="/presentations/color-picker/" variant="neutral" size="large" outline class="card-button">Color Picker</sl-button>

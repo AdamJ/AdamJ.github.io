@@ -14,7 +14,7 @@ eleventyNavigation:
   <div class="row row-cols-1 row-cols-lg-2 align-items-stretch px-2 mx-0 gy-5 pb-5">
 <!-- Red Hat Integration -->
     <div class="col">
-      <div class="card card-cover" style="background-image: url('../img/rh_integration.png');">
+      <div class="card card-cover" style="background-image: url('../assets/img/rh_integration.webp');">
         <div class="d-flex flex-column h-100 p-5 text-white background-overlay rounded-5">
           <h2 class="my-5 text-align-center text-white text-shadow-1">Integration Walkthrough</h2>
           <ul class="d-flex list-unstyled mt-auto">
@@ -33,7 +33,7 @@ eleventyNavigation:
       </div>
     </div>
     <div class="col">
-      <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/thumbnail_kubevirtio.png');">
+      <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../assets/img/thumbnail_kubevirtio.webp');">
         <div class="d-flex flex-column h-100 p-5 text-white background-overlay rounded-5">
           <h2 class="my-5 text-align-center text-white text-shadow-1">kubevirt.io</h2>
           <ul class="d-flex list-unstyled mt-auto">
@@ -56,7 +56,7 @@ eleventyNavigation:
   <div class="row row-cols-1 row-cols-lg-2 align-items-stretch px-2 mx-0 gy-5 pb-5">
     <!-- RHD Design Manual & Patternfly.org -->
     <div class="col">
-      <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/thumbnail_RHDM.png');">
+      <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../assets/img/thumbnail_RHDM.webp');">
         <div class="d-flex flex-column h-100 p-5 text-white background-overlay rounded-5">
           <h2 class="my-5 text-align-center text-shadow-1 text-white">Red Hat Developer Design Manual</h2>
           <ul class="d-flex list-unstyled mt-auto">
@@ -76,7 +76,7 @@ eleventyNavigation:
       </div>
     </div>
     <div class="col">
-      <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/thumbnail_PatternFly.png');">
+      <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../assets/img/thumbnail_PatternFly.webp');">
         <div class="d-flex flex-column h-100 p-5 text-white background-overlay rounded-5">
           <h2 class="my-5 text-align-center text-shadow-1 text-white">PatternFly.org</h2>
           <ul class="d-flex list-unstyled mt-auto">
@@ -102,7 +102,7 @@ eleventyNavigation:
   <div class="row row-cols-1 row-cols-lg-2 align-items-stretch px-2 mx-0 gy-5 pb-5">
 <!-- Alfred workflows -->
     <div class="col">
-      <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/thumbnail_Alfredlogo.png');">
+      <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../assets/img/thumbnail_Alfredlogo.webp');">
         <div class="d-flex flex-column p-5 pb-3 text-white background-overlay rounded-5">
           <h2 class="my-5 text-align-center text-white text-shadow-1">Alfred</h2>
           <ul class="d-flex list-unstyled mt-auto">
@@ -117,7 +117,7 @@ eleventyNavigation:
     </div>
 <!-- Streamdeck configurations -->
     <div class="col">
-      <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/thumbnail_streamdeck.png');">
+      <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../assets/img/thumbnail_streamdeck.webp');">
         <div class="d-flex flex-column p-5 pb-3 text-white background-overlay rounded-5">
           <h2 class="my-5 text-align-center text-white text-shadow-1">Stream Deck icons</h2>
           <ul class="d-flex list-unstyled mt-auto">
@@ -132,7 +132,7 @@ eleventyNavigation:
     </div>
 <!-- Collect Some More -->
     <div class="col">
-      <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/');">
+      <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../assets/img/');">
         <div class="d-flex flex-column p-5 pb-3 text-white background-overlay rounded-5">
           <h2 class="mt-5 mb-1 text-align-center text-white text-shadow-1">Collect Some More</h2>
           <p class="text-align-center text-white mt-1 mb-4">a collections app for iOS</p>
@@ -156,7 +156,7 @@ eleventyNavigation:
   <h2>Oldies but goodies</h2>
   <div class="row row-cols-1 row-cols-lg-2 align-items-stretch px-2 mx-0 gy-5 pb-5">
     <div class="col">
-      <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../img/fabric8-package.png');">
+      <div class="card card-cover overflow-hidden text-white rounded-5" style="background-image: url('../assets/img/fabric8-package.webp');">
         <div class="d-flex flex-column h-100 p-5 text-white background-overlay rounded-5">
           <h2 class="my-5 text-align-center text-shadow-1 text-white">fabric8-pattern.library</h2>
           <ul class="d-flex list-unstyled mt-auto">

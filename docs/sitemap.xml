@@ -2,28 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
     <url>
-      <loc>https://www.adamjolicoeur.com/</loc>
-      <lastmod>2024-06-10T18:56:16.540Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/streamdeck/examples/</loc>
-      <lastmod>2024-06-10T18:56:16.543Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/posts/</loc>
-      <lastmod>2024-11-14T14:48:46.333Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/archives/town-selectman/</loc>
-      <lastmod>2025-01-01T18:28:28.784Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/journeys/journeys/</loc>
-      <lastmod>2025-01-01T18:28:28.787Z</lastmod>
+      <loc>https://www.adamjolicoeur.com/alfred/workflows/</loc>
+      <lastmod>2025-01-20T21:13:03.000Z</lastmod>
     </url>
   
     <url>
@@ -107,23 +87,8 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/howto/</loc>
-      <lastmod>2025-02-07T19:04:52.227Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/marketing/</loc>
-      <lastmod>2025-04-09T15:51:10.333Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/connect/</loc>
       <lastmod>2025-04-17T15:34:36.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/404.html</loc>
-      <lastmod>2025-05-17T15:21:56.768Z</lastmod>
     </url>
   
     <url>
@@ -182,13 +147,48 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/reference/</loc>
-      <lastmod>2025-06-13T15:17:40.610Z</lastmod>
+      <loc>https://www.adamjolicoeur.com/404.html</loc>
+      <lastmod>2025-07-11T18:03:03.938Z</lastmod>
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/alfred/workflows/</loc>
-      <lastmod>2025-06-13T15:52:22.911Z</lastmod>
+      <loc>https://www.adamjolicoeur.com/</loc>
+      <lastmod>2025-07-11T18:03:04.063Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/archives/town-selectman/</loc>
+      <lastmod>2025-07-11T18:03:04.066Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/journeys/journeys/</loc>
+      <lastmod>2025-07-11T18:03:04.075Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/marketing/</loc>
+      <lastmod>2025-07-11T18:03:04.076Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/reference/</loc>
+      <lastmod>2025-07-11T18:03:04.078Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/streamdeck/examples/</loc>
+      <lastmod>2025-07-11T18:03:04.079Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/howto/</loc>
+      <lastmod>2025-07-11T18:03:04.080Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/posts/</loc>
+      <lastmod>2025-07-11T18:03:04.081Z</lastmod>
     </url>
   
 </urlset>
