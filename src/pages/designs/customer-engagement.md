@@ -30,12 +30,12 @@ eleventyNavigation:
       <p>Before starting on the updated design for the Customer Engagement App (CEA), I first took to creating an updated sitemap. This allowed me to set a basic path for users to navigate through the application, while also separating the pieces of the application into useful areas.</p>
       <div class="text-align-center">
         <sl-dialog label="Dialog" class="alm-workflow" style="--width: 80vw;">
-          <img src="../../img/Sitemap_alpha.png" class="d-block mx-lg-auto img-fluid" alt="Sitemap for the alpha version of the Customer Engagement App">
+          <img src="../../assets/img/Sitemap_alpha.webp" class="d-block mx-lg-auto img-fluid" alt="Sitemap for the alpha version of the Customer Engagement App">
           <sl-button slot="footer" variant="neutral">
             Close
           </sl-button>
         </sl-dialog>
-        <sl-button><img src="../../img/Sitemap_alpha.png" class="d-block mx-lg-auto img-fluid" alt="Sitemap for the alpha version of the Customer Engagement App" width="500" height="300" loading="lazy"></sl-button>
+        <sl-button><img src="../../assets/img/Sitemap_alpha.webp" class="d-block mx-lg-auto img-fluid" alt="Sitemap for the alpha version of the Customer Engagement App" width="500" height="300" loading="lazy"></sl-button>
         <script>
           const dialog = document.querySelector('.alm-workflow');
           const openButton = dialog.nextElementSibling;
@@ -47,8 +47,8 @@ eleventyNavigation:
       <h2>Wireframes</h2>
       <p>I created a set of wireframes that could be quickly iterated on for presenting ideas to project stakeholders and other interested parties.</p>
       <div class="text-align-center">
-        <img src="../../img/CEA_wireframe_first.png" class="d-block mx-lg-auto img-fluid mb-3"  width="500" height="300" loading="lazy" alt="Example visual design for the navigation variations in the Customer Engagement App">
-        <sl-button href="../../img/CEA_Dashboard_Overview.pdf" target="_blank">View PDF<sl-visually-hidden>Open PDF in new window</sl-visually-hidden></sl-button>
+        <img src="../../assets/img/CEA_wireframe_first.webp" class="d-block mx-lg-auto img-fluid mb-3"  width="500" height="300" loading="lazy" alt="Example visual design for the navigation variations in the Customer Engagement App">
+        <sl-button href="https://github.com/AdamJ/AdamJ.github.io/blob/main/src/img/CEA_Dashboard_Overview.pdf" target="_blank">View PDF<sl-visually-hidden>Open PDF on GitHub</sl-visually-hidden></sl-button>
         <script>
           const wireframeDialog = document.querySelector('.cea-wireframe');
           const openWireframe = wireframeDialog.nextElementSibling;
@@ -65,12 +65,12 @@ eleventyNavigation:
             <h2 class="text-align-center text-white">Application Dashboard</h2>
             <div class="text-align-center">
               <sl-dialog label="CEA Application Dashboard" class="cea-dashboard" style="--width: 80vw;">
-                <img src="../../img/CEA_Dashboard.png" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the primary dashboard in the Customer Engagement App">
+                <img src="../../assets/img/CEA_Dashboard.webp" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the primary dashboard in the Customer Engagement App">
                 <sl-button slot="footer" variant="neutral">
                   Close
                 </sl-button>
               </sl-dialog>
-              <sl-button><img src="../../img/CEA_Dashboard.png" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the primary dashboard in the Customer Engagement App" width="500" height="300" loading="lazy"></sl-button>
+              <sl-button><img src="../../assets/img/CEA_Dashboard.webp" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the primary dashboard in the Customer Engagement App" width="500" height="300" loading="lazy"></sl-button>
               <script>
                 const dashboardDialog = document.querySelector('.cea-dashboard');
                 const openDashboardButton = dashboardDialog.nextElementSibling;
@@ -86,12 +86,12 @@ eleventyNavigation:
             <h2>Engagement Reporting</h2>
             <div class="text-align-center">
               <sl-dialog label="CEA Engagement Dashboard" class="cea-engagement" style="--width: 80vw;">
-                <img src="../../img/CEA_Engagement.png" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the engagement dashboard in the Customer Engagement App">
+                <img src="../../assets/img/CEA_Engagement.webp" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the engagement dashboard in the Customer Engagement App">
                 <sl-button slot="footer" variant="neutral">
                   Close
                 </sl-button>
               </sl-dialog>
-              <sl-button><img src="../../img/CEA_Engagement.png" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the engagement dashboard in the Customer Engagement App" width="500" height="300" loading="lazy"></sl-button>
+              <sl-button><img src="../../assets/img/CEA_Engagement.webp" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the engagement dashboard in the Customer Engagement App" width="500" height="300" loading="lazy"></sl-button>
               <script>
                 const engagementDialog = document.querySelector('.cea-engagement');
                 const openEngagementButton = engagementDialog.nextElementSibling;
@@ -109,12 +109,12 @@ eleventyNavigation:
             <h2 class="text-align-center">Settings</h2>
             <div class="text-align-center">
               <sl-dialog label="CEA Settings" class="cea-settings" style="--width: 80vw;">
-                <img src="../../img/CEA_Settings.png" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the settings page in the Customer Engagement App">
+                <img src="../../assets/img/CEA_Settings.webp" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the settings page in the Customer Engagement App">
                 <sl-button slot="footer" variant="neutral">
                   Close
                 </sl-button>
               </sl-dialog>
-              <sl-button><img src="../../img/CEA_Settings.png" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the settings page in the Customer Engagement App" width="500" height="300" loading="lazy"></sl-button>
+              <sl-button><img src="../../assets/img/CEA_Settings.webp" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the settings page in the Customer Engagement App" width="500" height="300" loading="lazy"></sl-button>
               <script>
                 const settingsDialog = document.querySelector('.cea-settings');
                 const openSettingsButton = settingsDialog.nextElementSibling;
@@ -134,12 +134,12 @@ eleventyNavigation:
             <h2 class="text-align-center text-white">Color Palette</h2>
             <div class="text-align-center">
               <sl-dialog label="Color palette" class="cea-palette" style="--width: 80vw;">
-                <img src="../../img/CEA_Palette.png" class="d-block mx-lg-auto img-fluid" alt="Color palette created for the Customer Engagement App">
+                <img src="../../assets/img/CEA_Palette.webp" class="d-block mx-lg-auto img-fluid" alt="Color palette created for the Customer Engagement App">
                 <sl-button slot="footer" variant="neutral">
                   Close
                 </sl-button>
               </sl-dialog>
-              <sl-button><img src="../../img/CEA_Palette.png" class="d-block mx-lg-auto img-fluid" alt="Color palette created for the Customer Engagement App" width="500" height="300" loading="lazy"></sl-button>
+              <sl-button><img src="../../assets/img/CEA_Palette.webp" class="d-block mx-lg-auto img-fluid" alt="Color palette created for the Customer Engagement App" width="500" height="300" loading="lazy"></sl-button>
               <script>
                 const paletteDialog = document.querySelector('.cea-palette');
                 const openPaletteButton = paletteDialog.nextElementSibling;
@@ -155,12 +155,12 @@ eleventyNavigation:
             <h2>Component Examples</h2>
             <div class="text-align-center">
               <sl-dialog label="Asset examples" class="cea-assets" style="--width: 80vw;">
-                <img src="../../img/CEA_AssetExamples.png" class="d-block mx-lg-auto img-fluid" alt="An example of the types of components found in the Customer Engagement App">
+                <img src="../../assets/img/CEA_AssetExamples.webp" class="d-block mx-lg-auto img-fluid" alt="An example of the types of components found in the Customer Engagement App">
                 <sl-button slot="footer" variant="neutral">
                   Close
                 </sl-button>
               </sl-dialog>
-              <sl-button><img src="../../img/CEA_AssetExamples.png" class="d-block mx-lg-auto img-fluid" alt="An example of the types of components found in the Customer Engagement App" width="500" height="300" loading="lazy"></sl-button>
+              <sl-button><img src="../../assets/img/CEA_AssetExamples.webp" class="d-block mx-lg-auto img-fluid" alt="An example of the types of components found in the Customer Engagement App" width="500" height="300" loading="lazy"></sl-button>
               <script>
                 const assetsDialog = document.querySelector('.cea-assets');
                 const openAssetsButton = assetsDialog.nextElementSibling;
@@ -178,12 +178,12 @@ eleventyNavigation:
             <h2>Navigation</h2>
             <div class="text-align-center">
               <sl-dialog label="Navigation" class="cea-navigation" style="--width: 80vw;">
-                <img src="../../img/CEA_Navigation.png" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the navigation variations in the Customer Engagement App">
+                <img src="../../assets/img/CEA_Navigation.webp" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the navigation variations in the Customer Engagement App">
                 <sl-button slot="footer" variant="neutral">
                   Close
                 </sl-button>
               </sl-dialog>
-              <sl-button><img src="../../img/CEA_Navigation.png" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the navigation variations in the Customer Engagement App" width="500" height="300" loading="lazy"></sl-button>
+              <sl-button><img src="../../assets/img/CEA_Navigation.webp" class="d-block mx-lg-auto img-fluid" alt="Example visual design for the navigation variations in the Customer Engagement App" width="500" height="300" loading="lazy"></sl-button>
               <script>
                 const navigationDialog = document.querySelector('.cea-navigation');
                 const openNavigationButton = navigationDialog.nextElementSibling;

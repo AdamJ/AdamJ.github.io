@@ -1,32 +1,8 @@
 [
 	{
-   "title":"Adam Jolicoeur",
-   "imgName":"home",
-   "date":"home"
-	},
-
-	{
-   "title":"Stream Deck examples",
-   "imgName":"stream-deck-examples",
-   "date":"stream-deck-examples"
-	},
-
-	{
-   "title":"Adam Jolicoeur",
-   "imgName":"home",
-   "date":"home"
-	},
-
-	{
-   "title":"Archived",
-   "imgName":"archived",
-   "date":"archived"
-	},
-
-	{
-   "title":"Journeys",
-   "imgName":"journeys",
-   "date":"journeys"
+   "title":"Alfred Workflows",
+   "imgName":"alfred-workflows",
+   "date":"alfred-workflows"
 	},
 
 	{
@@ -126,27 +102,9 @@
 	},
 
 	{
-   "title":"howto",
-   "imgName":"howto",
-   "date":"howto"
-	},
-
-	{
-   "title":"Marketing",
-   "imgName":"marketing",
-   "date":"marketing"
-	},
-
-	{
    "title":"Connect",
    "imgName":"connect",
    "date":"connect"
-	},
-
-	{
-   "title":"Oops! Not Found",
-   "imgName":"oops-not-found",
-   "date":"oops-not-found"
 	},
 
 	{
@@ -216,14 +174,56 @@
 	},
 
 	{
+   "title":"Oops! Not Found",
+   "imgName":"oops-not-found",
+   "date":"oops-not-found"
+	},
+
+	{
+   "title":"Adam Jolicoeur",
+   "imgName":"home",
+   "date":"home"
+	},
+
+	{
+   "title":"Archived",
+   "imgName":"archived",
+   "date":"archived"
+	},
+
+	{
+   "title":"Journeys",
+   "imgName":"journeys",
+   "date":"journeys"
+	},
+
+	{
+   "title":"Marketing",
+   "imgName":"marketing",
+   "date":"marketing"
+	},
+
+	{
    "title":"Reference links",
    "imgName":"reference-links",
    "date":"reference-links"
 	},
 
 	{
-   "title":"Alfred Workflows",
-   "imgName":"alfred-workflows",
-   "date":"alfred-workflows"
+   "title":"Stream Deck examples",
+   "imgName":"stream-deck-examples",
+   "date":"stream-deck-examples"
+	},
+
+	{
+   "title":"howto",
+   "imgName":"howto",
+   "date":"howto"
+	},
+
+	{
+   "title":"Adam Jolicoeur",
+   "imgName":"home",
+   "date":"home"
 	}
 ]

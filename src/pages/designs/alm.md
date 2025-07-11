@@ -30,12 +30,12 @@ eleventyNavigation:
       <h3>Application Lifecycle Management flow</h3>
       <div class="text-align-center">
         <sl-dialog label="Dialog" class="alm-workflow" style="--width: 80vw;">
-          <img src="../../img/ALM_workflow.png" class="d-block mx-lg-auto img-fluid" alt="ALM workflow">
+          <img src="../../assets/img/ALM_workflow.webp" class="d-block mx-lg-auto img-fluid" alt="ALM workflow">
           <sl-button slot="footer" variant="neutral">
             Close
           </sl-button>
         </sl-dialog>
-        <sl-button><img src="../../img/ALM_workflow.png" class="d-block mx-lg-auto img-fluid" alt="ALM workflow" width="500" height="300" loading="lazy"></sl-button>
+        <sl-button><img src="../../assets/img/ALM_workflow.webp" class="d-block mx-lg-auto img-fluid" alt="ALM workflow" width="500" height="300" loading="lazy"></sl-button>
         <script>
           const dialog = document.querySelector('.alm-workflow');
           const openButton = dialog.nextElementSibling;
@@ -58,47 +58,48 @@ eleventyNavigation:
       <b>Steps to complete the process:</b>
       <div class="row px-0">
         <div class="col-12 col-md-6 offset-md-3">
-        <style>
-          .vertical {
-            max-height: 400px;
-          }
-          .vertical img {
-            object-fit: contain !important;
-          }
-          .vertical::part(base) {
-            grid-template-areas: 'slides slides pagination';
-          }
-          .vertical::part(pagination) {
-            flex-direction: column;
-          }
-          .vertical::part(navigation) {
-            transform: rotate(90deg);
-            display: flex;
-          }
-          .vertical::slotted(img) {
-            object-fit: contain !important;
-          }
-        </style>
-        <sl-carousel class="vertical" pagination orientation="vertical">
-          <sl-carousel-item>
-            <img
-              alt="Step 1 of the ALM wireframes"
-              src="{{ '/img/ALM_step1.png' | url }}"
-            />
-          </sl-carousel-item>
-          <sl-carousel-item>
-            <img
-              alt="Step 2 of the ALM wireframes"
-              src="{{ '/img/ALM_step2.png' | url }}"
-            />
-          </sl-carousel-item>
-          <sl-carousel-item>
-            <img
-              alt="Step 3 of the ALM wireframes"
-              src="{{ '/img/ALM_step3.png' | url }}"
-            />
-          </sl-carousel-item>
-        </sl-carousel>
+          <style>
+            .vertical {
+              max-height: 400px;
+            }
+            .vertical img {
+              object-fit: contain !important;
+            }
+            .vertical::part(base) {
+              grid-template-areas: 'slides slides pagination';
+            }
+            .vertical::part(pagination) {
+              flex-direction: column;
+            }
+            .vertical::part(navigation) {
+              transform: rotate(90deg);
+              display: flex;
+            }
+            .vertical::slotted(img) {
+              object-fit: contain !important;
+            }
+          </style>
+          <sl-carousel class="vertical" pagination orientation="vertical">
+            <sl-carousel-item>
+              <img
+                alt="Step 1 of the ALM wireframes"
+                src="{{ '/assets/img/ALM_step1.webp' | url }}"
+              />
+            </sl-carousel-item>
+            <sl-carousel-item>
+              <img
+                alt="Step 2 of the ALM wireframes"
+                src="{{ '/assets/img/ALM_step2.webp' | url }}"
+              />
+            </sl-carousel-item>
+            <sl-carousel-item>
+              <img
+                alt="Step 3 of the ALM wireframes"
+                src="{{ '/assets/img/ALM_step3.webp' | url }}"
+              />
+            </sl-carousel-item>
+          </sl-carousel>
+        </div>
       </div>
       <div class="row px-0">
         <sl-card>
@@ -107,7 +108,7 @@ eleventyNavigation:
               slot="start"
               style="background: var(--sl-color-neutral-50); display: flex; align-items: center; justify-content: center; overflow: hidden;"
             >
-              <img src="../../img/ALM_wireframe.png" class="img-fluid" alt="Wireframe of the work item to coding experience">
+              <img src="../../assets/img/ALM_wireframe.webp" class="img-fluid" alt="Wireframe of the work item to coding experience">
             </div>
             <div
               slot="end"
@@ -128,12 +129,12 @@ eleventyNavigation:
       <h3>Visual Design</h3>
       <p>After completing the wireframes and flows, a sample visual design was created. This design was created using the in-house design component library.</p>
       <sl-dialog label="Visual Design" class="alm-planner" style="--width: 80vw;">
-        <img src="../../img/ALM_planner.png" class="d-block mx-lg-auto img-fluid" alt="ALM workflow">
+        <img src="../../assets/img/ALM_planner.webp" class="d-block mx-lg-auto img-fluid" alt="ALM workflow">
         <sl-button slot="footer" variant="neutral">
           Close
         </sl-button>
       </sl-dialog>
-      <sl-button><img src="../../img/ALM_planner.png" class="d-block mx-lg-auto img-fluid" alt="ALM workflow" width="500" height="300" loading="lazy"></sl-button>
+      <sl-button><img src="../../assets/img/ALM_planner.webp" class="d-block mx-lg-auto img-fluid" alt="ALM workflow" width="500" height="300" loading="lazy"></sl-button>
       <script>
         const visualDesign = document.querySelector('.alm-planner');
         const openDesign = visualDesign.nextElementSibling;
@@ -143,10 +144,6 @@ eleventyNavigation:
       </script>
       <h3 class="mt-3">Prototyping</h3>
       <p>As part of the testing and usability study process, I created a prototype that demonstrated some of the basic layouts and IA for users to explore and provide feedback on. This process evolved over time and, eventually, became a full-fledged website that utilized static data and was continuously updated as users provided feedback.</p>
-      <div class="col-md-4 offset-md-4">
-        <sl-button href="https://www.adamjolicoeur.com/testing_environment/index.html" size="large" variant="neutral"  target="_blank" style="width: 80%;" outline pill>View prototype<sl-visually-hidden>open link in a new window</sl-visually-hidden>
-         <fa-icon type="duotone" weight="solid" name="arrow-up-right-from-square" size="md"></fa-icon></sl-button>
-      </div>
       <div class="mt-5 mb-3">
         <sl-card class="card-header">
           <div slot="header">

@@ -8,17 +8,17 @@ eleventyNavigation:
   key: colorPicker
   parent: Presentations
   order: 2
-image1: "/img/colorPicker/slide0.png"
+image1: "/assets/img/colorPicker0.webp"
 image1-alt: "Introduction slide"
-image2: "/img/colorPicker/slide1.png"
+image2: "/assets/img/colorPicker1.webp"
 image2-alt: "Slide 2"
-image3: "/img/colorPicker/slide2.png"
+image3: "/assets/img/colorPicker2.webp"
 image3-alt: "Slide 3"
-image4: "/img/colorPicker/slide3.png"
+image4: "/assets/img/colorPicker3.webp"
 image4-alt: "Slide 4"
-image5: "/img/colorPicker/slide4.png"
+image5: "/assets/img/colorPicker4.webp"
 image5-alt: "Slide 5"
-image6: "/img/colorPicker/slide5.png"
+image6: "/assets/img/colorPicker5.webp"
 image6-alt: "Slide 6"
 ---
 
