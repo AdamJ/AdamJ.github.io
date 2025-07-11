@@ -1,0 +1,11 @@
+{# Passed 'design' object #}
+<article class="design-thumbnail">
+    <a href="/designs/{{ design.slug }}/" aria-label="View details for {{ design.title }}">
+        <picture>
+            <source srcset="{{ design.thumbnailImage }}" type="image/webp">
+            <img src="{{ design.thumbnailImage | replace(".webp", ".jpg") }}" alt="{{ design.title }} thumbnail" loading="lazy" width="300" height="200"> {# Set intrinsic size for CLS #}
+        </picture>
+        <h3>{{ design.title }}</h3>
+        <p>{{ design.thumbnailDescription }}</p>
+    </a>
+</article>

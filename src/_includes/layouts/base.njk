@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" class="wa-theme--shoelace">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title | default("Adam Jolicoeur") }}</title>
+    <meta name="description" content="{{ description | default("Showcasing my top design projects.") }}">
+
+    {# Critical CSS - inline this #}
+    {# {% set css %} {% include "/assets/css/critical.css" %} {% endset %} #}
+    {# <style>{{ css | cssmin | safe }}</style> #}
+
+    {# Main CSS - load asynchronously #}
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}"></noscript>
+    <link rel="stylesheet" href="https://early.webawesome.com/webawesome@3.0.0-beta.1/dist/styles/themes/shoelace.css" />
+    <link rel="stylesheet" href="https://early.webawesome.com/webawesome@3.0.0-beta.1/dist/styles/webawesome.css" />
+    <script type="module" src="https://early.webawesome.com/webawesome@3.0.0-beta.1/dist/webawesome.loader.js"></script>
+    {# Favicon, etc. #}
+</head>
+<body>
+    {% include "_partials/header.njk" %}
+    {% include "_partials/navigation.njk" %}
+
+    <main class="wa-stack">
+        {{ content | safe }}
+    </main>
+
+    {% include "_partials/footer.njk" %}
+
+    {# Defer non-critical JS #}
+    <script src="{{ '/assets/js/lazyload.js' | url }}" defer></script>
+    <script src="{{ '/assets/js/image-modal.js' | url }}" defer></script>
+    <script src="{{ '/assets/js/main.js' | url }}" defer></script>
+</body>
+</html>

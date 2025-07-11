@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+title: My Top Design Portfolio
+description: High-performance portfolio showcasing my best design projects.
+---
+
+<section class="hero">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Explore my latest and greatest design projects.</p>
+</section>
+
+<section class="designs-overview">
+    <h2>Featured Designs</h2>
+    <div class="thumbnail-grid">
+        {% for design in designs | slice(0, 3) %} {# Get only the first 3 designs #}
+            {% include "components/thumbnail.njk" %}
+        {% endfor %}
+    </div>
+</section>

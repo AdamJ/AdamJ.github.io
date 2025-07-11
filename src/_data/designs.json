@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "design-project-one",
+    "title": "Innovative Mobile App Redesign",
+    "thumbnailDescription": "A sleek, user-centric redesign of a popular productivity app.",
+    "thumbnailImage": "/assets/img/avatar-thumb.jpg",
+    "largeImages": [
+      {
+        "src": "/assets/img/task-it_intro-large.webp",
+        "alt": "Full screen view of the redesigned app's dashboard.",
+        "caption": "Dashboard Overview"
+      },
+      {
+        "src": "/assets/img/task-it_intro-large.webp",
+        "alt": "User flow for task creation within the app.",
+        "caption": "Task Creation Flow"
+      }
+    ],
+    "fullDescription": "<p>This project involved a complete overhaul of an existing mobile productivity application, focusing on improving user experience and visual appeal.</p><p>Key features include a streamlined navigation, intuitive gesture controls, and a vibrant, modern color palette.</p>",
+    "technologies": ["Figma", "Sketch", "Prototyping", "UX Research"]
+  },
+  {
+    "slug": "web-platform-branding",
+    "title": "E-commerce Platform Branding & UI",
+    "thumbnailDescription": "Developed a comprehensive brand identity and intuitive UI for an online marketplace.",
+    "thumbnailImage": "/assets/img/design2-thumb.webp",
+    "largeImages": [
+      {
+        "src": "/assets/img/design2-large-v1.webp",
+        "alt": "Homepage design of the e-commerce platform.",
+        "caption": "Homepage Layout"
+      },
+      {
+        "src": "/assets/img/design2-large-v2.webp",
+        "alt": "Product detail page with responsive elements.",
+        "caption": "Product Page Detail"
+      }
+    ],
+    "fullDescription": "<p>Our goal was to create a trustworthy and engaging brand presence for a new e-commerce venture. This included logo design, typography, color schemes, and a complete user interface for the web platform.</p>",
+    "technologies": ["Adobe XD", "Illustrator", "Branding", "UI/UX"]
+  },
+  {
+    "slug": "interactive-data-visualization",
+    "title": "Data Visualization Dashboard",
+    "thumbnailDescription": "Designed an interactive dashboard to present complex analytics data clearly.",
+    "thumbnailImage": "/assets/img/design3-thumb.webp",
+    "largeImages": [
+      {
+        "src": "/assets/img/design3-large-v1.webp",
+        "alt": "Overview of the data visualization dashboard.",
+        "caption": "Dashboard Overview"
+      },
+      {
+        "src": "/assets/img/design3-large-v2.webp",
+        "alt": "Close-up of an interactive chart within the dashboard.",
+        "caption": "Interactive Chart"
+      }
+    ],
+    "fullDescription": "<p>This project focused on transforming raw data into actionable insights through intuitive and visually appealing charts and graphs. The dashboard is designed for ease of use and quick data interpretation.</p>",
+    "technologies": ["D3.js (concept)", "Figma", "Information Architecture"]
+  }
+]
