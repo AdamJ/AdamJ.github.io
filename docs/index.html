@@ -241,55 +241,104 @@ html {
   }
   .section {
     position: relative;
-    height: 100%;
-    background: var(--color-grey-700);
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--color-grey-900) 0%, var(--color-grey-800) 100%);
+  }
+  
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .section-block {
     position: relative;
     display: flex;
-    padding: 5rem 2rem;
-    @media only screen and (max-width: 720px) {
-      padding: 1rem 1rem 5rem 1rem;
-    }
+    padding: 6rem 2rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(1,1,1, .2), rgba(1, 1, 1, .8)), url("/assets/img/curved-lines@2x-large.jpg");
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    @media only screen and (max-width: 768px) {
+      padding: 2rem 1rem 4rem 1rem;
+    }
+    
+    background-image: 
+      linear-gradient(rgba(15, 23, 42, 0.3), rgba(15, 23, 42, 0.7)), 
+      url("/assets/img/curved-lines@2x-large.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-clip: border-box;
-    background-size: contain;
-    height: calc(100% - 170px);
+    background-size: cover;
+    border-radius: 1rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   }
   .hero-content {
-    max-height: 100vh;
-    outline: 0;
-    overflow-y: auto;
-    width: 75%;
-    @media only screen and (max-width: 720px) {
-      width: 100%;
+    max-width: 800px;
+    text-align: center;
+    z-index: 2;
+    
+    @media only screen and (max-width: 768px) {
+      max-width: 100%;
     }
   }
+  
   .title-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: .5rem;
-    align-self: stretch;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    
     h1, h2, h3 {
       color: var(--color-white);
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     }
+    
     p {
-      font-size: 2rem !important;
-      color: rgba(255, 255, 255, 0.7) !important;
+      font-size: 1.25rem !important;
+      color: rgba(255, 255, 255, 0.9) !important;
+      line-height: 1.6;
+      max-width: 600px;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     }
-    @media only screen and (max-width: 720px) {
+    
+    @media only screen and (max-width: 768px) {
+      gap: 1rem;
+      
       .hero {
-        font-size: 3rem !important;
+        font-size: 2.5rem !important;
+        line-height: 1.2;
       }
+      
       p {
-        font-size: 1.25rem !important;
+        font-size: 1.125rem !important;
       }
+    }
+  }
+  
+  .scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    
+    sl-button::part(base) {
+      background: transparent;
+      border: none;
+      padding: 1rem;
+      
+      &:hover {
+        transform: translateY(-2px);
+        transition: transform 0.2s ease-in-out;
+      }
+    }
+    
+    @media only screen and (max-width: 768px) {
+      bottom: 1rem;
     }
   }
   .showcase {
@@ -433,9 +482,10 @@ html {
         Resume
       </sl-button>
     </header>
-    <div class="position-absolute bottom-90 text-align-center">
-      <sl-button href="#recentProjects" variant="text" title="Jump to Recent Projects">
-      <svg class="arrows">
+    <div class="scroll-indicator" role="navigation" aria-label="Page navigation">
+      <sl-button href="#recentProjects" variant="text" 
+                 aria-label="Scroll to Recent Projects section">
+      <svg class="arrows" role="img" aria-label="Scroll down indicator">
         <path class="a1" d="M0 0 L30 32 L60 0"></path>
         <path class="a2" d="M0 20 L30 52 L60 20"></path>
         <path class="a3" d="M0 40 L30 72 L60 40"></path>

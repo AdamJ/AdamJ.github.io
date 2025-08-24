@@ -1,5 +1,6 @@
 /*
 ** Arrow animations from https://codepen.io/postor/pen/vYpNYg
+** Updated with modern styling and accessibility
 */
 .arrows {
   width: 60px;
@@ -9,39 +10,62 @@
   margin-left: -30px;
   bottom: 20px;
 }
+
 .arrows path {
-  stroke: #bfe7fa;
+  stroke: var(--color-blue-300);
   fill: transparent;
-  stroke-width: 1px;
-  animation: arrow 2s infinite;
-  -webkit-animation: arrow 2s infinite;
+  stroke-width: 2px;
+  animation: arrow 2s infinite ease-in-out;
+  -webkit-animation: arrow 2s infinite ease-in-out;
 }
 
 @keyframes arrow {
-  0% {opacity:0}
-  40% {opacity:1}
-  80% {opacity:0}
-  100% {opacity:0}
+  0% { opacity: 0; transform: translateY(-10px); }
+  40% { opacity: 1; transform: translateY(0); }
+  80% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 0; transform: translateY(10px); }
 }
 
-@-webkit-keyframes arrow /*Safari and Chrome*/ {
-  0% {opacity:0}
-  40% {opacity:1}
-  80% {opacity:0}
-  100% {opacity:0}
+@-webkit-keyframes arrow {
+  0% { opacity: 0; transform: translateY(-10px); }
+  40% { opacity: 1; transform: translateY(0); }
+  80% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 0; transform: translateY(10px); }
 }
 
 .arrows path.a1 {
-  animation-delay:-1s;
-  -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
 }
 
 .arrows path.a2 {
-  animation-delay:-0.5s;
-  -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
 }
 
 .arrows path.a3 {
-  animation-delay:0s;
-  -webkit-animation-delay:0s; /* Safari 和 Chrome */
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
 }
+
+/* Modern fade-in animations for content */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Staggered animation delays */
+.fade-in-up:nth-child(1) { animation-delay: 0.1s; }
+.fade-in-up:nth-child(2) { animation-delay: 0.2s; }
+.fade-in-up:nth-child(3) { animation-delay: 0.3s; }
+.fade-in-up:nth-child(4) { animation-delay: 0.4s; }

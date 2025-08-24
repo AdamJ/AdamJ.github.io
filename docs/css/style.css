@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* stylelint-disable */
 /*!
  * Bootstrap Grid v5.3.6 (https://getbootstrap.com/)
@@ -4090,6 +4089,7 @@
 **/
 /*
 ** Arrow animations from https://codepen.io/postor/pen/vYpNYg
+** Updated with modern styling and accessibility
 */
 .arrows {
   width: 60px;
@@ -4101,54 +4101,94 @@
 }
 
 .arrows path {
-  stroke: #bfe7fa;
+  stroke: var(--color-blue-300);
   fill: transparent;
-  stroke-width: 1px;
-  animation: arrow 2s infinite;
-  -webkit-animation: arrow 2s infinite;
+  stroke-width: 2px;
+  animation: arrow 2s infinite ease-in-out;
+  -webkit-animation: arrow 2s infinite ease-in-out;
 }
 
 @keyframes arrow {
   0% {
     opacity: 0;
+    transform: translateY(-10px);
   }
   40% {
     opacity: 1;
+    transform: translateY(0);
   }
   80% {
     opacity: 0;
+    transform: translateY(10px);
   }
   100% {
     opacity: 0;
+    transform: translateY(10px);
   }
 }
-@-webkit-keyframes arrow /*Safari and Chrome*/ {
+@-webkit-keyframes arrow {
   0% {
     opacity: 0;
+    transform: translateY(-10px);
   }
   40% {
     opacity: 1;
+    transform: translateY(0);
   }
   80% {
     opacity: 0;
+    transform: translateY(10px);
   }
   100% {
     opacity: 0;
+    transform: translateY(10px);
   }
 }
 .arrows path.a1 {
   animation-delay: -1s;
-  -webkit-animation-delay: -1s; /* Safari 和 Chrome */
+  -webkit-animation-delay: -1s;
 }
 
 .arrows path.a2 {
   animation-delay: -0.5s;
-  -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
+  -webkit-animation-delay: -0.5s;
 }
 
 .arrows path.a3 {
   animation-delay: 0s;
-  -webkit-animation-delay: 0s; /* Safari 和 Chrome */
+  -webkit-animation-delay: 0s;
+}
+
+/* Modern fade-in animations for content */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Staggered animation delays */
+.fade-in-up:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.fade-in-up:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.fade-in-up:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.fade-in-up:nth-child(4) {
+  animation-delay: 0.4s;
 }
 
 .oswald-light {
@@ -4837,7 +4877,7 @@
   border-radius: 10000rem;
 }
 
-.display-block, .nav a::after {
+.display-block {
   display: block;
 }
 
@@ -4845,8 +4885,7 @@
   display: inline-block;
 }
 
-.display-flex, .overview,
-.account, .nav-items, .nav {
+.display-flex {
   display: flex;
 }
 
@@ -4854,8 +4893,7 @@
   display: inline-flex;
 }
 
-.display-none, #check,
-.menu {
+.display-none {
   display: none;
 }
 
@@ -5343,15 +5381,16 @@ footer small, footer .small,
 }
 
 sl-button::part(base) {
-  font-weight: 700;
-  font-size: 18px;
-  font-family: "Lato", system-ui, -apple-system, blinkmacsystemfont, avenir next, avenir, segoe ui, sans-serif;
+  font-weight: 600;
+  font-size: var(--text-base);
+  font-family: var(--sl-font-sans);
+  transition: all 0.2s ease-in-out;
 }
 
 sl-button.card-button::part(base) {
   display: flex;
   justify-content: center;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .button-overlay {
@@ -5361,12 +5400,17 @@ sl-button.card-button::part(base) {
 }
 
 sl-button.project-button::part(base) {
-  border-color: #e6f4f1;
-  color: #e6f4f1;
+  border-color: var(--color-blue-200);
+  color: var(--color-blue-100);
+  background-color: transparent;
 }
 sl-button.project-button::part(base):hover {
-  border-color: #86adbf;
-  color: #86adbf;
+  border-color: var(--color-blue-300);
+  color: var(--color-blue-200);
+  background-color: rgba(var(--color-blue-900), 0.1);
+}
+sl-button.project-button::part(base):focus-visible {
+  box-shadow: 0 0 0 2px var(--color-blue-400);
 }
 
 .card-cover {
@@ -5420,32 +5464,50 @@ sl-button.project-button::part(base):hover {
   transform: scale(1.05);
 }
 
-/* Nav */
+/* Navigation */
 .nav {
+  display: flex;
   height: 70px;
   background: var(--color-grey-900);
-  color: var(--sl-color-neutral-50);
+  color: var(--color-grey-100);
   padding: 0 2rem;
   justify-content: space-between;
   align-items: center;
-  z-index: var(--sl-z-index-drawer);
+  z-index: 1000;
+  border-bottom: 1px solid var(--color-grey-800);
 }
 
 .logo h2 {
   font-style: italic;
   text-decoration: overline;
-  color: var(--sl-color-primary-800);
+  color: var(--color-blue-400);
   cursor: pointer;
   margin: 0 0.5rem;
 }
 
+.logo-link {
+  text-decoration: none;
+}
+.logo-link:hover .logo svg {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+.logo-link:focus-visible {
+  outline: 2px solid var(--color-blue-400);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 .nav-items {
+  display: flex;
   justify-content: space-between;
 }
 
 .overview,
 .account {
+  display: flex;
   align-items: center;
+  gap: 1rem;
 }
 
 .overview {
@@ -5454,29 +5516,47 @@ sl-button.project-button::part(base):hover {
 
 .nav li {
   list-style: none;
-  margin: 0 0.5rem;
+  margin: 0;
 }
 
 .nav a {
   text-decoration: none;
-  color: var(--sl-color-neutral-900);
+  color: var(--color-grey-300);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+.nav a:hover {
+  color: var(--color-blue-300);
+  background-color: rgba(var(--color-grey-800), 0.5);
+}
+.nav a:focus-visible {
+  outline: 2px solid var(--color-blue-400);
+  outline-offset: 2px;
 }
 
-.nav a:hover,
 .nav a.nav-link.active {
-  color: var(--sl-color-primary-600);
+  color: var(--color-blue-400);
+  background-color: rgba(var(--color-blue-600), 0.1);
 }
 
 .nav a::after {
   content: "";
+  display: block;
   height: 3px;
-  background: var(--sl-color-primary-600);
+  background: var(--color-blue-600);
   width: 0%;
   transition: all ease-in-out 300ms;
 }
 
 .nav a:hover::after {
   width: 100%;
+}
+
+#check,
+.menu {
+  display: none;
 }
 
 .nav-icon {
@@ -5487,7 +5567,7 @@ sl-button.project-button::part(base):hover {
 /* Responsive */
 @media (max-width: 776px) {
   .nav-items {
-    padding: calc(1.325rem + 0.9vw);
+    padding: 2rem;
     display: none;
     position: fixed;
     top: 0;
@@ -5496,17 +5576,10 @@ sl-button.project-button::part(base):hover {
     width: 250px;
     flex-direction: column;
     justify-content: space-evenly;
-    z-index: var(--sl-z-index-drawer);
     background-color: var(--color-grey-900);
+    z-index: 1000;
     transition: all ease-in-out 500ms;
   }
-}
-@media (max-width: 776px) and (min-width: 1200px) {
-  .nav-items {
-    padding: 2rem;
-  }
-}
-@media (max-width: 776px) {
   .overview,
   .account {
     flex-direction: column;
@@ -5531,27 +5604,19 @@ sl-button.project-button::part(base):hover {
     position: fixed;
     top: 0.5rem;
     right: 0.5rem;
-    background: #131316;
-    border-radius: var(--sl-border-radius-circle);
-    color: var(--sl-color-neutral-950);
-    z-index: calc(var(--sl-z-index-drawer) + 1);
+    background: var(--color-grey-800);
+    border-radius: 50%;
+    color: var(--color-white);
+    z-index: 1001;
   }
-}
-@media (max-width: 776px) and (prefers-color-scheme: dark) {
-  .menu {
-    background: #131316;
-  }
-}
-@media (max-width: 776px) {
   .menu:hover {
-    background: rgb(249.6341463415, 249.6341463415, 250.3658536585);
-    color: rgb(25.5, 25.5, 25.5);
+    background: var(--color-grey-700);
     transition: all ease-in-out 300ms;
     cursor: pointer;
   }
   #check:checked ~ .nav-items {
     right: 0;
-    display: block;
+    display: flex;
   }
 }
 body {
