@@ -1,15 +1,18 @@
 $black: #000;
 $white: #fff;
 
-// blue
-$blue-600: #384B70;
-$blue-500:#507687;
-$blue-400: #6b91a3;
-$blue-300: #86adbf;
-$blue-200: #a2cadc;
-$blue-100: #bfe7fa;
-$blue-50: #e6f4f1;
-$blue-highlight: #00c3ff;
+// Modern blue palette with better accessibility
+$blue-50: #f0f9ff;
+$blue-100: #e0f2fe;
+$blue-200: #bae6fd;
+$blue-300: #7dd3fc;
+$blue-400: #38bdf8;
+$blue-500: #0ea5e9;
+$blue-600: #0284c7;
+$blue-700: #0369a1;
+$blue-800: #075985;
+$blue-900: #0c4a6e;
+$blue-highlight: #06b6d4;
 
 // $blue-50: #dce6f2;
 // $blue-100: #badbff;
@@ -20,16 +23,17 @@ $blue-highlight: #00c3ff;
 // $blue-800: #1b314a;
 // $blue-900: #0c1621;
 
-// grey
-$grey-50: #e8e8ec;
-$grey-100: #f8f8f8;
-$grey-200: #e3e3e3;
-$grey-300: #bbb;
-$grey-400: #949494;
-$grey-500: #525759;
-$grey-600: #424242;
-$grey-800: #212529;
-$grey-900: #010101;
+// Modern neutral palette with improved contrast
+$grey-50: #f8fafc;
+$grey-100: #f1f5f9;
+$grey-200: #e2e8f0;
+$grey-300: #cbd5e1;
+$grey-400: #94a3b8;
+$grey-500: #64748b;
+$grey-600: #475569;
+$grey-700: #334155;
+$grey-800: #1e293b;
+$grey-900: #0f172a;
 
 // green
 $green-light: #91d402;
@@ -60,9 +64,8 @@ $dark: $blue-600;
 $light: $blue-50;
 
 :root {
-  --link-color-primary: #{$blue-500};
-  --link-color-primary-hover: #{$blue-600};
-  // --link-color-primary-hover: #{$blue-800};
+  --link-color-primary: #{$blue-600};
+  --link-color-primary-hover: #{$blue-700};
   --color-grey-50: #{$grey-50};
   --color-grey-100: #{$grey-100};
   --color-grey-200: #{$grey-200};
@@ -70,57 +73,63 @@ $light: $blue-50;
   --color-grey-400: #{$grey-400};
   --color-grey-500: #{$grey-500};
   --color-grey-600: #{$grey-600};
+  --color-grey-700: #{$grey-700};
   --color-grey-800: #{$grey-800};
   --color-grey-900: #{$grey-900};
   --color-blue-50: #{$blue-50};
   --color-blue-100: #{$blue-100};
   --color-blue-200: #{$blue-200};
   --color-blue-300: #{$blue-300};
-  --color-blue-500: #{$blue-400};
-  // --color-blue-500: #{$blue-500};
-  --color-blue-700: #{$blue-500};
-  --color-blue-800: #{$blue-600};
-  --color-blue-900: #{$blue-600};
-  // --color-blue-700: #{$blue-700};
-  // --color-blue-800: #{$blue-800};
-  // --color-blue-900: #{$blue-900};
+  --color-blue-400: #{$blue-400};
+  --color-blue-500: #{$blue-500};
+  --color-blue-600: #{$blue-600};
+  --color-blue-700: #{$blue-700};
+  --color-blue-800: #{$blue-800};
+  --color-blue-900: #{$blue-900};
   --color-white: #{$white};
   --color-black: #{$black};
 }
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: light dark;
-    --bs-body-bg: var(--color-grey-700);
-    --bs-body-color: var(--color-grey-50);
-    --bs-secondary-color: var(--color-grey-300);
-    --bs-light-rgb: 105, 105, 105; //#f8f9fa
-    --aj-container-background: var(--bs-bg-opacity, .2);
-    --bs-text-dark: var(--color-grey-50);
+    --bs-body-bg: var(--color-grey-900);
+    --bs-body-color: var(--color-grey-100);
+    --bs-secondary-color: var(--color-grey-400);
+    --bs-light-rgb: 71, 85, 105; // Updated to match new grey-600
+    --aj-container-background: rgba(var(--bs-light-rgb), 0.1);
+    --bs-text-dark: var(--color-grey-100);
   }
   body {
-    background-color: var(--color-grey-800) !important;
-    color: var(--color-grey-200) !important;
+    background-color: var(--color-grey-900) !important;
+    color: var(--color-grey-100) !important;
   }
   img {
-    filter: brightness(.8) contrast(1.2);
+    filter: brightness(.9) contrast(1.1); // Slightly less aggressive filtering
   }
   .fa-solid, .fa-brand, i {
-    color: var(--color-grey-200) !important;
+    color: var(--color-grey-300) !important;
   }
   h1, .h1, h2, .h2, h3, .h3, h4, .h4, p, small, .small {
-    color: var(--color-grey-200);
-    font-weight: 350 !important;
+    color: var(--color-grey-100);
+    font-weight: 400 !important; // Better readability
   }
   .text-body-secondary, blockquote blockquote > p {
-    color: var(--sl-input-help-text-color);
+    color: var(--color-grey-400);
   }
   .bg-light {
     background-color: var(--aj-container-background) !important;
   }
   .text-dark {
-    color: var(--color-grey-950) !important;
+    color: var(--color-grey-100) !important;
   }
 }
 .text-secondary, blockquote, blockquote > p {
-  color: var(--sl-input-help-text-color);
+  color: var(--color-grey-600);
+}
+
+// Light mode text colors for better accessibility
+:root {
+  --text-primary: var(--color-grey-900);
+  --text-secondary: var(--color-grey-600);
+  --text-muted: var(--color-grey-500);
 }

@@ -31,7 +31,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald&display=swap" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet" crossorigin="anonymous">
     <!--<link
       rel="stylesheet"
       media="(prefers-color-scheme:light)"
@@ -96,17 +96,23 @@
           height: 100vh;
           position: relative;">
     
-    <container id="navigation">
+    <!-- Skip link for keyboard users -->
+    <a href="#main-content" class="skip-link visually-hidden-focusable">Skip to main content</a>
+    
+    <a rel="me" href="https://mastodon.world/@adamjol" aria-hidden="true" class="d-none">Mastodon</a>
+    
+    <nav id="navigation" aria-label="Main navigation">
   <div class="nav">
-    <input type="checkbox" id="check" name="navigationCheckbox" aria-label="menu checkbox" />
-    <label for="check" class="menu">
+    <input type="checkbox" id="check" name="navigationCheckbox" aria-label="Toggle navigation menu" />
+    <label for="check" class="menu" role="button" tabindex="0" aria-label="Open navigation menu">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="30"
         height="30"
-        fill="#131316"
+        fill="currentColor"
         class="bi bi-list"
         viewBox="0 0 16 16"
+        aria-hidden="true"
       >
         <path
           fill-rule="evenodd"
@@ -114,9 +120,9 @@
         />
       </svg>
     </label>
-    <a  href="/" title="Home">
+    <a  href="/" class="logo-link" aria-label="Adam Jolicoeur - Home">
     <div class="logo">
-      <svg width="32" height="32" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="32" height="32" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
       <path d="M91.29 89.4546L96.1838 82.1483L101.709 89.4546H91.29Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
       <path d="M45.8939 89.1937L95.7557 13L145.915 89.1937C145.915 91.2812 143.385 95.3857 139.813 98.3266C136.804 100.804 134.693 101.892 130.882 103.284C126.925 104.73 124.184 105.372 120.166 105.372H56.4616L23.5677 156.124H13L50.8057 97.8047H91.2905H115.849C125.375 97.8047 130.882 92.1945 130.882 92.1945C130.882 92.1945 134.743 89.1937 130.882 83.4531C119.124 65.9703 95.7557 29.0477 95.7557 29.0477L56.4616 89.1937H45.8939Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
       <path d="M64.7966 112.548H105.281H136.24C145.766 112.548 151.72 108.895 154.548 107.068C158.239 104.684 161.99 99.1094 161.99 99.1094H173.004C173.004 100.414 168.224 106.618 163.627 110.199C152.911 118.549 144.575 120.115 140.557 120.115H70.4526L46.4891 156.255H35.9214L64.7966 112.548Z" fill="#ffffff"/>
@@ -133,43 +139,57 @@
       </svg>
     </div>
     </a>
-    <div class="nav-items">
-      <ul class="overview">
-        <li>
-          <a href="/about" class="nav-link " alt="Link to my About page">
+    <div class="nav-items" role="navigation">
+      <ul class="overview" role="list">
+        <li role="listitem">
+          <a href="/about" class="nav-link " 
+             aria-label="Go to About page" 
+             >
             About
           </a>
         </li>
-        <li>
-          <a href="/designs" class="nav-link " alt="Link to my Designs examples">
+        <li role="listitem">
+          <a href="/designs" class="nav-link " 
+             aria-label="Go to Designs showcase" 
+             >
             Designs
           </a>
         </li>
-        <li>
-          <a href="/development" class="nav-link " alt="Link to my Development examples">
+        <li role="listitem">
+          <a href="/development" class="nav-link " 
+             aria-label="Go to Development examples" 
+             >
             Development
           </a>
         </li>
-        <li class="nav-icon">
-          <sl-dialog label="About Me" class="dialog-overview">
+        <li class="nav-icon" role="listitem">
+          <sl-dialog label="About Me" class="dialog-overview" role="dialog" aria-labelledby="about-dialog-title">
+            <h2 id="about-dialog-title" class="sr-only">About Me</h2>
             <p>UX Designer, Developer, Program Manager. Creating software for the construction world. Previously at Red Hat and AWS. Collector of nerdy things...forever.</p>
-            <sl-button variant="text" href="https://www.linkedin.com/in/ajjolicoeur/" title="External link to LinkedIn profile">
-              <sl-icon slot="prefix" name="linkedin"></sl-icon>
+            <sl-button variant="text" href="https://www.linkedin.com/in/ajjolicoeur/" 
+                       aria-label="Visit my LinkedIn profile (opens in new tab)">
+              <sl-icon slot="prefix" name="linkedin" aria-hidden="true"></sl-icon>
               LinkedIn profile
             </sl-button>
-            <sl-button variant="text" href="https://github.com/AdamJ" title="External link to GitHub profile">
-              <sl-icon slot="prefix" name="github"></sl-icon>
+            <sl-button variant="text" href="https://github.com/AdamJ" 
+                       aria-label="Visit my GitHub profile (opens in new tab)">
+              <sl-icon slot="prefix" name="github" aria-hidden="true"></sl-icon>
               GitHub README
             </sl-button>
-            <sl-button slot="footer" variant="default" href="/about">Learn More</sl-button>
+            <sl-button slot="footer" variant="default" href="/about" 
+                       aria-label="Learn more about me on the About page">Learn More</sl-button>
           </sl-dialog>
-          <sl-icon-button name="info-square" label="Information" style="font-size: 1.5rem;"></sl-icon-button>
+          <sl-icon-button name="info-square" 
+                          label="More information about me" 
+                          aria-label="Open information dialog"
+                          style="font-size: 1.5rem;"></sl-icon-button>
         </li>
       </ul>
     </div>
   </div>
-</container>
+</nav>
 
+    <div id="main-content">
       
 <div class="container intro py-3 px-0 text-align-center">
   <h1 class="display-1 fw-bold text-break">Alfred Workflows</h1>
@@ -210,6 +230,7 @@
 
 </content>
 
+    </div>
     <footer id="footer" class="footer d-flex flex-wrap flex-column mt-5">
   <div class="container-fluid px-0 px-md-1">
     
