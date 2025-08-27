@@ -14,8 +14,8 @@ My app is currently available through TestFlight while I get it to a releasable 
 
 ### Releases
 
-Releases are listed on the [releases](releases) page.
+Releases are listed on the [releases](../apps/releases) page.
 
 ### Privacy Policy
 
-Read the privacy policy [here](privacy).
+Read the privacy policy [here](../apps/privacy).
