@@ -12,24 +12,6 @@
 	},
 
 	{
-   "title":"Designs",
-   "imgName":"designs",
-   "date":"designs"
-	},
-
-	{
-   "title":"Application Lifecycle Management",
-   "imgName":"application-lifecycle-management",
-   "date":"application-lifecycle-management"
-	},
-
-	{
-   "title":"Customer Engagement App",
-   "imgName":"customer-engagement-app",
-   "date":"customer-engagement-app"
-	},
-
-	{
    "title":"District 25 website",
    "imgName":"district-25-website",
    "date":"district-25-website"
@@ -78,27 +60,9 @@
 	},
 
 	{
-   "title":"Color Picker",
-   "imgName":"color-picker",
-   "date":"color-picker"
-	},
-
-	{
-   "title":"Portfolio",
-   "imgName":"portfolio",
-   "date":"portfolio"
-	},
-
-	{
    "title":"Testimonials",
    "imgName":"testimonials",
    "date":"testimonials"
-	},
-
-	{
-   "title":"Task-It!",
-   "imgName":"task-it",
-   "date":"task-it"
 	},
 
 	{
@@ -150,39 +114,9 @@
 	},
 
 	{
-   "title":"Privacy Policy",
-   "imgName":"privacy-policy",
-   "date":"privacy-policy"
-	},
-
-	{
-   "title":"CollectSomeMore Releases",
-   "imgName":"collectsomemore-releases",
-   "date":"collectsomemore-releases"
-	},
-
-	{
-   "title":"Support",
-   "imgName":"support",
-   "date":"support"
-	},
-
-	{
-   "title":"Development",
-   "imgName":"development",
-   "date":"development"
-	},
-
-	{
    "title":"Oops! Not Found",
    "imgName":"oops-not-found",
    "date":"oops-not-found"
-	},
-
-	{
-   "title":"Adam Jolicoeur",
-   "imgName":"home",
-   "date":"home"
 	},
 
 	{
@@ -225,5 +159,71 @@
    "title":"Adam Jolicoeur",
    "imgName":"home",
    "date":"home"
+	},
+
+	{
+   "title":"Designs",
+   "imgName":"designs",
+   "date":"designs"
+	},
+
+	{
+   "title":"Application Lifecycle Management",
+   "imgName":"application-lifecycle-management",
+   "date":"application-lifecycle-management"
+	},
+
+	{
+   "title":"Customer Engagement App",
+   "imgName":"customer-engagement-app",
+   "date":"customer-engagement-app"
+	},
+
+	{
+   "title":"Task-It!",
+   "imgName":"task-it",
+   "date":"task-it"
+	},
+
+	{
+   "title":"Development",
+   "imgName":"development",
+   "date":"development"
+	},
+
+	{
+   "title":"Color Picker",
+   "imgName":"color-picker",
+   "date":"color-picker"
+	},
+
+	{
+   "title":"Portfolio",
+   "imgName":"portfolio",
+   "date":"portfolio"
+	},
+
+	{
+   "title":"Adam Jolicoeur",
+   "imgName":"home",
+   "date":"home"
+	},
+
+	{
+   "title":"Privacy Policy",
+   "imgName":"privacy-policy",
+   "date":"privacy-policy"
+	},
+
+	{
+   "title":"Application Releases",
+   "imgName":"application-releases",
+   "date":"application-releases"
+	},
+
+	{
+   "title":"Support",
+   "imgName":"support",
+   "date":"support"
 	}
 ]
