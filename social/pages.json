@@ -6,81 +6,9 @@
 	},
 
 	{
-   "title":"About",
-   "imgName":"about",
-   "date":"about"
-	},
-
-	{
-   "title":"Apps",
-   "imgName":"apps",
-   "date":"apps"
-	},
-
-	{
    "title":"Archived Pages",
    "imgName":"archived-pages",
    "date":"archived-pages"
-	},
-
-	{
-   "title":"Collect Some More",
-   "imgName":"collect-some-more",
-   "date":"collect-some-more"
-	},
-
-	{
-   "title":"Privacy Policy",
-   "imgName":"privacy-policy",
-   "date":"privacy-policy"
-	},
-
-	{
-   "title":"CollectSomeMore Releases",
-   "imgName":"collectsomemore-releases",
-   "date":"collectsomemore-releases"
-	},
-
-	{
-   "title":"Support",
-   "imgName":"support",
-   "date":"support"
-	},
-
-	{
-   "title":"Connect",
-   "imgName":"connect",
-   "date":"connect"
-	},
-
-	{
-   "title":"Contact",
-   "imgName":"contact",
-   "date":"contact"
-	},
-
-	{
-   "title":"Credits",
-   "imgName":"credits",
-   "date":"credits"
-	},
-
-	{
-   "title":"Designs",
-   "imgName":"designs",
-   "date":"designs"
-	},
-
-	{
-   "title":"Application Lifecycle Management",
-   "imgName":"application-lifecycle-management",
-   "date":"application-lifecycle-management"
-	},
-
-	{
-   "title":"Customer Engagement App",
-   "imgName":"customer-engagement-app",
-   "date":"customer-engagement-app"
 	},
 
 	{
@@ -90,21 +18,9 @@
 	},
 
 	{
-   "title":"Task-It!",
-   "imgName":"task-it",
-   "date":"task-it"
-	},
-
-	{
    "title":"TimeTrak by Switchback",
    "imgName":"timetrak-by-switchback",
    "date":"timetrak-by-switchback"
-	},
-
-	{
-   "title":"Development",
-   "imgName":"development",
-   "date":"development"
 	},
 
 	{
@@ -144,15 +60,33 @@
 	},
 
 	{
-   "title":"Color Picker",
-   "imgName":"color-picker",
-   "date":"color-picker"
+   "title":"Testimonials",
+   "imgName":"testimonials",
+   "date":"testimonials"
 	},
 
 	{
-   "title":"Portfolio",
-   "imgName":"portfolio",
-   "date":"portfolio"
+   "title":"Connect",
+   "imgName":"connect",
+   "date":"connect"
+	},
+
+	{
+   "title":"About",
+   "imgName":"about",
+   "date":"about"
+	},
+
+	{
+   "title":"Apps",
+   "imgName":"apps",
+   "date":"apps"
+	},
+
+	{
+   "title":"Credits",
+   "imgName":"credits",
+   "date":"credits"
 	},
 
 	{
@@ -162,15 +96,15 @@
 	},
 
 	{
-   "title":"Testimonials",
-   "imgName":"testimonials",
-   "date":"testimonials"
-	},
-
-	{
    "title":"Uses",
    "imgName":"uses",
    "date":"uses"
+	},
+
+	{
+   "title":"Contact",
+   "imgName":"contact",
+   "date":"contact"
 	},
 
 	{
@@ -207,18 +141,6 @@
    "title":"Stream Deck examples",
    "imgName":"stream-deck-examples",
    "date":"stream-deck-examples"
-	},
-
-	{
-   "title":"howto",
-   "imgName":"howto",
-   "date":"howto"
-	},
-
-	{
-   "title":"Adam Jolicoeur",
-   "imgName":"home",
-   "date":"home"
 	},
 
 	{
@@ -285,5 +207,11 @@
    "title":"Support",
    "imgName":"support",
    "date":"support"
+	},
+
+	{
+   "title":"Collect Some More",
+   "imgName":"collect-some-more",
+   "date":"collect-some-more"
 	}
 ]
