@@ -20,7 +20,7 @@ eleventyNavigation:
           <ul class="d-flex list-unstyled mt-auto">
             <li class="me-auto">
               <a href="https://www.adamjolicoeur.com/integration-prototype/index.html" target="top" alt="View the integration walkthrough prototype" class="card-link">
-                Demo <fa-icon type="duotone" weight="solid" name="laptop" size="md"></fa-icon>
+                <fa-icon type="duotone" weight="solid" name="laptop" size="md"></fa-icon> Demo
               </a>
             </li>
             <li>
@@ -39,7 +39,7 @@ eleventyNavigation:
           <ul class="d-flex list-unstyled mt-auto">
             <li class="me-auto">
               <a href="https://kubevirtio-site.netlify.app" target="top" alt="KubeVirt.io demo" class="card-link">
-                <i class="fa-solid fa-laptop"></i>
+                <fa-icon type="duotone" weight="solid" name="laptop" size="md"></fa-icon>
                 Demo
               </a>
             </li>
@@ -62,7 +62,7 @@ eleventyNavigation:
           <ul class="d-flex list-unstyled mt-auto">
             <li class="me-auto">
               <a href="https://aj-design-manual.netlify.app" target="top" alt="Design Manual demo" class="card-link">
-                <i class="fa-solid fa-laptop"></i>
+                <fa-icon type="duotone" weight="solid" name="laptop" size="md"></fa-icon>
                 Demo
               </a>
             </li>
@@ -82,7 +82,7 @@ eleventyNavigation:
           <ul class="d-flex list-unstyled mt-auto">
             <li class="me-auto">
               <a href="https://pf4testbench.netlify.app" target="top" alt="Design Manual demo" class="card-link">
-                <i class="fa-solid fa-laptop"></i>
+                <fa-icon type="duotone" weight="solid" name="laptop" size="md"></fa-icon>
                 Demo
               </a>
             </li>
