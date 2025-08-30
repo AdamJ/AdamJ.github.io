@@ -144,6 +144,18 @@
 	},
 
 	{
+   "title":"howto",
+   "imgName":"howto",
+   "date":"howto"
+	},
+
+	{
+   "title":"Adam Jolicoeur",
+   "imgName":"home",
+   "date":"home"
+	},
+
+	{
    "title":"Designs",
    "imgName":"designs",
    "date":"designs"
