@@ -213,5 +213,17 @@
    "title":"Stream Deck examples",
    "imgName":"stream-deck-examples",
    "date":"stream-deck-examples"
+	},
+
+	{
+   "title":"howto",
+   "imgName":"howto",
+   "date":"howto"
+	},
+
+	{
+   "title":"Adam Jolicoeur",
+   "imgName":"home",
+   "date":"home"
 	}
 ]
