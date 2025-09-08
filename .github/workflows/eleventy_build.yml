@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Eleventy Build
 
 on:
   push:
@@ -9,46 +9,44 @@ on:
       - main
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+        - name: Checkout repository
+          uses: actions/checkout@v4
+        - name: Setup Node.js
+          uses: actions/setup-node@v4
+          with:
+            node-version: '22.x'
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
+        - name: Install dependencies using a safe clean install, build and test
+          run: |
+            npm config set '//npm.fontawesome.com/:_authToken' "${{ secrets.FONT_AWESOME_TOKEN }}"
+            npm ci --ignore-scripts
 
-      - name: Install dependencies
-        run: |
-          npm config set '//npm.fontawesome.com/:_authToken' "${{ secrets.FONT_AWESOME_TOKEN }}"
-          npm ci --ignore-scripts
+        - name: Run Build
+          run: npm run build
 
-      - name: Build site
-        run: npm run build
+        - name: Deploy
+          uses: peaceiris/actions-gh-pages@v3.9.3
+          with:
+            deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+            publish_dir: ./docs
+            publish_branch: gh-pages
+            commit_message: ${{ github.event.head_commit.message }}
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3.9.3
-        with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./docs
-          publish_branch: gh-pages
-          commit_message: ${{ github.event.head_commit.message }}
+        - name: Download build artifacts
+          uses: actions/download-artifact@v4
+          with:
+            name: site-build
+            path: docs/
 
-      - name: Download build artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: site-build
-          path: docs/
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./docs
-          publish_branch: gh-pages
-          commit_message: 'Deploy: ${{ github.event.head_commit.message }}'
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
+        - name: Deploy to GitHub Pages
+          uses: peaceiris/actions-gh-pages@v4
+          with:
+            deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+            publish_dir: ./docs
+            publish_branch: gh-pages
+            commit_message: 'Deploy: ${{ github.event.head_commit.message }}'
+            user_name: 'github-actions[bot]'
+            user_email: 'github-actions[bot]@users.noreply.github.com'
