@@ -22,7 +22,11 @@
     "build:sass-site": "sass src/sass/style.scss docs/css/style.css",
     "build:sass": "npm-run-all --parallel build:sass-site",
     "build:eleventy": "eleventy",
+<<<<<<< HEAD
     "postbuild": "postcss docs/css/*.css -u autoprefixer cssnano -r",
+=======
+    "postbuild": "postcss docs/css/*.css -u autoprefixer -r",
+>>>>>>> 8615107 (Update build)
     "start": "cross-env ELEVENTY_ENV=dev npm-run-all clean images:optimize build:sass --parallel watch:*",
     "build": "cross-env ELEVENTY_ENV=prod npm-run-all clean images:optimize build:sass build:eleventy",
     "lint": "stylelint 'src/sass/*.scss' 'src/sass/*.scss' 'src/sass/*.scss'",

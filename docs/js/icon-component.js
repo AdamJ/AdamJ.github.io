@@ -125,7 +125,6 @@ class IconDuo extends HTMLElement {
 }
 
 customElements.define('icon-duo', IconDuo);
-
 // <icon-duo name="house" size="lg"></icon-duo>
 // Add a custom color to the duotone icon by adding a style attribute with either --fa-primary-color or --fa-secondary-color
 // <icon-duo name="house" size="lg" style="--fa-primary-color: var(--sl-color-orange-800); --fa-secondary-color: var(--sl-color-orange-100);></icon-duo>
