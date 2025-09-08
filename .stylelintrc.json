@@ -16,5 +16,6 @@
     "rule-empty-line-before": null,
     "at-rule-empty-line-before": null,
     "scss/at-extend-no-missing-placeholder": null
-  }
+  },
+  "allowEmptyInput": true
 }
