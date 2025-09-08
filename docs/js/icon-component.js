@@ -23,15 +23,17 @@ class IconComponent extends HTMLElement {
     warning: '#ca8a04'
   };
 
-  // Check if Font Awesome kit is loaded
-  static isFontAwesomeKitLoaded() {
-    return typeof window !== 'undefined' && window.FontAwesome && window.FontAwesome.dom;
-  }
-
-  connectedCallback() {
-    // Render with delay to allow Font Awesome kit to load
-    setTimeout(() => this.render(), 100);
-  }
+  // connectedCallback() {
+  //   // Load Font Awesome if not already loaded
+  //   if (!document.querySelector('#font-awesome-css')) {
+  //     const link = document.createElement('link');
+  //     link.id = 'font-awesome-css';
+  //     link.rel = 'stylesheet';
+  //     link.href = '/css/fontawesome.css';
+  //     document.head.appendChild(link);
+  //   }
+  //   this.render();
+  // }
 
   attributeChangedCallback() {
     this.render();
@@ -41,7 +43,7 @@ class IconComponent extends HTMLElement {
     const name = this.getAttribute('name') || 'star';
     const size = this.getAttribute('size') || 'md';
     const color = this.getAttribute('color') || 'current';
-    const type = this.getAttribute('type') || 'solid';
+    const type = this.getAttribute('type') || 'sharp';
     const weight = this.getAttribute('weight') || 'regular';
 
     const fontSize = IconComponent.sizes[size];
@@ -50,48 +52,18 @@ class IconComponent extends HTMLElement {
     this.innerHTML = '';  // Clear existing content
 
     // Set component styles
+    // this.style.display = 'inline-block';
     this.style.width = fontSize;
     this.style.height = fontSize;
     this.style.color = iconColor;
-    this.style.display = 'inline-block';
 
-    // Create the icon element with fallback support
+    // Create the icon element
     const icon = document.createElement('i');
-    
-    // Try to use kit classes first, fallback to standard Font Awesome classes
-    if (type === 'brands') {
-      icon.className = `fab fa-${name}`;
-    } else if (type === 'regular') {
-      icon.className = `far fa-${name}`;
-    } else if (type === 'solid') {
-      icon.className = `fas fa-${name}`;
-    } else if (type === 'sharp') {
-      // Sharp icons are only available in Pro kit, fallback to solid
-      icon.className = IconComponent.isFontAwesomeKitLoaded() 
-        ? `fa-sharp fa-${weight} fa-${name}`
-        : `fas fa-${name}`;
-    } else {
-      icon.className = `fas fa-${name}`;
-    }
-    
+    icon.className = `fa-${type} fa-${weight} fa-${name}`;
     icon.style.fontSize = fontSize;
     icon.setAttribute('aria-hidden', 'true');
 
-    // Add error handling for missing icons
-    icon.addEventListener('error', () => {
-      console.warn(`Font Awesome icon not found: ${name} (${type})`);
-    });
-
     this.appendChild(icon);
-
-    // Add a small delay to allow Font Awesome to process the icon
-    setTimeout(() => {
-      // Check if icon was rendered properly (has content or pseudo-elements)
-      const computed = window.getComputedStyle(icon, '::before');
-      if (!computed.content || computed.content === 'none' || computed.content === '""') {
-        console.warn(`Font Awesome icon may not have loaded: ${name} (${type})`);
-      }
-    }, 200);
   }
 }
 
