@@ -97,10 +97,6 @@ $light: $blue-50;
     --aj-container-background: var(--bs-bg-opacity, .2);
     --bs-text-dark: var(--color-grey-50);
   }
-  body {
-    background-color: var(--color-grey-800) !important;
-    color: var(--color-grey-200) !important;
-  }
   img {
     filter: brightness(.8) contrast(1.2);
   }
