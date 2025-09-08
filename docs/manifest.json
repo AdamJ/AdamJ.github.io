@@ -1,0 +1,178 @@
+{
+  "short_name": "ajolicoeur",
+  "name": "AdamJolicoeur.com",
+  "theme_color": "#212529",
+  "background_color": "#212529",
+  "display": "standalone",
+  "scope": "/",
+  "id": "/",
+  "description": "The portfolio for Adam J. Jolicoeur",
+  "start_url": "/",
+  "lang": "en",
+  "orientation": "portrait",
+  "display_override": [
+    "window-controls-overlay"
+  ],
+  "icons": [
+    {
+      "src": "img/touch/icon-16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    }, {
+      "src": "img/touch/icon-32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    }, {
+      "src": "img/touch/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }, {
+      "src": "img/touch/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }, {
+      "src": "img/touch/android-launchericon-192-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }, {
+      "src": "img/touch/android-launchericon-512-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Explore Designs",
+      "url": "/designs/",
+      "description": "Explore designs and case studies",
+      "icons": [
+        {
+          "src": "img/touch/icon-192.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        },
+        {
+          "src": "img/touch/icon-256.png",
+          "type": "image/png",
+          "sizes": "256x256"
+        },
+        {
+          "src": "img/touch/icon.png",
+          "type": "image/png",
+          "sizes": "512x512"
+        }
+      ]
+    },
+    {
+      "name": "Development",
+      "url": "/development/",
+      "description": "Explore various development projects and ideas",
+      "icons": [
+        {
+          "src": "img/touch/icon-192.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        },
+        {
+          "src": "img/touch/icon-256.png",
+          "type": "image/png",
+          "sizes": "256x256"
+        },
+        {
+          "src": "img/touch/icon.png",
+          "type": "image/png",
+          "sizes": "512x512"
+        }
+      ]
+    },
+    {
+      "name": "About",
+      "url": "/about/",
+      "description": "Learn more about Adam",
+      "icons": [
+        {
+          "src": "img/touch/icon-192.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        },
+        {
+          "src": "img/touch/icon-256.png",
+          "type": "image/png",
+          "sizes": "256x256"
+        },
+        {
+          "src": "img/touch/icon.png",
+          "type": "image/png",
+          "sizes": "512x512"
+        }
+      ]
+    },
+    {
+      "name": "Home",
+      "url": "/",
+      "description": "Start at the home page",
+      "icons": [
+        {
+          "src": "img/touch/icon-192.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        },
+        {
+          "src": "img/touch/icon-256.png",
+          "type": "image/png",
+          "sizes": "256x256"
+        },
+        {
+          "src": "img/touch/icon.png",
+          "type": "image/png",
+          "sizes": "512x512"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    "business",
+    "utilities"
+  ],
+  "author": "Adam J. Jolicoeur",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "homepage_url": "https://www.adamjolicoeur.com",
+  "developer": {
+    "name": "Adam J. Jolicoeur",
+    "url": "https://github.com/adamj"
+  },
+  "screenshots": [
+    {
+      "src": "img/screenshots/screenshot_homepage.jpeg",
+      "sizes": "1440x1024",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "img/screenshots/screenshot_homepage-wide.jpeg",
+      "sizes": "2400x1200",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    },
+    {
+      "src": "img/screenshots/screenshot_designs.jpeg",
+      "sizes": "1440x1024",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "img/screenshots/screenshot_development.jpeg",
+      "sizes": "1440x1024",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "img/screenshots/screenshot_about.jpeg",
+      "sizes": "1440x1024",
+      "type": "image/jpeg"
+    }
+  ],
+  "features": [
+    "portfolio",
+    "fast",
+    "pwa"
+  ]
+}

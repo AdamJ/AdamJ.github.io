@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <!-- Generated from the 11ty Netlify Jumpstart: https://github.com/5t3ph/11ty-netlify-jumpstart -->
+    <!-- Modified for usage/content provided by Adam J. Jolicoeur: https://github.com/AdamJ -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="@Adam, Adam Jolicoeur, Adam J. Jolicoeur, AdamJ, Jolicoeur, adamjolicoeur.com, www.adamjolicoeur.com, mindreeper2420, Portfolio, Design, UXD, UX Designer, UX Developer, UX Engineer, Design Technologist, CSS" />
+    <title>Task-It! | Adam Jolicoeur</title>
+    <meta
+      name="description"
+      content="One enterprise task management system to rule them all."
+    />
+    <meta name="generator" content="Eleventy">
+    <meta property="og:title" content="Adam J. Jolicoeur" />
+    <meta property="og:url" content="https://www.adamjolicoeur.me" />
+    <meta property="og:description" content="One enterprise task management system to rule them all.">
+    <meta property="og:site_name" content="Adam J. Jolicoeur">
+    <meta property="og:type" content="website">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon-180.png">
+    <link rel="icon" type="image/png" size="16x16" href="/icon-16.png">
+    <link rel="icon" type="image/png" size="32x32" href="/icon-32.png">
+    <link rel="icon" type="image/png" size="192x192" href="/icon-192.png">
+    <link rel="icon" type="image/png" size="512x512" href="/icon-512.png">
+    <link rel="icon" type="image/png" size="72x72" href="/android-launchericon-72-72.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#111519">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="PWA Starter" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald&display=swap" rel="stylesheet" crossorigin="anonymous">
+    <!--<link
+      rel="stylesheet"
+      media="(prefers-color-scheme:light)"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/themes/light.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      crossorigin="anonymous"
+      
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/themes/dark.css"
+      onload="document.documentElement.classList.add('sl-theme-dark');"
+    />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/shoelace-autoloader.js" crossorigin="anonymous"></script>
+    <link type="text/css" href="/css/style.css" rel="stylesheet" />
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "qgxupe8qx2");
+    </script>
+    <meta
+      name="og:title"
+      content="Task-It! | Adam Jolicoeur"
+    />
+    <meta
+      name="og:description"
+      content="One enterprise task management system to rule them all."
+    />
+    <meta property="og:image" content="https://www.adamjolicoeur.com/img/AdamJolicoeur_social.png" />
+
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS Feed for Adam Jolicoeur"
+      href="/feed/"
+    />
+    <style>
+      body {
+        opacity: 0;
+      }
+
+      body.ready {
+        opacity: 1;
+        transition: 0.25s opacity;
+      }
+    </style>
+
+    <script type="module">
+      await Promise.allSettled([
+        customElements.whenDefined('sl-button'),
+        customElements.whenDefined('sl-dialog')
+      ]);
+
+      // Button, card, and rating are registered now! Add
+      // the `ready` class so the UI fades in.
+      document.body.classList.add('ready');
+    </script>
+  </head>
+    <a rel="me" href="https://mastodon.world/@adamjol" aria-hidden="true" class="d-none">Mastodon</a>
+    <body style="
+          height: 100vh;
+          position: relative;">
+    
+    <container id="navigation">
+  <div class="nav">
+    <input type="checkbox" id="check" name="navigationCheckbox" aria-label="menu checkbox" />
+    <label for="check" class="menu">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        fill="#131316"
+        class="bi bi-list"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+        />
+      </svg>
+    </label>
+    <a  href="/" title="Home">
+    <div class="logo">
+      <svg width="32" height="32" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M91.29 89.4546L96.1838 82.1483L101.709 89.4546H91.29Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      <path d="M45.8939 89.1937L95.7557 13L145.915 89.1937C145.915 91.2812 143.385 95.3857 139.813 98.3266C136.804 100.804 134.693 101.892 130.882 103.284C126.925 104.73 124.184 105.372 120.166 105.372H56.4616L23.5677 156.124H13L50.8057 97.8047H91.2905H115.849C125.375 97.8047 130.882 92.1945 130.882 92.1945C130.882 92.1945 134.743 89.1937 130.882 83.4531C119.124 65.9703 95.7557 29.0477 95.7557 29.0477L56.4616 89.1937H45.8939Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      <path d="M64.7966 112.548H105.281H136.24C145.766 112.548 151.72 108.895 154.548 107.068C158.239 104.684 161.99 99.1094 161.99 99.1094H173.004C173.004 100.414 168.224 106.618 163.627 110.199C152.911 118.549 144.575 120.115 140.557 120.115H70.4526L46.4891 156.255H35.9214L64.7966 112.548Z" fill="#ffffff"/>
+      <path d="M157.674 89.7157L127.905 45.6172H138.324L168.39 89.7157H157.674Z" fill="#ffffff"/>
+      <path d="M64.7966 112.548H105.281H136.24C145.766 112.548 151.72 108.895 154.548 107.068C158.239 104.684 161.99 99.1094 161.99 99.1094H173.004C173.004 100.414 168.224 106.618 163.627 110.199C152.911 118.549 144.575 120.115 140.557 120.115H70.4526L46.4891 156.255H35.9214L64.7966 112.548Z" stroke="#ffffff" stroke-width="4"/>
+      <path d="M157.674 89.7157L127.905 45.6172H138.324L168.39 89.7157H157.674Z" stroke="#ffffff" stroke-width="4"/>
+      <path d="M34.1356 89.7157L63.9038 45.6172H53.4849L23.419 89.7157H34.1356Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      <path d="M146.362 156.516L127.608 128.595H138.027L156.781 156.516H146.362Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      <path d="M30.4144 116.331L18.0605 98.8485H28.4794L35.6238 109.025L30.4144 116.331Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      <path d="M169.581 156.377L149.19 126.899L157.525 123.768L180 156.377H169.581Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      <path d="M77.8945 136.554L72.6851 144.121L96.3508 180L122.525 140.598L117.04 132.118L96.3508 164.474L77.8945 136.554Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      <path d="M80.4247 87.4976H70.0059L95.6066 48.4874L117.04 80.9496C118.082 82.9312 119.868 84.6273 116.593 87.4976C113.319 90.3679 112.128 89.0632 111.086 87.4976L95.6066 64.4046L80.4247 87.4976Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      <path d="M108.556 128.204H92.6351L87.7183 135.51H103.45L108.556 128.204Z" fill="#ffffff" stroke="#ffffff" stroke-width="4"/>
+      </svg>
+    </div>
+    </a>
+    <div class="nav-items">
+      <ul class="overview">
+        <li>
+          <a href="/about" class="nav-link " alt="Link to my About page">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="/designs" class="nav-link active" alt="Link to my Designs examples">
+            Designs
+          </a>
+        </li>
+        <li>
+          <a href="/development" class="nav-link " alt="Link to my Development examples">
+            Development
+          </a>
+        </li>
+        <li class="nav-icon">
+          <sl-dialog label="About Me" class="dialog-overview">
+            <p>UX Designer, Developer, Program Manager. Creating software for the construction world. Previously at Red Hat and AWS. Collector of nerdy things...forever.</p>
+            <sl-button variant="text" href="https://www.linkedin.com/in/ajjolicoeur/" title="External link to LinkedIn profile">
+              <sl-icon slot="prefix" name="linkedin"></sl-icon>
+              LinkedIn profile
+            </sl-button>
+            <sl-button variant="text" href="https://github.com/AdamJ" title="External link to GitHub profile">
+              <sl-icon slot="prefix" name="github"></sl-icon>
+              GitHub README
+            </sl-button>
+            <sl-button slot="footer" variant="default" href="/about">Learn More</sl-button>
+          </sl-dialog>
+          <sl-icon-button name="info-square" label="Information" style="font-size: 1.5rem;"></sl-icon-button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</container>
+
+      
+<div class="container intro py-3 px-0 text-align-center">
+  <h1 class="display-1 fw-bold text-break">Task-It!</h1>
+  <p class="sub-header text-break px-2 px-md-0">
+    One enterprise task management system to rule them all.
+  </p></div>
+
+<content>
+  <script type="module">
+  await Promise.allSettled([
+    customElements.whenDefined('sl-image-comparer')
+  ]);
+
+  // Button, card, and rating are registered now! Add
+  // the `ready` class so the UI fades in.
+  document.body.classList.add('ready');
+</script>
+<div class="container px-0 mb-5">
+  <div class="row mx-0">
+    <div class="col">
+      <sl-card class="card-basic" style="--border-color: var(--sl-color-primary-400); --border-width: 2px;">
+        <dl>
+          <dt class="col-sm-2">Role</dt>
+          <dd class="col-sm-10">Lead Designer</dd>
+          <dt class="col-sm-2">Areas</dt>
+          <dd class="col-sm-10">User research, Wireframes, User journeys, Mockups, Prototyping</dd>
+          <dt class="col-sm-2">Problem</dt>
+          <dd class="col-sm-10">After more than a decade of minimal updates, multiple subscription services, and independent teams, it became apparent that a single, scalable solution was needed. This project was to replace the existing systems, eliminating costs and overhead.</dd>
+          <dt class="col-sm-2">Challenge</dt>
+          <dd class="col-sm-10">With multiple systems container millions of tasks (both current and historical) as well as a growing need for various integrations, it was apparent that the user base would be the biggest challenge. Creating something that could not only handle all of the various methods of work, but also the vast historical nature of teams, presented a very unique situation. Additionally, the product had to be one that <i>all</i> users could utilize, no matter their working method. This included, but was not limited to, users with accessibility needs, users who preferred "terminal" or "keyboard" commands, and those who relied on standard keyboard-mouse usage.</dd>
+          <dt class="col-sm-2">Constraints</dt>
+          <dd class="col-sm-10">The biggest constraint was that of time. As each day passed, users were onboarded to either the older solution or to products that required licenses and cost the company money. The team was given one year to put together an initial release to be announced at an upcoming conference.</dd>
+        </dl>
+      </sl-card>
+    </div>
+  </div>
+  <div class="row mx-0">
+    <div class="col">
+      <h2>The Process</h2>
+      <p>Before any design work (wireframes, mockups, prototypes) could begin, extensive user research and testing was needed.</p>
+      <p>Research methods with example questions:
+        <ul>
+          <li>User interviews
+            <ul>
+              <li>Ask users what their role is on their product team.</li>
+              <li>What product(s) do they use to manage their work?</li>
+              <li>If they do not use the existing internal product, why not?</li>
+            </ul>
+          </li>
+          <li>Competitive analysis
+            <ul>
+              <li>What products are used internally, besides the previous internal-built system?</li>
+              <li>Why are they used? What do they provide that the current internal system does not?</li>
+            </ul>
+          </li>
+          <li>On-hand testing
+            <ul>
+              <li>As a user, I needed to work within the system we were working to replace so that I can find the issues that currently exist.</li>
+              <li>Findings were compared against user interviews. Those interviews were also used as a basis for various testing methods.</li>
+            </ul>
+          </li>
+          <li>Observe users
+            <ul>
+              <li>Watch how users use the products: where do they always visit? What tasks are they always performing?</li>
+            </ul>
+          </li>
+        </ul>
+      </p>
+      <p>Once a baseline had been established, the first round of user flow diagrams and analysis took place. Each step in the various user flows had two goals:
+        <ol>
+          <li>Follow user expectations
+            <ul>
+              <li>Users expected to be able to perform basic tasks, such as creating work items, viewing work items, and organizing their work in a single system.</li>
+            </ul>
+          </li>
+          <li>Simplify existing processes
+            <ul>
+              <li>Users would not accept a more complicated process. Interviews taught me that anything more complicated than what they had would be a deal-breaker for switching to, no matter the directives from management.</li>
+            </ul>
+          </li>
+        </ol>
+      </p>
+      <h2>Target Audience</h2>
+      <p>For the initial release (scoped internally as a "beta"), the target audience consisted of Individual Contributors (IC), with a mix of high-interaction and low-interaction users. These were categorized as "Contributors", "Owners", and "Viewers".</p>
+      <ul>
+        <li>Contributor
+          <ul>
+            <li>Those who actively added items to a team's task queue.</li>
+          </ul>
+        </li>
+        <li>Owner
+          <ul>
+            <li>Individuals who were, at a high-level, responsible for the delivery and success daily and long-term tasks and goals. While not ICs, <strong>Owners</strong> had a direct hand in what tasks teams took on.</li>
+          </ul>
+        </li>
+        <li>Viewer
+          <ul>
+            <li>Those who stayed on the "outside" of the day-to-day operations, but could influence the work taking place. <strong>Viewers</strong> were not considered to be a top-level user, but the entire process had to take into account their work. If things became harder for them to see/find, then they were likely to become a blocker to adoption.</li>
+          </ul>
+        </li>
+      </ul>
+      <p>After discussions with Project Management (PM), it was determined that the target audience would be broken down into tiers: <strong>Tier 1</strong> and <strong>Tier 2</strong>.
+        <ul>
+          <li><strong>Tier 1</strong> consisted of those who used the existing solutions multiple times per day and could assist with driving adoption. These were the <u>Contributors</u>.
+          </li>
+          <li><strong>Tier 2</strong> consisted of those who interactive with existing solutions on a weekly basis, and then only to monitor the work being done by those in Tier 1.
+          </li>
+        </ul>
+      </p>
+      <h2>User flows, Wireframes, and Mockups</h2>
+      <p>For the initial Task Details view, user flows and wireframes were used to identify possible errors. The findings from this work would go on to determine the direction of the final mockups.</p>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="font-weight-semibold mb-0 text-body-emphasis">User flows</p>
+          <figure class="figure">
+            <img src="../../assets/img/task-it_user-flow.webp" class="figure-img img-fluid rounded" alt="Image of the user flow" loading="lazy">
+            <figcaption class="figure-caption text-align-center">Basic user flow
+              <sl-button href="../../assets/img/task-it_user-flow.webp" variant="text" size="medium" >
+                Expand
+                <fa-icon type="duotone" weight="solid" name="expand" size="md" style="padding: 0 4px;"></fa-icon>
+                <sl-visually-hidden>open image in a new window</sl-visually-hidden>
+              </sl-button>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-md-6">
+          <p class="fw-semibold mb-0 text-body-emphasis">User states</p>
+          <figure class="figure">
+            <img src="../../assets/img/task-it_user-states.webp" class="figure-img img-fluid rounded" alt="Image of the various user flow states" loading="lazy">
+            <figcaption class="figure-caption text-align-center">User flow states
+              <sl-button href="../../assets/img/task-it_user-states.webp" variant="text" size="medium" >
+                Expand
+                <fa-icon type="duotone" weight="solid" name="expand" size="md" style="padding: 0 4px;"></fa-icon>
+                <sl-visually-hidden>open image in a new window</sl-visually-hidden>
+              </sl-button>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <h3>Initial findings</h3>
+      <p>Based off of these user flows, I determined that the success and failures paths needed to be looked at further. Depending on the user, these paths had the potential to break experiences and decrease the usability and delight in the product.
+      </p>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Wireframes</h3>
+          <p>When creating wireframes, I start by taking an existing components (whether already in the application or from the component library in use) and lay out my page. From there, I begin to add some details (using the <code>redacted script</code> font) and basic headings. This is then reviewed with PM, Development, and, if available, fellow UX designers.</p>
+          <!-- <figure class="figure">
+            <img src="../../assets/img/task-it_task-details_wireframe.webp" class="figure-img img-fluid rounded" alt="Image of the task details wireframe" loading="lazy">
+            <figcaption class="figure-caption text-align-center">Task details wireframe
+              <sl-button href="../../assets/img/task-it_task-details_wireframe.webp" variant="text" size="medium" >
+                Expand
+                <fa-icon type="duotone" weight="solid" name="expand" size="md" style="padding: 0 4px;"></fa-icon>
+                <sl-visually-hidden>open image in a new window</sl-visually-hidden>
+              </sl-button>
+            </figcaption>
+          </figure> -->
+        </div>
+        <div class="col-md-6">
+          <h3>Mockups</h3>
+          <p>After reviews have been completed on the wireframes, mockups are created. In my process, I utilize mockups to get the full look/feel of the page without interactions. Once completed, these are used for user testing as well as final review with the development team.</p>
+          <!-- <figure class="figure">
+            <img src="../../assets/img/task-it_task-details_mockup1.webp" class="figure-img img-fluid rounded" alt="Image of the first version of the task details mockup" loading="lazy">
+            <figcaption class="figure-caption text-align-center">Task details mockup
+              <sl-button href="../../assets/img/task-it_task-details_mockup1.webp" variant="text" size="medium" >
+                Expand
+                <fa-icon type="duotone" weight="solid" name="expand" size="md" style="padding: 0 4px;"></fa-icon>
+                <sl-visually-hidden>open image in a new window</sl-visually-hidden>
+              </sl-button>
+            </figcaption>
+          </figure> -->
+        </div>
+      </div>
+      <div class="row pt-3">
+        <div class="col-md-8 offset-md-2">
+          <sl-image-comparer position="50">
+            <img
+              slot="after"
+              src="../../assets/img/task-it_task-details_wireframe.webp" class="figure-img img-fluid rounded" alt="Image of the task details wireframe" loading="lazy">
+            <img
+              slot="before"
+              src="../../assets/img/task-it_task-details_mockup1.webp" class="figure-img img-fluid rounded" alt="Image of the first version of the task details mockup" loading="lazy">
+          </sl-image-comparer>
+        </div>
+      </div>
+      <h2>Testing and Revisions</h2>
+      <p>As part of the iterative process, I consistently looked at user feedback and heat-mapping to determine if there were any changes needed. From the beginning, it was known that additional attributes would be made available to users and that the Task Details page would have to be able to adapt accordingly.</p>
+      <p>As part of the testing process, I created a card-sorting survey for users, where I included all of the existing attributes, as well as some future-planned attributes, and asked users to order them by priority. Priority was determined by the user, with the only prompt being "what attribute(s) are required for you to get your work done in the most efficient manner?".</p>
+      <figure class="figure">
+        <img src="../../assets/img/task-it_user-survey.webp" class="figure-img img-fluid rounded" alt="Image of the user testing process" loading="lazy">
+        <figcaption class="figure-caption text-align-center">User testing card sorting
+        </figcaption>
+      </figure>
+      <h2>Revisions</h2>
+      <p>After analyzing the results of the card-sorting user testing, additional mockups were created to task with the updated attribute priorities.</p>
+      <div class="row">
+        <div class="col-md-4">
+          <figure class="figure">
+            <img src="../../assets/img/task-it_task-details_mockup2.webp" class="figure-img img-fluid rounded" alt="Image of the first version of the task details mockup">
+            <figcaption class="figure-caption text-align-center">Version 2
+              <sl-button href="../../assets/img/task-it_task-details_mockup2.webp" variant="text" size="medium" >
+                Expand
+                <fa-icon type="duotone" weight="solid" name="expand" size="md" style="padding: 0 4px;"></fa-icon>
+                <sl-visually-hidden>open image in a new window</sl-visually-hidden>
+              </sl-button>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-md-4">
+          <figure class="figure">
+            <img src="../../assets/img/task-it_task-details_mockup3.webp" class="figure-img img-fluid rounded" alt="Image of the first version of the task details mockup">
+            <figcaption class="figure-caption text-align-center">Version 3
+              <sl-button href="../../assets/img/task-it_task-details_mockup3.webp" variant="text" size="medium" >
+                Expand
+                <fa-icon type="duotone" weight="solid" name="expand" size="md" style="padding: 0 4px;"></fa-icon>
+                <sl-visually-hidden>open image in a new window</sl-visually-hidden>
+              </sl-button>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-md-4">
+          <figure class="figure">
+            <img src="../../assets/img/task-it_task-details_mockup4.webp" class="figure-img img-fluid rounded" alt="Image of the first version of the task details mockup">
+            <figcaption class="figure-caption text-align-center">Version 4
+              <sl-button href="../../assets/img/task-it_task-details_mockup4.webp" variant="text" size="medium" >
+                Expand
+                <fa-icon type="duotone" weight="solid" name="expand" size="md" style="padding: 0 4px;"></fa-icon>
+                <sl-visually-hidden>open image in a new window</sl-visually-hidden>
+              </sl-button>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="mt-5 mb-3">
+        <sl-card class="card-header">
+          <div slot="header">
+            <h3 class="p-0">Final thoughts</h3>
+          </div>
+          <p>Throughout the design process, it became clear that although the initial design solved many of the problems users faced with existing systems, there was plenty of room in which to improve.
+          </p>
+          <p>From the user testing sessions, specifically card sorting, I was able to adjust the layout and direction of the task details page without negatively impact user's experiences.</p>
+          <p>By working the development team, we were able to quickly role out changes to users and compare the new metrics to those of previous iterations. These metrics became the new baseline for future designs and detail screens across the product.</p>
+        </sl-card>
+        <style>
+          .card-header::part(base) {
+            background-color: var(--sl-color-neutral-50);
+          }
+          .card-header [slot='header'] {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .card-header h3 {
+            margin: 0;
+          }
+          .card-header sl-icon-button {
+            font-size: var(--sl-font-size-medium);
+          }
+        </style>
+      </div>
+    </div>
+  </div>
+</div>
+
+</content>
+
+    <footer id="footer" class="footer d-flex flex-wrap flex-column mt-5">
+  <div class="container-fluid px-0 px-md-1">
+    
+    <div class="row">
+      <div class="col-12 col-md-10 pt-3 pt-md-0">
+        
+        <div class="text-white pb-2">Site</div>
+        <div class="row">
+          <div class="col-4">
+            <ul class="d-flex my-0 px-0" style="flex-direction: column;">
+              <li>
+                <a class="icon-link" href="/about" alt="Link to the about page">
+                  About
+                </a>
+              </li>
+              <li>
+                <a class="icon-link" href="https://blog.adamjolicoeur.com" alt="Link to my blog">
+                  Blog
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul class="d-flex my-0 px-0" style="flex-direction: column;">
+              <li>
+                <a class="icon-link" href="/designs" alt="Link to designs page">
+                  Designs
+                </a>
+              </li>
+              <li>
+                <a class="icon-link" href="/development" alt="Link to development page">
+                  Development
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul class="d-flex my-0 px-0" style="flex-direction: column;">
+              <li>
+                <a class="icon-link" href="/testimonials" alt="Link to the testimonials page">
+                  Testimonials
+                </a>
+              </li>
+              <li>
+                <a class="icon-link" href="/uses" alt="Link to uses page">
+                  Uses
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-2 pt-3 pt-md-0">
+        
+        <div class="text-white pb-2">Social</div>
+        <div class="row">
+          <div class="col-3">
+            <ul class="d-flex my-0 px-0" style="flex-direction: column;">
+              <li>
+                <a href="https://www.linkedin.com/in/ajjolicoeur/" rel="noopener noreferrer" class="icon-link pe-1" target="_blank" alt="External link to view my LinkedIn profile">
+                  <fa-icon type="brands" name="square-linkedin" size="lg"></fa-icon>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/AdamJ" rel="noopener noreferrer" class="icon-link pe-1" target="_blank" alt="External link to view my GitHub profile">
+                  <fa-icon type="brands" name="square-github" size="lg"></fa-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul class="d-flex my-0 px-0" style="flex-direction: column;">
+              <li>
+                <a href="/adamjol.bsky.social" rel="noopener noreferrer" class="icon-link pe-1" target="_blank" alt="External link to view my Figma community profile">
+                  <fa-icon type="brands" name="square-bluesky" size="lg"></fa-icon>
+                </a>
+              </li>
+              <li>
+                <a href="https://codepen.io/AdamJolicoeur" rel="noopener noreferrer" class="icon-link" target="_blank" alt="External link to view my Codepen.io profile">
+                  <fa-icon type="brands" name="codepen" size="lg"></fa-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row my-4">
+      <hr style="margin: 0; border-color: rgba(255, 255, 255, .1);" />
+    </div>
+    <div class="row justify-content-between pt-0 pb-2 pb-md-0">
+      <div class="col-12 text-md-center text-align-center small">
+        Copyright &copy; 2008-2025
+        <a href="/about" alt="Link to my about page">
+          Adam J. Jolicoeur
+        </a>
+      </div>
+      <div class="col-12 text-md-center text-align-center">
+        <a class="small" href="/sitemap.xml" alt="Link to the sitemap">
+          Sitemap
+        </a>
+        <span class="small text-secondary px-2">&#9830;</span>
+        <a class="small" href="/credits" alt="Link to credits page">
+          Credits
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/0ea2a7621c.js" crossorigin="anonymous"></script>
+  <script type="application/javascript" src="/js/prism.js"></script>
+  <script type="application/javascript" src="/js/icon-component.js"></script>
+  <script type="application/javascript" src="/js/jolicoeur.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQCZPW3PZN" crossorigin="anonymous"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XQCZPW3PZN');
+  </script>
+  <link type="text/css" media="print" href="/css/print.css" rel="stylesheet" />
+</footer>
+
+    <script>
+      const dialog = document.querySelector('.dialog-overview');
+      const openButton = dialog.nextElementSibling;
+      const closeButton = dialog.querySelector('sl-button[slot="footer"]');
+
+      openButton.addEventListener('click', () => dialog.show());
+      closeButton.addEventListener('click', () => dialog.hide());
+    </script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.onload = () => {
+          navigator.serviceWorker.register(
+            '/sw.js'
+          );
+        }
+      }
+    </script>
+    
+  </body>
+</html>
