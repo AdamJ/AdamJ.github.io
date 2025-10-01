@@ -27,6 +27,14 @@
   },
   "items": [
     {
+      "id": "/development/",
+      "url": "/development/",
+      "title": "Development",
+      "date_published": "2025-08-30T16:14:15Z",
+      "date": "2025-08-30T16:14:15Z"
+    }
+    ,
+    {
       "id": "/apps/collectsomemore/",
       "url": "/apps/collectsomemore/",
       "title": "Collect Some More",
@@ -70,14 +78,6 @@
       "id": "/presentations/color-picker/",
       "url": "/presentations/color-picker/",
       "title": "Color Picker",
-      "date_published": "2025-07-11T18:43:57Z",
-      "date": "2025-07-11T18:43:57Z"
-    }
-    ,
-    {
-      "id": "/development/",
-      "url": "/development/",
-      "title": "Development",
       "date_published": "2025-07-11T18:43:57Z",
       "date": "2025-07-11T18:43:57Z"
     }

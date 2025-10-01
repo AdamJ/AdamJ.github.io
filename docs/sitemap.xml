@@ -122,16 +122,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/howto/</loc>
-      <lastmod>2025-07-11T18:03:04.080Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/posts/</loc>
-      <lastmod>2025-07-11T18:03:04.081Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/designs/</loc>
       <lastmod>2025-07-11T18:43:57.000Z</lastmod>
     </url>
@@ -148,11 +138,6 @@
   
     <url>
       <loc>https://www.adamjolicoeur.com/designs/task-it/</loc>
-      <lastmod>2025-07-11T18:43:57.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/development/</loc>
       <lastmod>2025-07-11T18:43:57.000Z</lastmod>
     </url>
   
@@ -189,6 +174,11 @@
     <url>
       <loc>https://www.adamjolicoeur.com/apps/collectsomemore/</loc>
       <lastmod>2025-08-27T14:04:31.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/development/</loc>
+      <lastmod>2025-08-30T16:14:15.000Z</lastmod>
     </url>
   
 </urlset>
