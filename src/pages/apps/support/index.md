@@ -1,5 +1,5 @@
 ---
-layout: "embedded"
+layout: "base"
 title: "Support"
 date: git Last Modified
 abbreviation: "support"

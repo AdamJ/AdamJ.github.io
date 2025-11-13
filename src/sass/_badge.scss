@@ -1,0 +1,23 @@
+/* Badge */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: var(--earth-sage);
+  color: var(--earth-cream);
+  border: var(--border-thin) solid var(--earth-brown);
+  border-radius: var(--radius-pill);
+}
+
+.badge-accent {
+  background: var(--accent-coral);
+}
+
+.badge-outline {
+  background: transparent;
+  color: inherit;
+}
+.badges {
+  display: flex; gap: .25rem; flex-wrap: wrap;
+}

@@ -2,15 +2,13 @@
 layout: base.njk
 ---
 
-<div class="container intro py-3 px-0 text-align-center">
-  <h1 class="display-1 fw-bold text-break">{{ title }}</h1>
-  <p class="sub-header text-break px-2 px-md-0">
-    {{ description }}
-  </p>
+<section class="hero" aria-labelledby="hero-heading">
+  <h1 id="hero-heading">{{ title }}</h1>
+  <p>{{ description }}</p>
   {%- if (headerButton) -%}
-  <sl-button href="{{ primaryURL}}" size="large" variant="primary" outline pill>{{ primaryAction }}</sl-button>
+  <a href="{{ primaryURL}}" class="btn">{{ primaryAction }}</a>
   {%- else -%}{%- endif -%}
-</div>
+</section>
 
 <content>
   {{ content | safe }}

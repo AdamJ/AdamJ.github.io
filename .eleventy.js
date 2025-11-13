@@ -134,41 +134,6 @@ module.exports = function (eleventyConfig) {
     {skipFirstParagraphClass: 'precursor'}
   );
 
-  // Create Posts Collection
-  // https://github.com/jdsteinbach/jdsteinbach.github.io/blob/blog/.eleventy.js
-  eleventyConfig.addCollection('posts', collection => {
-    return collection
-      .getAllSorted()
-      .reverse()
-      .filter(item => {
-        return item.inputPath.match(/^\.\/src\/posts\//) !== null
-      })
-  });
-
-  // Create Posts Index Collection
-  // https://github.com/jdsteinbach/jdsteinbach.github.io/blob/blog/.eleventy.js
-  eleventyConfig.addCollection('postsIndex', collection => {
-    return collection
-      .getAllSorted()
-      .reverse()
-      .filter(item => {
-        return item.inputPath.match(/^\.\/src\/posts\//) !== null
-      })
-      .slice(0, 8)
-  });
-
-  // Create Posts Feed Collection
-  // https://github.com/jdsteinbach/jdsteinbach.github.io/blob/blog/.eleventy.js
-  eleventyConfig.addCollection('postsFeed', collection => {
-    return collection
-      .getAllSorted()
-      .reverse()
-      .filter(item => {
-        return item.inputPath.match(/^\.\/src\/posts\//) !== null
-      })
-      .slice(0, 10)
-  });
-
   // Create Category Collections
   // https://github.com/jdsteinbach/jdsteinbach.github.io/blob/blog/.eleventy.js
   Array.from(['development', 'general', 'design', 'portfolio']).map(cat => {

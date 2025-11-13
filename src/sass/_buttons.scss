@@ -1,24 +1,151 @@
-sl-button::part(base) {
-  @include font-weight(700);
-  @include fs(1);
-  @include font-family;
+/* Base button styles */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-family: var(--font-family-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  transition: all 0.2s;
+  cursor: pointer;
+  border: none;
+  text-align: center;
 }
-sl-button.card-button::part(base) {
-  display: flex;
-  justify-content: center;
-  @include font-weight(700);
+.btn:hover,
+.btn:focus {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--earth-brown);
+  outline: 2px solid var(--earth-dark);
+  outline-offset: 2px;
 }
-.button-overlay {
-  @include display-flex;
 
-  flex-direction: column;
-  justify-content: center;
+/* Primary button */
+.btn-primary {
+  background: var(--accent-coral);
+  color: var(--white);
+  border: var(--border-medium) solid var(--earth-brown);
+  box-shadow: 4px 4px 0 var(--earth-brown);
 }
-sl-button.project-button::part(base) {
-  border-color: #e6f4f1;
-  color: #e6f4f1;
-  &:hover {
-    border-color: #86adbf;
-    color: #86adbf;
-  }
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: var(--accent-coral-dark);
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--earth-brown);
+  outline: 2px solid var(--earth-dark);
+  outline-offset: 2px;
+}
+
+/* Secondary button */
+.btn-secondary {
+  background: var(--earth-cream);
+  color: var(--text-primary);
+  border: var(--border-medium) solid var(--earth-brown);
+  box-shadow: 4px 4px 0 var(--earth-sage);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background: var(--earth-sand);
+  color: var(--text-primary);
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--earth-sage);
+  outline: 2px solid var(--earth-dark);
+  outline-offset: 2px;
+}
+
+/* Outline button */
+.btn-outline {
+  background: rgba(255, 255, 255, .5) !important;
+  backdrop-filter: blur(24px);
+  filter: url(#lensFilter) saturate(120%) brightness(1.15);
+  color: var(--text-primary) !important;
+  border: var(--border-medium) solid var(--earth-brown) !important;
+  box-shadow: none !important;
+}
+
+.btn-outline:hover,
+.btn-outline:focus {
+  background: var(--earth-brown);
+  color: var(--earth-cream);
+  outline: 2px solid var(--earth-dark);
+  outline-offset: 2px;
+}
+
+/* Button sizes */
+.btn-sm {
+  padding: 0.5rem 1rem !important;
+  font-size: 0.9rem !important;
+  border-width: var(--border-thin) !important;
+}
+
+.btn-lg {
+  padding: 1rem 2rem !important;
+  font-size: 1.1rem !important;
+}
+
+/* Skip to main content link */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: var(--accent-coral);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  border: 4px solid var(--earth-brown);
+  z-index: 2000;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  top: 1rem;
+  left: 1rem;
+  clip: auto;
+  overflow: visible;
+}
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--accent-coral);
+  color: var(--white);
+  text-decoration: none;
+  border: 4px solid var(--earth-brown);
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 4px 4px 0 var(--earth-brown);
+  transition: all 0.2s;
+  font-size: 1rem;
+}
+
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--earth-sage);
+  color: var(--earth-cream);
+  text-decoration: none;
+  border: 3px solid var(--earth-sand);
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s;
+  font-size: 0.95rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: var(--accent-coral);
+  transform: translateY(-2px);
+  outline: 2px solid var(--earth-cream);
+  outline-offset: 2px;
+  color: var(--white) !important;
 }

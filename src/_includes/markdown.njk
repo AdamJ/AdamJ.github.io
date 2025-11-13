@@ -8,7 +8,7 @@ layout: base.njk
     {{ description }}
   </p>
   {%- if (headerButton) -%}
-  <sl-button href="{{ primaryURL}}" size="large" variant="primary" outline pill>{{ primaryAction }}</sl-button>
+  <wa-button href="{{ primaryURL}}" size="large" apperaance="outlined" variant="brand" pill>{{ primaryAction }}</wa-button>
   {# <a class="btn btn-outline-secondary btn-lg" href="{{ primaryURL}}" | url }}" type="button">{{ primaryAction }}</a> #}
   {%- else -%}{%- endif -%}
 </div>
@@ -19,9 +19,9 @@ layout: base.njk
       <article class="col-sm-12 order-2 order-md-1">
         {%- if (tocBlock) -%}
           {%- if content | toc -%}
-          <sl-details summary="TOC">
+          <wa-details summary="TOC">
             {{ content | toc | safe }}
-          </sl-details>
+          </wa-details>
           {%- else -%}
           {%- endif -%}
         {%- else -%}

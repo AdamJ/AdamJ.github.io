@@ -1,5 +1,5 @@
 ---
-layout: "embedded"
+layout: "base"
 title: "Contact"
 date: git Last Modified
 abbreviation: "contact"

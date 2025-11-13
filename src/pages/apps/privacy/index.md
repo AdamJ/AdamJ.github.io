@@ -1,5 +1,5 @@
 ---
-layout: "embedded"
+layout: "base"
 title: "Privacy Policy"
 date: git Last Modified
 abbreviation: "privacy"

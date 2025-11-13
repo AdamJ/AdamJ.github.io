@@ -1,0 +1,4 @@
+{
+  "layout": "page",
+  "permalink": "/prototypes/{{ page.fileSlug }}/"
+}

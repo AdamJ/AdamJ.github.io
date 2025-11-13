@@ -48,24 +48,31 @@
           </a>
         </li>
         <li>
-          <a href="/development" class="nav-link {% if '/development' in page.url %}active{% endif %}" alt="Link to my Development examples">
-            Development
+          <a href="/open-source" class="nav-link {% if '/open-source' in page.url %}active{% endif %}" alt="Link to my open source projects">
+            Open Source
+          </a>
+        </li>
+        <li>
+          <a href="/resume" class="nav-link {% if '/resume' in page.url %}active{% endif %}" alt="Link to my open source projects">
+            CV
           </a>
         </li>
         <li class="nav-icon">
-          <sl-dialog label="About Me" class="dialog-overview">
+          <wa-dialog label="About Me" class="dialog-overview" id="aboutMeDialog">
             <p>UX Designer, Developer, Program Manager. Creating software for the construction world. Previously at Red Hat and AWS. Collector of nerdy things...forever.</p>
-            <sl-button variant="text" href="{{ meta.linkedinURL | url }}" title="External link to LinkedIn profile">
-              <sl-icon slot="prefix" name="linkedin"></sl-icon>
+            <wa-button appearance="plain" href="{{ meta.linkedinURL | url }}" title="External link to LinkedIn profile">
+              <wa-icon slot="start" family="brands" name="linkedin"></wa-icon>
               LinkedIn profile
-            </sl-button>
-            <sl-button variant="text" href="{{ meta.githubURL | url }}" title="External link to GitHub profile">
-              <sl-icon slot="prefix" name="github"></sl-icon>
+            </wa-button>
+            <wa-button appearance="plain" href="{{ meta.githubURL | url }}" title="External link to GitHub profile">
+              <wa-icon slot="start" family="brands" name="github"></wa-icon>
               GitHub README
-            </sl-button>
-            <sl-button slot="footer" variant="default" href="/about">Learn More</sl-button>
-          </sl-dialog>
-          <sl-icon-button name="info-square" label="Information" style="font-size: 1.5rem;"></sl-icon-button>
+            </wa-button>
+            <wa-button slot="footer" variant="neutral" href="/about">Learn More</wa-button>
+          </wa-dialog>
+          <wa-button variant="neutral" appearance="outlined">
+             <wa-icon family="duotone" variant="regular" name="info-square" style="font-size: 1.5rem;"></wa-icon>
+          </wa-button>
         </li>
       </ul>
     </div>
