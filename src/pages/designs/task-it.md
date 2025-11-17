@@ -8,29 +8,29 @@ description: "One enterprise task management system to rule them all."
 <section>
   <div class="card">
     <div class="mb-3">
-      <h6>Role</h6>
+      <p class="text-h6">Role</p>
       <span class="badge badge-accent">Lead Designer</span>
     </div>
     <div class="mb-3">
-      <h6>Areas</h6>
+      <p class="text-h6">Areas</p>
       <div class="badges">
         <span class="badge badge-outline">User research</span><span class="badge badge-outline">Wireframes</span><span class="badge badge-outline">User journeys</span><span class="badge badge-outline">Mockups</span><span class="badge badge-outline">Prototyping</span>
       </div>
     </div>
     <div class="mb-3">
-      <h6>Problem</h6>
+      <p class="text-h6">Problem</p>
       <p>
         After more than a decade of minimal updates, multiple subscription services, and independent teams, it became apparent that a single, scalable solution was needed. This project was to replace the existing systems, eliminating costs and overhead.
       </p>
     </div>
     <div class="mb-3">
-      <h6>Challenge</h6>
+      <p class="text-h6 mb-0">Challenge</p>
       <p>
         With multiple systems container millions of tasks (both current and historical) as well as a growing need for various integrations, it was apparent that the user base would be the biggest challenge. Creating something that could not only handle all of the various methods of work, but also the vast historical nature of teams, presented a very unique situation. Additionally, the product had to be one that <i>all</i> users could utilize, no matter their working method. This included, but was not limited to, users with accessibility needs, users who preferred "terminal" or "keyboard" commands, and those who relied on standard keyboard-mouse usage.
       </p>
     </div>
     <div class="mb-3">
-      <h6>Constraints</h6>
+      <p class="text-h6">Constraints</p>
       <p>
         The biggest constraint was that of time. As each day passed, users were onboarded to either the older solution or to products that required licenses and cost the company money. The team was given one year to put together an initial release to be announced at an upcoming conference.
       </p>

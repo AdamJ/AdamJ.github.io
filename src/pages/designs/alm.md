@@ -12,14 +12,14 @@ eleventyNavigation:
 <section>
   <div class="card">
     <div class="mb-3">
-      <h6>Role</h6>
+      <p class="text-h6">Role</p>
       <div class="badges">
         <span class="badge badge-accent">Interaction Designer</span>
         <span class="badge badge-accent">Prototypes</span>
       </div>
     </div>
     <div class="mb-3">
-      <h6>Areas</h6>
+      <p class="text-h6">Areas</p>
       <div class="badges">
         <span class="badge badge-outline">Areas</span>
         <span class="badge badge-outline">Wireframes</span>
@@ -29,7 +29,7 @@ eleventyNavigation:
       </div>
     </div>
     <div class="mb-3">
-      <h6>Challenge</h6>
+      <p class="text-h6">Challenge</p>
       <p>The greater project team was using multiple project management tools, code repositories, and application development processes, with none of them talking to each other. This project takes all of those areas of concern and brings them together into a single, cohesive interface.</p>
     </div>
   </div>

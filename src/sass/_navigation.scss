@@ -36,6 +36,7 @@ nav a {
   font-size: 0.95rem;
   transition: color 0.3s;
   padding: var(--space-2xs) var(--space-xs, 0.5rem);
+  border-bottom: none;
 }
 
 nav a:hover,

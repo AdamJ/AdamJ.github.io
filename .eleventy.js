@@ -3,7 +3,6 @@ const fs = require("fs");
 const slugify = require("slugify");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-// const eleventyImageTransformPlugin = require("@11ty/eleventy-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const inclusiveLangPlugin = require("@11ty/eleventy-plugin-inclusive-language");
 const pluginTOC = require('eleventy-plugin-toc');
@@ -13,6 +12,7 @@ const markdownItAnchor = require("markdown-it-anchor");
 const markdownItHighlightJS = require('markdown-it-highlightjs')
 const emojiReadTime = require("@11tyrocks/eleventy-plugin-emoji-readtime");
 const packageVersion = require("./package.json").version;
+const eleventySass = require("@11tyrocks/eleventy-plugin-sass-lightningcss");
 
 const mdOptions = {
   html: true,
@@ -33,6 +33,7 @@ module.exports = function (eleventyConfig) {
   if (process.env.ELEVENTY_ENV === "prod") {
     eleventyConfig.ignores.add("./src/posts/");
   };
+  eleventyConfig.addPlugin(eleventySass);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss, {
     posthtmlRenderOptions: {
@@ -58,7 +59,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("src/sass/*.scss");
 
   eleventyConfig.addPassthroughCopy("src/assets/img");
-  eleventyConfig.addPassthroughCopy("src/webfonts");
   eleventyConfig.addPassthroughCopy("src/cache-polyfill.js");
   eleventyConfig.addPassthroughCopy("src/CNAME");
   eleventyConfig.addPassthroughCopy("src/icon-16.png");
@@ -84,7 +84,7 @@ module.exports = function (eleventyConfig) {
       ready: function(err, bs) {
 
         bs.addMiddleware("*", (req, res) => {
-          const content_404 = fs.readFileSync('./docs/404.html');
+          const content_404 = fs.readFileSync('./docs/404/404.html');
           // Add 404 http status code in request header.
           res.writeHead(404, { "Content-Type": "text/html; charset=UTF-8" });
           // Provides the 404 content without redirect.

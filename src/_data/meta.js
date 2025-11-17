@@ -5,7 +5,7 @@ module.exports = {
   siteDescription: "The portfolio site for Adam Jolicoeur.",
   siteURL: "https://www.adamjolicoeur.com",
   authorName: "Adam J. Jolicoeur",
-  siteMeta:"Adam, Adam Jolicoeur, Adam J. Jolicoeur, AdamJ, Jolicoeur, adamjolicoeur.com, www.adamjolicoeur.com, mindreeper2420, Portfolio, Design, UXD, UX Designer, UX Developer, UX Engineer, Design Technologist, CSS",
+  siteMeta:"Adam, Adam Jolicoeur, Adam J. Jolicoeur, AdamJ, Jolicoeur, adamjolicoeur.com, www.adamjolicoeur.com, mindreeper2420, Portfolio, Design, Product Designer, UXD, UX Designer, UX Developer, UX Engineer, Design Technologist, Product Mangement, CSS",
   packageVersion: "packageVersion",
   blueskyUsername: "adamjol.bsky.social",
   blueskyTitle: "Adam Jolicoeur - User Experience Designer and Developer",

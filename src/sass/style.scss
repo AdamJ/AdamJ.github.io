@@ -26,6 +26,28 @@ body {
   min-height: 100vh;
   position: relative;
 }
+/* Styles for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animated-element {
+    animation: none; /* Disable animations */
+    transition: none; /* Disable transitions */
+    /* You can also provide alternative, less motion-intensive styles here */
+    /* For example, for a hover effect, you might change opacity instead of scaling */
+    opacity: 1; /* Ensure element is visible if animation was for visibility */
+  }
+
+  /* You can also target specific elements or properties */
+  body {
+    scroll-behavior: auto; /* Disable smooth scrolling if enabled */
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
 .display-none {
   display: none !important;
 }
@@ -44,22 +66,7 @@ body {
   margin: 0 auto;
 }
 
-.hero h1 {
-  font-family: var(--font-family-heading);
-  font-size: 6rem;
-  color: var(--text-primary);
-  margin-bottom: 1rem;
-  text-shadow: 3px 3px 0 var(--accent-coral);
-  letter-spacing: 2px;
-  line-height: 1.2;
-}
 
-.hero p {
-  font-size: clamp(1.1rem, 2vw, 1.25rem);;
-  color: var(--earth-brown);
-  max-width: 720px;
-  margin: 0 auto;
-}
 /* Section Styles */
 section {
   max-width: 1200px;
@@ -149,15 +156,6 @@ section {
     font-size: var(--font-size-3xl, 2rem);
   }
 }
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-}
 
 divider, .divider {
   display: block;
@@ -173,6 +171,7 @@ divider, .divider {
 }
 
 @import "animations";
+@import "fonts";
 @import "typography";
 @import "spacing";
 @import "lists";
@@ -182,3 +181,4 @@ divider, .divider {
 @import "badge";
 @import "buttons";
 @import "cards";
+@import "markdown";

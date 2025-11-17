@@ -1,82 +1,3 @@
-.pirata-one-regular {
-  font-family: "Pirata One", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.inter-400 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.inter-500 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-.inter-600 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
-.inter-700 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-.inter-800 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-}
-.inter-900 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.playfair-display-400 {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.playfair-display-500 {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-.playfair-display-600 {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
-.playfair-display-700 {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-.playfair-display-800 {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-}
-.playfair-display-900 {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
-}
 /* Display heading - extra large */
 .text-display {
   font-family: 'Pirata One', cursive;
@@ -85,6 +6,23 @@
   line-height: 1.1;
   letter-spacing: 2px;
   text-shadow: 3px 3px 0 var(--accent-coral);
+}
+
+.hero h1 {
+  font-family: var(--font-family-heading);
+  font-size: 6rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  text-shadow: 3px 3px 0 var(--accent-coral);
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: clamp(1.1rem, 2vw, 1.25rem);;
+  color: var(--earth-brown);
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 /* Heading 1 */
@@ -187,10 +125,16 @@ p:last-child, .text-body:last-child {
 
 code, .code {
   font-family: var(--font-family-mono);
+  // background: var(--earth-sand);
+  // padding: 0.1rem 0.3rem;
+  // border-radius: var(--radius-sm);
+  font-size: clamp(0.85rem, 1vw, 0.9rem);
+}
+code.code-inline,
+.code.code-inline {
   background: var(--earth-sand);
   padding: 0.1rem 0.3rem;
   border-radius: var(--radius-sm);
-  font-size: clamp(0.85rem, 1vw, 0.9rem);
 }
 .code-block {
   display: block;
@@ -201,7 +145,6 @@ code, .code {
   overflow-x: auto;
   border: var(--border-thin) solid var(--earth-sage);
 }
-
 /* Text utilities */
 .text-muted {
   color: var(--text-muted);
@@ -228,8 +171,20 @@ code, .code {
 }
 
 /* Lead paragraph */
-.lead {
+.lead, .text-lead {
   font-size: clamp(1.1rem, 2vw, 1.35rem);
   line-height: 1.7;
   color: var(--text-secondary);
+}
+
+a, .link {
+  color: var(--earth-sage);
+  border-bottom: 1px solid var(--earth-sage);
+  text-decoration: none;
+  transition: all 0.2s;
+  font-weight: var(--font-weight-semibold, 600);
+}
+a:hover, a:focus, .link:hover, .link:focus {
+  color: var(--earth-brown);
+  border-bottom-color: var(--earth-brown);
 }

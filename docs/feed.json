@@ -27,11 +27,67 @@
   },
   "items": [
     {
-      "id": "/journeys/journeys/",
-      "url": "/journeys/journeys/",
-      "title": "Journeys",
-      "date_published": "2025-11-25T00:17:52Z",
-      "date": "2025-11-25T00:17:52Z"
+      "id": "/resume/",
+      "url": "/resume/",
+      "title": "Adam J. Jolicoeur",
+      "date_published": "2025-11-17T17:42:31Z",
+      "date": "2025-11-17T17:42:31Z"
+    }
+    ,
+    {
+      "id": "/presentations/",
+      "url": "/presentations/",
+      "title": "Presentations",
+      "date_published": "2025-11-17T17:42:31Z",
+      "date": "2025-11-17T17:42:31Z"
+    }
+    ,
+    {
+      "id": "/designs/task-it/",
+      "url": "/designs/task-it/",
+      "title": "Task-It!",
+      "date_published": "2025-11-17T17:42:31Z",
+      "date": "2025-11-17T17:42:31Z"
+    }
+    ,
+    {
+      "id": "/designs/customer-engagement/",
+      "url": "/designs/customer-engagement/",
+      "title": "Customer Engagement App",
+      "date_published": "2025-11-17T17:42:31Z",
+      "date": "2025-11-17T17:42:31Z"
+    }
+    ,
+    {
+      "id": "/designs/alm/",
+      "url": "/designs/alm/",
+      "title": "Application Lifecycle Management",
+      "date_published": "2025-11-17T17:42:31Z",
+      "date": "2025-11-17T17:42:31Z"
+    }
+    ,
+    {
+      "id": "/about/",
+      "url": "/about/",
+      "title": "About",
+      "date_published": "2025-11-17T17:42:31Z",
+      "date": "2025-11-17T17:42:31Z"
+    }
+    ,
+    {
+      "id": "/apps/support/",
+      "url": "/apps/support/",
+      "title": "Support",
+      "date_published": "2025-11-13T16:51:51Z",
+      "date": "2025-11-13T16:51:51Z"
+    }
+    ,
+    {
+      "id": "/apps/privacy/",
+      "url": "/apps/privacy/",
+      "title": "Privacy Policy",
+      "date_published": "2025-11-13T16:51:51Z",
+      "date": "2025-11-13T16:51:51Z"
     }
     ,
     {
@@ -40,14 +96,6 @@
       "title": "Development",
       "date_published": "2025-08-30T16:14:15Z",
       "date": "2025-08-30T16:14:15Z"
-    }
-    ,
-    {
-      "id": "/apps/collectsomemore/",
-      "url": "/apps/collectsomemore/",
-      "title": "Collect Some More",
-      "date_published": "2025-08-27T14:04:31Z",
-      "date": "2025-08-27T14:04:31Z"
     }
     ,
     {
@@ -70,22 +118,6 @@
       "id": "/presentations/color-picker/",
       "url": "/presentations/color-picker/",
       "title": "Color Picker",
-      "date_published": "2025-07-11T18:43:57Z",
-      "date": "2025-07-11T18:43:57Z"
-    }
-    ,
-    {
-      "id": "/designs/customer-engagement/",
-      "url": "/designs/customer-engagement/",
-      "title": "Customer Engagement App",
-      "date_published": "2025-07-11T18:43:57Z",
-      "date": "2025-07-11T18:43:57Z"
-    }
-    ,
-    {
-      "id": "/designs/alm/",
-      "url": "/designs/alm/",
-      "title": "Application Lifecycle Management",
       "date_published": "2025-07-11T18:43:57Z",
       "date": "2025-07-11T18:43:57Z"
     }
@@ -131,14 +163,6 @@
     }
     ,
     {
-      "id": "/resume/",
-      "url": "/resume/",
-      "title": "Adam J. Jolicoeur",
-      "date_published": "2025-06-09T12:20:32Z",
-      "date": "2025-06-09T12:20:32Z"
-    }
-    ,
-    {
       "id": "/credits/",
       "url": "/credits/",
       "title": "Credits",
@@ -155,25 +179,9 @@
     }
     ,
     {
-      "id": "/presentations/",
-      "url": "/presentations/",
-      "title": "Presentations",
-      "date_published": "2025-01-20T21:13:03Z",
-      "date": "2025-01-20T21:13:03Z"
-    }
-    ,
-    {
       "id": "/icons-and-branding/icons/",
       "url": "/icons-and-branding/icons/",
       "title": "Icons",
-      "date_published": "2025-01-20T21:13:03Z",
-      "date": "2025-01-20T21:13:03Z"
-    }
-    ,
-    {
-      "id": "/icons-and-branding/",
-      "url": "/icons-and-branding/",
-      "title": "Icons and Branding",
       "date_published": "2025-01-20T21:13:03Z",
       "date": "2025-01-20T21:13:03Z"
     }
@@ -203,33 +211,9 @@
     }
     ,
     {
-      "id": "/designs/timetrak/",
-      "url": "/designs/timetrak/",
-      "title": "TimeTrak by Switchback",
-      "date_published": "2025-01-20T21:13:03Z",
-      "date": "2025-01-20T21:13:03Z"
-    }
-    ,
-    {
-      "id": "/designs/district25/",
-      "url": "/designs/district25/",
-      "title": "District 25 website",
-      "date_published": "2025-01-20T21:13:03Z",
-      "date": "2025-01-20T21:13:03Z"
-    }
-    ,
-    {
       "id": "/archives/archives/",
       "url": "/archives/archives/",
       "title": "Archived Pages",
-      "date_published": "2025-01-20T21:13:03Z",
-      "date": "2025-01-20T21:13:03Z"
-    }
-    ,
-    {
-      "id": "/alfred/workflows/",
-      "url": "/alfred/workflows/",
-      "title": "Alfred Workflows",
       "date_published": "2025-01-20T21:13:03Z",
       "date": "2025-01-20T21:13:03Z"
     }

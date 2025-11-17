@@ -2,38 +2,16 @@
 layout: base.njk
 ---
 
-<div class="container intro py-3 px-0 text-align-center">
-  <h1 class="display-1 fw-bold text-break">{{ title }}</h1>
-  <p class="sub-header text-break px-2 px-md-0">
+<section class="hero">
+  <h1>{{ title }}</h1>
+  <p class="text-lead mb-4">
     {{ description }}
   </p>
   {%- if (headerButton) -%}
-  <wa-button href="{{ primaryURL}}" size="large" apperaance="outlined" variant="brand" pill>{{ primaryAction }}</wa-button>
-  {# <a class="btn btn-outline-secondary btn-lg" href="{{ primaryURL}}" | url }}" type="button">{{ primaryAction }}</a> #}
+  <a href="{{ primaryURL}}" class="btn btn-secondary">{{ primaryAction }}</a>
   {%- else -%}{%- endif -%}
-</div>
+</section>
 
-<content>
-  <div class="container mb-2 py-2 px-0">
-    <div class="row px-0 pb-3 mx-0">
-      <article class="col-sm-12 order-2 order-md-1">
-        {%- if (tocBlock) -%}
-          {%- if content | toc -%}
-          <wa-details summary="TOC">
-            {{ content | toc | safe }}
-          </wa-details>
-          {%- else -%}
-          {%- endif -%}
-        {%- else -%}
-        {%- endif -%}
-        {{ content | safe }}
-      </article>
-      <!--{%- if content | toc -%}
-      <aside class="col-sm-12 col-md-3 order-1 order-md-2" aria-label="complimentary">
-        {{ content | toc | safe }}
-      </aside>
-      {%- else -%}
-      {%- endif -%} -->
-    </div>
-  </div>
-</content>
+<section>
+  {{ content | safe }}
+</section>

@@ -12,7 +12,7 @@ eleventyNavigation:
 <section>
   <div class="card">
     <div class="mb-3">
-      <h6>Role</h6>
+      <p class="text-h6">Role</p>
       <div class="badges">
         <span class="badge badge-accent">Lead Designer</span>
         <span class="badge badge-outline">Interaction Designer</span>
@@ -20,18 +20,18 @@ eleventyNavigation:
       </div>
     </div>
     <div class="mb-3">
-      <h6>Areas</h6>
+      <p class="text-h6">Areas</p>
       <div class="badges">
         <span class="badge badge-outline">Wireframes</span>
         <span class="badge badge-outline">Visual Designs</span>
       </div>
     </div>
     <div class="mb-3">
-      <h6>Challenge</h6>
+      <p class="text-h6">Challenge</p>
       <p>For this project, I was tasked with updating an old user interface to increase usability and visual styling to match a more modern aesthetic.</p>
     </div>
     <div class="mb-3">
-      <h6>Goals</h6>
+      <p class="text-h6">Goals</p>
       <p>The goals of this project were to <i>improve</i> efficiency, <i>upgrade</i> the visual aesthetic, and <i>enhance</i> visual awareness.</p>
     </div>
   </div>
