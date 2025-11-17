@@ -8,9 +8,9 @@ nav {
   background: rgba(245, 241, 232, 0.5);
   backdrop-filter: blur(24px);
   filter: url(#lensFilter) saturate(120%) brightness(1.15);
-  border: 4px solid var(--earth-brown);
+  border: var(--border-medium, 4px) solid var(--earth-brown);
   border-radius: 50px;
-  padding: 0.75rem 2rem;
+  padding: var(--space-sm) 2rem;
   box-shadow: 0 8px 24px var(--shadow-heavy);
 }
 .main-nav {
@@ -35,13 +35,13 @@ nav a {
   font-weight: 500;
   font-size: 0.95rem;
   transition: color 0.3s;
-  padding: 0.25rem 0.5rem;
+  padding: var(--space-2xs) var(--space-xs, 0.5rem);
 }
 
 nav a:hover,
 nav a:focus {
   color: var(--accent-coral);
-  outline: 2px solid var(--accent-coral);
+  outline: var(--border-thin) solid var(--accent-coral);
   outline-offset: 2px;
 }
 nav a.active {

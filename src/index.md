@@ -17,65 +17,66 @@ layout: base.njk
 <section id="work" aria-labelledby="work-heading">
   <h2 id="work-heading">Featured Work</h2>
   <div class="work-grid">
-    <article class="project-large">
-      <img src="{{ '/assets/img/task-it_intro.webp' | url }}" alt="Task It project illustration" class="project-image" />
-      <div class="project-content">
+    <article class="showcase-large">
+      <img src="{{ '/assets/img/task-it_intro.webp' | url }}" alt="Task It project illustration" class="showcase-image" />
+      <div class="showcase-content">
         <h3>Task Management System</h3>
         <p>Led the design and direction with clear presentation and project customization, growing from a dozen users to 500 daily in 18 months.</p>
-        <a href="{{ 'designs/task-it' | url }}" class="btn" alt="View application lifecycle planning case study">View Case Study</a>
+        <a href="{{ 'designs/task-it' | url }}" class="btn btn-primary" alt="View application lifecycle planning case study">View Case Study</a>
       </div>
     </article>
-    <article class="project-large">
-      <img src="{{ '/assets/img/OSIO-laptop-screen-1200.webp' | url }}" alt="Task It project illustration" class="project-image" />
-        <div class="project-content">
+    <article class="showcase-large">
+      <img src="{{ '/assets/img/OSIO-laptop-screen-1200.webp' | url }}" alt="Task It project illustration" class="showcase-image" />
+        <div class="showcase-content">
           <h3>Application Lifecycle Planning</h3>
           <p>Creating a single source for team planning, cutting delivery time through simplified project management.</p>
-          <a href="{{ '/designs/alm' | url }}" class="btn" alt="View application lifecycle planning case study">View Case Study</a>
+          <a href="{{ '/designs/alm' | url }}" class="btn btn-primary" alt="View application lifecycle planning case study">View Case Study</a>
         </div>
       </article>
     </div>
     <div class="work-grid">
-      <div class="small-projects">
-        <article class="project-small">
-          <h4>Customer Engagement Platform</h4>
-          <p>Informing users how best to reach their customers, improving engagement rates by 10%.</p>
-        </article>
-        <article class="project-small">
+      <div class="small-showcase">
+        <article class="showcase-small">
           <h4>Dashboard Analytics</h4>
           <p>Created intuitive data visualization components for B2B analytics platform serving 10K+ users.</p>
         </article>
-        <article class="project-small">
+        <article class="showcase-small">
+          <h4>Customer Engagement Platform</h4>
+          <p>Informing users how best to reach their customers, improving engagement rates by 10%.</p>
+          <a class="btn btn-outline btn-sm" href="{{ '/designs/customer-engagement' | url }}">View Case Study</a>
+        </article>
+        <article class="showcase-small">
           <h4>Component Library</h4>
           <p>Built and documented reusable component library adopted across a complete product stack.</p>
         </article>
       </div>
   </div>
 </section>
-<section id="testimonials" aria-labelledby="testimonials-heading">
-  <h2 id="testimonials-heading">What Colleagues Say</h2>
-  <div class="testimonials-grid">
-    <blockquote class="testimonial">
-      <p class="testimonial-text">[Adam] is self-driven and keeps stakeholders (Project manager, Development manager, Engineers) aligned on UX solutions...design proposals are spot-on and considerate of [our] diverse set of users.</p>
+<section id="testimonials" aria-labelledby="callouts-heading">
+  <h2 id="callouts-heading">What Colleagues Say</h2>
+  <div class="callouts-grid">
+    <blockquote class="callout">
+      <p class="callout-text">[Adam] is self-driven and keeps stakeholders (Project manager, Development manager, Engineers) aligned on UX solutions...design proposals are spot-on and considerate of [our] diverse set of users.</p>
       <cite>
-        <span class="testimonial-role">Product Owner</span>
+        <span class="callout-role">Product Owner</span>
       </cite>
     </blockquote>
-    <blockquote class="testimonial">
-      <p class="testimonial-text">Adam is highly engaged across 6+ major features at any given time and is somehow never the blocker. Designers like this don't come around often.</p>
+    <blockquote class="callout">
+      <p class="callout-text">Adam is highly engaged across 6+ major features at any given time and is somehow never the blocker. Designers like this don't come around often.</p>
       <cite>
-        <span class="testimonial-role">Senior Developer Engineer, AWS</span>
+        <span class="callout-role">Senior Developer Engineer, AWS</span>
       </cite>
     </blockquote>
-    <blockquote class="testimonial">
-      <p class="testimonial-text">...What stood out to me while working with Adam was his positivity and confidence through every obstacle, pivot, and deadline. He is a true team player.</p>
+    <blockquote class="callout">
+      <p class="callout-text">...What stood out to me while working with Adam was his positivity and confidence through every obstacle, pivot, and deadline. He is a true team player.</p>
       <cite>
-        <span class="testimonial-role">Front-End Engineer</span>
+        <span class="callout-role">Front-End Engineer</span>
       </cite>
     </blockquote>
-    <!-- <blockquote class="testimonial">
-      <p class="testimonial-text">Adam's working model is highly collaborative and amazingly fast.</p>
+    <!-- <blockquote class="callout">
+      <p class="callout-text">Adam's working model is highly collaborative and amazingly fast.</p>
       <cite>
-        <span class="testimonial-role">Engineering Group</span>
+        <span class="callout-role">Engineering Group</span>
       </cite>
     </blockquote> -->
   </div>

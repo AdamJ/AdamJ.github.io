@@ -1,12 +1,12 @@
 /* Base button styles */
 .btn {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: var(--space-sm, 0.75rem) var(--space-lg, 1.5rem);
   font-family: var(--font-family-sans);
-  font-size: 1rem;
+  font-size: var(--font-size-md, 1rem);
   font-weight: 600;
   text-decoration: none;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-md, 12px);
   transition: all 0.2s;
   cursor: pointer;
   border: none;
@@ -16,7 +16,7 @@
 .btn:focus {
   transform: translate(2px, 2px);
   box-shadow: 2px 2px 0 var(--earth-brown);
-  outline: 2px solid var(--earth-dark);
+  outline: var(--border-thin) solid var(--earth-dark);
   outline-offset: 2px;
 }
 
@@ -24,7 +24,7 @@
 .btn-primary {
   background: var(--accent-coral);
   color: var(--white);
-  border: var(--border-medium) solid var(--earth-brown);
+  border: var(--border-medium, 4px) solid var(--earth-brown);
   box-shadow: 4px 4px 0 var(--earth-brown);
 }
 
@@ -33,7 +33,7 @@
   background: var(--accent-coral-dark);
   transform: translate(2px, 2px);
   box-shadow: 2px 2px 0 var(--earth-brown);
-  outline: 2px solid var(--earth-dark);
+  outline: var(--border-thin) solid var(--earth-dark);
   outline-offset: 2px;
 }
 
@@ -41,7 +41,7 @@
 .btn-secondary {
   background: var(--earth-cream);
   color: var(--text-primary);
-  border: var(--border-medium) solid var(--earth-brown);
+  border: var(--border-medium, 4px) solid var(--earth-brown);
   box-shadow: 4px 4px 0 var(--earth-sage);
 }
 
@@ -51,7 +51,7 @@
   color: var(--text-primary);
   transform: translate(2px, 2px);
   box-shadow: 2px 2px 0 var(--earth-sage);
-  outline: 2px solid var(--earth-dark);
+  outline: var(--border-thin) solid var(--earth-dark);
   outline-offset: 2px;
 }
 
@@ -61,27 +61,26 @@
   backdrop-filter: blur(24px);
   filter: url(#lensFilter) saturate(120%) brightness(1.15);
   color: var(--text-primary) !important;
-  border: var(--border-medium) solid var(--earth-brown) !important;
+  border: var(--border-medium, 4px) solid var(--earth-brown) !important;
   box-shadow: none !important;
 }
 
 .btn-outline:hover,
 .btn-outline:focus {
-  background: var(--earth-brown);
   color: var(--earth-cream);
-  outline: 2px solid var(--earth-dark);
+  outline: var(--border-thin) solid var(--earth-dark);
   outline-offset: 2px;
 }
 
 /* Button sizes */
 .btn-sm {
-  padding: 0.5rem 1rem !important;
+  padding: var(--space-xs, 0.5rem) var(--space-md, 1rem) !important;
   font-size: 0.9rem !important;
   border-width: var(--border-thin) !important;
 }
 
 .btn-lg {
-  padding: 1rem 2rem !important;
+  padding: var(--space-md, 1rem) var(--space-xl, 2rem) !important;
   font-size: 1.1rem !important;
 }
 
@@ -91,11 +90,11 @@
   top: -100px;
   left: 0;
   background: var(--accent-coral);
-  color: white;
-  padding: 0.75rem 1.5rem;
+  color: var(--white);
+  padding: var(--space-sm, 0.75rem) var(--space-lg, 1.5rem);
   text-decoration: none;
   font-weight: 600;
-  border: 4px solid var(--earth-brown);
+  border: var(--border-medium, 4px) solid var(--earth-brown);
   z-index: 2000;
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
@@ -107,20 +106,6 @@
   clip: auto;
   overflow: visible;
 }
-.btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background: var(--accent-coral);
-  color: var(--white);
-  text-decoration: none;
-  border: 4px solid var(--earth-brown);
-  border-radius: 10px;
-  font-weight: 600;
-  box-shadow: 4px 4px 0 var(--earth-brown);
-  transition: all 0.2s;
-  font-size: 1rem;
-}
-
 
 .social-links {
   display: flex;
@@ -130,11 +115,11 @@
 
 .social-link {
   display: inline-block;
-  padding: 0.5rem 1rem;
+  padding: var(--space-xs, 0.5rem) var(--space-md, 1rem);
   background: var(--earth-sage);
   color: var(--earth-cream);
-  text-decoration: none;
-  border: 3px solid var(--earth-sand);
+  text-decoration: none !important;
+  border: var(--border-medium, 4px) solid var(--earth-sand);
   border-radius: 8px;
   font-weight: 500;
   transition: all 0.3s;
@@ -145,7 +130,7 @@
 .social-link:focus {
   background: var(--accent-coral);
   transform: translateY(-2px);
-  outline: 2px solid var(--earth-cream);
+  outline: var(--border-thin, 2px) solid var(--earth-cream);
   outline-offset: 2px;
   color: var(--white) !important;
 }

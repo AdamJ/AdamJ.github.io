@@ -1,0 +1,9 @@
+ul,
+ol,
+.card-body ul,
+.card-body ol,
+ul.list, ol.list {
+  margin-left: var(--space-lg) !important;
+  padding-left: var(--space-md) !important;
+}
+

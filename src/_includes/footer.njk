@@ -12,8 +12,9 @@
     <div class="footer-section">
       <h3>Resources</h3>
       <div class="social-links">
-        <a href="https://www.github.com/AdamJ/resume" class="social-link" aria-label="Download resume as PDF">Resume</a>
-        <a href="{{ '/presentations' | url }}" class="social-link">Presentations</a>
+        <a href="{{ '/about' | url }}" class="social-link" aria-label="Link to an about page">About</a>
+        <a href="{{ '/resume' | url }}" class="social-link" aria-label="View my resume">Resume</a>
+        <a href="{{ '/presentations' | url }}" class="social-link" aria-label="View prior presentations">Presentations</a>
       </div>
     </div>
     <div class="footer-section">
@@ -22,11 +23,11 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p>Copyright &copy; 2008-{% year %} {{ meta.authorName }}. All rights reserved. Designed & developed with ❤️</p>
+    <p>Copyright &copy; 2008-{% year %} <a href="{{ '/about' | url }}" alt="Link to an about page">{{ meta.authorName }}</a>. All rights reserved. Designed & developed with <i class="fa-solid fa-brain"></i></p>
     <a href="{{ '/sitemap.xml' | url }}" alt="Link to the sitemap">
       Sitemap
     </a>
-    <span class="small text-secondary px-2">&#9830;</span>
+    <span class="small text-secondary px-2"><i class="fa-solid fa-diamond text-accent"></i></span>
     <a href="{{ '/credits' | url }}" alt="Link to credits page">
       Credits
     </a>

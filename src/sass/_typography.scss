@@ -170,13 +170,17 @@ p:last-child, .text-body:last-child {
   margin-bottom: 0;
 }
 
+.card-body p:first-of-type, .card-body .text-body:first-of-type {
+  margin-top: var(--space-md, 16px);
+}
+
 .text-body-sm {
   font-size: clamp(0.85rem, 1.2vw, 0.9rem);
   line-height: 1.6;
 }
 
 .text-caption {
-  font-size: clamp(0.75rem, 1vw, 0.85rem);
+  font-size: clamp(var(--space-sm), 1vw, 0.85rem);
   line-height: 1.5;
   color: var(--text-muted);
 }
@@ -187,6 +191,15 @@ code, .code {
   padding: 0.1rem 0.3rem;
   border-radius: var(--radius-sm);
   font-size: clamp(0.85rem, 1vw, 0.9rem);
+}
+.code-block {
+  display: block;
+  background: var(--earth-sand);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  font-size: clamp(0.85rem, 1vw, 0.9rem);
+  overflow-x: auto;
+  border: var(--border-thin) solid var(--earth-sage);
 }
 
 /* Text utilities */
