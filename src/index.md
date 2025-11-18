@@ -112,32 +112,6 @@ layout: base.njk
       </div>
       <div class="card-simple">
         <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-          <span style="font-size: 1.5rem;">🚀</span>
-          Tools and Utilities
-        </h4>
-        <p class="text-body-sm" style="margin-bottom: 0.75rem;">
-          Developed and maintained several open source developer tools that enhance productivity and streamline workflows for both designers and software engineers.
-        </p>
-        <span class="badge">Tooling</span>
-        <span class="badge">DX</span>
-        <div class="row button-row">
-          <a href="" alt="Link to my contributions to the CAS Storybook" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer" style="margin-top: 0.5rem;">Figma Plugins</a>
-        </div>
-      </div>
-      <div class="card-simple">
-        <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-          <span style="font-size: 1.5rem;">📚</span>
-          Documentation
-        </h4>
-        <p class="text-body-sm" style="margin-bottom: 0.75rem;">Regular contributor to open source documentation, helping make complex technical concepts more accessible to developers.</p>
-        <span class="badge">Documentation</span>
-        <span class="badge">Community</span>
-        <div class="row button-row">
-          <a href="https://6903b2381f768ce7c6da402a-jdnoovaaei.chromatic.com/?path=/docs/introduction--docs" alt="Link to my contributions to the CAS Storybook" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer" style="margin-top: 0.5rem;">CAS Storybook</a>
-        </div>
-      </div>
-      <div class="card-simple">
-        <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
           <span style="font-size: 1.5rem;">🔧</span>
           PatternFly
         </h4>
@@ -148,6 +122,32 @@ layout: base.njk
           <a href="https://github.com/patternfly/patternfly/commits/main/?author=AdamJ" alt="Link to my contributions to the PatternFly Core project" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer" style="margin-top: 0.5rem;">PatternFly Core</a>
           <a href="https://github.com/patternfly/patternfly-org/commits/main/?author=AdamJ" alt="Link to my contributions to the PatternFly.org project" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer" style="margin-top: 0.5rem;">PatternFly.org</a>
         </div>
+      </div>
+      <div class="card-simple">
+        <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+          <span style="font-size: 1.5rem;">🚀</span>
+          Tools and Utilities
+        </h4>
+        <p class="text-body-sm" style="margin-bottom: 0.75rem;">
+          Developed and maintained several open source developer tools that enhance productivity and streamline workflows for both designers and software engineers.
+        </p>
+        <span class="badge">Tooling</span>
+        <span class="badge">DX</span>
+        <!-- <div class="row button-row">
+          <a href="" alt="Link to my contributions to the CAS Storybook" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer" style="margin-top: 0.5rem;">Figma Plugins</a>
+        </div> -->
+      </div>
+      <div class="card-simple">
+        <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+          <span style="font-size: 1.5rem;">📚</span>
+          Documentation
+        </h4>
+        <p class="text-body-sm" style="margin-bottom: 0.75rem;">Regular contributor to open source documentation, helping make complex technical concepts more accessible to developers.</p>
+        <span class="badge">Documentation</span>
+        <span class="badge">Community</span>
+        <!-- <div class="row button-row">
+          <a href="https://6903b2381f768ce7c6da402a-jdnoovaaei.chromatic.com/?path=/docs/introduction--docs" alt="Link to my contributions to the CAS Storybook" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer" style="margin-top: 0.5rem;">CAS Storybook</a>
+        </div> -->
       </div>
     </div>
     <div class="text-center mt-4">

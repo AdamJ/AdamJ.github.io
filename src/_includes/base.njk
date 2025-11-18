@@ -55,27 +55,47 @@
       <nav role="navigation" aria-label="Main navigation" class="main-nav" style="bottom: 0 !important;">
         <ul>
           <li>
-            <a href="#about" class="d-flex flex-column align-items-center" alt="Link to about section">
+            <a href="#about" alt="Jump to about section">
               {# <i class="fa-solid fa-address-card fa-lg"></i> #}
               About
             </a>
           </li>
           <li>
-            <a href="#work" class="d-flex flex-column align-items-center" alt="Link to work section">
-              {# <i class="fa-solid fa-briefcase fa-lg"></i> #}
+            <a href="#work" alt="Jump to work section">
               Featured
             </a>
           </li>
           <li>
-            <a href="#testimonials" class="d-flex flex-column align-items-center" alt="Link to testimonials section">
-              {# <i class="fa-solid fa-comments fa-lg"></i> #}
+            <a href="#testimonials" alt="Jump to testimonials section">
               Comments
             </a>
           </li>
           <li>
-            <a href="#opensource" class="d-flex flex-column align-items-center" alt="Link to open source section">
-              {# <i class="fa-brands fa-git-alt fa-lg"></i> #}
+            <a href="#opensource" alt="Jump to open source section">
               OSS
+            </a>
+          </li>
+        </ul>
+      </nav>
+    {% elseif 'presentations' in page.url %}
+      <nav role="navigation" aria-label="Main navigation" class="main-nav">
+        <ul>
+          <li>
+            <a href="{{ '/' | url }}" alt="Link to home page">
+              Home
+            </a>
+          </li>
+          <li>
+            <divider class="vertical"></divider>
+          </li>
+          <li>
+            <a href="{{ '/presentations/portfolio' | url }}" {% if 'portfolio' in page.url %}class="active"{% endif %} alt="Link to the portfolio presentation page">
+              Portfolio
+            </a>
+          </li>
+          <li>
+            <a href="{{ '/presentations/color-picker' | url }}" {% if 'color-picker' in page.url %}class="active"{% endif %} alt="Link to the color picker presentation page">
+              Color Picker
             </a>
           </li>
         </ul>

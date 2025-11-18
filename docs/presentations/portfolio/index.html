@@ -59,120 +59,325 @@
             <divider class="vertical"></divider>
           </li>
           <li>
-            <a href="/designs/task-it"  alt="Link to Task It case study">
-              Task-It!
+            <a href="/presentations/portfolio" class="active" alt="Link to the portfolio presentation page">
+              Portfolio
             </a>
           </li>
-          <li><a href="/designs/alm"  alt="Link to ALM case study">ALM</a></li>
+          <li>
+            <a href="/presentations/color-picker"  alt="Link to the color picker presentation page">
+              Color Picker
+            </a>
+          </li>
         </ul>
       </nav>
     
     
     <main id="main-content">
       
-<div class="container my-3">
-  <wa-button href="/designs/" pill>
-    <wa-icon slot="start" family="duotone" variant="regular" name="arrow-left-short"></wa-icon>
-    Back
-  </wa-button>
-</div>
+<section class="hero mb-1 pb-1">
+  <h1>Portfolio</h1>
+</section>
 
-<div class="container mb-3">
-  <sl-carousel pagination navigation mouse-dragging loop style="--aspect-ratio: 3/2;">
-    <sl-carousel-item>
-      <img
-        alt=""
-        src="/assets/img/portfolio0.webp"
-      />
-    </sl-carousel-item>
-    <sl-carousel-item>
-      <img
-        alt=""
-        src="/assets/img/portfolio1.webp"
-      />
-    </sl-carousel-item>
-    <sl-carousel-item>
-      <img
-        alt=""
-        src="/assets/img/portfolio2-5.webp"
-      />
-    </sl-carousel-item>
-    <sl-carousel-item>
-      <img
-        alt=""
-        src="/assets/img/portfolio2.webp"
-      />
-    </sl-carousel-item>
-    <sl-carousel-item>
-      <img
-        alt=""
-        src="/assets/img/portfolio3.webp"
-      />
-    </sl-carousel-item>
-    <sl-carousel-item>
-      <img
-        alt=""
-        src="/assets/img/portfolio4.webp"
-      />
-    </sl-carousel-item>
-    <sl-carousel-item>
-      <img
-        alt=""
-        src="/assets/img/portfolio5.webp"
-      />
-    </sl-carousel-item>
-    <sl-carousel-item>
-      <img
-        alt=""
-        src="/assets/img/portfolio6.webp"
-      />
-    </sl-carousel-item>
-    <sl-carousel-item>
-      <img
-        alt=""
-        src="/assets/img/portfolio7.webp"
-      />
-    </sl-carousel-item>
-    <sl-carousel-item>
-      <img
-        alt=""
-        src="/assets/img/portfolio8.webp"
-      />
-    </sl-carousel-item>
-    <sl-carousel-item>
-      <img
-        alt=""
-        src="/assets/img/portfolio10.webp"
-      />
-    </sl-carousel-item>
-    <sl-carousel-item>
-      <img
-        alt=""
-        src="/assets/img/portfolio11.webp"
-      />
-    </sl-carousel-item>
-    <sl-carousel-item>
-      <img
-        alt=""
-        src="/assets/img/portfolio12.webp"
-      />
-    </sl-carousel-item>
-    <sl-carousel-item>
-      <img
-        alt=""
-        src="/assets/img/portfolio13.webp"
-      />
-    </sl-carousel-item>
-    <sl-carousel-item>
-      <img
-        alt=""
-        src="/assets/img/portfolio14.webp"
-      />
-    </sl-carousel-item>
-  </sl-carousel>
-</div>
+<section>
+  <div class="carousel-container">
+    <div class="carousel">
+      <input type="radio" name="slides" checked="checked" id="slide-1">
+      <input type="radio" name="slides" id="slide-2">
+      <input type="radio" name="slides" id="slide-3">
+      <input type="radio" name="slides" id="slide-4">
+      <input type="radio" name="slides" id="slide-5">
+      <input type="radio" name="slides" id="slide-6">
+      <input type="radio" name="slides" id="slide-7">
+      <input type="radio" name="slides" id="slide-8">
+      <input type="radio" name="slides" id="slide-9">
+      <input type="radio" name="slides" id="slide-10">
+      <input type="radio" name="slides" id="slide-11">
+      <input type="radio" name="slides" id="slide-12">
+      <input type="radio" name="slides" id="slide-13">
+      <ul class="carousel__slides">
+        <li class="carousel__slide">
+          <figure>
+            <div>
+              <source media="(width < 600px)" srcset="/assets/img/portfolio1.webp" />
+              <source media="(width >= 800px)" srcset="/assets/img/portfolio1.webp" />
+              <img
+                srcset="/assets/img/portfolio1.webp 600w, /assets/img/portfolio1.webp 800w"
+                sizes="(width <= 800px) 600px, 800px"
+                src="/assets/img/portfolio1.webp"
+                style="width: 100%;"
+                alt="Adam's background and experience"
+              />
+            </div>
+            <figcaption>
+              <span class="credit">Adam's background and experience</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="carousel__slide">
+          <figure>
+            <div>
+              <source media="(width < 600px)" srcset="/assets/img/portfolio2-5.webp" />
+              <source media="(width >= 800px)" srcset="/assets/img/portfolio2-5.webp" />
+              <img
+                srcset="/assets/img/portfolio2-5.webp 600w, /assets/img/portfolio2-5.webp 800w"
+                sizes="(width <= 800px) 600px, 800px"
+                src="/assets/img/portfolio2-5.webp"
+                style="width: 100%;"
+                alt="Today's presentation - Task-It!"
+              />
+            </div>
+            <figcaption>
+              <span class="">Today's presentation - Task-It!</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="carousel__slide">
+          <figure>
+            <div>
+              <source media="(width < 600px)" srcset="/assets/img/portfolio2.webp" />
+              <source media="(width >= 800px)" srcset="/assets/img/portfolio2.webp" />
+              <img
+                srcset="/assets/img/portfolio2.webp 600w, /assets/img/portfolio2.webp 800w"
+                sizes="(width <= 800px) 600px, 800px"
+                src="/assets/img/portfolio2.webp"
+                style="width: 100%;"
+                alt="Product designs across my portfolio"
+              />
+            </div>
+            <figcaption>
+              <span class="">Product designs across my portfolio</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="carousel__slide">
+          <figure>
+            <div>
+              <source media="(width < 600px)" srcset="/assets/img/portfolio3.webp" />
+              <source media="(width >= 800px)" srcset="/assets/img/portfolio3.webp" />
+              <img
+                srcset="/assets/img/portfolio3.webp 600w, /assets/img/portfolio3.webp 800w"
+                sizes="(width <= 800px) 600px, 800px"
+                src="/assets/img/portfolio3.webp"
+                style="width: 100%;"
+                alt="Task-It problem space and constraints"
+              />
+            </div>
+            <figcaption>
+              <span class="">Task-It problem space and constraints</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="carousel__slide">
+          <figure>
+            <div>
+              <source media="(width < 600px)" srcset="/assets/img/portfolio4.webp" />
+              <source media="(width >= 800px)" srcset="/assets/img/portfolio4.webp" />
+              <img
+                srcset="/assets/img/portfolio4.webp 600w, /assets/img/portfolio4.webp 800w"
+                sizes="(width <= 800px) 600px, 800px"
+                src="/assets/img/portfolio4.webp"
+                style="width: 100%;"
+                alt="Design process around Task-It"
+              />
+            </div>
+            <figcaption>
+              <span class="">Design process around Task-It</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="carousel__slide">
+          <figure>
+            <div>
+              <source media="(width < 600px)" srcset="/assets/img/portfolio5.webp" />
+              <source media="(width >= 800px)" srcset="/assets/img/portfolio5.webp" />
+              <img
+                srcset="/assets/img/portfolio5.webp 600w, /assets/img/portfolio5.webp 800w"
+                sizes="(width <= 800px) 600px, 800px"
+                src="/assets/img/portfolio5.webp"
+                style="width: 100%;"
+                alt="Timeline to design Task-It"
+              />
+            </div>
+            <figcaption>
+              <span class="">Timeline to design Task-It</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="carousel__slide">
+          <figure>
+            <div>
+              <source media="(width < 600px)" srcset="/assets/img/portfolio6.webp" />
+              <source media="(width >= 800px)" srcset="/assets/img/portfolio6.webp" />
+              <img
+                srcset="/assets/img/portfolio6.webp 600w, /assets/img/portfolio6.webp 800w"
+                sizes="(width <= 800px) 600px, 800px"
+                src="/assets/img/portfolio6.webp"
+                style="width: 100%;"
+                alt="Target audience of Task-It"
+              />
+            </div>
+            <figcaption>
+              <span class="">Target audience of Task-It</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="carousel__slide">
+          <figure>
+            <div>
+              <source media="(width < 600px)" srcset="/assets/img/portfolio7.webp" />
+              <source media="(width >= 800px)" srcset="/assets/img/portfolio7.webp" />
+              <img
+                srcset="/assets/img/portfolio7.webp 600w, /assets/img/portfolio7.webp 800w"
+                sizes="(width <= 800px) 600px, 800px"
+                src="/assets/img/portfolio7.webp"
+                style="width: 100%;"
+                alt="Competitive analysis across the product space"
+              />
+            </div>
+            <figcaption>
+              <span class="">Competitive analysis across the product space</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="carousel__slide">
+          <figure>
+            <div>
+              <source media="(width < 600px)" srcset="/assets/img/portfolio10.webp" />
+              <source media="(width >= 800px)" srcset="/assets/img/portfolio10.webp" />
+              <img
+                srcset="/assets/img/portfolio10.webp 600w, /assets/img/portfolio10.webp 800w"
+                sizes="(width <= 800px) 600px, 800px"
+                src="/assets/img/portfolio10.webp"
+                style="width: 100%;"
+                alt="Getting started with wireframes and mockups"
+              />
+            </div>
+            <figcaption>
+              <span class="">Getting started with wireframes and mockups</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="carousel__slide">
+          <figure>
+            <div>
+              <source media="(width < 600px)" srcset="/assets/img/portfolio11.webp" />
+              <source media="(width >= 800px)" srcset="/assets/img/portfolio11.webp" />
+              <img
+                srcset="/assets/img/portfolio11.webp 600w, /assets/img/portfolio11.webp 800w"
+                sizes="(width <= 800px) 600px, 800px"
+                src="/assets/img/portfolio11.webp"
+                style="width: 100%;"
+                alt="Vertification of ideas and releases"
+              />
+            </div>
+            <figcaption>
+              <span class="">Vertification of ideas and releases</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="carousel__slide">
+          <figure>
+            <div>
+              <source media="(width < 600px)" srcset="/assets/img/portfolio12.webp" />
+              <source media="(width >= 800px)" srcset="/assets/img/portfolio12.webp" />
+              <img
+                srcset="/assets/img/portfolio12.webp 600w, /assets/img/portfolio12.webp 800w"
+                sizes="(width <= 800px) 600px, 800px"
+                src="/assets/img/portfolio12.webp"
+                style="width: 100%;"
+                alt="Reviewing findings from the design process"
+              />
+            </div>
+            <figcaption>
+              <span class="">Reviewing findings from the design process</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="carousel__slide">
+          <figure>
+            <div>
+              <source media="(width < 600px)" srcset="/assets/img/portfolio13.webp" />
+              <source media="(width >= 800px)" srcset="/assets/img/portfolio13.webp" />
+              <img
+                srcset="/assets/img/portfolio13.webp 600w, /assets/img/portfolio13.webp 800w"
+                sizes="(width <= 800px) 600px, 800px"
+                src="/assets/img/portfolio13.webp"
+                style="width: 100%;"
+                alt="Conclusion summary"
+              />
+            </div>
+            <figcaption>
+              <span class="">Conclusion summary</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="carousel__slide">
+          <figure>
+            <div>
+              <source media="(width < 600px)" srcset="/assets/img/portfolio14.webp" />
+              <source media="(width >= 800px)" srcset="/assets/img/portfolio14.webp" />
+              <img
+                srcset="/assets/img/portfolio14.webp 600w, /assets/img/portfolio14.webp 800w"
+                sizes="(width <= 800px) 600px, 800px"
+                src="/assets/img/portfolio14.webp"
+                style="width: 100%;"
+                alt="Pause for any questions"
+              />
+            </div>
+            <figcaption>
+              <span class="">Pause for any questions</span>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+      <ul class="carousel__thumbnails">
+        <li>
+          <label for="slide-1"><img src="/assets/img/portfolio1.webp" alt="Adam's background and experience"></label>
+        </li>
+        <li>
+          <label for="slide-2"><img src="/assets/img/portfolio2-5.webp" alt="Today's presentation - Task-It!"></label>
+        </li>
+        <li>
+          <label for="slide-3"><img src="/assets/img/portfolio2.webp" alt="Product designs across my portfolio"></label>
+        </li>
+        <li>
+          <label for="slide-4"><img src="/assets/img/portfolio3.webp" alt="Task-It problem space and constraints"></label>
+        </li>
+        <li>
+          <label for="slide-5"><img src="/assets/img/portfolio4.webp" alt="Design process around Task-It"></label>
+        </li>
+        <li>
+          <label for="slide-6"><img src="/assets/img/portfolio5.webp" alt="Timeline to design Task-It"></label>
+        </li>
+        <li>
+          <label for="slide-7"><img src="/assets/img/portfolio6.webp" alt="Target audience of Task-It"></label>
+        </li>
+        <li>
+          <label for="slide-8"><img src="/assets/img/portfolio7.webp" alt="Competitive analysis across the product space"></label>
+        </li>
+        <li>
+          <label for="slide-9"><img src="/assets/img/portfolio10.webp" alt="Getting started with wireframes and mockups"></label>
+        </li>
+        <li>
+          <label for="slide-10"><img src="/assets/img/portfolio11.webp" alt="Vertification of ideas and releases"></label>
+        </li>
+        <li>
+          <label for="slide-11"><img src="/assets/img/portfolio12.webp" alt="Reviewing findings from the design process"></label>
+        </li>
+        <li>
+          <label for="slide-12"><img src="/assets/img/portfolio13.webp" alt="Conclusion summary"></label>
+        </li>
+        <li>
+          <label for="slide-13"><img src="/assets/img/portfolio14.webp" alt="Pause for any questions"></label>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 
+<!-- Carousel pen by Siiron -->
+<!-- https://codepen.io/siiron/pen/QWwLoMy -->
 
     </main>
     <footer id="contact">
@@ -189,8 +394,8 @@
     <div class="footer-section">
       <h3>Resources</h3>
       <div class="social-links">
-        <a href="/about" class="social-link" aria-label="Link to an about page">About</a>
-        <a href="/resume" class="social-link" aria-label="View my resume">Resume</a>
+        <a href="/about/adam" class="social-link" aria-label="Link to an about page">About</a>
+        <a href="/about/resume" class="social-link" aria-label="View my resume">Resume</a>
         <a href="/presentations" class="social-link" aria-label="View prior presentations">Presentations</a>
       </div>
     </div>

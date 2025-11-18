@@ -59,66 +59,171 @@
             <divider class="vertical"></divider>
           </li>
           <li>
-            <a href="/designs/task-it"  alt="Link to Task It case study">
-              Task-It!
+            <a href="/presentations/portfolio"  alt="Link to the portfolio presentation page">
+              Portfolio
             </a>
           </li>
-          <li><a href="/designs/alm"  alt="Link to ALM case study">ALM</a></li>
+          <li>
+            <a href="/presentations/color-picker" class="active" alt="Link to the color picker presentation page">
+              Color Picker
+            </a>
+          </li>
         </ul>
       </nav>
     
     
     <main id="main-content">
       
-<div class="container my-3">
-  <wa-button href="/designs/" pill>
-    <wa-icon slot="start" family="duotone" variant="regular" name="arrow-left-short"></wa-icon>
-    Back
-  </wa-button>
-</div>
+<section class="hero mb-1 pb-1">
+  <h1>Color Picker</h1>
+</section>
 
-<div class="container mb-3">
-  <sl-carousel pagination navigation mouse-dragging loop style="--aspect-ratio: 3/2;">
-    <sl-carousel-item>
-      <img
-        alt="Introduction slide"
-        src="/assets/img/colorPicker0.webp"
-      />
-    </sl-carousel-item>
-    <sl-carousel-item>
-      <img
-        alt="Slide 2"
-        src="/assets/img/colorPicker1.webp"
-      />
-    </sl-carousel-item>
-    <sl-carousel-item>
-      <img
-        alt="Slide 3"
-        src="/assets/img/colorPicker2.webp"
-      />
-    </sl-carousel-item>
-    <sl-carousel-item>
-      <img
-        alt="Slide 4"
-        src="/assets/img/colorPicker3.webp"
-      />
-    </sl-carousel-item>
-    <sl-carousel-item>
-      <img
-        alt="Slide 5"
-        src="/assets/img/colorPicker4.webp"
-      />
-    </sl-carousel-item>
-    <sl-carousel-item>
-      <img
-        alt="Slide 6"
-        src="/assets/img/colorPicker5.webp"
-      />
-    </sl-carousel-item>
-  </sl-carousel>
-</div>
+<section>
+  <div class="carousel-container">
+    <div class="carousel">
+      <input type="radio" name="slides" checked="checked" id="slide-1">
+      <input type="radio" name="slides" id="slide-2">
+      <input type="radio" name="slides" id="slide-3">
+      <input type="radio" name="slides" id="slide-4">
+      <input type="radio" name="slides" id="slide-5">
+      <input type="radio" name="slides" id="slide-6">
+      <ul class="carousel__slides">
+        <li class="carousel__slide">
+          <figure>
+            <div>
+              <source media="(width < 600px)" srcset="/assets/img/colorPicker0-thumb.webp" />
+              <source media="(width >= 800px)" srcset="/assets/img/colorPicker0.webp" />
+              <img
+                srcset="/assets/img/colorPicker0-thumb.webp 600w, /assets/img/colorPicker0.webp 800w"
+                sizes="(width <= 800px) 600px, 800px"
+                src="/assets/img/colorPicker0.webp"
+                style="width: 100%;"
+                alt="Introduction to the color picker"
+              />
+            </div>
+            <figcaption>
+              <span class="credit">Introduction to the color picker</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="carousel__slide">
+          <figure>
+            <div>
+              <source media="(width < 600px)" srcset="/assets/img/colorPicker1-thumb.webp" />
+              <source media="(width >= 800px)" srcset="/assets/img/colorPicker1.webp" />
+              <img
+                srcset="/assets/img/colorPicker1-thumb.webp 600w, /assets/img/colorPicker1.webp 800w"
+                sizes="(width <= 800px) 600px, 800px"
+                src="/assets/img/colorPicker1.webp"
+                style="width: 100%;"
+                alt="Color picker feature request"
+              />
+            </div>
+            <figcaption>
+              <span class="">Color picker feature request</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="carousel__slide">
+          <figure>
+            <div>
+              <source media="(width < 600px)" srcset="/assets/img/colorPicker2-thumb.webp" />
+              <source media="(width >= 800px)" srcset="/assets/img/colorPicker2.webp" />
+              <img
+                srcset="/assets/img/colorPicker2-thumb.webp 600w, /assets/img/colorPicker2.webp 800w"
+                sizes="(width <= 800px) 600px, 800px"
+                src="/assets/img/colorPicker2.webp"
+                style="width: 100%;"
+                alt="Getting started with the color picker"
+              />
+            </div>
+            <figcaption>
+              <span class="">Getting started with the color picker</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="carousel__slide">
+          <figure>
+            <div>
+              <source media="(width < 600px)" srcset="/assets/img/colorPicker3-thumb.webp" />
+              <source media="(width >= 800px)" srcset="/assets/img/colorPicker3.webp" />
+              <img
+                srcset="/assets/img/colorPicker3-thumb.webp 600w, /assets/img/colorPicker3.webp 800w"
+                sizes="(width <= 800px) 600px, 800px"
+                src="/assets/img/colorPicker3.webp"
+                style="width: 100%;"
+                alt="Next steps after color selection"
+              />
+            </div>
+            <figcaption>
+              <span class="">Next steps after color selection</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="carousel__slide">
+          <figure>
+            <div>
+              <source media="(width < 600px)" srcset="/assets/img/colorPicker4-thumb.webp" />
+              <source media="(width >= 800px)" srcset="/assets/img/colorPicker4.webp" />
+              <img
+                srcset="/assets/img/colorPicker4-thumb.webp 600w, /assets/img/colorPicker4.webp 800w"
+                sizes="(width <= 800px) 600px, 800px"
+                src="/assets/img/colorPicker4.webp"
+                style="width: 100%;"
+                alt="Comparisons and testing"
+              />
+            </div>
+            <figcaption>
+              <span class="">Comparisons and testing</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="carousel__slide">
+          <figure>
+            <div>
+              <source media="(width < 600px)" srcset="/assets/img/colorPicker5-thumb.webp" />
+              <source media="(width >= 800px)" srcset="/assets/img/colorPicker5.webp" />
+              <img
+                srcset="/assets/img/colorPicker5-thumb.webp 600w, /assets/img/colorPicker5.webp 800w"
+                sizes="(width <= 800px) 600px, 800px"
+                src="/assets/img/colorPicker5.webp"
+                style="width: 100%;"
+                alt="Findings of the component examination"
+              />
+            </div>
+            <figcaption>
+              <span class="">Findings of the component examination</span>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+      <ul class="carousel__thumbnails">
+        <li>
+          <label for="slide-1"><img src="/assets/img/colorPicker0-thumb.webp" alt="Introduction to the color picker"></label>
+        </li>
+        <li>
+          <label for="slide-2"><img src="/assets/img/colorPicker1-thumb.webp" alt="Color picker feature request"></label>
+        </li>
+        <li>
+          <label for="slide-3"><img src="/assets/img/colorPicker2-thumb.webp" alt="Getting started with the color picker"></label>
+        </li>
+        <li>
+          <label for="slide-4"><img src="/assets/img/colorPicker3-thumb.webp" alt="Next steps after color selection"></label>
+        </li>
+        <li>
+          <label for="slide-5"><img src="/assets/img/colorPicker4-thumb.webp" alt="Comparisons and testing"></label>
+        </li>
+        <li>
+          <label for="slide-6"><img src="/assets/img/colorPicker5-thumb.webp" alt="Findings of the component examination"></label>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 
+<!-- Carousel pen by Siiron -->
+<!-- https://codepen.io/siiron/pen/QWwLoMy -->
 
     </main>
     <footer id="contact">
@@ -135,8 +240,8 @@
     <div class="footer-section">
       <h3>Resources</h3>
       <div class="social-links">
-        <a href="/about" class="social-link" aria-label="Link to an about page">About</a>
-        <a href="/resume" class="social-link" aria-label="View my resume">Resume</a>
+        <a href="/about/adam" class="social-link" aria-label="Link to an about page">About</a>
+        <a href="/about/resume" class="social-link" aria-label="View my resume">Resume</a>
         <a href="/presentations" class="social-link" aria-label="View prior presentations">Presentations</a>
       </div>
     </div>

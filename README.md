@@ -31,3 +31,6 @@ I decided to build my own portfolio site on GitHub, rather than on a less code-o
 - [Eleventy Documentation](https://www.11ty.dev/docs/)
 - [11ty Recipes](https://11ty.recipes/)
 - [The 11ty Bundle](https://11tybundle.dev/)
+
+**Carousel pen by Siiron**
+- [https://codepen.io/siiron/pen/QWwLoMy](https://codepen.io/siiron/pen/QWwLoMy)
