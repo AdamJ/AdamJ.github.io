@@ -59,11 +59,20 @@
             <divider class="vertical"></divider>
           </li>
           <li>
-            <a href="/designs/task-it"  alt="Link to Task It case study">
-              Task-It!
+            <a href="/about/adam"  alt="Link to the about page">
+              About
             </a>
           </li>
-          <li><a href="/designs/alm"  alt="Link to ALM case study">ALM</a></li>
+          <li>
+            <a href="/about/resume"  alt="Link to the resume">
+              Resume
+            </a>
+          </li>
+          <li>
+            <a href="/credits" class="active" alt="Link to the resume">
+              Credits
+            </a>
+          </li>
         </ul>
       </nav>
     
@@ -78,43 +87,29 @@
     
   </p></section>
 
+
+  <section>
+    <blockquote>
 <p>Giving credit where credit is due, this page is based off of the <a href="https://raw.githubusercontent.com/LeaVerou/lea.verou.me/refs/heads/main/credits/index.md">Credits</a> page from <a href="https://lea.verou.me/">Lea Verou</a>.</p>
+</blockquote>
 <hr>
+<blockquote>
 <p>This site was built using <a href="https://www.11ty.dev/">Eleventy</a>, hosted on <a href="https://cloudflare.com/">Cloudflare Pages</a>, with previews deployed with <a href="https://www.cloudflare.com/">Cloudflare</a>. Certificate courtesy of Cloudflare and <a href="https://letsencrypt.org/">Let’s Encrypt</a>.</p>
+</blockquote>
 <h2 id="libraries" tabindex="-1">Libraries <a class="anchor-link" href="#libraries">#</a></h2>
 <ul>
 <li><a href="https://www.11ty.dev/">Eleventy</a></li>
-<li><a href="https://shoelace.style/">Shoelace</a></li>
-<li><a href="https://getbootstrap.com/">Bootstrap</a></li>
 </ul>
 <h2 id="fonts" tabindex="-1">Fonts <a class="anchor-link" href="#fonts">#</a></h2>
 <pre class="language-css"><code class="hljs language-css">  <span class="token selector">:root</span> <span class="token punctuation">{</span>
-    <span class="token property">--sl-font-sans</span><span class="token punctuation">:</span> <span class="token string">"Oswald"</span><span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
-    <span class="token property">--sl-font-mono</span><span class="token punctuation">:</span> <span class="token string">"Fira Mono"</span><span class="token punctuation">,</span> monospace<span class="token punctuation">;</span>
-    <span class="token property">--sl-font-serif</span><span class="token punctuation">:</span> <span class="token string">"Lato"</span><span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
-    <span class="token property">--bs-font-sans-serif</span><span class="token punctuation">:</span> <span class="token string">"Lato"</span><span class="token punctuation">,</span> serif<span class="token punctuation">;</span>
+    <span class="token property">--font-family-sans</span><span class="token punctuation">:</span> <span class="token string">'Inter'</span><span class="token punctuation">,</span> system-ui<span class="token punctuation">,</span> -apple-system<span class="token punctuation">,</span> BlinkMacSystemFont<span class="token punctuation">,</span> <span class="token string">'Segoe UI'</span><span class="token punctuation">,</span> Roboto<span class="token punctuation">,</span> <span class="token string">'Helvetica Neue'</span><span class="token punctuation">,</span> Arial<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
+    <span class="token property">--font-family-serif</span><span class="token punctuation">:</span> <span class="token string">'Playfair Display'</span><span class="token punctuation">,</span> serif<span class="token punctuation">;</span>
+    <span class="token property">--font-family-mono</span><span class="token punctuation">:</span> <span class="token string">'Fira Code'</span><span class="token punctuation">,</span> <span class="token string">'Courier New'</span><span class="token punctuation">,</span> Courier<span class="token punctuation">,</span> monospace<span class="token punctuation">;</span>
+    <span class="token property">--font-family-heading</span><span class="token punctuation">:</span> <span class="token string">'Pirata One'</span><span class="token punctuation">,</span> cursive<span class="token punctuation">;</span>
   <span class="token punctuation">}</span></code></pre>
-<ul>
-<li><a href="https://fonts.google.com/specimen/Oswald">Oswald</a>
-<ul>
-<li>Headers, specified through general <code>&lt;H&gt;</code> tags and CSS classes</li>
-</ul>
-</li>
-<li><a href="https://fonts.google.com/specimen/Lato">Lato</a>
-<ul>
-<li>Paragraphs, specified through general <code>&lt;p&gt;</code> tags and CSS classes</li>
-</ul>
-</li>
-<li><a href="https://fonts.google.com/specimen/Fira+Mono">Fira Mono</a>
-<ul>
-<li>Code blocks, specified through general <code>&lt;code&gt;</code> tags and CSS classes</li>
-</ul>
-</li>
-</ul>
 <h2 id="icons" tabindex="-1">Icons <a class="anchor-link" href="#icons">#</a></h2>
 <p>A custom icon component (<a href="https://github.com/AdamJ/adamjolicoeur.com/blob/main/src/js/icon-component.js">icon-component.js</a>) is used to render icons as web components with <a href="https://fontawesome.com/">Font Awesome</a> as the preferred icon library.</p>
-<pre><code class="hljs">  &lt;fa-icon type=&quot;brands&quot; name=&quot;github&quot; size=&quot;md&quot;&gt;&lt;/fa-icon&gt;
-</code></pre>
+<pre class="language-html"><code class="hljs language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>fa-icon</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>brands<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>github<span class="token punctuation">"</span></span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>md<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>fa-icon</span><span class="token punctuation">></span></span></code></pre>
 <h2 id="plugins" tabindex="-1">Plugins <a class="anchor-link" href="#plugins">#</a></h2>
 <ul>
 <li><a href="https://github.com/11ty/eleventy-plugin-inclusive-language">eleventy-plugin-inclusive-language</a> to check for inclusive language</li>
@@ -149,6 +144,8 @@
 </ul>
 </li>
 </ul>
+
+  </section>
 
 
     </main>

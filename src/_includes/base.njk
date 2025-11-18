@@ -100,7 +100,7 @@
           </li>
         </ul>
       </nav>
-    {% elseif 'about' in page.url %}
+    {% elseif 'credits' in page.url %}
       <nav role="navigation" aria-label="Main navigation" class="main-nav">
         <ul>
           <li>
@@ -119,6 +119,39 @@
           <li>
             <a href="{{ '/about/resume' | url }}" {% if 'resume' in page.url %}class="active"{% endif %} alt="Link to the resume">
               Resume
+            </a>
+          </li>
+          <li>
+            <a href="{{ '/credits' | url }}" {% if 'credits' in page.url %}class="active"{% endif %} alt="Link to the resume">
+              Credits
+            </a>
+          </li>
+        </ul>
+      </nav>
+    {% elseif 'about' in page.url %}
+      <nav role="navigation" aria-label="Main navigation" class="main-nav">
+        <ul>
+          <li>
+            <a href="{{ '/' | url }}" alt="Link to home page">
+              Home
+            </a>
+          </li>
+          <li>
+            <divider class="vertical"></divider>
+          </li>
+          <li>
+            <a href="{{ '/about/adam' | url }}" {% if 'adam' in page.url %}class="active"{% endif %} alt="Link to the about page">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="{{ '/about/resume' | url }}" {% if 'resume' in page.url %}class="active"{% endif %} alt="Link to the resume">
+              Resume
+            </a>
+          </li>
+          <li>
+            <a href="{{ '/credits' | url }}" {% if 'credits' in page.url %}class="active"{% endif %} alt="Link to the resume">
+              Credits
             </a>
           </li>
         </ul>

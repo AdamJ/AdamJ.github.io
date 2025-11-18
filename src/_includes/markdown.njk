@@ -14,4 +14,10 @@ layout: base.njk
   {%- else -%}{%- endif -%}
 </section>
 
-{{ content | safe }}
+{% if 'credits' in page.url %}
+  <section>
+    {{ content | safe }}
+  </section>
+{% else %}
+  {{ content | safe }}
+{% endif %}

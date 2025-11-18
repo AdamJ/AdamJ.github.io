@@ -531,6 +531,14 @@ a:hover, a:focus, .link:hover, .link:focus {
   border-bottom-color: var(--earth-brown);
 }
 
+blockquote, .blockquote {
+  border-left: var(--border-thin) solid var(--earth-brown);
+  padding-left: var(--space-md, 1rem);
+  margin: var(--space-lg, 1.5rem) 0;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
 .mb-1 {
   margin-bottom: var(--space-2xs) !important;
 }
