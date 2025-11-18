@@ -50,26 +50,47 @@
     
       <nav role="navigation" aria-label="Main navigation" class="main-nav">
         <ul>
-          <li><a href="/" alt="Link to home page">Home</a></li>
-          <li><a href="/designs/task-it"  alt="Link to Task It case study">Task It</a></li>
-          <li><a href="/designs/alm"  alt="Link to ALM case study">ALM</a></li>
-          <li><a href="/presentations"  alt="Link to available presentations">Presentations</a></li>
+          <li>
+            <a href="/" alt="Link to home page">
+              Home
+            </a>
+          </li>
+          <li>
+            <divider class="vertical"></divider>
+          </li>
+          <li>
+            <a href="/about/adam"  alt="Link to the about page">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="/about/resume" class="active" alt="Link to the resume">
+              Resume
+            </a>
+          </li>
         </ul>
       </nav>
     
     
     <main id="main-content">
       
-<section class="hero" aria-labelledby="hero-heading">
-  <h1 id="hero-heading">Adam J. Jolicoeur</h1>
-  <p></p></section>
+<link rel="stylesheet" href="/css/print.css" media="print">
 
-<content>
-  <section>
+<section class="hero">
+  <h1>Adam J. Jolicoeur</h1>
+  <p class="text-lead mb-4">
+    
+  </p></section>
+
+<section class="hide-on-screen print">
+  <h1>Adam J. Jolicoeur</h1>
+  <caption>contact@adamjolicoeur.com</caption>
+</section>
+<section>
   <h2>Lead Program Manager &amp; Designer</h2>
   <h4>Component Assembly Systems, Inc. (Pelham, NY)</h4>
   <p class="text-caption">January 2024 - Present</p>
-  <div class="badges pb-3">
+  <div class="badges pb-3 hide-on-print">
     <span class="badge">Program Management</span>
     <span class="badge">Figma</span>
     <span class="badge">Strategic Technology</span>
@@ -86,7 +107,7 @@
   <h2>Senior UX Designer</h2>
   <h4>Amazon.com, Inc <br /> Amazon Software Builder Experience (Boston, MA)</h4>
   <p class="text-caption">August 2021 - September 2023</p>
-  <div class="pb-3 row-badges">
+  <div class="badges pb-3 hide-on-print">
     <span class="badge">Figma</span>
     <span class="badge">Prototypes</span>
     <span class="badge">UserTesting</span>
@@ -105,7 +126,7 @@
   <h2>Senior Software Engineer, UXD</h2>
   <h4>Red Hat, Inc (Westford, MA)</h4>
   <p class="text-caption">December 2016 - August 2021</p>
-  <div class="pb-3 row-badges">
+  <div class="badges pb-3 hide-on-print">
     <span class="badge">Sketch</span>
     <span class="badge">Adobe XD</span>
     <span class="badge">HTML</span>
@@ -126,7 +147,7 @@
   <h2>User Experience Designer</h2>
   <h4>Saylent Technologies (Franklin, MA)</h4>
   <p class="text-caption">November 2014 - July 2016</p>
-  <div class="pb-3 row-badges">
+  <div class="badges pb-3 hide-on-print">
     <span class="badge">Photoshop</span>
     <span class="badge">Visual studio</span>
     <span class="badge">HTML</span>
@@ -146,7 +167,7 @@
   <h2>Vice President, Design</h2>
   <h4>Switchback, Inc. (Holden, MA)</h4>
   <p class="text-caption">November 2010 - August 2021 / September 2023 - January 2025</p>
-  <div class="pb-3 row-badges">
+  <div class="badges pb-3 hide-on-print">
     <span class="badge">Sketch</span>
     <span class="badge">Adobe XD</span>
     <span class="badge">HTML</span>
@@ -173,7 +194,7 @@
   <h2>UI Software Engineer</h2>
   <h4>Black Duck Software (Burlington, MA)</h4>
   <p class="text-caption">February 2013 - October 2014</p>
-  <div class="pb-3 row-badges">
+  <div class="badges pb-3 hide-on-print">
     <span class="badge">HTML</span>
     <span class="badge">CSS/LESS</span>
     <span class="badge">Bootstrap</span>
@@ -197,7 +218,7 @@
         <strong>Bachelor of Arts</strong> | Fine and Performing Arts, Music</p>
       <p>
         <strong>Bachelor of Arts</strong> | Arts, Entertainment, and Media Management</p>
-      <div class="row-badges">
+      <div class="badges pb-3 hide-on-print">
         <span class="badge">Alpha Chi</span><span class="badge">National Scholars Honor Society</span><span class="badge">Who’s Who in American Colleges and Universities</span>
       </div>
     </div>
@@ -207,7 +228,7 @@
   <h2 id="skills">Skills</h2>
   <div class="card">
     <div class="card-body">
-      <div class="row-badges">
+      <div class="badges pb-3 hide-on-print">
         <span class="badge">Product Design</span>
         <span class="badge">UX Research</span>
         <span class="badge">Wireframing</span>
@@ -259,7 +280,6 @@
   </div>
 </section>
 
-</content>
 
     </main>
     <footer id="contact">
@@ -283,7 +303,7 @@
     </div>
     <div class="footer-section">
       <h3>About This Site</h3>
-      <p>Built with <a href="https://www.11ty.com" target="_blank" alt="Link to Eleventy's website">Eleventy</a>, designed with care. This portfolio showcases my approach to blending thoughtful design with clean, maintainable code.</p>
+      <p>Built with <a href="https://www.11ty.dev" target="_blank" alt="Link to Eleventy's website">Eleventy</a>, designed with care. This portfolio showcases my approach to blending thoughtful design with clean, maintainable code.</p>
     </div>
   </div>
   <div class="footer-bottom">
@@ -308,7 +328,7 @@
       }
     </script>
     <!-- Go to Top Button -->
-  <button id="goTopBtn" class="btn btn-outline circle hide" aria-label="Scroll to top" style="position: fixed; bottom: 1rem; right: 1rem;">
+  <button id="goTopBtn" class="btn btn-outline circle hide hide-on-print" aria-label="Scroll to top" style="position: fixed; bottom: 1rem; right: 1rem;">
       <span aria-hidden="true">
         <i class="fa-solid fa-arrow-up" style="font-size: 1.5rem;"></i>
       </span>

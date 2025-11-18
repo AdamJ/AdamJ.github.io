@@ -30,5 +30,5 @@ eleventyNavigation:
   <p>
     I attended MCLA (Massachusetts College of Liberal Arts, formerly North Adams State) graduating with degrees in Fine and Performing Arts and Arts Management. While at MCLA, I was the President of the Lacrosse Club (now a recognized D3 sport) while also receiving a variety of accolades such as Alpha Chi, National Scholars Honor Society, and the Who’s Who in American Colleges and Universities.
   </p>
-  <a class="btn btn-link mt-4" href="{{ '/resume' | url }}" alt="Link to my resume">View Resume (PDF)</a>
+  <a class="btn btn-secondary mt-4" href="{{ '/about/resume' | url }}" alt="Link to my resume">View Resume</a>
 </section>

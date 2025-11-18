@@ -57,9 +57,6 @@ eleventyNavigation:
     <div class="card-body">
       <img src="../../assets/img/CEA_wireframe_first.webp" class="rounded"  width="500" height="300" loading="lazy" alt="Example visual design for the navigation variations in the Customer Engagement App" />
     </div>
-    <div class="card-footer">
-      <a href="https://github.com/AdamJ/AdamJ.github.io/blob/main/src/img/CEA_Dashboard_Overview.pdf" class="btn btn-outline btn-sm" target="_blank">View PDF on GitHub</a>
-    </div>
   </div>
 </section>
 <section>

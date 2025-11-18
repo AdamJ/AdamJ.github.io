@@ -54,19 +54,72 @@
     {% if page.url === '/' %}
       <nav role="navigation" aria-label="Main navigation" class="main-nav" style="bottom: 0 !important;">
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#opensource">Open Source</a></li>
+          <li>
+            <a href="#about" class="d-flex flex-column align-items-center" alt="Link to about section">
+              {# <i class="fa-solid fa-address-card fa-lg"></i> #}
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#work" class="d-flex flex-column align-items-center" alt="Link to work section">
+              {# <i class="fa-solid fa-briefcase fa-lg"></i> #}
+              Featured
+            </a>
+          </li>
+          <li>
+            <a href="#testimonials" class="d-flex flex-column align-items-center" alt="Link to testimonials section">
+              {# <i class="fa-solid fa-comments fa-lg"></i> #}
+              Comments
+            </a>
+          </li>
+          <li>
+            <a href="#opensource" class="d-flex flex-column align-items-center" alt="Link to open source section">
+              {# <i class="fa-brands fa-git-alt fa-lg"></i> #}
+              OSS
+            </a>
+          </li>
+        </ul>
+      </nav>
+    {% elseif 'about' in page.url %}
+      <nav role="navigation" aria-label="Main navigation" class="main-nav">
+        <ul>
+          <li>
+            <a href="{{ '/' | url }}" alt="Link to home page">
+              Home
+            </a>
+          </li>
+          <li>
+            <divider class="vertical"></divider>
+          </li>
+          <li>
+            <a href="{{ '/about/adam' | url }}" {% if page.url === '/about' %}class="active"{% endif %} alt="Link to the about page">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="{{ '/about/resume' | url }}" {% if 'resume' in page.url %}class="active"{% endif %} alt="Link to the resume">
+              Resume
+            </a>
+          </li>
         </ul>
       </nav>
     {% else %}
       <nav role="navigation" aria-label="Main navigation" class="main-nav">
         <ul>
-          <li><a href="{{ '/' | url }}" alt="Link to home page">Home</a></li>
-          <li><a href="{{ '/designs/task-it' | url }}" {% if '/designs/task-it' in page.url %}class="active"{% endif %} alt="Link to Task It case study">Task It</a></li>
+          <li>
+            <a href="{{ '/' | url }}" alt="Link to home page">
+              Home
+            </a>
+          </li>
+          <li>
+            <divider class="vertical"></divider>
+          </li>
+          <li>
+            <a href="{{ '/designs/task-it' | url }}" {% if '/designs/task-it' in page.url %}class="active"{% endif %} alt="Link to Task It case study">
+              Task-It!
+            </a>
+          </li>
           <li><a href="{{ '/designs/alm' | url }}" {% if '/designs/alm' in page.url %}class="active"{% endif %} alt="Link to ALM case study">ALM</a></li>
-          <li><a href="{{ '/presentations' | url }}" {% if '/presentations' in page.url %}class="active"{% endif %} alt="Link to available presentations">Presentations</a></li>
         </ul>
       </nav>
     {% endif %}
@@ -85,7 +138,7 @@
       }
     </script>
     <!-- Go to Top Button -->
-  <button id="goTopBtn" class="btn btn-outline circle hide" aria-label="Scroll to top" style="position: fixed; bottom: 1rem; right: 1rem;">
+  <button id="goTopBtn" class="btn btn-outline circle hide hide-on-print" aria-label="Scroll to top" style="position: fixed; bottom: 1rem; right: 1rem;">
       <span aria-hidden="true">
         <i class="fa-solid fa-arrow-up" style="font-size: 1.5rem;"></i>
       </span>

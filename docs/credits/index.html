@@ -50,24 +50,35 @@
     
       <nav role="navigation" aria-label="Main navigation" class="main-nav">
         <ul>
-          <li><a href="/" alt="Link to home page">Home</a></li>
-          <li><a href="/designs/task-it"  alt="Link to Task It case study">Task It</a></li>
+          <li>
+            <a href="/" alt="Link to home page">
+              Home
+            </a>
+          </li>
+          <li>
+            <divider class="vertical"></divider>
+          </li>
+          <li>
+            <a href="/designs/task-it"  alt="Link to Task It case study">
+              Task-It!
+            </a>
+          </li>
           <li><a href="/designs/alm"  alt="Link to ALM case study">ALM</a></li>
-          <li><a href="/presentations"  alt="Link to available presentations">Presentations</a></li>
         </ul>
       </nav>
     
     
     <main id="main-content">
       
+<link rel="stylesheet" href="/css/print.css" media="print">
+
 <section class="hero">
   <h1>Credits</h1>
   <p class="text-lead mb-4">
     
   </p></section>
 
-<section>
-  <p>Giving credit where credit is due, this page is based off of the <a href="https://raw.githubusercontent.com/LeaVerou/lea.verou.me/refs/heads/main/credits/index.md">Credits</a> page from <a href="https://lea.verou.me/">Lea Verou</a>.</p>
+<p>Giving credit where credit is due, this page is based off of the <a href="https://raw.githubusercontent.com/LeaVerou/lea.verou.me/refs/heads/main/credits/index.md">Credits</a> page from <a href="https://lea.verou.me/">Lea Verou</a>.</p>
 <hr>
 <p>This site was built using <a href="https://www.11ty.dev/">Eleventy</a>, hosted on <a href="https://cloudflare.com/">Cloudflare Pages</a>, with previews deployed with <a href="https://www.cloudflare.com/">Cloudflare</a>. Certificate courtesy of Cloudflare and <a href="https://letsencrypt.org/">Let’s Encrypt</a>.</p>
 <h2 id="libraries" tabindex="-1">Libraries <a class="anchor-link" href="#libraries">#</a></h2>
@@ -139,7 +150,6 @@
 </li>
 </ul>
 
-</section>
 
     </main>
     <footer id="contact">
@@ -163,7 +173,7 @@
     </div>
     <div class="footer-section">
       <h3>About This Site</h3>
-      <p>Built with <a href="https://www.11ty.com" target="_blank" alt="Link to Eleventy's website">Eleventy</a>, designed with care. This portfolio showcases my approach to blending thoughtful design with clean, maintainable code.</p>
+      <p>Built with <a href="https://www.11ty.dev" target="_blank" alt="Link to Eleventy's website">Eleventy</a>, designed with care. This portfolio showcases my approach to blending thoughtful design with clean, maintainable code.</p>
     </div>
   </div>
   <div class="footer-bottom">
@@ -188,7 +198,7 @@
       }
     </script>
     <!-- Go to Top Button -->
-  <button id="goTopBtn" class="btn btn-outline circle hide" aria-label="Scroll to top" style="position: fixed; bottom: 1rem; right: 1rem;">
+  <button id="goTopBtn" class="btn btn-outline circle hide hide-on-print" aria-label="Scroll to top" style="position: fixed; bottom: 1rem; right: 1rem;">
       <span aria-hidden="true">
         <i class="fa-solid fa-arrow-up" style="font-size: 1.5rem;"></i>
       </span>

@@ -176,6 +176,7 @@
     </url>
 
     <url>
+<<<<<<< HEAD
       <loc>https://www.adamjolicoeur.com/about/</loc>
       <lastmod>2025-11-17T17:42:31.000Z</lastmod>
     </url>
@@ -196,13 +197,35 @@
     </url>
 
     <url>
+=======
+>>>>>>> ecc7a28 (major: improve mobile layouts and printing)
       <loc>https://www.adamjolicoeur.com/presentations/</loc>
       <lastmod>2025-11-17T17:42:31.000Z</lastmod>
     </url>
 
     <url>
-      <loc>https://www.adamjolicoeur.com/resume/</loc>
-      <lastmod>2025-11-17T17:42:31.000Z</lastmod>
+      <loc>https://www.adamjolicoeur.com/designs/alm/</loc>
+      <lastmod>2025-11-17T21:33:29.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/designs/customer-engagement/</loc>
+      <lastmod>2025-11-17T21:33:29.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/designs/task-it/</loc>
+      <lastmod>2025-11-17T21:33:29.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/about/adam/</loc>
+      <lastmod>2025-11-18T16:03:41.069Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/about/resume/</loc>
+      <lastmod>2025-11-18T16:03:41.109Z</lastmod>
     </url>
 
     <url>

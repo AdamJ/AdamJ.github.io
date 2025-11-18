@@ -50,10 +50,30 @@
     
       <nav role="navigation" aria-label="Main navigation" class="main-nav" style="bottom: 0 !important;">
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#opensource">Open Source</a></li>
+          <li>
+            <a href="#about" class="d-flex flex-column align-items-center" alt="Link to about section">
+              
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#work" class="d-flex flex-column align-items-center" alt="Link to work section">
+              
+              Featured
+            </a>
+          </li>
+          <li>
+            <a href="#testimonials" class="d-flex flex-column align-items-center" alt="Link to testimonials section">
+              
+              Comments
+            </a>
+          </li>
+          <li>
+            <a href="#opensource" class="d-flex flex-column align-items-center" alt="Link to open source section">
+              
+              OSS
+            </a>
+          </li>
         </ul>
       </nav>
     
@@ -66,9 +86,14 @@
 </section>
 <section id="about" aria-labelledby="about-heading">
   <h2 id="about-heading">About Me</h2>
-  <div class="about-card">
-    <p>With over 15 years leading product and design at scale, I've helped shape the user experience of enterprise platforms at AWS and Red Hat, while also driving product strategy at innovative startups. My dual expertise in product management and design leadership allows me to bridge strategic vision with exceptional execution.</p>
-    <p>I thrive at the intersection of business impact and user needs—whether defining product roadmaps, leading cross-functional teams, or crafting design systems that serve millions of users. My experience spans from 0-to-1 product launches to optimizing mature platforms serving global enterprises.</p>
+  <div class="card about-card">
+    <div class="card-body">
+      <p>With over 15 years leading product and design at scale, I've helped shape the user experience of enterprise platforms at AWS and Red Hat, while also driving product strategy at innovative startups. My dual expertise in product management and design leadership allows me to bridge strategic vision with exceptional execution.</p>
+      <p>I thrive at the intersection of business impact and user needs—whether defining product roadmaps, leading cross-functional teams, or crafting design systems that serve millions of users. My experience spans from 0-to-1 product launches to optimizing mature platforms serving global enterprises.</p>
+    </div>
+    <div class="card-footer">
+      <a class="btn btn-secondary" href="/about/adam" alt="Link to learn more about Adam">Learn More</a>
+    </div>
   </div>
 </section>
 <section id="work" aria-labelledby="work-heading">
@@ -151,10 +176,12 @@
         <p class="text-body-sm" style="margin-bottom: 0.75rem;">
           Created several open source applications and games that showcase innovative use of web technologies, focusing on user engagement and interactive experiences.
         </p>
-        <span class="badge">Tooling</span>
-        <span class="badge">DX</span>
-        <span class="badge">Games</span>
-        <span class="badge">Apps</span>
+        <div class="badges">
+          <span class="badge">Tooling</span>
+          <span class="badge">DX</span>
+          <span class="badge">Games</span>
+          <span class="badge">Apps</span>
+        </div>
         <div class="row button-row">
           <a href="https://github.com/AdamJ/TimeTrackerPro" alt="Link to the TimeTrackerPro repository" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer" style="margin-top: 0.5rem;">TimeTrackerPro</a>
           <a href="https://github.com/AdamJ/game-tracker" alt="Link to the Game Tracker repository" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer" style="margin-top: 0.5rem;">Game Tracker</a>
@@ -230,7 +257,7 @@
     </div>
     <div class="footer-section">
       <h3>About This Site</h3>
-      <p>Built with <a href="https://www.11ty.com" target="_blank" alt="Link to Eleventy's website">Eleventy</a>, designed with care. This portfolio showcases my approach to blending thoughtful design with clean, maintainable code.</p>
+      <p>Built with <a href="https://www.11ty.dev" target="_blank" alt="Link to Eleventy's website">Eleventy</a>, designed with care. This portfolio showcases my approach to blending thoughtful design with clean, maintainable code.</p>
     </div>
   </div>
   <div class="footer-bottom">
@@ -255,7 +282,7 @@
       }
     </script>
     <!-- Go to Top Button -->
-  <button id="goTopBtn" class="btn btn-outline circle hide" aria-label="Scroll to top" style="position: fixed; bottom: 1rem; right: 1rem;">
+  <button id="goTopBtn" class="btn btn-outline circle hide hide-on-print" aria-label="Scroll to top" style="position: fixed; bottom: 1rem; right: 1rem;">
       <span aria-hidden="true">
         <i class="fa-solid fa-arrow-up" style="font-size: 1.5rem;"></i>
       </span>

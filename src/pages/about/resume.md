@@ -1,4 +1,5 @@
 ---
+layout: "markdown"
 title: "Adam J. Jolicoeur"
 abbreviation: "Resume"
 date: git Last Modified
@@ -9,11 +10,16 @@ eleventyNavigation:
   parent: About
 ---
 
+<section class="hide-on-screen print">
+  <h1>Adam J. Jolicoeur</h1>
+  <caption>contact@adamjolicoeur.com</caption>
+</section>
+
 <section>
   <h2>Lead Program Manager &amp; Designer</h2>
   <h4>Component Assembly Systems, Inc. (Pelham, NY)</h4>
   <p class="text-caption">January 2024 - Present</p>
-  <div class="badges pb-3">
+  <div class="badges pb-3 hide-on-print">
     <span class="badge">Program Management</span>
     <span class="badge">Figma</span>
     <span class="badge">Strategic Technology</span>
@@ -30,7 +36,7 @@ eleventyNavigation:
   <h2>Senior UX Designer</h2>
   <h4>Amazon.com, Inc <br /> Amazon Software Builder Experience (Boston, MA)</h4>
   <p class="text-caption">August 2021 - September 2023</p>
-  <div class="pb-3 row-badges">
+  <div class="badges pb-3 hide-on-print">
     <span class="badge">Figma</span>
     <span class="badge">Prototypes</span>
     <span class="badge">UserTesting</span>
@@ -49,7 +55,7 @@ eleventyNavigation:
   <h2>Senior Software Engineer, UXD</h2>
   <h4>Red Hat, Inc (Westford, MA)</h4>
   <p class="text-caption">December 2016 - August 2021</p>
-  <div class="pb-3 row-badges">
+  <div class="badges pb-3 hide-on-print">
     <span class="badge">Sketch</span>
     <span class="badge">Adobe XD</span>
     <span class="badge">HTML</span>
@@ -70,7 +76,7 @@ eleventyNavigation:
   <h2>User Experience Designer</h2>
   <h4>Saylent Technologies (Franklin, MA)</h4>
   <p class="text-caption">November 2014 - July 2016</p>
-  <div class="pb-3 row-badges">
+  <div class="badges pb-3 hide-on-print">
     <span class="badge">Photoshop</span>
     <span class="badge">Visual studio</span>
     <span class="badge">HTML</span>
@@ -90,7 +96,7 @@ eleventyNavigation:
   <h2>Vice President, Design</h2>
   <h4>Switchback, Inc. (Holden, MA)</h4>
   <p class="text-caption">November 2010 - August 2021 / September 2023 - January 2025</p>
-  <div class="pb-3 row-badges">
+  <div class="badges pb-3 hide-on-print">
     <span class="badge">Sketch</span>
     <span class="badge">Adobe XD</span>
     <span class="badge">HTML</span>
@@ -117,7 +123,7 @@ eleventyNavigation:
   <h2>UI Software Engineer</h2>
   <h4>Black Duck Software (Burlington, MA)</h4>
   <p class="text-caption">February 2013 - October 2014</p>
-  <div class="pb-3 row-badges">
+  <div class="badges pb-3 hide-on-print">
     <span class="badge">HTML</span>
     <span class="badge">CSS/LESS</span>
     <span class="badge">Bootstrap</span>
@@ -141,7 +147,7 @@ eleventyNavigation:
         <strong>Bachelor of Arts</strong> | Fine and Performing Arts, Music</p>
       <p>
         <strong>Bachelor of Arts</strong> | Arts, Entertainment, and Media Management</p>
-      <div class="row-badges">
+      <div class="badges pb-3 hide-on-print">
         <span class="badge">Alpha Chi</span><span class="badge">National Scholars Honor Society</span><span class="badge">Who’s Who in American Colleges and Universities</span>
       </div>
     </div>
@@ -151,7 +157,7 @@ eleventyNavigation:
   <h2 id="skills">Skills</h2>
   <div class="card">
     <div class="card-body">
-      <div class="row-badges">
+      <div class="badges pb-3 hide-on-print">
         <span class="badge">Product Design</span>
         <span class="badge">UX Research</span>
         <span class="badge">Wireframing</span>

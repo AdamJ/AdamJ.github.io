@@ -27,49 +27,49 @@
   },
   "items": [
     {
-      "id": "/resume/",
-      "url": "/resume/",
+      "id": "/about/resume/",
+      "url": "/about/resume/",
       "title": "Adam J. Jolicoeur",
-      "date_published": "2025-11-17T17:42:31Z",
-      "date": "2025-11-17T17:42:31Z"
+      "date_published": "2025-11-18T16:03:41Z",
+      "date": "2025-11-18T16:03:41Z"
     }
     ,
     {
-      "id": "/presentations/",
-      "url": "/presentations/",
-      "title": "Presentations",
-      "date_published": "2025-11-17T17:42:31Z",
-      "date": "2025-11-17T17:42:31Z"
+      "id": "/about/adam/",
+      "url": "/about/adam/",
+      "title": "About",
+      "date_published": "2025-11-18T16:03:41Z",
+      "date": "2025-11-18T16:03:41Z"
     }
     ,
     {
       "id": "/designs/task-it/",
       "url": "/designs/task-it/",
       "title": "Task-It!",
-      "date_published": "2025-11-17T17:42:31Z",
-      "date": "2025-11-17T17:42:31Z"
+      "date_published": "2025-11-17T21:33:29Z",
+      "date": "2025-11-17T21:33:29Z"
     }
     ,
     {
       "id": "/designs/customer-engagement/",
       "url": "/designs/customer-engagement/",
       "title": "Customer Engagement App",
-      "date_published": "2025-11-17T17:42:31Z",
-      "date": "2025-11-17T17:42:31Z"
+      "date_published": "2025-11-17T21:33:29Z",
+      "date": "2025-11-17T21:33:29Z"
     }
     ,
     {
       "id": "/designs/alm/",
       "url": "/designs/alm/",
       "title": "Application Lifecycle Management",
-      "date_published": "2025-11-17T17:42:31Z",
-      "date": "2025-11-17T17:42:31Z"
+      "date_published": "2025-11-17T21:33:29Z",
+      "date": "2025-11-17T21:33:29Z"
     }
     ,
     {
-      "id": "/about/",
-      "url": "/about/",
-      "title": "About",
+      "id": "/presentations/",
+      "url": "/presentations/",
+      "title": "Presentations",
       "date_published": "2025-11-17T17:42:31Z",
       "date": "2025-11-17T17:42:31Z"
     }

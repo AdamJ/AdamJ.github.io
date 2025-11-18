@@ -9,9 +9,14 @@ layout: base.njk
 </section>
 <section id="about" aria-labelledby="about-heading">
   <h2 id="about-heading">About Me</h2>
-  <div class="about-card">
-    <p>With over 15 years leading product and design at scale, I've helped shape the user experience of enterprise platforms at AWS and Red Hat, while also driving product strategy at innovative startups. My dual expertise in product management and design leadership allows me to bridge strategic vision with exceptional execution.</p>
-    <p>I thrive at the intersection of business impact and user needs—whether defining product roadmaps, leading cross-functional teams, or crafting design systems that serve millions of users. My experience spans from 0-to-1 product launches to optimizing mature platforms serving global enterprises.</p>
+  <div class="card about-card">
+    <div class="card-body">
+      <p>With over 15 years leading product and design at scale, I've helped shape the user experience of enterprise platforms at AWS and Red Hat, while also driving product strategy at innovative startups. My dual expertise in product management and design leadership allows me to bridge strategic vision with exceptional execution.</p>
+      <p>I thrive at the intersection of business impact and user needs—whether defining product roadmaps, leading cross-functional teams, or crafting design systems that serve millions of users. My experience spans from 0-to-1 product launches to optimizing mature platforms serving global enterprises.</p>
+    </div>
+    <div class="card-footer">
+      <a class="btn btn-secondary" href="{{ '/about/adam' | url }}" alt="Link to learn more about Adam">Learn More</a>
+    </div>
   </div>
 </section>
 <section id="work" aria-labelledby="work-heading">
@@ -94,10 +99,12 @@ layout: base.njk
         <p class="text-body-sm" style="margin-bottom: 0.75rem;">
           Created several open source applications and games that showcase innovative use of web technologies, focusing on user engagement and interactive experiences.
         </p>
-        <span class="badge">Tooling</span>
-        <span class="badge">DX</span>
-        <span class="badge">Games</span>
-        <span class="badge">Apps</span>
+        <div class="badges">
+          <span class="badge">Tooling</span>
+          <span class="badge">DX</span>
+          <span class="badge">Games</span>
+          <span class="badge">Apps</span>
+        </div>
         <div class="row button-row">
           <a href="https://github.com/AdamJ/TimeTrackerPro" alt="Link to the TimeTrackerPro repository" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer" style="margin-top: 0.5rem;">TimeTrackerPro</a>
           <a href="https://github.com/AdamJ/game-tracker" alt="Link to the Game Tracker repository" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer" style="margin-top: 0.5rem;">Game Tracker</a>

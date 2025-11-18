@@ -2,6 +2,8 @@
 layout: base.njk
 ---
 
+<link rel="stylesheet" href="{{ '/css/print.css' | url }}" media="print">
+
 <section class="hero">
   <h1>{{ title }}</h1>
   <p class="text-lead mb-4">
@@ -12,6 +14,4 @@ layout: base.njk
   {%- else -%}{%- endif -%}
 </section>
 
-<section>
-  {{ content | safe }}
-</section>
+{{ content | safe }}

@@ -26,7 +26,10 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
+  justify-content: center;
   gap: 2rem;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
 }
 
 nav a {
@@ -42,9 +45,22 @@ nav a {
 nav a:hover,
 nav a:focus {
   color: var(--accent-coral);
-  outline: var(--border-thin) solid var(--accent-coral);
-  outline-offset: 2px;
+  // outline: var(--border-thin) solid var(--accent-coral);
+  // outline-offset: 2px;
 }
 nav a.active {
   color: var(--accent-coral);
+}
+
+@media (max-width: 768px) {
+    nav {
+    top: var(--space-sm, 1rem) !important;
+    padding: var(--space-xs, 0.5rem) var(--space-sm, 1rem) !important;
+    margin: 0 auto !important;
+    // width: 100% !important;
+  }
+
+  nav ul {
+    gap: var(--space-sm, 1rem);
+  }
 }
