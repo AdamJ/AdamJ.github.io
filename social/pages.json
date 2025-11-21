@@ -108,27 +108,9 @@
 	},
 
 	{
-   "title":"Oops! Not Found",
-   "imgName":"oops-not-found",
-   "date":"oops-not-found"
-	},
-
-	{
    "title":"Archived",
    "imgName":"archived",
    "date":"archived"
-	},
-
-	{
-   "title":"Journeys",
-   "imgName":"journeys",
-   "date":"journeys"
-	},
-
-	{
-   "title":"Marketing",
-   "imgName":"marketing",
-   "date":"marketing"
 	},
 
 	{
@@ -141,18 +123,6 @@
    "title":"Stream Deck examples",
    "imgName":"stream-deck-examples",
    "date":"stream-deck-examples"
-	},
-
-	{
-   "title":"howto",
-   "imgName":"howto",
-   "date":"howto"
-	},
-
-	{
-   "title":"Adam Jolicoeur",
-   "imgName":"home",
-   "date":"home"
 	},
 
 	{
@@ -180,12 +150,6 @@
 	},
 
 	{
-   "title":"Development",
-   "imgName":"development",
-   "date":"development"
-	},
-
-	{
    "title":"Color Picker",
    "imgName":"color-picker",
    "date":"color-picker"
@@ -195,12 +159,6 @@
    "title":"Portfolio",
    "imgName":"portfolio",
    "date":"portfolio"
-	},
-
-	{
-   "title":"Adam Jolicoeur",
-   "imgName":"home",
-   "date":"home"
 	},
 
 	{
@@ -225,5 +183,47 @@
    "title":"Collect Some More",
    "imgName":"collect-some-more",
    "date":"collect-some-more"
+	},
+
+	{
+   "title":"Development",
+   "imgName":"development",
+   "date":"development"
+	},
+
+	{
+   "title":"Oops! Not Found",
+   "imgName":"oops-not-found",
+   "date":"oops-not-found"
+	},
+
+	{
+   "title":"Adam Jolicoeur",
+   "imgName":"home",
+   "date":"home"
+	},
+
+	{
+   "title":"Journeys",
+   "imgName":"journeys",
+   "date":"journeys"
+	},
+
+	{
+   "title":"Marketing",
+   "imgName":"marketing",
+   "date":"marketing"
+	},
+
+	{
+   "title":"howto",
+   "imgName":"howto",
+   "date":"howto"
+	},
+
+	{
+   "title":"Adam Jolicoeur",
+   "imgName":"home",
+   "date":"home"
 	}
 ]
