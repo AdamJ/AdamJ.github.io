@@ -92,23 +92,8 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/404.html</loc>
-      <lastmod>2025-07-11T18:03:03.938Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/archives/town-selectman/</loc>
       <lastmod>2025-07-11T18:03:04.066Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/journeys/journeys/</loc>
-      <lastmod>2025-07-11T18:03:04.075Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/marketing/</loc>
-      <lastmod>2025-07-11T18:03:04.076Z</lastmod>
     </url>
   
     <url>
@@ -119,16 +104,6 @@
     <url>
       <loc>https://www.adamjolicoeur.com/streamdeck/examples/</loc>
       <lastmod>2025-07-11T18:03:04.079Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/howto/</loc>
-      <lastmod>2025-07-11T18:03:04.080Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/posts/</loc>
-      <lastmod>2025-07-11T18:03:04.081Z</lastmod>
     </url>
   
     <url>
@@ -152,11 +127,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/development/</loc>
-      <lastmod>2025-07-11T18:43:57.000Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/presentations/color-picker/</loc>
       <lastmod>2025-07-11T18:43:57.000Z</lastmod>
     </url>
@@ -164,11 +134,6 @@
     <url>
       <loc>https://www.adamjolicoeur.com/presentations/portfolio/</loc>
       <lastmod>2025-07-11T18:43:57.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/</loc>
-      <lastmod>2025-08-27T13:59:17.482Z</lastmod>
     </url>
   
     <url>
@@ -189,6 +154,41 @@
     <url>
       <loc>https://www.adamjolicoeur.com/apps/collectsomemore/</loc>
       <lastmod>2025-08-27T14:04:31.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/development/</loc>
+      <lastmod>2025-08-30T16:14:15.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/404.html</loc>
+      <lastmod>2025-11-21T13:26:46.785Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/</loc>
+      <lastmod>2025-11-21T13:26:46.791Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/journeys/journeys/</loc>
+      <lastmod>2025-11-21T13:26:46.797Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/marketing/</loc>
+      <lastmod>2025-11-21T13:26:46.798Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/howto/</loc>
+      <lastmod>2025-11-21T13:26:46.800Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/posts/</loc>
+      <lastmod>2025-11-21T13:26:46.801Z</lastmod>
     </url>
   
 </urlset>
