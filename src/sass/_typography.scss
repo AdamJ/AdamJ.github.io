@@ -1,4 +1,13 @@
-/* Display heading - extra large */
+/* Heading 1 */
+h1, .text-h1 {
+  font-family: 'Pirata One', cursive;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  color: var(--text-primary);
+  line-height: 1.2;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 0 var(--accent-coral);
+}
+
 .text-display {
   font-family: 'Pirata One', cursive;
   font-size: clamp(3rem, 10vw, 6rem);
@@ -16,23 +25,6 @@
   text-shadow: 3px 3px 0 var(--accent-coral);
   letter-spacing: 2px;
   line-height: 1.2;
-}
-
-.hero p {
-  font-size: clamp(1.1rem, 2vw, 1.25rem);;
-  color: var(--earth-brown);
-  max-width: 720px;
-  margin: 0 auto;
-}
-
-/* Heading 1 */
-h1, .text-h1 {
-  font-family: 'Pirata One', cursive;
-  font-size: clamp(2.5rem, 8vw, 5rem);
-  color: var(--text-primary);
-  line-height: 1.2;
-  letter-spacing: 2px;
-  text-shadow: 3px 3px 0 var(--accent-coral);
 }
 
 /* Heading 2 */
@@ -54,7 +46,7 @@ h2::after, .text-h2::after {
   width: 100px;
   height: 5px;
   background: var(--accent-coral);
-  margin: 1rem auto 1rem;
+  margin: 1rem auto;
   border: 3px solid var(--earth-brown);
 }
 
@@ -78,7 +70,7 @@ h4, .text-h4 {
 
 /* Heading 5 */
 h5, .text-h5 {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-size: clamp(1.1rem, 2vw, 1.25rem);
   color: var(--text-primary);
   line-height: 1.4;
@@ -87,7 +79,7 @@ h5, .text-h5 {
 
 /* Heading 6 */
 h6, .text-h6 {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 1rem;
   color: var(--text-primary);
   line-height: 1.4;
@@ -110,6 +102,12 @@ p, .text-body {
 }
 p:last-child, .text-body:last-child {
   margin-bottom: 0;
+}
+.hero p {
+  font-size: clamp(1.1rem, 2vw, 1.25rem);;
+  color: var(--earth-brown);
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .card-body p:first-of-type, .card-body .text-body:first-of-type {
@@ -140,6 +138,7 @@ p:last-child, .text-body:last-child {
 
 code, .code {
   font-family: var(--font-family-mono);
+
   // background: var(--earth-sand);
   // padding: 0.1rem 0.3rem;
   // border-radius: var(--radius-sm);
@@ -160,6 +159,7 @@ code.code-inline,
   overflow-x: auto;
   border: var(--border-thin) solid var(--earth-sage);
 }
+
 /* Text utilities */
 .text-muted {
   color: var(--text-muted);

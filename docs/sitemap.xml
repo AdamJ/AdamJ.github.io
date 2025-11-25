@@ -42,32 +42,12 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/presentations/</loc>
-      <lastmod>2025-11-17T17:42:31.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/designs/alm/</loc>
-      <lastmod>2025-11-17T21:33:29.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/designs/task-it/</loc>
-      <lastmod>2025-11-17T21:33:29.000Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/about/adam/</loc>
       <lastmod>2025-11-18T16:15:09.000Z</lastmod>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/about/resume/</loc>
-      <lastmod>2025-11-18T16:15:09.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/designs/customer-engagement/</loc>
       <lastmod>2025-11-18T16:15:09.000Z</lastmod>
     </url>
   
@@ -97,18 +77,38 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/portfolio/</loc>
-      <lastmod>2025-11-25T20:56:02.615Z</lastmod>
+      <loc>https://www.adamjolicoeur.com/designs/alm/</loc>
+      <lastmod>2025-11-25T20:56:41.000Z</lastmod>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/designs/component-library/</loc>
-      <lastmod>2025-11-25T20:56:02.622Z</lastmod>
+      <lastmod>2025-11-25T20:56:41.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/designs/customer-engagement/</loc>
+      <lastmod>2025-11-25T20:56:41.000Z</lastmod>
     </url>
   
     <url>
       <loc>https://www.adamjolicoeur.com/designs/dashboard-analytics/</loc>
-      <lastmod>2025-11-25T20:56:02.625Z</lastmod>
+      <lastmod>2025-11-25T20:56:41.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/designs/task-it/</loc>
+      <lastmod>2025-11-25T20:56:41.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/portfolio/</loc>
+      <lastmod>2025-11-25T20:56:41.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/presentations/</loc>
+      <lastmod>2025-11-25T20:56:41.000Z</lastmod>
     </url>
   
 </urlset>

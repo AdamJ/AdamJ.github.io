@@ -25,8 +25,8 @@
     "postbuild": "postcss docs/css/*.css -u autoprefixer cssnano -r",
     "start": "cross-env ELEVENTY_ENV=dev npm-run-all clean images:optimize build:sass --parallel watch:*",
     "build": "cross-env ELEVENTY_ENV=prod npm-run-all clean images:optimize build:sass build:eleventy",
-    "lint": "stylelint 'src/sass/*.scss' 'src/sass/*.scss' 'src/sass/*.scss'",
-    "lint:fix": "stylelint --fix 'src/sass/*.scss' 'src/sass/*.scss' 'src/sass/*.scss'",
+    "lint": "stylelint 'src/sass/*.scss'",
+    "lint:fix": "stylelint --fix 'src/sass/*.scss'",
     "images:optimize": "node scripts/image-optimizer.js",
     "bump": "npm --no-git-tag-version version"
   },

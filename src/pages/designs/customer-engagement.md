@@ -216,7 +216,7 @@ eleventyNavigation:
     </p>
   </div>
 </section>
-<divider></divider>
+< class="divider"></divider>
 <section>
   <div class="card">
     <div class="card-header">

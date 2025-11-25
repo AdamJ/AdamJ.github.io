@@ -123,9 +123,9 @@ eleventyNavigation:
     For each section of the ALM application, workflows and wireframes were used to identify possible user paths, as well as to strategize initial designs before moving on to high fidelity mockups and prototypes.
   </p>
   <div class="highlight-block">
-    <divider></divider>
+    <divider class="divider"></divider>
     <h4 class="header-highlight">From Work Items to Development</h4>
-    <divider></divider>
+    <divider class="divider"></divider>
   </div>
   <div class="showcase-small mb-4">
     <h5>Goals:</h5>
@@ -220,7 +220,7 @@ eleventyNavigation:
     </ul>
   </p>
 </section>
-<divider></divider>
+<divider class="divider"></divider>
 <section>
   <div class="card">
     <div class="card-header">

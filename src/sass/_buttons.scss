@@ -16,6 +16,7 @@
 .btn:focus {
   transform: translate(2px, 2px);
   box-shadow: 2px 2px 0 var(--earth-brown);
+
   // outline: var(--border-thin) solid var(--earth-dark);
   // outline-offset: 2px;
 }
@@ -32,6 +33,7 @@
 .btn-primary:focus {
   background: var(--accent-coral-dark);
   color: var(--white);
+
   // outline: var(--border-thin) solid var(--earth-dark);
   // outline-offset: 2px;
 }
@@ -51,14 +53,15 @@
   transform: translate(2px, 2px);
   box-shadow: 2px 2px 0 var(--earth-sage);
   outline: var(--border-thin) solid var(--earth-dark);
+
   // outline-offset: 2px;
 }
 
 /* Outline button */
 .btn-outline {
-  background: rgba(255, 255, 255, .5) !important;
+  background: rgb(255, 255, 255, 50%) !important;
   backdrop-filter: blur(24px);
-  filter: url(#lensFilter) saturate(120%) brightness(1.15);
+  filter: url("#lensFilter") saturate(120%) brightness(1.15);
   color: var(--text-primary) !important;
   border: var(--border-medium, 4px) solid var(--earth-brown) !important;
   box-shadow: none !important;
@@ -68,6 +71,7 @@
 .btn-outline:focus {
   color: var(--earth-cream);
   text-decoration: underline;
+
   // outline: var(--border-thin) solid var(--earth-dark);
   // outline-offset: 2px;
 }
@@ -130,6 +134,7 @@
 .social-link:focus {
   background: var(--accent-coral);
   transform: translateY(-2px);
+
   // outline: var(--border-thin, 2px) solid var(--earth-cream);
   // outline-offset: 2px;
   color: var(--white) !important;

@@ -17,12 +17,12 @@ section {
   flex-wrap: wrap;
   gap: var(--space-lg, 2rem);
 }
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .row {
     gap: var(--space-xs, 0.5rem);
   }
 }
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .card-body .row {
     gap: 0;
   }
@@ -48,7 +48,7 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-bottom: var(--space-lg, 2rem);
 }
-divider, .divider {
+.divider {
   display: block;
   width: 50%;
   height: var(--space-md, 1.5rem);
@@ -56,7 +56,7 @@ divider, .divider {
   border: var(--border-medium, 4px) outset var(--earth-dark);
   margin: 0 auto;
 }
-divider.vertical, .divider.vertical {
+.divider.vertical {
   width: var(--space-2xs, 0.25rem);
   height: 100%;
   background: var(--earth-dark);

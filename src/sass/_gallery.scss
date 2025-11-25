@@ -1,5 +1,7 @@
+/* stylelint-disable */
 .gallery {
   --size: 100px;
+
   display: grid;
   grid-template-columns: repeat(6, var(--size));
   grid-auto-rows: var(--size);
@@ -51,7 +53,7 @@
 @mixin aspect-ratio($width, $height) {
   position: relative;
 
-  &:before {
+  &::before {
     display: block;
     content: '';
     width: 100%;
@@ -60,14 +62,12 @@
 
   > img {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
   }
 }
+
 // .carousel-container {
 //   max-width: 1044px;
 //   margin: 0 auto;
@@ -81,10 +81,10 @@
   // margin-bottom: 22px;
 
   > input {
+    width: 1px;
+    height: 1px;
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
-    height: 1px;
-    width: 1px;
     margin: -1px;
     overflow: hidden;
     padding: 0;
@@ -167,49 +167,49 @@
     }
 
     &:nth-of-type(1):checked ~ .carousel__thumbnails li:nth-of-type(1) {
-      box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
     }
     &:nth-of-type(2):checked ~ .carousel__thumbnails li:nth-of-type(2) {
-      box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
     }
     &:nth-of-type(3):checked ~ .carousel__thumbnails li:nth-of-type(3) {
-      box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
     }
     &:nth-of-type(4):checked ~ .carousel__thumbnails li:nth-of-type(4) {
-      box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
     }
     &:nth-of-type(5):checked ~ .carousel__thumbnails li:nth-of-type(5) {
-      box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
     }
     &:nth-of-type(6):checked ~ .carousel__thumbnails li:nth-of-type(6) {
-      box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
     }
     &:nth-of-type(7):checked ~ .carousel__thumbnails li:nth-of-type(7) {
-      box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
     }
     &:nth-of-type(8):checked ~ .carousel__thumbnails li:nth-of-type(8) {
-      box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
     }
     &:nth-of-type(9):checked ~ .carousel__thumbnails li:nth-of-type(9) {
-      box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
     }
     &:nth-of-type(10):checked ~ .carousel__thumbnails li:nth-of-type(10) {
-      box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
     }
     &:nth-of-type(11):checked ~ .carousel__thumbnails li:nth-of-type(11) {
-      box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
     }
     &:nth-of-type(12):checked ~ .carousel__thumbnails li:nth-of-type(12) {
-      box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
     }
     &:nth-of-type(13):checked ~ .carousel__thumbnails li:nth-of-type(13) {
-      box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
     }
     &:nth-of-type(14):checked ~ .carousel__thumbnails li:nth-of-type(14) {
-      box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
     }
     &:nth-of-type(15):checked ~ .carousel__thumbnails li:nth-of-type(15) {
-      box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
     }
   }
 }
@@ -244,6 +244,7 @@
 
   div {
     @include aspect-ratio(3, 2);
+
     width: 100%;
   }
 
@@ -255,7 +256,7 @@
 
   figcaption {
     align-self: flex-end;
-    padding: 20px 20px 0 20px;
+    padding: 20px 20px 0;
     flex: 0 0 auto;
     width: 25%;
     min-width: 150px;
@@ -263,7 +264,7 @@
 
   .credit {
     margin-top: 1rem;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgb(0, 0, 0, 50%);
     display: block;
   }
 
@@ -275,9 +276,7 @@
 .carousel__thumbnails {
   list-style: none;
   padding: 0;
-  margin: 0;
   display: flex;
-
   margin: 0 -10px;
 
   .carousel__slides + & {
@@ -300,7 +299,7 @@
       cursor: pointer;
 
       img {
-        box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 0 0 1px rgb(0, 0, 0, 25%);
         transition: all 300ms ease-in-out;
       }
     }
@@ -313,3 +312,4 @@
     object-fit: cover;
   }
 }
+/* stylelint-enable */
