@@ -45,11 +45,18 @@ nav a {
 nav a:hover,
 nav a:focus {
   color: var(--accent-coral);
-  // outline: var(--border-thin) solid var(--accent-coral);
-  // outline-offset: 2px;
+  outline: var(--border-thin) solid var(--accent-coral);
+  outline-offset: 2px;
 }
 nav a.active {
   color: var(--accent-coral);
+}
+nav a.sub-page {
+  outline: var(--border-thin) solid var(--text-secondary);
+  outline-offset: 2px;
+}
+nav a.sub-page:hover {
+  outline-color: var(--accent-coral);
 }
 
 @media (max-width: 768px) {

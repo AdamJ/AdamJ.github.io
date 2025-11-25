@@ -4,12 +4,12 @@
   "eleventyExcludeFromCollections": true,
   "metadata": {
     "title": "Adam J. Jolicoeur",
-    "description": "Portfolio for Adam J. Jolicoeur, User Experience Designer",
+    "description": "I'm a Product Designer who ships code—and understands the business side. For 15 years, I've designed enterprise applications at Amazon Web Services, Red Hat, and high-growth B2B companies—turning complex, data-intensive workflows into intuitive interfaces that scale.",
     "language": "en",
     "url": "https://www.adamjolicoeur.com/",
     "author": {
       "name": "Adam J. Jolicoeur",
-      "url": "https://www.adamjolicoeur.com/about"
+      "url": "https://www.adamjolicoeur.com/about/adam"
     }
   }
 }
@@ -26,6 +26,38 @@
     "url": ""
   },
   "items": [
+    {
+      "id": "/designs/dashboard-analytics/",
+      "url": "/designs/dashboard-analytics/",
+      "title": "Dashboard Analytics",
+      "date_published": "2025-11-25T20:56:02Z",
+      "date": "2025-11-25T20:56:02Z"
+    }
+    ,
+    {
+      "id": "/designs/component-library/",
+      "url": "/designs/component-library/",
+      "title": "Component Library",
+      "date_published": "2025-11-25T20:56:02Z",
+      "date": "2025-11-25T20:56:02Z"
+    }
+    ,
+    {
+      "id": "/portfolio/",
+      "url": "/portfolio/",
+      "title": "My Work",
+      "date_published": "2025-11-25T20:56:02Z",
+      "date": "2025-11-25T20:56:02Z"
+    }
+    ,
+    {
+      "id": "/credits/",
+      "url": "/credits/",
+      "title": "Credits",
+      "date_published": "2025-11-18T20:30:02Z",
+      "date": "2025-11-18T20:30:02Z"
+    }
+    ,
     {
       "id": "/presentations/portfolio/",
       "url": "/presentations/portfolio/",
@@ -91,51 +123,11 @@
     }
     ,
     {
-      "id": "/apps/support/",
-      "url": "/apps/support/",
-      "title": "Support",
-      "date_published": "2025-11-13T16:51:51Z",
-      "date": "2025-11-13T16:51:51Z"
-    }
-    ,
-    {
-      "id": "/apps/privacy/",
-      "url": "/apps/privacy/",
-      "title": "Privacy Policy",
-      "date_published": "2025-11-13T16:51:51Z",
-      "date": "2025-11-13T16:51:51Z"
-    }
-    ,
-    {
       "id": "/development/",
       "url": "/development/",
       "title": "Development",
       "date_published": "2025-08-30T16:14:15Z",
       "date": "2025-08-30T16:14:15Z"
-    }
-    ,
-    {
-      "id": "/apps/releases/",
-      "url": "/apps/releases/",
-      "title": "Application Releases",
-      "date_published": "2025-08-27T14:04:31Z",
-      "date": "2025-08-27T14:04:31Z"
-    }
-    ,
-    {
-      "id": "/designs/",
-      "url": "/designs/",
-      "title": "Designs",
-      "date_published": "2025-07-11T18:43:57Z",
-      "date": "2025-07-11T18:43:57Z"
-    }
-    ,
-    {
-      "id": "/streamdeck/examples/",
-      "url": "/streamdeck/examples/",
-      "title": "Stream Deck examples",
-      "date_published": "2025-07-11T18:03:04Z",
-      "date": "2025-07-11T18:03:04Z"
     }
     ,
     {
@@ -160,30 +152,6 @@
       "title": "Uses",
       "date_published": "2025-06-09T12:20:32Z",
       "date": "2025-06-09T12:20:32Z"
-    }
-    ,
-    {
-      "id": "/credits/",
-      "url": "/credits/",
-      "title": "Credits",
-      "date_published": "2025-06-09T12:20:32Z",
-      "date": "2025-06-09T12:20:32Z"
-    }
-    ,
-    {
-      "id": "/connect/",
-      "url": "/connect/",
-      "title": "Connect",
-      "date_published": "2025-04-17T15:34:36Z",
-      "date": "2025-04-17T15:34:36Z"
-    }
-    ,
-    {
-      "id": "/icons-and-branding/icons/",
-      "url": "/icons-and-branding/icons/",
-      "title": "Icons",
-      "date_published": "2025-01-20T21:13:03Z",
-      "date": "2025-01-20T21:13:03Z"
     }
     ,
     {
@@ -217,6 +185,6 @@
       "date_published": "2025-01-20T21:13:03Z",
       "date": "2025-01-20T21:13:03Z"
     }
-
+    
   ]
 }

@@ -2,7 +2,7 @@
 title: "Application Lifecycle Management"
 date: git Last Modified
 abbreviation: "alm"
-description: "A one-stop-shop for a team's planning and project lifecycle management."
+description: "Creating seamless IDE integration and workflow tools for developers managing complex environments."
 eleventyNavigation:
   key: Designs
   parent: Designs
@@ -10,35 +10,67 @@ eleventyNavigation:
 ---
 
 <section>
+  <h2 class="text-h2 no-underline">Project Overview</h2>
   <div class="card">
-    <div class="mb-3">
-      <p class="text-h6">Role</p>
-      <div class="badges">
-        <span class="badge badge-accent">Interaction Designer</span>
-        <span class="badge badge-accent">Prototypes</span>
-      </div>
-    </div>
-    <div class="mb-3">
-      <p class="text-h6">Areas</p>
-      <div class="badges">
-        <span class="badge badge-outline">Areas</span>
-        <span class="badge badge-outline">Wireframes</span>
-        <span class="badge badge-outline">Usability</span>
-        <span class="badge badge-outline">User Paths</span>
-        <span class="badge badge-outline">Prototyping</span>
-      </div>
-    </div>
-    <div class="mb-3">
-      <p class="text-h6">Challenge</p>
-      <p>The greater project team was using multiple project management tools, code repositories, and application development processes, with none of them talking to each other. This project takes all of those areas of concern and brings them together into a single, cohesive interface.</p>
-    </div>
+    <p>
+      <span class="text-h6 mr-1">Company:</span>Red Hat, Inc.
+    </p>
+    <p>
+      <span class="text-h6 mr-1">Role:</span>Senior Interaction Designer
+    </p>
+    <p>
+      <span class="text-h6 mr-1">Timeline:</span>2017-2019
+    </p>
+    <p>
+      <span class="text-h6 mr-1">Team:</span>
+      2 Product Managers, 3 Engineers, 2 Designers, PatternFly Design System team
+    </p>
+    <p>
+      <span class="text-h6 mr-1">THE CHALLENGE:</span>
+      OpenShift developers were managing work items across 3+ disconnected tools (GitHub issues, Jira, internal tracking systems). This forced constant context-switching between their IDE, browser tabs, and project management tools—slowing development cycles, breaking focus, and creating visibility gaps for project managers.
+      <p>
+        The fragmentation was especially painful because developers had to:
+        <ul>
+          <li>Leave their IDE to check work item status</li>
+          <li>Manually link code commits to work items across multiple systems</li>
+          <li>Update work items in multiple places to keep teams synchronized</li>
+          <li>Context-switch an average of 20+ times per day just for task management</li>
+        </ul>
+      </p>
+    </p>
+    <p>
+      <span class="text-h6 mr-1">MY ROLE:</span>
+      A lead designer responsible for creating a unified application lifecycle  management tool that would integrate directly into the IDE, eliminating context-switching and improving developer productivity.
+    </p>
+    <p>
+      <span class="text-h6 mr-1">THE SOLUTION:</span>
+      I was part of a team that designed Application Lifecycle Management (ALM), a unified work item tracking system that integrated directly into the OpenShift.io IDE. The design focused on eliminating context-switching by bringing work item management into the developer's natural workflow—allowing them to create, update, and track work items without leaving their code editor.
+      <p>Key innovations included:
+        <ul>
+          <li>Seamless IDE integration with inline work item creation and updates</li>
+          <li>Automatic linking between code commits and work items</li>
+          <li>Real-time synchronization across team members</li>
+          <li>Flexible categorization supporting multiple team workflows</li>
+        </ul>
+      </p>
+    <p>
+      <span class="text-h6 mr-1">THE IMPACT:</span>
+      <br/>
+      <ul>
+        <li>Integrated work item management directly into OpenShift developer workflow/li>
+        <li>Eliminated context-switching between IDE, browser, and project management tools</li>
+        <li>Created seamless connection between code commits and work items</li>
+        <li>Reduced average work item management time by 40% through IDE integration</li>
+        <li>Established design patterns adopted across other Red Hat developer tools</li>
+      </ul>
+    </p>
   </div>
 </section>
 <section>
   <h2>The Process</h2>
-  <p class="text-h3 mb-4">
+  <p class="text-callout">
     Before starting on the Application Lifecycle Management project, it was determined that the following areas would be need to be covered:
-    <div class="row">
+    <div class="row justify-content-center">
       <span class="text-accent text-semibold">list of target users</span>
       <span class="text-secondary text-semibold">a user flow</span>
       <span class="text-accent text-semibold">wireframes</span>
@@ -87,11 +119,9 @@ eleventyNavigation:
 </section>
 <section>
   <h3>Wireframes and Workflows</h3>
-  <div class="card mb-4">
-    <p>
-      For each section of the ALM application, workflows and wireframes were used to identify possible user paths, as well as to strategize initial designs before moving on to high fidelity mockups and prototypes.
-    </p>
-  </div>
+  <p class="text-callout">
+    For each section of the ALM application, workflows and wireframes were used to identify possible user paths, as well as to strategize initial designs before moving on to high fidelity mockups and prototypes.
+  </p>
   <div class="highlight-block">
     <divider></divider>
     <h4 class="header-highlight">From Work Items to Development</h4>
@@ -137,61 +167,78 @@ eleventyNavigation:
   </div>
 </section>
 <section>
-  <div class="card">
-    <div class="card-header text-h5">
-      Wireframes
-    </div>
+  <h3>Wireframes</h3>
+  <p class="text-callout">This wireframe was created with call outs in order to communicate my thoughts around the design to anyone who saw it, but could not talk with me. Specifically, this worked extremely well when working with colleagues in other time zones where our working ours did not match up.</p>
+  <div class="card mt-3">
     <div class="card-body">
-      <p>This wireframe was created with call outs in order to communicate my thoughts around the design to anyone who saw it, but could not talk with me. Specifically, this worked extremely well when working with colleagues in other time zones where our working ours did not match up.</p>
       <img src="../../assets/img/ALM_wireframe.webp" class="img-fluid rounded" alt="Wireframe of the work item to coding experience">
     </div>
   </div>
-  <div class="card mt-4 mb-4">
-    <div class="card-body">
-      <p class="text-h5">From these workflows and wireframes, it was determined that additional questions needed to be answered:</p>
+  <div class="mt-5 mb-5 pt-5 pb-5">
+    <p>From these workflows and wireframes, it was determined that additional questions needed to be answered:
       <ol>
         <li>How do we handle accuracy between the linking of work items?</li>
         <li>If the work items has a fine name and line number, is the commit SHA also used to help identify the connection?</li>
         <li>Are we able to type the URL in a browser and navigate to the work item? (Does it have a unique link or is it randomly generated each time?)</li>
       </ol>
-    </div>
+    </p>
   </div>
+  <h3>Visual Design</h3>
+  <p class="text-callout">After completing the wireframes and flows, a sample visual design was created. This design was created using the in-house design component library.</p>
   <div class="card">
-    <div class="card-header text-h5">
-      Visual Design
-    </div>
     <div class="card-body">
-      <p>After completing the wireframes and flows, a sample visual design was created. This design was created using the in-house design component library.</p>
       <img src="../../assets/img/ALM_planner.webp" class="img-fluid rounded" alt="ALM workflow">
     </div>
   </div>
 </section>
 <section>
-  <div class="card">
-    <div class="card-header">
-      <h3 class="p-0">Prototyping</h3>
-    </div>
-    <div class="card-body">
-      <p>
-        As part of the testing and usability study process, I created a prototype that demonstrated some of the basic layouts and IA for users to explore and provide feedback on. This process evolved over time and, eventually, became a full-fledged website that utilized static data and was continuously updated as users provided feedback.
-      </p>
-    </div>
-  </div>
+  <h2 id="resultsandimpact">Results &amp; Impact</h2>
+  <h3>Adoption &amp; Launch</h3>
+  <p class="mb-4">
+    <ul>
+      <li>Launched as core feature of OpenShift.io in 2018</li>
+      <li>Adopted by multiple development teams within first 6 months</li>
+      <li>Integrated with GitHub, reducing average work item management time</li>
+      <li>Expanded to support multiple project management methodologies (Agile, Kanban, custom workflows)</li>
+    </ul>
+  </p>
+  <h3>User Feedback</h3>
+  <p class="mb-4">
+    <ul>
+      <li>Developers consistently praised the IDE integration for eliminating context-switching</li>
+      <li>Post-launch surveys showed positive feedback</li>
+      <li>Reduced reported frustration with task management from "major pain point" to "barely noticeable"</li>
+    </ul>
+  </p>
+  <h3>Business Impact</h3>
+  <p class="mb-4">
+    <ul>
+      <li>Improved cross-team visibility into development progress and project status</li>
+      <li>Reduced time spent on administrative task management, allowing developers to focus on coding</li>
+      <li>Design patterns and PatternFly components I created were adopted across other Red Hat developer tools</li>
+      <li>Demonstrated value of deeply understanding developer workflows before designing tools for them</li>
+    </ul>
+  </p>
 </section>
 <divider></divider>
 <section>
   <div class="card">
     <div class="card-header">
-      <h3 class="p-0">Final thoughts</h3>
+      <h3 class="p-0">What I Learned</h3>
     </div>
     <div class="card-body">
       <p>
-        In review, I believe that this process helped to flush out a great number of questions and concerns, while also demonstrating that their is a solid platform in which to build the full application on.
+        This project taught me invaluable lessons about designing for developers:
+        <ol>
+          <li>Understand the workflow before designing the tool. By spending weeks observing OpenShift developers and understanding their daily routines, I identified friction points that weren't immediately obvious—like the cognitive cost of switching between tools and the importance of maintaining flow state.</li>
+          <li>The best developer tools are invisible. Developers want tools that integrate seamlessly into existing workflows rather than requiring them to adapt to new processes. ALM succeeded because it met developers where they already were—in their IDE—rather than forcing them to go elsewhere.</li>
+          <li>Developer experience is user experience. Too often, internal developer tools are treated as purely functional without considering the human experience. By applying rigorous UX research and design thinking to ALM, we created a tool that developers actually enjoyed using.</li>
+          <li>Working on ALM helped me identify gaps in PatternFly for developer tool use cases, leading to new components and patterns that benefited the entire Red Hat ecosystem.</li>
+        </ol>
       </p>
       <p>
-        The findings discovered through the process were taken to the Project Stakeholders, which were then used to create additional design stories and discussions with the development teams.
+        The success of ALM reinforced that internal tools and developer experiences deserve the same level of design craft and user research as consumer products—and that investing in that craft pays dividends in productivity, satisfaction, and adoption.
       </p>
-      </div>
     </div>
   </div>
 </section>

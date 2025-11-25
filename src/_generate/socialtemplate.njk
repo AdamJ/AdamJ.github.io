@@ -7,24 +7,31 @@ eleventyExcludeFromCollections: true
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="Social media template for AdamJolicoeur.com" />
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | url }}">
-    <link rel="icon" type="image/png" size="48x48" href="{{ '/android-chrome-192x192.png' | url }}">
-    <link rel="icon" type="image/png" size="48x48" href="{{ '/android-chrome-512x512.png' | url }}">
-    <link rel="icon" type="image/png" size="48x48" href="{{ '/favicon.ico' | url }}">
-    <link rel="icon" type="image/png" size="72x72" href="{{ '/favicon-16x16.png' | url }}">
-    <link rel="icon" type="image/png" size="72x72" href="{{ '/favicon-32x32.png' | url }}">
-    <link rel="icon" type="image/png" size="72x72" href="{{ '/favicon.png' | url }}">
-    <title>AdamJolicoeur.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
+    {%- set pageDescription %}{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}{% endset -%}
+    {%- set pageSocialImg %}{{ meta.url }}/previews/{% if title %}{{ title | slug }}{% else %}home{% endif %}.png{% endset -%}
+    <meta name="keywords" content="@{{ meta.siteMeta }}" />
+    <title>{{pageTitle}}</title>
     <meta
       name="description"
-      content="Social media template for AdamJolicoeur.com"
+      content="{{pageDescription}}"
     />
     <meta name="generator" content="Eleventy">
+    <meta property="og:title" content="Adam J. Jolicoeur" />
+    <meta property="og:url" content="{{siteURL}}" />
+    <meta property="og:description" content="{{pageDescription}}">
+    <meta property="og:site_name" content="Adam J. Jolicoeur">
+    <meta property="og:type" content="website">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/icon-180.png' | url }}">
+    <link rel="icon" type="image/png" size="16x16" href="{{ '/icon-16.png' | url }}">
+    <link rel="icon" type="image/png" size="32x32" href="{{ '/icon-32.png' | url }}">
+    <link rel="icon" type="image/png" size="192x192" href="{{ '/icon-192.png' | url }}">
+    <link rel="icon" type="image/png" size="512x512" href="{{ '/icon-512.png' | url }}">
+    <link rel="manifest" href="{{ '/manifest.json' | url }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pirata+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <style>
       {% raw %}{{ style }}{% endraw %}
     </style>

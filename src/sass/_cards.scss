@@ -24,6 +24,15 @@
               12px 12px 0 5px var(--earth-brown);
 }
 
+/* Card with only shadow */
+.card-shadow {
+  background: var(--earth-cream);
+  border: none;
+  border-radius: var(--radius-lg, 16px);
+  padding: var(--space-md, 1.5rem);
+  box-shadow: 10px 10px 0 var(--shadow-heavy);
+}
+
 /* Card with accent shadow */
 .card-accent {
   background: var(--earth-cream);
@@ -35,17 +44,27 @@
 }
 
 /* Simple card (minimal shadow) */
-.card-simple {
-  background: var(--earth-sand);
-  border: var(--border-medium, 4px) solid var(--earth-brown);
-  border-radius: var(--radius-lg, 1rem);
-  padding: var(--space-md, 1rem);
-  box-shadow: 4px 4px 0 var(--shadow-light);
+.card-flex {
+  display: flex;
+  flex-direction: column;
 }
-@media (max-width: 768px) {
-  .card-simple {
-    box-shadow: 2px 2px 0 var(--shadow-light);
-    padding: var(--space-md, 1rem) var(--space-sm, .5rem);
+.card-flex p {
+  flex: 1 0;
+}
+
+.card-with-columns {
+  .row {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md, 1rem);
+    align-self: stretch;
+  }
+  .column {
+    display: flex;
+    flex: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
   }
 }
 
@@ -63,6 +82,12 @@
 .card-body img {
   object-fit: cover;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .img-thumbnail {
+    max-width: 50%;
+  }
 }
 
 .card-body:last-child {
@@ -169,7 +194,7 @@
 }
 
 /* Small Projects */
-.small-showcase {
+.small-showcase-cards {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

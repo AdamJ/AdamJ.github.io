@@ -50,19 +50,21 @@
   <a rel="me" href="https://mastodon.world/@adamjol" aria-hidden="true" class="display-none">Mastodon</a>
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    {% if page.url === '/' %}
       <nav role="navigation" aria-label="Main navigation" class="main-nav" style="bottom: 0 !important;">
         <ul>
           <li>
-            <a href="#about" alt="Jump to about section">
-              {# <i class="fa-solid fa-address-card fa-lg"></i> #}
+            <a href="{{ '/' | url }}" {% if page.url === '/' %}class="active"{% endif %} alt="Navigate to home page">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="{{ '/about/adam' | url }}" {% if page.url === '/about/adam/' %}class="active"{% elseif 'resume' in page.url%}class="sub-page"{% endif %} alt="Navigate to about page">
               About
             </a>
           </li>
           <li>
-            <a href="#work" alt="Jump to work section">
-              Featured
+            <a href="{{ '/portfolio' | url }}" {% if 'portfolio' in page.url %}class="active" {% elseif 'component-library' in page.url %}class="sub-page"{% elseif 'customer-engagement' in page.url %}class="sub-page"{% endif %}alt="Navigate to portfolio page">
+              Portfolio
             </a>
           </li>
           <li>
@@ -70,113 +72,8 @@
               Comments
             </a>
           </li>
-          <li>
-            <a href="#opensource" alt="Jump to open source section">
-              OSS
-            </a>
-          </li>
         </ul>
       </nav>
-    {% elseif 'presentations' in page.url %}
-      <nav role="navigation" aria-label="Main navigation" class="main-nav">
-        <ul>
-          <li>
-            <a href="{{ '/' | url }}" alt="Link to home page">
-              Home
-            </a>
-          </li>
-          <li>
-            <divider class="vertical"></divider>
-          </li>
-          <li>
-            <a href="{{ '/presentations/portfolio' | url }}" {% if 'portfolio' in page.url %}class="active"{% endif %} alt="Link to the portfolio presentation page">
-              Portfolio
-            </a>
-          </li>
-          <li>
-            <a href="{{ '/presentations/color-picker' | url }}" {% if 'color-picker' in page.url %}class="active"{% endif %} alt="Link to the color picker presentation page">
-              Color Picker
-            </a>
-          </li>
-        </ul>
-      </nav>
-    {% elseif 'credits' in page.url %}
-      <nav role="navigation" aria-label="Main navigation" class="main-nav">
-        <ul>
-          <li>
-            <a href="{{ '/' | url }}" alt="Link to home page">
-              Home
-            </a>
-          </li>
-          <li>
-            <divider class="vertical"></divider>
-          </li>
-          <li>
-            <a href="{{ '/about/adam' | url }}" {% if page.url === '/about' %}class="active"{% endif %} alt="Link to the about page">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="{{ '/about/resume' | url }}" {% if 'resume' in page.url %}class="active"{% endif %} alt="Link to the resume">
-              Resume
-            </a>
-          </li>
-          <li>
-            <a href="{{ '/credits' | url }}" {% if 'credits' in page.url %}class="active"{% endif %} alt="Link to the resume">
-              Credits
-            </a>
-          </li>
-        </ul>
-      </nav>
-    {% elseif 'about' in page.url %}
-      <nav role="navigation" aria-label="Main navigation" class="main-nav">
-        <ul>
-          <li>
-            <a href="{{ '/' | url }}" alt="Link to home page">
-              Home
-            </a>
-          </li>
-          <li>
-            <divider class="vertical"></divider>
-          </li>
-          <li>
-            <a href="{{ '/about/adam' | url }}" {% if 'adam' in page.url %}class="active"{% endif %} alt="Link to the about page">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="{{ '/about/resume' | url }}" {% if 'resume' in page.url %}class="active"{% endif %} alt="Link to the resume">
-              Resume
-            </a>
-          </li>
-          <li>
-            <a href="{{ '/credits' | url }}" {% if 'credits' in page.url %}class="active"{% endif %} alt="Link to the resume">
-              Credits
-            </a>
-          </li>
-        </ul>
-      </nav>
-    {% else %}
-      <nav role="navigation" aria-label="Main navigation" class="main-nav">
-        <ul>
-          <li>
-            <a href="{{ '/' | url }}" alt="Link to home page">
-              Home
-            </a>
-          </li>
-          <li>
-            <divider class="vertical"></divider>
-          </li>
-          <li>
-            <a href="{{ '/designs/task-it' | url }}" {% if '/designs/task-it' in page.url %}class="active"{% endif %} alt="Link to Task It case study">
-              Task-It!
-            </a>
-          </li>
-          <li><a href="{{ '/designs/alm' | url }}" {% if '/designs/alm' in page.url %}class="active"{% endif %} alt="Link to ALM case study">ALM</a></li>
-        </ul>
-      </nav>
-    {% endif %}
-    {# {% include 'navigation.njk' %} #}
     <main id="main-content">
       {{ content | safe }}
     </main>
@@ -214,5 +111,6 @@
         });
       })();
     </script>
+    <script src="{{ '/js/prism.js' | url }}"></script>
   </body>
 </html>

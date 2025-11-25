@@ -17,6 +17,16 @@ section {
   flex-wrap: wrap;
   gap: var(--space-lg, 2rem);
 }
+@media (min-width: 768px) {
+  .row {
+    gap: var(--space-xs, 0.5rem);
+  }
+}
+@media (min-width: 768px) {
+  .card-body .row {
+    gap: 0;
+  }
+}
 .button-row {
   gap: 1rem;
 }

@@ -44,6 +44,10 @@ h2, .text-h2 {
   font-weight: 700;
   margin-bottom: var(--space-md, 1.5rem);
 }
+.text-h2.no-underline::after {
+  display: none;
+  margin-bottom: var(--space-2xs, 0.25rem);
+}
 h2::after, .text-h2::after {
   content: '';
   display: block;
@@ -94,8 +98,8 @@ h6, .text-h6 {
 
 /* Body text sizes */
 .text-body-lg {
-  font-size: clamp(1.1rem, 1.5vw, 1.25rem);
-  line-height: 1.7;
+  font-size: clamp(1.1rem, 1.5vw, 1.25rem) !important;
+  line-height: 1.7 !important;
 }
 
 p, .text-body {
@@ -121,6 +125,17 @@ p:last-child, .text-body:last-child {
   font-size: clamp(var(--space-sm), 1vw, 0.85rem);
   line-height: 1.5;
   color: var(--text-muted);
+}
+
+.text-callout {
+  font-size: clamp(1rem, 1.5vw, 1.1rem);
+  line-height: 1.6;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: var(--space-lg, 1.5rem);
+  padding: var(--space-lg, 1.5rem);
+  background: var(--earth-sand-light);
+  border-left: var(--border-medium) solid var(--accent-coral);
 }
 
 code, .code {

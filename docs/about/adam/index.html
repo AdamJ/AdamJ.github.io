@@ -46,37 +46,30 @@
   <a rel="me" href="https://mastodon.world/@adamjol" aria-hidden="true" class="display-none">Mastodon</a>
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    
-      <nav role="navigation" aria-label="Main navigation" class="main-nav">
+      <nav role="navigation" aria-label="Main navigation" class="main-nav" style="bottom: 0 !important;">
         <ul>
           <li>
-            <a href="/" alt="Link to home page">
+            <a href="/"  alt="Navigate to home page">
               Home
             </a>
           </li>
           <li>
-            <divider class="vertical"></divider>
-          </li>
-          <li>
-            <a href="/about/adam" class="active" alt="Link to the about page">
+            <a href="/about/adam" class="active" alt="Navigate to about page">
               About
             </a>
           </li>
           <li>
-            <a href="/about/resume"  alt="Link to the resume">
-              Resume
+            <a href="/portfolio" alt="Navigate to portfolio page">
+              Portfolio
             </a>
           </li>
           <li>
-            <a href="/credits"  alt="Link to the resume">
-              Credits
+            <a href="#testimonials" alt="Jump to testimonials section">
+              Comments
             </a>
           </li>
         </ul>
       </nav>
-    
-    
     <main id="main-content">
       <section>
   <h2>Hello!</h2>
@@ -106,29 +99,30 @@
     <footer id="contact">
   <div class="footer-content">
     <div class="footer-section">
-      <h3>Connect</h3>
+      <h3>ABOUT ME</h3>
+      <p>
+        I'm a Product Designer with 15+ years at AWS, Red Hat, and high-growth B2B companies. I specialize in design systems, enterprise applications, and complex data-intensive interfaces.
+      </p>
+      <p>
+        Currently open to senior Product Designer and Design Systems roles at mission-driven companies building impactful products.
+      </p>
+      <p>
+        This portfolio showcases my approach to solving complex design challenges through user research, systematic thinking, and collaboration with engineering teams.
+      </p>
+    </div>
+    <div class="footer-section">
+      <h3>CONTACT ME</h3>
       <div class="social-links">
+        <a href="mailto:contact@adamjolicoeur.com" class="social-link" alt="Open an email client to email me">Email Me</a>
+        <a href="/about/resume" class="social-link" aria-label="View my resume">Resume</a>
         <a href="https://www.linkedin.com/in/ajjolicoeur" class="social-link" target="_blank" alt="Linked to my LinkedIn profile">LinkedIn</a>
         <a href="https://www.github.com/AdamJ" alt="Link to my GitHub profile" target="_blank" class="social-link">GitHub</a>
         <a href="https://blog.adamjolicoeur.com" class="social-link" target="_blank" alt="Link to my blog">Blog</a>
-        <a href="mailto:contact@adamjolicoeur.com" class="social-link" alt="Open an email client to email me">Email Me</a>
       </div>
-    </div>
-    <div class="footer-section">
-      <h3>Resources</h3>
-      <div class="social-links">
-        <a href="/about/adam" class="social-link" aria-label="Link to an about page">About</a>
-        <a href="/about/resume" class="social-link" aria-label="View my resume">Resume</a>
-        <a href="/presentations" class="social-link" aria-label="View prior presentations">Presentations</a>
-      </div>
-    </div>
-    <div class="footer-section">
-      <h3>About This Site</h3>
-      <p>Built with <a href="https://www.11ty.dev" target="_blank" alt="Link to Eleventy's website">Eleventy</a>, designed with care. This portfolio showcases my approach to blending thoughtful design with clean, maintainable code.</p>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>Copyright &copy; 2008-2025 <a href="/about" alt="Link to an about page">Adam J. Jolicoeur</a>. All rights reserved. Designed & developed with <i class="fa-solid fa-brain"></i></p>
+    <p>Copyright &copy; 2008-2025 <a href="/about" alt="Link to an about page">Adam J. Jolicoeur</a>. All rights reserved. Designed & developed with <i class="fa-solid fa-brain"></i> <i class="fa-solid fa-robot"></i></p>
     <a href="/sitemap.xml" alt="Link to the sitemap">
       Sitemap
     </a>
@@ -172,5 +166,6 @@
         });
       })();
     </script>
+    <script src="/js/prism.js"></script>
   </body>
 </html>
