@@ -59,6 +59,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("src/sass/*.scss");
 
   eleventyConfig.addPassthroughCopy("src/assets/img");
+  eleventyConfig.addPassthroughCopy("src/assets/AdamJolicoeur-Resume.pdf");
   eleventyConfig.addPassthroughCopy("src/cache-polyfill.js");
   eleventyConfig.addPassthroughCopy("src/CNAME");
   eleventyConfig.addPassthroughCopy("src/icon-16.png");

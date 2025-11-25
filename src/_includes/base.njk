@@ -58,7 +58,7 @@
             </a>
           </li>
           <li>
-            <a href="{{ '/about/adam' | url }}" {% if page.url === '/about/adam/' %}class="active"{% elseif 'resume' in page.url%}class="sub-page"{% endif %} alt="Navigate to about page">
+            <a href="{{ '/about/adam' | url }}" {% if page.url === '/about/adam/' %}class="active"{% endif %} alt="Navigate to about page">
               About
             </a>
           </li>
@@ -68,8 +68,8 @@
             </a>
           </li>
           <li>
-            <a href="#testimonials" alt="Jump to testimonials section">
-              Comments
+            <a href="{{ '/about/resume' | url }}" {% if 'resume' in page.url %}class="active"{% endif %}alt="Navigate to the resume page">
+              Resume
             </a>
           </li>
         </ul>
