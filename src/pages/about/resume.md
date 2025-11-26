@@ -9,6 +9,7 @@ primaryURL: "https://www.adamjolicoeur.com/downloads/resume.pdf"
 eleventyNavigation:
   key: Resume
   parent: About
+  order: 2
 ---
 
 <section class="hide-on-screen print">
@@ -50,7 +51,7 @@ eleventyNavigation:
 <section class="pt-3 pb-3">
   <a href="{{ '/assets/AdamJolicoeur-Resume.pdf' | url }}" target="_blank" alt="Click to download the resume">Download Resume (PDF)</a>
   <br />
-  <small>Last updated November 2024</small>
+  <small>Last updated November 2025</small>
 </section>
 <section class="pt-3 pb-3">
   <h3>Also available</h3>
