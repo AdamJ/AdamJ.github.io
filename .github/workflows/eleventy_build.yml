@@ -12,7 +12,7 @@ jobs:
         - name: Setup Node
           uses: actions/setup-node@v3.8.1
           with:
-            node-version: '22.x'
+            node-version: '25.x'
         - name: Install dependencies using a safe clean install, build and test
           run: |
             npm config set '//npm.fontawesome.com/:_authToken' "${{ secrets.FONT_AWESOME_TOKEN }}"
