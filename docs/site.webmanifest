@@ -3,14 +3,9 @@
   "name": "AdamJolicoeur.com",
   "icons": [
     {
-      "src": "img/touch/android-chrome-192x192.png",
+      "src": "/android-launchericon-72-72.png",
       "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "img/touch/android-chrome-512x512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "72x72"
     }
   ],
   "theme_color": "#ffffff",

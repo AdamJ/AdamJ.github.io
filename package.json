@@ -15,7 +15,7 @@
     "webhint": "hint http://localhost:8081",
     "stylelint": "npx stylelint '**/*.scss'",
     "stylelint:fix": "npx stylelint --fix `src/sass/style.scss`",
-    "shoelace": "cp -R node_modules/@shoelace-style/shoelace/dist/ src/shoelace/",
+    "webawesome": "cp -R node_modules/@awesome.me/webawesome/dist/webawesome.js src/js",
     "watch:sass": "sass --no-source-map --watch src/sass:docs/css",
     "watch:eleventy": "eleventy --serve --port=8081",
     "build:sass-nomap": "sass --no-source-map src/sass/style.scss docs/css/style.css",
@@ -25,8 +25,8 @@
     "postbuild": "postcss docs/css/*.css -u autoprefixer cssnano -r",
     "start": "cross-env ELEVENTY_ENV=dev npm-run-all clean images:optimize build:sass --parallel watch:*",
     "build": "cross-env ELEVENTY_ENV=prod npm-run-all clean images:optimize build:sass build:eleventy",
-    "lint": "stylelint 'src/sass/*.scss' 'src/sass/*.scss' 'src/sass/*.scss'",
-    "lint:fix": "stylelint --fix 'src/sass/*.scss' 'src/sass/*.scss' 'src/sass/*.scss'",
+    "lint": "stylelint 'src/sass/*.scss'",
+    "lint:fix": "stylelint --fix 'src/sass/*.scss'",
     "images:optimize": "node scripts/image-optimizer.js",
     "bump": "npm --no-git-tag-version version"
   },
@@ -74,7 +74,7 @@
   ],
   "dependencies": {
     "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",
-    "@shoelace-style/shoelace": "^2.20.1",
+    "@11tyrocks/eleventy-plugin-sass-lightningcss": "^1.3.0",
     "bootstrap": "^5.3.8"
   }
 }

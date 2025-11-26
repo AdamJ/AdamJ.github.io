@@ -5,41 +5,32 @@ layout: markdown
 readTime: false
 ---
 
-Giving credit where credit is due, this page is based off of the [Credits](https://raw.githubusercontent.com/LeaVerou/lea.verou.me/refs/heads/main/credits/index.md) page from [Lea Verou](https://lea.verou.me/).
+> Giving credit where credit is due, this page is based off of the [Credits](https://raw.githubusercontent.com/LeaVerou/lea.verou.me/refs/heads/main/credits/index.md) page from [Lea Verou](https://lea.verou.me/).
 
 ---
 
-This site was built using [Eleventy](https://www.11ty.dev/), hosted on [Cloudflare Pages](https://cloudflare.com/), with previews deployed with [Cloudflare](https://www.cloudflare.com/). Certificate courtesy of Cloudflare and [Let's Encrypt](https://letsencrypt.org/).
+> This site was built using [Eleventy](https://www.11ty.dev/), hosted on [Cloudflare Pages](https://cloudflare.com/), with previews deployed with [Cloudflare](https://www.cloudflare.com/). Certificate courtesy of Cloudflare and [Let's Encrypt](https://letsencrypt.org/).
 
 ## Libraries
 
 - [Eleventy](https://www.11ty.dev/)
-- [Shoelace](https://shoelace.style/)
-- [Bootstrap](https://getbootstrap.com/)
 
 ## Fonts
 
 ```css
   :root {
-    --sl-font-sans: "Oswald", sans-serif;
-    --sl-font-mono: "Fira Mono", monospace;
-    --sl-font-serif: "Lato", sans-serif;
-    --bs-font-sans-serif: "Lato", serif;
+    --font-family-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-family-serif: 'Playfair Display', serif;
+    --font-family-mono: 'Fira Code', 'Courier New', Courier, monospace;
+    --font-family-heading: 'Pirata One', cursive;
   }
 ```
-
-- [Oswald](https://fonts.google.com/specimen/Oswald)
-  - Headers, specified through general `<H>` tags and CSS classes
-- [Lato](https://fonts.google.com/specimen/Lato)
-  - Paragraphs, specified through general `<p>` tags and CSS classes
-- [Fira Mono](https://fonts.google.com/specimen/Fira+Mono)
-  - Code blocks, specified through general `<code>` tags and CSS classes
 
 ## Icons
 
 A custom icon component ([icon-component.js](https://github.com/AdamJ/adamjolicoeur.com/blob/main/src/js/icon-component.js)) is used to render icons as web components with [Font Awesome](https://fontawesome.com/) as the preferred icon library.
 
-```
+```html
   <fa-icon type="brands" name="github" size="md"></fa-icon>
 ```
 

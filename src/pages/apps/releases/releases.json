@@ -1,4 +1,0 @@
-{
-  "layout": "markdown",
-  "permalink": "/apps/{{ page.fileSlug }}/"
-}

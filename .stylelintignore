@@ -1,3 +1,5 @@
 src/sass/fa/**
 src/sass/fontawesome.scss
 node_modules/bootstrap/scss/*.scss
+src/sass/prism.scss
+src/sass/style.scss

@@ -1,24 +1,151 @@
-/* stylelint-disable */
-@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
-/* stylelint-enable */
 /**
- ** Copyright 2008-2024 Adam J. Jolicoeur
+ ** Copyright 2008-2025 Adam J. Jolicoeur
  ** https://www.adamjolicoeur.com
 **/
-$color-mode-type: data;
-@import "animations";
-@import "font-oswald";
-@import "font-lato";
+
 @import "variables";
-@import "mixins";
-@import "extenders";
-@import "colors";
-@import "helpers";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Focus visible styles for keyboard navigation */
+*:focus-visible {
+  outline: var(--border-thin) solid var(--accent-coral);
+  outline-offset: 2px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-family-sans);
+  background: linear-gradient(135deg, var(--earth-cream) 0%, #e8dcc8 100%);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Styles for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animated-element {
+    animation: none; /* Disable animations */
+    transition: none; /* Disable transitions */
+
+    /* You can also provide alternative, less motion-intensive styles here */
+
+    /* For example, for a hover effect, you might change opacity instead of scaling */
+    opacity: 1; /* Ensure element is visible if animation was for visibility */
+  }
+
+  /* You can also target specific elements or properties */
+  body {
+    scroll-behavior: auto; /* Disable smooth scrolling if enabled */
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+.display-none,
+.d-none {
+  display: none !important;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 2rem;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+.rounded {
+  border-radius: var(--radius-xl, 20px) !important;
+}
+.circle {
+  border-radius: 999px !important;
+  padding: 1rem !important;
+}
+
+/* Work Highlights */
+.fade-in {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in, visibility 0s linear 0.5s; /* 0.5s for opacity transition, 0s visibility transition after 0.5s delay */
+}
+.fade-in.show {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s; /* Override the delay for fade-in */
+}
+
+.show {
+  // display: block !important;
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+.hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in, visibility 0s linear 0.5s; /* 0.5s for opacity transition, 0s visibility transition after 0.5s delay */
+}
+.hide-on-screen {
+  display: none !important;
+}
+
+/* Responsive */
+@media (width <= 768px) {
+  .hero h1 {
+    font-size: var(--font-size-5xl, 3rem);
+  }
+
+  .no-wrap {
+    flex-wrap: wrap !important;
+  }
+
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .callouts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: var(--font-size-3xl, 2rem);
+  }
+}
+
+/* stylint-disable */
+@import "animations";
+@import "fonts";
 @import "typography";
-@import "toc";
+@import "spacing";
+@import "layout";
+@import "lists";
+@import "highlight";
+@import "navigation";
 @import "footer";
+@import "badge";
 @import "buttons";
 @import "cards";
-@import "carousel";
-@import "navigation";
-@import "general";
+@import "markdown";
+@import "gallery";
+
+/* stylint-enable */

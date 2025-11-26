@@ -114,6 +114,12 @@
 	},
 
 	{
+   "title":"Journeys",
+   "imgName":"journeys",
+   "date":"journeys"
+	},
+
+	{
    "title":"Reference links",
    "imgName":"reference-links",
    "date":"reference-links"
@@ -189,41 +195,5 @@
    "title":"Development",
    "imgName":"development",
    "date":"development"
-	},
-
-	{
-   "title":"Oops! Not Found",
-   "imgName":"oops-not-found",
-   "date":"oops-not-found"
-	},
-
-	{
-   "title":"Adam Jolicoeur",
-   "imgName":"home",
-   "date":"home"
-	},
-
-	{
-   "title":"Journeys",
-   "imgName":"journeys",
-   "date":"journeys"
-	},
-
-	{
-   "title":"Marketing",
-   "imgName":"marketing",
-   "date":"marketing"
-	},
-
-	{
-   "title":"howto",
-   "imgName":"howto",
-   "date":"howto"
-	},
-
-	{
-   "title":"Adam Jolicoeur",
-   "imgName":"home",
-   "date":"home"
 	}
 ]

@@ -1,0 +1,66 @@
+$flex: flex !default;
+$column: column !default;
+$center: center !default;
+
+/* Section Styles */
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-3xl, 6rem) var(--space-lg, 2rem);
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg, 2rem);
+}
+@media (width >= 768px) {
+  .row {
+    gap: var(--space-xs, 0.5rem);
+  }
+}
+@media (width >= 768px) {
+  .card-body .row {
+    gap: 0;
+  }
+}
+.button-row {
+  gap: 1rem;
+}
+.no-wrap {
+  flex-wrap: nowrap;
+}
+.d-flex {
+  display: $flex;
+}
+.flex-column {
+  flex-direction: $column;
+}
+.align-items-center {
+  align-items: $center;
+}
+.work-grid {
+  display: grid;
+  gap: var(--space-lg, 2rem);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-bottom: var(--space-lg, 2rem);
+}
+.divider {
+  display: block;
+  width: 50%;
+  height: var(--space-md, 1.5rem);
+  background: var(--accent-coral);
+  border: var(--border-medium, 4px) outset var(--earth-dark);
+  margin: 0 auto;
+}
+.divider.vertical {
+  width: var(--space-2xs, 0.25rem);
+  height: 100%;
+  background: var(--earth-dark);
+  border-radius: var(--radius-sm);
+  border: none !important;
+  margin: 0;
+}

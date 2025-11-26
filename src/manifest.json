@@ -15,29 +15,25 @@
   ],
   "icons": [
     {
-      "src": "img/touch/icon-16.png",
+      "src": "icon-16.png",
       "type": "image/png",
       "sizes": "16x16"
     }, {
-      "src": "img/touch/icon-32.png",
+      "src": "icon-32.png",
       "type": "image/png",
       "sizes": "32x32"
     }, {
-      "src": "img/touch/icon-192.png",
+      "src": "icon-192.png",
       "type": "image/png",
       "sizes": "192x192"
     }, {
-      "src": "img/touch/icon-512.png",
+      "src": "icon-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }, {
-      "src": "img/touch/android-launchericon-192-192.png",
+      "src": "android-launchericon-72-72.png",
       "type": "image/png",
-      "sizes": "192x192"
-    }, {
-      "src": "img/touch/android-launchericon-512-512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "72x72"
     }
   ],
   "shortcuts": [
@@ -47,17 +43,17 @@
       "description": "Explore designs and case studies",
       "icons": [
         {
-          "src": "img/touch/icon-192.png",
+          "src": "icon-192.png",
           "type": "image/png",
           "sizes": "192x192"
         },
         {
-          "src": "img/touch/icon-256.png",
+          "src": "icon-256.png",
           "type": "image/png",
           "sizes": "256x256"
         },
         {
-          "src": "img/touch/icon.png",
+          "src": "icon-512.png",
           "type": "image/png",
           "sizes": "512x512"
         }
@@ -69,17 +65,17 @@
       "description": "Explore various development projects and ideas",
       "icons": [
         {
-          "src": "img/touch/icon-192.png",
+          "src": "icon-192.png",
           "type": "image/png",
           "sizes": "192x192"
         },
         {
-          "src": "img/touch/icon-256.png",
+          "src": "icon-256.png",
           "type": "image/png",
           "sizes": "256x256"
         },
         {
-          "src": "img/touch/icon.png",
+          "src": "icon-512.png",
           "type": "image/png",
           "sizes": "512x512"
         }
@@ -91,17 +87,17 @@
       "description": "Learn more about Adam",
       "icons": [
         {
-          "src": "img/touch/icon-192.png",
+          "src": "icon-192.png",
           "type": "image/png",
           "sizes": "192x192"
         },
         {
-          "src": "img/touch/icon-256.png",
+          "src": "icon-256.png",
           "type": "image/png",
           "sizes": "256x256"
         },
         {
-          "src": "img/touch/icon.png",
+          "src": "icon-512.png",
           "type": "image/png",
           "sizes": "512x512"
         }
@@ -113,17 +109,17 @@
       "description": "Start at the home page",
       "icons": [
         {
-          "src": "img/touch/icon-192.png",
+          "src": "icon-192.png",
           "type": "image/png",
           "sizes": "192x192"
         },
         {
-          "src": "img/touch/icon-256.png",
+          "src": "icon-256.png",
           "type": "image/png",
           "sizes": "256x256"
         },
         {
-          "src": "img/touch/icon.png",
+          "src": "icon-512.png",
           "type": "image/png",
           "sizes": "512x512"
         }
@@ -144,29 +140,8 @@
   },
   "screenshots": [
     {
-      "src": "img/screenshots/screenshot_homepage.jpeg",
-      "sizes": "1440x1024",
-      "type": "image/jpeg"
-    },
-    {
-      "src": "img/screenshots/screenshot_homepage-wide.jpeg",
-      "sizes": "2400x1200",
-      "type": "image/jpeg",
-      "form_factor": "wide"
-    },
-    {
-      "src": "img/screenshots/screenshot_designs.jpeg",
-      "sizes": "1440x1024",
-      "type": "image/jpeg"
-    },
-    {
-      "src": "img/screenshots/screenshot_development.jpeg",
-      "sizes": "1440x1024",
-      "type": "image/jpeg"
-    },
-    {
-      "src": "img/screenshots/screenshot_about.jpeg",
-      "sizes": "1440x1024",
+      "src": "AdamJolicoeur_social.jpg",
+      "sizes": "1200x897",
       "type": "image/jpeg"
     }
   ],
