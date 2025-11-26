@@ -38,9 +38,9 @@
   ],
   "shortcuts": [
     {
-      "name": "Explore Designs",
-      "url": "/designs/",
-      "description": "Explore designs and case studies",
+      "name": "Portfolio",
+      "url": "/portfolio/",
+      "description": "Portfolio of designs and case studies",
       "icons": [
         {
           "src": "icon-192.png",
@@ -60,30 +60,8 @@
       ]
     },
     {
-      "name": "Development",
-      "url": "/development/",
-      "description": "Explore various development projects and ideas",
-      "icons": [
-        {
-          "src": "icon-192.png",
-          "type": "image/png",
-          "sizes": "192x192"
-        },
-        {
-          "src": "icon-256.png",
-          "type": "image/png",
-          "sizes": "256x256"
-        },
-        {
-          "src": "icon-512.png",
-          "type": "image/png",
-          "sizes": "512x512"
-        }
-      ]
-    },
-    {
-      "name": "About",
-      "url": "/about/",
+      "name": "About Adam",
+      "url": "/about/adam/",
       "description": "Learn more about Adam",
       "icons": [
         {
@@ -128,7 +106,8 @@
   ],
   "categories": [
     "business",
-    "utilities"
+    "utilities",
+    "design"
   ],
   "author": "Adam J. Jolicoeur",
   "related_applications": [],
@@ -140,7 +119,7 @@
   },
   "screenshots": [
     {
-      "src": "AdamJolicoeur_social.jpg",
+      "src": "social_template.jpg",
       "sizes": "1200x897",
       "type": "image/jpeg"
     }
