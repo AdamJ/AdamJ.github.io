@@ -138,10 +138,6 @@ p:last-child, .text-body:last-child {
 
 code, .code {
   font-family: var(--font-family-mono);
-
-  // background: var(--earth-sand);
-  // padding: 0.1rem 0.3rem;
-  // border-radius: var(--radius-sm);
   font-size: clamp(0.85rem, 1vw, 0.9rem);
 }
 code.code-inline,
@@ -192,6 +188,7 @@ code.code-inline,
   color: var(--text-secondary);
 }
 
+/* Links */
 a, .link {
   color: var(--earth-sage);
   border-bottom: 1px solid var(--earth-sage);
@@ -203,6 +200,28 @@ a:hover, a:focus, .link:hover, .link:focus {
   color: var(--earth-brown);
   border-bottom-color: var(--earth-brown);
 }
+.link-brackets {
+  &::after {
+    content: ']';
+    position: absolute;
+    margin-left: 0.2rem;
+    color: var(--earth-sage);
+    transition: all 0.2s;
+  }
+  &::before {
+    content: '[';
+    position: absolute;
+    margin-left: -0.8rem;
+    color: var(--earth-sage);
+    transition: all 0.2s;
+  }
+  &:hover::after, &:hover::before,
+  &:focus::after, &:focus::before {
+    color: var(--accent-coral);
+  }
+}
+
+/* Blockquote */
 blockquote, .blockquote {
   border-left: var(--border-thin) solid var(--earth-brown);
   padding-left: var(--space-md, 1rem);
