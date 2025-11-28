@@ -97,11 +97,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/404.html</loc>
-      <lastmod>2025-11-26T17:49:37.616Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/</loc>
       <lastmod>2025-11-26T17:49:37.649Z</lastmod>
     </url>
@@ -109,6 +104,11 @@
     <url>
       <loc>https://www.adamjolicoeur.com/about/resume/</loc>
       <lastmod>2025-11-26T18:26:52.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/404.html</loc>
+      <lastmod>2025-11-27T17:36:23.096Z</lastmod>
     </url>
   
 </urlset>
