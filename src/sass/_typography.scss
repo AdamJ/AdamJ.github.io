@@ -201,6 +201,7 @@ a:hover, a:focus, .link:hover, .link:focus {
   border-bottom-color: var(--earth-brown);
 }
 .link-brackets {
+  margin-left: var(--space-md) !important;
   &::after {
     content: ']';
     position: absolute;

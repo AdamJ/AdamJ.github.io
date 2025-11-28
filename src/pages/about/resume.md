@@ -1,6 +1,6 @@
 ---
 layout: "markdown"
-title: "Adam J. Jolicoeur"
+title: "Adam Jolicoeur"
 description: "Lead Product Designer with 15+ years at AWS, Red Hat, and high-growth B2B companies"
 abbreviation: "Resume"
 date: git Last Modified
@@ -13,7 +13,7 @@ eleventyNavigation:
 ---
 
 <section class="hide-on-screen print">
-  <h1>Adam J. Jolicoeur</h1>
+  <h1>Adam Jolicoeur</h1>
   <caption>contact@adamjolicoeur.com</caption>
 </section>
 <section class="pt-2 pb-2">
@@ -49,7 +49,7 @@ eleventyNavigation:
   </p>
 </section>
 <section class="pt-3 pb-3">
-  <a href="{{ '/assets/AdamJolicoeur-Resume.pdf' | url }}" target="_blank" alt="Click to download the resume">Download Resume (PDF)</a>
+  <a href="{{ '/assets/AdamJolicoeur-Resume.pdf' | url }}" class="link-brackets" target="_blank" alt="Click to download the resume">Download Resume (PDF)</a>
   <br />
   <small>Last updated November 2025</small>
 </section>

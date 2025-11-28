@@ -10,7 +10,7 @@ eleventyNavigation:
 ---
 
 <section>
-  <h2 class="text-h2 no-underline">Overview</h2>
+  <h2 class="text-h2 no-underline">Project Overview</h2>
   <div class="card">
     <p>
       Built comprehensive design system for Component Assembly Systems' construction management platform, spanning web and iOS applications.
