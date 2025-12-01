@@ -27,11 +27,59 @@
   },
   "items": [
     {
+      "id": "/apps/soccergametracker/",
+      "url": "/apps/soccergametracker/",
+      "title": "Soccer Game Tracker",
+      "date_published": "2025-12-01T17:05:07Z",
+      "date": "2025-12-01T17:05:07Z"
+    }
+    ,
+    {
+      "id": "/apps/moonsilverwaypoints/",
+      "url": "/apps/moonsilverwaypoints/",
+      "title": "Moonsilver Waypoints",
+      "date_published": "2025-12-01T17:05:07Z",
+      "date": "2025-12-01T17:05:07Z"
+    }
+    ,
+    {
+      "id": "/apps/gamesandthings/",
+      "url": "/apps/gamesandthings/",
+      "title": "Games and Things",
+      "date_published": "2025-12-01T17:05:07Z",
+      "date": "2025-12-01T17:05:07Z"
+    }
+    ,
+    {
+      "id": "/apps/TimeTrackerPro/",
+      "url": "/apps/TimeTrackerPro/",
+      "title": "Time Tracker Pro",
+      "date_published": "2025-12-01T17:05:07Z",
+      "date": "2025-12-01T17:05:07Z"
+    }
+    ,
+    {
+      "id": "/designs/task-it/",
+      "url": "/designs/task-it/",
+      "title": "Task Management System",
+      "date_published": "2025-11-28T22:10:46Z",
+      "date": "2025-11-28T22:10:46Z"
+    }
+    ,
+    {
+      "id": "/designs/component-library/",
+      "url": "/designs/component-library/",
+      "title": "Component Library",
+      "date_published": "2025-11-28T22:10:46Z",
+      "date": "2025-11-28T22:10:46Z"
+    }
+    ,
+    {
       "id": "/about/resume/",
       "url": "/about/resume/",
       "title": "Adam Jolicoeur",
-      "date_published": "2025-11-26T18:26:52Z",
-      "date": "2025-11-26T18:26:52Z"
+      "date_published": "2025-11-28T22:10:46Z",
+      "date": "2025-11-28T22:10:46Z"
     }
     ,
     {
@@ -67,14 +115,6 @@
     }
     ,
     {
-      "id": "/designs/task-it/",
-      "url": "/designs/task-it/",
-      "title": "Task Management System",
-      "date_published": "2025-11-26T17:47:39Z",
-      "date": "2025-11-26T17:47:39Z"
-    }
-    ,
-    {
       "id": "/designs/dashboard-analytics/",
       "url": "/designs/dashboard-analytics/",
       "title": "Dashboard Analytics",
@@ -86,14 +126,6 @@
       "id": "/designs/customer-engagement/",
       "url": "/designs/customer-engagement/",
       "title": "Customer Engagement App",
-      "date_published": "2025-11-26T17:47:39Z",
-      "date": "2025-11-26T17:47:39Z"
-    }
-    ,
-    {
-      "id": "/designs/component-library/",
-      "url": "/designs/component-library/",
-      "title": "Component Library",
       "date_published": "2025-11-26T17:47:39Z",
       "date": "2025-11-26T17:47:39Z"
     }
