@@ -2,6 +2,7 @@
 title: "Archived"
 abbreviation: "selectman"
 description: "Old page when I ran for a position on the Brookfield Select Board."
+permalink: "/archives/town-selectman.html"
 eleventyNavigation:
   key: selectman
   parent: archives
@@ -9,7 +10,6 @@ eleventyNavigation:
 ---
 
 <nav class="navbar navbar-expand-lg sticky-top aj-site-header town-office">
-  <a class="navbar-brand" href="/town-selectman.html">Adam J. Jolicoeur</a>
   <div class="collapse navbar-collapse" id="navbarToggler">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item"><a class="nav-link" href="#intro">Intro</a></li>
