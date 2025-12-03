@@ -1,4 +1,5 @@
 ---
+layout: "page"
 title: "Archived Pages"
 date: git Last Modified
 abbreviation: "Archives"
@@ -9,4 +10,4 @@ eleventyNavigation:
   order: 1
 ---
 
-- [Town Selectman](/town-selectman)
+- [Town Selectman](/archives/town-selectman)
