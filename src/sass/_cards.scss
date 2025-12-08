@@ -130,7 +130,8 @@
   transform: translateY(-4px);
 }
 
-.showcase-small h4 {
+.showcase-small h4,
+.showcase-small .text-h4 {
   font-family: var(--font-family-serif);
   font-size: clamp(1.1rem, 2vw, 1.3rem);
   color: var(--text-primary);

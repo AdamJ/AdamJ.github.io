@@ -1,3 +1,4 @@
+/* stylint-disable */
 /* PrismJS 1.29.0
 https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+markdown+scss&plugins=show-language+toolbar */
 code[class*=language-], pre[class*=language-] {
@@ -150,3 +151,7 @@ div.code-toolbar > .toolbar > .toolbar-item > a:focus, div.code-toolbar > .toolb
   color: inherit;
   text-decoration: none;
 }
+
+/* stylint-enable */
+
+/*# sourceMappingURL=prism.css.map */

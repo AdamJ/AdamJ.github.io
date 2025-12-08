@@ -20,7 +20,10 @@
     "watch:eleventy": "eleventy --serve --port=8081",
     "build:sass-nomap": "sass --no-source-map src/sass/style.scss docs/css/style.css",
     "build:sass-site": "sass src/sass/style.scss docs/css/style.css",
-    "build:sass": "npm-run-all --parallel build:sass-site",
+    "build:prism": "sass src/sass/prism.scss docs/css/prism.css",
+    "build:print": "sass src/sass/print.scss docs/css/print.css",
+    "build:sass-old": "npm-run-all --parallel build:sass-site build:prism build:print",
+    "build:sass": "npm-run-all build:sass-site && npm run build:prism && npm run build:print",
     "build:eleventy": "eleventy",
     "postbuild": "postcss docs/css/*.css -u autoprefixer cssnano -r",
     "start": "cross-env ELEVENTY_ENV=dev npm-run-all clean images:optimize build:sass --parallel watch:*",
@@ -74,7 +77,6 @@
   ],
   "dependencies": {
     "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",
-    "@11tyrocks/eleventy-plugin-sass-lightningcss": "^1.3.0",
     "bootstrap": "^5.3.8"
   }
 }

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is Adam Jolicoeur's portfolio website built with Eleventy (11ty), Node.js, Bootstrap 5, and Sass. It's a static site generator project that outputs to the `docs/` directory for GitHub Pages hosting.
+This is Adam Jolicoeur's portfolio website built with Eleventy (11ty), Node.js, and Sass. It's a static site generator project that outputs to the `docs/` directory for GitHub Pages hosting.
 
 ## Essential Commands
 
@@ -53,30 +53,34 @@ npm run bump patch|minor|major  # Update package.json version without git tag
 src/
 ├── _data/              # Global data files
 │   └── meta.js         # Site metadata (URLs, social links, descriptions)
+├── _generate/          # Generated content templates (social cards)
 ├── _includes/          # Nunjucks templates and partials
 │   ├── base.njk        # Main layout with navigation logic
 │   ├── footer.njk      # Footer template
 │   ├── markdown.njk    # Markdown content wrapper
 │   └── ...
-├── _generate/          # Generated content templates (social cards)
-├── pages/              # Markdown content pages
-│   ├── about/
-│   ├── designs/
-│   ├── development/
-│   └── ...
-├── posts/              # Blog posts (excluded in prod builds)
 ├── assets/
 │   ├── img/            # Optimized images (generated, committed)
 │   └── img-raw/        # Original high-res images for processing
+├── js/                 # JavaScript (passed through)
+├── pages/              # Markdown content pages
+│   ├── about/
+|   |── app/
+|   |── archives/
+|   |── credits/
+│   ├── designs/
+│   ├── development/
+│   ├── presentations/
+│   └── reference/
 ├── sass/               # SCSS stylesheets
-│   ├── style.scss      # Main stylesheet (imports Bootstrap + partials)
+│   ├── style.scss      # Main stylesheet (imports partials)
 │   ├── print.scss      # Print-specific styles
+│   ├── prism.scss      # Prism syntax highlighting styles
 │   ├── _variables.scss # Custom variables
 │   ├── _layout.scss    # Layout and grid customizations
 │   ├── _cards.scss     # Card component styles
-│   ├── _navigation.scss# Navigation styles
+│   ├── _badge.scss     # Badge component styles
 │   └── ...
-└── js/                 # JavaScript (passed through)
 
 docs/                   # Build output (DO NOT EDIT)
 scripts/
@@ -92,7 +96,7 @@ scripts/
   - Home page (`/`) has bottom navigation with anchor links
   - About pages (`/about/*`) have About/Resume navigation
   - Other pages have Home/Task-It/ALM navigation
-- **Style system**: Bootstrap 5 grid + custom Sass in modular partials
+- **Style system**: Custom Sass in modular partials
 
 ### Eleventy Configuration (.eleventy.js)
 
@@ -119,19 +123,25 @@ The `scripts/image-optimizer.js` script:
 
 ### Sass Architecture
 
-The styling is modular with Bootstrap 5 as the foundation:
-- **Entry point**: `src/sass/style.scss` imports Bootstrap and all partials
+The styling is modular:
+- **Entry point**: `src/sass/style.scss` imports all partials
 - **Key partials**:
-  - `_variables.scss` - Custom variables and Bootstrap overrides
-  - `_layout.scss` - Layout and grid customizations
-  - `_typography.scss` - Font styles and text utilities
-  - `_navigation.scss` - Navigation component styles
-  - `_cards.scss` - Card component styles for portfolio items
-  - `_buttons.scss` - Button styles
-  - `_footer.scss` - Footer styles
-  - `_components.scss` - Misc component styles
   - `_animations.scss` - Animation utilities
+  - `_badge.scss` - Badge component styles
+  - `_buttons.scss` - Button styles
+  - `_cards.scss` - Card component styles for portfolio items
+  - `_components.scss` - Misc component styles
+  - `_fonts.scss` - Font family styles
+  - `_footer.scss` - Footer styles
+  - `_gallery.scss` - Gallery styles
+  - `_highlight.scss` - Highlighter styles
+  - `_layout.scss` - Layout and grid customizations
+  - `_lists.scss` - List styles
   - `_markdown.scss` - Markdown content styling
+  - `_navigation.scss` - Navigation component styles
+  - `_spacing.scss` - Spacing variables and utilities
+  - `_typography.scss` - Font styles and text utilities
+  - `_variables.scss` - Custom variables overrides
 - **Build process**: Sass → CSS → PostCSS (autoprefixer + cssnano)
 
 ## Key Technical Details
@@ -197,7 +207,7 @@ Access in templates: `collections.portfolio`, `collections.design`, etc.
 
 ## Expected Warnings (Safe to Ignore)
 
-- **Sass deprecation warnings**: Bootstrap uses deprecated `@import` syntax (~144 warnings)
+- **Sass deprecation warnings**: Deprecated `@import` syntax
 - **npm audit vulnerabilities**: Non-critical for static site generation
 - **Stylelint errors**: Legacy code issues (~176 errors) - fix with `npm run lint:fix`
 - **Node version warnings**: Package requires Node 22, works with 20+ (EBADENGINE warnings)

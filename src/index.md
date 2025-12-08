@@ -28,7 +28,7 @@ layout: base.njk
       </p>
     </div>
     <div class="card-footer">
-      <a class="btn btn-secondary" href="{{ '/about/adam' | url }}" alt="Link to learn more about Adam">Learn More</a>
+      <a class="btn btn-secondary" href="{{ '/about/adam' | url }}" alt="Link to learn more about Adam">Read more</a>
     </div>
   </div>
 </section>
@@ -61,7 +61,7 @@ layout: base.njk
     <div class="work-grid">
       <div class="small-showcase-cards">
         <article class="card-flex showcase-small">
-          <h4>Component Library</h4>
+          <h3 class="text-h4">Component Library</h3>
           <p>Built comprehensive design system for construction management software spanning web and iOS applications. Created design tokens, component documentation, and prototypes that accelerated development cycles by 25%.</p>
           <div class="badges mb-2">
             <span class="badge">Library</span><span class="badge">Design Tokens</span>
@@ -69,7 +69,7 @@ layout: base.njk
           <a class="btn btn-outline btn-sm" href="{{ '/designs/component-library' | url }}">View Case Study</a>
         </article>
         <article class="card-flex showcase-small">
-          <h4>Customer Engagement Platform</h4>
+          <h3 class="text-h4">Customer Engagement Platform</h3>
           <p>Led complete UX redesign for financial services SaaS platform. Created reusable UI pattern library that reduced design-to-development time by 40% and established design standards for future products.</p>
           <div class="badges mb-2">
             <span class="badge">SaaS</span><span class="badge">Pattern Library</span>
@@ -77,7 +77,7 @@ layout: base.njk
           <a class="btn btn-outline btn-sm" href="{{ '/designs/customer-engagement' | url }}">View Case Study</a>
         </article>
         <article class="showcase-small">
-          <h4>Dashboard Analytics</h4>
+          <h3 class="text-h4">Dashboard Analytics</h3>
           <p>Designed real-time data visualization platform for Saylent Technologies. Created intuitive interfaces that helped users identify trends and make data-driven decisions 40% faster.</p>
           <div class="badges mb-2">
             <span class="badge">Visualizations</span><span class="badge">Data-Driven</span>
@@ -115,10 +115,10 @@ layout: base.njk
     <p class="text-body-lg" style="margin-bottom: 2rem;">Beyond my professional work, I actively contribute to the open source community. My contributions span developer tools, design systems, and infrastructure projects that support the broader tech ecosystem.</p>
     <div class="about-grid">
       <div class="card-flex showcase-small">
-        <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+        <h3 class="text-h4" style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
           <span style="font-size: 1.5rem;">🎮</span>
           Apps and Games
-        </h4>
+        </h3>
         <p class="text-body-sm" style="margin-bottom: 0.75rem;">
           Created several open source applications and games that showcase innovative use of web technologies, focusing on user engagement and interactive experiences.
         </p>
@@ -131,10 +131,10 @@ layout: base.njk
         <a href="https://github.com/AdamJ/game-tracker" alt="Link to the Game Tracker repository" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer" style="margin-top: 0.5rem;">Game Tracker</a>
       </div>
       <div class="card-flex showcase-small">
-        <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+        <h3 class="text-h4" style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
           <span style="font-size: 1.5rem;">🔧</span>
           PatternFly
-        </h4>
+        </h3>
         <p class="text-body-sm" style="margin-bottom: 0.75rem;">
           Core contributor to Red Hat's professional design system (2016-2021). Designed accessible, enterprise-grade components for the open-source system now used across OpenShift, Ansible, and 50+ enterprise products <strong>(20,000+ GitHub stars)</strong>.
         </p>
@@ -150,10 +150,10 @@ layout: base.njk
         </div>
       </div>
       <div class="card-flex showcase-small">
-        <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+        <h3 class="text-h4" style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
           <span style="font-size: 1.5rem;">🚀</span>
           Tools and Utilities
-        </h4>
+        </h3>
         <p class="text-body-sm" style="margin-bottom: 0.75rem;">
           Developed and maintained several open source developer tools that enhance productivity and streamline workflows for both designers and software engineers.
         </p>
@@ -164,10 +164,10 @@ layout: base.njk
           <a href="https://github.com/AdamJ/TimeTrackerPro" alt="Link to the TimeTrackerPro repository" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer" style="margin-top: 0.5rem;">TimeTrackerPro</a>
       </div>
       <div class="card-flex showcase-small">
-        <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+        <h3 class="text-h4" style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
           <span style="font-size: 1.5rem;">📚</span>
           Documentation
-        </h4>
+        </h3>
         <p class="text-body-sm" style="margin-bottom: 0.75rem;">Regular contributor to open source documentation, helping make complex technical concepts more accessible to developers.</p>
         <div class="badges">
           <span class="badge">Documentation</span>

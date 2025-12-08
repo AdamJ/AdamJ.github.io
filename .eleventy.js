@@ -12,7 +12,6 @@ const markdownItAnchor = require("markdown-it-anchor");
 const markdownItHighlightJS = require('markdown-it-highlightjs')
 const emojiReadTime = require("@11tyrocks/eleventy-plugin-emoji-readtime");
 const packageVersion = require("./package.json").version;
-const eleventySass = require("@11tyrocks/eleventy-plugin-sass-lightningcss");
 
 const mdOptions = {
   html: true,
@@ -33,7 +32,6 @@ module.exports = function (eleventyConfig) {
   if (process.env.ELEVENTY_ENV === "prod") {
     eleventyConfig.ignores.add("./src/posts/");
   };
-  eleventyConfig.addPlugin(eleventySass);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss, {
     posthtmlRenderOptions: {
