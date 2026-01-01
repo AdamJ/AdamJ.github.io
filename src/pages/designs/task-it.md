@@ -1,8 +1,8 @@
 ---
-title: "Task Management System"
+title: 'Task Management System'
 date: git Last Modified
-abbreviation: "task"
-description: "One enterprise task management system to rule them all."
+abbreviation: 'task'
+description: 'One enterprise task management system to rule them all.'
 eleventyNavigation:
   key: Designs
   parent: Designs
@@ -265,5 +265,10 @@ eleventyNavigation:
         The success of Task-it demonstrated that internal tools can be delightful and that investing in UX research pays dividends in adoption, productivity, and user satisfaction.
       </p>
     </div>
+  </div>
+</section>
+<section>
+  <div class="row justify-content-end">
+    <a href="{{ '/designs/alm/' | url }}" class="btn btn-outline btn-sm" alt="Navigate to ALM case study">Next Case Study</a>
   </div>
 </section>

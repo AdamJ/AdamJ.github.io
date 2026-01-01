@@ -1,8 +1,8 @@
 ---
-title: "My Work"
+title: 'My Work'
 date: git Last Modified
-abbreviation: "portfolio"
-description: "Selected projects from AWS, Red Hat, and high-growth B2B companies"
+abbreviation: 'portfolio'
+description: 'Selected projects from AWS, Red Hat, and high-growth B2B companies'
 eleventyNavigation:
   key: Portfolio
   order: 1
@@ -36,6 +36,14 @@ eleventyNavigation:
     <div class="work-grid">
       <div class="small-showcase-cards">
         <article class="card-flex showcase-small">
+          <h4>Archparser</h4>
+          <p>Architectural drawing analysis platform for OCR-based architectural drawing analysis management.</p>
+          <div class="badges mb-2">
+            <span class="badge">Development</span><span class="badge">Claude Code</span>
+          </div>
+          <a class="btn btn-outline btn-sm" href="{{ '/development/archparser' | url }}">View Case Study</a>
+        </article>
+        <article class="card-flex showcase-small">
           <h4>Component Library</h4>
           <p>Built comprehensive design system for construction management software spanning web and iOS applications. Created design tokens, component documentation, and prototypes that accelerated development cycles by 25%.</p>
           <div class="badges mb-2">
@@ -50,13 +58,6 @@ eleventyNavigation:
             <span class="badge">SaaS</span><span class="badge">Pattern Library</span>
           </div>
           <a class="btn btn-outline btn-sm" href="{{ '/designs/customer-engagement' | url }}">View Case Study</a>
-        </article>
-        <article class="showcase-small">
-          <h4>Dashboard Analytics</h4>
-          <p>Designed real-time data visualization platform for Saylent Technologies. Created intuitive interfaces that helped users identify trends and make data-driven decisions 40% faster.</p>
-          <div class="badges mb-2">
-            <span class="badge">Visualizations</span><span class="badge">Data-Driven</span>
-          </div>
         </article>
       </div>
   </div>

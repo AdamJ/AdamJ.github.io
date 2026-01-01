@@ -3,7 +3,7 @@
  ** https://www.adamjolicoeur.com
 **/
 
-@import "variables";
+@import 'variables';
 
 * {
   margin: 0;
@@ -69,7 +69,6 @@ body {
   margin: 0 auto;
 }
 
-
 .rounded {
   border-radius: var(--radius-xl, 20px) !important;
 }
@@ -82,7 +81,9 @@ body {
 .fade-in {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.5s ease-in, visibility 0s linear 0.5s; /* 0.5s for opacity transition, 0s visibility transition after 0.5s delay */
+  transition:
+    opacity 0.5s ease-in,
+    visibility 0s linear 0.5s; /* 0.5s for opacity transition, 0s visibility transition after 0.5s delay */
 }
 .fade-in.show {
   opacity: 1;
@@ -99,7 +100,9 @@ body {
 .hide {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.5s ease-in, visibility 0s linear 0.5s; /* 0.5s for opacity transition, 0s visibility transition after 0.5s delay */
+  transition:
+    opacity 0.5s ease-in,
+    visibility 0s linear 0.5s; /* 0.5s for opacity transition, 0s visibility transition after 0.5s delay */
 }
 .hide-on-screen {
   display: none !important;
@@ -132,20 +135,28 @@ body {
   }
 }
 
+figcaption {
+  font-size: var(--font-size-sm, 0.875rem);
+  line-height: 1.4;
+  color: var(--text-secondary);
+  text-align: center;
+  font-style: italic;
+}
+
 /* stylint-disable */
-@import "animations";
-@import "fonts";
-@import "typography";
-@import "spacing";
-@import "layout";
-@import "lists";
-@import "highlight";
-@import "navigation";
-@import "footer";
-@import "badge";
-@import "buttons";
-@import "cards";
-@import "markdown";
-@import "gallery";
+@import 'animations';
+@import 'fonts';
+@import 'typography';
+@import 'spacing';
+@import 'layout';
+@import 'lists';
+@import 'highlight';
+@import 'navigation';
+@import 'footer';
+@import 'badge';
+@import 'buttons';
+@import 'cards';
+@import 'markdown';
+@import 'gallery';
 
 /* stylint-enable */

@@ -1,8 +1,8 @@
 ---
-title: "Customer Engagement App"
+title: 'Customer Engagement App'
 date: git Last Modified
-abbreviation: "cea"
-description: "The central hub where users monitor engagement metrics and campaign performance. "
+abbreviation: 'cea'
+description: 'The central hub where users monitor engagement metrics and campaign performance. '
 eleventyNavigation:
   key: Designs
   parent: Designs
@@ -247,5 +247,10 @@ eleventyNavigation:
     <div class="card-body">
       <p>I believe that the process used for this project, albeit different, fit within the framework given and met all of the requirements as laid out by the Project Management Team. In the end, a new interface was created that met all of the requirements and was based off of clear steps and proper research. Competitively, this new design met, and often surpassed, expectations when compared to what was in use prior to this project.</p>
     </div>
+  </div>
+</section>
+<section>
+  <div class="row justify-content-between">
+    <a href="{{ '/designs/component-library/' | url }}" class="btn btn-outline btn-sm" alt="Navigate to component library case study">Previous Case Study</a>
   </div>
 </section>

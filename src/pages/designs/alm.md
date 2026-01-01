@@ -1,8 +1,8 @@
 ---
-title: "Application Lifecycle Management"
+title: 'Application Lifecycle Management'
 date: git Last Modified
-abbreviation: "alm"
-description: "Creating seamless IDE integration and workflow tools for developers managing complex environments."
+abbreviation: 'alm'
+description: 'Creating seamless IDE integration and workflow tools for developers managing complex environments.'
 eleventyNavigation:
   key: Designs
   parent: Designs
@@ -240,5 +240,11 @@ eleventyNavigation:
         The success of ALM reinforced that internal tools and developer experiences deserve the same level of design craft and user research as consumer products—and that investing in that craft pays dividends in productivity, satisfaction, and adoption.
       </p>
     </div>
+  </div>
+</section>
+<section>
+  <div class="row justify-content-between">
+    <a href="{{ '/designs/task-it/' | url }}" class="btn btn-outline btn-sm" alt="Navigate to Task-It case study">Previous Case Study</a>
+    <a href="{{ '/development/archparser/' | url }}" class="btn btn-outline btn-sm" alt="Navigate to the ArchParser case study">Next Case Study</a>
   </div>
 </section>
