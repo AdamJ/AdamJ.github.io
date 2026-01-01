@@ -12,6 +12,12 @@ section {
 .justify-content-center {
   justify-content: center !important;
 }
+.justify-content-between {
+  justify-content: space-between !important;
+}
+.justify-content-end {
+  justify-content: flex-end !important;
+}
 .row {
   display: flex;
   flex-wrap: wrap;

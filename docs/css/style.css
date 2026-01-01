@@ -180,6 +180,14 @@ body {
     font-size: var(--font-size-3xl, 2rem);
   }
 }
+figcaption {
+  font-size: var(--font-size-sm, 0.875rem);
+  line-height: 1.4;
+  color: var(--text-secondary);
+  text-align: center;
+  font-style: italic;
+}
+
 /* stylint-disable */
 /*
 ** Arrow animations from https://codepen.io/postor/pen/vYpNYg
@@ -762,6 +770,14 @@ section {
 
 .justify-content-center {
   justify-content: center !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+.justify-content-end {
+  justify-content: flex-end !important;
 }
 
 .row {
@@ -1688,5 +1704,3 @@ pre {
 
 /* stylelint-enable */
 /* stylint-enable */
-
-/*# sourceMappingURL=style.css.map */

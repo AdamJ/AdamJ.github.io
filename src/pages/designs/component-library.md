@@ -1,8 +1,8 @@
 ---
-title: "Component Library"
+title: 'Component Library'
 date: git Last Modified
-abbreviation: "componentlibrary"
-description: "Design System for Construction Management Software"
+abbreviation: 'componentlibrary'
+description: 'Design System for Construction Management Software'
 eleventyNavigation:
   key: ComponentLibrary
   parent: Designs
@@ -141,5 +141,11 @@ eleventyNavigation:
         </ul>
       </p>
     </div>
+  </div>
+</section>
+<section>
+  <div class="row justify-content-between">
+    <a href="{{ '/development/archparser' | url }}" class="btn btn-outline btn-sm" alt="Navigate to Archparser case study">Previous Case Study</a>
+    <a href="{{ '/designs/customer-engagement/' | url }}" class="btn btn-outline btn-sm" alt="Navigate to customer engagement case study">Next Case Study</a>
   </div>
 </section>

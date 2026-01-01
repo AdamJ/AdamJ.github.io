@@ -1,8 +1,8 @@
 ---
-title: "ArchParser: Architectural Drawing Analysis Platform"
+title: 'ArchParser: Architectural Drawing Analysis Platform'
 date: git Last Modified
-abbreviation: "archparser"
-description: "Full-stack TypeScript application for OCR-based architectural drawing analysis and management."
+abbreviation: 'archparser'
+description: 'Full-stack TypeScript application for OCR-based architectural drawing analysis and management.'
 eleventyNavigation:
   key: Development
   parent: Development
@@ -16,7 +16,7 @@ eleventyNavigation:
       <span class="text-h6 mr-1">Project Type:</span>Personal/Open Source
     </p>
     <p>
-      <span class="text-h6 mr-1">Role:</span>Full-Stack Developer & Product Designer
+      <span class="text-h6 mr-1">Role:</span>Product Designer &amp; Full-Stack Developer
     </p>
     <p>
       <span class="text-h6 mr-1">Timeline:</span>2025 (Ongoing)
@@ -52,48 +52,44 @@ eleventyNavigation:
     </p>
   </div>
 </section>
-
 <section>
   <h2>The Development Process</h2>
   <p class="text-callout">Unlike traditional design-first projects, ArchParser required simultaneous development of both technical architecture and user experience. The process was highly iterative, driven by real-world testing with large PDF sets and continuous feedback from construction project managers.</p>
-
   <div class="card">
-    <p class="text-h6">Development approach:
-      <ol class="ml-4">
-        <li class="mt-2"><strong>Problem validation & requirements gathering</strong>
-          <ul class="ml-4">
-            <li>Interviewed construction project managers about their drawing management workflows</li>
-            <li>Identified pain points: manual data entry, inconsistent title block formats, large file sizes</li>
-            <li>Determined core requirements: OCR accuracy, template flexibility, performance at scale</li>
-          </ul>
-        </li>
-        <li class="mt-2"><strong>Technology stack selection</strong>
-          <ul class="ml-4">
-            <li>Chose TypeScript monorepo for type safety across frontend and backend</li>
-            <li>Selected NestJS for backend (familiar enterprise patterns from AWS experience)</li>
-            <li>Used React with PatternFly UI (leveraging my Red Hat design system expertise)</li>
-            <li>Implemented Tesseract.js for client-side OCR processing</li>
-          </ul>
-        </li>
-        <li class="mt-2"><strong>Iterative development with Claude Code</strong>
-          <ul class="ml-4">
-            <li>Used Claude Code as a development partner for architecture decisions and implementation</li>
-            <li>Leveraged AI assistance for complex TypeORM migrations and NestJS module structure</li>
-            <li>Rapid prototyping of OCR extraction algorithms with Claude's code generation</li>
-            <li>Collaborative debugging of memory optimization and path management issues</li>
-          </ul>
-        </li>
-        <li class="mt-2"><strong>Real-world testing & optimization</strong>
-          <ul class="ml-4">
-            <li>Tested with actual 500+ page architectural drawing sets from construction projects</li>
-            <li>Identified and resolved critical memory constraints through optimization iterations</li>
-            <li>Refined OCR accuracy through template system improvements</li>
-          </ul>
-        </li>
-      </ol>
-    </p>
+    <p class="text-h6">Development approach:</p>
+    <ol class="ml-4">
+      <li class="mt-2"><strong>Problem validation & requirements gathering</strong>
+        <ul class="ml-4">
+          <li>Interviewed construction project managers about their drawing management workflows</li>
+          <li>Identified pain points: manual data entry, inconsistent title block formats, large file sizes</li>
+          <li>Determined core requirements: OCR accuracy, template flexibility, performance at scale</li>
+        </ul>
+      </li>
+      <li class="mt-2"><strong>Technology stack selection</strong>
+        <ul class="ml-4">
+          <li>Chose TypeScript monorepo for type safety across frontend and backend</li>
+          <li>Selected <a href="https://nestjs.com/" target="_blank" alt="Link to NestJS site">NestJS</a> for backend (familiar enterprise patterns from AWS experience)</li>
+          <li>Used React with <a href="https://www.patternfly.org" target="_blank" alt="Link to PatternFly site">PatternFly UI</a> (leveraging my Red Hat design system expertise) - later changed to <a href="https://www.radix-ui.com/" target="_blank" alt="Link to RadixUI site">RadixUI</a></li>
+          <li>Implemented <a href="https://tesseract-ocr.github.io/" target="_blank" alt="Link to Tesseract GitHub repository">Tesseract.js</a> for client-side OCR processing</li>
+        </ul>
+      </li>
+      <li class="mt-2"><strong>Iterative development with Claude Code</strong>
+        <ul class="ml-4">
+          <li>Used Claude Code as a development partner for architecture decisions and implementation</li>
+          <li>Leveraged AI assistance for complex TypeORM migrations and NestJS module structure</li>
+          <li>Rapid prototyping of OCR extraction algorithms with Claude's code generation</li>
+          <li>Collaborative debugging of memory optimization and path management issues</li>
+        </ul>
+      </li>
+      <li class="mt-2"><strong>Real-world testing & optimization</strong>
+        <ul class="ml-4">
+          <li>Tested with actual 500+ page architectural drawing sets from construction projects</li>
+          <li>Identified and resolved critical memory constraints through optimization iterations</li>
+          <li>Refined OCR accuracy through template system improvements</li>
+        </ul>
+      </li>
+    </ol>
   </div>
-
   <div class="card mt-4">
     <p class="text-h6">Working with Claude Code as a development partner:
       <ul class="ml-4">
@@ -116,72 +112,85 @@ eleventyNavigation:
     </p>
   </div>
 </section>
-
 <section>
   <h2 id="architecture">Technical Architecture</h2>
   <p class="text-callout">ArchParser is built as a TypeScript monorepo with three primary workspaces: backend (NestJS), frontend (React/Vite), and shared type definitions. The architecture emphasizes type safety, memory efficiency, and extensibility.</p>
-
-  <div class="card mb-4">
-    <div class="card-header text-h5">Backend (NestJS)</div>
+  <h3 class="pt-4 mt-4 mb-2">Backend</h3>
+  <h4 class="text-h4 mb-2">NestJS</h4>
+  <p><strong>Core Modules:</strong></p>
+  <ul class="ml-4">
+    <li><strong>Drawing Processing Service:</strong> Handles PDF-to-PNG conversion and Tesseract.js OCR extraction</li>
+    <li><strong>OCR Template System:</strong> Configurable extraction regions for different title block formats</li>
+    <li><strong>Path Management:</strong> Centralized path resolution with environment variable support for deployment portability</li>
+    <li><strong>WebSocket Gateway:</strong> Real-time progress updates during OCR processing</li>
+    <li><strong>Optional LLM Service:</strong> AI-powered semantic search (Claude, OpenAI, or local Ollama)</li>
+  </ul>
+  <p class="mt-3"><strong>Database (TypeORM + MySQL):</strong></p>
+  <ul class="ml-4">
+    <li>Entities: Job, DrawingSet, Drawing, OcrTemplate, KnowledgeChunk</li>
+    <li>Supports revision tracking through self-referencing DrawingSet relationships</li>
+    <li>Stores relative paths in database for deployment portability</li>
+  </ul>
+  <h3 class="pt-4 mt-4 mb-2">Frontend</h3>
+  <h4 class="text-h4 mb-2">React + RadixUI</h4>
+  <p><strong>Key Features:</strong></p>
+  <ul class="ml-4">
+    <li><strong>Dashboard:</strong> Job listing with pagination, sorting, and filtering</li>
+    <li><strong>Upload Workflow:</strong> PDF upload with OCR template selection and classification</li>
+    <li><strong>Drawing Review:</strong> Individual drawing detail pages with metadata editing</li>
+    <li><strong>Real-time Progress:</strong> WebSocket-powered progress indicator for OCR jobs</li>
+    <li><strong>Template Creator:</strong> Visual interface for creating OCR extraction templates</li>
+  </ul>
+  <p class="mt-3"><strong>UI/UX Decisions:</strong></p>
+  <ul class="ml-4 pb-3">
+    <li>RadixUI components for accessibility and consistency</li>
+    <li>Responsive grid layouts for data-dense tables</li>
+    <li>Inline editing for quick metadata corrections</li>
+    <li>Mock server support for frontend-only development</li>
+  </ul>
+  <div class="card pt-3">
+    <div class="card-header text-h5">Dashboard</div>
     <div class="card-body">
-      <p><strong>Core Modules:</strong></p>
-      <ul class="ml-4">
-        <li><strong>Drawing Processing Service:</strong> Handles PDF-to-PNG conversion and Tesseract.js OCR extraction</li>
-        <li><strong>OCR Template System:</strong> Configurable extraction regions for different title block formats</li>
-        <li><strong>Path Management:</strong> Centralized path resolution with environment variable support for deployment portability</li>
-        <li><strong>WebSocket Gateway:</strong> Real-time progress updates during OCR processing</li>
-        <li><strong>Optional LLM Service:</strong> AI-powered semantic search (Claude, OpenAI, or local Ollama)</li>
-      </ul>
-      <p class="mt-3"><strong>Database (TypeORM + MySQL):</strong></p>
-      <ul class="ml-4">
-        <li>Entities: Job, DrawingSet, Drawing, OcrTemplate, KnowledgeChunk</li>
-        <li>Supports revision tracking through self-referencing DrawingSet relationships</li>
-        <li>Stores relative paths in database for deployment portability</li>
-      </ul>
+      <figure class="figure">
+        <img src="../../assets/img/archparser_dashboard1.webp" class="figure-img img-fluid rounded" alt="Image of the archparser dashboard" loading="lazy">
+      </figure>
     </div>
   </div>
-
-  <div class="card mb-4">
-    <div class="card-header text-h5">Frontend (React + PatternFly)</div>
-    <div class="card-body">
-      <p><strong>Key Features:</strong></p>
-      <ul class="ml-4">
-        <li><strong>Dashboard:</strong> Job listing with pagination, sorting, and filtering</li>
-        <li><strong>Upload Workflow:</strong> PDF upload with OCR template selection and classification</li>
-        <li><strong>Drawing Review:</strong> Individual drawing detail pages with metadata editing</li>
-        <li><strong>Real-time Progress:</strong> WebSocket-powered progress indicator for OCR jobs</li>
-        <li><strong>Template Creator:</strong> Visual interface for creating OCR extraction templates</li>
-      </ul>
-      <p class="mt-3"><strong>UI/UX Decisions:</strong></p>
-      <ul class="ml-4">
-        <li>PatternFly components for enterprise-grade accessibility and consistency</li>
-        <li>Responsive grid layouts for data-dense tables</li>
-        <li>Inline editing for quick metadata corrections</li>
-        <li>Mock server support for frontend-only development</li>
-      </ul>
+  <h3 class="pt-4 mt-4 mb-2">Template Creator</h3>
+  <h4>Standalone Tool</h4>
+  <p>Built as a standalone HTML/JavaScript tool using PDF.js, the template creator allows users to:</p>
+  <ul class="ml-4">
+    <li>Upload a sample PDF and render it in the browser</li>
+    <li>Draw rectangular regions on the PDF to define extraction areas</li>
+    <li>Label regions (drawing number, title, date, revision, etc.)</li>
+    <li>Export template JSON for import into ArchParser</li>
+    <li>Works offline with no backend dependency</li>
+  </ul>
+  <p class="mt-3 pb-3">This tool democratizes OCR template creation—construction managers can create templates without developer assistance.</p>
+  <div class="row no-wrap pt-3">
+    <div class="card">
+      <div class="card-header text-h5">Initial Load</div>
+      <div class="card-body">
+        <figure class="figure">
+        <img src="../../assets/img/archparser_template-creator.webp" class="figure-img img-fluid rounded" alt="Image of the template creator's empty canvas" loading="lazy">
+        <figcaption>Empty canvas, ready for PDF</figcaption>
+      </figure>
+      </div>
     </div>
-  </div>
-
-  <div class="card">
-    <div class="card-header text-h5">Template Creator (Standalone Tool)</div>
-    <div class="card-body">
-      <p>Built as a standalone HTML/JavaScript tool using PDF.js, the template creator allows users to:</p>
-      <ul class="ml-4">
-        <li>Upload a sample PDF and render it in the browser</li>
-        <li>Draw rectangular regions on the PDF to define extraction areas</li>
-        <li>Label regions (drawing number, title, date, revision, etc.)</li>
-        <li>Export template JSON for import into ArchParser</li>
-        <li>Works offline with no backend dependency</li>
-      </ul>
-      <p class="mt-3">This tool democratizes OCR template creation—construction managers can create templates without developer assistance.</p>
+    <div class="card">
+      <div class="card-header text-h5">PDF Loaded</div>
+      <div class="card-body">
+        <figure class="figure">
+        <img src="../../assets/img/archparser_template-creator-loaded.webp" class="figure-img img-fluid rounded" alt="Image of the template creator with a loaded PDF" loading="lazy">
+        <figcaption>Document details loaded and ready</figcaption>
+      </figure>
+      </div>
     </div>
   </div>
 </section>
-
 <section>
   <h2 id="iterations">Key Iterations & Problem Solving</h2>
   <p class="text-callout">Throughout development, several critical issues emerged that required significant architectural changes. Each iteration improved reliability, performance, or usability based on real-world testing.</p>
-
   <h3 class="mt-4 mb-2">Iteration 1: Memory Optimization for Large PDFs</h3>
   <div class="card mb-4">
     <div class="card-body">
@@ -196,7 +205,6 @@ eleventyNavigation:
       <p class="mt-2"><strong>Result:</strong> Successfully processes 500+ page documents without crashes. Memory-optimized startup script (<code>start-optimized.sh</code>) provides production-ready performance.</p>
     </div>
   </div>
-
   <h3 class="mt-4 mb-2">Iteration 2: Path Management System Overhaul</h3>
   <div class="card mb-4">
     <div class="card-body">
@@ -217,7 +225,6 @@ eleventyNavigation:
       <p class="mt-2"><strong>Result:</strong> System is now portable across deployment environments. Paths resolve correctly regardless of server startup directory. Database can be migrated to new servers without breaking file associations.</p>
     </div>
   </div>
-
   <h3 class="mt-4 mb-2">Iteration 3: Dashboard UI Enhancement</h3>
   <div class="card mb-4">
     <div class="card-body">
@@ -235,10 +242,8 @@ eleventyNavigation:
     </div>
   </div>
 </section>
-
 <section>
   <h2 id="resultsandimpact">Results & Impact</h2>
-
   <h3>Technical Achievements</h3>
   <p class="mb-4">
     <ul>
@@ -250,7 +255,6 @@ eleventyNavigation:
       <li><strong>Test Coverage:</strong> 14 backend test suites with 53 tests, plus comprehensive frontend component testing</li>
     </ul>
   </p>
-
   <h3>User Experience Wins</h3>
   <p class="mb-4">
     <ul>
@@ -261,7 +265,6 @@ eleventyNavigation:
       <li><strong>Flexible AI Integration:</strong> Optional LLM features support Claude, OpenAI, or free local Ollama—users choose based on budget and privacy needs</li>
     </ul>
   </p>
-
   <h3>Development Process Insights</h3>
   <p class="mb-4">
     <ul>
@@ -272,10 +275,28 @@ eleventyNavigation:
       <li><strong>Open Source:</strong> Public GitHub repository demonstrates full-stack capabilities and serves as portfolio piece</li>
     </ul>
   </p>
+  <div class="row no-wrap pt-3">
+    <div class="card">
+      <div class="card-header text-h5">Set Details</div>
+      <div class="card-body">
+        <img src="../../assets/img/archparser_drawing-set-details-thumb.webp" class="rounded" alt="Image of the drawing set details page">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header text-h5">Drawing List</div>
+      <div class="card-body">
+        <img src="../../assets/img/archparser_drawing-list-thumb.webp" class="rounded" alt="Image of the drawing list page">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header text-h5">Drawing Details</div>
+      <div class="card-body">
+        <img src="../../assets/img/archparser_drawing-details-thumb.webp" class="rounded" alt="Image of the drawing details page">
+      </div>
+    </div>
+  </div>
 </section>
-
 <divider class="divider"></divider>
-
 <section>
   <div class="card">
     <div class="card-header">
@@ -299,7 +320,6 @@ eleventyNavigation:
     </div>
   </div>
 </section>
-
 <section class="mt-4">
   <div class="card">
     <div class="card-header">
@@ -308,24 +328,24 @@ eleventyNavigation:
     <div class="card-body">
       <ul class="list-unstyled">
         <li>
-          <a href="https://github.com/AdamJ/archparser" target="_blank" rel="noopener noreferrer">
+          <a href="https://archparser.adamjolicoeur.me" target="_blank" rel="noopener noreferrer">
             <fa-icon type="duotone" weight="solid" name="code-branch" size="md"></fa-icon>
-            View on GitHub
+            Demo Site
           </a>
         </li>
         <li class="mt-2">
-          <a href="https://github.com/AdamJ/archparser/tree/main/template-creator" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Product-Designs/ocr-template-creator" target="_blank" rel="noopener noreferrer">
             <fa-icon type="duotone" weight="solid" name="paintbrush" size="md"></fa-icon>
             Visual Template Creator Tool
           </a>
         </li>
-        <li class="mt-2">
-          <a href="https://github.com/AdamJ/archparser/blob/main/CLAUDE.md" target="_blank" rel="noopener noreferrer">
-            <fa-icon type="duotone" weight="solid" name="book" size="md"></fa-icon>
-            Project Documentation (CLAUDE.md)
-          </a>
-        </li>
       </ul>
     </div>
+  </div>
+</section>
+<section>
+  <div class="row justify-content-between">
+    <a href="{{ '/designs/alm' | url }}" class="btn btn-outline btn-sm" alt="Navigate to Application Lifecycle Management case study">Previous Case Study</a>
+    <a href="{{ '/designs/component-library/' | url }}" class="btn btn-outline btn-sm" alt="Navigate to component library case study">Next Case Study</a>
   </div>
 </section>
