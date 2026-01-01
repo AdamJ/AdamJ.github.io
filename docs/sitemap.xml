@@ -42,22 +42,7 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/designs/alm/</loc>
-      <lastmod>2025-11-26T17:47:39.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/designs/customer-engagement/</loc>
-      <lastmod>2025-11-26T17:47:39.000Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/designs/dashboard-analytics/</loc>
-      <lastmod>2025-11-26T17:47:39.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/portfolio/</loc>
       <lastmod>2025-11-26T17:47:39.000Z</lastmod>
     </url>
   
@@ -83,16 +68,6 @@
   
     <url>
       <loc>https://www.adamjolicoeur.com/about/resume/</loc>
-      <lastmod>2025-11-28T22:10:46.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/designs/component-library/</loc>
-      <lastmod>2025-11-28T22:10:46.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/designs/task-it/</loc>
       <lastmod>2025-11-28T22:10:46.000Z</lastmod>
     </url>
   
@@ -152,8 +127,33 @@
     </url>
   
     <url>
+      <loc>https://www.adamjolicoeur.com/designs/alm/</loc>
+      <lastmod>2026-01-01T16:25:50.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/designs/component-library/</loc>
+      <lastmod>2026-01-01T16:25:50.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/designs/customer-engagement/</loc>
+      <lastmod>2026-01-01T16:25:50.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/designs/task-it/</loc>
+      <lastmod>2026-01-01T16:25:50.000Z</lastmod>
+    </url>
+  
+    <url>
       <loc>https://www.adamjolicoeur.com/development/archparser/</loc>
-      <lastmod>2025-12-31T17:22:29.000Z</lastmod>
+      <lastmod>2026-01-01T16:25:50.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/portfolio/</loc>
+      <lastmod>2026-01-01T16:25:50.000Z</lastmod>
     </url>
   
 </urlset>
