@@ -61,6 +61,14 @@ layout: base.njk
     <div class="work-grid">
       <div class="small-showcase-cards">
         <article class="card-flex showcase-small">
+          <h4>Archparser</h4>
+          <p>Architectural drawing analysis platform for OCR-based architectural drawing analysis management.</p>
+          <div class="badges mb-2">
+            <span class="badge">Development</span><span class="badge">Claude Code</span>
+          </div>
+          <a class="btn btn-outline btn-sm" href="{{ '/development/archparser' | url }}">View Case Study</a>
+        </article>
+        <article class="card-flex showcase-small">
           <h4>Component Library</h4>
           <p>Built comprehensive design system for construction management software spanning web and iOS applications. Created design tokens, component documentation, and prototypes that accelerated development cycles by 25%.</p>
           <div class="badges mb-2">
@@ -76,14 +84,8 @@ layout: base.njk
           </div>
           <a class="btn btn-outline btn-sm" href="{{ '/designs/customer-engagement' | url }}">View Case Study</a>
         </article>
-        <article class="showcase-small">
-          <h4>Dashboard Analytics</h4>
-          <p>Designed real-time data visualization platform for Saylent Technologies. Created intuitive interfaces that helped users identify trends and make data-driven decisions 40% faster.</p>
-          <div class="badges mb-2">
-            <span class="badge">Visualizations</span><span class="badge">Data-Driven</span>
-          </div>
-        </article>
       </div>
+    </div>
   </div>
 </section>
 <section id="testimonials" aria-labelledby="callouts-heading">
@@ -116,19 +118,17 @@ layout: base.njk
     <div class="about-grid">
       <div class="card-flex showcase-small">
         <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-          <span style="font-size: 1.5rem;">🎮</span>
-          Apps and Games
+          <span style="font-size: 1.5rem;">🚀</span>
+          Tools and Utilities
         </h4>
         <p class="text-body-sm" style="margin-bottom: 0.75rem;">
-          Created several open source applications and games that showcase innovative use of web technologies, focusing on user engagement and interactive experiences.
+          Developed and maintained several open source developer tools that enhance productivity and streamline workflows for both designers and software engineers.
         </p>
         <div class="badges">
           <span class="badge">Tooling</span>
           <span class="badge">DX</span>
-          <span class="badge">Games</span>
-          <span class="badge">Apps</span>
         </div>
-        <a href="https://github.com/AdamJ/game-tracker" alt="Link to the Game Tracker repository" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer" style="margin-top: 0.5rem;">Game Tracker</a>
+          <a href="https://github.com/AdamJ/TimeTrackerPro" alt="Link to the TimeTrackerPro repository" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer" style="margin-top: 0.5rem;">TimeTrackerPro</a>
       </div>
       <div class="card-flex showcase-small">
         <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
@@ -151,17 +151,19 @@ layout: base.njk
       </div>
       <div class="card-flex showcase-small">
         <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-          <span style="font-size: 1.5rem;">🚀</span>
-          Tools and Utilities
+          <span style="font-size: 1.5rem;">🎮</span>
+          Apps and Games
         </h4>
         <p class="text-body-sm" style="margin-bottom: 0.75rem;">
-          Developed and maintained several open source developer tools that enhance productivity and streamline workflows for both designers and software engineers.
+          Created several open source applications and games that showcase innovative use of web technologies, focusing on user engagement and interactive experiences.
         </p>
         <div class="badges">
           <span class="badge">Tooling</span>
           <span class="badge">DX</span>
+          <span class="badge">Games</span>
+          <span class="badge">Apps</span>
         </div>
-          <a href="https://github.com/AdamJ/TimeTrackerPro" alt="Link to the TimeTrackerPro repository" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer" style="margin-top: 0.5rem;">TimeTrackerPro</a>
+        <a href="https://github.com/AdamJ/game-tracker" alt="Link to the Game Tracker repository" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer" style="margin-top: 0.5rem;">Game Tracker</a>
       </div>
       <div class="card-flex showcase-small">
         <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
