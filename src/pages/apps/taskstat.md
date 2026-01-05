@@ -51,22 +51,30 @@ Read the full [Privacy Policy](/apps/taskstat-privacy.html)
 
 ## Screenshots
 
-*Coming soon - Screenshots will be added once the app is published to the App Store*
-
-<!--
-![TaskStat main task list](/assets/img/taskstat-screenshot-1.png)
-![TaskStat task detail view](/assets/img/taskstat-screenshot-2.png)
--->
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 1rem;">
+<figure>
+  <img src="/assets/img/taskstat-screenshot-dashboard.webp" height="400" alt="Screenshot of TaskStat dashboard" />
+  <figcaption>Dashboard</figcaption>
+</figure>
+<figure>
+  <img src="/assets/img/taskstat-screenshot-list.webp" height="400" alt="Screenshot of TaskStat task list" />
+  <figcaption>Task List</figcaption>
+</figure>
+<figure>
+  <img src="/assets/img/taskstat-screenshot-details.webp" height="400" alt="Screenshot of TaskStat task details" />
+  <figcaption>Task Details</figcaption>
+</figure>
+<figure>
+  <img src="/assets/img/taskstat-screenshot-settings.webp" height="400" alt="Screenshot of TaskStat settings" />
+  <figcaption>Settings</figcaption>
+</figure>
+</div>
 
 ## App Icon
 
-*Coming soon - App icons will be added once finalized*
-
-<!--
-| Light | Dark |
-| -- | -- |
-| <img src="/assets/img/TaskStat-icon-light.webp" width="144" height="144" alt="TaskStat light icon" /> | <img src="/assets/img/TaskStat-icon-dark.webp" width="144" height="144" alt="TaskStat dark icon" /> |
--->
+| Light | Dark | Tinted |
+| -- | -- | -- |
+| <img src="/assets/img/TaskStat_Default.webp" width="144" height="144" alt="TaskStat light icon" /> | <img src="/assets/img/TaskStat_Dark.webp" width="144" height="144" alt="TaskStat dark icon" /> | <img src="/assets/img/TaskStat_Tinted.webp" width="144" height="144" alt="TaskStat tinted icon" /> |
 
 ## Download
 
