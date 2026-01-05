@@ -1450,12 +1450,6 @@ footer {
   color: var(--text-secondary);
 }
 
-pre {
-  background-color: var(--earth-cream);
-  padding: var(--space-md, 1rem);
-  border-radius: var(--radius-md, 12px);
-}
-
 /* stylelint-disable */
 .gallery {
   --size: 100px;

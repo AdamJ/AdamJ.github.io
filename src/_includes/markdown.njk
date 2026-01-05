@@ -2,13 +2,12 @@
 layout: base.njk
 ---
 
-<link rel="stylesheet" href="{{ '/css/print.css' | url }}" media="print">
+<link rel="stylesheet" href="{{ '/css/print.css' | url }}" media="print" />
+<link rel="stylesheet" href="{{ '/css/markdown.css' | url }}" />
 
 <section class="hero">
   <h1>{{ title }}</h1>
-  <p class="text-lead mb-4">
-    {{ description }}
-  </p>
+  <p class="text-lead mb-4">{{ description }}</p>
   {%- if (headerButton) -%}
   <a href="{{ primaryURL}}" class="btn btn-secondary">{{ primaryAction }}</a>
   {%- else -%}{%- endif -%}
@@ -19,5 +18,7 @@ layout: base.njk
     {{ content | safe }}
   </section>
 {% else %}
-  {{ content | safe }}
+  <section>
+    {{ content | safe }}
+  </section>
 {% endif %}
