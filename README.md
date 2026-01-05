@@ -1,18 +1,27 @@
 ![Static Badge](https://img.shields.io/badge/Bsky-black?style=social&logo=bluesky&link=https%3A%2F%2Fbsky.app%2Fprofile%2Fadamjol.bsky.social) ![Keybase PGP](https://img.shields.io/keybase/pgp/mindreeper2420) ![Mastodon Follow](https://img.shields.io/mastodon/follow/109566572934687761?domain=mastodon.world)
 
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/AdamJ/adamj.github.io?style=for-the-badge) ![GitHub last commit](https://img.shields.io/github/last-commit/AdamJ/adamj.github.io?color=%2321476b&style=for-the-badge) ![Static Badge](https://img.shields.io/badge/22-22?style=for-the-badge&logo=NVM&logoColor=%23F4DD4B&label=NVM&color=232147&link=https%3A%2F%2Fgithub.com%2FAdamJ%2FAdamJ.github.io%2Fblob%2Fmain%2F.nvmrc) ![Static Badge](https://img.shields.io/badge/Cloudflare-black?style=for-the-badge&logo=cloudflare&link=https%3A%2F%2Fadamj-github-io.pages.dev)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/AdamJ/adamj.github.io?style=for-the-badge) ![GitHub last commit](https://img.shields.io/github/last-commit/AdamJ/adamj.github.io?color=%2321476b&style=for-the-badge) ![Static Badge](https://img.shields.io/badge/25-25?style=for-the-badge&logo=NVM&logoColor=%23F4DD4B&label=NVM&color=232147&link=https%3A%2F%2Fgithub.com%2FAdamJ%2FAdamJ.github.io%2Fblob%2Fmain%2F.nvmrc) ![Static Badge](https://img.shields.io/badge/Cloudflare-black?style=for-the-badge&logo=cloudflare&link=https%3A%2F%2Fadamj-github-io.pages.dev)
 
-# Welcome
+# Adam Jolicoeur - Portfolio Site
 
-This is the repo for my portfolio site, adamjolicoeur.com, hosted on GitHub.
+This repository contains the source code for my personal portfolio website at [adamjolicoeur.com](https://adamjolicoeur.com), built with Eleventy (11ty) and deployed via GitHub Pages.
 
-## Who am I?
+## About This Repository
 
-I'm a user experience designer with a passion for creating data-intensive designs. With a background in web development, I enjoy turning my designs into living, usable products.
+This is a **personal portfolio site** showcasing my work as a Lead Product Designer and Product Manager. The site features:
 
-## Why here?
+- **Design Case Studies** - UX/UI projects from AWS, Red Hat, and Component Assembly Systems
+- **Development Projects** - Open source contributions, tools, and code examples
+- **Professional Content** - Resume, presentations, and technical articles
+- **App Showcases** - iOS/iPadOS apps and web applications
 
-I decided to build my own portfolio site on GitHub, rather than on a less code-oriented platform, in order to keep my skills sharp, up-to-date, and to do everything in the open.
+## Usage & Ownership
+
+**All content, design work, code, and assets in this repository are for my personal use only.** This is a public repository for transparency and to demonstrate my development workflow, but the content is not licensed for reuse.
+
+## About Me
+
+I'm a user experience designer with 15+ years of enterprise experience at companies like AWS and Red Hat. With a background in web development, I bridge the gap between design and technical implementation, turning designs into living, usable products.
 
 ## Automation & Releases
 
@@ -31,6 +40,3 @@ I decided to build my own portfolio site on GitHub, rather than on a less code-o
 - [Eleventy Documentation](https://www.11ty.dev/docs/)
 - [11ty Recipes](https://11ty.recipes/)
 - [The 11ty Bundle](https://11tybundle.dev/)
-
-**Carousel pen by Siiron**
-- [https://codepen.io/siiron/pen/QWwLoMy](https://codepen.io/siiron/pen/QWwLoMy)
