@@ -1,0 +1,4 @@
+{
+    "layout": "page",
+    "permalink": "/year-in-review/{{ page.fileSlug }}/"
+}

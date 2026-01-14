@@ -13,7 +13,7 @@ fs.readdirSync(inputDir).forEach(file => {
     const inputPath = path.join(inputDir, file);
     const { name, ext } = path.parse(file);
 
-    if (ext === '.jpg' || ext === '.png') { // Process only JPG/PNG for now
+    if (ext === '.jpg' || ext === '.jpeg' || ext === '.png') { // Process only JPG/PNG for now
         // Optimize for large view
         sharp(inputPath)
             .resize(1200) // Max width for large images
