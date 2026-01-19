@@ -239,6 +239,7 @@
 
   figure {
     display: flex;
+    flex-direction: column;
     margin: 0;
   }
 
@@ -255,7 +256,7 @@
   }
 
   figcaption {
-    align-self: flex-end;
+    align-self: center;
     padding: 20px 20px 0;
     flex: 0 0 auto;
     width: 25%;

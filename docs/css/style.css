@@ -83,6 +83,27 @@ body {
   position: relative;
 }
 
+html::-webkit-scrollbar,
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+html::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--accent-coral-dark), var(--accent-coral));
+  border-radius: 2rem;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+html::-webkit-scrollbar-track,
+::-webkit-scrollbar-track {
+  background: transparent;
+  padding: 0 2px;
+  border-radius: 2rem;
+  border: 1px solid var(--earth-sage);
+}
+
 /* Styles for users who prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .animated-element {
@@ -788,7 +809,7 @@ section {
 
 @media (width >= 768px) {
   .row {
-    gap: var(--space-xs, 0.5rem);
+    gap: var(--space-sm, 0.5rem);
   }
 }
 @media (width >= 768px) {
@@ -1612,6 +1633,7 @@ footer {
 }
 .carousel__slide figure {
   display: flex;
+  flex-direction: column;
   margin: 0;
 }
 .carousel__slide div {
@@ -1636,7 +1658,7 @@ footer {
   object-fit: cover;
 }
 .carousel__slide figcaption {
-  align-self: flex-end;
+  align-self: center;
   padding: 20px 20px 0;
   flex: 0 0 auto;
   width: 25%;

@@ -28,6 +28,25 @@ body {
   position: relative;
 }
 
+html::-webkit-scrollbar,
+::-webkit-scrollbar {
+  width: 16px;
+}
+html::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--accent-coral-dark), var(--accent-coral));
+  border-radius: 2rem;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+html::-webkit-scrollbar-track,
+::-webkit-scrollbar-track {
+  background: transparent;
+  padding: 0 2px;
+  border-radius: 2rem;
+  border: 1px solid var(--earth-sage);
+}
+
 /* Styles for users who prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .animated-element {

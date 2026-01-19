@@ -170,3 +170,9 @@ image6-alt: "Findings of the component examination"
     </div>
   </div>
 </section>
+<section>
+  <div class="row justify-content-between">
+    <a href="{{ '/presentations/' | url }}" class="btn btn-outline btn-sm" alt="Navigate to the presentation list">To Presentation List</a>
+    <a href="{{ '/presentations/portfolio' | url }}" class="btn btn-outline btn-sm" alt="Navigate to the portfolio slides">Portfolio Slides</a>
+  </div>
+</section>

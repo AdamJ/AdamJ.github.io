@@ -22,6 +22,9 @@ eleventyNavigation:
         <p>
           A collection of my work as a UX designer, showcasing various projects and designs I've worked on over the years.
         </p>
+        <div class="badges mb-2">
+          <span class="badge badge-outline">First Published Nov. 16, 2023</span>
+        </div>
         <a href="{{ '/presentations/portfolio' | url }}" class="btn btn-primary" alt="View portfolio presentation">View Presentation</a>
       </div>
     </div>
@@ -36,6 +39,9 @@ eleventyNavigation:
         <p>
           A presentation on creating an accessible color picker, discussing design considerations and implementation strategies.
         </p>
+        <div class="badges mb-2">
+          <span class="badge badge-outline">First Published Nov. 16, 2023</span>
+        </div>
         <a href="{{ '/presentations/color-picker' | url }}" class="btn btn-primary" alt="View color picker presentation">View Presentation</a>
       </div>
     </div>
