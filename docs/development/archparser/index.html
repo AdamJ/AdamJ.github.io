@@ -122,13 +122,13 @@
 </section>
 <section>
   <h2>The Development Process</h2>
-  <p class="text-callout">Unlike traditional design-first projects, ArchParser required simultaneous development of both technical architecture and user experience. The process was highly iterative, driven by real-world testing with large PDF sets and continuous feedback from construction project managers.</p>
+  <p class="text-callout">Unlike traditional design-first projects, ArchParser required simultaneous development of both technical architecture and user experience. The process was highly iterative, driven by real-world testing with large PDF sets and continuous feedback from construction project planners and managers.</p>
   <div class="card">
     <p class="text-h6">Development approach:</p>
     <ol class="ml-4">
       <li class="mt-2"><strong>Problem validation & requirements gathering</strong>
         <ul class="ml-4">
-          <li>Interviewed construction project managers about their drawing management workflows</li>
+          <li>Interviewed construction project planners and managers about their drawing management workflows</li>
           <li>Identified pain points: manual data entry, inconsistent title block formats, large file sizes</li>
           <li>Determined core requirements: OCR accuracy, template flexibility, performance at scale</li>
         </ul>
@@ -257,6 +257,32 @@
   </div>
 </section>
 <section>
+  <h2 id="visualprogressions">Visual Progressions</h2>
+  <p class="mb-4">
+    The visual design of Archparser progressed rather quickly, but a consistent idea was in place from the beginning: <strong>get users into their jobs as quickly and easily as possible</strong>.
+  </p>
+  <div class="card mb-4">
+    <div class="card-body">
+      <div class="slider">
+        <div class="slides">
+          <div id="slide-1">
+            <img src="../../assets/img/archparser_desktop_0.webp" />
+          </div>
+          <div id="slide-2">
+            <img src="../../assets/img/archparser_desktop_1.webp" />
+          </div>
+          <div id="slide-3">
+            <img src="../../assets/img/archparser_desktop_2.webp" />
+          </div>
+          <div id="slide-4">
+            <img src="../../assets/img/archparser_dashboard1.webp" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
   <h2 id="iterations">Key Iterations & Problem Solving</h2>
   <p class="text-callout">Throughout development, several critical issues emerged that required significant architectural changes. Each iteration improved reliability, performance, or usability based on real-world testing.</p>
   <h3 class="mt-4 mb-2">Iteration 1: Memory Optimization for Large PDFs</h3>
@@ -336,11 +362,10 @@
   <h3>Development Process Insights</h3>
   <p class="mb-4">
     <ul>
-      <li><strong>AI-Assisted Development:</strong> Claude Code accelerated development by 2-3x through intelligent code generation, debugging assistance, and architectural guidance</li>
-      <li><strong>Monorepo Benefits:</strong> Shared types across workspaces caught integration bugs at compile time rather than runtime</li>
+      <li><strong>AI-Assisted Development:</strong> Claude Code accelerated Archparer's development 2-3x through intelligent code generation, debugging assistance, and architectural guidance</li>
+      <li><strong>Monorepo Benefits:</strong> Shared types across workspaces to catch integration bugs at compile time rather than runtime</li>
       <li><strong>Iterative Optimization:</strong> Real-world testing with large PDFs revealed performance bottlenecks that wouldn't have been found in small-scale testing</li>
-      <li><strong>Documentation-Driven:</strong> Comprehensive CLAUDE.md file serves as both AI context and developer onboarding guide</li>
-      <li><strong>Open Source:</strong> Public GitHub repository demonstrates full-stack capabilities and serves as portfolio piece</li>
+      <li><strong>Documentation-Driven:</strong> Comprehensive CLAUDE.md file serves as both an AI context and a developer onboarding guide</li>
     </ul>
   </p>
   <div class="row no-wrap pt-3">
@@ -375,15 +400,15 @@
         This project provided valuable insights about full-stack development, AI-assisted coding, and building for real-world constraints:
         <ol>
           <li><strong>Memory constraints require proactive optimization.</strong> The initial implementation worked fine for small PDFs but crashed on real-world 500+ page documents. Building with realistic test data from the start would have caught this earlier. Memory profiling and optimization became critical skills.</li>
-          <li><strong>AI development assistance is transformative when used strategically.</strong> Claude Code was most valuable for architectural planning, debugging complex issues, and generating boilerplate. I learned to use AI as a collaborative partner—explaining problems thoroughly, reviewing generated code critically, and iterating on solutions together. The key is maintaining ownership of architectural decisions while leveraging AI for implementation acceleration.</li>
-          <li><strong>Path management is harder than it looks.</strong> The path resolution issues taught me that assumptions about working directories break in production. Centralizing path logic and storing relative paths in the database made the system portable and maintainable. This lesson applies broadly: centralize cross-cutting concerns early.</li>
+          <li><strong>AI development assistance is transformative when used strategically.</strong> Claude Code was most valuable for architectural planning, debugging complex issues, and generating boilerplate code. I learned to use AI as a collaborative partner—explaining problems thoroughly, reviewing generated code critically, and iterating on solutions together. The key is maintaining ownership of architectural decisions while leveraging AI for implementation acceleration.</li>
+          <li><strong>Path management is harder than it looks.</strong> The path resolution issues taught me that assumptions about working directories break in production. Centralizing path logic and storing relative paths in the database made the system portable and maintainable.</li>
           <li><strong>User empowerment beats technical complexity.</strong> The visual template creator was more impactful than any backend optimization. Enabling non-technical users to configure OCR templates themselves removed a bottleneck and increased adoption. Simple, visual tools often provide more value than sophisticated algorithms.</li>
-          <li><strong>Design system expertise translates across contexts.</strong> My experience with PatternFly at Red Hat paid dividends—I could build an enterprise-grade UI quickly while ensuring accessibility and consistency. Design systems aren't just for design teams; they accelerate solo development too.</li>
+          <li><strong>Design system expertise translates across contexts.</strong> My experience with design systems paid dividends—I could build an enterprise-grade UI quickly while ensuring accessibility and consistency. Design systems aren't just for design teams; they accelerate solo development too.</li>
           <li><strong>Monorepo structure enforces discipline.</strong> Shared TypeScript interfaces between frontend and backend prevented the API contract drift that plagues many full-stack projects. The initial setup overhead was worth it for the compile-time safety and refactoring confidence.</li>
         </ol>
       </p>
       <p>
-        ArchParser demonstrated that full-stack development—especially with AI assistance—enables rapid prototyping and iteration. By combining my design background with technical implementation, I could build and refine features based on direct user feedback without handoff delays. The project serves as both a practical tool for construction project management and a portfolio demonstration of end-to-end product development capabilities.
+        ArchParser demonstrated that full-stack development - especially with AI assistance - enables rapid prototyping and iteration. By combining my design background with technical implementation, I could build and refine features based on direct user feedback without handoff delays. The project serves as both a practical tool for construction project management and a portfolio demonstration of end-to-end product development capabilities.
       </p>
     </div>
   </div>
@@ -398,7 +423,7 @@
         <li>
           <a href="https://archparser.adamjolicoeur.me" target="_blank" rel="noopener noreferrer">
             <fa-icon type="duotone" weight="solid" name="code-branch" size="md"></fa-icon>
-            Demo Site
+            Demo Site (no data)
           </a>
         </li>
         <li class="mt-2">
@@ -419,6 +444,10 @@
 </section>
 
 </content>
+
+
+  <link type="text/css" href="/css/slides.css" rel="stylesheet" />
+
 
     </main>
     <footer id="contact">

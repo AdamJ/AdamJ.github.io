@@ -347,3 +347,10 @@ image13-thumb: /assets/img/portfolio14.webp
     </div>
   </div>
 </section>
+
+<section>
+  <div class="row justify-content-between">
+    <a href="{{ '/presentations/' | url }}" class="btn btn-outline btn-sm" alt="Navigate to the presentation list">To Presentation List</a>
+    <a href="{{ '/presentations/color-picker' | url }}" class="btn btn-outline btn-sm" alt="Navigate to the color picker slides">Color Picker Slides</a>
+  </div>
+</section>

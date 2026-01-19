@@ -1,0 +1,18 @@
+pre {
+  background-color: var(--earth-cream);
+  padding: var(--space-md, 1rem);
+  border-radius: var(--radius-md, 12px);
+}
+
+section h2 {
+  margin-top: var(--space-lg, 2rem) !important;
+}
+
+section h3 {
+  margin-bottom: var(--space-md, 1rem) !important;
+}
+
+section ul,
+section ol {
+  margin-bottom: var(--space-md, 1rem) !important;
+}

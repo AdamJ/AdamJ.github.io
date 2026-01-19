@@ -13,3 +13,7 @@ layout: base.njk
 <content>
   {{ content | safe }}
 </content>
+
+{% if customCss %}
+  <link type="text/css" href="/css/{{ customCss | url }}" rel="stylesheet" />
+{% endif %}
