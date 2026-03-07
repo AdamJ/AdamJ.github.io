@@ -30,8 +30,48 @@
       "id": "/year-in-review/2025/",
       "url": "/year-in-review/2025/",
       "title": "2025 In Review",
-      "date_published": "2026-01-14T15:05:24Z",
-      "date": "2026-01-14T15:05:24Z"
+      "date_published": "2026-01-19T16:58:02Z",
+      "date": "2026-01-19T16:58:02Z"
+    }
+    ,
+    {
+      "id": "/presentations/portfolio/",
+      "url": "/presentations/portfolio/",
+      "title": "Portfolio",
+      "date_published": "2026-01-19T16:58:02Z",
+      "date": "2026-01-19T16:58:02Z"
+    }
+    ,
+    {
+      "id": "/presentations/color-picker/",
+      "url": "/presentations/color-picker/",
+      "title": "Color Picker",
+      "date_published": "2026-01-19T16:58:02Z",
+      "date": "2026-01-19T16:58:02Z"
+    }
+    ,
+    {
+      "id": "/presentations/",
+      "url": "/presentations/",
+      "title": "Presentations",
+      "date_published": "2026-01-19T16:58:02Z",
+      "date": "2026-01-19T16:58:02Z"
+    }
+    ,
+    {
+      "id": "/development/archparser/",
+      "url": "/development/archparser/",
+      "title": "ArchParser: Architectural Drawing Analysis Platform",
+      "date_published": "2026-01-19T16:58:02Z",
+      "date": "2026-01-19T16:58:02Z"
+    }
+    ,
+    {
+      "id": "/designs/customer-engagement/",
+      "url": "/designs/customer-engagement/",
+      "title": "Customer Engagement App",
+      "date_published": "2026-01-19T16:58:02Z",
+      "date": "2026-01-19T16:58:02Z"
     }
     ,
     {
@@ -59,25 +99,9 @@
     }
     ,
     {
-      "id": "/development/archparser/",
-      "url": "/development/archparser/",
-      "title": "ArchParser: Architectural Drawing Analysis Platform",
-      "date_published": "2026-01-01T16:25:50Z",
-      "date": "2026-01-01T16:25:50Z"
-    }
-    ,
-    {
       "id": "/designs/task-it/",
       "url": "/designs/task-it/",
       "title": "Task Management System",
-      "date_published": "2026-01-01T16:25:50Z",
-      "date": "2026-01-01T16:25:50Z"
-    }
-    ,
-    {
-      "id": "/designs/customer-engagement/",
-      "url": "/designs/customer-engagement/",
-      "title": "Customer Engagement App",
       "date_published": "2026-01-01T16:25:50Z",
       "date": "2026-01-01T16:25:50Z"
     }
@@ -184,30 +208,6 @@
       "title": "Adam Jolicoeur",
       "date_published": "2025-11-28T22:10:46Z",
       "date": "2025-11-28T22:10:46Z"
-    }
-    ,
-    {
-      "id": "/presentations/portfolio/",
-      "url": "/presentations/portfolio/",
-      "title": "Portfolio",
-      "date_published": "2025-11-26T17:47:39Z",
-      "date": "2025-11-26T17:47:39Z"
-    }
-    ,
-    {
-      "id": "/presentations/color-picker/",
-      "url": "/presentations/color-picker/",
-      "title": "Color Picker",
-      "date_published": "2025-11-26T17:47:39Z",
-      "date": "2025-11-26T17:47:39Z"
-    }
-    ,
-    {
-      "id": "/presentations/",
-      "url": "/presentations/",
-      "title": "Presentations",
-      "date_published": "2025-11-26T17:47:39Z",
-      "date": "2025-11-26T17:47:39Z"
     }
     ,
     {
