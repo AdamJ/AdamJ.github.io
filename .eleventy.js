@@ -9,7 +9,8 @@ const pluginTOC = require('eleventy-plugin-toc');
 const pluginDropcap = require('eleventy-plugin-dropcap');
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
-const markdownItHighlightJS = require('markdown-it-highlightjs')
+const markdownItHighlightJS = require('markdown-it-highlightjs');
+const markdownItContainer = require('markdown-it-container');
 const emojiReadTime = require("@11tyrocks/eleventy-plugin-emoji-readtime");
 const packageVersion = require("./package.json").version;
 const eleventySass = require("@11tyrocks/eleventy-plugin-sass-lightningcss");
@@ -118,6 +119,41 @@ module.exports = function (eleventyConfig) {
     markdownIt(mdOptions)
       .use(markdownItAnchor, mdAnchorOpts)
       .use(markdownItHighlightJS)
+      .use(markdownItContainer, 'card', {
+        render(tokens, idx) {
+          return tokens[idx].nesting === 1
+            ? '<div class="card">\n'
+            : '</div>\n';
+        }
+      })
+      .use(markdownItContainer, 'section', {
+        render(tokens, idx) {
+          return tokens[idx].nesting === 1
+            ? '<section class="prose-section">\n'
+            : '</section>\n';
+        }
+      })
+      .use(markdownItContainer, 'cards', {
+        render(tokens, idx) {
+          return tokens[idx].nesting === 1
+            ? '<div class="cards-row">\n'
+            : '</div>\n';
+        }
+      })
+      .use(markdownItContainer, 'card-basic', {
+        render(tokens, idx) {
+          return tokens[idx].nesting === 1
+            ? '<div class="card-basic">\n'
+            : '</div>\n';
+        }
+      })
+      .use(markdownItContainer, 'card-shadow', {
+        render(tokens, idx) {
+          return tokens[idx].nesting === 1
+            ? '<div class="card-shadow">\n'
+            : '</div>\n';
+        }
+      })
   );
 
   // Plugins

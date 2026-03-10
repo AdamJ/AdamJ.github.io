@@ -14,3 +14,8 @@ section ul,
 section ol {
   margin-bottom: var(--space-md, 1rem) !important;
 }
+.card > h2 {
+  &::after {
+    display: none;
+  }
+}
