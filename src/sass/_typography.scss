@@ -1,5 +1,6 @@
 /* Heading 1 */
-h1, .text-h1 {
+h1,
+.text-h1 {
   font-family: 'Pirata One', cursive;
   font-size: clamp(2.5rem, 8vw, 5rem);
   color: var(--text-primary);
@@ -19,7 +20,7 @@ h1, .text-h1 {
 
 .hero h1 {
   font-family: var(--font-family-heading);
-  font-size: 6rem;
+  // font-size: 6rem;
   color: var(--text-primary);
   margin-bottom: 1rem;
   text-shadow: 3px 3px 0 var(--accent-coral);
@@ -28,7 +29,8 @@ h1, .text-h1 {
 }
 
 /* Heading 2 */
-h2, .text-h2 {
+h2,
+.text-h2 {
   font-family: 'Playfair Display', serif;
   font-size: clamp(2rem, 5vw, 3rem);
   color: var(--text-primary);
@@ -40,7 +42,8 @@ h2, .text-h2 {
   display: none;
   margin-bottom: var(--space-2xs, 0.25rem);
 }
-h2::after, .text-h2::after {
+h2::after,
+.text-h2::after {
   content: '';
   display: block;
   width: 100px;
@@ -51,7 +54,8 @@ h2::after, .text-h2::after {
 }
 
 /* Heading 3 */
-h3, .text-h3 {
+h3,
+.text-h3 {
   font-family: 'Playfair Display', serif;
   font-size: clamp(1.5rem, 3vw, 2rem);
   color: var(--text-primary);
@@ -60,7 +64,8 @@ h3, .text-h3 {
 }
 
 /* Heading 4 */
-h4, .text-h4 {
+h4,
+.text-h4 {
   font-family: 'Playfair Display', serif;
   font-size: clamp(1.25rem, 2.5vw, 1.5rem);
   color: var(--text-primary);
@@ -69,7 +74,8 @@ h4, .text-h4 {
 }
 
 /* Heading 5 */
-h5, .text-h5 {
+h5,
+.text-h5 {
   font-family: Inter, sans-serif;
   font-size: clamp(1.1rem, 2vw, 1.25rem);
   color: var(--text-primary);
@@ -78,7 +84,8 @@ h5, .text-h5 {
 }
 
 /* Heading 6 */
-h6, .text-h6 {
+h6,
+.text-h6 {
   font-family: Inter, sans-serif;
   font-size: 1rem;
   color: var(--text-primary);
@@ -94,23 +101,26 @@ h6, .text-h6 {
   line-height: 1.7 !important;
 }
 
-p, .text-body {
+p,
+.text-body {
   font-size: clamp(0.95rem, 1.5vw, 1rem);
   line-height: 1.7;
   color: var(--text-primary);
   padding-bottom: var(--space-xs, 0.5rem);
 }
-p:last-child, .text-body:last-child {
+p:last-child,
+.text-body:last-child {
   margin-bottom: 0;
 }
 .hero p {
-  font-size: clamp(1.1rem, 2vw, 1.25rem);;
+  font-size: clamp(1.1rem, 2vw, 1.25rem);
   color: var(--earth-brown);
   max-width: 720px;
   margin: 0 auto;
 }
 
-.card-body p:first-of-type, .card-body .text-body:first-of-type {
+.card-body p:first-of-type,
+.card-body .text-body:first-of-type {
   margin-top: var(--space-md, 16px);
 }
 
@@ -136,7 +146,8 @@ p:last-child, .text-body:last-child {
   border-left: var(--border-medium) solid var(--accent-coral);
 }
 
-code, .code {
+code,
+.code {
   font-family: var(--font-family-mono);
   font-size: clamp(0.85rem, 1vw, 0.9rem);
 }
@@ -182,21 +193,26 @@ code.code-inline,
 }
 
 /* Lead paragraph */
-.lead, .text-lead {
+.lead,
+.text-lead {
   font-size: clamp(1.1rem, 2vw, 1.35rem);
   line-height: 1.7;
   color: var(--text-secondary);
 }
 
 /* Links */
-a, .link {
+a,
+.link {
   color: var(--earth-sage);
   border-bottom: 1px solid var(--earth-sage);
   text-decoration: none;
   transition: all 0.2s;
   font-weight: var(--font-weight-semibold, 600);
 }
-a:hover, a:focus, .link:hover, .link:focus {
+a:hover,
+a:focus,
+.link:hover,
+.link:focus {
   color: var(--earth-brown);
   border-bottom-color: var(--earth-brown);
 }
@@ -216,14 +232,17 @@ a:hover, a:focus, .link:hover, .link:focus {
     color: var(--earth-sage);
     transition: all 0.2s;
   }
-  &:hover::after, &:hover::before,
-  &:focus::after, &:focus::before {
+  &:hover::after,
+  &:hover::before,
+  &:focus::after,
+  &:focus::before {
     color: var(--accent-coral);
   }
 }
 
 /* Blockquote */
-blockquote, .blockquote {
+blockquote,
+.blockquote {
   border-left: var(--border-thin) solid var(--earth-brown);
   padding-left: var(--space-md, 1rem);
   margin: var(--space-lg, 1.5rem) 0;

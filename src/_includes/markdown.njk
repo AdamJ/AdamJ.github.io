@@ -4,6 +4,9 @@ layout: base.njk
 
 <link rel="stylesheet" href="{{ '/css/print.css' | url }}" media="print" />
 <link rel="stylesheet" href="{{ '/css/markdown.css' | url }}" />
+{% if containers %}
+<link rel="stylesheet" href="{{ '/css/containers.css' | url }}" />
+{% endif %}
 
 <section class="hero">
   <h1>{{ title }}</h1>
@@ -18,7 +21,7 @@ layout: base.njk
     {{ content | safe }}
   </section>
 {% else %}
-  <section>
+  <content>
     {{ content | safe }}
-  </section>
+  </content>
 {% endif %}

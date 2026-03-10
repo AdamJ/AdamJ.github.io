@@ -104,6 +104,7 @@ scripts/
   - `markdown-it-anchor`: Auto-heading anchors with `#` symbols
   - `markdown-it-highlightjs`: Syntax highlighting
   - `markdown-it-eleventy-img`: Image optimization
+  - `markdown-it-container`: Fenced container blocks (`:::card`, `:::section`, `:::cards`, `:::card-basic`, `:::card-shadow`)
 
 ### Eleventy Plugins Active
 1. `@11ty/eleventy-plugin-syntaxhighlight` - Code block highlighting
@@ -185,19 +186,41 @@ Edit `eleventyNavigation` in page front matter:
 - `title`: Display text in nav
 - `order`: Menu position (lower numbers first)
 
+### Using Markdown Containers
+
+Pages using `layout: markdown.njk` can opt in to fenced container syntax by adding `containers: true` to front matter. This loads `containers.css` and enables all five container types:
+
+| Syntax | Output | Use case |
+|--------|--------|----------|
+| `:::card` | `<div class="card">` | Bootstrap card component |
+| `:::section` | `<section class="prose-section">` | Semantic section with spacing |
+| `:::cards` | `<div class="cards-row">` | Flex row wrapper for adjacent cards |
+| `:::card-basic` | `<div class="card-basic">` | Bordered card, earth-sand background |
+| `:::card-shadow` | `<div class="card-shadow">` | Cream background, box shadow |
+
+```yaml
+---
+layout: markdown.njk
+containers: true
+---
+```
+
+To add new container types: add `md.use(markdownItContainer, 'name', { render... })` in `.eleventy.js` and add styles in `src/sass/containers.scss`.
+
 ## Working with Styles
 
 ### SCSS File Organization
-- **Main**: `src/sass/style.scss` (imports Bootstrap + custom partials)
+- **Main**: `src/sass/style.scss` (imports Bootstrap + custom partials, including containers)
 - **Colors**: `src/sass/_colors.scss`
 - **Typography**: `src/sass/_typography.scss`
 - **Layout**: `src/sass/_layout.scss`
 - **Components**: Individual `_component.scss` files (buttons, cards, gallery, etc.)
+- **Containers**: `src/sass/containers.scss` (prose-section, card overrides for markdown context)
 
 ### CSS Build Process
-- **Development**: Auto-compiles via `npm run start` watcher
-- **Production**: `npm run build:sass` → PostCSS → minified output
-- **Output**: `docs/css/style.css` (~98KB)
+- **Development**: Auto-compiles entire `src/sass/` → `docs/css/` via `watch:sass`
+- **Production**: `npm run build:sass` compiles entire `src/sass/` → `docs/css/` → PostCSS → minified
+- **Output**: `docs/css/style.css` (main bundle), `docs/css/containers.css`, `docs/css/markdown.css`, etc.
 
 ## Environment Variables
 

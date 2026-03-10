@@ -27,6 +27,14 @@
   },
   "items": [
     {
+      "id": "/development/timetracker/",
+      "url": "/development/timetracker/",
+      "title": "Weekly Report: AI-Powered Work Summary",
+      "date_published": "2026-03-10T18:18:24Z",
+      "date": "2026-03-10T18:18:24Z"
+    }
+    ,
+    {
       "id": "/year-in-review/2025/",
       "url": "/year-in-review/2025/",
       "title": "2025 In Review",

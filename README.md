@@ -31,6 +31,60 @@ I'm a user experience designer with 15+ years of enterprise experience at compan
 
 ----
 
+## Markdown Containers
+
+Pages using `layout: markdown.njk` can opt in to fenced container blocks by adding `containers: true` to front matter. This enables container syntax without writing raw HTML.
+
+```yaml
+---
+layout: markdown.njk
+containers: true
+---
+```
+
+```markdown
+:::section
+## Section Heading
+Content here.
+:::
+
+:::card
+### Card Title
+Card content here.
+:::
+
+:::cards
+:::card
+Card one.
+:::
+:::card
+Card two.
+:::
+:::
+
+:::card-basic
+Basic styled card.
+:::
+
+:::card-shadow
+Elevated card with shadow.
+:::
+```
+
+Available containers and their rendered output:
+
+| Syntax | Output |
+|--------|--------|
+| `:::card` | `<div class="card">` |
+| `:::section` | `<section class="prose-section">` |
+| `:::cards` | `<div class="cards-row">` (flex row wrapper) |
+| `:::card-basic` | `<div class="card-basic">` (bordered, earth-sand background) |
+| `:::card-shadow` | `<div class="card-shadow">` (cream background, box shadow) |
+
+Pages without `containers: true` are unaffected. To add new container types, register them in `.eleventy.js` and add styles in `src/sass/containers.scss`.
+
+----
+
 ## References and Resources
 
 **Libraries**
