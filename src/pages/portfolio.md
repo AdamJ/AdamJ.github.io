@@ -22,14 +22,14 @@ eleventyNavigation:
       </div>
     </article>
     <article class="showcase-large">
-      <img src="{{ '/assets/img/OSIO-laptop-screen-1200.webp' | url }}" alt="Task It project illustration" class="showcase-image" />
+      <img src="{{ '/assets/img/timetracker-loading-state-screen.webp' | url }}" alt="Task It project illustration" class="showcase-image" />
         <div class="showcase-content">
-          <h3>Application Lifecycle Management</h3>
-          <p>Designed enterprise project management for OpenShift teams at Red Hat. Created seamless IDE integration and workflow tools for developers managing complex Kubernetes deployments.</p>
+          <h3>Weekly AI-Powered Work Summary</h3>
+          <p>After archiving my work entries for the week, I found myself running a second, separate tool to generate a weekly summary. Now, I start the day, capture tasks, review, and archive - then summarize using AI.</p>
           <div class="badges mb-2">
-            <span class="badge">Red Hat</span><span class="badge">Platforms</span>
+            <span class="badge">AI</span><span class="badge">Productivity</span>
           </div>
-          <a href="{{ '/designs/alm' | url }}" class="btn btn-primary" alt="View application lifecycle planning case study">View Case Study</a>
+          <a href="{{ '/development/timetracker' | url }}" class="btn btn-primary" alt="View weekly report ai summary generator case study">View Case Study</a>
         </div>
       </article>
     </div>
@@ -51,12 +51,12 @@ eleventyNavigation:
         <a class="btn btn-outline btn-sm" href="{{ '/designs/component-library' | url }}">View Case Study</a>
       </article>
       <article class="card-flex showcase-small">
-        <h4>Customer Engagement Platform</h4>
-        <p>Led complete UX redesign for financial services SaaS platform. Created reusable UI pattern library that reduced design-to-development time by 40% and established design standards for future products.</p>
+        <h4>Application Lifecycle Management</h4>
+        <p>Designed enterprise project management for OpenShift teams at Red Hat. Created seamless IDE integration and workflow tools for developers managing complex Kubernetes deployments.</p>
         <div class="badges mb-2">
-          <span class="badge">SaaS</span><span class="badge">Pattern Library</span>
+          <span class="badge">Red Hat</span><span class="badge">Platforms</span>
         </div>
-        <a class="btn btn-outline btn-sm" href="{{ '/designs/customer-engagement' | url }}">View Case Study</a>
+        <a class="btn btn-outline btn-sm" href="{{ '/designs/alm' | url }}">View Case Study</a>
       </article>
     </div>
   </div>

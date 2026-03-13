@@ -1,6 +1,6 @@
 ---
 layout: markdown.njk
-title: 'Weekly Report: AI-Powered Work Summary'
+title: 'Weekly AI-Powered Work Summary'
 date: git Last Modified
 abbreviation: 'worksummary'
 description: 'Start the day, capture tasks, review, and archive - then summarize using AI'
