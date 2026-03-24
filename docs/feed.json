@@ -27,19 +27,43 @@
   },
   "items": [
     {
-      "id": "/development/timetracker/",
-      "url": "/development/timetracker/",
-      "title": "Weekly AI-Powered Work Summary",
-      "date_published": "2026-03-10T18:18:24Z",
-      "date": "2026-03-10T18:18:24Z"
+      "id": "/reference/",
+      "url": "/reference/",
+      "title": "Reference links",
+      "date_published": "2026-03-24T23:58:44Z",
+      "date": "2026-03-24T23:58:44Z"
+    }
+    ,
+    {
+      "id": "/archives/town-selectman.html",
+      "url": "/archives/town-selectman.html",
+      "title": "Archived",
+      "date_published": "2026-03-24T23:58:44Z",
+      "date": "2026-03-24T23:58:44Z"
     }
     ,
     {
       "id": "/year-in-review/2025/",
       "url": "/year-in-review/2025/",
       "title": "2025 In Review",
-      "date_published": "2026-01-19T16:58:02Z",
-      "date": "2026-01-19T16:58:02Z"
+      "date_published": "2026-03-24T22:00:55Z",
+      "date": "2026-03-24T22:00:55Z"
+    }
+    ,
+    {
+      "id": "/portfolio/",
+      "url": "/portfolio/",
+      "title": "My Work",
+      "date_published": "2026-03-13T03:13:25Z",
+      "date": "2026-03-13T03:13:25Z"
+    }
+    ,
+    {
+      "id": "/development/timetracker/",
+      "url": "/development/timetracker/",
+      "title": "Weekly AI-Powered Work Summary",
+      "date_published": "2026-03-13T03:13:25Z",
+      "date": "2026-03-13T03:13:25Z"
     }
     ,
     {
@@ -99,14 +123,6 @@
     }
     ,
     {
-      "id": "/portfolio/",
-      "url": "/portfolio/",
-      "title": "My Work",
-      "date_published": "2026-01-02T02:38:29Z",
-      "date": "2026-01-02T02:38:29Z"
-    }
-    ,
-    {
       "id": "/designs/task-it/",
       "url": "/designs/task-it/",
       "title": "Task Management System",
@@ -128,14 +144,6 @@
       "title": "Application Lifecycle Management",
       "date_published": "2026-01-01T16:25:50Z",
       "date": "2026-01-01T16:25:50Z"
-    }
-    ,
-    {
-      "id": "/archives/town-selectman.html",
-      "url": "/archives/town-selectman.html",
-      "title": "Archived",
-      "date_published": "2025-12-05T21:31:27Z",
-      "date": "2025-12-05T21:31:27Z"
     }
     ,
     {
@@ -248,14 +256,6 @@
       "title": "Development",
       "date_published": "2025-08-30T16:14:15Z",
       "date": "2025-08-30T16:14:15Z"
-    }
-    ,
-    {
-      "id": "/reference/",
-      "url": "/reference/",
-      "title": "Reference links",
-      "date_published": "2025-07-11T18:03:04Z",
-      "date": "2025-07-11T18:03:04Z"
     }
     ,
     {

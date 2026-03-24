@@ -22,11 +22,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/reference/</loc>
-      <lastmod>2025-07-11T18:03:04.078Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/development/</loc>
       <lastmod>2025-08-30T16:14:15.000Z</lastmod>
     </url>
@@ -44,11 +39,6 @@
     <url>
       <loc>https://www.adamjolicoeur.com/designs/dashboard-analytics/</loc>
       <lastmod>2025-11-26T17:47:39.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/404.html</loc>
-      <lastmod>2025-11-27T17:36:23.096Z</lastmod>
     </url>
   
     <url>
@@ -102,11 +92,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/archives/town-selectman.html</loc>
-      <lastmod>2025-12-05T21:31:27.629Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/designs/alm/</loc>
       <lastmod>2026-01-01T16:25:50.000Z</lastmod>
     </url>
@@ -119,11 +104,6 @@
     <url>
       <loc>https://www.adamjolicoeur.com/designs/task-it/</loc>
       <lastmod>2026-01-01T16:25:50.000Z</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://www.adamjolicoeur.com/portfolio/</loc>
-      <lastmod>2026-01-02T02:38:29.000Z</lastmod>
     </url>
   
     <url>
@@ -167,13 +147,33 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/year-in-review/2025/</loc>
-      <lastmod>2026-01-19T16:58:02.000Z</lastmod>
+      <loc>https://www.adamjolicoeur.com/development/timetracker/</loc>
+      <lastmod>2026-03-13T03:13:25.000Z</lastmod>
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/development/timetracker/</loc>
-      <lastmod>2026-03-10T18:18:24.000Z</lastmod>
+      <loc>https://www.adamjolicoeur.com/portfolio/</loc>
+      <lastmod>2026-03-13T03:13:25.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/year-in-review/2025/</loc>
+      <lastmod>2026-03-24T22:00:55.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/404.html</loc>
+      <lastmod>2026-03-24T23:58:44.668Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/archives/town-selectman.html</loc>
+      <lastmod>2026-03-24T23:58:44.669Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/reference/</loc>
+      <lastmod>2026-03-24T23:58:44.669Z</lastmod>
     </url>
   
 </urlset>
