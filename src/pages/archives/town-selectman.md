@@ -37,7 +37,7 @@ eleventyNavigation:
         <h3 class="mb-3 pl-md-5">My name is Adam Jolicoeur, and I am running for Town Selectman.</h3>
         <div class="d-md-flex flex-row">
           <div class="align-items-stretch">
-            <img src="{{ '../../img/headshot.jpg' | url }}" class="img-thumbnail" alt="Headshot of Adam Jolicoeur">
+            <img src="{{ '/assets/img/headshot.webp' | url }}" class="img-thumbnail" alt="Headshot of Adam Jolicoeur">
           </div>
           <div class="align-items-stretch">
             <p class="pl-md-5">Six years ago, I moved to Brookfield with my wife where together we live with our son, 3 dogs, and our horse. We chose to move to Brookfield because of the community, local activities (we love to hike and kayak), and the school system. With both of us having grown up in tight-knit communities, we felt Brookfield would be the perfect place to start and raise a family. We love to support the community by attending events and buying local (especially from our local farmers). With everything happening over the past few months, it has become even more apparent that a town like Brookfield can still thrive.</p>

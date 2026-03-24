@@ -30,18 +30,5 @@ fs.readdirSync(inputDir).forEach(file => {
                 if (err) console.error(err);
             });
 
-        // Optional: Also output a JPG fallback for older browsers (less compressed)
-        sharp(inputPath)
-            .resize(1200)
-            .jpeg({ quality: 85 })
-            .toFile(path.join(outputDir, `${name}.jpg`), (err) => {
-                if (err) console.error(err);
-            });
-        sharp(inputPath)
-            .resize(300)
-            .jpeg({ quality: 75 })
-            .toFile(path.join(outputDir, `${name}-thumb.jpg`), (err) => {
-                if (err) console.error(err);
-            });
     }
 });
