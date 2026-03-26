@@ -269,6 +269,6 @@ eleventyNavigation:
 </section>
 <section>
   <div class="row justify-content-end">
-    <a href="{{ '/designs/alm/' | url }}" class="btn btn-outline btn-sm" alt="Navigate to ALM case study">Next Case Study</a>
+    <a href="{{ '/development/timetracker/' | url }}" class="btn btn-outline btn-sm" alt="Navigate to TimeTrackerPro case study">Next Case Study</a>
   </div>
 </section>
