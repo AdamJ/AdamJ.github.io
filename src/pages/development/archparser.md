@@ -371,7 +371,7 @@ customCss: slides.css
 </section>
 <section>
   <div class="row justify-content-between">
-    <a href="{{ '/designs/alm' | url }}" class="btn btn-outline btn-sm" alt="Navigate to Application Lifecycle Management case study">Previous Case Study</a>
+    <a href="{{ '/development/timetracker' | url }}" class="btn btn-outline btn-sm" alt="Navigate to TimeTrackerPro case study">Previous Case Study</a>
     <a href="{{ '/designs/component-library/' | url }}" class="btn btn-outline btn-sm" alt="Navigate to component library case study">Next Case Study</a>
   </div>
 </section>

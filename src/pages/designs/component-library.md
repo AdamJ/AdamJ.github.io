@@ -146,6 +146,6 @@ eleventyNavigation:
 <section>
   <div class="row justify-content-between">
     <a href="{{ '/development/archparser' | url }}" class="btn btn-outline btn-sm" alt="Navigate to Archparser case study">Previous Case Study</a>
-    <a href="{{ '/designs/customer-engagement/' | url }}" class="btn btn-outline btn-sm" alt="Navigate to customer engagement case study">Next Case Study</a>
+    <a href="{{ '/designs/alm/' | url }}" class="btn btn-outline btn-sm" alt="Navigate to customer engagement case study">Next Case Study</a>
   </div>
 </section>
