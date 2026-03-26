@@ -3,7 +3,7 @@ layout: markdown.njk
 title: 'Soccer Game Tracker'
 date: git Last Modified
 abbreviation: 'soccertracker'
-description: 'Native iOS app for game tracker for coaches.'
+description: 'Native iOS app for coaches to track game data. Solo project, in active use.'
 eleventyNavigation:
   key: CaseStudies
   parent: CaseStudies
@@ -15,7 +15,7 @@ containers: true
 
   ## Project Overview
 
-  > A native iOS app built by a coach who needed fast, reliable game tracking without surrendering data to a third-party platform — designed for the sideline, built in Swift.
+  > A native iOS app, built by a coach, who needed fast and reliable game tracking without surrendering data to a third-party platform — designed for the sideline, built in Swift.
 
   :::card
 
@@ -33,13 +33,30 @@ containers: true
 
   Coaching a youth soccer team generates a surprising amount of data. Scores, substitutions, player minutes, goals, assists, saves, cards. The problem isn't that the data is hard to capture — it's that every existing option forces a tradeoff I wasn't willing to make. Pen and paper is fast but produces nothing useful afterward. Third-party apps are convenient but own your data, require accounts, and are built for organizations, not individual coaches. I wanted something purpose-built for how I actually work on a sideline: fast to set up, minimal interaction during play, and with data I control entirely.
 
-  <div class="card-shadow">
-    <div class="card-body">
-      <img
-        alt="New Game setup screen"
-        src="{{ '/assets/img/.webp' | url }}"
-        class="figure-img img-fluid rounded"
-      />
+  <div class="row justify-content-around no-wrap mt-3 mb-5">
+    <div class="card-shadow">
+      <div class="card-body">
+        <figure>
+          <img
+            alt="New Game setup screen"
+            src="{{ '/assets/img/soccergametracker-phone-rosters.webp' | url }}"
+            style="width: 300px; max-width: 300px;"
+          />
+          <figcaption>set the roster - starters and substitutes</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="card-shadow">
+      <div class="card-body">
+        <figure>
+          <img
+            alt="New Game setup screen"
+            src="{{ '/assets/img/soccergametracker-phone-newgame.webp' | url }}"
+            style="width: 300px; max-width: 300px;"
+          />
+          <figcaption>add game info - team size, location, date & time</figcaption>
+        </figure>
+      </div>
     </div>
   </div>
 ::::
@@ -52,6 +69,7 @@ containers: true
   > every decision went through one person - me
 
   **Constraint clarified scope**. Without a backend, multi-device sync and shared rosters aren't on the table — and that's fine. Knowing what the app isn't made it easier to build what it is. I handled both the design and implementation entirely, which meant every decision — from interaction model to data structure — went through one person. That's mostly an advantage when you need to move fast and stay opinionated.
+::::
 
 ::::section
 
@@ -60,6 +78,15 @@ containers: true
   > The core design problem is attention.
 
   During a live game, a coach is watching players, calling substitutions, talking to parents. The app gets a glance and a thumb tap, not focused interaction. Every decision on the Live Game screen follows from that.
+
+  <div class="card">
+    <div class="card-header text-h5">Pregame</div>
+    <div class="card-body">
+      The pre-game setup flow handles the overhead up front.
+      <br/>New Game collects opposition, date, location, and half duration — everything you'd put on a physical scoresheet — plus roster selection from a pre-built player list with jersey number and position.
+      <br/>The Game vs. Scrimmage toggle is a small but deliberate decision: scrimmages have different stakes and different lineup dynamics, and I wanted the history to reflect that distinction clearly.
+    </div>
+  </div>
 
   <div class="card">
     <div class="card-header text-h5">Scoreboard & Quick Actions</div>
@@ -77,11 +104,12 @@ containers: true
 
   <div class="card-shadow">
     <div class="card-body">
-      <figure>
+      <figure style="text-align: center;">
         <img
           alt="Live Game screen showing scoreboard, timer, Quick Actions, and player list"
-          src="{{ '/assets/img/.webp' | url }}"
+          src="{{ '/assets/img/soccergametracker-phone-livegame.webp' | url }}"
           class="figure-img img-fluid rounded"
+          style="width: 300px; max-width: 300px;"
         />
         <figcaption>Live Game screen showing scoreboard, timer, Quick Actions, and player list</figcaption>
       </figure>
@@ -92,22 +120,81 @@ containers: true
   ### Substitutions
 
   :::card
-  Substitutions were a meaningful product decision. Mid-game sub support — with a distinct "substituted out" state separate from bench status — reflects how substitutions actually work: a
-  player who comes off isn't the same as a player who never started. Getting that distinction right matters for per-player stats to be accurate.
+  Substitutions were a meaningful product decision. Mid-game sub support — with a distinct "substituted out" state separate from bench status — reflects how substitutions actually work: a player who comes off isn't the same as a player who never started. Getting that distinction right matters for per-player stats to be accurate.
   :::
-  :::card
-  The pre-game setup flow handles the overhead up front. New Game collects opposition, date, location, and half duration — everything you'd put on a physical scoresheet — plus roster selection from a pre-built player list with jersey number and position. The Game vs. Scrimmage toggle is a small but deliberate decision: scrimmages have different stakes and different lineup dynamics, and I wanted the history to reflect that distinction clearly.
-  :::
-  <div class="card-shadow">
-    <div class="card-body">
-      <figure>
-        <img
-          alt="Game history view showing filter between Games and Scrimmages"
-          src="{{ '/assets/img/.webp' | url }}"
-          class="figure-img img-fluid rounded"
-        />
-        <figcaption>Game history view showing filter between Games and Scrimmages</figcaption>
-      </figure>
+
+  <div class="row justify-content-around no-wrap mt-3 mb-5">
+    <div class="card-shadow">
+      <div class="card-body">
+        <figure style="text-align: center;">
+          <img
+            alt="View a player's stats and position before substituting them on or off"
+            src="{{ '/assets/img/soccergametracker-phone-subs-02.webp' | url }}"
+            style="width: 300px; max-width: 300px;"
+          />
+          <figcaption>View a player's stats and position before substituting them on or off</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="card-shadow">
+      <div class="card-body">
+        <figure style="text-align: center;">
+          <img
+            alt="Substitutes cannot accidentally have statistics assigned"
+            src="{{ '/assets/img/soccergametracker-phone-subs-01.webp' | url }}"
+            style="width: 300px; max-width: 300px;"
+          />
+          <figcaption>Substitutes cannot accidentally have statistics assigned</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="card-shadow">
+      <div class="card-body">
+        <figure style="text-align: center;">
+          <img
+            alt="View who subbed in and out of the game by half"
+            src="{{ '/assets/img/soccergametracker-phone-subs-03.webp' | url }}"
+            style="width: 300px; max-width: 300px;"
+          />
+          <figcaption>View who subbed in and out of the game by half</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+::::
+
+::::section
+
+  ## After the game
+
+  > As a coach, being able to view historical information is a key part in planning practices, setting lineups, and determining strategy.
+
+  ### History
+
+  <div class="row justify-content-around no-wrap mt-3 mb-5">
+    <div class="card-shadow">
+      <div class="card-body">
+        <figure style="text-align: center;">
+          <img
+            alt="View historical game data, zooming in to see each game's details"
+            src="{{ '/assets/img/soccergametracker-phone-history.webp' | url }}"
+            style="width: 300px; max-width: 300px;"
+          />
+          <figcaption>View historical game data, with key info front and center</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="card-shadow">
+      <div class="card-body">
+        <figure style="text-align: center;">
+          <img
+            alt="View historical game data, zooming in to see each game's details"
+            src="{{ '/assets/img/soccergametracker-phone-history-details.webp' | url }}"
+            style="width: 300px; max-width: 300px;"
+          />
+          <figcaption>Zooming into any game shows player-by-player stats</figcaption>
+        </figure>
+      </div>
     </div>
   </div>
 ::::
@@ -116,10 +203,10 @@ containers: true
   ## Where it stands
 
   :::card
-  The app is in active use this season, tested against the real constraint it was built for: a sideline, in real game conditions. Feedback from that use has been specific — the per-player stats are being used between games to inform lineup and substitution planning. That's the outcome I was building toward.
+  The app is in active use this season, tested against the real constraint it was built for: a sideline, in real game conditions. Feedback from that use has been indispensable, with the per-player stats used between games to inform lineup and substitution planning. That's the outcome I was building toward.
 
-  What real use has surfaced is mostly sequencing: the transition from pre-game setup into the live view needs a beat less friction, and the post-game summary screen is still being refined. **Those are the next iterations.**
+  What real use has surfaced is mostly sequencing: the transition from pre-game setup into the live view needs less friction, and the post-game summary screen is still being refined. **Those are the next iterations.**
   :::
 
-  > An App Store release is planned when those final rough edges are resolved. The core is stable. The app does one thing, does it reliably, and doesn't ask for anything it doesn't need.
+  > An App Store release is planned once the final rough edges are resolved. The app does one thing, does it reliably, and doesn't ask for anything it doesn't need.
 ::::
