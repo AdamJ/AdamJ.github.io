@@ -27,6 +27,14 @@
   },
   "items": [
     {
+      "id": "/case-studies/soccertracker/",
+      "url": "/case-studies/soccertracker/",
+      "title": "Soccer Game Tracker",
+      "date_published": "2026-03-26T01:27:20Z",
+      "date": "2026-03-26T01:27:20Z"
+    }
+    ,
+    {
       "id": "/reference/",
       "url": "/reference/",
       "title": "Reference links",
