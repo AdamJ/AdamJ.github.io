@@ -1,0 +1,4 @@
+{
+  "layout": "page",
+  "permalink": "/case-studies/{{ page.fileSlug }}/"
+}
