@@ -1,16 +1,17 @@
 {
   "name": "jolicoeur",
   "title": "Adam J. Jolicoeur",
-  "version": "10.0.2",
+  "version": "11.4.1",
   "author": "Adam J. Jolicoeur",
   "homepage": "https://www.adamjolicoeur.com",
   "license": "Apache-2.0",
   "licenseUrl": "https://github.com/adamj/adamj.github.io/blob/main/LICENSE",
   "main": "index.js",
   "engines": {
-    "node": "25.x"
+    "node": "25.9.0"
   },
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "clean": "rm -rf docs",
     "webhint": "hint http://localhost:8081",
     "stylelint": "npx stylelint '**/*.scss'",
@@ -39,43 +40,50 @@
     "url": "https://github.com/AdamJ/AdamJ.github.io/issues"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.2",
-    "@11ty/eleventy-activity-feed": "^2.0.0",
-    "@11ty/eleventy-img": "^6.0.4",
-    "@11ty/eleventy-navigation": "^1.0.4",
-    "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
-    "@11ty/eleventy-plugin-rss": "^2.0.4",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
-    "@11ty/import": "^1.0.15",
-    "@hint/hint-axe": "^4.4.21",
-    "autoprefixer": "^10.4.21",
-    "cross-env": "^7.0.3",
-    "cssnano": "^7.0.7",
-    "dotenv": "^16.5.0",
-    "eleventy-plugin-dropcap": "^1.1.0",
-    "eleventy-plugin-toc": "^1.1.5",
-    "emoji-regex": "^10.4.0",
-    "hint": "^7.1.13",
-    "luxon": "^3.6.1",
-    "markdown-it": "^14.1.0",
-    "markdown-it-anchor": "^9.2.0",
-    "markdown-it-eleventy-img": "^0.10.2",
-    "markdown-it-highlightjs": "^4.2.0",
-    "npm-run-all": "^4.1.5",
-    "postcss-cli": "^11.0.1",
-    "sass": "^1.89.2",
-    "stylelint": "^16.20.0",
-    "stylelint-config-standard-scss": "^15.0.1",
-    "stylelint-order": "^7.0.0"
+    "@11ty/eleventy": "3.1.5",
+    "@11ty/eleventy-activity-feed": "2.0.0",
+    "@11ty/eleventy-img": "6.0.4",
+    "@11ty/eleventy-navigation": "1.0.5",
+    "@11ty/eleventy-plugin-inclusive-language": "1.0.3",
+    "@11ty/eleventy-plugin-rss": "3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "5.0.2",
+    "@11ty/import": "1.0.19",
+    "@hint/hint-axe": "4.4.21",
+    "autoprefixer": "10.4.27",
+    "cross-env": "10.1.0",
+    "cssnano": "7.1.4",
+    "dotenv": "17.4.1",
+    "eleventy-plugin-dropcap": "1.1.0",
+    "eleventy-plugin-toc": "1.1.5",
+    "emoji-regex": "10.6.0",
+    "hint": "7.1.13",
+    "luxon": "3.7.2",
+    "markdown-it": "14.1.1",
+    "markdown-it-anchor": "9.2.0",
+    "markdown-it-eleventy-img": "0.10.2",
+    "markdown-it-highlightjs": "3.0.0",
+    "npm-run-all": "4.1.5",
+    "postcss-cli": "11.0.1",
+    "sass": "1.99.0",
+    "stylelint": "17.6.0",
+    "stylelint-config-standard-scss": "17.0.0",
+    "stylelint-order": "8.1.1"
   },
   "browserslist": [
     "> 5%, not dead",
     "last 2 major versions"
   ],
   "dependencies": {
-    "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",
-    "@11tyrocks/eleventy-plugin-sass-lightningcss": "^1.3.0",
-    "bootstrap": "^5.3.8",
-    "markdown-it-container": "^4.0.0"
+    "@11tyrocks/eleventy-plugin-emoji-readtime": "1.0.1",
+    "@11tyrocks/eleventy-plugin-sass-lightningcss": "1.3.0",
+    "bootstrap": "5.3.8",
+    "markdown-it-container": "4.0.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "tar": "7.5.13",
+      "tar-fs": "3.1.2",
+      "ws": "8.20.0"
+    }
   }
 }

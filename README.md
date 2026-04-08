@@ -29,7 +29,7 @@ I'm a user experience designer with 15+ years of enterprise experience at compan
 
 **Releases** are done via the [release-drafter](https://github.com/marketplace/actions/release-drafter) GitHub Action. Release notes are automatically generated from the pull request title and description.
 
-----
+---
 
 ## Markdown Containers
 
@@ -44,12 +44,16 @@ containers: true
 
 ```markdown
 :::section
+
 ## Section Heading
+
 Content here.
 :::
 
 :::card
+
 ### Card Title
+
 Card content here.
 :::
 
@@ -73,24 +77,26 @@ Elevated card with shadow.
 
 Available containers and their rendered output:
 
-| Syntax | Output |
-|--------|--------|
-| `:::card` | `<div class="card">` |
-| `:::section` | `<section class="prose-section">` |
-| `:::cards` | `<div class="cards-row">` (flex row wrapper) |
-| `:::card-basic` | `<div class="card-basic">` (bordered, earth-sand background) |
-| `:::card-shadow` | `<div class="card-shadow">` (cream background, box shadow) |
+| Syntax           | Output                                                       |
+| ---------------- | ------------------------------------------------------------ |
+| `:::card`        | `<div class="card">`                                         |
+| `:::section`     | `<section class="prose-section">`                            |
+| `:::cards`       | `<div class="cards-row">` (flex row wrapper)                 |
+| `:::card-basic`  | `<div class="card-basic">` (bordered, earth-sand background) |
+| `:::card-shadow` | `<div class="card-shadow">` (cream background, box shadow)   |
 
 Pages without `containers: true` are unaffected. To add new container types, register them in `.eleventy.js` and add styles in `src/sass/containers.scss`.
 
-----
+---
 
 ## References and Resources
 
-**Libraries**
+### Libraries
+
 - [Font Awesome](https://www.fontawesome.com)
 
-**Eleventy**
+### Eleventy
+
 - [Eleventy Documentation](https://www.11ty.dev/docs/)
 - [11ty Recipes](https://11ty.recipes/)
 - [The 11ty Bundle](https://11tybundle.dev/)

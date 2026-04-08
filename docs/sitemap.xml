@@ -127,11 +127,6 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/portfolio/</loc>
-      <lastmod>2026-03-13T03:13:25.000Z</lastmod>
-    </url>
-  
-    <url>
       <loc>https://www.adamjolicoeur.com/year-in-review/2025/</loc>
       <lastmod>2026-03-24T22:00:55.000Z</lastmod>
     </url>
@@ -182,13 +177,18 @@
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/case-studies/color-picker/</loc>
-      <lastmod>2026-04-08T16:47:50.453Z</lastmod>
+      <loc>https://www.adamjolicoeur.com/case-studies/</loc>
+      <lastmod>2026-04-08T16:48:47.000Z</lastmod>
     </url>
   
     <url>
-      <loc>https://www.adamjolicoeur.com/case-studies/</loc>
-      <lastmod>2026-04-08T16:47:50.463Z</lastmod>
+      <loc>https://www.adamjolicoeur.com/case-studies/color-picker/</loc>
+      <lastmod>2026-04-08T16:48:47.000Z</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://www.adamjolicoeur.com/portfolio/</loc>
+      <lastmod>2026-04-08T16:48:47.000Z</lastmod>
     </url>
   
 </urlset>
