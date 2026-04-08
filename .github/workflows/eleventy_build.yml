@@ -8,17 +8,23 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-        - uses: actions/checkout@v3.6.0
+        - name: Checkout
+          uses: actions/checkout@v6
+
         - name: Setup Node
-          uses: actions/setup-node@v3.8.1
+          uses: actions/setup-node@v6
           with:
-            node-version: '25.x'
-        - name: Install dependencies using a safe clean install, build and test
+            node-version: '25.9.0'
+
+        - name: Install pnpm
           run: |
+            npm install -g pnpm
             npm config set '//npm.fontawesome.com/:_authToken' "${{ secrets.FONT_AWESOME_TOKEN }}"
-            npm ci --ignore-scripts
+            pnpm install --ignore-scripts
+
         - name: Run Build
-          run: npm run build
+          run: pnpm build
+
         - name: Deploy
           uses: peaceiris/actions-gh-pages@v3.9.3
           with:

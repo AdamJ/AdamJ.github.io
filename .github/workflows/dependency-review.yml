@@ -15,6 +15,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout Repository'
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
       - name: 'Dependency Review'
-        uses: actions/dependency-review-action@v3
+        uses: actions/dependency-review-action@v4.9.0
+        with:
+          fail-on-severity: high
+          warn-only: true
+          show-openssf-scorecard: true
+          warn-on-openssf-scorecard-level: 1
