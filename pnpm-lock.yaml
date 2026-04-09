@@ -7,6 +7,7 @@ settings:
 overrides:
   tar: 7.5.13
   tar-fs: 3.1.2
+  ws: 8.20.0
 
 importers:
 
@@ -4288,18 +4289,6 @@ packages:
     peerDependencies:
       bufferutil: ^4.0.1
       utf-8-validate: '>=5.0.2'
-    peerDependenciesMeta:
-      bufferutil:
-        optional: true
-      utf-8-validate:
-        optional: true
-
-  ws@8.5.0:
-    resolution: {integrity: sha512-BWX0SWVgLPzYwF8lTzEy1egjhS4S4OEAHfsO8o65WOVsrnSRGaSiUaa9e0ggGlkMTtBlmOpEXiie9RUcBO86qg==}
-    engines: {node: '>=10.0.0'}
-    peerDependencies:
-      bufferutil: ^4.0.1
-      utf-8-validate: ^5.0.2
     peerDependenciesMeta:
       bufferutil:
         optional: true
@@ -8610,7 +8599,7 @@ snapshots:
       rimraf: 3.0.2
       tar-fs: 3.1.2
       unbzip2-stream: 1.4.3
-      ws: 8.5.0
+      ws: 8.20.0
     transitivePeerDependencies:
       - bare-abort-controller
       - bare-buffer
@@ -9597,9 +9586,6 @@ snapshots:
       signal-exit: 4.1.0
 
   ws@8.20.0: {}
-
-  ws@8.5.0:
-    optional: true
 
   xdg-basedir@4.0.0: {}
 
