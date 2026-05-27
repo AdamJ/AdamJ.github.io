@@ -1,2 +1,24 @@
-pre{background-color:var(--earth-cream);border-radius:var(--radius-md,12px);padding:var(--space-md,1rem)}section h2{margin-top:var(--space-lg,2rem)!important}section h3,section ol,section ul{margin-bottom:var(--space-md,1rem)!important}.card>h2:after{display:none}
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9zYXNzL21hcmtkb3duLnNjc3MiLCJtYXJrZG93bi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsSUFDRSxtQ0FBQSxDQUVBLG1DQUFBLENBREEsNEJDRUYsQ0RFQSxXQUNFLHlDQ0NGLENESUEsaUNBRUUsNENDR0YsQ0RBRSxlQUNFLFlDR0oiLCJmaWxlIjoibWFya2Rvd24uY3NzIn0= */
+pre {
+  background-color: var(--earth-cream);
+  padding: var(--space-md, 1rem);
+  border-radius: var(--radius-md, 12px);
+}
+
+section h2 {
+  margin-top: var(--space-lg, 2rem) !important;
+}
+
+section h3 {
+  margin-bottom: var(--space-md, 1rem) !important;
+}
+
+section ul,
+section ol {
+  margin-bottom: var(--space-md, 1rem) !important;
+}
+
+.card > h2::after {
+  display: none;
+}
+
+/*# sourceMappingURL=markdown.css.map */
