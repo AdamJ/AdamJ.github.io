@@ -27,6 +27,38 @@
   },
   "items": [
     {
+      "id": "/credits/open-source/",
+      "url": "/credits/open-source/",
+      "title": "Open Source",
+      "date_published": "2026-05-27T15:59:21Z",
+      "date": "2026-05-27T15:59:21Z"
+    }
+    ,
+    {
+      "id": "/credits/credits/",
+      "url": "/credits/credits/",
+      "title": "Credits",
+      "date_published": "2026-05-27T15:59:21Z",
+      "date": "2026-05-27T15:59:21Z"
+    }
+    ,
+    {
+      "id": "/reference/",
+      "url": "/reference/",
+      "title": "Reference links",
+      "date_published": "2026-05-20T11:47:07Z",
+      "date": "2026-05-20T11:47:07Z"
+    }
+    ,
+    {
+      "id": "/archives/town-selectman.html",
+      "url": "/archives/town-selectman.html",
+      "title": "Archived",
+      "date_published": "2026-05-20T11:47:07Z",
+      "date": "2026-05-20T11:47:07Z"
+    }
+    ,
+    {
       "id": "/portfolio/",
       "url": "/portfolio/",
       "title": "My Work",
@@ -48,22 +80,6 @@
       "title": "Case Studies",
       "date_published": "2026-04-08T16:48:47Z",
       "date": "2026-04-08T16:48:47Z"
-    }
-    ,
-    {
-      "id": "/reference/",
-      "url": "/reference/",
-      "title": "Reference links",
-      "date_published": "2026-04-02T20:03:04Z",
-      "date": "2026-04-02T20:03:04Z"
-    }
-    ,
-    {
-      "id": "/archives/town-selectman.html",
-      "url": "/archives/town-selectman.html",
-      "title": "Archived",
-      "date_published": "2026-04-02T20:03:04Z",
-      "date": "2026-04-02T20:03:04Z"
     }
     ,
     {
@@ -254,14 +270,6 @@
       "id": "/designs/dashboard-analytics/",
       "url": "/designs/dashboard-analytics/",
       "title": "Dashboard Analytics",
-      "date_published": "2025-11-26T17:47:39Z",
-      "date": "2025-11-26T17:47:39Z"
-    }
-    ,
-    {
-      "id": "/credits/",
-      "url": "/credits/",
-      "title": "Credits",
       "date_published": "2025-11-26T17:47:39Z",
       "date": "2025-11-26T17:47:39Z"
     }
