@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="keywords" content="@Adam, Adam Jolicoeur, Adam J. Jolicoeur, AdamJ, Jolicoeur, adamjolicoeur.com, www.adamjolicoeur.com, mindreeper2420, Portfolio, Design, Product Designer, UXD, UX Designer, UX Developer, UX Engineer, Design Technologist, Product Mangement, CSS" />
-    <title>Credits | Adam Jolicoeur</title>
+    <title>Open Source | Adam Jolicoeur</title>
     <meta
       name="description"
       content="Product Designer who ships code—and understands the business side."
@@ -27,7 +27,7 @@
     <link type="text/css" href="/css/style.css" rel="stylesheet" />
     <meta
       name="og:title"
-      content="Credits | Adam Jolicoeur"
+      content="Open Source | Adam Jolicoeur"
     />
     <meta
       name="og:description"
@@ -77,63 +77,69 @@
 
 
 <section class="hero">
-  <h1>Credits</h1>
+  <h1>Open Source</h1>
   <p class="text-lead mb-4"></p></section>
 
 
   <section>
-    <blockquote>
-<p>Giving credit where credit is due, this page is based off of the <a href="https://raw.githubusercontent.com/LeaVerou/lea.verou.me/refs/heads/main/credits/index.md">Credits</a> page from <a href="https://lea.verou.me/">Lea Verou</a>.</p>
-</blockquote>
-<hr>
-<blockquote>
-<p>This site was built using <a href="https://www.11ty.dev/">Eleventy</a>, hosted on <a href="https://cloudflare.com/">Cloudflare Pages</a>, with previews deployed with <a href="https://www.cloudflare.com/">Cloudflare</a>. Certificate courtesy of Cloudflare and <a href="https://letsencrypt.org/">Let’s Encrypt</a>.</p>
-</blockquote>
-<h2 id="libraries" tabindex="-1">Libraries <a class="anchor-link" href="#libraries">#</a></h2>
+    <h2 id="built-on-open-source" tabindex="-1">Built on Open Source <a class="anchor-link" href="#built-on-open-source">#</a></h2>
+<p>I’ve built this site with open source in mind (which is why this is hosted on GitHub in a public repository) and wanted to call out the open source projects that I use as part of it.</p>
+<h3 id="site-defaults" tabindex="-1">Site Defaults <a class="anchor-link" href="#site-defaults">#</a></h3>
 <ul>
-<li><a href="https://www.11ty.dev/">Eleventy</a></li>
-</ul>
-<h2 id="fonts" tabindex="-1">Fonts <a class="anchor-link" href="#fonts">#</a></h2>
-<pre class="language-css"><code class="hljs language-css">  <span class="token selector">:root</span> <span class="token punctuation">{</span>
-    <span class="token property">--font-family-sans</span><span class="token punctuation">:</span> <span class="token string">'Inter'</span><span class="token punctuation">,</span> system-ui<span class="token punctuation">,</span> -apple-system<span class="token punctuation">,</span> BlinkMacSystemFont<span class="token punctuation">,</span> <span class="token string">'Segoe UI'</span><span class="token punctuation">,</span> Roboto<span class="token punctuation">,</span> <span class="token string">'Helvetica Neue'</span><span class="token punctuation">,</span> Arial<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
-    <span class="token property">--font-family-serif</span><span class="token punctuation">:</span> <span class="token string">'Playfair Display'</span><span class="token punctuation">,</span> serif<span class="token punctuation">;</span>
-    <span class="token property">--font-family-mono</span><span class="token punctuation">:</span> <span class="token string">'Fira Code'</span><span class="token punctuation">,</span> <span class="token string">'Courier New'</span><span class="token punctuation">,</span> Courier<span class="token punctuation">,</span> monospace<span class="token punctuation">;</span>
-    <span class="token property">--font-family-heading</span><span class="token punctuation">:</span> <span class="token string">'Pirata One'</span><span class="token punctuation">,</span> cursive<span class="token punctuation">;</span>
-  <span class="token punctuation">}</span></code></pre>
-<h2 id="icons" tabindex="-1">Icons <a class="anchor-link" href="#icons">#</a></h2>
-<p>A custom icon component (<a href="https://github.com/AdamJ/adamjolicoeur.com/blob/main/src/js/icon-component.js">icon-component.js</a>) is used to render icons as web components with <a href="https://fontawesome.com/">Font Awesome</a> as the preferred icon library.</p>
-<pre class="language-html"><code class="hljs language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>fa-icon</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>brands<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>github<span class="token punctuation">"</span></span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>md<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>fa-icon</span><span class="token punctuation">></span></span></code></pre>
-<h2 id="plugins" tabindex="-1">Plugins <a class="anchor-link" href="#plugins">#</a></h2>
+<li><a href="https://www.11ty.dev">11ty</a>
 <ul>
-<li><a href="https://github.com/11ty/eleventy-plugin-inclusive-language">eleventy-plugin-inclusive-language</a> to check for inclusive language</li>
-<li><a href="https://github.com/11ty/eleventy-plugin-rss">eleventy-plugin-rss</a> to automatically generate an RSS feed</li>
-<li><a href="https://github.com/11ty/eleventy-plugin-syntaxhighlight">eleventy-plugin-syntaxhighlight</a> to highlight code blocks (seen on this page)</li>
-<li><a href="https://github.com/11ty/eleventy-plugin-toc">eleventy-plugin-toc</a> to automatically generate a linked table of contents. I use an <code>if content | toc</code> to show this only if the page has linkable headings.</li>
-<li><a href="https://github.com/valeriangalliat/markdown-it-anchor">markdown-it-anchor</a> adds IDs to markdown headings in order to create anchor links. Used in combination with the table of contents plugin.</li>
-<li><a href="https://github.com/11ty/eleventy-img">markdown-it-eleventy-img</a> used for image processing of vector and raster images.</li>
-<li><a href="https://github.com/11ty/eleventy-plugin-syntaxhighlight">markdown-it-highlightjs</a> - highlights code blocks at build time utilizing <a href="https://prismjs.com/">PrismJS</a> syntax highlighting.</li>
-<li><a href="https://github.com/11tyrocks/eleventy-plugin-emoji-readtime">eleventy-plugin-emoji-readtime</a> calculates the reading time of blog posts (i.e. any page using the <code>blog</code> layout) based on the number of words. A tag with the time to read is added to the top of a page where the FrontMatter has <code>readtime: true</code>.</li>
-</ul>
-<h2 id="tools" tabindex="-1">Tools <a class="anchor-link" href="#tools">#</a></h2>
-<ul>
-<li><a href="https://code.visualstudio.com/">VS Code</a>
-<ul>
-<li>default editor, though I’ve been using <a href="https://www.cursor.com/">Cursor</a> more lately.</li>
+<li>this is the framework of the site</li>
 </ul>
 </li>
-<li><a href="https://www.figma.com/">Figma</a>
+<li><a href="https://www.getbootstrap.com">bootstrap</a>
 <ul>
-<li>design tool for creating the overall design, color palette, and a11y checking.</li>
+<li>the UI for the site, highly customized</li>
 </ul>
 </li>
-<li><a href="https://github.com/">GitHub</a>
+<li><a href="https://github.com/markdown-it/markdown-it">markdown-it</a>
 <ul>
-<li>for hosting code and site deployment.</li>
+<li>a markdown parser</li>
 </ul>
 </li>
-<li><a href="https://www.cloudflare.com/">Cloudflare</a>
+<li><a href="https://github.com/markdown-it/markdown-it-container">markdown-it-container</a>
 <ul>
-<li>testing any site changes via pull requests before merging to main.</li>
+<li>creates block-level containers for markdown parsing</li>
+<li>used on current <code>case-studies</code> pages</li>
+</ul>
+</li>
+<li><a href="https://fontawesome.com">Font Awesome</a>
+<ul>
+<li>for icons</li>
+</ul>
+</li>
+</ul>
+<h3 id="plugins" tabindex="-1">Plugins <a class="anchor-link" href="#plugins">#</a></h3>
+<p><strong>Eleventy:</strong></p>
+<ul>
+<li><a href="https://github.com/11ty/eleventy-activity-feed">eleventy-activity-feed</a></li>
+<li><a href="https://github.com/11ty/image">eleventy-img</a>
+<ul>
+<li>build-time image transformations</li>
+</ul>
+</li>
+<li><a href="https://github.com/11ty/eleventy-navigation">eleventy-navigation</a>
+<ul>
+<li>for creating hierarchical navigation in Eleventy projects</li>
+</ul>
+</li>
+<li><a href="https://www.11ty.dev/docs/plugins/inclusive-language/">eleventy-plugin-inclusive-language</a>
+<ul>
+<li>linter plugin to check for inclusive language in markdown files</li>
+</ul>
+</li>
+<li><a href="https://github.com/11ty/eleventy-plugin-rss">eleventy-plugin-rss</a>
+<ul>
+<li>generates a RSS feed using the Nunjucks template engine</li>
+</ul>
+</li>
+<li><a href="https://github.com/11ty/eleventy-plugin-syntaxhighlight">eleventy-plugin-syntax-highlight</a>
+<ul>
+<li>highlight various syntax types using PrismJS</li>
 </ul>
 </li>
 </ul>
@@ -180,8 +186,12 @@
       Sitemap
     </a>
     <span class="small text-secondary px-2"><i class="fa-solid fa-diamond text-accent"></i></span>
-    <a href="/credits" alt="Link to credits page">
+    <a href="/credits/credits" alt="Link to credits page">
       Credits
+    </a>
+    <span class="small text-secondary px-2"><i class="fa-solid fa-diamond text-accent"></i></span>
+    <a href="/credits/open-source" alt="Link to open source credits page">
+      Open Source
     </a>
   </div>
 </footer>
