@@ -2,4 +2,8 @@ packages:
   - "src/**"
 
 onlyBuiltDependencies:
+  - "@parcel/watcher"
+  - "canvas"
+  - "highlight.js"
+  - "sharp"
   - "turndown"

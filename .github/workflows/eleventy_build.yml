@@ -19,8 +19,10 @@ jobs:
         - name: Install pnpm
           run: |
             npm install -g pnpm
-            npm config set '//npm.fontawesome.com/:_authToken' "${{ secrets.FONT_AWESOME_TOKEN }}"
+            echo "//npm.fontawesome.com/:_authToken=${FONT_AWESOME_TOKEN}" >> .npmrc
             pnpm install --ignore-scripts
+          env:
+            FONT_AWESOME_TOKEN: ${{ secrets.FONT_AWESOME_TOKEN }}
 
         - name: Run Build
           run: pnpm build
