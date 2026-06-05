@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(pnpm add *)",
-      "Bash(gh pr *)"
+      "Bash(gh pr *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
     ]
   }
 }

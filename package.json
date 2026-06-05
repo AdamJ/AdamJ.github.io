@@ -30,7 +30,8 @@
     "lint": "stylelint 'src/sass/*.scss'",
     "lint:fix": "stylelint --fix 'src/sass/*.scss'",
     "images:optimize": "node scripts/image-optimizer.js",
-    "bump": "npm --no-git-tag-version version"
+    "bump": "npm --no-git-tag-version version",
+    "lint:design": "npx @google/design.md lint DESIGN.md"
   },
   "repository": {
     "type": "git",
