@@ -72,7 +72,7 @@ section .card {
   border-bottom: var(--border-thin, 2px) solid var(--earth-brown);
 }
 
-blockquote {
+.prose-section blockquote {
   font-size: clamp(1rem, 1.5vw, 1.1rem);
   line-height: 1.6;
   font-weight: 600;
