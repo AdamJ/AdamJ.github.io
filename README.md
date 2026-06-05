@@ -14,6 +14,7 @@ This is a **personal portfolio site** showcasing my work as a Lead Product Desig
 - **Development Projects** - Open source contributions, tools, and code examples
 - **Professional Content** - Resume, presentations, and technical articles
 - **App Showcases** - iOS/iPadOS apps and web applications
+- **Open Source** - Open source project contributions and tooling
 
 ## Usage & Ownership
 
@@ -28,6 +29,17 @@ I'm a user experience designer with 15+ years of enterprise experience at compan
 **Automation** is handled by GitHub Actions, which sets Labels for pull requests and Releases versioning. I use [Cloudflare](https://www.cloudflare.com) to create pull request previews.
 
 **Releases** are done via the [release-drafter](https://github.com/marketplace/actions/release-drafter) GitHub Action. Release notes are automatically generated from the pull request title and description.
+
+---
+
+## Design System
+
+The visual language is documented in two places:
+
+- **`DESIGN.md`** — Source-code-derived design system with YAML frontmatter color/typography tokens compatible with [Stitch](https://stitch.withgoogle.com). Documents the warm earth-tone palette, neo-brutalist component patterns, and layout principles.
+- **`.stitch/DESIGN.md`** — Stitch-specific copy with full color role mappings and component generation prompts.
+
+Key design tokens live in `src/sass/_variables.scss` as CSS custom properties. The palette is built entirely from warm earth tones (parchment, espresso, terracotta, olive sage). Style aesthetic: thick borders (4–8px), hard-offset box shadows (no blur), and physical hover translations.
 
 ---
 

@@ -6,10 +6,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Portfolio website for Adam Jolicoeur (adamjolicoeur.com) built with Eleventy (11ty) static site generator. The site showcases UX/UI design work, development projects, and professional content. Deployed to GitHub Pages from the `docs/` directory.
 
-**Current Version**: 10.0.2
+**Current Version**: 11.4.1
 **Repository**: https://github.com/AdamJ/adamj.github.io
 **Live Site**: https://adamjolicoeur.com
-**Node.js**: v25.2.1 required (runs on 20+, see `.nvmrc`)
+**Node.js**: v25.9.0 required (runs on 20+, see `.nvmrc`)
+**Package Manager**: pnpm (enforced — `npm install` is blocked by `preinstall` guard)
 
 ## Critical Build Commands
 
@@ -18,30 +19,30 @@ All commands include expected timings. **NEVER CANCEL** builds—they complete w
 ### Development Workflow
 ```bash
 # Initial setup (first time only)
-npm install                    # 60 seconds - installs dependencies
+pnpm install                   # 60 seconds - installs dependencies
 
 # Start development server
-npm run start                  # Starts watchers + BrowserSync on http://localhost:8081
+pnpm run start                 # Starts watchers + BrowserSync on http://localhost:8081
                               # NOT port 8080 - this is hardcoded
 
 # Full production build
-npm run build                  # 20 seconds - runs all build steps in sequence
+pnpm run build                 # 20 seconds - runs all build steps in sequence
 ```
 
 ### Individual Build Steps
 ```bash
-npm run clean                  # 1 second - removes docs/ directory
-npm run images:optimize        # 14 seconds - processes images with Sharp
-npm run build:sass            # 2 seconds - compiles SCSS to CSS
-npm run build:eleventy        # 2 seconds - static site generation
-npm run postbuild             # Auto-runs after build (Autoprefixer + CSSNano)
+pnpm run clean                 # 1 second - removes docs/ directory
+pnpm run images:optimize       # 14 seconds - processes images with Sharp
+pnpm run build:sass            # 2 seconds - compiles SCSS to CSS
+pnpm run build:eleventy        # 2 seconds - static site generation
+pnpm run postbuild             # Auto-runs after build (Autoprefixer + CSSNano)
 ```
 
 ### Linting & Validation
 ```bash
-npm run lint                  # 5 seconds - Stylelint check (expect 176+ legacy errors)
-npm run lint:fix              # Auto-fix Stylelint issues
-npm run webhint               # 30 seconds - accessibility/performance audit
+pnpm run lint                  # 5 seconds - Stylelint check (expect 176+ legacy errors)
+pnpm run lint:fix              # Auto-fix Stylelint issues
+pnpm run webhint               # 30 seconds - accessibility/performance audit
 ```
 
 **Expected Build Warnings (Safe to Ignore)**:
@@ -128,7 +129,7 @@ scripts/
 
 ### Image Processing Pipeline
 1. Place originals in `src/assets/img-raw/` (high-res source)
-2. Run `npm run images:optimize` (14 seconds)
+2. Run `pnpm run images:optimize` (14 seconds)
 3. Sharp generates:
    - Full-size: 1200px width, WebP (80%) + JPEG (85%)
    - Thumbnail: 300px width, WebP (70%) + JPEG (75%)
@@ -178,7 +179,7 @@ categories: [development, design]
 1. Create subfolder in `src/pages/designs/`
 2. Add `index.md` with front matter
 3. Place images in `src/assets/img-raw/[project-name]/`
-4. Run `npm run images:optimize`
+4. Run `pnpm run images:optimize`
 
 ### Modify Site Navigation
 Edit `eleventyNavigation` in page front matter:
@@ -219,7 +220,7 @@ To add new container types: add `md.use(markdownItContainer, 'name', { render...
 
 ### CSS Build Process
 - **Development**: Auto-compiles entire `src/sass/` → `docs/css/` via `watch:sass`
-- **Production**: `npm run build:sass` compiles entire `src/sass/` → `docs/css/` → PostCSS → minified
+- **Production**: `pnpm run build:sass` compiles entire `src/sass/` → `docs/css/` → PostCSS → minified
 - **Output**: `docs/css/style.css` (main bundle), `docs/css/containers.css`, `docs/css/markdown.css`, etc.
 
 ## Environment Variables
@@ -234,8 +235,8 @@ To add new container types: add `md.use(markdownItContainer, 'name', { render...
 2. **Node.js**: v25.x
 3. **Steps**:
    - Checkout code
-   - `npm ci` (with Font Awesome token)
-   - `npm run build`
+   - `pnpm install` (with Font Awesome token)
+   - `pnpm run build`
    - Deploy `docs/` to `gh-pages` branch
 4. **Live Site**: Auto-deploys to GitHub Pages
 
@@ -269,7 +270,7 @@ To add new container types: add `md.use(markdownItContainer, 'name', { render...
 ```bash
 # 1. Place original files in src/assets/img-raw/
 # 2. Process with Sharp
-npm run images:optimize  # 14 seconds
+pnpm run images:optimize  # 14 seconds
 
 # 3. Reference in templates with Eleventy Image filter
 # Generated files appear in src/assets/img/
@@ -286,7 +287,7 @@ Edit `eleventyNavigation` in page front matter (see "Adding Content" above)
 
 ### Test Responsive Design
 ```bash
-npm run start  # Opens BrowserSync on :8081
+pnpm run start  # Opens BrowserSync on :8081
 # Resize browser window or use DevTools device emulation
 ```
 
@@ -304,7 +305,7 @@ After changes, ALWAYS test:
 ### Quick Validation Commands
 ```bash
 # Verify site builds and serves
-npm run build && npm run start &
+pnpm run build && pnpm run start &
 
 # Check key files exist
 ls -la docs/css/style.css              # Main CSS (~98KB)
@@ -320,17 +321,17 @@ curl -I http://localhost:8081/designs/ # Should return 200 OK
 ### Common Issues
 - **Build hangs during image optimization**: Check `src/assets/img-raw/` for valid images
 - **Port 8081 in use**: Kill existing process or change port in `package.json`
-- **Missing Sharp module**: Run `npm install` again (CPU architecture specific)
+- **Missing Sharp module**: Run `pnpm install` again (CPU architecture specific)
 - **CSS not updating**: Clear browser cache, check Sass compilation warnings
 - **404 on navigation**: Verify Eleventy generated HTML in `docs/`
 
 ### Recovery Commands
 ```bash
 # Nuclear option - clean restart
-npm run clean
+pnpm run clean
 rm -rf node_modules
-npm install
-npm run build
+pnpm install
+pnpm run build
 
 # Verify build output
 ls -la docs/
@@ -342,7 +343,8 @@ ls -la docs/assets/img/
 
 **Core**:
 - Eleventy (11ty) v3.1.2 - Static site generator
-- Node.js v25.2.1 (runs on 20+)
+- Node.js v25.9.0 (runs on 20+)
+- pnpm - Package manager (enforced; npm blocked by preinstall guard)
 - Nunjucks + Liquid - Templating
 - Markdown + YAML - Content format
 
