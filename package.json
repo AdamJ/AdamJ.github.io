@@ -10,6 +10,7 @@
   "engines": {
     "node": "25.9.0"
   },
+  "packageManager": "pnpm@10.33.0",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "clean": "rm -rf docs",

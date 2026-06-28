@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Portfolio website for Adam Jolicoeur (adamjolicoeur.com) built with Eleventy (11ty) static site generator. The site showcases UX/UI design work, development projects, and professional content. Deployed to GitHub Pages from the `docs/` directory.
+Portfolio website for Adam Jolicoeur (adamjolicoeur.com) built with Eleventy (11ty) static site generator. The site showcases UX/UI design work, development projects, and professional content. CI builds the site into `docs/` and pushes that output to the `gh-pages` branch, which is what GitHub Pages serves — `docs/` itself is gitignored and never committed to `main`.
 
 **Current Version**: 11.4.1
 **Repository**: https://github.com/AdamJ/adamj.github.io
@@ -84,8 +84,8 @@ src/                          # Source files (EDIT HERE)
 │   └── *.scss              # Component partials
 └── js/                     # JavaScript files (vanilla JS)
 
-docs/                        # Generated output (DO NOT EDIT)
-└── [build artifacts]        # 20-30MB, auto-generated
+docs/                        # Generated output (DO NOT EDIT, gitignored)
+└── [build artifacts]        # 20-30MB, auto-generated, not committed to main
 
 scripts/
 └── image-optimizer.js      # Sharp-based image processor
@@ -232,12 +232,13 @@ To add new container types: add `md.use(markdownItContainer, 'name', { render...
 **GitHub Actions** (`.github/workflows/eleventy_build.yml`):
 1. **Trigger**: Push to `main` branch
 2. **Node.js**: v25.x
-3. **Steps**:
+3. **pnpm version**: Pinned via the `packageManager` field in `package.json` and installed with `pnpm/action-setup` — keep this in sync with the version used to generate `pnpm-lock.yaml` locally, or CI's frozen-lockfile install will fail with `ERR_PNPM_LOCKFILE_CONFIG_MISMATCH`
+4. **Steps**:
    - Checkout code
    - `pnpm install` (with Font Awesome token)
    - `pnpm run build`
    - Deploy `docs/` to `gh-pages` branch
-4. **Live Site**: Auto-deploys to GitHub Pages
+5. **Live Site**: Auto-deploys to GitHub Pages
 
 **Cloudflare**: Creates pull request previews
 

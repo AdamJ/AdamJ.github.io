@@ -11,14 +11,17 @@ jobs:
         - name: Checkout
           uses: actions/checkout@v6
 
+        - name: Setup pnpm
+          uses: pnpm/action-setup@v4
+
         - name: Setup Node
           uses: actions/setup-node@v6
           with:
             node-version: '25.9.0'
+            cache: 'pnpm'
 
-        - name: Install pnpm
+        - name: Install dependencies
           run: |
-            npm install -g pnpm
             echo "//npm.fontawesome.com/:_authToken=${FONT_AWESOME_TOKEN}" >> .npmrc
             pnpm install --ignore-scripts
           env:
