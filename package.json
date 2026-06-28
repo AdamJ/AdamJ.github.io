@@ -18,9 +18,7 @@
     "stylelint:fix": "npx stylelint --fix `src/sass/style.scss`",
     "watch:sass": "sass --no-source-map --watch src/sass:docs/css",
     "watch:eleventy": "eleventy --serve --port=8081",
-    "build:sass-nomap": "sass --no-source-map src/sass/style.scss docs/css/style.css",
-    "build:sass-site": "sass src/sass:docs/css",
-    "build:sass": "npm-run-all --parallel build:sass-site",
+    "build:sass": "sass src/sass:docs/css",
     "build:eleventy": "eleventy",
     "build:sw": "node scripts/build-sw.js",
     "postbuild": "postcss docs/css/*.css -u autoprefixer cssnano -r",
@@ -29,7 +27,7 @@
     "lint": "stylelint 'src/sass/*.scss'",
     "lint:fix": "stylelint --fix 'src/sass/*.scss'",
     "images:optimize": "node scripts/image-optimizer.js",
-    "bump": "npm --no-git-tag-version version",
+    "bump": "pnpm version --no-git-tag-version",
     "lint:design": "npx @google/design.md lint DESIGN.md"
   },
   "repository": {
@@ -62,6 +60,7 @@
     "npm-run-all": "4.1.5",
     "postcss-cli": "11.0.1",
     "sass": "1.99.0",
+    "slugify": "1.6.9",
     "stylelint": "17.6.0",
     "stylelint-config-standard-scss": "17.0.0",
     "stylelint-order": "8.1.1",
