@@ -1,8 +1,42 @@
-/* Base card */
-.card {
+/*
+ * Bordered-card base: earth-cream fill, thick brown border, xl radius.
+ * Shared by .card, .card-layered, .card-accent, .about-card and .showcase-large;
+ * each overrides --card-border-width/--card-border-color as needed.
+ */
+.card,
+.card-layered,
+.card-accent,
+.about-card,
+.showcase-large {
   background: var(--earth-cream);
-  border: var(--border-thick, 6px) solid var(--earth-brown);
+  border: var(--card-border-width, var(--border-thick, 6px)) solid var(--card-border-color, var(--earth-brown));
   border-radius: var(--radius-xl, 20px);
+}
+
+/*
+ * Double-ring shadow recipe (offset shadow + bordered ring behind it).
+ * Shared by .card-layered, .card-accent, .about-card and .showcase-large;
+ * each overrides --card-shadow-offset/-color/-ring-width as needed.
+ */
+.card-layered,
+.card-accent,
+.about-card,
+.showcase-large {
+  box-shadow:
+    var(--card-shadow-offset, 12px) var(--card-shadow-offset, 12px) 0 var(--card-shadow-color, var(--earth-sage)),
+    var(--card-shadow-offset, 12px) var(--card-shadow-offset, 12px) 0 var(--card-shadow-ring-width, 5px) var(--earth-brown);
+}
+
+/* Scaled-down shadow on mobile, shared by .about-card and .showcase-large */
+@media (width <= 768px) {
+  .about-card,
+  .showcase-large {
+    --card-shadow-offset: 6px;
+    --card-shadow-ring-width: 4px;
+  }
+}
+
+.card {
   padding: var(--space-lg, 1.5rem);
   box-shadow: 8px 8px 0 var(--shadow-heavy);
   transition:
@@ -18,13 +52,7 @@
 
 /* Card with layered shadow */
 .card-layered {
-  background: var(--earth-cream);
-  border: var(--border-thick, 6px) solid var(--earth-brown);
-  border-radius: var(--radius-xl, 20px);
   padding: var(--space-xl, 2rem);
-  box-shadow:
-    12px 12px 0 var(--earth-sage),
-    12px 12px 0 5px var(--earth-brown);
 }
 
 /* Card with only shadow */
@@ -38,13 +66,12 @@
 
 /* Card with accent shadow */
 .card-accent {
-  background: var(--earth-cream);
-  border: var(--border-extra-thick, 8px) solid var(--earth-brown);
-  border-radius: var(--radius-xl, 20px);
+  --card-border-width: var(--border-extra-thick, 8px);
+  --card-shadow-offset: 16px;
+  --card-shadow-color: var(--accent-coral);
+  --card-shadow-ring-width: 6px;
+
   overflow: hidden;
-  box-shadow:
-    16px 16px 0 var(--accent-coral),
-    16px 16px 0 6px var(--earth-brown);
 }
 
 /* Simple card (minimal shadow) */
@@ -148,20 +175,11 @@
 
 /* About Section */
 .about-card {
-  background: var(--earth-cream);
-  border: var(--border-thick, 6px) solid var(--earth-brown);
   padding: var(--space-2xl, 3rem);
-  border-radius: var(--radius-xl, 20px);
-  box-shadow:
-    12px 12px 0 var(--earth-sage),
-    12px 12px 0 5px var(--earth-brown);
   margin: 0 auto;
 }
 @media (width <= 768px) {
   .about-card {
-    box-shadow:
-      6px 6px 0 var(--earth-sage),
-      6px 6px 0 4px var(--earth-brown);
     padding: var(--space-md, 1rem);
   }
   .about-grid {
@@ -187,21 +205,11 @@
 }
 
 .showcase-large {
-  background: var(--earth-cream);
-  border: var(--border-thick, 6px) solid var(--earth-brown);
-  border-radius: var(--radius-xl, 20px);
+  --card-shadow-color: var(--accent-coral);
+  --card-shadow-ring-width: 6px;
+
   overflow: hidden;
-  box-shadow:
-    12px 12px 0 var(--accent-coral),
-    12px 12px 0 6px var(--earth-brown);
   transition: transform 0.3s;
-}
-@media (width <= 768px) {
-  .showcase-large {
-    box-shadow:
-      6px 6px 0 var(--accent-coral),
-      6px 6px 0 4px var(--earth-brown);
-  }
 }
 
 .showcase-large:hover,
