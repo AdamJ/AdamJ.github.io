@@ -11,10 +11,8 @@
 
 .slides {
   display: flex;
-
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
@@ -45,7 +43,6 @@
   transform: scale(1);
   transition: transform 0.5s;
   position: relative;
-
   display: flex;
   justify-content: center;
   align-items: center;
