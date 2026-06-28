@@ -28,10 +28,10 @@ readTime: false
 
 ## Icons
 
-A custom icon component ([icon-component.js](https://github.com/AdamJ/adamjolicoeur.com/blob/main/src/js/icon-component.js)) is used to render icons as web components with [Font Awesome](https://fontawesome.com/) as the preferred icon library.
+[Font Awesome](https://fontawesome.com/) is the preferred icon library, loaded via its kit script and used directly as inline icon markup.
 
 ```html
-  <fa-icon type="brands" name="github" size="md"></fa-icon>
+  <i class="fa-solid fa-github"></i>
 ```
 
 ## Plugins

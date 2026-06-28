@@ -71,7 +71,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/android-launchericon-72-72.png");
   eleventyConfig.addPassthroughCopy("src/keybase.txt");
   eleventyConfig.addPassthroughCopy("src/manifest.json");
-  eleventyConfig.addPassthroughCopy("src/site.webmanifest");
   eleventyConfig.addPassthroughCopy("src/sw.js");
   eleventyConfig.addPassthroughCopy("src/_headers");
   eleventyConfig.addPassthroughCopy("src/js/**");
