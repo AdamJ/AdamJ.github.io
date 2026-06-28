@@ -90,126 +90,20 @@
     padding: 0;
     position: absolute;
 
-    &:nth-of-type(15):checked
-      ~ .carousel__slides
-      .carousel__slide:first-of-type {
-      margin-left: -1400%;
-    }
-    &:nth-of-type(14):checked
-      ~ .carousel__slides
-      .carousel__slide:first-of-type {
-      margin-left: -1300%;
-    }
-    &:nth-of-type(13):checked
-      ~ .carousel__slides
-      .carousel__slide:first-of-type {
-      margin-left: -1200%;
-    }
-    &:nth-of-type(12):checked
-      ~ .carousel__slides
-      .carousel__slide:first-of-type {
-      margin-left: -1100%;
-    }
-    &:nth-of-type(11):checked
-      ~ .carousel__slides
-      .carousel__slide:first-of-type {
-      margin-left: -1000%;
-    }
-    &:nth-of-type(10):checked
-      ~ .carousel__slides
-      .carousel__slide:first-of-type {
-      margin-left: -900%;
-    }
-    &:nth-of-type(9):checked
-      ~ .carousel__slides
-      .carousel__slide:first-of-type {
-      margin-left: -800%;
-    }
-    &:nth-of-type(8):checked
-      ~ .carousel__slides
-      .carousel__slide:first-of-type {
-      margin-left: -700%;
-    }
-    &:nth-of-type(7):checked
-      ~ .carousel__slides
-      .carousel__slide:first-of-type {
-      margin-left: -600%;
-    }
-    &:nth-of-type(6):checked
-      ~ .carousel__slides
-      .carousel__slide:first-of-type {
-      margin-left: -500%;
-    }
-    &:nth-of-type(5):checked
-      ~ .carousel__slides
-      .carousel__slide:first-of-type {
-      margin-left: -400%;
-    }
-    &:nth-of-type(4):checked
-      ~ .carousel__slides
-      .carousel__slide:first-of-type {
-      margin-left: -300%;
-    }
-    &:nth-of-type(3):checked
-      ~ .carousel__slides
-      .carousel__slide:first-of-type {
-      margin-left: -200%;
-    }
-    &:nth-of-type(2):checked
-      ~ .carousel__slides
-      .carousel__slide:first-of-type {
-      margin-left: -100%;
-    }
-    &:nth-of-type(1):checked
-      ~ .carousel__slides
-      .carousel__slide:first-of-type {
-      margin-left: 0%;
+    // Slide N shifts the track left by (N - 1) * 100%, for up to 15 slides.
+    @for $i from 1 through 15 {
+      &:nth-of-type(#{$i}):checked
+        ~ .carousel__slides
+        .carousel__slide:first-of-type {
+        margin-left: #{($i - 1) * -100%};
+      }
     }
 
-    &:nth-of-type(1):checked ~ .carousel__thumbnails li:nth-of-type(1) {
-      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
-    }
-    &:nth-of-type(2):checked ~ .carousel__thumbnails li:nth-of-type(2) {
-      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
-    }
-    &:nth-of-type(3):checked ~ .carousel__thumbnails li:nth-of-type(3) {
-      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
-    }
-    &:nth-of-type(4):checked ~ .carousel__thumbnails li:nth-of-type(4) {
-      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
-    }
-    &:nth-of-type(5):checked ~ .carousel__thumbnails li:nth-of-type(5) {
-      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
-    }
-    &:nth-of-type(6):checked ~ .carousel__thumbnails li:nth-of-type(6) {
-      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
-    }
-    &:nth-of-type(7):checked ~ .carousel__thumbnails li:nth-of-type(7) {
-      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
-    }
-    &:nth-of-type(8):checked ~ .carousel__thumbnails li:nth-of-type(8) {
-      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
-    }
-    &:nth-of-type(9):checked ~ .carousel__thumbnails li:nth-of-type(9) {
-      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
-    }
-    &:nth-of-type(10):checked ~ .carousel__thumbnails li:nth-of-type(10) {
-      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
-    }
-    &:nth-of-type(11):checked ~ .carousel__thumbnails li:nth-of-type(11) {
-      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
-    }
-    &:nth-of-type(12):checked ~ .carousel__thumbnails li:nth-of-type(12) {
-      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
-    }
-    &:nth-of-type(13):checked ~ .carousel__thumbnails li:nth-of-type(13) {
-      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
-    }
-    &:nth-of-type(14):checked ~ .carousel__thumbnails li:nth-of-type(14) {
-      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
-    }
-    &:nth-of-type(15):checked ~ .carousel__thumbnails li:nth-of-type(15) {
-      box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
+    // Highlight the thumbnail matching the checked slide.
+    @for $i from 1 through 15 {
+      &:nth-of-type(#{$i}):checked ~ .carousel__thumbnails li:nth-of-type(#{$i}) {
+        box-shadow: 0 0 0 5px rgb(0, 0, 255, 50%);
+      }
     }
   }
 }

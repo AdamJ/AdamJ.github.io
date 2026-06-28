@@ -40,7 +40,7 @@ pnpm run postbuild             # Auto-runs after build (Autoprefixer + CSSNano)
 
 ### Linting & Validation
 ```bash
-pnpm run lint                  # 5 seconds - Stylelint check (expect 176+ legacy errors)
+pnpm run lint                  # 5 seconds - Stylelint check (should report 0 errors)
 pnpm run lint:fix              # Auto-fix Stylelint issues
 pnpm run webhint               # 30 seconds - accessibility/performance audit
 ```
@@ -48,7 +48,6 @@ pnpm run webhint               # 30 seconds - accessibility/performance audit
 **Expected Build Warnings (Safe to Ignore)**:
 - 144 Sass deprecation warnings from Bootstrap's `@import` syntax
 - 74+ npm audit vulnerabilities (non-critical for static site)
-- 176+ Stylelint errors (legacy code, non-blocking)
 - 245+ WebHint warnings (accessibility/compatibility, non-blocking)
 - Node version warnings (package requires 22, runs fine on 20+)
 

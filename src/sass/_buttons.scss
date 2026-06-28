@@ -100,14 +100,14 @@
   font-weight: 600;
   border: var(--border-medium, 4px) solid var(--earth-brown);
   z-index: 2000;
-  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
   overflow: hidden;
 }
 
 .skip-link:focus {
   top: 1rem;
   left: 1rem;
-  clip: auto;
+  clip-path: none;
   overflow: visible;
 }
 

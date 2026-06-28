@@ -3,8 +3,7 @@
 /* Grid row for adjacent card blocks */
 .cards-row {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-flow: row wrap;
   gap: var(--space-lg, 1.5rem);
 }
 
