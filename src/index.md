@@ -32,6 +32,31 @@ layout: base.njk
     </div>
   </div>
 </section>
+<section id="uses" aria-labelledby="uses-heading">
+  <h2 id="uses-heading" class="text-h2 no-underline">What I Use</h2>
+  <p class="text-body-lg" style="margin-bottom: 2rem;">A compact view into the tools and setup that power my work — from design to shipping code.</p>
+  <div class="about-grid">
+    <div class="card-flex showcase-small">
+      <h4 style="margin-bottom: 0.5rem;">🖥️ Desk</h4>
+      <p class="text-body-sm">MacBook Pro 16" (M3) + LG 32" ultrawide · Keychron keyboard · Elgato Stream Deck MK.2</p>
+    </div>
+    <div class="card-flex showcase-small">
+      <h4 style="margin-bottom: 0.5rem;">🎨 Design</h4>
+      <p class="text-body-sm">Figma · Storybook</p>
+    </div>
+    <div class="card-flex showcase-small">
+      <h4 style="margin-bottom: 0.5rem;">💻 Dev</h4>
+      <p class="text-body-sm">Zed · Warp · OpenCode/OpenDesign · Vivaldi</p>
+    </div>
+    <div class="card-flex showcase-small">
+      <h4 style="margin-bottom: 0.5rem;">📱 Everyday</h4>
+      <p class="text-body-sm">Apple Notes · Parallels Desktop</p>
+    </div>
+  </div>
+  <div class="text-center mt-4">
+    <a href="{{ '/uses' | url }}" class="btn btn-outline">See full Uses →</a>
+  </div>
+</section>
 <section id="work" aria-labelledby="work-heading">
   <h2 id="work-heading" class="text-h2 no-underline">Featured Work</h2>
   <div class="work-grid">
