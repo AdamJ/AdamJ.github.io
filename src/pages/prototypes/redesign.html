@@ -1,0 +1,675 @@
+---
+layout: "page"
+title: "Portfolio Redesign Prototype"
+permalink: "prototypes/redesign/"
+eleventyNavigation:
+  key: Portfolio Redesign
+  parent: Prototypes
+---
+
+<!--
+  PORTFOLIO REDESIGN PROTOTYPE
+  Standalone HTML preview of the homepage redesign.
+  Three sections: Interactive Hero + Currently Building Strip + Side Projects Grid
+  Uses existing Trail Peak Design System tokens from _variables.scss
+-->
+
+<section class="hero-interactive" aria-labelledby="hero-heading" style="height: calc(100vh - 4rem);">
+  <h1 id="hero-heading">Adam Jolicoeur</h1>
+  <p>Lead Product Designer specializing in design systems and enterprise applications. 15+ years at AWS, Red Hat, and high-growth startups.</p>
+  <p class="hero-tagline">— I design products and code prototypes that ship —</p>
+  
+  <div class="color-playground" id="colorPlayground">
+    <p class="playground-label">Click a swatch to explore the design system</p>
+    <div class="swatch-grid" id="swatchGrid">
+      <button class="swatch" data-var="--earth-cream" data-hex="#f5f1e8" aria-label="Earth Cream color swatch">
+        <span class="swatch-swatch" style="background: #f5f1e8;"></span>
+        <span class="swatch-name">Earth Cream</span>
+        <span class="swatch-var">--earth-cream</span>
+      </button>
+      <button class="swatch" data-var="--accent-coral" data-hex="#d35f3d" aria-label="Accent Coral color swatch">
+        <span class="swatch-swatch" style="background: #d35f3d;"></span>
+        <span class="swatch-name">Accent Coral</span>
+        <span class="swatch-var">--accent-coral</span>
+      </button>
+      <button class="swatch" data-var="--earth-sage" data-hex="#5a6b4f" aria-label="Earth Sage color swatch">
+        <span class="swatch-swatch" style="background: #5a6b4f;"></span>
+        <span class="swatch-name">Earth Sage</span>
+        <span class="swatch-var">--earth-sage</span>
+      </button>
+      <button class="swatch" data-var="--earth-brown" data-hex="#4a3426" aria-label="Earth Brown color swatch">
+        <span class="swatch-swatch" style="background: #4a3426;"></span>
+        <span class="swatch-name">Earth Brown</span>
+        <span class="swatch-var">--earth-brown</span>
+      </button>
+      <button class="swatch" data-var="--accent-coral-dark" data-hex="#b34a2d" aria-label="Accent Coral Dark color swatch">
+        <span class="swatch-swatch" style="background: #b34a2d;"></span>
+        <span class="swatch-name">Coral Dark</span>
+        <span class="swatch-var">--accent-coral-dark</span>
+      </button>
+      <button class="swatch" data-var="--earth-sand" data-hex="#c9b89a" aria-label="Earth Sand color swatch">
+        <span class="swatch-swatch" style="background: #c9b89a;"></span>
+        <span class="swatch-name">Earth Sand</span>
+        <span class="swatch-var">--earth-sand</span>
+      </button>
+    </div>
+    <div class="color-preview" id="colorPreview">
+      <div class="preview-card">
+        <div class="preview-swatch" id="previewSwatch"></div>
+        <div class="preview-info">
+          <h3 id="previewName">Hover a swatch</h3>
+          <code id="previewVar">--</code>
+          <code id="previewHex">#---</code>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CURRENTLY BUILDING STRIP -->
+<section class="building-strip" aria-labelledby="building-heading">
+  <div class="container-narrow">
+    <div class="strip-inner">
+      <span class="strip-dot"></span>
+      <h2 id="building-heading" class="strip-title">Currently Building</h2>
+    </div>
+    <div class="building-cards row">
+      <article class="col-12 col-md-6 col-lg-4">
+        <div class="building-card">
+          <div class="building-card-body">
+            <div class="building-card-top">
+              <span class="building-card-icon" style="background: var(--accent-coral);">⏱️</span>
+              <span class="building-status-dot active"></span>
+            </div>
+            <h4>TimeTracker Pro</h4>
+            <p>v0.23 shipped — AI-powered weekly summaries from time entries. Now generating summaries from archived work logs.</p>
+            <div class="building-card-links">
+              <a href="https://timetrackerpro.adamjolicoeur.me" target="_blank" rel="noopener">Live App →</a>
+              <a href="https://github.com/AdamJ/TimeTrackerPro" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="col-12 col-md-6 col-lg-4">
+        <div class="building-card">
+          <div class="building-card-body">
+            <div class="building-card-top">
+              <span class="building-card-icon" style="background: var(--earth-sage);">🎴</span>
+              <span class="building-status-dot"></span>
+            </div>
+            <h4>The Magic Collection</h4>
+            <p>iOS app for tracking Magic: The Gathering cards and deck lists. Mac Catalyst build with native dark mode support.</p>
+            <div class="building-card-links">
+              <a href="/apps/magiccollection" target="_blank" rel="noopener">Details →</a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="col-12 col-md-6 col-lg-4">
+        <div class="building-card">
+          <div class="building-card-body">
+            <div class="building-card-top">
+              <span class="building-card-icon" style="background: var(--accent-coral-dark);">⚽</span>
+              <span class="building-status-dot"></span>
+            </div>
+            <h4>Soccer Game Tracker</h4>
+            <p>Mobile-first live game tracking for youth soccer — goals, assists, substitutions. Used by local rec leagues.</p>
+            <div class="building-card-links">
+              <a href="/apps/gamesandthings" target="_blank" rel="noopener">Details →</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SIDE PROJECTS GRID -->
+<section id="side-projects" aria-labelledby="projects-heading">
+  <div class="container-narrow">
+    <h2 id="projects-heading" class="text-h2 no-underline">Side Projects &amp; Experiments</h2>
+    <p class="text-body-lg" style="margin-bottom: 2rem;">Things I build for fun, learning, and solving problems I actually have. Not just case studies — these are real products.</p>
+    
+    <div class="work-grid">
+      <article class="card project-card" style="position: relative;">
+        <div class="project-card-image">
+          <img src="{{ '/assets/img/timetracker-start.webp' | url }}" alt="TimeTracker Pro time entry screen" loading="lazy" />
+          <div class="project-card-badge" style="background: var(--accent-coral);">Live</div>
+        </div>
+        <div class="project-card-body">
+          <h4>TimeTracker Pro</h4>
+          <p class="project-desc">Full-stack time tracking app with project management and invoice generation. Built with React, TypeScript, and Tailwind CSS.</p>
+          <div class="badges mb-2">
+            <span class="badge">React</span>
+            <span class="badge">TypeScript</span>
+            <span class="badge">Tailwind</span>
+          </div>
+          <div class="project-links">
+            <a href="https://timetrackerpro.adamjolicoeur.me" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Live Demo</a>
+            <a href="https://github.com/AdamJ/TimeTrackerPro" class="btn btn-outline btn-sm" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+      
+      <article class="card project-card" style="position: relative;">
+        <div class="project-card-image">
+          <img src="{{ '/assets/img/soccergametracker-phone-newgame.webp' | url }}" alt="Soccer Game Tracker mobile app" loading="lazy" />
+          <div class="project-card-badge" style="background: var(--earth-sage);">iOS</div>
+        </div>
+        <div class="project-card-body">
+          <h4>Soccer Game Tracker</h4>
+          <p class="project-desc">Live game tracking for youth soccer. Goals, assists, substitutions, and in-game stats — all offline-capable.</p>
+          <div class="badges mb-2">
+            <span class="badge">iOS</span>
+            <span class="badge">Swift</span>
+            <span class="badge">Offline-first</span>
+          </div>
+          <div class="project-links">
+            <a href="/apps/soccergametracker" class="btn btn-outline btn-sm">Details →</a>
+          </div>
+        </div>
+      </article>
+      
+      <article class="card project-card" style="position: relative;">
+        <div class="project-card-image">
+          <img src="{{ '/assets/img/taskstat-screenshot-dashboard.webp' | url }}" alt="TaskStat dashboard" loading="lazy" />
+          <div class="project-card-badge" style="background: var(--accent-coral-dark);">Tooling</div>
+        </div>
+        <div class="project-card-body">
+          <h4>TaskStat</h4>
+          <p class="project-desc">GitHub issue analytics and status dashboard. Visualize project health across repos with automated reporting.</p>
+          <div class="badges mb-2">
+            <span class="badge">GitHub API</span>
+            <span class="badge">D3.js</span>
+            <span class="badge">Node</span>
+          </div>
+          <div class="project-links">
+            <a href="/apps/taskstat" class="btn btn-outline btn-sm">Details →</a>
+            <a href="https://github.com/AdamJ" class="btn btn-outline btn-sm" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+      
+      <article class="card project-card" style="position: relative;">
+        <div class="project-card-image">
+          <img src="{{ '/assets/img/soccergametracker-phone-livegame.webp' | url }}" alt="Games And Things collection app" loading="lazy" />
+          <div class="project-card-badge" style="background: var(--earth-brown);">iOS</div>
+        </div>
+        <div class="project-card-body">
+          <h4>Games and Things</h4>
+          <p class="project-desc">Single place for tracking game and movie collections. Uses The Movie DB API for metadata lookup.</p>
+          <div class="badges mb-2">
+            <span class="badge">iOS</span>
+            <span class="badge">TMDB API</span>
+            <span class="badge">Core Data</span>
+          </div>
+          <div class="project-links">
+            <a href="/apps/gamesandthings" class="btn btn-outline btn-sm">Details →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+    
+    <div class="text-center mt-4">
+      <a href="/apps" class="btn btn-secondary">View All Apps →</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Hero Interactive Section */
+  .hero-interactive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .hero-interactive h1 {
+    font-family: 'Pirata One', cursive;
+    font-size: var(--font-size-5xl);
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    animation: fadeSlideUp 0.6s ease-out;
+  }
+  
+  .hero-interactive p {
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-size-lg);
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    animation: fadeSlideUp 0.6s ease-out 0.1s both;
+  }
+  
+  .hero-tagline {
+    font-style: italic;
+    color: var(--accent-coral-dark);
+    font-weight: 500;
+    margin-bottom: 2.5rem !important;
+    animation: fadeSlideUp 0.6s ease-out 0.2s both;
+  }
+  
+  /* Color Playground */
+  .color-playground {
+    width: 100%;
+    max-width: 700px;
+    animation: fadeSlideUp 0.6s ease-out 0.3s both;
+  }
+  
+  .playground-label {
+    font-size: var(--font-size-sm);
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .swatch-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (min-width: 600px) {
+    .swatch-grid {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  
+  .swatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 8px;
+    background: transparent;
+    border: 2px solid transparent;
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+    position: relative;
+  }
+  
+  .swatch:hover {
+    transform: translateY(-4px);
+    box-shadow: 4px 4px 0 0 var(--earth-brown);
+    border-color: var(--earth-brown);
+  }
+  
+  .swatch:active {
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 0 0 var(--earth-brown);
+  }
+  
+  .swatch.active {
+    border-color: var(--accent-coral);
+    box-shadow: 0 0 0 2px var(--accent-coral);
+  }
+  
+  .swatch-swatch {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid var(--earth-brown);
+    box-shadow: 3px 3px 0 0 var(--earth-sage);
+    transition: transform 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  .swatch:hover .swatch-swatch {
+    transform: scale(1.1);
+  }
+  
+  .swatch-name {
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    color: var(--text-primary);
+    text-align: center;
+  }
+  
+  .swatch-var {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    opacity: 0;
+    transition: opacity 0.2s;
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .swatch:hover .swatch-var,
+  .swatch.active .swatch-var {
+    opacity: 1;
+  }
+  
+  /* Color Preview Card */
+  .color-preview {
+    margin-top: 1rem;
+  }
+  
+  .preview-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background: var(--earth-cream);
+    border: 2px solid var(--earth-brown);
+    border-radius: var(--radius-xl);
+    box-shadow: 8px 8px 0 0 var(--earth-sage);
+  }
+  
+  .preview-swatch {
+    width: 64px;
+    height: 64px;
+    border-radius: var(--radius-md);
+    border: 2px solid var(--earth-brown);
+    flex-shrink: 0;
+    transition: background-color 0.3s;
+    background: var(--earth-sand-light);
+  }
+  
+  .preview-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .preview-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    margin: 0;
+    color: var(--earth-dark);
+  }
+  
+  .preview-info code {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    background: var(--earth-sand-light);
+    padding: 2px 8px;
+    border-radius: var(--radius-sm);
+  }
+  
+  /* Currently Building Strip */
+  .building-strip {
+    padding: var(--space-2xl) 0;
+    background: var(--earth-sand-light);
+    border-top: 2px solid var(--earth-brown);
+    border-bottom: 2px solid var(--earth-brown);
+  }
+  
+  .strip-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .strip-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent-coral);
+    box-shadow: 0 0 0 3px var(--earth-sand-light), 0 0 0 5px var(--earth-brown);
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+  }
+  
+  .strip-title {
+    font-family: 'Pirata One', cursive;
+    font-size: var(--font-size-3xl);
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: var(--earth-dark);
+    margin: 0;
+  }
+  
+  .building-cards {
+    gap: 1.5rem;
+  }
+  
+  .building-card {
+    background: var(--earth-cream);
+    border: 2px solid var(--earth-brown);
+    border-radius: var(--radius-xl);
+    box-shadow: 8px 8px 0 0 var(--earth-sage);
+    overflow: hidden;
+    transition: transform 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  .building-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 10px 10px 0 0 var(--earth-sage);
+  }
+  
+  .building-card-body {
+    padding: 1.5rem;
+  }
+  
+  .building-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .building-card-icon {
+    font-size: 1.5rem;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .building-status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--earth-sand);
+    border: 2px solid var(--earth-brown);
+  }
+  
+  .building-status-dot.active {
+    background: var(--accent-coral);
+    animation: pulse 2s infinite;
+  }
+  
+  .building-card h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--earth-dark);
+  }
+  
+  .building-card p {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .building-card-links {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  
+  .building-card-links a {
+    font-size: var(--font-size-sm);
+    color: var(--accent-coral-dark);
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  
+  .building-card-links a:hover {
+    color: var(--earth-dark);
+  }
+  
+  /* Side Projects Section */
+  #side-projects {
+    padding: var(--space-3xl) var(--space-lg);
+  }
+  
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  .project-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .project-card-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .project-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 2px solid var(--earth-brown);
+  }
+  
+  .project-card-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: var(--white);
+    font-family: 'Fira Code', monospace;
+    font-size: 0.7rem;
+    padding: 4px 12px;
+    border-radius: var(--radius-pill);
+    border: 2px solid var(--earth-brown);
+    box-shadow: 3px 3px 0 0 var(--earth-brown);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  
+  .project-card-body {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-card h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--earth-dark);
+  }
+  
+  .project-desc {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    flex: 1;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .project-links {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  
+  /* Animations */
+  @keyframes fadeSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .hero-interactive h1,
+    .hero-interactive p,
+    .hero-tagline,
+    .color-playground {
+      animation: none;
+    }
+    .swatch,
+    .swatch-swatch,
+    .swatch-var {
+      transition: none;
+    }
+    .building-card {
+      transition: none;
+    }
+    .strip-dot,
+    .building-status-dot.active {
+      animation: none;
+    }
+  }
+</style>
+
+<script>
+  // Interactive color playground
+  document.addEventListener('DOMContentLoaded', () => {
+    const swatches = document.querySelectorAll('.swatch');
+    const previewSwatch = document.getElementById('previewSwatch');
+    const previewName = document.getElementById('previewName');
+    const previewVar = document.getElementById('previewVar');
+    const previewHex = document.getElementById('previewHex');
+    
+    swatches.forEach(swatch => {
+      swatch.addEventListener('mouseenter', () => {
+        const varName = swatch.dataset.var;
+        const hex = swatch.dataset.hex;
+        const name = swatch.querySelector('.swatch-name').textContent;
+        
+        previewSwatch.style.backgroundColor = hex;
+        previewName.textContent = name;
+        previewVar.textContent = varName;
+        previewHex.textContent = hex;
+      });
+      
+      swatch.addEventListener('click', () => {
+        const varName = swatch.dataset.var;
+        navigator.clipboard.writeText(varName).catch(() => {});
+        
+        swatches.forEach(s => s.classList.remove('active'));
+        swatch.classList.add('active');
+        
+        previewVar.style.fontWeight = '700';
+        setTimeout(() => {
+          previewVar.style.fontWeight = '400';
+        }, 300);
+      });
+    });
+    
+    document.getElementById('colorPlayground').addEventListener('mouseleave', () => {
+      previewSwatch.style.backgroundColor = '';
+      previewName.textContent = 'Hover a swatch';
+      previewVar.textContent = '--';
+      previewHex.textContent = '#---';
+      swatches.forEach(s => s.classList.remove('active'));
+    });
+  });
+</script>

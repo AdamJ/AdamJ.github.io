@@ -1,0 +1,342 @@
+---
+layout: "page"
+title: "Interactive Hero Prototype"
+permalink: "prototypes/hero-interactive/"
+eleventyNavigation:
+  key: Interactive Hero
+  parent: Prototypes
+---
+
+<!--
+  INTERACTIVE HERO PROTOTYPE
+  - Color palette swatches that cycle through Trail Peak tokens
+  - Click any swatch to copy the CSS variable name
+  - Animated entry with trail-peak easing
+-->
+
+<section class="hero-interactive" aria-labelledby="hero-heading">
+  <h1 id="hero-heading" class="hero-title">Adam Jolicoeur</h1>
+  <p class="hero-subtitle">Lead Product Designer specializing in design systems and enterprise applications</p>
+  <p class="hero-tagline">— I design products and code prototypes that ship —</p>
+  
+  <div class="color-playground" id="colorPlayground">
+    <p class="playground-label">Click a swatch to explore the design system</p>
+    <div class="swatch-grid" id="swatchGrid">
+      <button class="swatch" data-var="--earth-cream" data-hex="#f5f1e8" aria-label="Earth Cream color swatch">
+        <span class="swatch-swatch" style="background: #f5f1e8;"></span>
+        <span class="swatch-name">Earth Cream</span>
+        <span class="swatch-var" style="opacity:0;">--earth-cream</span>
+      </button>
+      <button class="swatch" data-var="--accent-coral" data-hex="#d35f3d" aria-label="Accent Coral color swatch">
+        <span class="swatch-swatch" style="background: #d35f3d;"></span>
+        <span class="swatch-name">Accent Coral</span>
+        <span class="swatch-var" style="opacity:0;">--accent-coral</span>
+      </button>
+      <button class="swatch" data-var="--earth-sage" data-hex="#5a6b4f" aria-label="Earth Sage color swatch">
+        <span class="swatch-swatch" style="background: #5a6b4f;"></span>
+        <span class="swatch-name">Earth Sage</span>
+        <span class="swatch-var" style="opacity:0;">--earth-sage</span>
+      </button>
+      <button class="swatch" data-var="--earth-brown" data-hex="#4a3426" aria-label="Earth Brown color swatch">
+        <span class="swatch-swatch" style="background: #4a3426;"></span>
+        <span class="swatch-name">Earth Brown</span>
+        <span class="swatch-var" style="opacity:0;">--earth-brown</span>
+      </button>
+      <button class="swatch" data-var="--accent-coral-dark" data-hex="#b34a2d" aria-label="Accent Coral Dark color swatch">
+        <span class="swatch-swatch" style="background: #b34a2d;"></span>
+        <span class="swatch-name">Accent Coral Dark</span>
+        <span class="swatch-var" style="opacity:0;">--accent-coral-dark</span>
+      </button>
+      <button class="swatch" data-var="--earth-sand" data-hex="#c9b89a" aria-label="Earth Sand color swatch">
+        <span class="swatch-swatch" style="background: #c9b89a;"></span>
+        <span class="swatch-name">Earth Sand</span>
+        <span class="swatch-var" style="opacity:0;">--earth-sand</span>
+      </button>
+    </div>
+    <div class="color-preview" id="colorPreview">
+      <div class="preview-card">
+        <div class="preview-swatch" id="previewSwatch"></div>
+        <div class="preview-info">
+          <h3 id="previewName">Hover a swatch</h3>
+          <code id="previewVar">--</code>
+          <code id="previewHex">#---</code>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Hero Interactive Section */
+  .hero-interactive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem 3rem;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    min-height: 85vh;
+  }
+  
+  .hero-title {
+    font-family: 'Pirata One', cursive;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 400;
+    color: var(--earth-dark);
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-size-lg);
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    max-width: 600px;
+  }
+  
+  .hero-tagline {
+    font-style: italic;
+    color: var(--accent-coral-dark);
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+  }
+  
+  /* Color Playground */
+  .color-playground {
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  .playground-label {
+    font-size: var(--font-size-sm);
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Swatch Grid */
+  .swatch-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (min-width: 600px) {
+    .swatch-grid {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  
+  .swatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 8px;
+    background: transparent;
+    border: 2px solid transparent;
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+    position: relative;
+    box-shadow: 0 0 0 0 transparent;
+  }
+  
+  .swatch:hover {
+    transform: translateY(-4px);
+    box-shadow: 4px 4px 0 0 var(--earth-brown);
+    border-color: var(--earth-brown);
+  }
+  
+  .swatch:active {
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 0 0 var(--earth-brown);
+  }
+  
+  .swatch.active {
+    border-color: var(--accent-coral);
+    box-shadow: 0 0 0 2px var(--accent-coral);
+  }
+  
+  .swatch-swatch {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid var(--earth-brown);
+    box-shadow: 3px 3px 0 0 var(--earth-sage);
+    transition: transform 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  .swatch:hover .swatch-swatch {
+    transform: scale(1.1);
+  }
+  
+  .swatch-name {
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    color: var(--text-primary);
+    text-align: center;
+  }
+  
+  .swatch-var {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    opacity: 0;
+    transition: opacity 0.2s;
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .swatch:hover .swatch-var,
+  .swatch.active .swatch-var {
+    opacity: 1;
+  }
+  
+  /* Color Preview Card */
+  .color-preview {
+    margin-top: 1rem;
+  }
+  
+  .preview-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background: var(--earth-cream);
+    border: 2px solid var(--earth-brown);
+    border-radius: var(--radius-xl);
+    box-shadow: 8px 8px 0 0 var(--earth-sage);
+  }
+  
+  .preview-swatch {
+    width: 64px;
+    height: 64px;
+    border-radius: var(--radius-md);
+    border: 2px solid var(--earth-brown);
+    flex-shrink: 0;
+    transition: background-color 0.3s;
+  }
+  
+  .preview-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .preview-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    margin: 0;
+    color: var(--earth-dark);
+  }
+  
+  .preview-info code {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    background: var(--earth-sand-light);
+    padding: 2px 8px;
+    border-radius: var(--radius-sm);
+  }
+  
+  /* Animations */
+  @keyframes fadeSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hero-title {
+    animation: fadeSlideUp 0.6s ease-out;
+  }
+  
+  .hero-subtitle {
+    animation: fadeSlideUp 0.6s ease-out 0.1s both;
+  }
+  
+  .hero-tagline {
+    animation: fadeSlideUp 0.6s ease-out 0.2s both;
+  }
+  
+  .color-playground {
+    animation: fadeSlideUp 0.6s ease-out 0.3s both;
+  }
+  
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .hero-title,
+    .hero-subtitle,
+    .hero-tagline,
+    .color-playground {
+      animation: none;
+    }
+    .swatch,
+    .swatch-swatch,
+    .swatch-var {
+      transition: none;
+    }
+  }
+</style>
+
+<script>
+  // Interactive color playground
+  document.addEventListener('DOMContentLoaded', () => {
+    const swatches = document.querySelectorAll('.swatch');
+    const previewSwatch = document.getElementById('previewSwatch');
+    const previewName = document.getElementById('previewName');
+    const previewVar = document.getElementById('previewVar');
+    const previewHex = document.getElementById('previewHex');
+    
+    // Hover behavior
+    swatches.forEach(swatch => {
+      swatch.addEventListener('mouseenter', () => {
+        const varName = swatch.dataset.var;
+        const hex = swatch.dataset.hex;
+        const name = swatch.querySelector('.swatch-name').textContent;
+        
+        previewSwatch.style.backgroundColor = hex;
+        previewName.textContent = name;
+        previewVar.textContent = varName;
+        previewHex.textContent = hex;
+      });
+      
+      // Click to copy
+      swatch.addEventListener('click', () => {
+        const varName = swatch.dataset.var;
+        navigator.clipboard.writeText(varName).catch(() => {});
+        
+        // Visual feedback
+        swatches.forEach(s => s.classList.remove('active'));
+        swatch.classList.add('active');
+        
+        previewVar.style.fontWeight = '700';
+        setTimeout(() => {
+          previewVar.style.fontWeight = '400';
+        }, 300);
+      });
+    });
+    
+    // Reset preview on mouse leave
+    document.getElementById('colorPlayground').addEventListener('mouseleave', () => {
+      previewSwatch.style.backgroundColor = '';
+      previewName.textContent = 'Hover a swatch';
+      previewVar.textContent = '--';
+      previewHex.textContent = '#---';
+      swatches.forEach(s => s.classList.remove('active'));
+    });
+  });
+</script>
