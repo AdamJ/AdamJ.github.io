@@ -1,0 +1,1 @@
+This project is my personal portfolio showcasing case studies, designs, thinking, and general "about me" information. It is supposed to be what any interested employer or potential client looks at to get an idea as to what I can do and how I do it.
