@@ -4,6 +4,7 @@ portfolioOrder: 1
 card:
   title: "CASim: Internal AI Assistant"
   summary: "Designed and architected an internal AI assistant, built on a custom MCP server, that makes years of inconsistent construction data answerable. Currently in UAT and beta testing."
+  image: "/assets/img/casim-dashboard.webp"
   badges: ["AI", "MCP", "Enterprise"]
   group: "Professional"
   featured: true
@@ -26,38 +27,70 @@ eleventyNavigation:
   </div>
 </section>
 
-One question was close to impossible to answer at our company: how did a project's budget compare to its final financials once every work order, change order, and supply markup was counted? All of that information existed in our system. Nothing connected it, so answering took manual assembly across screens, and most people didn't try.
+<section>
+  <div class="card">
+    <p>
+      One question was close to impossible to answer at our company: how did a project's budget compare to its final financials once every work order, change order, and supply markup was counted? All of that information existed in our system. Nothing connected it, so answering took manual assembly across screens, and most people didn't try.
+    </p>
 
 <!-- IMAGE: Before state showing a PM moving between budget, work order, change order, and supply screens to reconstruct one project's end-of-job financials -->
+    <p>
+      I assumed the hard part would be the AI. It was the data. Over the years, data entry had drifted from consistent inputs to a loose, sometimes conflicting set of values. Construction supplies were the clearest example: names slipped, dimensions were written several ways, and multiple identifiers meant the same product with no link between them. An assistant that sits on top of that data inherits every inconsistency, and it answers confidently regardless.
+    </p>
+  </div>
+</section>
 
-I assumed the hard part would be the AI. It was the data. Over the years, data entry had drifted from consistent inputs to a loose, sometimes conflicting set of values. Construction supplies were the clearest example: names slipped, dimensions were written several ways, and multiple identifiers meant the same product with no link between them. An assistant that sits on top of that data inherits every inconsistency, and it answers confidently regardless.
+<section>
+  <h2>The decision</h2>
+  <div class="card">
+    <p>We had two realistic paths. The first was to build a terminology file, a definitions layer that mapped every variant name and dimension to a canonical meaning so the assistant could translate on the fly. The second was to work with the executive team to decide what the defaults should be, then have the development team update the data and database to match.
+    </p>
+    <p>
+    The terminology file was the faster, lower-risk option, and it was tempting for that reason. I rejected it because it would have hardened the mess into a permanent dependency. Every new variant would need a new mapping, someone would have to own that file indefinitely, and the assistant's answers would only be as good as the last person who updated it. We chose the harder path of returning to a single consistent naming convention and fixing the source.
+    </p>
+  </div>
+</section>
 
-## The decision
-
-We had two realistic paths. The first was to build a terminology file, a definitions layer that mapped every variant name and dimension to a canonical meaning so the assistant could translate on the fly. The second was to work with the executive team to decide what the defaults should be, then have the development team update the data and database to match.
-
-The terminology file was the faster, lower-risk option, and it was tempting for that reason. I rejected it because it would have hardened the mess into a permanent dependency. Every new variant would need a new mapping, someone would have to own that file indefinitely, and the assistant's answers would only be as good as the last person who updated it. We chose the harder path of returning to a single consistent naming convention and fixing the source.
-
-## What I built
-
-I was the creative lead and architect for CASim, and I built the core pieces myself. That includes the MCP server, the agents, prompts, and skills that shape how the assistant reasons about project data, and the tooling that connects it all. The server runs against three clients: Claude Desktop for daily use, MCP Inspector for testing tool behavior directly, and a custom interface for the people who will use CASim day to day. Keeping those three in play meant I could check whether a tool behaved correctly in isolation before judging how it felt in the interface.
-
+<section>
+  <h2>What I built</h2>
+  <div class="card">
+    <p>I was the creative lead and architect for CASim, and I built the core pieces myself. That includes the MCP server, the agents, prompts, and skills that shape how the assistant reasons about project data, and the tooling that connects it all. The server runs against three clients: Claude Desktop for daily use, MCP Inspector for testing tool behavior directly, and a custom interface for the people who will use CASim day to day. Keeping those three in play meant I could check whether a tool behaved correctly in isolation before judging how it felt in the interface.
+    </p>
 <!-- IMAGE: Architecture diagram of the MCP server connecting to Claude Desktop, MCP Inspector, and the custom interface, with the project data sources behind it -->
-
-I also designed the access model around a simple principle I later presented to IT leadership: gate the connectors and data scope, not the creativity. A working server made the argument concrete, because leadership could see exactly what the assistant could reach and what it couldn't.
-
+    <p>
+    I also designed the access model around a simple principle I later presented to IT leadership: gate the connectors and data scope, not the creativity. A working server made the argument concrete, because leadership could see exactly what the assistant could reach and what it couldn't.
+    </p>
+  </div>
 <!-- IMAGE: CASim answering a budget-versus-final-financials question, showing the tool calls used and the sources it drew from -->
+</section>
 
-## Outcome
+<section>
+  <h2>Outcome</h2>
+  <div class="card">
+    <p>
+    The decision was not universally popular. There was real pushback about how the data was being handled and about what information might be missed, forgotten, or lost in the cleanup. That concern was fair, and it shaped how carefully we approached it.
+    </p>
+    <p>
+    The initial results answered it. They showed there was real insight sitting in the system that nobody could reach, and that the cleanup path was the right one. The question that had been nearly impossible, budget against end-of-project financials including work orders, change orders, and supply markup, became answerable. CASim is now in UAT and beta testing, so the adoption story is still being written.
+    </p>
+  </div>
+</section>
 
-The decision was not universally popular. There was real pushback about how the data was being handled and about what information might be missed, forgotten, or lost in the cleanup. That concern was fair, and it shaped how carefully we approached it.
-
-The initial results answered it. They showed there was real insight sitting in the system that nobody could reach, and that the cleanup path was the right one. The question that had been nearly impossible, budget against end-of-project financials including work orders, change orders, and supply markup, became answerable. CASim is now in UAT and beta testing, so the adoption story is still being written.
-
-## Reflections
-
-Now that the project is in beta and proceeding through UAT, I am able to reflect on what I'd do differently and, potentially, what I would change moving forward in how I approach AI products.
-
-Looking back on the beginnings of the project, I would have researched and tested more before diving into creation. There were many times where I had to stop, research, and backtrack in order to cover either a gap that I had in the system, or a concern that wasn't addressed in the original architecture. While this did not delay the project, it did cause unnecessary churn that could have been avoided by taking a little extra time with research.
-
-Additionally, the pushback on data inconsistencies was unexpected although it should not have been. With a system that is 20+ years old, there are bound to be drifts in how data is stored and what has been entered by the thousands of users of the years.
+<section>
+  <div class="card">
+    <div class="card-header">
+      <h3 class="p-0">Reflections</h3>
+    </div>
+    <div class="card-body">
+      <p>
+      Now that the project is in beta and proceeding through UAT, I am able to reflect on what I'd do differently and, potentially, what I would change moving forward in how I approach AI products.
+      </p>
+      <p>
+      Looking back on the beginnings of the project, I would have researched and tested more before diving into creation. There were many times where I had to stop, research, and backtrack in order to cover either a gap that I had in the system, or a concern that wasn't addressed in the original architecture. While this did not delay the project, it did cause unnecessary churn that could have been avoided by taking a little extra time with research.
+      </p>
+      <p>
+      Additionally, the pushback on data inconsistencies was unexpected although it should not have been. With a system that is 20+ years old, there are bound to be drifts in how data is stored and what has been entered by the thousands of users of the years.
+      </p>
+    </div>
+  </div>
+</section>
