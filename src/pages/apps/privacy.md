@@ -13,7 +13,7 @@ eleventyNavigation:
 
 <section>
 
-Your data is your data - they say sharing is caring, but it is not recommended to share your data.
+Your data is your data. They say sharing is caring, but it is not recommended to share your data.
 
 - Your usage analytics is not collected, nor anything else
 - Anything entered into the apps created by Adam Jolicoeur are stored locally on your device

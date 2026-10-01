@@ -27,7 +27,7 @@ eleventyNavigation:
     </p>
     <p>
       <span class="text-h6 mr-1">THE CHALLENGE:</span>
-      Saylent Technologies' Customer Engagement App (CEA) was a critical platform for credit unions and regional banks to track customer engagement and manage marketing campaigns. However, the existing interface was outdated, cluttered, and difficult to use—resulting in frustrated users and inefficient workflows.
+      Saylent Technologies' Customer Engagement App (CEA) was a critical platform for credit unions and regional banks to track customer engagement and manage marketing campaigns. However, the existing interface was outdated, cluttered, and difficult to use, resulting in frustrated users and inefficient workflows.
       <p>The company needed a complete UX overhaul that would:
         <ul>
           <li>Modernize the visual aesthetic to match contemporary SaaS standards</li>
@@ -251,6 +251,6 @@ eleventyNavigation:
 </section>
 <section>
   <div class="row justify-content-between">
-    <a href="{{ '/designs/component-library/' | url }}" class="btn btn-outline btn-sm" alt="Navigate to component library case study">Previous Case Study</a>
+    <a href="{{ '/portfolio/component-library/' | url }}" class="btn btn-outline btn-sm" alt="Navigate to component library case study">Previous Case Study</a>
   </div>
 </section>

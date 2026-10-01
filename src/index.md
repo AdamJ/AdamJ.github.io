@@ -4,27 +4,27 @@ layout: base.njk
 
 <section class="hero" aria-labelledby="hero-heading" style="height: calc(100vh - 4rem);">
   <h1 id="hero-heading">Adam Jolicoeur</h1>
-  <p>Lead Product Designer specializing in design systems and enterprise applications. 15+ years at AWS, Red Hat, and high-growth startups. </p>
-  <p class="text-body" style="font-style: italic; padding: 2rem 0;">— I design products and code prototypes that ship —</p>
+  <p>Product designer building AI-native products, from interaction patterns to the systems that govern them. 15+ years at AWS, Red Hat, and high-growth B2B.</p>
+  <p class="text-body" style="font-style: italic; padding: 2rem 0;">Enterprise product designer. Systems thinker. Builder.</p>
 </section>
 <section id="about" aria-labelledby="about-heading">
   <h2 id="about-heading" class="text-h2 no-underline">About Me</h2>
   <div class="card about-card">
     <div class="card-body">
-      <p class="text-body-lg text-center">I'm a Product Designer who ships code—and understands the business side.</p>
-      <p>With over 15 years designing enterprise applications at AWS, Red Hat, and high-growth B2B companies, I specialize in design systems and complex, data-intensive interfaces. I've shaped products used by millions of developers and contributed to some of the industry's most respected open-source design systems.</p>
+      <p class="text-body-lg text-center">Lead Product designer building AI-native products, from interaction patterns to the systems that govern them.</p>
+      <p>15+ years across AWS, Red Hat, and high-growth B2B, including an internal AI assistant, MCP architecture, and design systems used on 100+ construction projects.</p>
       <p>
         What makes me different:
         <ul>
-          <li>I code production-quality prototypes — I build functional prototypes in HTML/CSS/React, which means my designs are validated with real data and ready for engineering handoff. This bridges the gap between design and development, accelerating shipping and reducing costly miscommunication.</li>
-          <li>I think like a PM — I've managed product roadmaps, prioritized features, and led cross-functional teams. This dual perspective helps me balance user needs with business objectives and collaborate effectively with product managers and stakeholders.</li>
-          <li>Former PatternFly core contributor — I was a core contributor to PatternFly (2016-2021), Red Hat's open-source design system with 20,000+ GitHub stars, used across OpenShift, Ansible, and 50+ products serving millions of developers worldwide.</li>
+          <li>I code production-quality prototypes: I build functional prototypes in HTML/CSS/React, which means my designs are validated with real data and ready for engineering handoff. This bridges the gap between design and development, accelerating shipping and reducing costly miscommunication.</li>
+          <li>I think like a PM: I've managed product roadmaps, prioritized features, and led cross-functional teams. This dual perspective helps me balance user needs with business objectives and collaborate effectively with product managers and stakeholders.</li>
+          <li>Former PatternFly core contributor: I was a core contributor to PatternFly (2016-2021), Red Hat's open-source design system with 20,000+ GitHub stars, used across OpenShift, Ansible, and 50+ products serving millions of developers worldwide.</li>
         </ul>
       </p>
       <p>
         <strong>Currently:</strong> Lead Product Designer at Component Assembly Systems
         <br />
-        <strong>Previously:</strong> Amazon Web Services, Red Hat, and high-growth startups
+        <strong>Previously:</strong> Amazon Web Services, Red Hat, and high-growth B2B companies
       </p>
     </div>
     <div class="card-footer">
@@ -36,37 +36,45 @@ layout: base.njk
   <h2 id="work-heading" class="text-h2 no-underline">Featured Work</h2>
   <div class="work-grid">
     <article class="showcase-large">
-      <img src="{{ '/assets/img/task-it_intro.webp' | url }}" alt="Task It project illustration" class="showcase-image" />
+      <div class="showcase-image showcase-image-dark" aria-hidden="true">CASim</div>
       <div class="showcase-content">
-        <h3>Task Management System</h3>
-        <p>Lead designer for Task-it, Amazon's internal task management platform. Consolidated 3-4 disparate tracking tools into one unified system, reaching <strong>500 daily active users</strong> across AWS <strong>within 18 months</strong> of launch.</p>
+        <h3>CASim: Internal AI Assistant</h3>
+        <p>Designed and architected an internal AI assistant, built on a custom MCP server, that makes years of inconsistent construction data answerable. Currently in UAT and beta testing.</p>
         <div class="badges mb-2">
-            <span class="badge">AWS</span><span class="badge">500+ Users</span><span class="badge">Enterprise</span>
-          </div>
-        <a href="{{ '/designs/task-it' | url }}" class="btn btn-primary" alt="View application lifecycle planning case study">View Case Study</a>
+          <span class="badge">AI</span><span class="badge">MCP</span><span class="badge">Enterprise</span>
+        </div>
+        <a href="{{ '/portfolio/casim' | url }}" class="btn btn-primary" alt="View CASim case study">View Case Study</a>
       </div>
     </article>
     <article class="showcase-large">
-      <img src="{{ '/assets/img/timetracker-loading-state-screen.webp' | url }}" alt="Task It project illustration" class="showcase-image" />
+      <img src="{{ '/assets/img/timetracker-loading-state-screen.webp' | url }}" alt="Weekly AI-powered work summary loading screen" class="showcase-image" />
         <div class="showcase-content">
           <h3>Weekly AI-Powered Work Summary</h3>
-          <p>After archiving my work entries for the week, I found myself running a second, separate tool to generate a weekly summary. Now, I start the day, capture tasks, review, and archive - then summarize using AI.</p>
+          <p>After archiving my work entries for the week, I found myself running a second, separate tool to generate a weekly summary. Now, I start the day, capture tasks, review, and archive, then summarize using AI.</p>
           <div class="badges mb-2">
             <span class="badge">AI</span><span class="badge">Productivity</span>
           </div>
-          <a href="{{ '/development/timetracker' | url }}" class="btn btn-primary" alt="View weekly report ai summary generator case study">View Case Study</a>
+          <a href="{{ '/portfolio/timetracker' | url }}" class="btn btn-primary" alt="View weekly report ai summary generator case study">View Case Study</a>
         </div>
       </article>
     </div>
     <div class="work-grid">
       <div class="small-showcase-cards">
         <article class="card-flex showcase-small">
-          <h4>Archparser</h4>
+          <h4>ArchParser</h4>
           <p>Architectural drawing analysis platform for OCR-based architectural drawing analysis management.</p>
           <div class="badges mb-2">
             <span class="badge">Development</span><span class="badge">Claude Code</span>
           </div>
-          <a class="btn btn-outline btn-sm" href="{{ '/development/archparser' | url }}">View Case Study</a>
+          <a class="btn btn-outline btn-sm" href="{{ '/portfolio/archparser' | url }}">View Case Study</a>
+        </article>
+        <article class="card-flex showcase-small">
+          <h4>Task Management System</h4>
+          <p>Lead designer for Task-it, Amazon's internal task management platform. Consolidated 3-4 disparate tracking tools into one unified system, reaching <strong>500 daily active users</strong> across AWS <strong>within 18 months</strong> of launch.</p>
+          <div class="badges mb-2">
+            <span class="badge">AWS</span><span class="badge">500+ Users</span><span class="badge">Enterprise</span>
+          </div>
+          <a class="btn btn-outline btn-sm" href="{{ '/portfolio/task-it' | url }}">View Case Study</a>
         </article>
         <article class="card-flex showcase-small">
           <h4>Component Library</h4>
@@ -74,7 +82,7 @@ layout: base.njk
           <div class="badges mb-2">
             <span class="badge">Library</span><span class="badge">Design Tokens</span>
           </div>
-          <a class="btn btn-outline btn-sm" href="{{ '/designs/component-library' | url }}">View Case Study</a>
+          <a class="btn btn-outline btn-sm" href="{{ '/portfolio/component-library' | url }}">View Case Study</a>
         </article>
         <article class="card-flex showcase-small">
           <h4>Application Lifecycle Management</h4>
@@ -82,7 +90,7 @@ layout: base.njk
           <div class="badges mb-2">
             <span class="badge">Red Hat</span><span class="badge">Platforms</span>
           </div>
-          <a href="{{ '/designs/alm' | url }}" class="btn btn-outline btn-sm" alt="View application lifecycle planning case study">View Case Study</a>
+          <a href="{{ '/portfolio/alm' | url }}" class="btn btn-outline btn-sm" alt="View application lifecycle planning case study">View Case Study</a>
         </article>
       </div>
     </div>
@@ -128,7 +136,7 @@ layout: base.njk
           <span class="badge">Tooling</span>
           <span class="badge">DX</span>
         </div>
-          <a href="https://github.com/AdamJ/TimeTrackerPro" alt="Link to the TimeTrackerPro repository" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer" style="margin-top: 0.5rem;">TimeTrackerPro</a>
+          <a href="https://github.com/AdamJ/TimeTrackerPro" alt="Link to the Timetraked repository" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer" style="margin-top: 0.5rem;">Timetraked</a>
       </div>
       <div class="card-flex showcase-small">
         <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">

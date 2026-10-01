@@ -1,0 +1,16 @@
+{%- set neighbors = collections.portfolioSequence | caseStudyNeighbors(page.url) -%}
+{%- if neighbors -%}
+<section class="case-study-nav">
+  <div aria-label="Case study navigation" class="row justify-content-center">
+    {%- if neighbors.prev %}
+    <a href="{{ neighbors.prev.url | url }}" class="btn btn-outline btn-sm" aria-label="Previous case study: {{ neighbors.prev.data.title }}">
+      <i class="fas fa-arrow-left"></i> Previous Case Study</a>
+    {%- endif %}
+    {%- if neighbors.next %}
+    <a href="{{ neighbors.next.url | url }}" class="btn btn-outline btn-sm ms-auto" aria-label="Next case study: {{ neighbors.next.data.title }}">Next Case Study <i class="fas fa-arrow-right"></i></a>
+    {%- else %}
+    <a href="{{ '/portfolio/' | url }}" class="btn btn-outline btn-sm ms-auto"><i class="fas fa-refresh"></i> All Case Studies</a>
+    {%- endif %}
+  </div>
+</section>
+{%- endif -%}

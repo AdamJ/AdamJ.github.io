@@ -1,5 +1,12 @@
 ---
 title: 'Application Lifecycle Management'
+portfolioOrder: 6
+card:
+  title: "Application Lifecycle Management"
+  summary: "Creating seamless IDE integration and workflow tools for developers managing complex environments."
+  badges: ["Developer Tools", "Enterprise"]
+  group: "Professional"
+  featured: false
 date: git Last Modified
 abbreviation: 'alm'
 description: 'Creating seamless IDE integration and workflow tools for developers managing complex environments.'
@@ -27,7 +34,7 @@ eleventyNavigation:
     </p>
     <p>
       <span class="text-h6 mr-1">THE CHALLENGE:</span>
-      OpenShift developers were managing work items across 3+ disconnected tools (GitHub issues, Jira, internal tracking systems). This forced constant context-switching between their IDE, browser tabs, and project management tools—slowing development cycles, breaking focus, and creating visibility gaps for project managers.
+      OpenShift developers were managing work items across 3+ disconnected tools (GitHub issues, Jira, internal tracking systems). This forced constant context-switching between their IDE, browser tabs, and project management tools, slowing development cycles, breaking focus, and creating visibility gaps for project managers.
       <p>
         The fragmentation was especially painful because developers had to:
         <ul>
@@ -44,7 +51,7 @@ eleventyNavigation:
     </p>
     <p>
       <span class="text-h6 mr-1">THE SOLUTION:</span>
-      I was part of a team that designed Application Lifecycle Management (ALM), a unified work item tracking system that integrated directly into the OpenShift.io IDE. The design focused on eliminating context-switching by bringing work item management into the developer's natural workflow—allowing them to create, update, and track work items without leaving their code editor.
+      I was part of a team that designed Application Lifecycle Management (ALM), a unified work item tracking system that integrated directly into the OpenShift.io IDE. The design focused on eliminating context-switching by bringing work item management into the developer's natural workflow, allowing them to create, update, and track work items without leaving their code editor.
       <p>Key innovations included:
         <ul>
           <li>Seamless IDE integration with inline work item creation and updates</li>
@@ -87,7 +94,7 @@ eleventyNavigation:
         <ol>
           <li>
             <strong>General Users</strong> <ul >
-            <li>those who need to add and interact with issues, update project assets, and interact daily - a mix of designers and developers</li>
+            <li>those who need to add and interact with issues, update project assets, and interact daily, a mix of designers and developers</li>
             </ul>
           </li>
           <li>
@@ -133,7 +140,7 @@ eleventyNavigation:
       <li>Communicates to the user that direct access to developing the Work Item is available in a single click.</li>
       <li>Implementation is unobtrusive and implies navigation.</li>
       <li>Location will not accidentally be clicked, allowing for enough real estate for line lengths and other meta data. The location of the integration should also imply moving forward.</li>
-      <li>Ordered by recommendation - require users to fill in one area before moving on.</li>
+      <li>Ordered by recommendation, require users to fill in one area before moving on.</li>
       <li>As a button, it needs to have a prominent place yet not take the place of a primary button (in style).</li>
     </ul>
   </div>
@@ -230,21 +237,15 @@ eleventyNavigation:
       <p>
         This project taught me invaluable lessons about designing for developers:
         <ol>
-          <li>Understand the workflow before designing the tool. By spending weeks observing OpenShift developers and understanding their daily routines, I identified friction points that weren't immediately obvious—like the cognitive cost of switching between tools and the importance of maintaining flow state.</li>
-          <li>The best developer tools are invisible. Developers want tools that integrate seamlessly into existing workflows rather than requiring them to adapt to new processes. ALM succeeded because it met developers where they already were—in their IDE—rather than forcing them to go elsewhere.</li>
+          <li>Understand the workflow before designing the tool. By spending weeks observing OpenShift developers and understanding their daily routines, I identified friction points that weren't immediately obvious, like the cognitive cost of switching between tools and the importance of maintaining flow state.</li>
+          <li>The best developer tools are invisible. Developers want tools that integrate seamlessly into existing workflows rather than requiring them to adapt to new processes. ALM succeeded because it met developers where they already were, in their IDE, rather than forcing them to go elsewhere.</li>
           <li>Developer experience is user experience. Too often, internal developer tools are treated as purely functional without considering the human experience. By applying rigorous UX research and design thinking to ALM, we created a tool that developers actually enjoyed using.</li>
           <li>Working on ALM helped me identify gaps in PatternFly for developer tool use cases, leading to new components and patterns that benefited the entire Red Hat ecosystem.</li>
         </ol>
       </p>
       <p>
-        The success of ALM reinforced that internal tools and developer experiences deserve the same level of design craft and user research as consumer products—and that investing in that craft pays dividends in productivity, satisfaction, and adoption.
+        The success of ALM reinforced that internal tools and developer experiences deserve the same level of design craft and user research as consumer products, and that investing in that craft pays dividends in productivity, satisfaction, and adoption.
       </p>
     </div>
-  </div>
-</section>
-<section>
-  <div class="row justify-content-between">
-    <a href="{{ '/designs/component-library/' | url }}" class="btn btn-outline btn-sm" alt="Navigate to Component Library case study">Previous Case Study</a>
-    <a href="{{ '/development/archparser/' | url }}" class="btn btn-outline btn-sm" alt="Navigate to the ArchParser case study">Next Case Study</a>
   </div>
 </section>

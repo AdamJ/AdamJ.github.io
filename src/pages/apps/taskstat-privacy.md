@@ -4,7 +4,7 @@ permalink: 'apps/taskstat-privacy.html'
 title: 'TaskStat Privacy Policy'
 date: git Last Modified
 abbreviation: 'taskstat-privacy'
-description: 'Privacy policy for TaskStat - a privacy-first task management app for iOS'
+description: 'Privacy policy for TaskStat, a privacy-first task management app for iOS'
 eleventyNavigation:
   key: TaskStat Privacy
   parent: Apps
@@ -189,7 +189,7 @@ You have complete ownership and control over your data:
 
 ### How to Exercise Your Rights
 
-- **To access your data:** Open TaskStat—all your data is visible
+- **To access your data:** Open TaskStat, all your data is visible
 - **To export your data:** Use the CSV export feature in the task list
 - **To delete specific data:** Swipe to delete tasks or projects, or use multi-select
 - **To delete all data:** Delete the TaskStat app from your device

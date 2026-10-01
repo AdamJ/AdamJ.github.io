@@ -4,7 +4,7 @@ permalink: "apps/{{ abbreviation | slugify }}.html"
 title: "TaskStat"
 date: git Last Modified
 abbreviation: "taskstat"
-description: "Privacy-first task management for iOS. Your tasks stay on your device—no accounts, no tracking, no cloud sync."
+description: "Privacy-first task management for iOS. Your tasks stay on your device, no accounts, no tracking, no cloud sync."
 eleventyNavigation:
   key: TaskStat
   parent: Apps
@@ -15,7 +15,7 @@ eleventyNavigation:
 
 ## About TaskStat
 
-TaskStat is a native iOS task management app built with privacy as a core principle. Unlike cloud-based task managers, TaskStat stores all your data locally on your device using SwiftData—ensuring complete privacy and offline functionality.
+TaskStat is a native iOS task management app built with privacy as a core principle. Unlike cloud-based task managers, TaskStat stores all your data locally on your device using SwiftData, ensuring complete privacy and offline functionality.
 
 ### Key Features
 
@@ -80,7 +80,7 @@ Read the full [Privacy Policy](/apps/taskstat-privacy.html)
 
 **Platform:** iOS 18.0 or later
 
-**App Store:** *Coming soon - Link will be added when published*
+**App Store:** *Coming soon. Link will be added when published*
 <!-- [Download on the App Store](https://apps.apple.com/app/taskstat/idXXXXXXXXX) -->
 
 ## Requirements

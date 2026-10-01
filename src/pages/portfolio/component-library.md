@@ -1,5 +1,14 @@
 ---
 title: 'Component Library'
+portfolioOrder: 5
+card:
+  title: "Component Library"
+  summary: "Built comprehensive design system for construction management software spanning web and iOS applications. Created design tokens, component documentation, and prototypes that accelerated development cycles by 25%."
+  image: "/assets/img/Storybook-GettingStarted.webp"
+  imageAlt: "Getting Started screen on Storybook"
+  badges: ["Library", "Design Tokens"]
+  group: "Professional"
+  featured: true
 date: git Last Modified
 abbreviation: 'componentlibrary'
 description: 'Design System for Construction Management Software'
@@ -141,11 +150,5 @@ eleventyNavigation:
         </ul>
       </p>
     </div>
-  </div>
-</section>
-<section>
-  <div class="row justify-content-between">
-    <a href="{{ '/development/archparser' | url }}" class="btn btn-outline btn-sm" alt="Navigate to Archparser case study">Previous Case Study</a>
-    <a href="{{ '/designs/alm/' | url }}" class="btn btn-outline btn-sm" alt="Navigate to customer engagement case study">Next Case Study</a>
   </div>
 </section>
