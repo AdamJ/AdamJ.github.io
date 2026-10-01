@@ -4,7 +4,7 @@
   "eleventyExcludeFromCollections": true,
   "metadata": {
     "title": "Adam J. Jolicoeur",
-    "description": "I'm a Product Designer who ships code—and understands the business side. For 15 years, I've designed enterprise applications at Amazon Web Services, Red Hat, and high-growth B2B companies—turning complex, data-intensive workflows into intuitive interfaces that scale.",
+    "description": "I'm a product designer building AI-native products. For 15 years, I've designed enterprise applications at Amazon Web Services, Red Hat, and high-growth B2B companies, turning complex, data-intensive workflows into intuitive interfaces that scale.",
     "language": "en",
     "url": "https://www.adamjolicoeur.com/",
     "author": {
@@ -27,323 +27,339 @@
   },
   "items": [
     {
+      "id": "/timetraked/",
+      "url": "/timetraked/",
+      "title": "",
+      "date_published": "2026-10-01T18:46:37Z",
+      "date": "2026-10-01T18:46:37Z"
+    }
+    ,
+    {
       "id": "/reference/",
       "url": "/reference/",
       "title": "Reference links",
-      "date_published": "2026-09-09T14:19:28Z",
-      "date": "2026-09-09T14:19:28Z"
+      "date_published": "2026-10-01T18:46:37Z",
+      "date": "2026-10-01T18:46:37Z"
     }
     ,
     {
       "id": "/prototypes/redesign/",
       "url": "/prototypes/redesign/",
       "title": "Portfolio Redesign Prototype",
-      "date_published": "2026-09-09T14:19:28Z",
-      "date": "2026-09-09T14:19:28Z"
+      "date_published": "2026-10-01T18:46:37Z",
+      "date": "2026-10-01T18:46:37Z"
     }
     ,
     {
       "id": "/redesign-preview/",
       "url": "/redesign-preview/",
       "title": "",
-      "date_published": "2026-09-09T14:19:28Z",
-      "date": "2026-09-09T14:19:28Z"
+      "date_published": "2026-10-01T18:46:37Z",
+      "date": "2026-10-01T18:46:37Z"
     }
     ,
     {
       "id": "/prototypes/hero-interactive/",
       "url": "/prototypes/hero-interactive/",
       "title": "Interactive Hero Prototype",
-      "date_published": "2026-09-09T14:19:28Z",
-      "date": "2026-09-09T14:19:28Z"
+      "date_published": "2026-10-01T18:46:37Z",
+      "date": "2026-10-01T18:46:37Z"
     }
     ,
     {
       "id": "/archives/town-selectman.html",
       "url": "/archives/town-selectman.html",
       "title": "Archived",
-      "date_published": "2026-09-09T14:19:28Z",
-      "date": "2026-09-09T14:19:28Z"
+      "date_published": "2026-10-01T18:46:37Z",
+      "date": "2026-10-01T18:46:37Z"
     }
     ,
     {
       "id": "/year-in-review/2025/",
       "url": "/year-in-review/2025/",
       "title": "2025 In Review",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     ,
     {
       "id": "/uses/",
       "url": "/uses/",
       "title": "Uses",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     ,
     {
       "id": "/presentations/portfolio/",
       "url": "/presentations/portfolio/",
       "title": "Portfolio",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     ,
     {
       "id": "/presentations/color-picker/",
       "url": "/presentations/color-picker/",
       "title": "Color Picker",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     ,
     {
       "id": "/presentations/",
       "url": "/presentations/",
       "title": "Presentations",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
+    }
+    ,
+    {
+      "id": "/portfolio/timetracker/",
+      "url": "/portfolio/timetracker/",
+      "title": "Weekly AI-Powered Work Summary",
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
+    }
+    ,
+    {
+      "id": "/portfolio/task-it/",
+      "url": "/portfolio/task-it/",
+      "title": "Task Management System",
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
+    }
+    ,
+    {
+      "id": "/portfolio/soccertracker/",
+      "url": "/portfolio/soccertracker/",
+      "title": "Soccer Game Tracker",
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
+    }
+    ,
+    {
+      "id": "/portfolio/dashboard-analytics/",
+      "url": "/portfolio/dashboard-analytics/",
+      "title": "Dashboard Analytics",
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
+    }
+    ,
+    {
+      "id": "/portfolio/customer-engagement/",
+      "url": "/portfolio/customer-engagement/",
+      "title": "Customer Engagement App",
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
+    }
+    ,
+    {
+      "id": "/portfolio/component-library/",
+      "url": "/portfolio/component-library/",
+      "title": "Component Library",
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
+    }
+    ,
+    {
+      "id": "/portfolio/color-picker/",
+      "url": "/portfolio/color-picker/",
+      "title": "Color Picker",
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
+    }
+    ,
+    {
+      "id": "/portfolio/casim/",
+      "url": "/portfolio/casim/",
+      "title": "CASim: Making Years of Inconsistent Construction Data Answerable",
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
+    }
+    ,
+    {
+      "id": "/portfolio/archparser/",
+      "url": "/portfolio/archparser/",
+      "title": "ArchParser: Architectural Drawing Analysis Platform",
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
+    }
+    ,
+    {
+      "id": "/portfolio/alm/",
+      "url": "/portfolio/alm/",
+      "title": "Application Lifecycle Management",
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     ,
     {
       "id": "/portfolio/",
       "url": "/portfolio/",
       "title": "My Work",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
-    }
-    ,
-    {
-      "id": "/development/timetracker/",
-      "url": "/development/timetracker/",
-      "title": "Weekly AI-Powered Work Summary",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     ,
     {
       "id": "/development/prototypes/",
       "url": "/development/prototypes/",
       "title": "Prototypes",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     ,
     {
       "id": "/development/examples/",
       "url": "/development/examples/",
       "title": "codepen examples",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     ,
     {
       "id": "/development/code/",
       "url": "/development/code/",
       "title": "redesign",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
-    }
-    ,
-    {
-      "id": "/development/archparser/",
-      "url": "/development/archparser/",
-      "title": "ArchParser: Architectural Drawing Analysis Platform",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     ,
     {
       "id": "/development/",
       "url": "/development/",
       "title": "Development",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
-    }
-    ,
-    {
-      "id": "/designs/task-it/",
-      "url": "/designs/task-it/",
-      "title": "Task Management System",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
-    }
-    ,
-    {
-      "id": "/designs/dashboard-analytics/",
-      "url": "/designs/dashboard-analytics/",
-      "title": "Dashboard Analytics",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
-    }
-    ,
-    {
-      "id": "/designs/customer-engagement/",
-      "url": "/designs/customer-engagement/",
-      "title": "Customer Engagement App",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
-    }
-    ,
-    {
-      "id": "/designs/component-library/",
-      "url": "/designs/component-library/",
-      "title": "Component Library",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
-    }
-    ,
-    {
-      "id": "/designs/alm/",
-      "url": "/designs/alm/",
-      "title": "Application Lifecycle Management",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     ,
     {
       "id": "/credits/open-source/",
       "url": "/credits/open-source/",
       "title": "Open Source",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     ,
     {
       "id": "/credits/credits/",
       "url": "/credits/credits/",
       "title": "Credits",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
-    }
-    ,
-    {
-      "id": "/case-studies/soccertracker/",
-      "url": "/case-studies/soccertracker/",
-      "title": "Soccer Game Tracker",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
-    }
-    ,
-    {
-      "id": "/case-studies/color-picker/",
-      "url": "/case-studies/color-picker/",
-      "title": "Color Picker",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     ,
     {
       "id": "/case-studies/",
       "url": "/case-studies/",
       "title": "Case Studies",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     ,
     {
       "id": "/archives/",
       "url": "/archives/",
       "title": "Archived Pages",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     ,
     {
       "id": "/apps/magiccollection.html",
       "url": "/apps/magiccollection.html",
       "title": "The Magic Collection",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     ,
     {
       "id": "/apps/taskstat.html",
       "url": "/apps/taskstat.html",
       "title": "TaskStat",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     ,
     {
       "id": "/apps/taskstat-privacy.html",
       "url": "/apps/taskstat-privacy.html",
       "title": "TaskStat Privacy Policy",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     ,
     {
       "id": "/apps/support.html",
       "url": "/apps/support.html",
       "title": "Support",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     ,
     {
       "id": "/apps/soccer.html",
       "url": "/apps/soccer.html",
       "title": "Soccer Game Tracker",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     ,
     {
       "id": "/apps/privacy.html",
       "url": "/apps/privacy.html",
       "title": "Privacy",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     ,
     {
       "id": "/apps/moonsilver.html",
       "url": "/apps/moonsilver.html",
       "title": "Moonsilver Waypoints",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     ,
     {
       "id": "/apps/",
       "url": "/apps/",
       "title": "Apps",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     ,
     {
       "id": "/apps/gamesandthings.html",
       "url": "/apps/gamesandthings.html",
       "title": "Games and Things",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     ,
     {
       "id": "/apps/timetracker.html",
       "url": "/apps/timetracker.html",
-      "title": "Time Tracker Pro",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "title": "Timetraked",
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     ,
     {
       "id": "/about/resume/",
       "url": "/about/resume/",
       "title": "Adam Jolicoeur",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     ,
     {
       "id": "/about/adam/",
       "url": "/about/adam/",
       "title": "About",
-      "date_published": "2026-09-09T14:19:03Z",
-      "date": "2026-09-09T14:19:03Z"
+      "date_published": "2026-10-01T18:24:12Z",
+      "date": "2026-10-01T18:24:12Z"
     }
     
   ]

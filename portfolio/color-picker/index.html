@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="keywords" content="@Adam, Adam Jolicoeur, Adam J. Jolicoeur, AdamJ, Jolicoeur, adamjolicoeur.com, www.adamjolicoeur.com, mindreeper2420, Portfolio, Design, Product Designer, UXD, UX Designer, UX Developer, UX Engineer, Design Technologist, Product Mangement, CSS" />
-    <title>Moonsilver Waypoints | Adam Jolicoeur</title>
+    <title>Color Picker | Adam Jolicoeur</title>
     <meta
       name="description"
-      content="For tracking games of Magic: The Gathering and other TCG scores."
+      content="Accessible color picker combining WCAG compliance with patterns."
     />
     <meta name="generator" content="Eleventy">
     <meta property="og:title" content="Adam J. Jolicoeur" />
     <meta property="og:url" content="" />
-    <meta property="og:description" content="For tracking games of Magic: The Gathering and other TCG scores.">
+    <meta property="og:description" content="Accessible color picker combining WCAG compliance with patterns.">
     <meta property="og:site_name" content="Adam J. Jolicoeur">
     <meta property="og:type" content="website">
     <link rel="apple-touch-icon" sizes="180x180" href="/icon-180.png">
@@ -27,11 +27,11 @@
     <link type="text/css" href="/css/style.css" rel="stylesheet" />
     <meta
       name="og:title"
-      content="Moonsilver Waypoints | Adam Jolicoeur"
+      content="Color Picker | Adam Jolicoeur"
     />
     <meta
       name="og:description"
-      content="For tracking games of Magic: The Gathering and other TCG scores."
+      content="Accessible color picker combining WCAG compliance with patterns."
     />
     <meta property="og:image" content="https://www.adamjolicoeur.com/assets/img/social_template.webp" />
 
@@ -59,7 +59,7 @@
             </a>
           </li>
           <li>
-            <a href="/portfolio" alt="Navigate to portfolio page">
+            <a href="/portfolio" class="active" alt="Navigate to portfolio page">
               Portfolio
             </a>
           </li>
@@ -72,22 +72,87 @@
       </nav>
     <main id="main-content">
       
-<section class="hero" aria-labelledby="hero-heading">
-  <h1 id="hero-heading">Moonsilver Waypoints</h1>
-  <p>For tracking games of Magic: The Gathering and other TCG scores.</p></section>
+<link rel="stylesheet" href="/css/print.css" media="print" />
+<link rel="stylesheet" href="/css/markdown.css" />
 
-<content>
-  <section>
-<h2 id="screenshots" tabindex="-1">Screenshots <a class="anchor-link" href="#screenshots">#</a></h2>
-<h2 id="links" tabindex="-1">Links <a class="anchor-link" href="#links">#</a></h2>
-<p><strong>GitHub:</strong> <a href="https://github.com/AdamJ/game-tracker">AdamJ/game-tracker</a></p>
-<p><strong>WebApp:</strong> <a href="https://gametracker.productdesigns.net">gametracker.productdesigns.net</a></p>
+<link rel="stylesheet" href="/css/containers.css" />
+
+
+<section class="hero">
+  <h1>Color Picker</h1>
+  <p class="text-lead mb-4">Accessible color picker combining WCAG compliance with patterns.</p></section>
+
+
+  <content>
+    <section class="prose-section">
+<h2 id="project-overview" tabindex="-1">Project Overview <a class="anchor-link" href="#project-overview">#</a></h2>
+<blockquote>
+<p>An accessible color picker for the design system that pairs WCAG-compliant colors with patterns and icons, so color is never the only way to tell labels apart.</p>
+</blockquote>
+<div class="card">
+<p><strong>ROLE</strong>: Designer</p>
+<p><strong>STACK</strong>: Figma, CSS, React library</p>
+<p><strong>STATUS</strong>: Launched</p>
+</div>
+</section>
+<section class="prose-section">
+<h2 id="introduction" tabindex="-1">Introduction <a class="anchor-link" href="#introduction">#</a></h2>
+<p>A color picker is not accessible by nature, so the goal of this component design was to provide a solution that not only allowed users to select colors for labels, but also provide alternatives such as patterns and icons.</p>
+<div class="card">
+  <div class="card-body">
+    <img src="/assets/img/colorPalette.webp" alt="Image of the color palette" />
+  </div>
+</div>
+</section>
+<section class="prose-section">
+<h2 id="getting-started" tabindex="-1">Getting Started <a class="anchor-link" href="#getting-started">#</a></h2>
+<p>To start, a basic set of colors were chosen from the available color palette (as defined in the design system). Each color was verified against a light background (<code>#ffffff</code>) and a dark background (<code>#010101</code>), as well as against multiple layers.</p>
+<blockquote>
+<p>In total, forty-four (44) combinations met <strong>WCAG AA</strong> compliance, with eighteen (18) meeting <strong>WCAG AAA</strong> compliance.</p>
+</blockquote>
+<div class="card">
+  <div class="card-body">
+    <img src="/assets/img/colorPalette.webp" alt="Image of the color palette" />
+  </div>
+</div>
+</section>
+<section class="prose-section">
+<h2 id="next-steps" tabindex="-1">Next Steps <a class="anchor-link" href="#next-steps">#</a></h2>
+<p>After the colors had been established, I worked with the PM and Dev team to determine the first components to test these with.</p>
+<blockquote>
+<p>It was determined that <strong>Labels</strong> would be the best place to start, as they were the most ubiquitous across the system.</p>
+</blockquote>
+<div class="card">
+  <div class="card-body">
+    <img src="/assets/img/colorPalette01.webp" alt="Image showing where labels are used" />
+  </div>
+</div>
+</section>
+<section class="prose-section">
+<h2 id="comparisons-and-testing" tabindex="-1">Comparisons and Testing <a class="anchor-link" href="#comparisons-and-testing">#</a></h2>
+<p>Once the basic levels had been configured, I needed to compare the current label coloring scheme to what the new component provided. This required working with the development team to create a prototype environment that allowed the component to be used in real-time without surfacing the in-progress work to the production users.</p>
+<div class="card">
+  <div class="card-body">
+    <img src="/assets/img/colorPalette02.webp" alt="Image comparing before and after labels" />
+  </div>
+</div>
+</section>
+<section class="prose-section">
+<h2 id="findings" tabindex="-1">Findings <a class="anchor-link" href="#findings">#</a></h2>
+<p>Once the prototype was up and running, I was able to test out the interactions, visuals, and test the new component with users.</p>
+<p>The color picker launched to production. The findings from this round also fed follow-up work: another round of design and testing.</p>
 </section>
 
-</content>
+  </content>
 
 
-
+<section class="case-study-nav">
+  <div aria-label="Case study navigation" class="row justify-content-center">
+    <a href="/portfolio/alm/" class="btn btn-outline btn-sm" aria-label="Previous case study: Application Lifecycle Management">
+      <i class="fas fa-arrow-left"></i> Previous Case Study</a>
+    <a href="/portfolio/soccertracker/" class="btn btn-outline btn-sm ms-auto" aria-label="Next case study: Soccer Game Tracker">Next Case Study <i class="fas fa-arrow-right"></i></a>
+  </div>
+</section>
 
 
     </main>

@@ -1,0 +1,1789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="keywords" content="@Adam, Adam Jolicoeur, Adam J. Jolicoeur, AdamJ, Jolicoeur, adamjolicoeur.com, www.adamjolicoeur.com, mindreeper2420, Portfolio, Design, Product Designer, UXD, UX Designer, UX Developer, UX Engineer, Design Technologist, Product Mangement, CSS" />
+    <title>Adam Jolicoeur</title>
+    <meta
+      name="description"
+      content="Product designer building AI-native products, from interaction patterns to the systems that govern them."
+    />
+    <meta name="generator" content="Eleventy">
+    <meta property="og:title" content="Adam J. Jolicoeur" />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="Product designer building AI-native products, from interaction patterns to the systems that govern them.">
+    <meta property="og:site_name" content="Adam J. Jolicoeur">
+    <meta property="og:type" content="website">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon-180.png">
+    <link rel="icon" type="image/png" size="16x16" href="/icon-16.png">
+    <link rel="icon" type="image/png" size="32x32" href="/icon-32.png">
+    <link rel="icon" type="image/png" size="192x192" href="/icon-192.png">
+    <link rel="icon" type="image/png" size="512x512" href="/icon-512.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta
+      name="og:title"
+      content="Adam Jolicoeur"
+    />
+    <meta
+      name="og:description"
+      content="Product designer building AI-native products, from interaction patterns to the systems that govern them."
+    />
+    <meta property="og:image" content="https://www.adamjolicoeur.com/assets/img/social_template.webp" />
+
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS Feed for Adam Jolicoeur"
+      href="/feed/"
+    />
+    <script src="https://kit.fontawesome.com/0ea2a7621c.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <main id="main-content">
+      <!doctype html>
+
+<html class="dark scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+      TimeTraked — Modern Offline-First Productivity &amp; Workday Tracker
+    </title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "text-dim": "#8d8d8d",
+              "outline-variant": "#525252",
+              "surface-dim": "#121212",
+              "indigo-electric": "#0f62fe",
+              "error-container": "#740914",
+              secondary: "#a6c8ff",
+              "inverse-on-surface": "#161616",
+              "inverse-surface": "#f4f4f4",
+              "primary-container": "#0043ce",
+              "on-error-container": "#ffd7d9",
+              "on-secondary-container": "#d0e2ff",
+              "on-primary-container": "#ffffff",
+              "surface-overlay": "#262626",
+              "surface-tint": "#0f62fe",
+              "border-accent": "#0f62fe",
+              "on-surface": "#f4f4f4",
+              "tertiary-fixed": "#82cfff",
+              "on-error": "#ffffff",
+              "rose-danger": "#fa4d56",
+              outline: "#6f6f6f",
+              "surface-variant": "#393939",
+              "surface-bright": "#525252",
+              "secondary-fixed": "#d0e2ff",
+              "on-background": "#f4f4f4",
+              "on-secondary-fixed-variant": "#0043ce",
+              "inverse-primary": "#78a9ff",
+              "on-tertiary-fixed-variant": "#00539a",
+              "primary-fixed": "#d0e2ff",
+              "secondary-fixed-dim": "#a6c8ff",
+              "on-primary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "violet-accent": "#8a3ffc",
+              "surface-container-low": "#1e1e1e",
+              "on-tertiary-container": "#ffffff",
+              "primary-fixed-dim": "#a6c8ff",
+              "on-primary-fixed-variant": "#0043ce",
+              "on-primary-fixed": "#001d6c",
+              "text-primary": "#f4f4f4",
+              "amber-warning": "#f1c21b",
+              "text-muted": "#c6c6c6",
+              "secondary-container": "#0043ce",
+              "tertiary-fixed-dim": "#1192e8",
+              surface: "#161616",
+              primary: "#0f62fe",
+              "surface-container": "#262626",
+              "emerald-active": "#24a148",
+              "tertiary-container": "#00539a",
+              "surface-subtle": "#1c1c1c",
+              "surface-container-high": "#2d2d2d",
+              error: "#fa4d56",
+              "canvas-base": "#161616",
+              tertiary: "#1192e8",
+              background: "#161616",
+              "surface-container-lowest": "#121212",
+              "on-tertiary-fixed": "#001d6c",
+              "on-tertiary": "#ffffff",
+              "on-secondary-fixed": "#001d6c",
+              "on-surface-variant": "#c6c6c6",
+              "surface-card": "#262626",
+              "surface-container-highest": "#393939",
+              "border-subtle": "#393939",
+              "ibm-teal": "#009d9a",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            spacing: {
+              "space-md": "0.75rem",
+              "space-xs": "0.25rem",
+              "space-lg": "1.25rem",
+              "space-4xl": "4rem",
+              "gutter-desktop": "1.5rem",
+              "space-xl": "1.5rem",
+              "space-sm": "0.5rem",
+              "space-3xl": "3rem",
+              "space-base": "1rem",
+              "space-2xs": "0.125rem",
+              "gutter-mobile": "1rem",
+              "space-2xl": "2rem",
+              "max-content-width": "1200px",
+              "touch-target": "44px",
+              "sidebar-width": "260px",
+            },
+            fontFamily: {
+              "label-md": ["Inter"],
+              "headline-xl-mobile": ["Inter"],
+              "label-sm": ["Inter"],
+              "headline-xl": ["Inter"],
+              "headline-2xl-mobile": ["Inter"],
+              "headline-lg": ["Inter"],
+              "body-lg": ["Inter"],
+              "body-md": ["Inter"],
+              "body-sm": ["Inter"],
+              "headline-2xl": ["Inter"],
+              "headline-sm": ["Inter"],
+              "headline-md": ["Inter"],
+              "code-mono": ["JetBrains Mono"],
+            },
+            fontSize: {
+              "label-md": [
+                "13px",
+                {
+                  lineHeight: "18px",
+                  letterSpacing: "0.01em",
+                  fontWeight: "500",
+                },
+              ],
+              "headline-xl-mobile": [
+                "28px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "600",
+                },
+              ],
+              "label-sm": [
+                "11px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.03em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-xl": [
+                "40px",
+                {
+                  lineHeight: "48px",
+                  letterSpacing: "-0.025em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-2xl-mobile": [
+                "36px",
+                {
+                  lineHeight: "44px",
+                  letterSpacing: "-0.025em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-lg": [
+                "28px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-lg": [
+                "16px",
+                {
+                  lineHeight: "26px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "400",
+                },
+              ],
+              "body-md": [
+                "14px",
+                {
+                  lineHeight: "22px",
+                  letterSpacing: "-0.005em",
+                  fontWeight: "400",
+                },
+              ],
+              "body-sm": [
+                "13px",
+                { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" },
+              ],
+              "headline-2xl": [
+                "56px",
+                {
+                  lineHeight: "64px",
+                  letterSpacing: "-0.03em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-sm": [
+                "18px",
+                {
+                  lineHeight: "26px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-md": [
+                "22px",
+                {
+                  lineHeight: "30px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "600",
+                },
+              ],
+              "code-mono": [
+                "12px",
+                { lineHeight: "16px", letterSpacing: "0em", fontWeight: "500" },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1;
+      }
+      .material-symbols-outlined.fill {
+        font-variation-settings: "FILL" 1;
+      }
+      @keyframes pulse-subtle {
+        0%,
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.6;
+          transform: scale(0.96);
+        }
+      }
+      .animate-live {
+        animation: pulse-subtle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-canvas-base text-text-primary antialiased selection:bg-indigo-electric selection:text-white min-h-screen flex flex-col font-body-md text-body-md"
+  >
+    <!-- TopNavBar (Shared Component from JSON) -->
+    <header
+      class="sticky top-0 z-50 flex items-center justify-between w-full h-14 px-gutter-desktop max-w-max-content-width mx-auto bg-canvas-base/95 dark:bg-canvas-base/95 border-b border-border-subtle shadow-sm backdrop-blur-md"
+    >
+      <!-- Brand Logo and Name -->
+      <div class="flex items-center gap-space-sm">
+        <img
+          alt="TimeTraked Logo"
+          class="w-8 h-8 rounded-lg shrink-0 object-contain shadow-sm"
+          src="https://lh3.googleusercontent.com/aida/AEtjO1UDelN6KWwKRn4bTYroZvK1JxdSlV6X4D0kohc2v_d0_Z-3BkekgKJXKBpIU0Lr7VT_58R6H8bcXtYq1O8CK4oDuf9G-ANZTo9e-tBJff467RqKR9QvpLjtMPh1Oh-CbKOSO9-GrW9EWU75CRklDG4xM_pXcZ1AhYFuiK3i0Ku7Vz-5QUeI5-QroxvjSlYXjWcBdepaE8OqV2-rzxdixgiNoAxy_poh5Jxw-x6SnInQ_F_gV7ZTlBRrG0rU"
+        />
+        <a
+          class="text-headline-sm font-headline-sm font-bold text-text-primary dark:text-text-primary tracking-tight"
+          href="#"
+          >TimeTraked</a
+        >
+        <span
+          class="hidden sm:inline-flex items-center ml-2 px-2 py-0.5 rounded-lg text-label-sm font-label-sm bg-[#333333] text-secondary border border-border-subtle"
+        >
+          <span id="github-version">Loading...</span>
+        </span>
+      </div>
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-space-lg">
+        <a
+          class="text-text-primary dark:text-text-primary font-medium text-label-md font-label-md transition-colors duration-150 hover:text-indigo-electric"
+          href="#features"
+          >Features</a
+        >
+        <a
+          class="text-text-muted dark:text-text-muted hover:text-text-primary dark:hover:text-text-primary transition-colors duration-150 text-label-md font-label-md"
+          href="#architecture"
+          >Architecture</a
+        >
+        <a
+          class="text-text-muted dark:text-text-muted hover:text-text-primary dark:hover:text-text-primary transition-colors duration-150 text-label-md font-label-md"
+          href="#shortcuts"
+          >Shortcuts</a
+        >
+        <a
+          class="text-text-muted dark:text-text-muted hover:text-text-primary dark:hover:text-text-primary transition-colors duration-150 text-label-md font-label-md"
+          href="#quickstart"
+          >Quick Start</a
+        >
+      </nav>
+      <!-- Trailing Actions & Icons -->
+      <div class="flex items-center gap-space-sm">
+        <a
+          class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-border-subtle bg-transparent text-text-primary hover:bg-surface-card hover:border-[#525252] text-label-md font-label-md transition-colors duration-150"
+          href="https://github.com/AdamJ/TimeTrackerPro"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <span class="material-symbols-outlined text-[16px]">code</span>
+          <span>GitHub</span>
+          <span
+            class="inline-flex items-center px-1.5 py-0.2 rounded bg-surface-subtle border border-border-subtle text-[11px] text-text-muted font-code-mono"
+            >★ 142</span
+          >
+        </a>
+        <a
+          class="inline-flex items-center gap-1 px-4 py-1.5 rounded-xl bg-indigo-electric hover:bg-[#0353e9] text-white font-medium text-label-md font-label-md shadow-sm active:scale-95 transition-all duration-150"
+          href="https://timetrackerpro.adamjolicoeur.me"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <span>Launch App</span>
+          <span class="material-symbols-outlined text-[16px]"
+            >arrow_forward</span
+          >
+        </a>
+        <!-- Terminal Quick Icon -->
+        <a
+          class="hidden sm:flex items-center justify-center w-8 h-8 rounded-lg hover:bg-surface-card text-text-muted hover:text-text-primary transition-colors duration-150"
+          href="#quickstart"
+          title="Terminal Quickstart"
+        >
+          <span class="material-symbols-outlined text-[18px]">terminal</span>
+        </a>
+      </div>
+    </header>
+    <!-- Main Content Flow -->
+    <main
+      class="flex-grow w-full max-w-max-content-width mx-auto px-gutter-mobile md:px-gutter-desktop pt-8 pb-20 space-y-24"
+    >
+      <!-- Hero Section -->
+      <section
+        class="relative pt-6 md:pt-12 text-center flex flex-col items-center"
+      >
+        <!-- Glow ambient background -->
+        <div
+          class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[580px] h-[340px] bg-indigo-electric/10 blur-[140px] rounded-full pointer-events-none -z-10"
+        ></div>
+        <!-- Announcement Tag -->
+        <div
+          class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-card border border-border-subtle text-label-sm font-label-sm text-text-muted mb-6 shadow-sm hover:border-[#525252] transition-colors"
+        >
+          <span
+            class="w-2 h-2 rounded-full bg-emerald-active animate-live"
+          ></span>
+          <span class="text-text-primary font-medium"
+            ><span id="github-version">Loading...</span> Release</span
+          >
+          <span class="text-text-dim">•</span>
+          <span>Previously TimeTracker Pro</span>
+          <span class="material-symbols-outlined text-[14px] text-text-dim"
+            >arrow_forward</span
+          >
+        </div>
+        <!-- Hero Headline -->
+        <h1
+          class="text-headline-2xl-mobile md:text-headline-2xl font-headline-2xl-mobile md:font-headline-2xl tracking-tight text-text-primary max-w-4xl mx-auto leading-tight"
+        >
+          Master your workday. Track time, projects, and revenue with
+          <span
+            class="text-secondary underline decoration-indigo-electric/40 underline-offset-8"
+            >zero friction</span
+          >.
+        </h1>
+        <!-- Subtitle -->
+        <p
+          class="mt-6 text-body-lg font-body-lg text-text-muted max-w-3xl mx-auto"
+        >
+          An offline-first, privacy-respecting PWA and Tauri desktop app
+          engineered with React 18, TypeScript, Tailwind CSS v4, and Radix UI.
+          Start your workday with zero setup, manage clients &amp; rates, and
+          export client-ready invoices.
+        </p>
+        <!-- Badge Strip -->
+        <div
+          class="mt-6 flex flex-wrap justify-center items-center gap-2 text-label-sm font-label-sm"
+        >
+          <span
+            class="px-2.5 py-1 rounded-lg bg-surface-card border border-border-subtle text-text-primary inline-flex items-center gap-1.5"
+          >
+            <span
+              class="material-symbols-outlined text-[15px] text-indigo-electric"
+              >offline_bolt</span
+            >
+            100% Offline-First
+          </span>
+          <span
+            class="px-2.5 py-1 rounded-lg bg-surface-card border border-border-subtle text-text-primary inline-flex items-center gap-1.5"
+          >
+            <span
+              class="material-symbols-outlined text-[15px] text-emerald-active"
+              >desktop_windows</span
+            >
+            Tauri Desktop &amp; PWA
+          </span>
+          <span
+            class="px-2.5 py-1 rounded-lg bg-surface-card border border-border-subtle text-text-primary inline-flex items-center gap-1.5"
+          >
+            <span class="material-symbols-outlined text-[15px] text-tertiary"
+              >database</span
+            >
+            Supabase &amp; Self-Hosted SQL
+          </span>
+          <span
+            class="px-2.5 py-1 rounded-lg bg-surface-card border border-border-subtle text-text-primary inline-flex items-center gap-1.5"
+          >
+            <span class="material-symbols-outlined text-[15px] text-secondary"
+              >verified_user</span
+            >
+            Zero Tracking or Cookies
+          </span>
+        </div>
+        <!-- Action Buttons -->
+        <div
+          class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-md"
+        >
+          <a
+            class="w-full sm:w-auto px-6 h-touch-target rounded-xl bg-indigo-electric hover:bg-[#0353e9] text-white font-medium flex items-center justify-center gap-2 shadow-lg shadow-indigo-electric/25 active:scale-95 transition-all duration-150"
+            href="https://timetrackerpro.adamjolicoeur.me"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <span class="material-symbols-outlined text-[20px]"
+              >play_circle</span
+            >
+            <span>Launch Web App</span>
+          </a>
+          <a
+            class="w-full sm:w-auto px-6 h-touch-target rounded-xl bg-surface-card hover:bg-surface-subtle border border-border-subtle hover:border-[#525252] text-text-primary font-medium flex items-center justify-center gap-2 transition-all duration-150"
+            href="https://github.com/AdamJ/TimeTrackerPro"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <span class="material-symbols-outlined text-[18px]">code</span>
+            <span>View on GitHub</span>
+            <span
+              class="px-1.5 py-0.5 rounded bg-surface-subtle text-[11px] font-code-mono text-text-muted border border-border-subtle"
+              >MIT</span
+            >
+          </a>
+        </div>
+        <!-- Interactive App Simulation Card Mockup -->
+        <div
+          class="mt-14 w-full rounded-2xl bg-surface-card border border-border-subtle shadow-2xl p-4 md:p-6 text-left relative overflow-hidden backdrop-blur-md"
+        >
+          <!-- Mockup Header Bar -->
+          <div
+            class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 mb-5 border-b border-border-subtle gap-3"
+          >
+            <div class="flex items-center gap-3">
+              <div class="flex space-x-1.5">
+                <span class="w-3 h-3 rounded-full bg-rose-danger"></span>
+                <span class="w-3 h-3 rounded-full bg-amber-warning"></span>
+                <span class="w-3 h-3 rounded-full bg-emerald-active"></span>
+              </div>
+              <div class="h-4 w-px bg-border-subtle mx-1 hidden sm:block"></div>
+              <span
+                class="text-label-sm font-label-sm text-text-muted font-code-mono"
+                >TimeTraked Desktop — Active Session</span
+              >
+            </div>
+            <!-- Quick Workday Controls & Daily Summary -->
+            <div class="flex flex-wrap items-center gap-2">
+              <div
+                class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-subtle border border-border-subtle text-label-sm font-label-sm text-emerald-active"
+              >
+                <span class="material-symbols-outlined text-[14px]"
+                  >payments</span
+                >
+                <span class="font-code-mono font-semibold" id="sim-earnings"
+                  >$487.50</span
+                >
+                <span class="text-text-dim text-[11px]">today</span>
+              </div>
+              <div
+                class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-subtle border border-border-subtle text-label-sm font-label-sm text-text-muted"
+              >
+                <span class="material-symbols-outlined text-[14px]"
+                  >schedule</span
+                >
+                <span class="font-code-mono text-text-primary">5.2 hrs</span>
+                <span class="text-text-dim text-[11px]">logged</span>
+              </div>
+              <button
+                class="px-2.5 py-1 rounded-lg bg-surface-overlay hover:bg-[#393939] text-text-primary border border-border-subtle text-label-sm font-label-sm flex items-center gap-1 transition-colors"
+                id="day-toggle-btn"
+              >
+                <span
+                  class="material-symbols-outlined text-[14px] text-amber-warning"
+                  >nightlight</span
+                >
+                <span>End Day</span>
+              </button>
+            </div>
+          </div>
+          <!-- Live Active Task Timer Box -->
+          <div
+            class="p-4 md:p-5 rounded-xl bg-surface-subtle border border-[#0f62fe]/40 relative overflow-hidden mb-5"
+          >
+            <div
+              class="absolute -right-12 -top-12 w-48 h-48 bg-indigo-electric/10 blur-2xl rounded-full pointer-events-none"
+            ></div>
+            <div
+              class="flex flex-col md:flex-row md:items-center justify-between gap-4"
+            >
+              <div class="space-y-1.5">
+                <div class="flex items-center gap-2">
+                  <span
+                    class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-indigo-electric/20 text-secondary font-semibold flex items-center gap-1 border border-indigo-electric/30"
+                  >
+                    <span
+                      class="w-1.5 h-1.5 rounded-full bg-indigo-electric animate-ping"
+                    ></span>
+                    RUNNING
+                  </span>
+                  <span
+                    class="text-label-sm font-label-sm text-text-dim font-code-mono"
+                    >#TSK-842</span
+                  >
+                  <span
+                    class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-[#333333] text-text-muted border border-border-subtle"
+                  >
+                    Acme Corp
+                  </span>
+                </div>
+                <h3
+                  class="text-headline-sm font-headline-sm text-text-primary font-semibold"
+                >
+                  Design System Refactoring &amp; Radix Primitives Audit
+                </h3>
+                <p class="text-body-sm font-body-sm text-text-muted">
+                  Extracting design tokens, unifying button variants, and
+                  aligning with Tailwind v4 semantics.
+                </p>
+              </div>
+              <div
+                class="flex items-center gap-4 shrink-0 justify-between md:justify-end"
+              >
+                <div class="text-right">
+                  <div
+                    class="text-headline-lg font-headline-lg font-code-mono text-text-primary tracking-tight"
+                    id="live-timer"
+                  >
+                    02:45:18
+                  </div>
+                  <div
+                    class="text-label-sm font-label-sm text-emerald-active font-code-mono"
+                  >
+                    $125.00/hr • $344.38 accrued
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <button
+                    class="w-10 h-10 rounded-xl bg-indigo-electric hover:bg-[#0353e9] text-white flex items-center justify-center transition-transform active:scale-95 shadow-md"
+                    id="pause-resume-btn"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[20px]"
+                      id="pause-icon"
+                      >pause</span
+                    >
+                  </button>
+                  <button
+                    class="w-10 h-10 rounded-xl bg-surface-overlay hover:bg-[#393939] border border-border-subtle text-text-muted hover:text-text-primary flex items-center justify-center transition-colors"
+                  >
+                    <span class="material-symbols-outlined text-[20px]"
+                      >stop</span
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Task Manager Table / Interactive Simulation List -->
+          <div class="space-y-2">
+            <div
+              class="flex items-center justify-between text-label-sm font-label-sm text-text-dim px-2 py-1"
+            >
+              <span>TODAY'S PLANNED TASKS (3 COMPLETED • 1 ACTIVE)</span>
+              <span class="hidden sm:inline font-code-mono"
+                >Press [N] to quick-add</span
+              >
+            </div>
+            <!-- Item 1: Active -->
+            <div
+              class="p-3 rounded-lg bg-surface-card border border-indigo-electric/60 flex items-center justify-between gap-3 hover:border-indigo-electric transition-colors"
+            >
+              <div class="flex items-center gap-3">
+                <span
+                  class="material-symbols-outlined text-indigo-electric text-[18px]"
+                  >radio_button_checked</span
+                >
+                <div>
+                  <span
+                    class="text-body-md font-body-md text-text-primary font-medium"
+                    >Design System Refactoring for Acme Corp</span
+                  >
+                  <div class="flex items-center gap-2 mt-0.5">
+                    <span
+                      class="text-label-sm font-label-sm px-1.5 py-0.2 rounded bg-[#333333] text-secondary border border-border-subtle"
+                      >Design</span
+                    >
+                    <span
+                      class="text-label-sm font-label-sm text-text-dim font-code-mono"
+                      >$125/hr</span
+                    >
+                    <span class="text-label-sm font-label-sm text-text-dim"
+                      >• GFM notes attached</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <span
+                  class="font-code-mono text-body-sm font-body-sm text-secondary font-semibold"
+                  >02:45:18</span
+                >
+                <span
+                  class="material-symbols-outlined text-text-dim text-[16px] cursor-pointer hover:text-text-primary"
+                  >more_vert</span
+                >
+              </div>
+            </div>
+            <!-- Item 2: Completed -->
+            <div
+              class="p-3 rounded-lg bg-surface-subtle border border-border-subtle flex items-center justify-between gap-3 opacity-80 hover:opacity-100 transition-opacity"
+            >
+              <div class="flex items-center gap-3">
+                <span
+                  class="material-symbols-outlined text-emerald-active text-[18px]"
+                  >check_circle</span
+                >
+                <div>
+                  <span
+                    class="text-body-md font-body-md text-text-muted line-through"
+                    >Fix Supabase Row-Level Security replication race
+                    condition</span
+                  >
+                  <div class="flex items-center gap-2 mt-0.5">
+                    <span
+                      class="text-label-sm font-label-sm px-1.5 py-0.2 rounded bg-emerald-active/15 text-emerald-active border border-emerald-active/30"
+                      >Development</span
+                    >
+                    <span
+                      class="text-label-sm font-label-sm text-text-dim font-code-mono"
+                      >$150/hr</span
+                    >
+                    <span class="text-label-sm font-label-sm text-text-dim"
+                      >• Orbit Protocol</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <span
+                  class="font-code-mono text-body-sm font-body-sm text-text-muted"
+                  >01:30:00</span
+                >
+                <span
+                  class="text-label-sm font-label-sm font-code-mono text-emerald-active"
+                  >$225.00</span
+                >
+              </div>
+            </div>
+            <!-- Item 3: Completed -->
+            <div
+              class="p-3 rounded-lg bg-surface-subtle border border-border-subtle flex items-center justify-between gap-3 opacity-80 hover:opacity-100 transition-opacity"
+            >
+              <div class="flex items-center gap-3">
+                <span
+                  class="material-symbols-outlined text-emerald-active text-[18px]"
+                  >check_circle</span
+                >
+                <div>
+                  <span
+                    class="text-body-md font-body-md text-text-muted line-through"
+                    >Client Weekly Retrospective &amp; Scope Clarification
+                    Call</span
+                  >
+                  <div class="flex items-center gap-2 mt-0.5">
+                    <span
+                      class="text-label-sm font-label-sm px-1.5 py-0.2 rounded bg-violet-accent/15 text-[#be95ff] border border-violet-accent/30"
+                      >Client Comm</span
+                    >
+                    <span
+                      class="text-label-sm font-label-sm text-text-dim font-code-mono"
+                      >$110/hr</span
+                    >
+                    <span class="text-label-sm font-label-sm text-text-dim"
+                      >• Hyperion Media</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <span
+                  class="font-code-mono text-body-sm font-body-sm text-text-muted"
+                  >00:45:00</span
+                >
+                <span
+                  class="text-label-sm font-label-sm font-code-mono text-emerald-active"
+                  >$82.50</span
+                >
+              </div>
+            </div>
+            <!-- Item 4: Completed -->
+            <div
+              class="p-3 rounded-lg bg-surface-subtle border border-border-subtle flex items-center justify-between gap-3 opacity-80 hover:opacity-100 transition-opacity"
+            >
+              <div class="flex items-center gap-3">
+                <span
+                  class="material-symbols-outlined text-emerald-active text-[18px]"
+                  >check_circle</span
+                >
+                <div>
+                  <span
+                    class="text-body-md font-body-md text-text-muted line-through"
+                    >Generate and send Monthly CSV Invoices for February</span
+                  >
+                  <div class="flex items-center gap-2 mt-0.5">
+                    <span
+                      class="text-label-sm font-label-sm px-1.5 py-0.2 rounded bg-amber-warning/15 text-amber-warning border border-amber-warning/30"
+                      >Admin</span
+                    >
+                    <span
+                      class="text-label-sm font-label-sm text-text-dim font-code-mono"
+                      >Fixed Rate</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <span
+                  class="font-code-mono text-body-sm font-body-sm text-text-muted"
+                  >00:20:00</span
+                >
+                <span
+                  class="text-label-sm font-label-sm font-code-mono text-emerald-active"
+                  >$35.62</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Dashboard Footer Info Strip -->
+          <div
+            class="mt-4 pt-3 border-t border-border-subtle flex flex-wrap items-center justify-between text-label-sm font-label-sm text-text-dim"
+          >
+            <div class="flex items-center gap-2">
+              <span
+                class="material-symbols-outlined text-[14px] text-emerald-active"
+                >cloud_done</span
+              >
+              <span>Local Cache In Sync (Crash-Safe)</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span>Shortcut:</span>
+              <kbd
+                class="px-1.5 py-0.5 rounded bg-surface-subtle border border-border-subtle font-code-mono text-text-muted text-[11px]"
+                >⌘K</kbd
+              >
+              <span>Command Palette</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Core Features Bento Grid -->
+      <section class="space-y-8 scroll-mt-20" id="features">
+        <div class="text-center max-w-2xl mx-auto">
+          <h2
+            class="text-headline-xl-mobile md:text-headline-xl font-headline-xl-mobile md:font-headline-xl text-text-primary tracking-tight"
+          >
+            Engineered for Deep Work and Zero Cognitive Tax
+          </h2>
+          <p class="mt-3 text-body-md font-body-md text-text-muted">
+            Every component in TimeTraked is built to respect your flow state,
+            preserve your data autonomy, and automate invoicing.
+          </p>
+        </div>
+        <!-- Bento Grid 3x2 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- Card 1: Daily Boundaries -->
+          <div
+            class="p-6 rounded-2xl bg-surface-card border border-border-subtle hover:border-[#525252] transition-all flex flex-col justify-between group"
+          >
+            <div>
+              <div
+                class="w-10 h-10 rounded-xl bg-indigo-electric/15 text-secondary flex items-center justify-center mb-4 group-hover:scale-105 transition-transform border border-indigo-electric/25"
+              >
+                <span class="material-symbols-outlined text-[22px]"
+                  >wb_twilight</span
+                >
+              </div>
+              <h3
+                class="text-headline-sm font-headline-sm text-text-primary mb-2 font-semibold"
+              >
+                Daily Time Boundaries
+              </h3>
+              <p
+                class="text-body-sm font-body-sm text-text-muted leading-relaxed"
+              >
+                Clear morning "Start Day" and evening "End Day" post-to-archive
+                boundaries to intentionally prevent burnout and separate
+                billable focus from offline personal life.
+              </p>
+            </div>
+            <div
+              class="mt-6 pt-4 border-t border-border-subtle flex items-center justify-between text-label-sm font-label-sm text-text-dim"
+            >
+              <span>Burnout Prevention</span>
+              <span
+                class="material-symbols-outlined text-[16px] text-text-muted"
+                >archive</span
+              >
+            </div>
+          </div>
+          <!-- Card 2: Client & Rate Management -->
+          <div
+            class="p-6 rounded-2xl bg-surface-card border border-border-subtle hover:border-[#525252] transition-all flex flex-col justify-between group"
+          >
+            <div>
+              <div
+                class="w-10 h-10 rounded-xl bg-emerald-active/15 text-emerald-active flex items-center justify-center mb-4 group-hover:scale-105 transition-transform border border-emerald-active/25"
+              >
+                <span class="material-symbols-outlined text-[22px]"
+                  >attach_money</span
+                >
+              </div>
+              <h3
+                class="text-headline-sm font-headline-sm text-text-primary mb-2 font-semibold"
+              >
+                Client &amp; Rate Directories
+              </h3>
+              <p
+                class="text-body-sm font-body-sm text-text-muted leading-relaxed"
+              >
+                Configure per-client hourly rates, flat project fees, billable
+                flags, and archived company directories. Real-time earnings
+                compute automatically while you work.
+              </p>
+            </div>
+            <div
+              class="mt-6 pt-4 border-t border-border-subtle flex items-center justify-between text-label-sm font-label-sm text-text-dim"
+            >
+              <span>Multi-currency Ready</span>
+              <span class="font-code-mono text-emerald-active font-semibold"
+                >$ / hr Auto-Calc</span
+              >
+            </div>
+          </div>
+          <!-- Card 3: Kanban Planning -->
+          <div
+            class="p-6 rounded-2xl bg-surface-card border border-border-subtle hover:border-[#525252] transition-all flex flex-col justify-between group"
+          >
+            <div>
+              <div
+                class="w-10 h-10 rounded-xl bg-violet-accent/15 text-[#be95ff] flex items-center justify-center mb-4 group-hover:scale-105 transition-transform border border-violet-accent/25"
+              >
+                <span class="material-symbols-outlined text-[22px]"
+                  >view_kanban</span
+                >
+              </div>
+              <h3
+                class="text-headline-sm font-headline-sm text-text-primary mb-2 font-semibold"
+              >
+                Drag-and-Drop Kanban Planning
+              </h3>
+              <p
+                class="text-body-sm font-body-sm text-text-muted leading-relaxed"
+              >
+                Visual day staging powered by modular
+                <code class="font-code-mono text-[#be95ff]">KanbanBoard</code>,
+                <code class="font-code-mono text-[#be95ff]">KanbanColumn</code>,
+                and
+                <code class="font-code-mono text-[#be95ff]"
+                  >PlannedTaskCard</code
+                >
+                components.
+              </p>
+            </div>
+            <div
+              class="mt-6 pt-4 border-t border-border-subtle flex items-center justify-between text-label-sm font-label-sm text-text-dim"
+            >
+              <span>Planned • In Progress • Done</span>
+              <span
+                class="material-symbols-outlined text-[16px] text-text-muted"
+                >drag_indicator</span
+              >
+            </div>
+          </div>
+          <!-- Card 4: AI Summaries -->
+          <div
+            class="p-6 rounded-2xl bg-surface-card border border-border-subtle hover:border-[#525252] transition-all flex flex-col justify-between group"
+          >
+            <div>
+              <div
+                class="w-10 h-10 rounded-xl bg-tertiary/15 text-tertiary flex items-center justify-center mb-4 group-hover:scale-105 transition-transform border border-tertiary/25"
+              >
+                <span class="material-symbols-outlined text-[22px]"
+                  >auto_awesome</span
+                >
+              </div>
+              <h3
+                class="text-headline-sm font-headline-sm text-text-primary mb-2 font-semibold"
+              >
+                AI-Powered Weekly Summaries
+              </h3>
+              <p
+                class="text-body-sm font-body-sm text-text-muted leading-relaxed"
+              >
+                Gemini-powered client standups and executive weekly digests.
+                One-click conversion of granular time logs into professional
+                retrospective reports with adjustable tone.
+              </p>
+            </div>
+            <div
+              class="mt-6 pt-4 border-t border-border-subtle flex items-center justify-between text-label-sm font-label-sm text-text-dim"
+            >
+              <span>Client Standups &amp; Retros</span>
+              <span class="text-[11px] font-code-mono text-tertiary"
+                >Gemini API Ready</span
+              >
+            </div>
+          </div>
+          <!-- Card 5: GFM Markdown Notes -->
+          <div
+            class="p-6 rounded-2xl bg-surface-card border border-border-subtle hover:border-[#525252] transition-all flex flex-col justify-between group"
+          >
+            <div>
+              <div
+                class="w-10 h-10 rounded-xl bg-indigo-electric/15 text-secondary flex items-center justify-center mb-4 group-hover:scale-105 transition-transform border border-indigo-electric/25"
+              >
+                <span class="material-symbols-outlined text-[22px]"
+                  >markdown</span
+                >
+              </div>
+              <h3
+                class="text-headline-sm font-headline-sm text-text-primary mb-2 font-semibold"
+              >
+                Rich Markdown Notes
+              </h3>
+              <p
+                class="text-body-sm font-body-sm text-text-muted leading-relaxed"
+              >
+                GitHub Flavored Markdown (GFM) notes embedded directly in task
+                cards. Keep code snippets, API response payloads, and sub-task
+                checklists right next to the timer.
+              </p>
+            </div>
+            <div
+              class="mt-6 pt-4 border-t border-border-subtle flex items-center justify-between text-label-sm font-label-sm text-text-dim"
+            >
+              <span>Checklists &amp; Syntax Highlighting</span>
+              <span class="font-code-mono text-text-muted text-[11px]"
+                >ts ...
+              </span>
+            </div>
+          </div>
+          <!-- Card 6: Backups & Invoices -->
+          <div
+            class="p-6 rounded-2xl bg-surface-card border border-border-subtle hover:border-[#525252] transition-all flex flex-col justify-between group"
+          >
+            <div>
+              <div
+                class="w-10 h-10 rounded-xl bg-amber-warning/15 text-amber-warning flex items-center justify-center mb-4 group-hover:scale-105 transition-transform border border-amber-warning/25"
+              >
+                <span class="material-symbols-outlined text-[22px]"
+                  >receipt_long</span
+                >
+              </div>
+              <h3
+                class="text-headline-sm font-headline-sm text-text-primary mb-2 font-semibold"
+              >
+                Comprehensive Backups &amp; Exports
+              </h3>
+              <p
+                class="text-body-sm font-body-sm text-text-muted leading-relaxed"
+              >
+                Permanent data retention. Instant exports to client-ready CSV
+                and JSON schemas. In Tauri desktop mode, automatically write
+                timestamped disk snapshots to local storage.
+              </p>
+            </div>
+            <div
+              class="mt-6 pt-4 border-t border-border-subtle flex items-center justify-between text-label-sm font-label-sm text-text-dim"
+            >
+              <span>CSV • JSON • Print Invoice</span>
+              <span
+                class="material-symbols-outlined text-[16px] text-emerald-active"
+                >download_for_offline</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Architecture & Storage Modes Section -->
+      <section class="space-y-8 scroll-mt-20" id="architecture">
+        <div class="text-center max-w-2xl mx-auto">
+          <div
+            class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-card border border-border-subtle text-label-sm font-label-sm text-text-muted mb-3"
+          >
+            <span class="material-symbols-outlined text-[14px] text-tertiary"
+              >hub</span
+            >
+            <span>Flexible Data Topologies</span>
+          </div>
+          <h2
+            class="text-headline-xl-mobile md:text-headline-xl font-headline-xl-mobile md:font-headline-xl text-text-primary tracking-tight"
+          >
+            Three Storage Modes. You Own Every Byte.
+          </h2>
+          <p class="mt-3 text-body-md font-body-md text-text-muted">
+            Whether you want instant frictionless zero-config tracking or
+            enterprise Postgres isolation, TimeTraked adapts to your security
+            requirements.
+          </p>
+        </div>
+        <!-- 3 Tier Storage Matrix -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Mode 1: Guest Mode -->
+          <div
+            class="p-6 rounded-2xl bg-surface-card border-2 border-indigo-electric/70 relative flex flex-col justify-between"
+          >
+            <span
+              class="absolute -top-3 left-6 px-2.5 py-0.5 rounded-full bg-indigo-electric text-white text-[11px] font-label-sm tracking-wide uppercase font-semibold"
+            >
+              Default Zero-Config
+            </span>
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span
+                  class="text-headline-sm font-headline-sm text-text-primary font-semibold"
+                  >Guest Mode</span
+                >
+                <span
+                  class="material-symbols-outlined text-secondary text-[24px]"
+                  >cloud_off</span
+                >
+              </div>
+              <p class="text-body-sm font-body-sm text-text-muted mb-6">
+                Instant in-browser execution with zero sign-up. Stored
+                completely in browser localStorage with multi-tiered backup
+                snapshots.
+              </p>
+              <ul class="space-y-3 text-body-sm font-body-sm text-text-primary">
+                <li class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-emerald-active text-[18px]"
+                    >check</span
+                  >
+                  <span>Zero signup or email required</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-emerald-active text-[18px]"
+                    >check</span
+                  >
+                  <span>100% offline &amp; latency free</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-emerald-active text-[18px]"
+                    >check</span
+                  >
+                  <span>Multi-tier snapshot recovery</span>
+                </li>
+                <li class="flex items-center gap-2 text-text-dim">
+                  <span
+                    class="material-symbols-outlined text-text-dim text-[18px]"
+                    >close</span
+                  >
+                  <span>Multi-device cloud synchronization</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-8 pt-4 border-t border-border-subtle text-center">
+              <span
+                class="text-label-sm font-label-sm font-code-mono text-secondary"
+                >localStorage + IndexedDB</span
+              >
+            </div>
+          </div>
+          <!-- Mode 2: Supabase Cloud Sync -->
+          <div
+            class="p-6 rounded-2xl bg-surface-card border border-border-subtle hover:border-[#525252] transition-all flex flex-col justify-between"
+          >
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span
+                  class="text-headline-sm font-headline-sm text-text-primary font-semibold"
+                  >Cloud Sync (Supabase)</span
+                >
+                <span
+                  class="material-symbols-outlined text-tertiary text-[24px]"
+                  >sync</span
+                >
+              </div>
+              <p class="text-body-sm font-body-sm text-text-muted mb-6">
+                Optional cloud backend powered by Supabase. Secure PostgreSQL
+                database with rigorous Row-Level Security (RLS).
+              </p>
+              <ul class="space-y-3 text-body-sm font-body-sm text-text-primary">
+                <li class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-emerald-active text-[18px]"
+                    >check</span
+                  >
+                  <span>Real-time multi-device syncing</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-emerald-active text-[18px]"
+                    >check</span
+                  >
+                  <span>Strict Row-Level Security (RLS)</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-emerald-active text-[18px]"
+                    >check</span
+                  >
+                  <span>Mobile &amp; Desktop continuous sync</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-emerald-active text-[18px]"
+                    >check</span
+                  >
+                  <span>Offline queue with auto-reconnect</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-8 pt-4 border-t border-border-subtle text-center">
+              <span
+                class="text-label-sm font-label-sm font-code-mono text-tertiary"
+                >PostgreSQL + RLS Polices</span
+              >
+            </div>
+          </div>
+          <!-- Mode 3: Self-Hosted SQL -->
+          <div
+            class="p-6 rounded-2xl bg-surface-card border border-border-subtle hover:border-[#525252] transition-all flex flex-col justify-between"
+          >
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span
+                  class="text-headline-sm font-headline-sm text-text-primary font-semibold"
+                  >Self-Hosted SQL</span
+                >
+                <span
+                  class="material-symbols-outlined text-ibm-teal text-[24px]"
+                  >dns</span
+                >
+              </div>
+              <p class="text-body-sm font-body-sm text-text-muted mb-6">
+                For privacy purists and homelab enthusiasts. Connect TimeTraked
+                to your own personal PostgreSQL or MySQL instance.
+              </p>
+              <ul class="space-y-3 text-body-sm font-body-sm text-text-primary">
+                <li class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-emerald-active text-[18px]"
+                    >check</span
+                  >
+                  <span>Own 100% of your database pipeline</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-emerald-active text-[18px]"
+                    >check</span
+                  >
+                  <span>PostgreSQL &amp; MySQL REST adapter</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-emerald-active text-[18px]"
+                    >check</span
+                  >
+                  <span>Run inside Tailscale / Homelab</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-emerald-active text-[18px]"
+                    >check</span
+                  >
+                  <span>No third-party cloud dependence</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-8 pt-4 border-t border-border-subtle text-center">
+              <span
+                class="text-label-sm font-label-sm font-code-mono text-ibm-teal"
+                >REST API Endpoint</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Modern Tech Stack Badges Strip -->
+        <div
+          class="p-6 rounded-2xl bg-surface-subtle border border-border-subtle flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left"
+        >
+          <div>
+            <span
+              class="text-label-sm font-label-sm text-secondary font-semibold uppercase tracking-wider"
+              >Modern Architecture</span
+            >
+            <p
+              class="text-headline-sm font-headline-sm text-text-primary font-semibold mt-1"
+            >
+              Zero bloat. Built on the modern TypeScript &amp; React standard.
+            </p>
+          </div>
+          <div
+            class="flex flex-wrap items-center justify-center md:justify-end gap-2 text-label-sm font-label-sm font-code-mono text-text-muted"
+          >
+            <span
+              class="px-2.5 py-1 rounded bg-[#262626] border border-border-subtle"
+              >React 18</span
+            >
+            <span
+              class="px-2.5 py-1 rounded bg-[#262626] border border-border-subtle"
+              >TypeScript 5.9</span
+            >
+            <span
+              class="px-2.5 py-1 rounded bg-[#262626] border border-border-subtle"
+              >Vite 5</span
+            >
+            <span
+              class="px-2.5 py-1 rounded bg-[#262626] border border-border-subtle"
+              >Tailwind CSS v4</span
+            >
+            <span
+              class="px-2.5 py-1 rounded bg-[#262626] border border-border-subtle"
+              >Radix UI</span
+            >
+            <span
+              class="px-2.5 py-1 rounded bg-[#262626] border border-border-subtle"
+              >Tauri v2</span
+            >
+          </div>
+        </div>
+      </section>
+      <!-- Keyboard Shortcuts Cheat Sheet -->
+      <section class="space-y-8 scroll-mt-20" id="shortcuts">
+        <div class="text-center max-w-2xl mx-auto">
+          <div
+            class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-card border border-border-subtle text-label-sm font-label-sm text-text-muted mb-3"
+          >
+            <span
+              class="material-symbols-outlined text-[14px] text-amber-warning"
+              >keyboard</span
+            >
+            <span>Power-User Accelerators</span>
+          </div>
+          <h2
+            class="text-headline-xl-mobile md:text-headline-xl font-headline-xl-mobile md:font-headline-xl text-text-primary tracking-tight"
+          >
+            Keyboard Shortcuts Built for Speed
+          </h2>
+          <p class="mt-3 text-body-md font-body-md text-text-muted">
+            Keep your fingers on the home row. Control running timers, switch
+            views, and trigger manual disk saves without lifting a mouse.
+          </p>
+        </div>
+        <!-- Shortcuts Interactive Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Shortcut 1: New Task -->
+          <div
+            class="p-5 rounded-xl bg-surface-card border border-border-subtle hover:border-indigo-electric/60 transition-colors flex flex-col justify-between"
+          >
+            <div class="flex items-center justify-between mb-4">
+              <span
+                class="text-body-md font-body-md font-semibold text-text-primary"
+                >Instant New Task</span
+              >
+              <kbd
+                class="min-w-[28px] h-7 px-2 flex items-center justify-center rounded bg-surface-subtle border border-border-subtle font-code-mono text-text-primary text-[13px] shadow-sm font-bold"
+              >
+                N
+              </kbd>
+            </div>
+            <p class="text-body-sm font-body-sm text-text-muted">
+              Quick-opens the task composer dialog and auto-focuses the title
+              field.
+            </p>
+          </div>
+          <!-- Shortcut 2: Force Manual Sync -->
+          <div
+            class="p-5 rounded-xl bg-surface-card border border-border-subtle hover:border-indigo-electric/60 transition-colors flex flex-col justify-between"
+          >
+            <div class="flex items-center justify-between mb-4">
+              <span
+                class="text-body-md font-body-md font-semibold text-text-primary"
+                >Force Sync &amp; Save</span
+              >
+              <div class="flex items-center gap-1 font-code-mono">
+                <kbd
+                  class="h-7 px-2 flex items-center justify-center rounded bg-surface-subtle border border-border-subtle text-text-primary text-[12px] font-bold"
+                  >⌘/Ctrl</kbd
+                >
+                <kbd
+                  class="h-7 px-2 flex items-center justify-center rounded bg-surface-subtle border border-border-subtle text-text-primary text-[12px] font-bold"
+                  >S</kbd
+                >
+              </div>
+            </div>
+            <p class="text-body-sm font-body-sm text-text-muted">
+              Immediately flushes in-memory timers to local IndexedDB and cloud
+              database.
+            </p>
+          </div>
+          <!-- Shortcut 3: Command Palette -->
+          <div
+            class="p-5 rounded-xl bg-surface-card border border-border-subtle hover:border-indigo-electric/60 transition-colors flex flex-col justify-between"
+          >
+            <div class="flex items-center justify-between mb-4">
+              <span
+                class="text-body-md font-body-md font-semibold text-text-primary"
+                >Command Palette</span
+              >
+              <div class="flex items-center gap-1 font-code-mono">
+                <kbd
+                  class="h-7 px-2 flex items-center justify-center rounded bg-surface-subtle border border-border-subtle text-text-primary text-[12px] font-bold"
+                  >⌘/Ctrl</kbd
+                >
+                <kbd
+                  class="h-7 px-2 flex items-center justify-center rounded bg-surface-subtle border border-border-subtle text-text-primary text-[12px] font-bold"
+                  >K</kbd
+                >
+              </div>
+            </div>
+            <p class="text-body-sm font-body-sm text-text-muted">
+              Opens the omni-bar command finder to switch views, search tasks,
+              or run macros.
+            </p>
+          </div>
+          <!-- Shortcut 4: Help Dialog -->
+          <div
+            class="p-5 rounded-xl bg-surface-card border border-border-subtle hover:border-indigo-electric/60 transition-colors flex flex-col justify-between"
+          >
+            <div class="flex items-center justify-between mb-4">
+              <span
+                class="text-body-md font-body-md font-semibold text-text-primary"
+                >Help &amp; Shortcuts</span
+              >
+              <kbd
+                class="min-w-[28px] h-7 px-2 flex items-center justify-center rounded bg-surface-subtle border border-border-subtle font-code-mono text-text-primary text-[13px] shadow-sm font-bold"
+              >
+                ?
+              </kbd>
+            </div>
+            <p class="text-body-sm font-body-sm text-text-muted">
+              Toggles the modal overlay listing all 24+ keyboard navigation
+              controls.
+            </p>
+          </div>
+        </div>
+        <!-- Mobile Touch Hint Card -->
+        <div
+          class="p-4 rounded-xl bg-surface-card border border-border-subtle flex items-center gap-3 text-text-muted"
+        >
+          <span
+            class="material-symbols-outlined text-secondary text-[20px] shrink-0"
+            >touch_app</span
+          >
+          <p class="text-body-sm font-body-sm">
+            <strong class="text-text-primary">Mobile Gesture Support:</strong>
+            On touchscreens, long-press (500ms) any task card to reveal the
+            haptic action drawer for rapid time edits, rate adjustments, and
+            invoice tagging.
+          </p>
+        </div>
+      </section>
+      <!-- Developer & Open Source Quickstart -->
+      <section class="space-y-8 scroll-mt-20" id="quickstart">
+        <div class="text-center max-w-2xl mx-auto">
+          <div
+            class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-card border border-border-subtle text-label-sm font-label-sm text-text-muted mb-3"
+          >
+            <span
+              class="material-symbols-outlined text-[14px] text-emerald-active"
+              >terminal</span
+            >
+            <span>Open Source &amp; Hackable</span>
+          </div>
+          <h2
+            class="text-headline-xl-mobile md:text-headline-xl font-headline-xl-mobile md:font-headline-xl text-text-primary tracking-tight"
+          >
+            Run It Locally in 30 Seconds
+          </h2>
+          <p class="mt-3 text-body-md font-body-md text-text-muted">
+            Zero closed proprietary code. 100% open source under the permissive
+            MIT License. Fully typed, tested, and battle-ready.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+          <!-- Terminal Code Block (8 cols) -->
+          <div
+            class="lg:col-span-8 rounded-2xl bg-[#121212] border border-[#393939] overflow-hidden flex flex-col justify-between"
+          >
+            <div
+              class="flex items-center justify-between px-4 py-3 bg-[#1e1e1e] border-b border-[#393939]"
+            >
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-rose-danger"></span>
+                <span class="w-3 h-3 rounded-full bg-amber-warning"></span>
+                <span class="w-3 h-3 rounded-full bg-emerald-active"></span>
+                <span
+                  class="ml-2 text-label-sm font-label-sm text-text-muted font-code-mono"
+                  >bash — quickstart.sh</span
+                >
+              </div>
+              <button
+                class="flex items-center gap-1 text-label-sm font-label-sm text-text-muted hover:text-text-primary transition-colors"
+                id="copy-code-btn"
+              >
+                <span class="material-symbols-outlined text-[14px]"
+                  >content_copy</span
+                >
+                <span id="copy-label">Copy</span>
+              </button>
+            </div>
+            <div
+              class="p-5 font-code-mono text-[13px] leading-relaxed text-text-primary space-y-2 overflow-x-auto bg-[#121212]"
+            >
+              <p class="text-text-dim"># 1. Clone the repository from GitHub</p>
+              <p>
+                <span class="text-tertiary font-semibold">git</span> clone
+                https://github.com/AdamJ/TimeTrackerPro.git
+              </p>
+              <p class="text-text-dim mt-3">
+                # 2. Enter project directory &amp; install dependencies
+              </p>
+              <p>
+                <span class="text-tertiary font-semibold">cd</span>
+                TimeTrackerPro &amp;&amp;
+                <span class="text-tertiary font-semibold">pnpm</span> install
+              </p>
+              <p class="text-text-dim mt-3">
+                # 3. Spin up the Vite development server
+              </p>
+              <p><span class="text-tertiary font-semibold">pnpm</span> dev</p>
+              <p class="text-text-dim mt-3">
+                # Optional: Run Vitest unit &amp; integration test suite
+              </p>
+              <p>
+                <span class="text-emerald-active font-semibold">pnpm</span>
+                test:run
+              </p>
+            </div>
+            <div
+              class="p-3 bg-[#161616] border-t border-[#393939] flex items-center justify-between text-label-sm font-label-sm text-text-muted font-code-mono"
+            >
+              <span>Local URL: http://localhost:5173</span>
+              <span class="text-emerald-active">Ready in 240ms</span>
+            </div>
+          </div>
+          <!-- Vitest & Quality Metrics Card (4 cols) -->
+          <div
+            class="lg:col-span-4 rounded-2xl bg-surface-card border border-border-subtle p-6 flex flex-col justify-between"
+          >
+            <div class="space-y-4">
+              <div
+                class="w-10 h-10 rounded-xl bg-emerald-active/15 text-emerald-active flex items-center justify-center border border-emerald-active/25"
+              >
+                <span class="material-symbols-outlined text-[24px]"
+                  >verified</span
+                >
+              </div>
+              <h3
+                class="text-headline-sm font-headline-sm text-text-primary font-semibold"
+              >
+                Rigorous Test Coverage
+              </h3>
+              <div class="space-y-2">
+                <div
+                  class="text-headline-lg font-headline-lg font-code-mono text-emerald-active font-bold"
+                >
+                  395 Tests
+                </div>
+                <p class="text-body-sm font-body-sm text-text-muted">
+                  Across 38 Vitest test suites checking timer accuracy, offline
+                  reconciliation, and invoice calculations.
+                </p>
+              </div>
+            </div>
+            <div class="mt-6 pt-4 border-t border-border-subtle space-y-2">
+              <div
+                class="flex items-center justify-between text-label-sm font-label-sm"
+              >
+                <span class="text-text-muted">License:</span>
+                <span class="text-text-primary font-code-mono"
+                  >MIT Open Source</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-between text-label-sm font-label-sm"
+              >
+                <span class="text-text-muted">Credits:</span>
+                <span class="text-text-primary">Lovable, Radix, shadcn/ui</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Call to Action Banner -->
+      <section
+        class="rounded-3xl bg-gradient-to-r from-surface-card via-surface-subtle to-surface-card border border-border-subtle p-8 md:p-12 text-center relative overflow-hidden"
+      >
+        <div
+          class="absolute inset-0 bg-indigo-electric/5 pointer-events-none"
+        ></div>
+        <div class="relative z-10 max-w-2xl mx-auto space-y-6">
+          <h2
+            class="text-headline-xl-mobile md:text-headline-xl font-headline-xl-mobile md:font-headline-xl text-text-primary font-bold tracking-tight"
+          >
+            Ready to Reclaim Control of Your Hours?
+          </h2>
+          <p class="text-body-lg font-body-lg text-text-muted">
+            No credit card, no forced registrations, and no tracking cookies.
+            Launch the web app right now or clone the Tauri build to your
+            desktop.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center gap-4"
+          >
+            <a
+              class="w-full sm:w-auto px-6 h-touch-target rounded-xl bg-indigo-electric hover:bg-[#0353e9] text-white font-medium flex items-center justify-center gap-2 shadow-lg shadow-indigo-electric/25 active:scale-95 transition-all"
+              href="https://timetrackerpro.adamjolicoeur.me"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <span class="material-symbols-outlined text-[20px]"
+                >rocket_launch</span
+              >
+              <span>Start Tracking Now — Free</span>
+            </a>
+            <a
+              class="w-full sm:w-auto px-6 h-touch-target rounded-xl bg-surface-overlay hover:bg-[#393939] border border-border-subtle text-text-primary font-medium flex items-center justify-center gap-2 transition-all"
+              href="https://github.com/AdamJ/TimeTrackerPro"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <span class="material-symbols-outlined text-[20px]">star</span>
+              <span>Star on GitHub</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer (Shared Component from JSON) -->
+    <footer
+      class="w-full py-space-3xl px-gutter-desktop max-w-max-content-width mx-auto flex flex-col md:flex-row justify-between items-center gap-space-lg bg-canvas-base dark:bg-canvas-base border-t border-border-subtle dark:border-border-subtle flat no shadows"
+    >
+      <!-- Brand / Copyright -->
+      <div class="flex flex-col items-center md:items-start gap-1">
+        <div class="flex items-center gap-2">
+          <img
+            alt="TimeTraked Logo"
+            class="w-5 h-5 rounded-sm shrink-0"
+            src="https://lh3.googleusercontent.com/aida/AEtjO1UDelN6KWwKRn4bTYroZvK1JxdSlV6X4D0kohc2v_d0_Z-3BkekgKJXKBpIU0Lr7VT_58R6H8bcXtYq1O8CK4oDuf9G-ANZTo9e-tBJff467RqKR9QvpLjtMPh1Oh-CbKOSO9-GrW9EWU75CRklDG4xM_pXcZ1AhYFuiK3i0Ku7Vz-5QUeI5-QroxvjSlYXjWcBdepaE8OqV2-rzxdixgiNoAxy_poh5Jxw-x6SnInQ_F_gV7ZTlBRrG0rU"
+          />
+          <span
+            class="text-headline-sm font-headline-sm font-semibold text-text-primary dark:text-text-primary"
+            >TimeTraked</span
+          >
+        </div>
+        <p class="text-body-sm font-body-sm text-text-dim dark:text-text-dim">
+          © 2025 TimeTraked by Adam Jolicoeur. Built with Tauri, Supabase &amp;
+          Tailwind.
+        </p>
+      </div>
+      <!-- Navigation Footer Links (from JSON) -->
+      <div
+        class="flex flex-wrap justify-center items-center gap-x-6 gap-y-2 text-label-sm font-label-sm"
+      >
+        <a
+          class="text-text-dim dark:text-text-dim hover:text-text-muted dark:hover:text-text-muted transition-colors duration-150"
+          href="https://github.com/AdamJ/TimeTrackerPro#readme"
+          rel="noreferrer"
+          target="_blank"
+          >Documentation</a
+        >
+        <a
+          class="text-text-dim dark:text-text-dim hover:text-text-muted dark:hover:text-text-muted transition-colors duration-150"
+          href="https://github.com/AdamJ/TimeTrackerPro/releases"
+          rel="noreferrer"
+          target="_blank"
+          >Changelog</a
+        >
+        <a
+          class="text-text-dim dark:text-text-dim hover:text-text-muted dark:hover:text-text-muted transition-colors duration-150"
+          href="#architecture"
+          >Privacy &amp; Offline Policy</a
+        >
+        <a
+          class="text-text-dim dark:text-text-dim hover:text-text-muted dark:hover:text-text-muted transition-colors duration-150"
+          href="https://github.com/AdamJ/TimeTrackerPro"
+          rel="noreferrer"
+          target="_blank"
+          >GitHub Repository</a
+        >
+        <a
+          class="text-text-dim dark:text-text-dim hover:text-text-muted dark:hover:text-text-muted transition-colors duration-150"
+          href="#shortcuts"
+          >Keyboard Cheat Sheet</a
+        >
+        <a
+          class="text-text-dim dark:text-text-dim hover:text-text-muted dark:hover:text-text-muted transition-colors duration-150"
+          href="https://github.com/AdamJ/TimeTrackerPro/releases"
+          rel="noreferrer"
+          target="_blank"
+          >Releases</a
+        >
+      </div>
+    </footer>
+    <!-- Interactive JavaScript for Live Timer simulation and Copy actions -->
+    <script>
+      // Live Timer Simulation
+      let seconds = 18;
+      let minutes = 45;
+      let hours = 2;
+      let isRunning = true;
+      let timerInterval = null;
+
+      const timerElement = document.getElementById("live-timer");
+      const pauseBtn = document.getElementById("pause-resume-btn");
+      const pauseIcon = document.getElementById("pause-icon");
+      const earningsElement = document.getElementById("sim-earnings");
+      const dayToggleBtn = document.getElementById("day-toggle-btn");
+      const copyCodeBtn = document.getElementById("copy-code-btn");
+      const copyLabel = document.getElementById("copy-label");
+
+      function updateTimer() {
+        if (!isRunning) return;
+        seconds++;
+        if (seconds >= 60) {
+          seconds = 0;
+          minutes++;
+          if (minutes >= 60) {
+            minutes = 0;
+            hours++;
+          }
+        }
+        const formatted =
+          String(hours).padStart(2, "0") +
+          ":" +
+          String(minutes).padStart(2, "0") +
+          ":" +
+          String(seconds).padStart(2, "0");
+
+        if (timerElement) {
+          timerElement.textContent = formatted;
+        }
+      }
+
+      timerInterval = setInterval(updateTimer, 1000);
+
+      if (pauseBtn) {
+        pauseBtn.addEventListener("click", () => {
+          isRunning = !isRunning;
+          if (isRunning) {
+            pauseIcon.textContent = "pause";
+            pauseBtn.classList.remove("bg-emerald-active");
+            pauseBtn.classList.add("bg-indigo-electric");
+          } else {
+            pauseIcon.textContent = "play_arrow";
+            pauseBtn.classList.remove("bg-indigo-electric");
+            pauseBtn.classList.add("bg-emerald-active");
+          }
+        });
+      }
+
+      if (dayToggleBtn) {
+        dayToggleBtn.addEventListener("click", () => {
+          const isEnd = dayToggleBtn.textContent.includes("End Day");
+          if (isEnd) {
+            dayToggleBtn.innerHTML =
+              '<span class="material-symbols-outlined text-[14px] text-emerald-active">wb_sunny</span><span>Start Day</span>';
+            isRunning = false;
+            pauseIcon.textContent = "play_arrow";
+          } else {
+            dayToggleBtn.innerHTML =
+              '<span class="material-symbols-outlined text-[14px] text-amber-warning">nightlight</span><span>End Day</span>';
+            isRunning = true;
+            pauseIcon.textContent = "pause";
+          }
+        });
+      }
+
+      if (copyCodeBtn) {
+        copyCodeBtn.addEventListener("click", () => {
+          const codeText =
+            "git clone https://github.com/AdamJ/TimeTrackerPro.git\ncd TimeTrackerPro && pnpm install\npnpm dev";
+          navigator.clipboard.writeText(codeText).then(() => {
+            copyLabel.textContent = "Copied!";
+            setTimeout(() => {
+              copyLabel.textContent = "Copy";
+            }, 2000);
+          });
+        });
+      }
+
+      async function getLatestRelease() {
+        // Replace 'OWNER' and 'REPO' with your GitHub details
+        const url = "https://github.com/AdamJ/TimeTrackerPro";
+
+        try {
+          const response = await fetch(url);
+          if (!response.ok) throw new Error("Failed to fetch version");
+
+          const data = await response.json();
+          // 'tag_name' usually contains the version (e.g., v1.0.0)
+          document.getElementById("github-version").innerText = data.tag_name;
+        } catch (error) {
+          console.error(error);
+          document.getElementById("github-version").innerText = "Unavailable";
+        }
+      }
+
+      // Run the function when the page loads
+      getLatestRelease();
+    </script>
+  </body>
+</html>
+
+    </main>
+  </body>
+</html>
