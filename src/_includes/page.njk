@@ -14,6 +14,8 @@ layout: base.njk
   {{ content | safe }}
 </content>
 
+{% include "case-study-nav.njk" %}
+
 {% if customCss %}
   <link type="text/css" href="/css/{{ customCss | url }}" rel="stylesheet" />
 {% endif %}

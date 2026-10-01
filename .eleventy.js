@@ -55,6 +55,31 @@ module.exports = function (eleventyConfig) {
     return collection.getAll().filter((item) => item.data.type);
   });
 
+  // Ordered sequence of portfolio case studies. Set `portfolioOrder` in a page's
+  // front matter to include it; Previous/Next buttons are generated from this order.
+  eleventyConfig.addCollection("portfolioSequence", function (collection) {
+    return collection
+      .getAll()
+      .filter((item) => item.data.portfolioOrder !== undefined)
+      .sort((a, b) => a.data.portfolioOrder - b.data.portfolioOrder);
+  });
+
+  // Cards for portfolio listing pages, built from each page's `card` front matter.
+  eleventyConfig.addFilter("cardList", function (sequence, group, featuredOnly) {
+    return sequence.filter(
+      (item) =>
+        item.data.card &&
+        (!group || item.data.card.group === group) &&
+        (!featuredOnly || item.data.card.featured)
+    );
+  });
+
+  eleventyConfig.addFilter("caseStudyNeighbors", function (sequence, url) {
+    const i = sequence.findIndex((item) => item.url === url);
+    if (i === -1) return null;
+    return { prev: sequence[i - 1] || null, next: sequence[i + 1] || null };
+  });
+
   eleventyConfig.addPlugin(emojiReadTime);
 
   eleventyConfig.addWatchTarget("src/sass/*.scss");

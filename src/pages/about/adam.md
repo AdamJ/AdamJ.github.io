@@ -3,7 +3,7 @@ layout: "base"
 title: "About"
 date: git Last Modified
 abbreviation: "about"
-description: "Driven and passionate senior user experience designer with a background in software development."
+description: "Product designer and product manager building AI-native tools for construction, with a background in software development."
 eleventyNavigation:
   key: About
   order: 1
@@ -12,19 +12,19 @@ eleventyNavigation:
 <section>
   <h2>Hello!</h2>
   <p>
-    UX Designer, Developer, Program Manager. Creating software for the construction world. Previously at Red Hat and AWS. Collector of nerdy things...forever.
+    Lead Product Designer and Product Manager building AI-native tools for the construction world. Previously at Red Hat and AWS. Collector of nerdy things...forever.
   </p>
   <p>
-    Adam Jolicoeur is a designer, developer, and program manager in Massachusetts. Starting as a help desk tech, he discovered a desire to create technology, rather than fixing it, which lead to a leap into the software engineering space.
+    Adam Jolicoeur is a designer, developer, and product manager in Massachusetts. Starting as a help desk tech, he discovered a desire to create technology rather than fix it, which led to a leap into software engineering.
   </p>
   <p>
-    While working at a small startup, Adam discovered the world of user experience design and realized that his future was before him. With a background in fine arts and knowledge in the software development space (Backbone/Angular, anyone?), Adam took another step forward by becoming the first ux designer at a financial startup. Leading the next-generation of product design for card processors and financial institutions, Adam took that experience and used it to catapult into the world of publicly traded companies.
+    While working at a small startup, Adam discovered user experience design and realized his future was before him. With a background in fine arts and knowledge of the software development space (Backbone/Angular, anyone?), he became the first UX designer at a financial startup, leading the next generation of product design for card processors and financial institutions.
   </p>
   <p>
-    With a move to Red Hat (later acquired by IBM), Adam accelerated his career path (and filled up many pages in his passport) by working with industry experts and the open source community on enterprise software experiences. After five years at Red Hat, Adam joined a small team at Amazon in AWS's Safety Engineering group to work on a new issue tracking and management product. While his time at Amazon came to abrupt end during the layoffs of 2023, the knowledge gained from such an environment only strengthened his desire to create in a collaborative and forward-looking space.
+    At Red Hat (later acquired by IBM), Adam worked with industry experts and the open source community on enterprise software experiences, including as a core contributor to PatternFly. He then joined a small team in AWS's Safety Engineering group to build Task-it, a new issue tracking and management product that grew to 500 daily active users across more than 15 teams.
   </p>
   <p>
-    Adam has continued his career at Component Assembly Systems as their Lead Program Manager and Head of UX.
+    Today, Adam is the Lead Product Designer and Product Manager at Component Assembly Systems. He designs and builds AI products for construction teams, including CASim, an AI project management assistant built on MCP, and ArchParser, an OCR-based tool for plan management. He works in Claude Code every day, shipping working prototypes alongside the design system that keeps them consistent. Outside of work, he builds local-first apps under Brimfield Labs.
   </p>
   <h3 class="mt-4">Education</h3>
   <p>

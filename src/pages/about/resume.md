@@ -1,11 +1,11 @@
 ---
 layout: "markdown"
 title: "Adam Jolicoeur"
-description: "Lead Product Designer with 15+ years at AWS, Red Hat, and high-growth B2B companies"
+description: "Lead Product Designer and Product Manager with 15+ years at AWS, Red Hat, and high-growth B2B companies"
 abbreviation: "Resume"
 date: git Last Modified
 primaryAction: "View PDF"
-primaryURL: "https://www.adamjolicoeur.com/downloads/resume.pdf"
+primaryURL: "https://www.adamjolicoeur.com/assets/AdamJolicoeur-Resume.pdf"
 eleventyNavigation:
   key: Resume
   parent: About
@@ -17,14 +17,15 @@ eleventyNavigation:
   <caption>contact@adamjolicoeur.com</caption>
 </section>
 <section class="pt-2 pb-2">
-  <p class="text-callout">I design enterprise applications and code production-quality prototypes. With expertise in design systems and complex data-intensive interfaces, I've shaped products used by millions of developers and contributed to industry-leading open-source design systems.</p>
+  <p class="text-callout">I design AI-native products, from interaction patterns to the systems that govern them, drawing on 15+ years of enterprise design. With expertise in design systems and complex, data-intensive interfaces, I have shaped products used by thousands of engineers and contributed to industry-leading open-source design systems.</p>
   <h2>Key Highlights</h2>
   <p>
     <ul>
-      <li>Lead designer for Task-it at Amazon Web Services - reached 500 daily active users across AWS in 18 months</li>
-      <li>Core contributor to PatternFly design system at Red Hat 20,000+ GitHub stars, used across OpenShift.</li>
-      <li>Built comprehensive design systems for enterprise construction management and financial services platforms</li>
-      <li>Code production-quality prototypes using HTML/CSS/React that validate designs and accelerate engineering</li>
+      <li>Designing and building AI products at CAS, including CASim (an MCP-based AI project management assistant) and ArchParser (OCR-based plan management)</li>
+      <li>Lead designer for Task-it at Amazon Web Services, which reached 500 daily active users across 15+ teams</li>
+      <li>Core contributor to the PatternFly design system at Red Hat, used across OpenShift</li>
+      <li>Built the CAS design system, accelerating development cycles by 25%</li>
+      <li>Code production-quality prototypes in HTML, CSS, and React that validate designs and accelerate engineering</li>
     </ul>
   </p>
 </section>
@@ -33,25 +34,25 @@ eleventyNavigation:
   <p>
     <strong>Lead Product Designer &amp; Product Manager</strong>
     <br />
-    Component Assembly Systems | 2024 - Present
+    Component Assembly Systems | 2024 to Present
   </p>
 </section>
 <section class="pt-3 pb-3">
   <h3>Previous Experience</h3>
   <p>
-    <strong>Senior UX Designer</strong> — Amazon Web Services (2021-2023)
+    <strong>Senior UX Designer</strong>, Amazon Web Services (2021-2023)
   </p>
   <p>
-    <strong>Senior Interaction Designer</strong> — Red Hat (2016-2021)
+    <strong>Senior Interaction Designer</strong>, Red Hat (2016-2021)
   </p>
   <p>
-    <strong>UX Designer</strong> — Saylent Technologies (2014-2016)
+    <strong>UX Designer</strong>, Saylent Technologies (2014-2016)
   </p>
 </section>
 <section class="pt-3 pb-3">
   <a href="{{ '/assets/AdamJolicoeur-Resume.pdf' | url }}" class="link-brackets" target="_blank" alt="Click to download the resume">Download Resume (PDF)</a>
   <br />
-  <small>Last updated November 2025</small>
+  <small>Last updated October 2026</small>
 </section>
 <section class="pt-3 pb-3">
   <h3>Also available</h3>

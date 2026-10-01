@@ -1,5 +1,14 @@
 ---
 title: 'Task Management System'
+portfolioOrder: 4
+card:
+  title: "Task Management System"
+  summary: "Lead designer for Task-it, Amazon's internal task management platform. Consolidated 3-4 disparate tracking tools into one unified system, reaching <strong>500 daily active users</strong> across AWS <strong>within 18 months</strong> of launch."
+  image: "/assets/img/task-it_product.webp"
+  imageAlt: "Task It project illustration"
+  badges: ["AWS", "500+ Users", "Enterprise"]
+  group: "Professional"
+  featured: true
 date: git Last Modified
 abbreviation: 'task'
 description: 'One enterprise task management system to rule them all.'
@@ -35,7 +44,7 @@ eleventyNavigation:
     </p>
     <p>
       <span class="text-h6 mr-1">THE SOLUTION:</span>
-      I designed Task-it, a unified task management platform that consolidated these disparate tools into a single, intuitive system. The design focused on role-agnostic patterns that could serve diverse AWS teams—from product managers tracking roadmaps to engineers managing technical debt to support teams triaging customer issues.
+      I designed Task-it, a unified task management platform that consolidated these disparate tools into a single, intuitive system. The design focused on role-agnostic patterns that could serve diverse AWS teams, from product managers tracking roadmaps to engineers managing technical debt to support teams triaging customer issues.
     <p>
       <span class="text-h6 mr-1">THE IMPACT:</span>
       <br/>
@@ -256,19 +265,14 @@ eleventyNavigation:
       <p>
         This project reinforced three critical lessons about designing internal tools:
         <ol>
-          <li>Internal tools deserve the same design rigor as customer-facing products. By investing in proper user research, prototyping, and testing, we created a tool that users actually wanted to use—driving organic adoption without mandates from leadership.</li>
+          <li>Internal tools deserve the same design rigor as customer-facing products. By investing in proper user research, prototyping, and testing, we created a tool that users actually wanted to use, driving organic adoption without mandates from leadership.</li>
           <li>Flexibility beats rigid workflows. Rather than forcing all teams into a single process, we designed role-agnostic patterns that could adapt to different team structures and workflows. This flexibility was key to achieving broad adoption across diverse AWS organizations.</li>
-          <li>Continuous research is essential. By conducting regular usability tests and gathering feedback throughout development, we caught issues early and built features that users actually needed—not just what we assumed they wanted.</li>
+          <li>Continuous research is essential. By conducting regular usability tests and gathering feedback throughout development, we caught issues early and built features that users actually needed, not just what we assumed they wanted.</li>
         </ol>
       </p>
       <p>
         The success of Task-it demonstrated that internal tools can be delightful and that investing in UX research pays dividends in adoption, productivity, and user satisfaction.
       </p>
     </div>
-  </div>
-</section>
-<section>
-  <div class="row justify-content-end">
-    <a href="{{ '/development/timetracker/' | url }}" class="btn btn-outline btn-sm" alt="Navigate to TimeTrackerPro case study">Next Case Study</a>
   </div>
 </section>

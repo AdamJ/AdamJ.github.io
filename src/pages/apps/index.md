@@ -18,7 +18,7 @@ eleventyNavigation:
 ## Webapps
 
 - [Moonsilver Waypoints](moonsilver)
-- [TimeTracker Pro](timetracker)
+- [Timetraked](timetracker)
 
 ## iOS AppStore
 

@@ -1,0 +1,4 @@
+{
+  "layout": "blank",
+  "permalink": "/{{ page.fileSlug }}/"
+}

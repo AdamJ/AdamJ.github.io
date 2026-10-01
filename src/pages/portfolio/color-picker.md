@@ -1,6 +1,13 @@
 ---
 layout: markdown.njk
 title: 'Color Picker'
+portfolioOrder: 7
+card:
+  title: "Color Picker"
+  summary: "As one of the most up-voted feature requests, the goal was to create an accessible option that combined colors with patterns."
+  badges: ["A11y", "Components"]
+  group: "Professional"
+  featured: false
 date: git Last Modified
 abbreviation: 'colorpicker'
 description: 'Accessible color picker combining WCAG compliance with patterns.'
@@ -15,7 +22,7 @@ containers: true
 
 ## Project Overview
 
-> A native iOS app, built by a coach, who needed fast and reliable game tracking without surrendering data to a third-party platform — designed for the sideline, built in Swift.
+> An accessible color picker for the design system that pairs WCAG-compliant colors with patterns and icons, so color is never the only way to tell labels apart.
 
 :::card
 
@@ -31,7 +38,7 @@ containers: true
 
 ## Introduction
 
-A color picker, but nature, is not accessible - the goal of this component design was to provide a solution that not only allowed users to select colors for labels, but also provide alternatives such as patterns and icons.
+A color picker is not accessible by nature, so the goal of this component design was to provide a solution that not only allowed users to select colors for labels, but also provide alternatives such as patterns and icons.
 
 <div class="card">
   <div class="card-body">
@@ -93,6 +100,6 @@ Once the basic levels had been configured, I needed to compare the current label
 
 Once the prototype was up and running, I was able to test out the interactions, visuals, and test the new component with users.
 
-After reviewing the findings, it was determined that another round of design and testing was needed before we could release the color picker to production.
+The color picker launched to production. The findings from this round also fed follow-up work: another round of design and testing.
 
 ::::

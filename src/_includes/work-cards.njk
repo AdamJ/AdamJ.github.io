@@ -1,0 +1,18 @@
+{%- for item in cardItems -%}
+{%- set c = item.data.card -%}
+{%- if loop.first %}<div class="work-grid">{% endif %}
+<article class="card-image">
+{%- if c.image %}
+<img src="{{ c.image | url }}" alt="{{ c.imageAlt }}" class="image-top" />
+{%- endif %}
+<div class="card-body">
+<h3 class="two-line-header">{{ c.title }}</h3>
+<p>{{ c.summary | safe }}</p>
+{%- if c.badges %}
+<div class="badges mb-2">{% for b in c.badges %}<span class="badge">{{ b }}</span>{% endfor %}</div>
+{%- endif %}
+<a href="{{ item.url | url }}" class="btn {{ btnClass or 'btn-primary' }}" aria-label="View {{ c.title }} case study">View Case Study</a>
+</div>
+</article>
+{%- if loop.last %}</div>{% endif %}
+{% endfor -%}
