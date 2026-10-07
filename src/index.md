@@ -1,5 +1,6 @@
 ---
 layout: base.njk
+bodyClass: landing
 pageScripts:
   - /js/landing.js
 ---
