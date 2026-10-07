@@ -1,0 +1,325 @@
+/*
+** Landing page: trail hero scene + scroll reveals
+** Motion lives inside a prefers-reduced-motion: no-preference query,
+** so reduced-motion users get the finished, static scene.
+*/
+
+/* Hero layout */
+.hero-trail {
+  position: relative;
+  max-width: none;
+  min-height: calc(100vh - 4rem);
+  min-height: calc(100svh - 4rem);
+  justify-content: flex-start;
+  padding: clamp(3rem, 10vh, 7rem) var(--space-lg, 1.5rem) 0;
+  overflow: hidden;
+  isolation: isolate;
+}
+.hero-content {
+  max-width: 900px;
+}
+.hero .hero-tagline {
+  font-style: italic;
+  padding: var(--space-xl, 2rem) 0;
+}
+
+/* Scene: stacked SVG ridgelines, each layer offset by scroll * --depth */
+.hero-scene {
+  position: absolute;
+  inset: auto 0 0;
+  z-index: -1;
+  height: 55%;
+  pointer-events: none;
+
+  /* Feather the bottom edge into the page gradient */
+  mask-image: linear-gradient(to bottom, #000 calc(100% - 24px), transparent);
+}
+.hero-layer {
+  position: absolute;
+  inset: 0;
+  transform: translate3d(0, calc(var(--parallax, 0) * var(--depth, 0) * 1px), 0);
+  will-change: transform;
+}
+.hero-layer svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.hero-sun {
+  fill: var(--accent-coral);
+  opacity: 0.85;
+}
+.hero-cloud path {
+  fill: var(--earth-cream);
+  stroke: var(--earth-brown);
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+.hero-cloud-one {
+  --cloud-y: 96px;
+
+  transform: translate(1180px, var(--cloud-y));
+}
+.hero-cloud-two {
+  --cloud-y: 176px;
+
+  transform: translate(420px, var(--cloud-y));
+}
+.hero-layer-far path {
+  fill: var(--earth-sand);
+  opacity: 0.5;
+}
+.hero-layer-mid path {
+  fill: var(--earth-sand);
+}
+.hero-peak {
+  fill: var(--earth-sage);
+}
+.hero-snow {
+  fill: var(--earth-cream);
+}
+.hero-trail-reveal {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 12;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+}
+.hero-trail-path {
+  fill: none;
+  stroke: var(--earth-cream);
+  stroke-width: 3;
+  stroke-dasharray: 8 9;
+  stroke-linecap: round;
+}
+.hero-flag line {
+  stroke: var(--earth-dark);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+.hero-flag-cloth {
+  fill: var(--accent-coral);
+}
+.hero-pines {
+  fill: var(--earth-brown);
+}
+.hero-foreground {
+  fill: var(--earth-cream);
+  stroke: var(--earth-brown);
+  stroke-width: 4;
+  stroke-linejoin: round;
+}
+
+/* Scroll cue + scenery pause control */
+.hero-cue {
+  position: absolute;
+  bottom: var(--space-lg, 1.5rem);
+  left: 50%;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs, 0.5rem);
+  padding: var(--space-xs, 0.5rem) var(--space-md, 1rem);
+  color: var(--earth-dark);
+  font-size: var(--font-size-sm, 0.875rem);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: var(--earth-cream);
+  border: var(--border-thin, 2px) solid var(--earth-brown);
+  border-radius: var(--radius-pill, 50px);
+  box-shadow: 3px 3px 0 var(--earth-brown);
+  transform: translateX(-50%);
+  transition:
+    box-shadow 0.2s,
+    color 0.2s;
+}
+.hero-cue:hover,
+.hero-cue:focus-visible {
+  color: var(--accent-coral-dark);
+  box-shadow: 1px 1px 0 var(--earth-brown);
+}
+.hero-pause {
+  position: absolute;
+  bottom: var(--space-lg, 1.5rem);
+  left: var(--space-lg, 1.5rem);
+  width: 2.75rem;
+  height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--earth-dark);
+  background: var(--earth-cream);
+  border: var(--border-thin, 2px) solid var(--earth-brown);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.hero-pause:hover {
+  color: var(--accent-coral-dark);
+}
+.hero-pause[hidden],
+.hero-pause[aria-pressed='true'] .hero-pause-icon,
+.hero-pause[aria-pressed='false'] .hero-play-icon {
+  display: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Ridges rise in back-to-front, then the trail draws to the summit */
+  .hero-layer svg {
+    animation: hero-ridge-rise 1.2s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+    animation-delay: var(--delay, 0s);
+  }
+  .hero-sun {
+    animation: hero-sun-rise 2.4s cubic-bezier(0.2, 0.7, 0.2, 1) 0.2s both;
+  }
+  .hero-cloud-one {
+    animation: hero-cloud-drift 120s linear -70s infinite;
+  }
+  .hero-cloud-two {
+    animation: hero-cloud-drift 160s linear -40s infinite;
+  }
+  .hero-trail-reveal {
+    animation: hero-trail-draw 2.4s ease-in-out 1.3s both;
+  }
+  .hero-flag {
+    transform-box: fill-box;
+    transform-origin: 0 100%;
+    animation: hero-flag-plant 0.5s cubic-bezier(0.3, 1.6, 0.5, 1) 3.6s both;
+  }
+  .hero-flag-cloth {
+    transform-box: fill-box;
+    transform-origin: 0 50%;
+    animation: hero-flag-wave 1.6s ease-in-out 4.1s infinite alternate;
+  }
+  .hero-content > * {
+    animation: hero-text-in 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+  .hero-content > :nth-child(2) {
+    animation-delay: 0.15s;
+  }
+  .hero-content > :nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  .hero-cue i {
+    animation: hero-cue-bob 1.6s ease-in-out 4s 3;
+  }
+  .hero-trail.is-paused .hero-cloud,
+  .hero-trail.is-paused .hero-flag-cloth {
+    animation-play-state: paused;
+  }
+
+  /* Scroll reveals (classes added by js/landing.js) */
+  .js-reveal .reveal:not(.is-revealed) {
+    opacity: 0;
+  }
+  .js-reveal .reveal.is-revealed {
+    animation: reveal-up 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+    animation-delay: calc(var(--reveal-index, 0) * 90ms);
+  }
+
+  /* Heading underline draws like a trail marker */
+  .js-reveal h2.reveal::after {
+    transform: scaleX(0);
+    transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) 0.3s;
+  }
+  .js-reveal h2.reveal.is-revealed::after {
+    transform: scaleX(1);
+  }
+}
+
+@media (width <= 768px) {
+  .hero-scene {
+    height: 50%;
+  }
+}
+
+@keyframes hero-ridge-rise {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-sun-rise {
+  from {
+    opacity: 0;
+    transform: translateY(140px);
+  }
+  to {
+    opacity: 0.85;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-cloud-drift {
+  from {
+    transform: translate(-160px, var(--cloud-y));
+  }
+  to {
+    transform: translate(1700px, var(--cloud-y));
+  }
+}
+
+@keyframes hero-trail-draw {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes hero-flag-plant {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes hero-flag-wave {
+  from {
+    transform: scaleX(1) skewY(0deg);
+  }
+  to {
+    transform: scaleX(0.82) skewY(-6deg);
+  }
+}
+
+@keyframes hero-text-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-cue-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    translate: 0 24px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}

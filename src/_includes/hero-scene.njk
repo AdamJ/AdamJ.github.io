@@ -1,0 +1,58 @@
+<div class="hero-scene" aria-hidden="true">
+  <div class="hero-layer hero-layer-sky" style="--depth: 0.6; --delay: 0s;">
+    <svg viewBox="0 0 1600 500" preserveAspectRatio="xMidYMax slice" focusable="false">
+      <circle class="hero-sun" cx="1000" cy="150" r="56" />
+      <g class="hero-cloud hero-cloud-one">
+        <path d="M0,40 a22,22 0 0 1 30,-20 a30,30 0 0 1 56,4 a20,20 0 0 1 24,16 z" />
+      </g>
+      <g class="hero-cloud hero-cloud-two">
+        <path d="M0,40 a18,18 0 0 1 26,-16 a26,26 0 0 1 48,2 a16,16 0 0 1 20,14 z" />
+      </g>
+    </svg>
+  </div>
+  <div class="hero-layer hero-layer-far" style="--depth: 0.45; --delay: 0.1s;">
+    <svg viewBox="0 0 1600 500" preserveAspectRatio="xMidYMax slice" focusable="false">
+      <path d="M0,300 L120,240 L210,270 L330,180 L430,240 L520,200 L640,250 L760,170 L880,230 L1000,190 L1120,250 L1240,160 L1360,230 L1480,200 L1600,250 L1600,500 L0,500 Z" />
+    </svg>
+  </div>
+  <div class="hero-layer hero-layer-mid" style="--depth: 0.3; --delay: 0.25s;">
+    <svg viewBox="0 0 1600 500" preserveAspectRatio="xMidYMax slice" focusable="false">
+      <path d="M0,360 L140,300 L240,330 L380,250 L500,320 L600,290 L720,340 L800,300 L960,360 L1080,280 L1200,330 L1320,270 L1460,330 L1600,300 L1600,500 L0,500 Z" />
+    </svg>
+  </div>
+  <div class="hero-layer hero-layer-peak" style="--depth: 0.15; --delay: 0.4s;">
+    <svg viewBox="0 0 1600 500" preserveAspectRatio="xMidYMax slice" focusable="false">
+      <defs>
+        <mask id="heroTrailMask" maskUnits="userSpaceOnUse" x="0" y="0" width="1600" height="500">
+          <path class="hero-trail-reveal" pathLength="1" d="M590,480 C640,455 700,452 720,432 S660,402 700,386 S800,370 790,342 S730,302 770,282 S850,262 830,232 S800,202 845,186 S878,165 880,152" />
+        </mask>
+      </defs>
+      <path class="hero-peak" d="M0,440 L160,400 L300,420 L440,350 L560,380 L700,260 L780,220 L840,170 L880,150 L920,175 L980,230 L1060,290 L1160,340 L1300,380 L1420,360 L1600,410 L1600,500 L0,500 Z" />
+      <path class="hero-snow" d="M840,170 L880,150 L920,175 L906,186 L892,174 L876,190 L860,178 Z" />
+      <path class="hero-trail-path" mask="url(#heroTrailMask)" d="M590,480 C640,455 700,452 720,432 S660,402 700,386 S800,370 790,342 S730,302 770,282 S850,262 830,232 S800,202 845,186 S878,165 880,152" />
+      <g class="hero-flag">
+        <line x1="880" y1="152" x2="880" y2="104" />
+        <path class="hero-flag-cloth" d="M880,104 L914,114 L880,124 Z" />
+      </g>
+    </svg>
+  </div>
+  <div class="hero-layer hero-layer-front" style="--depth: 0; --delay: 0.55s;">
+    <svg viewBox="0 0 1600 500" preserveAspectRatio="xMidYMax slice" focusable="false">
+      <defs>
+        <symbol id="heroPine" viewBox="0 0 30 50">
+          <path d="M15,0 L26,20 L21,20 L30,38 L18,38 L18,50 L12,50 L12,38 L0,38 L9,20 L4,20 Z" />
+        </symbol>
+      </defs>
+      <g class="hero-pines">
+        <use href="#heroPine" x="120" y="400" width="30" height="50" />
+        <use href="#heroPine" x="150" y="390" width="38" height="62" />
+        <use href="#heroPine" x="186" y="408" width="26" height="42" />
+        <use href="#heroPine" x="520" y="410" width="28" height="46" />
+        <use href="#heroPine" x="1250" y="396" width="34" height="56" />
+        <use href="#heroPine" x="1284" y="406" width="26" height="44" />
+        <use href="#heroPine" x="1316" y="392" width="38" height="62" />
+      </g>
+      <path class="hero-foreground" d="M-10,470 C120,440 240,450 360,460 S560,430 700,455 S900,468 1040,450 S1300,430 1420,455 S1560,450 1610,440 L1610,510 L-10,510 Z" />
+    </svg>
+  </div>
+</div>

@@ -1,15 +1,28 @@
 ---
 layout: base.njk
+pageScripts:
+  - /js/landing.js
 ---
 
-<section class="hero" aria-labelledby="hero-heading" style="height: calc(100vh - 4rem);">
-  <h1 id="hero-heading">Adam Jolicoeur</h1>
-  <p>Product designer building AI-native products, from interaction patterns to the systems that govern them. 15+ years at AWS, Red Hat, and high-growth B2B.</p>
-  <p class="text-body" style="font-style: italic; padding: 2rem 0;">Enterprise product designer. Systems thinker. Builder.</p>
+<section class="hero hero-trail" aria-labelledby="hero-heading">
+  {% include 'hero-scene.njk' %}
+  <div class="hero-content">
+    <h1 id="hero-heading">Adam Jolicoeur</h1>
+    <p>Product designer building AI-native products, from interaction patterns to the systems that govern them. 15+ years at AWS, Red Hat, and high-growth B2B.</p>
+    <p class="text-body hero-tagline">Enterprise product designer. Systems thinker. Builder.</p>
+  </div>
+  <a class="hero-cue" href="#about">
+    <span>Start the hike</span>
+    <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+  </a>
+  <button type="button" class="hero-pause" aria-label="Pause scenery animation" aria-pressed="false" hidden>
+    <svg class="hero-pause-icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path d="M4 2h3v12H4zM9 2h3v12H9z" fill="currentColor" /></svg>
+    <svg class="hero-play-icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path d="M4 2l10 6-10 6z" fill="currentColor" /></svg>
+  </button>
 </section>
 <section id="about" aria-labelledby="about-heading">
-  <h2 id="about-heading" class="text-h2 no-underline">About Me</h2>
-  <div class="card about-card">
+  <h2 id="about-heading" class="text-h2 no-underline" data-reveal>About Me</h2>
+  <div class="card about-card" data-reveal>
     <div class="card-body">
       <p class="text-body-lg text-center">Lead Product designer building AI-native products, from interaction patterns to the systems that govern them.</p>
       <p>15+ years across AWS, Red Hat, and high-growth B2B, including an internal AI assistant, MCP architecture, and design systems used on 100+ construction projects.</p>
@@ -33,9 +46,9 @@ layout: base.njk
   </div>
 </section>
 <section id="work" aria-labelledby="work-heading">
-  <h2 id="work-heading" class="text-h2 no-underline">Featured Work</h2>
+  <h2 id="work-heading" class="text-h2 no-underline" data-reveal>Featured Work</h2>
   <div class="work-grid">
-    <article class="showcase-large">
+    <article class="showcase-large" data-reveal>
       <img src="{{ '/assets/img/casim-dashboard.webp' | url }}" alt="CASim dashboard screen" class="showcase-image" />
       <div class="showcase-content">
         <h3>CASim: Internal AI Assistant</h3>
@@ -46,7 +59,7 @@ layout: base.njk
         <a href="{{ '/portfolio/casim' | url }}" class="btn btn-primary" alt="View CASim case study">View Case Study</a>
       </div>
     </article>
-    <article class="showcase-large">
+    <article class="showcase-large" data-reveal>
       <img src="{{ '/assets/img/timetracker-loading-state.webp' | url }}" alt="Weekly AI-powered work summary loading screen" class="showcase-image" />
         <div class="showcase-content">
           <h3>Weekly AI-Powered Work Summary</h3>
@@ -59,7 +72,7 @@ layout: base.njk
       </article>
     </div>
     <div class="work-grid">
-      <div class="small-showcase-cards">
+      <div class="small-showcase-cards" data-reveal-group>
         <article class="card-flex showcase-small">
           <h4>ArchParser</h4>
           <p>Architectural drawing analysis platform for OCR-based architectural drawing analysis management.</p>
@@ -97,8 +110,8 @@ layout: base.njk
   </div>
 </section>
 <section id="testimonials" aria-labelledby="callouts-heading">
-  <h2 id="callouts-heading">What Colleagues Say</h2>
-  <div class="callouts-grid">
+  <h2 id="callouts-heading" data-reveal>What Colleagues Say</h2>
+  <div class="callouts-grid" data-reveal-group>
     <blockquote class="callout">
       <p class="callout-text">[Adam] is self-driven and keeps stakeholders (Project manager, Development manager, Engineers) aligned on UX solutions...design proposals are spot-on and considerate of [our] diverse set of users.</p>
       <cite>
@@ -120,10 +133,10 @@ layout: base.njk
   </div>
 </section>
 <section id="opensource" aria-labelledby="opensource-heading">
-  <h2 id="opensource-heading">Open Source Contributions</h2>
+  <h2 id="opensource-heading" data-reveal>Open Source Contributions</h2>
   <div>
     <p class="text-body-lg" style="margin-bottom: 2rem;">Beyond my professional work, I actively contribute to the open source community. My contributions span developer tools, design systems, and infrastructure projects that support the broader tech ecosystem.</p>
-    <div class="about-grid">
+    <div class="about-grid" data-reveal-group>
       <div class="card-flex showcase-small">
         <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
           <span style="font-size: 1.5rem;">🚀</span>
