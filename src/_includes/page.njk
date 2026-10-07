@@ -2,7 +2,7 @@
 layout: base.njk
 ---
 
-<section class="hero" aria-labelledby="hero-heading">
+<section class="hero{% if motion %} hero-intro{% endif %}" aria-labelledby="hero-heading">
   <h1 id="hero-heading">{{ title }}</h1>
   <p>{{ description }}</p>
   {%- if (headerButton) -%}
@@ -10,7 +10,7 @@ layout: base.njk
   {%- else -%}{%- endif -%}
 </section>
 
-<content>
+<content{% if motion %} data-reveal-auto{% endif %}>
   {{ content | safe }}
 </content>
 

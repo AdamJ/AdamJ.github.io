@@ -7,6 +7,7 @@ eleventyNavigation:
   key: Portfolio
   order: 1
 templateEngineOverride: njk,md
+motion: true
 ---
 
 <section>

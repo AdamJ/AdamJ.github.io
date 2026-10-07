@@ -1,5 +1,6 @@
 /*
-** Landing page motion: hero parallax, trail hiker, topo drift, and scroll reveals.
+** Page motion, opted into with `motion: true` in front matter: hero parallax
+** and trail hiker (homepage scene), plus scroll reveals for marked or templated content.
 ** Everything here is progressive enhancement. Without JS, or with
 ** prefers-reduced-motion, the page renders fully static and visible.
 */
@@ -11,29 +12,23 @@
 
   var hero = document.querySelector('.hero-trail');
   var scene = hero && hero.querySelector('.hero-scene');
-
-  // Scroll-linked motion: hero layers scale --parallax by their --depth,
-  // the topo texture drifts by --topo-shift across the full page height
-  var ticking = false;
-  var update = function () {
-    var y = window.scrollY;
-    if (scene) {
-      scene.style.setProperty('--parallax', Math.min(y, hero.offsetHeight).toFixed(1));
-    }
-    var scrollable = root.scrollHeight - window.innerHeight;
-    var progress = scrollable > 0 ? Math.min(y / scrollable, 1) : 0;
-    root.style.setProperty('--topo-shift', (progress * window.innerHeight * 0.2).toFixed(1));
-    ticking = false;
-  };
-  window.addEventListener('scroll', function () {
-    if (!ticking) {
-      window.requestAnimationFrame(update);
-      ticking = true;
-    }
-  }, { passive: true });
-  update();
+  if (!scene) hero = null;
 
   if (hero) {
+    // Hero parallax: expose scroll distance to CSS, each layer scales it by its --depth
+    var ticking = false;
+    var update = function () {
+      scene.style.setProperty('--parallax', Math.min(window.scrollY, hero.offsetHeight).toFixed(1));
+      ticking = false;
+    };
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        window.requestAnimationFrame(update);
+        ticking = true;
+      }
+    }, { passive: true });
+    update();
+
     // Pause control for the looping scenery (clouds, flag), WCAG 2.2.2
     var pause = hero.querySelector('.hero-pause');
     if (pause) {
@@ -89,10 +84,27 @@
   if (!('IntersectionObserver' in window)) return;
 
   var targets = Array.prototype.slice.call(document.querySelectorAll('[data-reveal]'));
-  document.querySelectorAll('[data-reveal-group]').forEach(function (group) {
+  var addGroup = function (group, maxIndex) {
     Array.prototype.forEach.call(group.children, function (child, i) {
-      child.style.setProperty('--reveal-index', i);
+      child.style.setProperty('--reveal-index', Math.min(i, maxIndex));
       targets.push(child);
+    });
+  };
+  document.querySelectorAll('[data-reveal-group]').forEach(function (group) {
+    addGroup(group, Infinity);
+  });
+
+  // Auto reveals for templated pages: card grids stagger card by card,
+  // other top-level sections reveal their children in a short cascade
+  document.querySelectorAll('[data-reveal-auto]').forEach(function (container) {
+    var sections = container.matches('section') ? [container] : container.querySelectorAll(':scope > section');
+    Array.prototype.forEach.call(sections, function (section) {
+      var grids = section.querySelectorAll('.work-grid');
+      if (grids.length) {
+        grids.forEach(function (grid) { addGroup(grid, Infinity); });
+      } else {
+        addGroup(section, 4);
+      }
     });
   });
   if (!targets.length) return;

@@ -7,9 +7,10 @@ description: "Product designer and product manager building AI-native tools for 
 eleventyNavigation:
   key: About
   order: 1
+motion: true
 ---
 
-<section>
+<section data-reveal-auto>
   <h2>Hello!</h2>
   <p>
     Lead Product Designer and Product Manager building AI-native tools for the construction world. Previously at Red Hat and AWS. Collector of nerdy things...forever.
