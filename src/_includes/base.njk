@@ -48,7 +48,7 @@
     <script src="https://kit.fontawesome.com/0ea2a7621c.js" crossorigin="anonymous"></script>
   </head>
   <a rel="me" href="https://mastodon.world/@adamjol" aria-hidden="true" class="display-none">Mastodon</a>
-  <body>
+  <body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
     <a href="#main-content" class="skip-link">Skip to main content</a>
       <nav role="navigation" aria-label="Main navigation" class="main-nav" style="bottom: 0 !important;">
         <ul>

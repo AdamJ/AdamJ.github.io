@@ -4,6 +4,21 @@
 ** so reduced-motion users get the finished, static scene.
 */
 
+/* Topographic texture: fixed behind the page, drifts with scroll progress */
+.landing::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  height: 120vh;
+  background: url('/assets/img/topo.svg') center / cover no-repeat;
+  opacity: 0.08;
+  pointer-events: none;
+  transform: translate3d(0, calc(var(--topo-shift, 0) * -1px), 0);
+}
+
 /* Hero layout */
 .hero-trail {
   position: relative;
@@ -100,6 +115,22 @@
 }
 .hero-flag-cloth {
   fill: var(--accent-coral);
+}
+.hero-hiker line {
+  stroke: var(--earth-dark);
+  stroke-width: 2.2;
+  stroke-linecap: round;
+}
+.hero-hiker .hero-hiker-stick {
+  stroke-width: 1.2;
+}
+.hero-hiker-head {
+  fill: var(--earth-dark);
+}
+.hero-hiker-pack {
+  fill: var(--accent-coral);
+  stroke: var(--earth-dark);
+  stroke-width: 1;
 }
 .hero-pines {
   fill: var(--earth-brown);
@@ -204,6 +235,14 @@
   .hero-cue i {
     animation: hero-cue-bob 1.6s ease-in-out 4s 3;
   }
+  .hero-hiker.is-walking .hero-hiker-leg {
+    transform-box: fill-box;
+    transform-origin: 50% 0;
+    animation: hero-hiker-step 0.32s ease-in-out infinite alternate;
+  }
+  .hero-hiker.is-walking .hero-hiker-leg-back {
+    animation-direction: alternate-reverse;
+  }
   .hero-trail.is-paused .hero-cloud,
   .hero-trail.is-paused .hero-flag-cloth {
     animation-play-state: paused;
@@ -289,6 +328,15 @@
   }
   to {
     transform: scaleX(0.82) skewY(-6deg);
+  }
+}
+
+@keyframes hero-hiker-step {
+  from {
+    transform: rotate(-24deg);
+  }
+  to {
+    transform: rotate(24deg);
   }
 }
 
