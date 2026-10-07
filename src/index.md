@@ -1,8 +1,6 @@
 ---
 layout: base.njk
-bodyClass: landing
-pageScripts:
-  - /js/landing.js
+motion: true
 ---
 
 <section class="hero hero-trail" aria-labelledby="hero-heading">

@@ -1,0 +1,24 @@
+/*
+** Topographic texture: fixed behind every page, drifts with scroll progress
+** via --topo-shift (set by js/topo.js). Regenerate the SVG with
+** scripts/generate-topo.js.
+*/
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  height: 120vh;
+  background: url('/assets/img/topo.svg') center / cover no-repeat;
+  opacity: 0.08;
+  pointer-events: none;
+  transform: translate3d(0, calc(var(--topo-shift, 0) * -1px), 0);
+}
+
+@media print {
+  body::before {
+    display: none;
+  }
+}

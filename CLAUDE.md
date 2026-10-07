@@ -180,6 +180,9 @@ categories: [development, design]
 3. Place images in `src/assets/img-raw/[project-name]/`
 4. Run `pnpm run images:optimize`
 
+### Page Motion (opt-in)
+Add `motion: true` to a page's front matter to load `src/js/motion.js`. On `page.njk` and `markdown.njk` layouts this fades in the page header and reveals top-level content sections (card grids stagger card by card) as they scroll into view. Pages on `base.njk` can mark elements directly with `data-reveal`, `data-reveal-group`, or `data-reveal-auto`. All motion is skipped for `prefers-reduced-motion`, and content stays visible without JS. The topographic background (`src/sass/_topo.scss`, `src/js/topo.js`) applies sitewide; regenerate its SVG with `node scripts/generate-topo.js [seed]`.
+
 ### Modify Site Navigation
 Edit `eleventyNavigation` in page front matter:
 - `key`: Unique identifier

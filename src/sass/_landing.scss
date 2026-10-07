@@ -1,23 +1,8 @@
 /*
-** Landing page: trail hero scene + scroll reveals
+** Page motion: homepage trail hero scene, page header intros, and scroll reveals
 ** Motion lives inside a prefers-reduced-motion: no-preference query,
 ** so reduced-motion users get the finished, static scene.
 */
-
-/* Topographic texture: fixed behind the page, drifts with scroll progress */
-.landing::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: -1;
-  height: 120vh;
-  background: url('/assets/img/topo.svg') center / cover no-repeat;
-  opacity: 0.08;
-  pointer-events: none;
-  transform: translate3d(0, calc(var(--topo-shift, 0) * -1px), 0);
-}
 
 /* Hero layout */
 .hero-trail {
@@ -223,13 +208,16 @@
     transform-origin: 0 50%;
     animation: hero-flag-wave 1.6s ease-in-out 4.1s infinite alternate;
   }
-  .hero-content > * {
+  .hero-content > *,
+  .hero-intro > * {
     animation: hero-text-in 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
   }
-  .hero-content > :nth-child(2) {
+  .hero-content > :nth-child(2),
+  .hero-intro > :nth-child(2) {
     animation-delay: 0.15s;
   }
-  .hero-content > :nth-child(3) {
+  .hero-content > :nth-child(3),
+  .hero-intro > :nth-child(3) {
     animation-delay: 0.3s;
   }
   .hero-cue i {
@@ -248,7 +236,7 @@
     animation-play-state: paused;
   }
 
-  /* Scroll reveals (classes added by js/landing.js) */
+  /* Scroll reveals (classes added by js/motion.js) */
   .js-reveal .reveal:not(.is-revealed) {
     opacity: 0;
   }

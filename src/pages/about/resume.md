@@ -10,6 +10,7 @@ eleventyNavigation:
   key: Resume
   parent: About
   order: 2
+motion: true
 ---
 
 <section class="hide-on-screen print">
