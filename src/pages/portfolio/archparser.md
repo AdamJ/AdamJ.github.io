@@ -3,7 +3,7 @@ title: 'ArchParser: Architectural Drawing Analysis Platform'
 portfolioOrder: 3
 card:
   title: "ArchParser"
-  summary: "Architectural drawing analysis platform for OCR-based architectural drawing management."
+  summary: "The only designer, researcher, and developer on a tool that turns <strong>500+ page drawing sets</strong> into structured metadata. Non-technical users build their own OCR templates, and every extraction shows a confidence score."
   image: "/assets/img/archparser_dashboard1.webp"
   imageAlt: "ArchParser dashboard"
   badges: ["Development", "Claude Code"]
@@ -23,7 +23,10 @@ customCss: slides.css
   <h2 class="text-h2 no-underline">Project Overview</h2>
   <div class="card">
     <p>
-      <span class="text-h6 mr-1">Role:</span>Product Designer &amp; Full-Stack Developer
+      <span class="text-h6 mr-1">Role:</span>Sole Product Designer, Researcher &amp; Full-Stack Developer
+    </p>
+    <p>
+      <span class="text-h6 mr-1">Team:</span>Solo. No second designer, researcher, or developer.
     </p>
     <p>
       <span class="text-h6 mr-1">Type:</span>Personal Project (originally intended as a CAS tool)
@@ -45,25 +48,40 @@ customCss: slides.css
   </ul>
 </section>
 <section>
+  <h2 id="myrole">What I Did Alone</h2>
+  <p class="text-callout">ArchParser had one person on it, so every layer of the product went through me, from the first interview to the last test.</p>
+  <div class="card mb-4">
+    <p>
+      <span class="text-h6 mr-1">Research:</span>I interviewed project planners and managers about how they pulled metadata from drawing sets, then turned what I heard into the requirements, including support for title block layouts that vary by architectural firm.
+    </p>
+    <p>
+      <span class="text-h6 mr-1">Design:</span>I designed the template creator, the confidence and review model, the dashboard, and the drawing review screens, and I kept them consistent with patterns users already knew.
+    </p>
+    <p>
+      <span class="text-h6 mr-1">Build:</span>I built the React and Vite frontend with RadixUI, the NestJS backend, and the OCR pipeline, with Claude Code as a development partner. The backend has 14 test suites with 53 tests, and the frontend and backend share TypeScript types.
+    </p>
+  </div>
+</section>
+<section>
   <h2 id="designdecisions">Key Design Decisions</h2>
   <p class="text-callout">The technical work is summarized further down, but the choices that shaped how people actually use ArchParser were design decisions. Four mattered most.</p>
   <div class="card mb-4">
     <div class="card-body">
       <h3 class="mb-2">1. Let users build templates, not developers</h3>
-      <p>Every OCR template tells the system where to look for a drawing number, title, date, and revision. The alternative was to have developers configure each template. I rejected it for two reasons. Title block layouts vary with file types, architectural firms, and project size, so the number of templates was never going to be small or stable. Projects also move fast, and waiting on a developer for every new layout would have slowed the very projects the tool was meant to help. The visual template creator lets a project manager draw the regions on a sample page and export the template themselves.</p>
+      <p>Every OCR template tells the system where to look for a drawing number, title, date, and revision. The alternative was to have developers configure each template. I rejected it for two reasons. Title block layouts vary with file types, architectural firms, and project size, so the number of templates was never going to be small or stable. Projects also move fast, and waiting on a developer for every new layout would have slowed the very projects the tool was meant to help. The visual template creator lets a project manager draw the regions on a sample page and export the template themselves. Because I was designing and building it, I could ship it as a standalone offline tool instead of writing a spec for someone else to interpret.</p>
     </div>
   </div>
   <div class="card mb-4">
     <div class="card-body">
       <h3 class="mb-2">2. Design for confidence and review, not blind trust</h3>
-      <p>OCR is never perfect on architectural drawings, so I designed the error handling around confidence and the ability to review. Each extraction shows a confidence score out of 100. In practice, when confidence was around 75, users generally proceeded with what the system provided, and they still reviewed a random sample of files to check it. Anything wrong could be corrected inline. The goal was to make a wrong result easy to spot and cheap to fix, and to let users decide how much to trust the output.</p>
+      <p>OCR is never perfect on architectural drawings, so I designed the error handling around confidence and the ability to review. Each extraction shows a confidence score out of 100. In practice, when confidence was around 75, users generally proceeded with what the system provided, and they still reviewed a random sample of files to check it. Anything wrong could be corrected inline. The goal was to make a wrong result easy to spot and cheap to fix, and to let users decide how much to trust the output. Since I owned the whole stack, I could carry that decision from the OCR output through to the inline correction in the review screens.</p>
       <!-- TODO: add a screenshot showing the confidence score in the drawing list or detail view -->
     </div>
   </div>
   <div class="card mb-4">
     <div class="card-body">
       <h3 class="mb-2">3. Consistency over novelty, even with an AI partner</h3>
-      <p>Claude Code suggested changes to button placement and some layouts. I rejected them because they differed from what was already present in the system, and changing familiar patterns would have hurt usability for people who already knew the interface. Claude Code sped up implementation, but judgment about the user's existing context stayed with me.</p>
+      <p>Claude Code suggested changes to button placement and some layouts. I rejected them because they differed from what was already present in the system, and changing familiar patterns would have hurt usability for people who already knew the interface. Claude Code sped up implementation, but with no second designer to review the call, judgment about the user's existing context stayed with me.</p>
     </div>
   </div>
   <div class="card mb-4">
@@ -167,6 +185,7 @@ customCss: slides.css
         <li><strong>Test with realistic data from the start.</strong> The first version worked on small PDFs and failed on real 500+ page sets. Building with realistic data earlier would have surfaced the memory problem sooner.</li>
         <li><strong>Empowering users beat clever engineering.</strong> The visual template creator did more for adoption than any backend optimization, because it removed a bottleneck.</li>
         <li><strong>An AI partner speeds implementation, not judgment.</strong> Claude Code accelerated architecture work, debugging, and boilerplate, but the decisions about consistency and what users already know were mine to make.</li>
+        <li><strong>Owning every layer shortens the loop, and removes the reviewer.</strong> When real-world testing exposed the memory and path problems, I could change the design, the frontend, and the backend in one pass instead of handing a ticket across a team. The tradeoff was that nobody else was checking my work, which is why I leaned on tests and shared types.</li>
       </ol>
     </div>
   </div>
