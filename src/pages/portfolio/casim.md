@@ -39,6 +39,7 @@ eleventyNavigation:
 </section>
 
 <section>
+  <h2>The problem</h2>
   <div class="card">
     <p>
       One question was close to impossible to answer at our company: how did a project's budget compare to its final financials once every work order, change order, and supply markup was counted? All of that information existed in our system. Nothing connected it, so answering took manual assembly across screens, and most people didn't try.
