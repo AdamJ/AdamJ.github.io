@@ -3,7 +3,7 @@ title: 'ArchParser: Architectural Drawing Analysis Platform'
 portfolioOrder: 3
 card:
   title: "ArchParser"
-  summary: "Architectural drawing analysis platform for OCR-based architectural drawing management."
+  summary: "The only designer, researcher, and developer on a tool that turns <strong>500+ page drawing sets</strong> into structured metadata. Non-technical users build their own OCR templates, and every extraction shows a confidence score."
   image: "/assets/img/archparser_dashboard1.webp"
   imageAlt: "ArchParser dashboard"
   badges: ["Development", "Claude Code"]
@@ -26,9 +26,9 @@ heroImage: /assets/img/archparser_dashboard1.webp
 heroAlt: 'ArchParser dashboard showing processed drawings across several jobs'
 confidential: true
 facts:
-  - { label: Role, value: 'Product designer and full-stack developer' }
+  - { label: Role, value: 'Sole product designer, researcher, and full-stack developer' }
   - { label: Timeline, value: '6 to 8 months, kickoff to demo-ready' }
-  - { label: Worked with, value: 'Project planners and managers at Component Assembly Systems, with Claude Code as a development partner' }
+  - { label: Worked with, value: 'Solo, with no second designer, researcher, or developer. Project planners and managers at Component Assembly Systems, with Claude Code as a development partner' }
   - { label: Status, value: 'Demo-ready, built to test and deploy' }
 results:
   - { value: '200+', label: 'Drawings processed in demonstrations' }
@@ -49,6 +49,13 @@ camps:
 <p class="cs-kicker">Step 1 &middot; Context</p>
 <h2>Entering drawing numbers and revision dates by hand was slow and error-prone on 500+ page sets, and no tool handled custom title blocks.</h2>
 <blockquote class="cs-quote"><span class="cs-label">Opportunity</span><p>How might project managers get drawing metadata without typing it, however each firm lays out its title block?</p></blockquote>
+<h3>What I did alone</h3>
+<p>ArchParser had one person on it, so every layer of the product went through me, from the first interview to the last test.</p>
+<div class="cs-assumption">
+<div><span class="cs-label">Research</span><p>I interviewed project planners and managers about how they pulled metadata from drawing sets, then turned what I heard into requirements, including support for title block layouts that vary by architectural firm.</p></div>
+<div><span class="cs-label">Design</span><p>I designed the template creator, the confidence and review model, the dashboard, and the drawing review screens, and kept them consistent with patterns users already knew.</p></div>
+<div><span class="cs-label">Build</span><p>I built the React and Vite frontend with RadixUI, the NestJS backend, and the OCR pipeline, with Claude Code as a development partner. The backend has 14 test suites with 53 tests, and the frontend and backend share TypeScript types.</p></div>
+</div>
 </section>
 <section id="research" class="cs-step cs-band">
 <p class="cs-kicker">Step 2 &middot; Research</p>
@@ -64,11 +71,11 @@ camps:
 <p class="cs-kicker">Step 3 &middot; Key decisions</p>
 <h2>Four decisions shaped how people use ArchParser, and one idea held throughout: get users into their jobs quickly.</h2>
 <div class="cs-decision">
-<div><h3>Users build templates, not developers</h3><p>A visual creator replaced developer-configured templates, so projects never wait on a developer.</p></div>
+<div><h3>Users build templates, not developers</h3><p>A visual creator replaced developer-configured templates, so projects never wait on a developer. Because I was designing and building it, I could ship it as a standalone offline tool instead of writing a spec for someone else to interpret.</p></div>
 <figure class="cs-figure"><img src="/assets/img/archparser_template-creator-loaded.webp" alt="Template creator" width="1200" height="753" loading="lazy" /></figure>
 </div>
 <div class="cs-decision">
-<div><h3>Confidence, not blind trust</h3><p>Each extraction shows a score out of 100 and can be fixed inline.</p></div>
+<div><h3>Confidence, not blind trust</h3><p>Each extraction shows a score out of 100 and can be fixed inline. Since I owned the whole stack, I could carry that decision from the OCR output through to the inline correction in the review screens.</p></div>
 <figure class="cs-figure"><img src="/assets/img/archparser_drawing-details.webp" alt="Drawing details with inline editing" width="1200" height="753" loading="lazy" /></figure>
 </div>
 <div class="cs-decision">
@@ -88,7 +95,7 @@ camps:
 <div class="cs-assumption">
 <div><span class="cs-label">What I assumed</span><p>Claude Code&rsquo;s suggested button placements and layouts might improve the interface.</p></div>
 <div><span class="cs-label">What I found</span><p>They differed from patterns already in the system, and changing familiar patterns would hurt people who knew it.</p></div>
-<div><span class="cs-label">What I did instead</span><p>I kept the existing patterns. Claude Code sped up implementation, and judgment stayed with me.</p></div>
+<div><span class="cs-label">What I did instead</span><p>I kept the existing patterns. Claude Code sped up implementation, and with no second designer to review the call, judgment stayed with me.</p></div>
 </div>
 </section>
 <section id="final" class="cs-step cs-band">
@@ -117,5 +124,6 @@ camps:
 <div class="cs-card"><h3>Test with realistic data from the start</h3><p>Small PDFs worked. Real 500+ page sets failed.</p></div>
 <div class="cs-card"><h3>Empowering users beat clever engineering</h3><p>The template creator did more for adoption than any optimization.</p></div>
 <div class="cs-card"><h3>An AI partner speeds implementation, not judgment</h3><p>Decisions about what users already know stayed with me.</p></div>
+<div class="cs-card"><h3>Owning every layer shortens the loop and removes the reviewer</h3><p>When real-world testing exposed the memory and path problems, I could change the design, frontend, and backend in one pass instead of handing a ticket across a team. The tradeoff was that nobody else was checking my work, which is why I leaned on tests and shared types.</p></div>
 </div>
 </section>
