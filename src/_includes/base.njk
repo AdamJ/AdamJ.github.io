@@ -48,7 +48,7 @@
     <script src="https://kit.fontawesome.com/0ea2a7621c.js" crossorigin="anonymous"></script>
   </head>
   <a rel="me" href="https://mastodon.world/@adamjol" aria-hidden="true" class="display-none">Mastodon</a>
-  <body>
+  <body{% if camps %} class="has-trail"{% endif %}>
     <a href="#main-content" class="skip-link">Skip to main content</a>
       <nav role="navigation" aria-label="Main navigation" class="main-nav" style="bottom: 0 !important;">
         <ul>
@@ -74,6 +74,9 @@
           </li>
         </ul>
       </nav>
+    {%- if camps %}
+    {% include 'trail-progress.njk' %}
+    {%- endif %}
     <main id="main-content">
       {{ content | safe }}
     </main>
@@ -115,6 +118,9 @@
     <script src="{{ '/js/topo.js' | url }}"></script>
     {%- if motion %}
     <script src="{{ '/js/motion.js' | url }}"></script>
+    {%- endif %}
+    {%- if camps %}
+    <script src="{{ '/js/trail.js' | url }}"></script>
     {%- endif %}
   </body>
 </html>

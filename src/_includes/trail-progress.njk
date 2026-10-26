@@ -1,0 +1,37 @@
+{#- Trail progress: camp ticks (real anchor links), a pinned rail hiker on desktop, and a progress track on phones.
+    Opted into with a `camps` list in front matter: [{ id: 'work', label: 'Work' }, ...]. The first camp is the trailhead.
+    js/trail.js adds the moving parts; without JS the ticks are plain links. -#}
+{%- set lastCamp = camps.length - 1 -%}
+{%- set hikerPath -%}
+<svg class="trail-hiker" viewBox="-9 -23 20 26" width="22" height="28" aria-hidden="true" focusable="false">
+  <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+    <line x1="0" y1="-8" x2="-2" y2="0" />
+    <line x1="0" y1="-8" x2="2" y2="0" />
+    <line x1="0" y1="-8" x2="0.6" y2="-16" />
+    <line x1="3.5" y1="-12" x2="6" y2="0" />
+    <rect class="trail-hiker-pack" x="-5.5" y="-16" width="4.5" height="7.5" rx="1.5" stroke="none" />
+    <circle cx="1.2" cy="-19" r="2.6" fill="currentColor" stroke="none" />
+  </g>
+</svg>
+{%- endset -%}
+<div class="trail-ticks" role="navigation" aria-label="Trail camps">
+  <ol>
+    {%- for camp in camps %}
+    <li>
+      <a href="#{{ camp.id }}" data-camp="{{ camp.id }}" aria-label="{{ camp.label }}" title="{{ camp.label }}"><span class="trail-tick" aria-hidden="true"></span></a>
+    </li>
+    {%- endfor %}
+  </ol>
+  <span class="trail-count" data-trail-count data-last="{{ lastCamp }}">Camp 0 / {{ lastCamp }}</span>
+</div>
+<div class="trail-rail" data-trail-rail aria-hidden="true">
+  <span class="trail-rail-line"></span>
+  <span class="trail-rail-fill"></span>
+  <span class="trail-rail-hiker">{{ hikerPath | safe }}</span>
+  <span class="trail-rail-flag"></span>
+</div>
+<div class="trail-track" data-trail-track role="progressbar" aria-label="Trail progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+  <span class="trail-track-line"></span>
+  <span class="trail-track-fill"></span>
+  <span class="trail-track-hiker">{{ hikerPath | safe }}</span>
+</div>
