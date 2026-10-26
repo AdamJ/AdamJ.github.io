@@ -261,6 +261,20 @@
   }
 }
 
+/* Phones: the scene gets a fixed height and the hero reserves that space below
+   the text, so the tagline never runs over the summit, flag, or sun */
+@media (width <= 600px) {
+  .hero-trail {
+    --scene-height: clamp(200px, 30svh, 300px);
+
+    padding-top: clamp(2rem, 6svh, 4rem);
+    padding-bottom: calc(var(--scene-height) + var(--space-md, 1rem));
+  }
+  .hero-scene {
+    height: var(--scene-height);
+  }
+}
+
 @keyframes hero-ridge-rise {
   from {
     opacity: 0;
