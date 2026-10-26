@@ -41,6 +41,9 @@
 
     // Hiker: follows the tip of the trail as the CSS draw animation reveals it.
     // Starts hidden behind the foothills; without JS it stands at the summit.
+    // Once the summit is reached the climb is over for good: the hero gets
+    // `is-summited` (which removes the draw animation in CSS) and the hiker only
+    // ever moves forward, so scrolling can never send it back down the trail.
     var hiker = hero.querySelector('.hero-hiker');
     var figure = hiker && hiker.querySelector('.hero-hiker-figure');
     var trail = hero.querySelector('.hero-trail-path');
@@ -49,7 +52,12 @@
       var length = trail.getTotalLength();
       var lastX = null;
       var walking = false;
+      var summited = false;
+      var furthest = 0;
       var place = function (progress) {
+        // Never walk backwards, even if the browser restarts the draw animation
+        furthest = Math.max(furthest, progress);
+        progress = furthest;
         var pt = trail.getPointAtLength(length * progress);
         // Step aside from the flagpole as the summit gets close
         var x = pt.x - 10 * Math.pow(progress, 6);
@@ -60,22 +68,25 @@
         lastX = x;
       };
       var walk = function () {
-        if (!walking) return;
+        if (!walking || summited) return;
         var offset = parseFloat(window.getComputedStyle(reveal).strokeDashoffset) || 0;
         place(Math.min(Math.max(1 - offset, 0), 1));
         window.requestAnimationFrame(walk);
       };
       place(0);
       reveal.addEventListener('animationstart', function () {
+        if (summited) return;
         walking = true;
         hiker.classList.add('is-walking');
         window.requestAnimationFrame(walk);
       });
       reveal.addEventListener('animationend', function () {
+        summited = true;
         walking = false;
         hiker.classList.remove('is-walking');
         place(1);
         figure.setAttribute('transform', 'scale(1.25)');
+        hero.classList.add('is-summited');
       });
     }
   }

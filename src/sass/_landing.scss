@@ -198,6 +198,12 @@
   .hero-trail-reveal {
     animation: hero-trail-draw 2.4s ease-in-out 1.3s both;
   }
+
+  /* Once the hiker has summited, drop the draw animation so the trail stays
+     fully revealed (base stroke-dashoffset is 0) and cannot replay on scroll */
+  .hero-trail.is-summited .hero-trail-reveal {
+    animation: none;
+  }
   .hero-flag {
     transform-box: fill-box;
     transform-origin: 0 100%;
