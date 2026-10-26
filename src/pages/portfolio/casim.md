@@ -3,7 +3,7 @@ title: 'CASim: Making Years of Inconsistent Construction Data Answerable'
 portfolioOrder: 1
 card:
   title: "CASim: Internal AI Assistant"
-  summary: "Designed and architected an internal AI assistant, built on a custom MCP server, that makes years of inconsistent construction data answerable. Currently in UAT and beta testing."
+  summary: "The only designer, researcher, and front-end developer on an internal AI assistant, built on a custom MCP server, that makes years of inconsistent construction data answerable. Currently in UAT and beta testing."
   image: "/assets/img/casim-dashboard.webp"
   badges: ["AI", "MCP", "Enterprise"]
   group: "Professional"
@@ -24,9 +24,9 @@ heroImage: /assets/img/casim-dashboard.webp
 heroAlt: 'CASim agents dashboard showing 19 agents across 15 domains'
 confidential: true
 facts:
-  - { label: Role, value: 'Creative lead and architect: design, MCP server, agents, prompts, and tooling' }
+  - { label: Role, value: 'Sole designer, researcher, and front-end developer, plus creative lead and architect: MCP server, agents, prompts, and tooling' }
   - { label: Timeline, value: '9 months, kickoff to UAT' }
-  - { label: Worked with, value: 'Executive team on data defaults, development team on data cleanup, IT leadership on the access model' }
+  - { label: Worked with, value: 'Solo on design, research, and front end. Executive team on data defaults, development team on data cleanup after the naming decisions, IT leadership on the access model' }
   - { label: Status, value: 'In UAT and beta testing' }
 results:
   - { value: Answerable, label: 'Budget against final financials, including work orders, change orders, and supply markup' }
@@ -48,6 +48,13 @@ camps:
 <h2>One question was close to impossible to answer: how did a project&rsquo;s budget compare to its final financials?</h2>
 <p>Every work order, change order, and supply markup existed in our system. Nothing connected them, so answering took manual assembly across screens, and most people didn&rsquo;t try.</p>
 <blockquote class="cs-quote"><span class="cs-label">Opportunity</span><p>How might anyone get a trustworthy answer about a project&rsquo;s financials without knowing where the data lives?</p></blockquote>
+<h3>What I did alone</h3>
+<p>I was the only designer, researcher, and front-end developer on CASim, and I also architected the MCP server, agents, prompts, and skills behind it. One person carried the work from the first question to the interface people use every day.</p>
+<div class="cs-assumption">
+<div><span class="cs-label">Research</span><p>I interviewed stakeholders about the question that was nearly impossible to answer, audited years of data to find where names, dimensions, and identifiers had drifted, and tested tool behavior in MCP Inspector and Claude Desktop before judging how it felt in the interface.</p></div>
+<div><span class="cs-label">Design</span><p>I designed how the assistant reasons about project data and the access model that decides what it can reach.</p></div>
+<div><span class="cs-label">Build</span><p>I built the MCP server and the front end of the custom interface. The development team&rsquo;s part was updating the source data, after the naming decisions were made.</p></div>
+</div>
 </section>
 <section id="research" class="cs-step cs-band">
 <p class="cs-kicker">Step 2 &middot; Research</p>
@@ -58,7 +65,7 @@ camps:
 <div class="cs-card"><h3>No shared identifier</h3><p>Several identifiers meant one product, with no link.</p></div>
 </div>
 <blockquote class="cs-quote"><p>An assistant on top of inconsistent data inherits every inconsistency, and it answers confidently regardless.</p></blockquote>
-<p>I worked with 6 project managers to learn how they rebuilt financials by hand.</p>
+<p>I worked with 6 project managers to learn how they rebuilt financials by hand, and audited years of data to find where names, dimensions, and identifiers had drifted.</p>
 </section>
 <section id="decisions" class="cs-step">
 <p class="cs-kicker">Step 3 &middot; Key decisions</p>
@@ -76,7 +83,7 @@ camps:
 <p>A working server let IT leadership see exactly what the assistant could and couldn&rsquo;t reach.</p>
 </div>
 </div>
-<p>The cleanup drew fair pushback about what might be lost. Early results answered it. I also backtracked more than once to cover gaps the first architecture missed.</p>
+<p>The cleanup drew fair pushback about what might be lost. Early results answered it. I also backtracked more than once to cover gaps the first architecture missed. The research behind that call was mine, so explaining it and answering for what the cleanup might miss was my job too.</p>
 <div class="cs-assumption">
 <div><span class="cs-label">What I assumed</span><p>A terminology file mapping every variant to one meaning was the faster, lower-risk path.</p></div>
 <div><span class="cs-label">What I found</span><p>Every new variant would need a new mapping, and answers would only be as good as the last update.</p></div>
@@ -86,6 +93,7 @@ camps:
 <section id="final" class="cs-step cs-band">
 <p class="cs-kicker">Step 4 &middot; Final design</p>
 <h2>One server, three clients: Claude Desktop for daily use, MCP Inspector for testing, and a custom interface for everyone else.</h2>
+<p>With design, research, and the front end all in my hands, a bad answer could be traced to the tool, the prompt, or the data without waiting on a handoff.</p>
 <figure class="cs-figure"><img src="/assets/img/casim-dashboard.webp" alt="CASim agents dashboard" width="1200" height="782" loading="lazy" /><figcaption>Agents grouped by domain, with search and usage totals.</figcaption></figure>
 <figure class="cs-figure"><img src="/assets/img/casim-architecture.svg" alt="Three clients connect to one MCP server, which gates access to four project data sources" width="760" height="420" loading="lazy" /><figcaption>One server behind three clients, so a tool can be checked in isolation before judging how it feels in the interface.</figcaption></figure>
 </section>
@@ -104,6 +112,7 @@ camps:
 <div class="cs-card"><h3>Research before building</h3><p>Extra time up front would have avoided the backtracking.</p></div>
 <div class="cs-card"><h3>Expect the data to push back</h3><p>In a 20+ year system, drift is certain.</p></div>
 <div class="cs-card"><h3>Fix the source, not the symptom</h3><p>The harder path made the answers trustworthy.</p></div>
+<div class="cs-card"><h3>Working alone sharpened the cost</h3><p>Nobody else was positioned to catch the gaps in my research, so the checks had to live in how I worked. That is why testing each tool in isolation in MCP Inspector mattered so much.</p></div>
 </div>
 <p>CASim is in UAT and beta testing. I will update this page as adoption results come in.</p>
 </section>
