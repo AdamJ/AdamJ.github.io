@@ -3,20 +3,21 @@ layout: base.njk
 motion: true
 camps:
   - { id: top, label: Trailhead }
-  - { id: about, label: About }
   - { id: work, label: Work }
-  - { id: testimonials, label: Colleagues }
-  - { id: opensource, label: Open source }
+  - { id: principles, label: How I work }
+  - { id: proof, label: Proof }
+  - { id: about, label: About }
+  - { id: summit, label: Summit }
 ---
 
 <section id="top" class="hero hero-trail" aria-labelledby="hero-heading">
   {% include 'hero-scene.njk' %}
   <div class="hero-content">
-    <h1 id="hero-heading">Adam Jolicoeur</h1>
-    <p>Product designer building AI-native products, from interaction patterns to the systems that govern them. 15+ years at AWS, Red Hat, and high-growth B2B.</p>
-    <p class="text-body hero-tagline">Enterprise product designer. Systems thinker. Builder.</p>
+    <p class="hero-kicker">Adam Jolicoeur &middot; Product designer</p>
+    <h1 id="hero-heading" class="hero-statement">I design how people review, trust, and correct what AI does.</h1>
+    <p>Product designer with 15 years in enterprise software at AWS and Red Hat, now designing AI assistants for enterprise teams.</p>
   </div>
-  <a class="hero-cue" href="#about">
+  <a class="hero-cue" href="#work">
     <span>Start the hike</span>
     <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
   </a>
@@ -25,191 +26,115 @@ camps:
     <svg class="hero-play-icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path d="M4 2l10 6-10 6z" fill="currentColor" /></svg>
   </button>
 </section>
-<section id="about" aria-labelledby="about-heading">
-  <h2 id="about-heading" class="text-h2 no-underline" data-reveal>About Me</h2>
-  <div class="card about-card" data-reveal>
-    <div class="card-body">
-      <p class="text-body-lg text-center">Lead Product designer building AI-native products, from interaction patterns to the systems that govern them.</p>
-      <p>15+ years across AWS, Red Hat, and high-growth B2B, including an internal AI assistant, MCP architecture, and design systems used on 100+ construction projects.</p>
-      <p>
-        What makes me different:
-        <ul>
-          <li>I code production-quality prototypes: I build functional prototypes in HTML/CSS/React, which means my designs are validated with real data and ready for engineering handoff. This bridges the gap between design and development, accelerating shipping and reducing costly miscommunication.</li>
-          <li>I think like a PM: I've managed product roadmaps, prioritized features, and led cross-functional teams. This dual perspective helps me balance user needs with business objectives and collaborate effectively with product managers and stakeholders.</li>
-          <li>Former PatternFly core contributor: I was a core contributor to PatternFly (2016-2021), Red Hat's open-source design system with 20,000+ GitHub stars, used across OpenShift, Ansible, and 50+ products serving millions of developers worldwide.</li>
-        </ul>
-      </p>
-      <p>
-        <strong>Currently:</strong> Lead Product Designer at Component Assembly Systems
-        <br />
-        <strong>Previously:</strong> Amazon Web Services, Red Hat, and high-growth B2B companies
-      </p>
-    </div>
-    <div class="card-footer">
-      <a class="btn btn-secondary" href="{{ '/about/adam' | url }}" alt="Link to learn more about Adam">Learn More</a>
-    </div>
-  </div>
-</section>
-<section id="work" aria-labelledby="work-heading">
-  <h2 id="work-heading" class="text-h2 no-underline" data-reveal>Featured Work</h2>
-  <div class="work-grid">
-    <article class="showcase-large" data-reveal>
-      <img src="{{ '/assets/img/casim-dashboard.webp' | url }}" alt="CASim dashboard screen" class="showcase-image" />
-      <div class="showcase-content">
-        <h3>CASim: Internal AI Assistant</h3>
-        <p>Designed and architected an internal AI assistant, built on a custom MCP server, that makes years of inconsistent construction data answerable. Currently in UAT and beta testing.</p>
-        <div class="badges mb-2">
-          <span class="badge">AI</span><span class="badge">MCP</span><span class="badge">Enterprise</span>
-        </div>
-        <a href="{{ '/portfolio/casim' | url }}" class="btn btn-primary" alt="View CASim case study">View Case Study</a>
+
+<section id="work" class="camp" aria-labelledby="work-heading">
+  <p class="camp-kicker">Camp 1 &middot; Selected work</p>
+  <h2 id="work-heading" class="text-h2 no-underline">Three projects, from AI to enterprise scale</h2>
+  <div class="stack">
+    <article class="stack-card" style="--i: 0" data-reveal>
+      <img src="{{ '/assets/img/casim-dashboard.webp' | url }}" alt="CASim agents dashboard" width="1200" height="800" loading="lazy" />
+      <div class="stack-body">
+        <p class="camp-label">AI and agent design</p>
+        <h3><a href="{{ '/portfolio/casim' | url }}">CASim: making years of inconsistent construction data answerable</a></h3>
+        <p>Designed an AI assistant that answers project questions from years of messy construction records.</p>
+        <ul class="chips"><li>Role: creative lead and architect</li><li>Outcome: users ask, the system finds</li></ul>
       </div>
     </article>
-    <article class="showcase-large" data-reveal>
-      <img src="{{ '/assets/img/timetracker-loading-state.webp' | url }}" alt="Weekly AI-powered work summary loading screen" class="showcase-image" />
-        <div class="showcase-content">
-          <h3>Weekly AI-Powered Work Summary</h3>
-          <p>After archiving my work entries for the week, I found myself running a second, separate tool to generate a weekly summary. Now, I start the day, capture tasks, review, and archive, then summarize using AI.</p>
-          <div class="badges mb-2">
-            <span class="badge">AI</span><span class="badge">Productivity</span>
-          </div>
-          <a href="{{ '/portfolio/timetracker' | url }}" class="btn btn-primary" alt="View weekly report ai summary generator case study">View Case Study</a>
-        </div>
-      </article>
-    </div>
-    <div class="work-grid">
-      <div class="small-showcase-cards" data-reveal-group>
-        <article class="card-flex showcase-small">
-          <h4>ArchParser</h4>
-          <p>Architectural drawing analysis platform for OCR-based architectural drawing analysis management.</p>
-          <div class="badges mb-2">
-            <span class="badge">Development</span><span class="badge">Claude Code</span>
-          </div>
-          <a class="btn btn-outline btn-sm" href="{{ '/portfolio/archparser' | url }}">View Case Study</a>
-        </article>
-        <article class="card-flex showcase-small">
-          <h4>Task Management System</h4>
-          <p>Lead designer for Task-it, Amazon's internal task management platform. Consolidated 3-4 disparate tracking tools into one unified system, reaching <strong>500 daily active users</strong> across AWS <strong>within 18 months</strong> of launch.</p>
-          <div class="badges mb-2">
-            <span class="badge">AWS</span><span class="badge">500+ Users</span><span class="badge">Enterprise</span>
-          </div>
-          <a class="btn btn-outline btn-sm" href="{{ '/portfolio/task-it' | url }}">View Case Study</a>
-        </article>
-        <article class="card-flex showcase-small">
-          <h4>Component Library</h4>
-          <p>Built comprehensive design system for construction management software spanning web and iOS applications. Created design tokens, component documentation, and prototypes that accelerated development cycles by 25%.</p>
-          <div class="badges mb-2">
-            <span class="badge">Library</span><span class="badge">Design Tokens</span>
-          </div>
-          <a class="btn btn-outline btn-sm" href="{{ '/portfolio/component-library' | url }}">View Case Study</a>
-        </article>
-        <article class="card-flex showcase-small">
-          <h4>Application Lifecycle Management</h4>
-          <p>Designed enterprise project management for OpenShift teams at Red Hat. Created seamless IDE integration and workflow tools for developers managing complex Kubernetes deployments.</p>
-          <div class="badges mb-2">
-            <span class="badge">Red Hat</span><span class="badge">Platforms</span>
-          </div>
-          <a href="{{ '/portfolio/alm' | url }}" class="btn btn-outline btn-sm" alt="View application lifecycle planning case study">View Case Study</a>
-        </article>
+    <article class="stack-card" style="--i: 1" data-reveal>
+      <img src="{{ '/assets/img/task-it_product.webp' | url }}" alt="Task-it task management product" width="1200" height="800" loading="lazy" />
+      <div class="stack-body">
+        <p class="camp-label">Enterprise scale</p>
+        <h3><a href="{{ '/portfolio/task-it' | url }}">Task-it: one system instead of three, at 500 daily users</a></h3>
+        <p>Unified three internal systems into a single workflow.</p>
+        <ul class="chips"><li>Role: lead designer, AWS</li><li>Outcome: 500 daily active users</li></ul>
       </div>
-    </div>
+    </article>
+    <article class="stack-card" style="--i: 2" data-reveal>
+      <img src="{{ '/assets/img/archparser_desktop_2.webp' | url }}" alt="ArchParser drawing analysis and review" width="1200" height="800" loading="lazy" />
+      <div class="stack-body">
+        <p class="camp-label">OCR and document AI</p>
+        <h3><a href="{{ '/portfolio/archparser' | url }}">ArchParser: one source of truth for plan data, built and ready to deploy</a></h3>
+        <p>Turned scanned plans into searchable, manageable data, designed and built end to end.</p>
+        <ul class="chips"><li>Role: product designer and full-stack developer</li><li>Status: ready to test and deploy</li></ul>
+      </div>
+    </article>
+  </div>
+  <div class="more-work" aria-labelledby="more-work-heading">
+    <p id="more-work-heading" class="camp-kicker">More work</p>
+    <ul class="more-grid" data-reveal-group>
+      <li><a class="more-tile" href="{{ '/portfolio/component-library' | url }}"><span class="camp-label">Design systems</span><strong>Component library for construction software</strong></a></li>
+      <li><a class="more-tile" href="{{ '/portfolio/alm' | url }}"><span class="camp-label">Enterprise</span><strong>Application lifecycle management at Red Hat</strong></a></li>
+      <li><a class="more-tile" href="{{ '/portfolio/timetracker' | url }}"><span class="camp-label">AI</span><strong>Weekly AI-powered work summary</strong></a></li>
+      <li><span class="more-tile more-tile-soon"><span class="camp-label">Coming later</span><strong>trailpeakdesign</strong></span></li>
+    </ul>
   </div>
 </section>
-<section id="testimonials" aria-labelledby="callouts-heading">
-  <h2 id="callouts-heading" data-reveal>What Colleagues Say</h2>
-  <div class="callouts-grid" data-reveal-group>
-    <blockquote class="callout">
-      <p class="callout-text">[Adam] is self-driven and keeps stakeholders (Project manager, Development manager, Engineers) aligned on UX solutions...design proposals are spot-on and considerate of [our] diverse set of users.</p>
-      <cite>
-        <span class="callout-role">Product Owner</span>
-      </cite>
-    </blockquote>
-    <blockquote class="callout">
-      <p class="callout-text">Adam is highly engaged across 6+ major features at any given time and is somehow never the blocker. Designers like this don't come around often.</p>
-      <cite>
-        <span class="callout-role">Senior Developer Engineer, AWS</span>
-      </cite>
-    </blockquote>
-    <blockquote class="callout">
-      <p class="callout-text">...What stood out to me while working with Adam was his positivity and confidence through every obstacle, pivot, and deadline. He is a true team player.</p>
-      <cite>
-        <span class="callout-role">Front-End Engineer</span>
-      </cite>
-    </blockquote>
-  </div>
+
+<section id="principles" class="camp camp-band" aria-labelledby="principles-heading">
+  <p class="camp-kicker">Camp 2 &middot; How I work</p>
+  <h2 id="principles-heading" class="text-h2 no-underline principle-quote" data-reveal>Gate the connectors and data scope, not the creativity.</h2>
+  <ul class="principles" data-reveal-group>
+    <li><h3>Show the work</h3><p>People trust an answer when they can see how it was produced.</p></li>
+    <li><h3>Make correcting cheap</h3><p>A wrong answer is survivable when fixing it takes seconds and the fix sticks.</p></li>
+    <li><h3>Ask, don't hunt</h3><p>Users should state what they need, not learn where the data lives.</p></li>
+  </ul>
 </section>
-<section id="opensource" aria-labelledby="opensource-heading">
-  <h2 id="opensource-heading" data-reveal>Open Source Contributions</h2>
-  <div>
-    <p class="text-body-lg" style="margin-bottom: 2rem;">Beyond my professional work, I actively contribute to the open source community. My contributions span developer tools, design systems, and infrastructure projects that support the broader tech ecosystem.</p>
-    <div class="about-grid" data-reveal-group>
-      <div class="card-flex showcase-small">
-        <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-          <span style="font-size: 1.5rem;">🚀</span>
-          Tools and Utilities
-        </h4>
-        <p class="text-body-sm" style="margin-bottom: 0.75rem;">
-          Developed and maintained several open source developer tools that enhance productivity and streamline workflows for both designers and software engineers.
-        </p>
-        <div class="badges">
-          <span class="badge">Tooling</span>
-          <span class="badge">DX</span>
-        </div>
-          <a href="https://github.com/AdamJ/TimeTrackerPro" alt="Link to the Timetraked repository" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer" style="margin-top: 0.5rem;">Timetraked</a>
-      </div>
-      <div class="card-flex showcase-small">
-        <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-          <span style="font-size: 1.5rem;">🔧</span>
-          PatternFly
-        </h4>
-        <p class="text-body-sm" style="margin-bottom: 0.75rem;">
-          Core contributor to Red Hat's professional design system (2016-2021). Designed accessible, enterprise-grade components for the open-source system now used across OpenShift, Ansible, and 50+ enterprise products <strong>(20,000+ GitHub stars)</strong>.
-        </p>
-        <div class="badges">
-          <span class="badge">HTML</span>
-          <span class="badge">CSS</span>
-          <span class="badge">JavaScript</span>
-          <span class="badge">A11y</span>
-        </div>
-        <div class="row button-row">
-          <a href="https://github.com/patternfly/patternfly/commits/main/?author=AdamJ" alt="Link to my contributions to the PatternFly Core project" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer" style="margin-top: 0.5rem;">PatternFly Core</a>
-          <a href="https://github.com/patternfly/patternfly-org/commits/main/?author=AdamJ" alt="Link to my contributions to the PatternFly.org project" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer" style="margin-top: 0.5rem;">PatternFly.org</a>
-        </div>
-      </div>
-      <div class="card-flex showcase-small">
-        <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-          <span style="font-size: 1.5rem;">🎮</span>
-          Apps and Games
-        </h4>
-        <p class="text-body-sm" style="margin-bottom: 0.75rem;">
-          Created several open source applications and games that showcase innovative use of web technologies, focusing on user engagement and interactive experiences.
-        </p>
-        <div class="badges">
-          <span class="badge">Tooling</span>
-          <span class="badge">DX</span>
-          <span class="badge">Games</span>
-          <span class="badge">Apps</span>
-        </div>
-        <a href="https://github.com/AdamJ/game-tracker" alt="Link to the Game Tracker repository" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer" style="margin-top: 0.5rem;">Game Tracker</a>
-      </div>
-      <div class="card-flex showcase-small">
-        <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-          <span style="font-size: 1.5rem;">📚</span>
-          Documentation
-        </h4>
-        <p class="text-body-sm" style="margin-bottom: 0.75rem;">Regular contributor to open source documentation, helping make complex technical concepts more accessible to developers.</p>
-        <div class="badges">
-          <span class="badge">Documentation</span>
-          <span class="badge">Community</span>
-        </div>
-        <!-- <div class="row button-row">
-          <a href="https://6903b2381f768ce7c6da402a-jdnoovaaei.chromatic.com/?path=/docs/introduction--docs" alt="Link to my contributions to the CAS Storybook" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer" style="margin-top: 0.5rem;">CAS Storybook</a>
-        </div> -->
-      </div>
-    </div>
-    <div class="text-center mt-4">
-      <a href="https://github.com/AdamJ" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-        View GitHub Profile
+
+<section id="proof" class="camp" aria-labelledby="proof-heading">
+  <p class="camp-kicker">Camp 3 &middot; Proof</p>
+  <h2 id="proof-heading" class="visually-hidden">Outcomes</h2>
+  <ul class="proof-grid" data-reveal-group>
+    <li>
+      <a class="proof-card" href="{{ '/portfolio/task-it' | url }}">
+        <span class="proof-number">500</span>
+        <span class="camp-label">Daily active users</span>
+        <span>Three or four tracking tools became one platform, reaching 500 daily users within 18 months of launch.</span>
+        <span class="proof-link">AWS &middot; Task-it &rarr;</span>
       </a>
+    </li>
+    <li>
+      <a class="proof-card" href="{{ '/portfolio/component-library' | url }}">
+        <span class="proof-number">25%</span>
+        <span class="camp-label">Faster development</span>
+        <span>Design tokens and documented components cut development cycles across web and iOS.</span>
+        <span class="proof-link">Component library &rarr;</span>
+      </a>
+    </li>
+    <li>
+      <a class="proof-card" href="{{ '/portfolio/casim' | url }}">
+        <span class="proof-number">UAT</span>
+        <span class="camp-label">Now in beta testing</span>
+        <span>Users stopped learning where data lives and started asking questions. The assistant finds the answers.</span>
+        <span class="proof-link">CASim &rarr;</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<section id="about" class="camp camp-band" aria-labelledby="about-heading">
+  <p class="camp-kicker">Camp 4 &middot; About and Brimfield Labs</p>
+  <div class="about-camp">
+    <div>
+      <h2 id="about-heading" class="text-h2 no-underline">I started by fixing technology, then wanted to build it.</h2>
+      <p class="text-body-lg">I began on a help desk, moved into software engineering, and found UX design at a startup. That path is why I still ship working prototypes alongside the designs, now in Claude Code every day. I was a core contributor to PatternFly at Red Hat and designed Task-it at AWS. Outside of work I build local-first apps as Brimfield Labs, because I like software that keeps your data yours.</p>
+      <ul class="app-tiles" data-reveal-group>
+        <li><a class="app-tile" href="{{ '/portfolio/soccertracker' | url }}"><strong>Brimfield Soccer</strong><span>A local-only coaching notebook for volunteer rec coaches.</span></a></li>
+        <li><a class="app-tile" href="{{ '/apps/taskstat-privacy' | url }}"><strong>TaskStat</strong><span>A privacy-first task manager, on the App Store.</span></a></li>
+        <li><a class="app-tile" href="{{ '/portfolio/timetracker' | url }}"><strong>Timetraked</strong><span>Time tracking as a desktop app and a web PWA.</span></a></li>
+      </ul>
+      <p><a class="btn btn-secondary" href="{{ '/about/adam' | url }}">More about me</a></p>
     </div>
   </div>
+</section>
+
+<section id="summit" class="camp summit" aria-labelledby="summit-heading">
+  <p class="camp-kicker">Summit &middot; Contact</p>
+  <h2 id="summit-heading" class="text-h2 no-underline">Building AI people can trust? Let&rsquo;s talk.</h2>
+  <p class="summit-actions">
+    {%- if meta.email != "" %}
+    <a class="btn btn-primary" href="mailto:{{ meta.email }}">Email me</a>
+    {%- endif %}
+    <a class="btn btn-outline" href="{{ '/about/resume' | url }}">Download resume</a>
+    <a class="summit-top" href="#top">Back to trailhead &uarr;</a>
+  </p>
 </section>

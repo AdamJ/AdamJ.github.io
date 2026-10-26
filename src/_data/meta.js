@@ -2,6 +2,7 @@ module.exports = {
   env: process.env.ELEVENTY_ENV,
   url: process.env.URL || "http://localhost:8080",
   siteName: "Adam Jolicoeur",
+  email: "", // contact address for the "Email me" button; the button stays hidden until this is set
   siteDescription: "Product designer building AI-native products, from interaction patterns to the systems that govern them.",
   siteURL: "https://www.adamjolicoeur.com",
   authorName: "Adam J. Jolicoeur",
