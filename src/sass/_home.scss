@@ -304,3 +304,22 @@
     position: static;
   }
 }
+
+/* Motion: styled only when motion.js runs and reduced motion is not requested */
+@media (prefers-reduced-motion: no-preference) {
+  .quote-word {
+    color: var(--earth-stone-light, #968a80);
+    transition: color 200ms ease;
+  }
+  .quote-word.is-lit {
+    color: var(--earth-dark);
+  }
+  .stack-card {
+    transform-origin: top center;
+    scale: calc(1 - 0.04 * var(--stack-p, 0));
+    filter: brightness(calc(1 - 0.06 * var(--stack-p, 0)));
+  }
+  .app-tile {
+    transition: transform 150ms ease, box-shadow 150ms ease;
+  }
+}

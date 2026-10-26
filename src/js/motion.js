@@ -179,6 +179,106 @@
     }
   }
 
+  // Home camp effects: quote words, count-up numbers, tile tilt, stacked cards
+  var frame = function (fn) {
+    var queued = false;
+    return function () {
+      if (queued) return;
+      queued = true;
+      window.requestAnimationFrame(function () { queued = false; fn(); });
+    };
+  };
+
+  // Quote words move from muted to full ink as the block crosses the viewport center
+  var quote = document.querySelector('.principle-quote');
+  if (quote) {
+    var words = quote.textContent.trim().split(/\s+/);
+    quote.setAttribute('aria-label', words.join(' '));
+    quote.textContent = '';
+    var spans = words.map(function (word, i) {
+      var span = document.createElement('span');
+      span.className = 'quote-word';
+      span.setAttribute('aria-hidden', 'true');
+      span.textContent = word + (i < words.length - 1 ? ' ' : '');
+      quote.appendChild(span);
+      return span;
+    });
+    var paintQuote = function () {
+      var rect = quote.getBoundingClientRect();
+      var vh = window.innerHeight;
+      // 0 when the block enters near the bottom, 1 once it passes the center
+      var p = Math.min(Math.max((vh * 0.9 - rect.top) / (vh * 0.9 - vh * 0.45), 0), 1);
+      spans.forEach(function (span, i) {
+        span.classList.toggle('is-lit', p * spans.length > i);
+      });
+    };
+    window.addEventListener('scroll', frame(paintQuote), { passive: true });
+    window.addEventListener('resize', frame(paintQuote));
+    paintQuote();
+  }
+
+  // Each proof number counts up once when it first scrolls into view
+  var counters = Array.prototype.slice.call(document.querySelectorAll('.proof-number'));
+  var countUp = function (el) {
+    var match = el.textContent.trim().match(/^(\d+)(.*)$/);
+    if (!match) return;
+    var target = parseInt(match[1], 10);
+    var suffix = match[2];
+    var start = null;
+    var step = function (now) {
+      if (start === null) start = now;
+      var t = Math.min((now - start) / 600, 1);
+      el.textContent = Math.round(target * (1 - Math.pow(1 - t, 3))) + suffix;
+      if (t < 1) window.requestAnimationFrame(step);
+    };
+    el.textContent = '0' + suffix;
+    window.requestAnimationFrame(step);
+  };
+  if (counters.length && 'IntersectionObserver' in window) {
+    var countObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        countObserver.unobserve(entry.target);
+        countUp(entry.target);
+      });
+    }, { threshold: 0.6 });
+    counters.forEach(function (el) { countObserver.observe(el); });
+  }
+
+  // App tiles tilt up to 4 degrees toward the pointer (not for keyboard focus)
+  if (window.matchMedia('(hover: hover)').matches) {
+    document.querySelectorAll('.app-tile').forEach(function (tile) {
+      tile.addEventListener('pointermove', function (event) {
+        var rect = tile.getBoundingClientRect();
+        var x = (event.clientX - rect.left) / rect.width - 0.5;
+        var y = (event.clientY - rect.top) / rect.height - 0.5;
+        tile.style.transform = 'perspective(600px) rotateX(' + (-y * 8).toFixed(2) + 'deg) rotateY(' + (x * 8).toFixed(2) + 'deg)';
+      });
+      tile.addEventListener('pointerleave', function () { tile.style.transform = ''; });
+    });
+  }
+
+  // Pinned work cards scale and dim a little as the next card arrives
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.stack-card'));
+  if (cards.length > 1) {
+    var paintStack = function () {
+      if (window.matchMedia('(width <= 900px)').matches) {
+        cards.forEach(function (card) { card.style.setProperty('--stack-p', '0'); });
+        return;
+      }
+      cards.forEach(function (card, i) {
+        var next = cards[i + 1];
+        if (!next) return;
+        var distance = next.getBoundingClientRect().top - card.getBoundingClientRect().top;
+        var p = 1 - Math.min(Math.max(distance / card.offsetHeight, 0), 1);
+        card.style.setProperty('--stack-p', p.toFixed(3));
+      });
+    };
+    window.addEventListener('scroll', frame(paintStack), { passive: true });
+    window.addEventListener('resize', frame(paintStack));
+    paintStack();
+  }
+
   // Scroll reveals: single elements and staggered groups
   if (!('IntersectionObserver' in window)) return;
 
