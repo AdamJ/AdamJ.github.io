@@ -1,0 +1,40 @@
+---
+layout: base.njk
+---
+
+{#- Six-step case study. Front matter: eyebrow, headline, deck, heroImage, heroAlt, facts [{label,value}], results [{value,label}], confidential, camps.
+    The body holds the step sections: <section id="context" class="cs-step">. Camps drive the trail progress ticks. -#}
+{%- if heroImage %}
+<section class="cs-hero" aria-label="Project hero">
+  <figure>
+    <img src="{{ heroImage | url }}" alt="{{ heroAlt }}" width="1600" height="1000" fetchpriority="high" />
+  </figure>
+</section>
+{%- endif %}
+
+<section id="top" class="cs-top" aria-labelledby="cs-headline">
+  <p class="cs-eyebrow">{{ eyebrow }}</p>
+  <h1 id="cs-headline" class="cs-headline">{{ headline }}</h1>
+  <p class="cs-deck">{{ deck }}</p>
+  {%- if facts %}
+  <dl class="cs-facts">
+    {%- for fact in facts %}
+    <div><dt>{{ fact.label }}</dt><dd>{{ fact.value }}</dd></div>
+    {%- endfor %}
+  </dl>
+  {%- endif %}
+  {%- if results %}
+  <ul class="cs-results">
+    {%- for r in results %}
+    <li><span class="cs-result-value">{{ r.value }}</span><span>{{ r.label }}</span></li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
+  {%- if confidential %}<p class="cs-note">Some details are omitted for confidentiality.</p>{%- endif %}
+</section>
+
+<content{% if motion %} data-reveal-auto{% endif %}>
+  {{ content | safe }}
+</content>
+
+{% include "case-study-nav.njk" %}
