@@ -1,9 +1,15 @@
 ---
 layout: base.njk
 motion: true
+camps:
+  - { id: top, label: Trailhead }
+  - { id: about, label: About }
+  - { id: work, label: Work }
+  - { id: testimonials, label: Colleagues }
+  - { id: opensource, label: Open source }
 ---
 
-<section class="hero hero-trail" aria-labelledby="hero-heading">
+<section id="top" class="hero hero-trail" aria-labelledby="hero-heading">
   {% include 'hero-scene.njk' %}
   <div class="hero-content">
     <h1 id="hero-heading">Adam Jolicoeur</h1>
