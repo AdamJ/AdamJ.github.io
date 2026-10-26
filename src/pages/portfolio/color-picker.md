@@ -1,5 +1,4 @@
 ---
-layout: markdown.njk
 title: 'Color Picker'
 portfolioOrder: 7
 card:
@@ -15,91 +14,54 @@ eleventyNavigation:
   key: CaseStudies
   parent: CaseStudies
   order: 3
-containers: true
+layout: case-study.njk
+motion: true
+eyebrow: 'Case study · Accessibility and components'
+headline: 'A color picker is not accessible by nature, so I paired WCAG-compliant colors with patterns and icons.'
+deck: 'An accessible color picker for the design system, so color is never the only way to tell labels apart.'
+heroImage: /assets/img/colorPalette.webp
+heroAlt: 'The color palette for the accessible color picker'
+facts:
+  - { label: Role, value: 'Designer' }
+  - { label: Stack, value: 'Figma, CSS, React library' }
+  - { label: Status, value: 'Launched' }
+results:
+  - { value: '44', label: 'Color combinations meeting WCAG AA' }
+  - { value: '18', label: 'Of those also meeting WCAG AAA' }
+  - { value: 'Launched', label: 'To production, with follow-up design and testing planned' }
+camps:
+  - { id: top, label: Trailhead }
+  - { id: context, label: Context }
+  - { id: decisions, label: Key decisions }
+  - { id: final, label: Final design }
+  - { id: impact, label: Impact }
 ---
+<section id="context" class="cs-step">
+<p class="cs-kicker">Step 1 &middot; Context</p>
+<h2>One of the most up-voted feature requests had a built-in problem: color alone cannot carry meaning.</h2>
+<p>A color picker is not accessible by nature. The goal of this component was to let users choose colors for labels, and to offer alternatives such as patterns and icons.</p>
+<blockquote class="cs-quote"><span class="cs-label">Opportunity</span><p>How might label colors stay distinguishable for everyone, whatever they can see?</p></blockquote>
+</section>
 
-:::section
+<section id="decisions" class="cs-step cs-band">
+<p class="cs-kicker">Step 2 &middot; Key decisions</p>
+<h2>I verified every color against light and dark backgrounds and started with the most ubiquitous component, labels.</h2>
+<p>I chose a base set of colors from the design system palette. Each was checked against a light background (#ffffff), a dark background (#010101), and multiple layers.</p>
+<blockquote class="cs-quote"><p>In total, 44 combinations met WCAG AA, with 18 meeting WCAG AAA.</p></blockquote>
+<figure class="cs-figure"><img src="/assets/img/colorPalette.webp" alt="The verified color palette" loading="lazy" /></figure>
+<p>With the PM and development team, we agreed labels were the best place to start, since they are the most common across the system.</p>
+<figure class="cs-figure"><img src="/assets/img/colorPalette01.webp" alt="Where labels are used in the product" loading="lazy" /></figure>
+</section>
 
-## Project Overview
+<section id="final" class="cs-step">
+<p class="cs-kicker">Step 3 &middot; Final design</p>
+<h2>A prototype environment let us test the new labels in real time without exposing unfinished work to production users.</h2>
+<p>To compare the current label scheme with the new component, I worked with the development team on a prototype environment. I tested the interactions and visuals there, and tested the component with users.</p>
+<figure class="cs-figure"><img src="/assets/img/colorPalette02.webp" alt="Before and after comparison of labels" loading="lazy" /></figure>
+</section>
 
-> An accessible color picker for the design system that pairs WCAG-compliant colors with patterns and icons, so color is never the only way to tell labels apart.
-
-:::card
-
-**ROLE**: Designer
-
-**STACK**: Figma, CSS, React library
-
-**STATUS**: Launched
-
-:::
-
-::::section
-
-## Introduction
-
-A color picker is not accessible by nature, so the goal of this component design was to provide a solution that not only allowed users to select colors for labels, but also provide alternatives such as patterns and icons.
-
-<div class="card">
-  <div class="card-body">
-    <img src="{{ '/assets/img/colorPalette.webp' | url }}" alt="Image of the color palette" />
-  </div>
-</div>
-
-::::
-
-::::section
-
-## Getting Started
-
-To start, a basic set of colors were chosen from the available color palette (as defined in the design system). Each color was verified against a light background (`#ffffff`) and a dark background (`#010101`), as well as against multiple layers.
-
-> In total, forty-four (44) combinations met **WCAG AA** compliance, with eighteen (18) meeting **WCAG AAA** compliance.
-
-<div class="card">
-  <div class="card-body">
-    <img src="{{ '/assets/img/colorPalette.webp' | url }}" alt="Image of the color palette" />
-  </div>
-</div>
-
-::::
-
-::::section
-
-## Next Steps
-
-After the colors had been established, I worked with the PM and Dev team to determine the first components to test these with.
-
-> It was determined that **Labels** would be the best place to start, as they were the most ubiquitous across the system.
-
-<div class="card">
-  <div class="card-body">
-    <img src="{{ '/assets/img/colorPalette01.webp' | url }}" alt="Image showing where labels are used" />
-  </div>
-</div>
-
-::::
-
-::::section
-
-## Comparisons and Testing
-
-Once the basic levels had been configured, I needed to compare the current label coloring scheme to what the new component provided. This required working with the development team to create a prototype environment that allowed the component to be used in real-time without surfacing the in-progress work to the production users.
-
-<div class="card">
-  <div class="card-body">
-    <img src="{{ '/assets/img/colorPalette02.webp' | url }}" alt="Image comparing before and after labels" />
-  </div>
-</div>
-
-::::
-
-:::section
-
-## Findings
-
-Once the prototype was up and running, I was able to test out the interactions, visuals, and test the new component with users.
-
-The color picker launched to production. The findings from this round also fed follow-up work: another round of design and testing.
-
-::::
+<section id="impact" class="cs-step cs-band">
+<p class="cs-kicker">Step 4 &middot; Impact</p>
+<h2>The color picker launched to production, and the findings fed another round of design and testing.</h2>
+<p>Measured results are not available for this page yet. What I can say is that the component shipped, and the findings from this round became follow-up work.</p>
+</section>
