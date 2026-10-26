@@ -19,6 +19,7 @@
   var count = ticks.querySelector('[data-trail-count]');
   var last = links.length - 1;
   var track = document.querySelector('[data-trail-track]');
+  var footer = document.querySelector('footer');
   var targets = [ticks, document.querySelector('[data-trail-rail]'), track];
   var active = -1;
   var progress = -1;
@@ -26,8 +27,10 @@
 
   root.classList.add('js-trail');
 
+  // Progress runs from the top to the moment the last camp reaches the active line
   var pageProgress = function () {
-    var range = document.documentElement.scrollHeight - window.innerHeight;
+    var last = camps[camps.length - 1];
+    var range = last.getBoundingClientRect().top + window.scrollY - window.innerHeight * 0.4;
     return range > 0 ? Math.min(Math.max(window.scrollY / range, 0), 1) : 0;
   };
 
@@ -69,7 +72,8 @@
     }
 
     // The rail fades in as the hero leaves; the flag plants at the summit
-    root.classList.toggle('trail-rail-on', window.scrollY > window.innerHeight * 0.35);
+    var footerShowing = footer && footer.getBoundingClientRect().top < window.innerHeight * 0.75;
+    root.classList.toggle('trail-rail-on', window.scrollY > window.innerHeight * 0.35 && !footerShowing);
     root.classList.toggle('trail-at-summit', index === last || p >= 0.985);
   };
 
