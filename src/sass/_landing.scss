@@ -231,6 +231,34 @@
   .hero-hiker.is-walking .hero-hiker-leg-back {
     animation-direction: alternate-reverse;
   }
+
+  /* Scroll hike: the trail and hiker scene fades out, resets, then follows scroll */
+  .hero-hiker,
+  .hero-flag,
+  .hero-trail-path {
+    transition: opacity 200ms ease;
+  }
+  .hero-trail.is-resetting .hero-hiker,
+  .hero-trail.is-resetting .hero-flag,
+  .hero-trail.is-resetting .hero-trail-path {
+    opacity: 0;
+  }
+  .hero-trail.is-scrubbing .hero-trail-reveal {
+    animation: none;
+  }
+  .hero-trail.is-scrubbing .hero-flag {
+    animation: none;
+    opacity: 0;
+    transform: scaleY(0);
+    transition: opacity 200ms ease, transform 0.5s cubic-bezier(0.3, 1.6, 0.5, 1);
+  }
+  .hero-trail.is-scrubbing.is-planted .hero-flag {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  .hero-trail.is-scrubbing.is-resetting.is-planted .hero-flag {
+    opacity: 0;
+  }
   .hero-trail.is-paused .hero-cloud,
   .hero-trail.is-paused .hero-flag-cloth {
     animation-play-state: paused;
