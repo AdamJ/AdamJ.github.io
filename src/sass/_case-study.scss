@@ -51,7 +51,7 @@
 }
 .cs-facts {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: var(--space-lg);
   margin: var(--space-lg) 0;
 
@@ -164,6 +164,9 @@
 }
 .cs-quote {
   max-width: 860px;
+  background: none;
+  border: 0;
+  box-shadow: none;
   margin: var(--space-lg) auto;
   padding: var(--space-sm) 0;
   text-align: center;
@@ -269,4 +272,28 @@
 
 .cs-decision.cs-single {
   grid-template-columns: 1fr;
+}
+
+/* Phone screenshots keep their own proportions */
+.cs-figures.cs-phones {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 280px));
+  justify-content: center;
+
+  img {
+    aspect-ratio: auto;
+    max-height: 640px;
+    object-fit: contain;
+  }
+}
+.cs-list {
+  max-width: 720px;
+  margin: var(--space-sm) 0 var(--space-md) !important;
+  padding-left: var(--space-lg) !important;
+  line-height: 1.55;
+}
+
+.cs-card pre {
+  margin: var(--space-xs) 0 0;
+  overflow-x: auto;
+  font-size: var(--font-size-sm, 0.875rem);
 }

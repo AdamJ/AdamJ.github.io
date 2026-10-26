@@ -1,5 +1,4 @@
 ---
-layout: markdown.njk
 title: 'Soccer Game Tracker'
 portfolioOrder: 8
 card:
@@ -15,205 +14,70 @@ eleventyNavigation:
   key: CaseStudies
   parent: CaseStudies
   order: 2
-containers: true
+layout: case-study.njk
+motion: true
+eyebrow: 'Case study · Native iOS app'
+headline: 'Every sideline app wanted my data and an account, so I built a native one that keeps everything on the phone.'
+deck: 'A native iOS app for coaches to track games: fast to set up, minimal during play, and with data the coach controls.'
+facts:
+  - { label: Role, value: 'Designer and developer' }
+  - { label: Stack, value: 'SwiftUI' }
+  - { label: Status, value: 'Work in progress, in active use this season' }
+results:
+  - { value: 'Native', label: 'Swift with local storage and no network dependency' }
+  - { value: 'Solo', label: 'Design and implementation by one person' }
+  - { value: 'In use', label: 'Tested on a real sideline, in real game conditions' }
+camps:
+  - { id: top, label: Trailhead }
+  - { id: context, label: Context }
+  - { id: decisions, label: Key decisions }
+  - { id: final, label: Final design }
+  - { id: impact, label: Impact }
 ---
+<section id="context" class="cs-step">
+<p class="cs-kicker">Step 1 &middot; Context</p>
+<h2>Pen and paper is fast but leaves nothing useful, and third-party apps own your data.</h2>
+<p>Coaching a youth soccer team generates a surprising amount of data: scores, substitutions, player minutes, goals, assists, saves, and cards. Capturing it is not the hard part. Every existing option forced a tradeoff I was not willing to make. Third-party apps are convenient, but they require accounts and are built for organizations, not individual coaches.</p>
+<blockquote class="cs-quote"><span class="cs-label">Opportunity</span><p>How might a coach track a whole game with one thumb, and keep the data?</p></blockquote>
+<div class="cs-figures cs-phones">
+<figure class="cs-figure"><img src="/assets/img/soccergametracker-phone-rosters.webp" alt="New game roster screen" loading="lazy" /><figcaption>Set the roster: starters and substitutes</figcaption></figure>
+<figure class="cs-figure"><img src="/assets/img/soccergametracker-phone-newgame.webp" alt="New game setup screen" loading="lazy" /><figcaption>Add game info: team size, location, date, and time</figcaption></figure>
+</div>
+</section>
 
-:::section
+<section id="decisions" class="cs-step cs-band">
+<p class="cs-kicker">Step 2 &middot; Key decisions</p>
+<h2>I chose Swift and local storage because a sideline app has a performance contract: launch instantly, respond without lag, never drop data.</h2>
+<p>A PWA or React Native wrapper would have been faster to build, and I have shipped both. Native with local storage satisfies all three requirements, with no sync, no account to authenticate, and no API that might be down at kickoff.</p>
+<blockquote class="cs-quote"><p>Every decision went through one person: me.</p></blockquote>
+<p>The constraint clarified scope. Without a backend, multi-device sync and shared rosters are off the table, and knowing what the app is not made it easier to build what it is.</p>
+<p>The core design problem is attention. During a live game a coach is watching players, calling substitutions, and talking to parents, so the app gets a glance and a thumb tap.</p>
+<div class="cs-cards">
+<div class="cs-card"><h3>Pregame</h3><p>Setup handles the overhead up front: opposition, date, location, half duration, and roster selection. A Game or Scrimmage toggle keeps the history honest.</p></div>
+<div class="cs-card"><h3>Scoreboard and quick actions</h3><p>The two largest tap targets are Team Goal and Opponent Goal. Correction actions are present but smaller and lighter, so they are harder to hit by accident.</p></div>
+<div class="cs-card"><h3>Players and activity</h3><p>Tapping a player logs goals, assists, saves, shots, and cards. Each action is timestamped and tied to the half, so the post-game summary reads as a timeline.</p></div>
+</div>
+</section>
 
-  ## Project Overview
+<section id="final" class="cs-step">
+<p class="cs-kicker">Step 3 &middot; Final design</p>
+<h2>A live game screen built for a glance, and substitutions that match how they really work.</h2>
+<figure class="cs-figure"><img src="/assets/img/soccergametracker-phone-livegame.webp" alt="Live Game screen showing scoreboard, timer, Quick Actions, and player list" loading="lazy" /><figcaption>Live Game screen showing scoreboard, timer, Quick Actions, and player list</figcaption></figure>
+<p>Mid-game substitutions have a distinct &ldquo;substituted out&rdquo; state, separate from bench status, because a player who comes off is not the same as a player who never started. That distinction keeps per-player stats accurate.</p>
+<div class="cs-figures cs-phones">
+<figure class="cs-figure"><img src="/assets/img/soccergametracker-phone-subs-02.webp" alt="View a player's stats and position before substituting" loading="lazy" /><figcaption>View stats and position before substituting</figcaption></figure>
+<figure class="cs-figure"><img src="/assets/img/soccergametracker-phone-subs-01.webp" alt="Substitutes cannot accidentally have statistics assigned" loading="lazy" /><figcaption>Substitutes cannot accidentally have stats assigned</figcaption></figure>
+<figure class="cs-figure"><img src="/assets/img/soccergametracker-phone-subs-03.webp" alt="Who subbed in and out by half" loading="lazy" /><figcaption>See who subbed in and out by half</figcaption></figure>
+</div>
+</section>
 
-  > A native iOS app, built by a coach, who needed fast and reliable game tracking without surrendering data to a third-party platform, designed for the sideline, built in Swift.
-
-  :::card
-
-  **ROLE**: Designer & Developer
-
-  **STACK**: SwiftUI
-
-  **STATUS**: Work in progress
-
-:::
-
-::::section
-
-## Introduction
-
-  Coaching a youth soccer team generates a surprising amount of data. Scores, substitutions, player minutes, goals, assists, saves, cards. The problem isn't that the data is hard to capture; it's that every existing option forces a tradeoff I wasn't willing to make. Pen and paper is fast but produces nothing useful afterward. Third-party apps are convenient but own your data, require accounts, and are built for organizations, not individual coaches. I wanted something purpose-built for how I actually work on a sideline: fast to set up, minimal interaction during play, and with data I control entirely.
-
-  <div class="row justify-content-around no-wrap mt-3 mb-5">
-    <div class="card-shadow">
-      <div class="card-body">
-        <figure>
-          <img
-            alt="New Game setup screen"
-            src="{{ '/assets/img/soccergametracker-phone-rosters.webp' | url }}"
-            style="width: 300px; max-width: 300px;"
-          />
-          <figcaption>set the roster: starters and substitutes</figcaption>
-        </figure>
-      </div>
-    </div>
-    <div class="card-shadow">
-      <div class="card-body">
-        <figure>
-          <img
-            alt="New Game setup screen"
-            src="{{ '/assets/img/soccergametracker-phone-newgame.webp' | url }}"
-            style="width: 300px; max-width: 300px;"
-          />
-          <figcaption>add game info: team size, location, date & time</figcaption>
-        </figure>
-      </div>
-    </div>
-  </div>
-::::
-
-::::section
-## The harder right choice
-
-  I built SoccerGameTracker as a native iOS app in Swift, solo, from scratch. The easier path would have been a PWA or React Native wrapper; I've shipped both, and they're faster to build. I chose Swift because a sideline app has a specific performance contract: launch instantly, respond without lag when a goal gets scored, never drop data if the phone gets pocketed. Native with local storage and no network dependency satisfies all three. No sync to worry about, no account to authenticate, no API that might be down at kickoff.
-
-  > every decision went through one person: me
-
-  **Constraint clarified scope**. Without a backend, multi-device sync and shared rosters aren't on the table, and that's fine. Knowing what the app isn't made it easier to build what it is. I handled both the design and implementation entirely, which meant every decision, from interaction model to data structure, went through one person. That's mostly an advantage when you need to move fast and stay opinionated.
-::::
-
-::::section
-
-  ## Designing for the sideline
-
-  > The core design problem is attention.
-
-  During a live game, a coach is watching players, calling substitutions, talking to parents. The app gets a glance and a thumb tap, not focused interaction. Every decision on the Live Game screen follows from that.
-
-  <div class="card">
-    <div class="card-header text-h5">Pregame</div>
-    <div class="card-body">
-      The pre-game setup flow handles the overhead up front.
-      <br/>New Game collects opposition, date, location, and half duration, everything you'd put on a physical scoresheet, plus roster selection from a pre-built player list with jersey number and position.
-      <br/>The Game vs. Scrimmage toggle is a small but deliberate decision: scrimmages have different stakes and different lineup dynamics, and I wanted the history to reflect that distinction clearly.
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-header text-h5">Scoreboard & Quick Actions</div>
-    <div class="card-body">
-      The scoreboard and half timer sit at the top, readable in a second. The Quick Actions section, Team Goal and Opponent Goal, are the two largest tap targets in the app, sized and colored for immediate recognition in any lighting. Correction actions (Remove Team Goal, Subtract Goal) are present but visually subordinate: same area, smaller, lighter. Reachable when you need them, harder to hit by accident.
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-header text-h5">Players & Activity</div>
-    <div class="card-body">
-      Below the quick actions is where the app earns its depth. Each player in the active roster is tappable, opening a detail view where you can log individual stats in real time: goals, assists, saves, shots, yellow cards, red cards. Every action is timestamped and tied to the game half, building a full action log that the post-game summary renders as a timeline. That's the data that makes post-game review actually useful: not just who won, but who contributed, when, and how often.
-    </div>
-  </div>
-
-  <div class="card-shadow">
-    <div class="card-body">
-      <figure style="text-align: center;">
-        <img
-          alt="Live Game screen showing scoreboard, timer, Quick Actions, and player list"
-          src="{{ '/assets/img/soccergametracker-phone-livegame.webp' | url }}"
-          class="figure-img img-fluid rounded"
-          style="width: 300px; max-width: 300px;"
-        />
-        <figcaption>Live Game screen showing scoreboard, timer, Quick Actions, and player list</figcaption>
-      </figure>
-    </div>
-  </div>
-  <br/>
-
-  ### Substitutions
-
-  :::card
-  Substitutions were a meaningful product decision. Mid-game sub support, with a distinct "substituted out" state separate from bench status, reflects how substitutions actually work: a player who comes off isn't the same as a player who never started. Getting that distinction right matters for per-player stats to be accurate.
-  :::
-
-  <div class="row justify-content-around no-wrap mt-3 mb-5">
-    <div class="card-shadow">
-      <div class="card-body">
-        <figure style="text-align: center;">
-          <img
-            alt="View a player's stats and position before substituting them on or off"
-            src="{{ '/assets/img/soccergametracker-phone-subs-02.webp' | url }}"
-            style="width: 300px; max-width: 300px;"
-          />
-          <figcaption>View a player's stats and position before substituting them on or off</figcaption>
-        </figure>
-      </div>
-    </div>
-    <div class="card-shadow">
-      <div class="card-body">
-        <figure style="text-align: center;">
-          <img
-            alt="Substitutes cannot accidentally have statistics assigned"
-            src="{{ '/assets/img/soccergametracker-phone-subs-01.webp' | url }}"
-            style="width: 300px; max-width: 300px;"
-          />
-          <figcaption>Substitutes cannot accidentally have statistics assigned</figcaption>
-        </figure>
-      </div>
-    </div>
-    <div class="card-shadow">
-      <div class="card-body">
-        <figure style="text-align: center;">
-          <img
-            alt="View who subbed in and out of the game by half"
-            src="{{ '/assets/img/soccergametracker-phone-subs-03.webp' | url }}"
-            style="width: 300px; max-width: 300px;"
-          />
-          <figcaption>View who subbed in and out of the game by half</figcaption>
-        </figure>
-      </div>
-    </div>
-  </div>
-::::
-
-::::section
-
-  ## After the game
-
-  > As a coach, being able to view historical information is a key part in planning practices, setting lineups, and determining strategy.
-
-  ### History
-
-  <div class="row justify-content-around no-wrap mt-3 mb-5">
-    <div class="card-shadow">
-      <div class="card-body">
-        <figure style="text-align: center;">
-          <img
-            alt="View historical game data, zooming in to see each game's details"
-            src="{{ '/assets/img/soccergametracker-phone-history.webp' | url }}"
-            style="width: 300px; max-width: 300px;"
-          />
-          <figcaption>View historical game data, with key info front and center</figcaption>
-        </figure>
-      </div>
-    </div>
-    <div class="card-shadow">
-      <div class="card-body">
-        <figure style="text-align: center;">
-          <img
-            alt="View historical game data, zooming in to see each game's details"
-            src="{{ '/assets/img/soccergametracker-phone-history-details.webp' | url }}"
-            style="width: 300px; max-width: 300px;"
-          />
-          <figcaption>Zooming into any game shows player-by-player stats</figcaption>
-        </figure>
-      </div>
-    </div>
-  </div>
-::::
-
-::::section
-  ## Where it stands
-
-  :::card
-  The app is in active use this season, tested against the real constraint it was built for: a sideline, in real game conditions. Feedback from that use has been indispensable, with the per-player stats used between games to inform lineup and substitution planning. That's the outcome I was building toward.
-
-  What real use has surfaced is mostly sequencing: the transition from pre-game setup into the live view needs less friction, and the post-game summary screen is still being refined. **Those are the next iterations.**
-  :::
-
-  > An App Store release is planned once the final rough edges are resolved. The app does one thing, does it reliably, and doesn't ask for anything it doesn't need.
-::::
+<section id="impact" class="cs-step cs-band">
+<p class="cs-kicker">Step 4 &middot; Impact</p>
+<h2>In use this season, with per-player stats informing lineups and substitution planning between games.</h2>
+<p>As a coach, historical information shapes how I plan practices, set lineups, and choose strategy.</p>
+<div class="cs-figures cs-phones">
+<figure class="cs-figure"><img src="/assets/img/soccergametracker-phone-history.webp" alt="Historical game data" loading="lazy" /><figcaption>History, with key info front and center</figcaption></figure>
+<figure class="cs-figure"><img src="/assets/img/soccergametracker-phone-history-details.webp" alt="Player-by-player stats for a game" loading="lazy" /><figcaption>Zoom into any game for player-by-player stats</figcaption></figure>
+</div>
+<p>Real use has mostly surfaced sequencing. The move from pregame setup into the live view needs less friction, and the post-game summary is still being refined. Those are the next iterations, and an App Store release is planned once the rough edges are resolved.</p>
+</section>
