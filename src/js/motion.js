@@ -65,117 +65,19 @@
         place(Math.min(Math.max(1 - offset, 0), 1));
         window.requestAnimationFrame(walk);
       };
-      // Modes: 'intro' (timed load animation), 'summit' (idle at the peak),
-      // 'resetting' (fading between scenes), 'hike' (scroll drives the trail)
-      var mode = 'intro';
-      var fadeMs = 200;
-      var walkTimer = null;
-      var faceForward = function () { figure.setAttribute('transform', 'scale(1.25)'); };
-
       place(0);
       reveal.addEventListener('animationstart', function () {
-        if (mode !== 'intro') return;
         walking = true;
         hiker.classList.add('is-walking');
         window.requestAnimationFrame(walk);
       });
+      // Once the hiker reaches the summit he stays there; scrolling never resets the climb
       reveal.addEventListener('animationend', function () {
-        if (mode !== 'intro') return;
         walking = false;
-        mode = 'summit';
         hiker.classList.remove('is-walking');
         place(1);
-        faceForward();
+        figure.setAttribute('transform', 'scale(1.25)');
       });
-
-      // Hero scroll distance carries the hiker: one value drives trail and hiker
-      // The climb finishes while the peak is still on screen, so it takes a
-      // fraction of the hero height. The foothills hide the first stretch of
-      // trail, so the walk starts where the path clears them.
-      var climbRatio = 0.4;
-      var trailStart = (function () {
-        for (var i = 0; i <= 100; i++) {
-          if (trail.getPointAtLength(length * (i / 100)).y < 420) return i / 100;
-        }
-        return 0;
-      })();
-      // The hiker always reappears at the trailhead, so the climb is measured
-      // from wherever the first scroll had reached when the scenes swapped
-      var anchor = 0;
-      var heroProgress = function () {
-        var distance = Math.max(hero.offsetHeight * climbRatio, 1);
-        return Math.min(Math.max((window.scrollY - anchor) / distance, 0), 1);
-      };
-      var applyHike = function (progress) {
-        var t = trailStart + (1 - trailStart) * progress;
-        reveal.style.strokeDashoffset = String(1 - t);
-        place(t);
-        hero.classList.toggle('is-planted', progress >= 0.995);
-      };
-
-      // Fade the hiker, flag, and trail out, swap scenes while hidden, fade back in
-      var swapScene = function (apply, next) {
-        mode = 'resetting';
-        hero.classList.add('is-resetting');
-        window.setTimeout(function () {
-          apply();
-          window.requestAnimationFrame(function () {
-            hero.classList.remove('is-resetting');
-            mode = next;
-            if (next === 'hike') sync();
-          });
-        }, fadeMs);
-      };
-      var takeControl = function () {
-        walking = false;
-        hiker.classList.remove('is-walking');
-        hero.classList.add('is-scrubbing');
-      };
-      var toTrailhead = function () {
-        takeControl();
-        anchor = window.scrollY;
-        applyHike(0);
-        faceForward();
-        lastX = null;
-      };
-      var toSummit = function () {
-        applyHike(1);
-        faceForward();
-        lastX = null;
-      };
-
-      var sync = function () {
-        var y = window.scrollY;
-        if (mode === 'summit' || mode === 'intro') {
-          if (y > 4) swapScene(toTrailhead, 'hike');
-        } else if (mode === 'hike') {
-          if (y <= 1) {
-            swapScene(toSummit, 'summit');
-            return;
-          }
-          var before = lastX;
-          applyHike(heroProgress());
-          if (before !== lastX) {
-            hiker.classList.add('is-walking');
-            window.clearTimeout(walkTimer);
-            walkTimer = window.setTimeout(function () { hiker.classList.remove('is-walking'); }, 140);
-          }
-        }
-      };
-      var hikeTicking = false;
-      window.addEventListener('scroll', function () {
-        if (!hikeTicking) {
-          hikeTicking = true;
-          window.requestAnimationFrame(function () { hikeTicking = false; sync(); });
-        }
-      }, { passive: true });
-
-      // Loaded already scrolled (reload or deep link): skip the intro and go straight to the hike
-      if (window.scrollY > 4) {
-        takeControl();
-        mode = 'hike';
-        applyHike(heroProgress());
-      }
     }
   }
 
