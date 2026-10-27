@@ -1,0 +1,283 @@
+/* Trail progress: camp ticks, rail hiker (desktop), progress track (phones) */
+.trail-ticks,
+.trail-rail,
+.trail-track {
+  --trail-p: 0;
+}
+
+.trail-ticks {
+  position: fixed;
+  top: var(--space-lg);
+  right: var(--space-lg);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--earth-cream);
+  border: 1px solid var(--earth-brown);
+  border-radius: var(--radius-pill);
+  box-shadow: 3px 3px 0 var(--earth-brown);
+
+  ol {
+    display: flex;
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  a,
+  a:hover,
+  a:focus {
+    border-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    text-decoration: none;
+  }
+}
+.trail-tick {
+  display: block;
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--earth-sage);
+  border-radius: 50%;
+}
+.trail-ticks a.is-past .trail-tick,
+.trail-ticks a[aria-current='location'] .trail-tick {
+  background: var(--accent-coral-dark);
+  border-color: var(--accent-coral-dark);
+}
+.trail-ticks a[aria-current='location'] .trail-tick {
+  box-shadow: 0 0 0 3px var(--earth-cream), 0 0 0 4px var(--accent-coral-dark);
+}
+.trail-count {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-xs);
+  color: var(--earth-brown);
+  white-space: nowrap;
+}
+
+/* Rail and track only exist once JS has set them up */
+.trail-rail,
+.trail-track {
+  display: none;
+}
+.js-trail .trail-rail {
+  position: fixed;
+  top: 96px;
+  bottom: 32px;
+  left: 24px;
+  z-index: 998;
+  display: block;
+  width: 24px;
+  opacity: 0;
+  pointer-events: none;
+}
+.js-trail.trail-rail-on .trail-rail {
+  opacity: 1;
+}
+.trail-rail-line,
+.trail-rail-fill {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  width: 4px;
+  border-radius: 2px;
+}
+.trail-rail-line {
+  background: var(--earth-sand);
+}
+.trail-rail-fill {
+  background: var(--accent-coral-dark);
+  transform: scaleY(var(--trail-p));
+  transform-origin: top;
+}
+.trail-rail-hiker {
+  position: absolute;
+  top: 0;
+  left: 1px;
+  color: var(--earth-dark);
+
+  /* Travel the rail's height minus the hiker's own height */
+  transform: translateY(calc(var(--trail-p) * (100vh - 128px - 28px)));
+}
+.trail-hiker {
+  display: block;
+}
+.trail-hiker-pack {
+  fill: var(--accent-coral);
+}
+.trail-rail-flag {
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+  width: 2px;
+  height: 36px;
+  background: var(--earth-dark);
+  transform: scaleY(0);
+  transform-origin: bottom;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 2px;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 16px solid var(--accent-coral);
+  }
+}
+.trail-at-summit .trail-rail-flag {
+  transform: scaleY(1);
+}
+
+@media (width <= 1099px) {
+  /* Camp ticks become a bottom bar */
+  .trail-ticks {
+    inset: auto 0 0;
+    justify-content: space-between;
+    padding: 0 var(--space-xs) 0 var(--space-md);
+    background: var(--earth-dark);
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    min-height: 44px;
+
+    a {
+      height: 44px;
+    }
+  }
+  .trail-tick {
+    border-color: var(--earth-mist, #b4a89c);
+  }
+  .trail-ticks a.is-past .trail-tick,
+  .trail-ticks a[aria-current='location'] .trail-tick {
+    background: var(--accent-coral);
+    border-color: var(--accent-coral);
+  }
+  .trail-ticks a[aria-current='location'] .trail-tick {
+    box-shadow: 0 0 0 3px var(--earth-dark), 0 0 0 4px var(--accent-coral);
+  }
+  .trail-count {
+    order: -1;
+    color: var(--earth-cream);
+  }
+  body.has-trail {
+    padding-bottom: 44px;
+  }
+
+  /* Keep the scroll-to-top button clear of the bar */
+  /* stylelint-disable-next-line selector-id-pattern */
+  body.has-trail #goTopBtn {
+    bottom: 60px !important;
+  }
+}
+
+@media (width <= 1199px) {
+  /* No gutter for the rail: a strip above the bottom edge carries the hiker */
+  .js-trail .trail-rail {
+    display: none;
+  }
+  .js-trail .trail-track {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 998;
+    display: block;
+    height: 34px;
+    background: var(--earth-cream);
+    border-top: 1px solid var(--earth-brown);
+    pointer-events: none;
+  }
+  .trail-track-line,
+  .trail-track-fill {
+    position: absolute;
+    right: var(--space-md);
+    bottom: 5px;
+    left: var(--space-md);
+    height: 4px;
+    border-radius: 2px;
+  }
+  .trail-track-line {
+    background: var(--earth-sand);
+  }
+  .trail-track-fill {
+    right: auto;
+    width: calc((100% - 2rem) * var(--trail-p));
+    background: var(--accent-coral-dark);
+  }
+  .trail-track-hiker {
+    position: absolute;
+    top: 1px;
+    left: var(--space-md);
+    color: var(--earth-dark);
+    transform: translateX(calc((100vw - 2rem) * var(--trail-p) - 11px));
+  }
+  body.has-trail {
+    padding-bottom: 34px;
+  }
+
+  /* stylelint-disable-next-line selector-id-pattern */
+  body.has-trail #goTopBtn {
+    bottom: 50px !important;
+  }
+}
+
+@media (width <= 1099px) {
+  /* Camp ticks become a bar under the track */
+  .trail-ticks {
+    inset: auto 0 0;
+    justify-content: space-between;
+    padding: 0 var(--space-xs) 0 var(--space-md);
+    background: var(--earth-dark);
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    min-height: 44px;
+
+    a {
+      height: 44px;
+    }
+  }
+  .trail-tick {
+    border-color: var(--earth-mist, #b4a89c);
+  }
+  .trail-ticks a.is-past .trail-tick,
+  .trail-ticks a[aria-current='location'] .trail-tick {
+    background: var(--accent-coral);
+    border-color: var(--accent-coral);
+  }
+  .trail-ticks a[aria-current='location'] .trail-tick {
+    box-shadow: 0 0 0 3px var(--earth-dark), 0 0 0 4px var(--accent-coral);
+  }
+  .trail-count {
+    order: -1;
+    color: var(--earth-cream);
+  }
+  .js-trail .trail-track {
+    bottom: 44px;
+  }
+  body.has-trail {
+    padding-bottom: 78px;
+  }
+
+  /* stylelint-disable-next-line selector-id-pattern */
+  body.has-trail #goTopBtn {
+    bottom: 94px !important;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .js-trail .trail-rail {
+    transition: opacity 300ms ease;
+  }
+  .trail-rail-flag {
+    transition: transform 0.5s cubic-bezier(0.3, 1.6, 0.5, 1);
+  }
+}

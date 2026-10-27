@@ -3,7 +3,7 @@ title: 'ArchParser: Architectural Drawing Analysis Platform'
 portfolioOrder: 3
 card:
   title: "ArchParser"
-  summary: "Architectural drawing analysis platform for OCR-based architectural drawing management."
+  summary: "The only designer, researcher, and developer on a tool that turns <strong>500+ page drawing sets</strong> into structured metadata. Non-technical users build their own OCR templates, and every extraction shows a confidence score."
   image: "/assets/img/archparser_dashboard1.webp"
   imageAlt: "ArchParser dashboard"
   badges: ["Development", "Claude Code"]
@@ -16,181 +16,114 @@ eleventyNavigation:
   key: Development
   parent: Development
   order: 1
-customCss: slides.css
+
+layout: case-study.njk
+motion: true
+eyebrow: 'Case study · OCR and document AI'
+headline: 'Project managers hand-copied metadata from 500+ page drawing sets, so I built a tool that reads it for them.'
+deck: 'ArchParser extracts drawing numbers, titles, dates, and revisions from architectural PDFs, even when every firm lays out its title block differently.'
+heroImage: /assets/img/archparser_dashboard1.webp
+heroAlt: 'ArchParser dashboard showing processed drawings across several jobs'
+confidential: true
+facts:
+  - { label: Role, value: 'Sole product designer, researcher, and full-stack developer' }
+  - { label: Timeline, value: '6 to 8 months, kickoff to demo-ready' }
+  - { label: Worked with, value: 'Solo, with no second designer, researcher, or developer. Project planners and managers at Component Assembly Systems, with Claude Code as a development partner' }
+  - { label: Status, value: 'Demo-ready, built to test and deploy' }
+results:
+  - { value: '200+', label: 'Drawings processed in demonstrations' }
+  - { value: '4 to 5 hrs', label: 'Estimated savings per drawing set, an estimate from users and not a measured result' }
+  - { value: Ready, label: 'To test and deploy on a single source of information' }
+camps:
+  - { id: top, label: Trailhead }
+  - { id: context, label: Context }
+  - { id: research, label: Research }
+  - { id: decisions, label: Key decisions }
+  - { id: final, label: Final design }
+  - { id: impact, label: Impact }
+  - { id: learned, label: What I learned }
+
 ---
 
-<section>
-  <h2 class="text-h2 no-underline">Project Overview</h2>
-  <div class="card">
-    <p>
-      <span class="text-h6 mr-1">Role:</span>Product Designer &amp; Full-Stack Developer
-    </p>
-    <p>
-      <span class="text-h6 mr-1">Type:</span>Personal Project (originally intended as a CAS tool)
-    </p>
-    <p>
-      <span class="text-h6 mr-1">Stack:</span>TypeScript monorepo, NestJS, React, RadixUI, MySQL, Tesseract.js, built with Claude Code
-    </p>
-    <p>
-      <span class="text-h6 mr-1">Status:</span>Demo-ready, paused while higher-priority CAS projects took precedence
-    </p>
-  </div>
-  <p class="text-callout mt-4">Construction project managers at Component Assembly Systems needed to pull metadata from hundreds of architectural drawing PDFs. Entering drawing numbers, revision dates, and project names from title blocks by hand was slow, error-prone, and impossible to sustain on 500+ page sets, and no existing tool handled custom title block layouts across different architectural firms. I interviewed project planners and managers about their workflows, then designed and built ArchParser to automate the extraction.</p>
-  <p>ArchParser is a TypeScript monorepo with a NestJS backend for OCR processing and a React frontend for managing drawings. Demonstrations have processed over 200 drawings, and users of the current manual process estimated it would save roughly half a day (4 to 5 hours) of manual work per drawing set. That figure is an estimate, not a measured result.</p>
-  <ul>
-    <li>Processes 500+ page PDF drawing sets with memory-optimized batch processing</li>
-    <li>A visual template creator lets non-technical users configure extraction, so projects don't wait on a developer</li>
-    <li>Each extraction shows a confidence score out of 100, so users can proceed with high-confidence results and review the rest</li>
-    <li>Revision tracking and real-time progress updates support long-running jobs on large drawing sets</li>
-  </ul>
+<section id="context" class="cs-step">
+<p class="cs-kicker">Step 1 &middot; Context</p>
+<h2>Entering drawing numbers and revision dates by hand was slow and error-prone on 500+ page sets, and no tool handled custom title blocks.</h2>
+<blockquote class="cs-quote"><span class="cs-label">Opportunity</span><p>How might project managers get drawing metadata without typing it, however each firm lays out its title block?</p></blockquote>
+<h3>What I did alone</h3>
+<p>ArchParser had one person on it, so every layer of the product went through me, from the first interview to the last test.</p>
+<div class="cs-assumption">
+<div><span class="cs-label">Research</span><p>I interviewed project planners and managers about how they pulled metadata from drawing sets, then turned what I heard into requirements, including support for title block layouts that vary by architectural firm.</p></div>
+<div><span class="cs-label">Design</span><p>I designed the template creator, the confidence and review model, the dashboard, and the drawing review screens, and kept them consistent with patterns users already knew.</p></div>
+<div><span class="cs-label">Build</span><p>I built the React and Vite frontend with RadixUI, the NestJS backend, and the OCR pipeline, with Claude Code as a development partner. The backend has 14 test suites with 53 tests, and the frontend and backend share TypeScript types.</p></div>
+</div>
 </section>
-<section>
-  <h2 id="designdecisions">Key Design Decisions</h2>
-  <p class="text-callout">The technical work is summarized further down, but the choices that shaped how people actually use ArchParser were design decisions. Four mattered most.</p>
-  <div class="card mb-4">
-    <div class="card-body">
-      <h3 class="mb-2">1. Let users build templates, not developers</h3>
-      <p>Every OCR template tells the system where to look for a drawing number, title, date, and revision. The alternative was to have developers configure each template. I rejected it for two reasons. Title block layouts vary with file types, architectural firms, and project size, so the number of templates was never going to be small or stable. Projects also move fast, and waiting on a developer for every new layout would have slowed the very projects the tool was meant to help. The visual template creator lets a project manager draw the regions on a sample page and export the template themselves.</p>
-    </div>
-  </div>
-  <div class="card mb-4">
-    <div class="card-body">
-      <h3 class="mb-2">2. Design for confidence and review, not blind trust</h3>
-      <p>OCR is never perfect on architectural drawings, so I designed the error handling around confidence and the ability to review. Each extraction shows a confidence score out of 100. In practice, when confidence was around 75, users generally proceeded with what the system provided, and they still reviewed a random sample of files to check it. Anything wrong could be corrected inline. The goal was to make a wrong result easy to spot and cheap to fix, and to let users decide how much to trust the output.</p>
-      <!-- TODO: add a screenshot showing the confidence score in the drawing list or detail view -->
-    </div>
-  </div>
-  <div class="card mb-4">
-    <div class="card-body">
-      <h3 class="mb-2">3. Consistency over novelty, even with an AI partner</h3>
-      <p>Claude Code suggested changes to button placement and some layouts. I rejected them because they differed from what was already present in the system, and changing familiar patterns would have hurt usability for people who already knew the interface. Claude Code sped up implementation, but judgment about the user's existing context stayed with me.</p>
-    </div>
-  </div>
-  <div class="card mb-4">
-    <div class="card-body">
-      <h3 class="mb-2">4. AI search as an optional add-on</h3>
-      <p>I designed the semantic search to be optional, for the point when the company adopts an AI platform. It supports Claude, OpenAI, or a local Ollama model, so a team can choose based on budget and privacy needs. The core product works fully without it.</p>
-    </div>
-  </div>
+<section id="research" class="cs-step cs-band">
+<p class="cs-kicker">Step 2 &middot; Research</p>
+<h2>I interviewed planners and managers before designing anything. Two findings shaped the product.</h2>
+<div class="cs-cards">
+<div class="cs-card"><h3>Layouts never stand still</h3><p>Title blocks vary by firm, file type, and project size, and projects can&rsquo;t wait on a developer for each one.</p></div>
+<div class="cs-card"><h3>Trust is a dial</h3><p>At confidence around 75 out of 100, users generally proceeded, and still reviewed a random sample.</p></div>
+</div>
+<blockquote class="cs-quote"><p>Users of the manual process estimated about 4 to 5 hours saved per drawing set.</p></blockquote>
+<p>I interviewed 2 project managers and 3 planners about how they pull drawing metadata today.</p>
 </section>
-<section>
-  <h2 id="templatecreator">The Template Creator</h2>
-  <p>The template creator is a standalone HTML and JavaScript tool built with PDF.js that works offline with no backend dependency. Users upload a sample PDF, draw rectangles over the title block, label each region (drawing number, title, date, revision), and export a template file for ArchParser.</p>
-  <div class="row no-wrap pt-3">
-    <div class="card">
-      <div class="card-header text-h5">Initial Load</div>
-      <div class="card-body">
-        <figure class="figure">
-        <img src="../../assets/img/archparser_template-creator.webp" class="figure-img img-fluid rounded" alt="Image of the template creator's empty canvas" loading="lazy">
-        <figcaption>Empty canvas, ready for PDF</figcaption>
-      </figure>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header text-h5">PDF Loaded</div>
-      <div class="card-body">
-        <figure class="figure">
-        <img src="../../assets/img/archparser_template-creator-loaded.webp" class="figure-img img-fluid rounded" alt="Image of the template creator with a loaded PDF" loading="lazy">
-        <figcaption>Document details loaded and ready</figcaption>
-      </figure>
-      </div>
-    </div>
-  </div>
+<section id="decisions" class="cs-step">
+<p class="cs-kicker">Step 3 &middot; Key decisions</p>
+<h2>Four decisions shaped how people use ArchParser, and one idea held throughout: get users into their jobs quickly.</h2>
+<div class="cs-decision">
+<div><h3>Users build templates, not developers</h3><p>A visual creator replaced developer-configured templates, so projects never wait on a developer. Because I was designing and building it, I could ship it as a standalone offline tool instead of writing a spec for someone else to interpret.</p></div>
+<figure class="cs-figure"><img src="/assets/img/archparser_template-creator-loaded.webp" alt="Template creator" width="1200" height="753" loading="lazy" /></figure>
+</div>
+<div class="cs-decision">
+<div><h3>Confidence, not blind trust</h3><p>Each extraction shows a score out of 100 and can be fixed inline. Since I owned the whole stack, I could carry that decision from the OCR output through to the inline correction in the review screens.</p></div>
+<figure class="cs-figure"><img src="/assets/img/archparser_drawing-details.webp" alt="Drawing details with inline editing" width="1200" height="753" loading="lazy" /></figure>
+</div>
+<div class="cs-decision">
+<div><h3>Consistency over novelty</h3><p>I declined AI-suggested layouts that broke patterns users already knew.</p></div>
+<figure class="cs-figure"><img src="/assets/img/archparser_dashboard1.webp" alt="ArchParser dashboard" width="1200" height="753" loading="lazy" /></figure>
+</div>
+<div class="cs-decision cs-single">
+<div><h3>AI search is optional</h3><p>It supports Claude, OpenAI, or a local model, and the core product works fully without it.</p></div>
+</div>
+<div class="cs-figures">
+<figure class="cs-figure"><img src="/assets/img/archparser_desktop_0.webp" alt="Early ArchParser desktop design" width="1200" height="753" loading="lazy" /><figcaption>Early</figcaption></figure>
+<figure class="cs-figure"><img src="/assets/img/archparser_desktop_1.webp" alt="Mid-progress ArchParser desktop design" width="1200" height="753" loading="lazy" /><figcaption>Mid</figcaption></figure>
+<figure class="cs-figure"><img src="/assets/img/archparser_desktop_2.webp" alt="Later ArchParser desktop design" width="1200" height="753" loading="lazy" /><figcaption>Later</figcaption></figure>
+</div>
+<h3>Real-world tests forced two fixes</h3>
+<p>500+ page PDFs ran out of memory, so I moved to adaptive batches. Records lost their links after restarts, so I centralized paths and migrated 373 records.</p>
+<div class="cs-assumption">
+<div><span class="cs-label">What I assumed</span><p>Claude Code&rsquo;s suggested button placements and layouts might improve the interface.</p></div>
+<div><span class="cs-label">What I found</span><p>They differed from patterns already in the system, and changing familiar patterns would hurt people who knew it.</p></div>
+<div><span class="cs-label">What I did instead</span><p>I kept the existing patterns. Claude Code sped up implementation, and with no second designer to review the call, judgment stayed with me.</p></div>
+</div>
 </section>
-<section>
-  <h2 id="visualprogressions">Visual Progressions</h2>
-  <p class="mb-4">
-    The visual design progressed quickly, but one idea held from the beginning: <strong>get users into their jobs as quickly and easily as possible</strong>.
-  </p>
-  <div class="card mb-4">
-    <div class="card-body">
-      <div class="slider">
-        <div class="slides">
-          <div id="slide-1">
-            <img src="../../assets/img/archparser_desktop_0.webp" />
-          </div>
-          <div id="slide-2">
-            <img src="../../assets/img/archparser_desktop_1.webp" />
-          </div>
-          <div id="slide-3">
-            <img src="../../assets/img/archparser_desktop_2.webp" />
-          </div>
-          <div id="slide-4">
-            <img src="../../assets/img/archparser_dashboard1.webp" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<section id="final" class="cs-step cs-band">
+<p class="cs-kicker">Step 4 &middot; Final design</p>
+<h2>Users draw regions on a sample PDF, label them, and export a template. The tool works offline.</h2>
+<figure class="cs-figure"><img src="/assets/img/archparser_template-creator-loaded.webp" alt="ArchParser template creator with a PDF loaded" width="1200" height="753" loading="lazy" /><figcaption>The template creator with a sample PDF loaded.</figcaption></figure>
+<div class="cs-figures">
+<figure class="cs-figure"><img src="/assets/img/archparser_drawing-set-details.webp" alt="Drawing set details page" width="1200" height="753" loading="lazy" /><figcaption>Set details</figcaption></figure>
+<figure class="cs-figure"><img src="/assets/img/archparser_drawing-list.webp" alt="Drawing list page" width="1200" height="753" loading="lazy" /><figcaption>Drawing list</figcaption></figure>
+<figure class="cs-figure"><img src="/assets/img/archparser_drawing-details.webp" alt="Drawing details page with inline editing" width="1200" height="753" loading="lazy" /><figcaption>Drawing details</figcaption></figure>
+</div>
 </section>
-<section>
-  <h2>Working with Claude Code</h2>
-  <p>I used Claude Code as a development partner across architecture, implementation, and debugging. We weighed trade-offs such as absolute versus relative paths and synchronous versus batch processing before writing code, and it was most useful on TypeORM migrations, NestJS module structure, and tracking down memory and path-resolution bugs. It also helped draft the CLAUDE.md and README files that explain why decisions were made. Design judgment stayed with me, as in decision 3 above.</p>
+<section id="impact" class="cs-step">
+<p class="cs-kicker">Step 5 &middot; Impact</p>
+<h2>Demo-ready, and built to cut half a day from each drawing set.</h2>
+<ul class="cs-results">
+<li><span class="cs-result-value">200+</span><span>Drawings processed in demonstrations.</span></li>
+<li><span class="cs-result-value">4 to 5 hrs</span><span>Estimated savings per drawing set. This is an estimate from users, not a measured result.</span></li>
+<li><span class="cs-result-value">Ready</span><span>To test and deploy on a single source of information.</span></li>
+</ul>
 </section>
-<section>
-  <h2 id="architecture">Technical Architecture</h2>
-  <p>ArchParser is a monorepo with three workspaces: a NestJS backend, a React and Vite frontend built with RadixUI, and shared TypeScript types that catch API contract drift at compile time. The backend handles PDF-to-PNG conversion and Tesseract.js extraction, configurable OCR templates, a WebSocket gateway for live progress, and the optional LLM service. TypeORM and MySQL store jobs, drawing sets, drawings, templates, and knowledge chunks, with self-referencing drawing sets for revision tracking. The frontend includes a filterable dashboard, a PDF upload workflow, drawing review pages with inline editing, and a mock server so the interface can be developed without the backend. The backend has 14 test suites with 53 tests.</p>
-  <div class="row no-wrap pt-3">
-    <div class="card">
-      <div class="card-header text-h5">Set Details</div>
-      <div class="card-body">
-        <img src="../../assets/img/archparser_drawing-set-details-thumb.webp" class="rounded" alt="Image of the drawing set details page">
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header text-h5">Drawing List</div>
-      <div class="card-body">
-        <img src="../../assets/img/archparser_drawing-list-thumb.webp" class="rounded" alt="Image of the drawing list page">
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header text-h5">Drawing Details</div>
-      <div class="card-body">
-        <img src="../../assets/img/archparser_drawing-details-thumb.webp" class="rounded" alt="Image of the drawing details page">
-      </div>
-    </div>
-  </div>
-</section>
-<section>
-  <h2 id="iterations">Key Iterations</h2>
-  <p>Real-world testing forced two architectural changes. First, 500+ page PDFs exhausted memory because the first version converted the whole document to images at once. I switched to single-page conversion with batch sizes that adapt to document size, plus sequential OCR processing and memory monitoring, and large sets now process without crashes.</p>
-  <p>Second, processed drawings lost their link to database records after restarts, caused by inconsistent path resolution, a naming mismatch on deletion, and absolute paths stored in the database. I centralized path handling, standardized folder names, stored relative paths, and migrated 373 existing records, which also made the system portable across environments. The dashboard was refined too, with independent pagination and sorting, date and status filters, and a Kanban-style monitor view, after high-volume tables proved hard to navigate.</p>
-</section>
-<divider class="divider"></divider>
-<section>
-  <div class="card">
-    <div class="card-header">
-      <h3 class="p-0">What I Learned</h3>
-    </div>
-    <div class="card-body">
-      <ol>
-        <li><strong>Test with realistic data from the start.</strong> The first version worked on small PDFs and failed on real 500+ page sets. Building with realistic data earlier would have surfaced the memory problem sooner.</li>
-        <li><strong>Empowering users beat clever engineering.</strong> The visual template creator did more for adoption than any backend optimization, because it removed a bottleneck.</li>
-        <li><strong>An AI partner speeds implementation, not judgment.</strong> Claude Code accelerated architecture work, debugging, and boilerplate, but the decisions about consistency and what users already know were mine to make.</li>
-      </ol>
-    </div>
-  </div>
-</section>
-<section class="mt-4">
-  <div class="card">
-    <div class="card-header">
-      <h3 class="p-0">Project Links</h3>
-    </div>
-    <div class="card-body">
-      <ul class="list-unstyled">
-        <li>
-          <a href="https://archparser.adamjolicoeur.me" target="_blank" rel="noopener noreferrer">
-            <fa-icon type="duotone" weight="solid" name="code-branch" size="md"></fa-icon>
-            Demo Site (no data)
-          </a>
-        </li>
-        <li class="mt-2">
-          <a href="https://github.com/Product-Designs/ocr-template-creator" target="_blank" rel="noopener noreferrer">
-            <fa-icon type="duotone" weight="solid" name="paintbrush" size="md"></fa-icon>
-            Visual Template Creator Tool
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
+<section id="learned" class="cs-step cs-band">
+<p class="cs-kicker">Step 6 &middot; What I learned</p>
+<h2>Test with real data, empower users, and keep judgment human.</h2>
+<div class="cs-cards">
+<div class="cs-card"><h3>Test with realistic data from the start</h3><p>Small PDFs worked. Real 500+ page sets failed.</p></div>
+<div class="cs-card"><h3>Empowering users beat clever engineering</h3><p>The template creator did more for adoption than any optimization.</p></div>
+<div class="cs-card"><h3>An AI partner speeds implementation, not judgment</h3><p>Decisions about what users already know stayed with me.</p></div>
+<div class="cs-card"><h3>Owning every layer shortens the loop and removes the reviewer</h3><p>When real-world testing exposed the memory and path problems, I could change the design, frontend, and backend in one pass instead of handing a ticket across a team. The tradeoff was that nobody else was checking my work, which is why I leaned on tests and shared types.</p></div>
+</div>
 </section>

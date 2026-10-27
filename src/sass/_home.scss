@@ -1,0 +1,325 @@
+/* Home page camps: work stack, principles, proof, about, summit */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.hero-kicker {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-coral-dark);
+}
+.hero-statement {
+  margin: var(--space-sm) 0 var(--space-md);
+  font-family: var(--font-family-serif);
+  font-size: clamp(2.25rem, 5.5vw, 4rem);
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  text-shadow: none;
+}
+
+.camp {
+  display: flow-root;
+}
+.camp-band {
+  max-width: none;
+  padding-right: max(var(--space-lg), calc((100% - 1200px) / 2 + var(--space-lg)));
+  padding-left: max(var(--space-lg), calc((100% - 1200px) / 2 + var(--space-lg)));
+  background: var(--earth-dune, #e8dcc8);
+}
+.camp-kicker,
+.camp-label {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.camp-kicker {
+  margin-bottom: var(--space-xs);
+  color: var(--accent-coral-dark);
+}
+.camp-label {
+  color: var(--earth-stone, #6b5d52);
+}
+
+/* Selected work: cards pin and stack as the next one arrives */
+.stack {
+  display: grid;
+  gap: var(--space-xl);
+  margin-top: var(--space-xl);
+}
+.stack-card {
+  position: sticky;
+  top: calc(6rem + var(--i, 0) * 1rem);
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  gap: var(--space-lg);
+  align-items: center;
+  padding: var(--space-lg);
+  background: var(--earth-cream);
+  border: 1px solid var(--earth-brown);
+  border-radius: var(--radius-xl);
+  box-shadow: 8px 8px 0 0 rgb(45 31 18 / 15%);
+
+  img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    object-position: top;
+    border: 1px solid var(--earth-brown);
+    border-radius: var(--radius-md);
+  }
+  h3 {
+    margin: var(--space-xs) 0;
+    font-family: var(--font-family-sans);
+    font-size: clamp(1.25rem, 2.4vw, 1.75rem);
+    line-height: 1.2;
+  }
+  h3 a {
+    color: var(--earth-dark);
+    border-bottom: 0;
+
+    /* The whole card is the target */
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+    }
+    &:hover,
+    &:focus-visible {
+      text-decoration: underline;
+      text-decoration-color: var(--accent-coral);
+      text-underline-offset: 4px;
+    }
+  }
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin: var(--space-sm) 0 0 !important;
+  padding: 0 !important;
+  list-style: none;
+
+  li {
+    padding: 2px var(--space-sm);
+    font-size: var(--font-size-sm, 0.875rem);
+    background: var(--earth-dune, #e8dcc8);
+    border-radius: var(--radius-pill);
+  }
+}
+
+.more-work {
+  margin-top: var(--space-3xl);
+}
+.more-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-md);
+  margin: var(--space-sm) 0 0 !important;
+  padding: 0 !important;
+  list-style: none;
+}
+.more-tile {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  height: 100%;
+  padding: var(--space-md);
+  color: var(--earth-dark);
+  background: var(--earth-cream);
+  border: 1px solid var(--earth-brown);
+  border-bottom-width: 1px;
+  border-radius: var(--radius-lg);
+  box-shadow: 4px 4px 0 0 rgb(45 31 18 / 15%);
+
+  strong {
+    font-weight: 600;
+  }
+  &:hover strong,
+  &:focus-visible strong {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-coral);
+    text-underline-offset: 4px;
+  }
+}
+.more-tile-soon {
+  border-style: dashed;
+  box-shadow: none;
+}
+
+/* Principles */
+.principle-quote {
+  max-width: 900px;
+  margin-bottom: var(--space-xl);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.15;
+}
+.principles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-xl) !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+
+  li {
+    padding-top: var(--space-sm);
+    border-top: 2px solid var(--earth-dark);
+  }
+  h3 {
+    margin-bottom: var(--space-xs);
+    font-family: var(--font-family-sans);
+    font-size: 1.125rem;
+  }
+}
+
+/* Proof */
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-lg);
+  margin: var(--space-lg) 0 0 !important;
+  padding: 0 !important;
+  list-style: none;
+}
+.proof-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  height: 100%;
+  padding: var(--space-lg);
+  color: var(--earth-dark);
+  background: var(--earth-cream);
+  border: 1px solid var(--earth-brown);
+  border-radius: var(--radius-xl);
+  box-shadow: 8px 8px 0 0 rgb(45 31 18 / 15%);
+
+  &:hover,
+  &:focus-visible {
+    box-shadow: 12px 12px 0 0 rgb(45 31 18 / 25%);
+  }
+}
+.proof-number {
+  font-family: var(--font-family-serif);
+  font-size: clamp(3rem, 7vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent-coral-dark);
+}
+.proof-link {
+  margin-top: auto;
+  padding-top: var(--space-sm);
+  font-weight: 600;
+}
+
+/* About */
+.about-camp {
+  max-width: 900px;
+}
+.app-tiles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-md);
+  margin: var(--space-lg) 0 !important;
+  padding: 0 !important;
+  list-style: none;
+}
+.app-tile {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+  height: 100%;
+  padding: var(--space-md);
+  color: var(--earth-dark);
+  background: var(--earth-cream);
+  border: 1px solid var(--earth-brown);
+  border-radius: var(--radius-lg);
+  box-shadow: 4px 4px 0 0 rgb(45 31 18 / 15%);
+
+  span {
+    font-weight: 400;
+  }
+  &:hover,
+  &:focus-visible {
+    box-shadow: 8px 8px 0 0 rgb(45 31 18 / 25%);
+  }
+}
+
+/* Summit */
+.summit {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.summit-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  align-items: center;
+  margin-top: var(--space-lg);
+}
+.summit-top {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+/* Cards pin only where there is room; elsewhere they stack in normal flow */
+@media (width <= 900px) {
+  .stack-card {
+    position: static;
+    grid-template-columns: 1fr;
+  }
+  .more-grid,
+  .proof-grid,
+  .principles,
+  .app-tiles {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (width <= 600px) {
+  .more-grid,
+  .proof-grid,
+  .principles,
+  .app-tiles {
+    grid-template-columns: 1fr;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .stack-card {
+    position: static;
+  }
+}
+
+/* Motion: styled only when motion.js runs and reduced motion is not requested */
+@media (prefers-reduced-motion: no-preference) {
+  .quote-word {
+    color: var(--earth-stone-light, #968a80);
+    transition: color 200ms ease;
+  }
+  .quote-word.is-lit {
+    color: var(--earth-dark);
+  }
+  .stack-card {
+    transform-origin: top center;
+    scale: calc(1 - 0.04 * var(--stack-p, 0));
+    filter: brightness(calc(1 - 0.06 * var(--stack-p, 0)));
+  }
+  .app-tile {
+    transition: transform 150ms ease, box-shadow 150ms ease;
+  }
+}
