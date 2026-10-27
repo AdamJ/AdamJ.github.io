@@ -5,6 +5,11 @@ importScripts(
 // This is your Service Worker, you can put any of your custom Service Worker
 // code in this file, above the `precacheAndRoute` line.
 
+// Take over as soon as a new service worker installs. Without this, a deploy is
+// served stale from the old precache until every tab of the site is closed.
+self.skipWaiting();
+workbox.core.clientsClaim();
+
 // When widget is installed/pinned, push initial state.
 self.addEventListener('widgetinstall', (event) => {
   event.waitUntil(updateWidget(event));
