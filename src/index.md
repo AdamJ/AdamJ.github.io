@@ -119,7 +119,7 @@ camps:
       <p class="text-body-lg">I began on a help desk, moved into software engineering, and found UX design at a startup. That path is why I still ship working prototypes alongside the designs, now in Claude Code every day. I was a core contributor to PatternFly at Red Hat and designed Task-it at AWS. Outside of work I build local-first apps as Brimfield Labs, because I like software that keeps your data yours.</p>
       <ul class="app-tiles" data-reveal-group>
         <li><a class="app-tile" href="{{ '/portfolio/soccertracker' | url }}"><strong>Soccer Tracker</strong><span>A local-only game tracker for coaches on the sideline.</span></a></li>
-        <li><a class="app-tile" href="https://www.brimfield.org/TaskStat"><strong>TaskStat</strong><span>A privacy-first task manager, on the App Store.</span></a></li>
+        <li><a class="app-tile" href="https://www.brimfield.org/taskstat"><strong>TaskStat</strong><span>A privacy-first task manager, on the App Store.</span></a></li>
         <li><a class="app-tile" href="{{ '/portfolio/timetracker' | url }}"><strong>Timetraked</strong><span>Time tracking as a desktop app and a web PWA.</span></a></li>
       </ul>
       <p><a class="btn btn-secondary" href="{{ '/about/adam' | url }}">More about me</a></p>
