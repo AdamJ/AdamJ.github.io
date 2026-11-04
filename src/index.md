@@ -118,8 +118,8 @@ camps:
       <h2 id="about-heading" class="text-h2 no-underline">I started by fixing technology, then wanted to build it.</h2>
       <p class="text-body-lg">I began on a help desk, moved into software engineering, and found UX design at a startup. That path is why I still ship working prototypes alongside the designs, now in Claude Code every day. I was a core contributor to PatternFly at Red Hat and designed Task-it at AWS. Outside of work I build local-first apps as Brimfield Labs, because I like software that keeps your data yours.</p>
       <ul class="app-tiles" data-reveal-group>
-        <li><a class="app-tile" href="{{ '/portfolio/soccertracker' | url }}"><strong>Brimfield Soccer</strong><span>A local-only coaching notebook for volunteer rec coaches.</span></a></li>
-        <li><a class="app-tile" href="{{ '/apps/taskstat-privacy' | url }}"><strong>TaskStat</strong><span>A privacy-first task manager, on the App Store.</span></a></li>
+        <li><a class="app-tile" href="{{ '/portfolio/soccertracker' | url }}"><strong>Soccer Tracker</strong><span>A local-only game tracker for coaches on the sideline.</span></a></li>
+        <li><a class="app-tile" href="https://www.brimfield.org/TaskStat"><strong>TaskStat</strong><span>A privacy-first task manager, on the App Store.</span></a></li>
         <li><a class="app-tile" href="{{ '/portfolio/timetracker' | url }}"><strong>Timetraked</strong><span>Time tracking as a desktop app and a web PWA.</span></a></li>
       </ul>
       <p><a class="btn btn-secondary" href="{{ '/about/adam' | url }}">More about me</a></p>
@@ -135,6 +135,6 @@ camps:
     <a class="btn btn-primary" href="mailto:{{ meta.email }}">Email me</a>
     {%- endif %}
     <a class="btn btn-outline" href="{{ '/about/resume' | url }}">Download resume</a>
-    <a class="summit-top" href="#top">Back to trailhead &uarr;</a>
+    <a class="summit-top" href="#top">Back to the trailhead &uarr;</a>
   </p>
 </section>
