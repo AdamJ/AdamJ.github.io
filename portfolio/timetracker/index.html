@@ -44,7 +44,7 @@
     <script src="https://kit.fontawesome.com/0ea2a7621c.js" crossorigin="anonymous"></script>
   </head>
   <a rel="me" href="https://mastodon.world/@adamjol" aria-hidden="true" class="display-none">Mastodon</a>
-  <body>
+  <body class="has-trail">
     <a href="#main-content" class="skip-link">Skip to main content</a>
       <nav role="navigation" aria-label="Main navigation" class="main-nav" style="bottom: 0 !important;">
         <ul>
@@ -70,231 +70,146 @@
           </li>
         </ul>
       </nav>
+    <div class="trail-ticks" role="navigation" aria-label="Trail camps">
+  <ol>
+    <li>
+      <a href="#top" data-camp="top" aria-label="Trailhead" title="Trailhead"><span class="trail-tick" aria-hidden="true"></span></a>
+    </li>
+    <li>
+      <a href="#context" data-camp="context" aria-label="Context" title="Context"><span class="trail-tick" aria-hidden="true"></span></a>
+    </li>
+    <li>
+      <a href="#decisions" data-camp="decisions" aria-label="Key decisions" title="Key decisions"><span class="trail-tick" aria-hidden="true"></span></a>
+    </li>
+    <li>
+      <a href="#final" data-camp="final" aria-label="Final design" title="Final design"><span class="trail-tick" aria-hidden="true"></span></a>
+    </li>
+    <li>
+      <a href="#impact" data-camp="impact" aria-label="Impact" title="Impact"><span class="trail-tick" aria-hidden="true"></span></a>
+    </li>
+  </ol>
+  <span class="trail-count" data-trail-count data-last="4">Camp 0 / 4</span>
+</div>
+<div class="trail-rail" data-trail-rail aria-hidden="true">
+  <span class="trail-rail-line"></span>
+  <span class="trail-rail-fill"></span>
+  <span class="trail-rail-hiker">
+<svg class="trail-hiker" viewBox="-9 -23 20 26" width="22" height="28" aria-hidden="true" focusable="false">
+  <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+    <line x1="0" y1="-8" x2="-2" y2="0" />
+    <line x1="0" y1="-8" x2="2" y2="0" />
+    <line x1="0" y1="-8" x2="0.6" y2="-16" />
+    <line x1="3.5" y1="-12" x2="6" y2="0" />
+    <rect class="trail-hiker-pack" x="-5.5" y="-16" width="4.5" height="7.5" rx="1.5" stroke="none" />
+    <circle cx="1.2" cy="-19" r="2.6" fill="currentColor" stroke="none" />
+  </g>
+</svg></span>
+  <span class="trail-rail-flag"></span>
+</div>
+<div class="trail-track" data-trail-track aria-hidden="true">
+  <span class="trail-track-line"></span>
+  <span class="trail-track-fill"></span>
+  <span class="trail-track-hiker">
+<svg class="trail-hiker" viewBox="-9 -23 20 26" width="22" height="28" aria-hidden="true" focusable="false">
+  <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+    <line x1="0" y1="-8" x2="-2" y2="0" />
+    <line x1="0" y1="-8" x2="2" y2="0" />
+    <line x1="0" y1="-8" x2="0.6" y2="-16" />
+    <line x1="3.5" y1="-12" x2="6" y2="0" />
+    <rect class="trail-hiker-pack" x="-5.5" y="-16" width="4.5" height="7.5" rx="1.5" stroke="none" />
+    <circle cx="1.2" cy="-19" r="2.6" fill="currentColor" stroke="none" />
+  </g>
+</svg></span>
+</div>
+
     <main id="main-content">
       
-<link rel="stylesheet" href="/css/print.css" media="print" />
-<link rel="stylesheet" href="/css/markdown.css" />
-
-<link rel="stylesheet" href="/css/containers.css" />
-
-
-<section class="hero">
-  <h1>Weekly AI-Powered Work Summary</h1>
-  <p class="text-lead mb-4">Start the day, capture tasks, review, and archive, then summarize using AI</p></section>
-
-
-  <content>
-    <section class="prose-section">
-<h2 id="project-overview" tabindex="-1">Project Overview <a class="anchor-link" href="#project-overview">#</a></h2>
-<div class="card">
-<p><strong>Role:</strong> Lead Product Designer &amp; Product Manager</p>
-<p><strong>Type:</strong> Feature extension, personal productivity tool</p>
-<p><strong>Stack:</strong> React, TypeScript, Tailwind CSS, Google Gemini API (Timetraked); OpenAI GPT 5.5, Docker (Weekly Report Generator)</p>
-<p><strong>Status:</strong> Shipped, in daily use. The Weekly Report Generator runs in Docker and is currently private, with plans to make it public.</p>
-</div>
-</section>
-<section class="prose-section">
-<h2 id="about-timetraked" tabindex="-1">About Timetraked <a class="anchor-link" href="#about-timetraked">#</a></h2>
-<p>Timetraked (formerly TimeTracker Pro) is a Progressive Web App (PWA) I designed, built, and use every day to track how I spend my work hours. It runs in the browser, installs as a native-like application on desktop and mobile, and stores data locally by default, with no account required. Through the day I create tasks, assign them to projects and categories, and archive each completed day. Over time, it builds a personal record of where my time actually goes.</p>
-<p>I built it because every time tracking tool that I tried was either too complex for my personal use, or too simple to be useful. Timetraked is purpose-built for the way I work: start the day, capture tasks as they happen, and review and archive at the end. It has been in daily use since early 2025 and has grown into a small, but complete, product, with export formats, project management, offline support, and invoicing. The Weekly Report feature is the most recent addition, and the one that most clearly shows how the product has evolved from a personal utility into a considered system.</p>
-  <div class="card-shadow">
-    <div class="card-body">
-      <img
-        alt="Start screen for Timetraked"
-        src="/assets/img/timetracker-start.webp"
-        class="figure-img img-fluid rounded"
-      />
-    </div>
-  </div>
-</section>
-<section class="prose-section">
-<h2 id="the-weekly-report-feature" tabindex="-1">The Weekly Report Feature <a class="anchor-link" href="#the-weekly-report-feature">#</a></h2>
-<div class="card">
-<p>After archiving each week, I found myself running a second, separate tool to generate a weekly summary. That tool only worked with PDFs directly exported from the time tracker, only ran on a local development server, and produced output that always needed manual cleanup before it was shareable. It was a workaround, not a product.</p>
-<p>The Weekly Report feature replaces that entire workflow. It lives inside Timetraked as a dedicated route, directly reading the same data the rest of the app uses, and generates a coherent weekly narrative using an AI model (Gemini). The output can be tuned for different audiences, such as a team’s standup, a client update, or a personal retrospective, and is editable before copying to a separate document. No export step, no separate server, no manual cleanup.</p>
-</div>
-  <div class="card-shadow">
-    <div class="card-body">
-      <figure>
-        <img
-          alt="Weekly Report Screen"
-          src="/assets/img/timetracker-weekly-report.webp"
-          class="figure-img img-fluid rounded"
-        />
-        <figcaption>review the time period to summarize and select a tone before generation</figcaption>
-      </figure>
-    </div>
-  </div>
-<blockquote>
-<p>The right tool for summarizing my work week is the tool that already knows my work week.</p>
-</blockquote>
-</section>
-<section class="prose-section">
-<h2 id="the-problem" tabindex="-1">The Problem <a class="anchor-link" href="#the-problem">#</a></h2>
-<div class="card">
-<p>The original two-tool setup had three specific friction points:</p>
-<ol>
-<li>No real integration</li>
-<li>Availability</li>
-<li>Output always requiring editing</li>
-</ol>
-<ul>
-<li>
-<p>The generator only accepted PDFs from the time tracker, creating a dependency without any actual data sharing. The export was the only bridge between them.</p>
-</li>
-<li>
-<p>The generator ran on a local Vite server, which meant it was only accessible from my machine and only in a single context. Any time I needed a summary on a different device, I was out of luck.</p>
-</li>
-<li>
-<p>Because the generator had no understanding of who I was writing for, every summary came out generic and required manual work to make it usable. The generator sounded too similar from week-to-week, diminishing the quality of the reports.</p>
-</li>
-</ul>
-</div>
-<blockquote>
-<p>The deeper problem was that the tooling made a simple, recurring task feel like a project in itself. I needed a paragraph that I could drop into a standup or send to a client. <em>What I had was a process</em>.</p>
-</blockquote>
-</section>
-<section class="prose-section">
-<h2 id="extend%2C-not-replace" tabindex="-1">Extend, Not Replace <a class="anchor-link" href="#extend%2C-not-replace">#</a></h2>
-<div class="card">
-<p>The obvious move might have been to build a better standalone summary tool, but I chose not to, and the reasoning matters.</p>
-<p>A standalone tool would still need an export step, a file upload, or an API connection to access my time data. It would have to be general enough to work with any input, which means losing all the context that makes a summary actually useful: what categories mean, which projects are billable, and what a typical week looks like, specifically for me.</p>
-<p>Extending Timetraked meant the summary feature could read directly from the same local data store the rest of the app uses. No synchronization problem. No format negotiation. The data is already structured exactly the way the feature needs it to be: tasks with descriptions, projects, categories, and duration, grouped by day.</p>
-<p>It also meant the feature could be opinionated in ways that a generic tool cannot. It knows to exclude break-time and lunch categories automatically. It understands the project and client structure. It has enough context to group a week of task descriptions into a meaningful narrative rather than a list.</p>
-</div>
-</section>
-<section class="prose-section">
-<h2 id="two-tools%2C-one-deliberate-boundary" tabindex="-1">Two Tools, One Deliberate Boundary <a class="anchor-link" href="#two-tools%2C-one-deliberate-boundary">#</a></h2>
-<div class="card">
-<p>The short weekly summary and the full weekly report do different jobs, so I split them. The summary lives inside Timetraked because it reads the daily time entries straight from the same database, which means no export step and no syncing. The Weekly Report Generator is a separate tool. You paste in the summary from Timetraked, and the AI writes a full report from a template built into the system.</p>
-<p>The hardest question was whether to fold the generator into Timetraked too. I kept it separate so it could work with any summary, not only ones tied to one tool’s data format, and so its use cases could grow over time. Timetraked is where the data lives, but the generator has no dependency on it.</p>
-</div>
-<div class="card">
-<p>The cost is maintainability. A separate project means another repository, another set of dependencies, and another thing I have to fix when it breaks. It also adds a copy-and-paste step between the two tools, which is the price of the boundary. I accepted both to keep the generator reusable.</p>
-<p>The template is built in for now, and making it easy to customize for different outputs is the next item on the list. The generator runs in a Docker container today and is currently private, with plans to make it public.</p>
-</div>
-</section>
-<section class="prose-section">
-<h2 id="design-decisions" tabindex="-1">Design Decisions <a class="anchor-link" href="#design-decisions">#</a></h2>
-<blockquote>
-<p>The goal was to make the AI feel like a step in a workflow, not a magic trick.</p>
-</blockquote>
-<h3 id="two-panel-layout" tabindex="-1">Two-panel Layout <a class="anchor-link" href="#two-panel-layout">#</a></h3>
-<p>At wider viewports, the report page uses a two-column layout: controls on the left, output on the right. This came from recognizing that the interaction has two distinct modes, configuring the request and reviewing the result, and that collapsing them into a single scrolling column would blur that separation.</p>
-<p>The left column handles week navigation, the data breakdown, and tone selection. It is the setup side. The right column is purely reactive: it shows whatever state the output is in: <strong>idle</strong>, <strong>generating</strong>, <strong>error</strong>, or a <strong>draft summary ready</strong> to edit and copy. Nothing in the right column requires user input; it only responds to decisions made on the left.</p>
-<p>This separation also meant each column could be designed for its specific job. The left column is dense and interactive. The right column has more breathing room because reading and editing require it.</p>
-  <div class="row no-wrap mt-3 mb-5">
-    <div class="card-shadow">
-      <div class="card-body">
-        <figure>
-          <img
-            alt="Report generation preview"
-            src="/assets/img/timetracker-weekly-report.webp"
-            class="figure-img img-fluid rounded"
-          />
-          <figcaption>select what to include in the report and the desired tone</figcaption>
-        </figure>
-      </div>
-    </div>
-    <div class="card-shadow">
-      <div class="card-body">
-        <figure>
-          <img
-            alt="Client Summary"
-            src="/assets/img/timetracker-generated-summary.webp"
-          />
-          <figcaption>the report summary, ready to copy into any document</figcaption>
-        </figure>
-      </div>
-    </div>
-  </div>
-<h3 id="the-generation-flow-as-a-design-experience" tabindex="-1">The generation flow as a design experience <a class="anchor-link" href="#the-generation-flow-as-a-design-experience">#</a></h3>
-<p>The most deliberate UX decision was treating the AI generation as a visible, legible transition rather than a black-box button press. When generation is in progress, the right panel names the week being summarized and shows staggered skeleton lines that suggest an output is forthcoming.</p>
-<p>The idle state, before anything has been generated, uses a dashed border container with a short explanation of what will appear there. This keeps the two-column layout from reading as broken or incomplete on first load, and gives the right panel a purpose even before it has content.</p>
-<p>Error states are structured and recoverable: a header that names the failure, a plain-language description, and a “Try again” action inline. The error is informative without being alarming.</p>
-  <div class="card-shadow">
-    <div class="card-body">
-      <figure>
-        <img
-          alt="Report generation preview"
-          src="/assets/img/timetracker-loading-state.webp"
-          class="figure-img img-fluid rounded"
-        />
-        <figcaption>feedback showing the generation of the report</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-<section class="prose-section">
-<h2 id="tone-as-a-product-decision" tabindex="-1">Tone as a product decision <a class="anchor-link" href="#tone-as-a-product-decision">#</a></h2>
-<p>The tone selector (<strong>Standup</strong>, <strong>Client</strong>, <strong>Retrospective</strong>) reflects a real choice I make every week about who I’m writing for. These are not cosmetic variations. Each tone maps to a different set of system prompt instructions sent to the model, producing meaningfully different outputs.</p>
-  <div class="row no-wrap mt-3">
-    <div class="card-shadow">
-      <div class="card-header">Standup</div>
-      <div class="card-body">
-        <figure>
-          <img
-            alt="Standup Summary"
-            src="/assets/img/timetracker-tone-standup.webp"
-            class="figure-img img-fluid rounded"
-          />
-          <figcaption>terse, first-person, and focused on what moved and what is in progress</figcaption>
-        </figure>
-      </div>
-    </div>
-    <div class="card-shadow">
-    <div class="card-header">Client</div>
-      <div class="card-body">
-        <figure>
-          <img
-            alt="Client Summary"
-            src="/assets/img/timetracker-tone-client.webp"
-          />
-          <figcaption>outcome-oriented, professional, and suitable for sharing progress on deliverables</figcaption>
-        </figure>
-      </div>
-    </div>
-    <div class="card-shadow">
-    <div class="card-header">Retrospective</div>
-      <div class="card-body">
-        <figure>
-          <img
-            alt="Retrospective Summary"
-            src="/assets/img/timetracker-tone-retro.webp"
-          />
-          <figcaption>more reflective, noting themes and shift across the week rather than just outputs</figcaption>
-        </figure>
-      </div>
-    </div>
-  </div>
-<blockquote>
-<p>Having tone as an explicit control also solves a subtle UX problem: when you change the tone, the existing summary resets so you never mistake a standup summary for a client-ready output. The control communicates its own consequences.</p>
-</blockquote>
-<h3 id="editable-output-by-default" tabindex="-1">Editable output by default <a class="anchor-link" href="#editable-output-by-default">#</a></h3>
-<div class="card-shadow">
-<p>The generated summary appears in an editable text area, rather than a read-only display. This frames the AI’s role correctly: it drafts, the human approves. The copy button and a brief ‘changes are not saved’ note completes the mental model: this is a staging area, not a final product.</p>
-<p>A “regenerate” button sits alongside the copy button, so it is easy to get a different draft without scrolling back to the controls. The two actions, regenerate and copy, represent the two things a person actually wants to do with a draft: try again or take it.</p>
-</div>
-  <br />
-<h3 id="ai-prompt-architecture" tabindex="-1">AI prompt architecture <a class="anchor-link" href="#ai-prompt-architecture">#</a></h3>
-<div class="card-shadow">
-<p>The prompt that drives the summary is split into two parts. The system instruction establishes the persona, length constraints (3 to 5 sentences), voice (first-person, no filler phrases), and the specific tone instructions for whichever mode is selected. The user message contains the serialized week data: a lean, human-readable representation of each workday with task titles, descriptions, project names, and durations.</p>
-<p>Before sending, the serialization step strips timestamps, IDs, and non-work categories. What reaches the model is only what a human would include if they were writing the summary prompt by hand. This matters because model output quality is directly proportional to input clarity: sending structured noise produces structured noise back.</p>
-<p>The prompt architecture is designed to evolve. As I use the feature and notice patterns in what I edit or regenerate, the system instructions can be tuned to match how I actually write and what different audiences respond to. The tone categories themselves may expand: a sprint summary or executive update tone would be natural additions as the use cases grow.</p>
-</div>
-</section>
-<div class="divider"></div>
-<section class="prose-section">
-<div class="card">
-<h3 id="outcome" tabindex="-1">Outcome <a class="anchor-link" href="#outcome">#</a></h3>
-<p>Every week I use the standup tone on Monday morning to orient myself before the week’s work begins, with the retrospective tone on Friday to close out the week. Before this feature existed, I skipped that ritual more often than not due to the fact that the tooling made it feel like work. <em>Now it takes less than a minute</em>. The summary is available wherever Timetraked is available, and the tone control means the output is usually usable with one or two edits rather than a full rewrite.</p>
-<p>The Weekly Report Generator extends that routine. I use it every week, and it takes less than a minute to produce a full report that used to take me about 30 minutes to write by hand.</p>
-<p>From a portfolio standpoint the project demonstrates a specific combination of skills: identifying friction in a real workflow, making a considered architectural decision about where a feature belongs, designing the interactions states that make AI output feel trustworthy, and shipping something that has been in daily use since it launched.</p>
-</div>
+<section class="cs-hero" aria-label="Project hero">
+  <figure>
+    <img src="/assets/img/timetracker-weekly-report.webp" alt="Weekly Report screen showing the time period to summarize and tone selection" width="1600" height="1000" fetchpriority="high" />
+  </figure>
 </section>
 
-  </content>
+<section id="top" class="cs-top" aria-labelledby="cs-headline">
+  <p class="cs-eyebrow">Case study · AI product design</p>
+  <h1 id="cs-headline" class="cs-headline">I skipped my weekly summary because the tooling made it feel like a project, so I built AI summaries into the tool that already knows my week.</h1>
+  <p class="cs-deck">A Weekly Report feature for Timetraked, my time tracking PWA, plus a separate generator that turns a summary into a full report.</p>
+  <dl class="cs-facts">
+    <div><dt>Role</dt><dd>Lead product designer and product manager</dd></div>
+    <div><dt>Type</dt><dd>Feature extension, personal productivity tool</dd></div>
+    <div><dt>Stack</dt><dd>React, TypeScript, Tailwind CSS, Google Gemini API (Timetraked); OpenAI GPT 5.5, Docker (Weekly Report Generator)</dd></div>
+    <div><dt>Status</dt><dd>Shipped and in daily use. The Weekly Report Generator runs in Docker and is currently private, with plans to make it public.</dd></div>
+  </dl>
+  <ul class="cs-results">
+    <li><span class="cs-result-value">Under 1 min</span><span>To produce a weekly summary, available wherever Timetraked is</span></li>
+    <li><span class="cs-result-value">30 min → 1</span><span>Minutes per full weekly report, from about 30 by hand</span></li>
+    <li><span class="cs-result-value">Daily</span><span>Timetraked has been in daily use since early 2025</span></li>
+  </ul>
+</section>
 
+<content data-reveal-auto>
+  <section id="context" class="cs-step">
+<p class="cs-kicker">Step 1 &middot; Context</p>
+<h2>Summarizing my week took a second tool, a PDF export, and manual cleanup, so I skipped it.</h2>
+<p>Timetraked (formerly TimeTracker Pro) is a Progressive Web App I designed, built, and use every day. It installs like a native app, stores data locally by default, and needs no account. Through the day I create tasks, assign them to projects and categories, and archive each completed day.</p>
+<p>I built it because every time tracker I tried was either too complex for personal use or too simple to be useful. It has grown into a small, complete product with export formats, project management, offline support, and invoicing.</p>
+<figure class="cs-figure"><img src="/assets/img/timetracker-start.webp" alt="Start screen for Timetraked" loading="lazy" /></figure>
+<p>After archiving each week, I ran a second tool to generate a summary. It only accepted PDFs exported from the time tracker, only ran on a local development server, and produced output that always needed manual cleanup.</p>
+<div class="cs-cards">
+<div class="cs-card"><h3>No real integration</h3><p>The generator only accepted PDFs from the time tracker. The export was the only bridge between them.</p></div>
+<div class="cs-card"><h3>Availability</h3><p>It ran on a local Vite server, so it was only reachable from my machine in a single context.</p></div>
+<div class="cs-card"><h3>Output needing edits</h3><p>It had no idea who I was writing for, so every summary came out generic and sounded the same week to week.</p></div>
+</div>
+<blockquote class="cs-quote"><span class="cs-label">Opportunity</span><p>The right tool for summarizing my work week is the tool that already knows my work week.</p></blockquote>
+</section>
+<section id="decisions" class="cs-step cs-band">
+<p class="cs-kicker">Step 2 &middot; Key decisions</p>
+<h2>I extended the app instead of building a better standalone tool, and kept the full report generator separate on purpose.</h2>
+<h3>Extend, not replace</h3>
+<p>A standalone tool would still need an export step, a file upload, or an API connection to reach my time data. It would have to work with any input, which means losing the context that makes a summary useful: what categories mean, which projects are billable, and what a typical week looks like for me.</p>
+<p>Extending Timetraked meant the feature reads from the same local data store as the rest of the app, with no synchronization problem and no format negotiation. It also let the feature be opinionated. It excludes break and lunch categories, understands the project and client structure, and groups a week of task descriptions into a narrative instead of a list.</p>
+<h3>Two tools, one deliberate boundary</h3>
+<p>The short weekly summary and the full weekly report do different jobs. The summary lives inside Timetraked because it reads daily entries from the same database. The Weekly Report Generator is separate: you paste in the summary and the AI writes a full report from a template built into the system.</p>
+<p>The hardest question was whether to fold the generator in too. I kept it separate so it works with any summary, not only ones tied to one tool&rsquo;s data format, and so its use cases can grow.</p>
+<div class="cs-cards">
+<div class="cs-card"><h3>The cost</h3><p>Another repository, another set of dependencies, and a copy-and-paste step between the tools. I accepted all three to keep the generator reusable.</p></div>
+<div class="cs-card"><h3>What is next</h3><p>The template is built in for now. Making it easy to customize for different outputs is the next item, and the generator is private for now, with plans to make it public.</p></div>
+</div>
+</section>
+<section id="final" class="cs-step">
+<p class="cs-kicker">Step 3 &middot; Final design</p>
+<h2>The AI is a visible step in a workflow, not a magic trick: configure on the left, review and edit on the right.</h2>
+<h3>Two-panel layout</h3>
+<p>At wider viewports, controls sit on the left and output on the right. The interaction has two modes, configuring the request and reviewing the result, and one scrolling column would blur them. The left column handles week navigation, the data breakdown, and tone selection. The right column only reacts, showing one of four states: idle, generating, error, or a draft ready to edit and copy.</p>
+<div class="cs-figures ">
+<figure class="cs-figure"><img src="/assets/img/timetracker-weekly-report.webp" alt="Report generation preview" loading="lazy" /><figcaption>Select what to include in the report and the desired tone</figcaption></figure>
+<figure class="cs-figure"><img src="/assets/img/timetracker-generated-summary.webp" alt="The generated report summary" loading="lazy" /><figcaption>The report summary, ready to copy into any document</figcaption></figure>
+</div>
+<h3>Generation as a legible transition</h3>
+<p>While generating, the right panel names the week being summarized and shows staggered skeleton lines. The idle state uses a dashed container with a short explanation, so the layout never reads as broken on first load. Errors are structured and recoverable: a header naming the failure, a plain-language description, and an inline &ldquo;Try again&rdquo;.</p>
+<figure class="cs-figure"><img src="/assets/img/timetracker-loading-state.webp" alt="Report generation loading state" loading="lazy" /><figcaption>Feedback showing the generation of the report</figcaption></figure>
+<h3>Tone as a product decision</h3>
+<p>The tone selector reflects a real choice I make every week about who I am writing for. Each tone maps to different system prompt instructions and produces meaningfully different output. Changing the tone resets the existing summary, so you never mistake a standup draft for a client-ready one.</p>
+<div class="cs-figures ">
+<figure class="cs-figure"><img src="/assets/img/timetracker-tone-standup.webp" alt="Standup summary" loading="lazy" /><figcaption>Standup: terse, first-person, focused on what moved and what is in progress</figcaption></figure>
+<figure class="cs-figure"><img src="/assets/img/timetracker-tone-client.webp" alt="Client summary" loading="lazy" /><figcaption>Client: outcome-oriented, professional, suitable for sharing progress</figcaption></figure>
+<figure class="cs-figure"><img src="/assets/img/timetracker-tone-retro.webp" alt="Retrospective summary" loading="lazy" /><figcaption>Retrospective: reflective, noting themes and shifts across the week</figcaption></figure>
+</div>
+<h3>Editable output by default</h3>
+<p>The summary appears in an editable text area, which frames the AI correctly: it drafts, the human approves. A copy button and a short &ldquo;changes are not saved&rdquo; note complete the model, and a regenerate button sits beside copy for the two things people want to do with a draft: try again or take it.</p>
+<h3>Prompt architecture</h3>
+<p>The system instruction sets the persona, length (3 to 5 sentences), voice (first-person, no filler), and the instructions for the selected tone. The user message carries the serialized week: task titles, descriptions, project names, and durations. Before sending, serialization strips timestamps, IDs, and non-work categories, so the model sees only what a person would write into a prompt by hand. Sending structured noise returns structured noise.</p>
+<p>The prompt is designed to evolve as I notice what I edit or regenerate, and the tone categories can expand, for example to a sprint summary or an executive update.</p>
+</section>
+<section id="impact" class="cs-step cs-band">
+<p class="cs-kicker">Step 4 &middot; Impact</p>
+<h2>A ritual I used to skip now takes under a minute.</h2>
+<p>I use the standup tone on Monday morning to orient the week and the retrospective tone on Friday to close it out. Before this feature, I skipped that ritual more often than not because the tooling made it feel like work. The summary is available wherever Timetraked is, and the output usually needs one or two edits instead of a rewrite.</p>
+<p>The Weekly Report Generator extends the routine. I use it every week, and it produces a full report in under a minute that used to take about 30 minutes to write by hand.</p>
+<p>The project shows a specific mix of skills: finding friction in a real workflow, deciding where a feature belongs architecturally, designing the interaction states that make AI output feel trustworthy, and shipping something that has been in daily use since launch.</p>
+</section>
+
+</content>
 
 <section class="case-study-nav">
   <div aria-label="Case study navigation" class="row justify-content-center">
@@ -303,7 +218,6 @@
     <a href="/portfolio/archparser/" class="btn btn-outline btn-sm ms-auto" aria-label="Next case study: ArchParser: Architectural Drawing Analysis Platform">Next Case Study <i class="fas fa-arrow-right"></i></a>
   </div>
 </section>
-
 
     </main>
     <footer id="contact">
@@ -389,5 +303,7 @@
     </script>
     <script src="/js/prism.js"></script>
     <script src="/js/topo.js"></script>
+    <script src="/js/motion.js"></script>
+    <script src="/js/trail.js"></script>
   </body>
 </html>

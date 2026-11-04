@@ -44,7 +44,7 @@
     <script src="https://kit.fontawesome.com/0ea2a7621c.js" crossorigin="anonymous"></script>
   </head>
   <a rel="me" href="https://mastodon.world/@adamjol" aria-hidden="true" class="display-none">Mastodon</a>
-  <body>
+  <body class="has-trail">
     <a href="#main-content" class="skip-link">Skip to main content</a>
       <nav role="navigation" aria-label="Main navigation" class="main-nav" style="bottom: 0 !important;">
         <ul>
@@ -70,81 +70,111 @@
           </li>
         </ul>
       </nav>
+    <div class="trail-ticks" role="navigation" aria-label="Trail camps">
+  <ol>
+    <li>
+      <a href="#top" data-camp="top" aria-label="Trailhead" title="Trailhead"><span class="trail-tick" aria-hidden="true"></span></a>
+    </li>
+    <li>
+      <a href="#context" data-camp="context" aria-label="Context" title="Context"><span class="trail-tick" aria-hidden="true"></span></a>
+    </li>
+    <li>
+      <a href="#decisions" data-camp="decisions" aria-label="Key decisions" title="Key decisions"><span class="trail-tick" aria-hidden="true"></span></a>
+    </li>
+    <li>
+      <a href="#final" data-camp="final" aria-label="Final design" title="Final design"><span class="trail-tick" aria-hidden="true"></span></a>
+    </li>
+    <li>
+      <a href="#impact" data-camp="impact" aria-label="Impact" title="Impact"><span class="trail-tick" aria-hidden="true"></span></a>
+    </li>
+  </ol>
+  <span class="trail-count" data-trail-count data-last="4">Camp 0 / 4</span>
+</div>
+<div class="trail-rail" data-trail-rail aria-hidden="true">
+  <span class="trail-rail-line"></span>
+  <span class="trail-rail-fill"></span>
+  <span class="trail-rail-hiker">
+<svg class="trail-hiker" viewBox="-9 -23 20 26" width="22" height="28" aria-hidden="true" focusable="false">
+  <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+    <line x1="0" y1="-8" x2="-2" y2="0" />
+    <line x1="0" y1="-8" x2="2" y2="0" />
+    <line x1="0" y1="-8" x2="0.6" y2="-16" />
+    <line x1="3.5" y1="-12" x2="6" y2="0" />
+    <rect class="trail-hiker-pack" x="-5.5" y="-16" width="4.5" height="7.5" rx="1.5" stroke="none" />
+    <circle cx="1.2" cy="-19" r="2.6" fill="currentColor" stroke="none" />
+  </g>
+</svg></span>
+  <span class="trail-rail-flag"></span>
+</div>
+<div class="trail-track" data-trail-track aria-hidden="true">
+  <span class="trail-track-line"></span>
+  <span class="trail-track-fill"></span>
+  <span class="trail-track-hiker">
+<svg class="trail-hiker" viewBox="-9 -23 20 26" width="22" height="28" aria-hidden="true" focusable="false">
+  <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+    <line x1="0" y1="-8" x2="-2" y2="0" />
+    <line x1="0" y1="-8" x2="2" y2="0" />
+    <line x1="0" y1="-8" x2="0.6" y2="-16" />
+    <line x1="3.5" y1="-12" x2="6" y2="0" />
+    <rect class="trail-hiker-pack" x="-5.5" y="-16" width="4.5" height="7.5" rx="1.5" stroke="none" />
+    <circle cx="1.2" cy="-19" r="2.6" fill="currentColor" stroke="none" />
+  </g>
+</svg></span>
+</div>
+
     <main id="main-content">
       
-<link rel="stylesheet" href="/css/print.css" media="print" />
-<link rel="stylesheet" href="/css/markdown.css" />
-
-<link rel="stylesheet" href="/css/containers.css" />
-
-
-<section class="hero">
-  <h1>Color Picker</h1>
-  <p class="text-lead mb-4">Accessible color picker combining WCAG compliance with patterns.</p></section>
-
-
-  <content>
-    <section class="prose-section">
-<h2 id="project-overview" tabindex="-1">Project Overview <a class="anchor-link" href="#project-overview">#</a></h2>
-<blockquote>
-<p>An accessible color picker for the design system that pairs WCAG-compliant colors with patterns and icons, so color is never the only way to tell labels apart.</p>
-</blockquote>
-<div class="card">
-<p><strong>ROLE</strong>: Designer</p>
-<p><strong>STACK</strong>: Figma, CSS, React library</p>
-<p><strong>STATUS</strong>: Launched</p>
-</div>
-</section>
-<section class="prose-section">
-<h2 id="introduction" tabindex="-1">Introduction <a class="anchor-link" href="#introduction">#</a></h2>
-<p>A color picker is not accessible by nature, so the goal of this component design was to provide a solution that not only allowed users to select colors for labels, but also provide alternatives such as patterns and icons.</p>
-<div class="card">
-  <div class="card-body">
-    <img src="/assets/img/colorPalette.webp" alt="Image of the color palette" />
-  </div>
-</div>
-</section>
-<section class="prose-section">
-<h2 id="getting-started" tabindex="-1">Getting Started <a class="anchor-link" href="#getting-started">#</a></h2>
-<p>To start, a basic set of colors were chosen from the available color palette (as defined in the design system). Each color was verified against a light background (<code>#ffffff</code>) and a dark background (<code>#010101</code>), as well as against multiple layers.</p>
-<blockquote>
-<p>In total, forty-four (44) combinations met <strong>WCAG AA</strong> compliance, with eighteen (18) meeting <strong>WCAG AAA</strong> compliance.</p>
-</blockquote>
-<div class="card">
-  <div class="card-body">
-    <img src="/assets/img/colorPalette.webp" alt="Image of the color palette" />
-  </div>
-</div>
-</section>
-<section class="prose-section">
-<h2 id="next-steps" tabindex="-1">Next Steps <a class="anchor-link" href="#next-steps">#</a></h2>
-<p>After the colors had been established, I worked with the PM and Dev team to determine the first components to test these with.</p>
-<blockquote>
-<p>It was determined that <strong>Labels</strong> would be the best place to start, as they were the most ubiquitous across the system.</p>
-</blockquote>
-<div class="card">
-  <div class="card-body">
-    <img src="/assets/img/colorPalette01.webp" alt="Image showing where labels are used" />
-  </div>
-</div>
-</section>
-<section class="prose-section">
-<h2 id="comparisons-and-testing" tabindex="-1">Comparisons and Testing <a class="anchor-link" href="#comparisons-and-testing">#</a></h2>
-<p>Once the basic levels had been configured, I needed to compare the current label coloring scheme to what the new component provided. This required working with the development team to create a prototype environment that allowed the component to be used in real-time without surfacing the in-progress work to the production users.</p>
-<div class="card">
-  <div class="card-body">
-    <img src="/assets/img/colorPalette02.webp" alt="Image comparing before and after labels" />
-  </div>
-</div>
-</section>
-<section class="prose-section">
-<h2 id="findings" tabindex="-1">Findings <a class="anchor-link" href="#findings">#</a></h2>
-<p>Once the prototype was up and running, I was able to test out the interactions, visuals, and test the new component with users.</p>
-<p>The color picker launched to production. The findings from this round also fed follow-up work: another round of design and testing.</p>
+<section class="cs-hero" aria-label="Project hero">
+  <figure>
+    <img src="/assets/img/colorPalette.webp" alt="The color palette for the accessible color picker" width="1600" height="1000" fetchpriority="high" />
+  </figure>
 </section>
 
-  </content>
+<section id="top" class="cs-top" aria-labelledby="cs-headline">
+  <p class="cs-eyebrow">Case study · Accessibility and components</p>
+  <h1 id="cs-headline" class="cs-headline">A color picker is not accessible by nature, so I paired WCAG-compliant colors with patterns and icons.</h1>
+  <p class="cs-deck">An accessible color picker for the design system, so color is never the only way to tell labels apart.</p>
+  <dl class="cs-facts">
+    <div><dt>Role</dt><dd>Designer</dd></div>
+    <div><dt>Stack</dt><dd>Figma, CSS, React library</dd></div>
+    <div><dt>Status</dt><dd>Launched</dd></div>
+  </dl>
+  <ul class="cs-results">
+    <li><span class="cs-result-value">44</span><span>Color combinations meeting WCAG AA</span></li>
+    <li><span class="cs-result-value">18</span><span>Of those also meeting WCAG AAA</span></li>
+    <li><span class="cs-result-value">Launched</span><span>To production, with follow-up design and testing planned</span></li>
+  </ul>
+</section>
 
+<content data-reveal-auto>
+  <section id="context" class="cs-step">
+<p class="cs-kicker">Step 1 &middot; Context</p>
+<h2>One of the most up-voted feature requests had a built-in problem: color alone cannot carry meaning.</h2>
+<p>A color picker is not accessible by nature. The goal of this component was to let users choose colors for labels, and to offer alternatives such as patterns and icons.</p>
+<blockquote class="cs-quote"><span class="cs-label">Opportunity</span><p>How might label colors stay distinguishable for everyone, whatever they can see?</p></blockquote>
+</section>
+<section id="decisions" class="cs-step cs-band">
+<p class="cs-kicker">Step 2 &middot; Key decisions</p>
+<h2>I verified every color against light and dark backgrounds and started with the most ubiquitous component, labels.</h2>
+<p>I chose a base set of colors from the design system palette. Each was checked against a light background (#ffffff), a dark background (#010101), and multiple layers.</p>
+<blockquote class="cs-quote"><p>In total, 44 combinations met WCAG AA, with 18 meeting WCAG AAA.</p></blockquote>
+<figure class="cs-figure"><img src="/assets/img/colorPalette.webp" alt="The verified color palette" loading="lazy" /></figure>
+<p>With the PM and development team, we agreed labels were the best place to start, since they are the most common across the system.</p>
+<figure class="cs-figure"><img src="/assets/img/colorPalette01.webp" alt="Where labels are used in the product" loading="lazy" /></figure>
+</section>
+<section id="final" class="cs-step">
+<p class="cs-kicker">Step 3 &middot; Final design</p>
+<h2>A prototype environment let us test the new labels in real time without exposing unfinished work to production users.</h2>
+<p>To compare the current label scheme with the new component, I worked with the development team on a prototype environment. I tested the interactions and visuals there, and tested the component with users.</p>
+<figure class="cs-figure"><img src="/assets/img/colorPalette02.webp" alt="Before and after comparison of labels" loading="lazy" /></figure>
+</section>
+<section id="impact" class="cs-step cs-band">
+<p class="cs-kicker">Step 4 &middot; Impact</p>
+<h2>The color picker launched to production, and the findings fed another round of design and testing.</h2>
+<p>Measured results are not available for this page yet. What I can say is that the component shipped, and the findings from this round became follow-up work.</p>
+</section>
+
+</content>
 
 <section class="case-study-nav">
   <div aria-label="Case study navigation" class="row justify-content-center">
@@ -153,7 +183,6 @@
     <a href="/portfolio/soccertracker/" class="btn btn-outline btn-sm ms-auto" aria-label="Next case study: Soccer Game Tracker">Next Case Study <i class="fas fa-arrow-right"></i></a>
   </div>
 </section>
-
 
     </main>
     <footer id="contact">
@@ -239,5 +268,7 @@
     </script>
     <script src="/js/prism.js"></script>
     <script src="/js/topo.js"></script>
+    <script src="/js/motion.js"></script>
+    <script src="/js/trail.js"></script>
   </body>
 </html>
