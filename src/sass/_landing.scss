@@ -373,3 +373,11 @@
     translate: 0 0;
   }
 }
+
+/* Unrevealed content must still print */
+@media print {
+  .js-reveal .reveal {
+    opacity: 1 !important;
+    animation: none !important;
+  }
+}
