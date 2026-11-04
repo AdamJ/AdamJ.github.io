@@ -136,48 +136,6 @@
   transform: scaleY(1);
 }
 
-@media (width <= 1099px) {
-  /* Camp ticks become a bottom bar */
-  .trail-ticks {
-    inset: auto 0 0;
-    justify-content: space-between;
-    padding: 0 var(--space-xs) 0 var(--space-md);
-    background: var(--earth-dark);
-    border: 0;
-    border-radius: 0;
-    box-shadow: none;
-    min-height: 44px;
-
-    a {
-      height: 44px;
-    }
-  }
-  .trail-tick {
-    border-color: var(--earth-mist, #b4a89c);
-  }
-  .trail-ticks a.is-past .trail-tick,
-  .trail-ticks a[aria-current='location'] .trail-tick {
-    background: var(--accent-coral);
-    border-color: var(--accent-coral);
-  }
-  .trail-ticks a[aria-current='location'] .trail-tick {
-    box-shadow: 0 0 0 3px var(--earth-dark), 0 0 0 4px var(--accent-coral);
-  }
-  .trail-count {
-    order: -1;
-    color: var(--earth-cream);
-  }
-  body.has-trail {
-    padding-bottom: 44px;
-  }
-
-  /* Keep the scroll-to-top button clear of the bar */
-  /* stylelint-disable-next-line selector-id-pattern */
-  body.has-trail #goTopBtn {
-    bottom: 60px !important;
-  }
-}
-
 @media (width <= 1199px) {
   /* No gutter for the rail: a strip above the bottom edge carries the hiker */
   .js-trail .trail-rail {
@@ -246,7 +204,7 @@
     }
   }
   .trail-tick {
-    border-color: var(--earth-mist, #b4a89c);
+    border-color: var(--earth-mist);
   }
   .trail-ticks a.is-past .trail-tick,
   .trail-ticks a[aria-current='location'] .trail-tick {
@@ -279,5 +237,13 @@
   }
   .trail-rail-flag {
     transition: transform 0.5s cubic-bezier(0.3, 1.6, 0.5, 1);
+  }
+}
+
+@media print {
+  .trail-ticks,
+  .trail-rail,
+  .trail-track {
+    display: none !important;
   }
 }

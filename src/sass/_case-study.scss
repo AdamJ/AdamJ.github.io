@@ -3,7 +3,7 @@
   max-width: none;
   padding-top: var(--space-xl);
   padding-bottom: var(--space-md);
-  background: var(--earth-dune, #e8dcc8);
+  background: var(--earth-dune);
 
   figure {
     max-width: 1200px;
@@ -47,7 +47,7 @@
   max-width: 760px;
   font-size: 1.25rem;
   line-height: 1.5;
-  color: var(--earth-stone, #6b5d52);
+  color: var(--earth-stone);
 }
 .cs-facts {
   display: grid;
@@ -60,7 +60,7 @@
     border-top: 2px solid var(--earth-dark);
   }
   dt {
-    color: var(--earth-stone, #6b5d52);
+    color: var(--earth-stone);
   }
   dd {
     margin: var(--space-2xs) 0 0;
@@ -96,7 +96,7 @@
 .cs-note {
   font-size: var(--font-size-sm, 0.875rem);
   font-style: italic;
-  color: var(--earth-stone, #6b5d52);
+  color: var(--earth-stone);
 }
 
 /* Steps */
@@ -108,7 +108,7 @@
     max-width: none;
     padding-right: max(var(--space-lg), calc((100% - 1200px) / 2 + var(--space-lg)));
     padding-left: max(var(--space-lg), calc((100% - 1200px) / 2 + var(--space-lg)));
-    background: var(--earth-dune, #e8dcc8);
+    background: var(--earth-dune);
   }
   h2 {
     max-width: 900px;
@@ -120,6 +120,21 @@
   }
   h2::after {
     content: none;
+  }
+
+  /* Coral and sage are 3.9:1 and 4.3:1 on the dune band, below the 4.5:1 small-text minimum */
+  &.cs-band {
+    .cs-kicker,
+    .cs-label {
+      color: var(--earth-brown);
+    }
+    .cs-kicker::before {
+      background: var(--earth-brown);
+    }
+    a:not(.btn) {
+      color: var(--earth-brown);
+      border-bottom-color: var(--earth-brown);
+    }
   }
   > p {
     max-width: 720px;
@@ -159,7 +174,7 @@
 
   p {
     margin: 0;
-    color: var(--earth-stone, #6b5d52);
+    color: var(--earth-stone);
   }
 }
 .cs-quote {
@@ -208,7 +223,7 @@
   figcaption {
     margin-top: var(--space-xs);
     font-size: var(--font-size-sm, 0.875rem);
-    color: var(--earth-stone, #6b5d52);
+    color: var(--earth-stone);
   }
 }
 .cs-figures {

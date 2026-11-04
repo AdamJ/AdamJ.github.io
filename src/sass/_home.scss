@@ -34,7 +34,7 @@
   max-width: none;
   padding-right: max(var(--space-lg), calc((100% - 1200px) / 2 + var(--space-lg)));
   padding-left: max(var(--space-lg), calc((100% - 1200px) / 2 + var(--space-lg)));
-  background: var(--earth-dune, #e8dcc8);
+  background: var(--earth-dune);
 }
 .camp-kicker,
 .camp-label {
@@ -48,7 +48,12 @@
   color: var(--accent-coral-dark);
 }
 .camp-label {
-  color: var(--earth-stone, #6b5d52);
+  color: var(--text-muted);
+}
+
+/* Coral is 3.9:1 on the dune band, below the 4.5:1 small-text minimum */
+.camp-band .camp-kicker {
+  color: var(--earth-brown);
 }
 
 /* Selected work: cards pin and stack as the next one arrives */
@@ -58,8 +63,8 @@
   margin-top: var(--space-xl);
 }
 .stack-card {
-  position: sticky;
-  top: calc(6rem + var(--i, 0) * 1rem);
+  /* Anchors the whole-card link overlay in every mode, including reduced motion */
+  position: relative;
   display: grid;
   grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
   gap: var(--space-lg);
@@ -69,6 +74,12 @@
   border: 1px solid var(--earth-brown);
   border-radius: var(--radius-xl);
   box-shadow: 8px 8px 0 0 rgb(45 31 18 / 15%);
+
+  /* The whole card is the target, so the whole card shows focus */
+  &:has(h3 a:focus-visible) {
+    outline: 3px solid var(--earth-dark);
+    outline-offset: 4px;
+  }
 
   img {
     width: 100%;
@@ -114,7 +125,7 @@
   li {
     padding: 2px var(--space-sm);
     font-size: var(--font-size-sm, 0.875rem);
-    background: var(--earth-dune, #e8dcc8);
+    background: var(--earth-dune);
     border-radius: var(--radius-pill);
   }
 }
@@ -278,10 +289,15 @@
   font-weight: 600;
 }
 
-/* Cards pin only where there is room; elsewhere they stack in normal flow */
+/* Cards pin only where there is room and motion is welcome; elsewhere they stack in normal flow */
+@media (width > 900px) and (height >= 40rem) and (prefers-reduced-motion: no-preference) {
+  .stack-card {
+    position: sticky;
+    top: calc(6rem + var(--i, 0) * 1rem);
+  }
+}
 @media (width <= 900px) {
   .stack-card {
-    position: static;
     grid-template-columns: 1fr;
   }
   .more-grid,
@@ -299,16 +315,11 @@
     grid-template-columns: 1fr;
   }
 }
-@media (prefers-reduced-motion: reduce) {
-  .stack-card {
-    position: static;
-  }
-}
 
 /* Motion: styled only when motion.js runs and reduced motion is not requested */
 @media (prefers-reduced-motion: no-preference) {
   .quote-word {
-    color: var(--earth-stone-light, #968a80);
+    color: var(--text-muted);
     transition: color 200ms ease;
   }
   .quote-word.is-lit {

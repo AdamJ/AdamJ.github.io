@@ -10,10 +10,11 @@
 
   var root = document.documentElement;
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  var links = Array.prototype.slice.call(ticks.querySelectorAll('a[data-camp]'));
-  var camps = links
-    .map(function (link) { return document.getElementById(link.getAttribute('data-camp')); })
-    .filter(Boolean);
+  // Keep each tick paired with its section so a missing id cannot shift the indexes
+  var links = Array.prototype.slice.call(ticks.querySelectorAll('a[data-camp]')).filter(function (link) {
+    return document.getElementById(link.getAttribute('data-camp'));
+  });
+  var camps = links.map(function (link) { return document.getElementById(link.getAttribute('data-camp')); });
   if (camps.length < 2) return;
 
   var count = ticks.querySelector('[data-trail-count]');
@@ -50,7 +51,6 @@
     targets.forEach(function (el) {
       if (el) el.style.setProperty('--trail-p', value.toFixed(4));
     });
-    if (track) track.setAttribute('aria-valuenow', String(Math.round(value * 100)));
   };
 
   var update = function () {
