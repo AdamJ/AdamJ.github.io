@@ -218,6 +218,11 @@
     order: -1;
     color: var(--earth-cream);
   }
+
+  /* Sage is 2.8:1 on the dark bar, below the 3:1 minimum for focus indicators */
+  .trail-ticks a:focus-visible {
+    outline-color: var(--earth-cream);
+  }
   .js-trail .trail-track {
     bottom: 44px;
   }
