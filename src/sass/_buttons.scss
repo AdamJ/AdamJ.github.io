@@ -61,7 +61,6 @@
 .btn-outline {
   background: rgb(255, 255, 255, 50%) !important;
   backdrop-filter: blur(24px);
-  filter: url("#lensFilter") saturate(120%) brightness(1.15);
   color: var(--text-primary) !important;
   border: var(--border-medium, 4px) solid var(--earth-brown) !important;
   box-shadow: none !important;

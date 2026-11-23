@@ -181,7 +181,7 @@ categories: [development, design]
 4. Run `pnpm run images:optimize`
 
 ### Page Motion (opt-in)
-Add `motion: true` to a page's front matter to load `src/js/motion.js`. On `page.njk` and `markdown.njk` layouts this fades in the page header and reveals top-level content sections (card grids stagger card by card) as they scroll into view. Pages on `base.njk` can mark elements directly with `data-reveal`, `data-reveal-group`, or `data-reveal-auto`. All motion is skipped for `prefers-reduced-motion`, and content stays visible without JS. The topographic background (`src/sass/_topo.scss`, `src/js/topo.js`) applies sitewide; regenerate its SVG with `node scripts/generate-topo.js [seed]`.
+Add `motion: true` to a page's front matter to load `src/js/motion.js`. On `page.njk` and `markdown.njk` layouts this fades in the page header and reveals top-level content sections (card grids stagger card by card) as they scroll into view. Pages on `base.njk` can mark elements directly with `data-reveal`, `data-reveal-group`, or `data-reveal-auto`. All motion is skipped for `prefers-reduced-motion`, and content stays visible without JS. The topographic background (`src/sass/_topo.scss`, drifts via a CSS scroll-driven animation) applies sitewide; regenerate its SVG with `node scripts/generate-topo.js [seed]`.
 
 ### Trail Progress (opt-in)
 Pages on `base.njk` add a `camps` list to front matter to show the trail progress system: camp ticks (real anchor links), a pinned rail hiker on wide screens, and a progress track plus tick bar on small screens. Each `id` must match a section on the page, and the first camp is the trailhead.

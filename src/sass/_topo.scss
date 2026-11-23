@@ -1,8 +1,15 @@
 /*
-** Topographic texture: fixed behind every page, drifts with scroll progress
-** via --topo-shift (set by js/topo.js). Regenerate the SVG with
-** scripts/generate-topo.js.
+** Topographic texture: fixed behind every page, drifts up to 20vh over the
+** page's scroll range via a scroll-driven animation (no JS, no per-frame style
+** writes). Browsers without animation-timeline keep it still. Regenerate the
+** SVG with scripts/generate-topo.js.
 */
+@keyframes topo-drift {
+  to {
+    transform: translate3d(0, -20vh, 0);
+  }
+}
+
 body::before {
   content: '';
   position: fixed;
@@ -14,7 +21,15 @@ body::before {
   background: url('/assets/img/topo.svg') center / cover no-repeat;
   opacity: 0.08;
   pointer-events: none;
-  transform: translate3d(0, calc(var(--topo-shift, 0) * -1px), 0);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: scroll()) {
+    body::before {
+      animation: topo-drift linear both;
+      animation-timeline: scroll(root);
+    }
+  }
 }
 
 @media print {
