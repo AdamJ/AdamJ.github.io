@@ -7,7 +7,6 @@ nav {
   z-index: 1000;
   background: rgb(245, 241, 232, 50%);
   backdrop-filter: blur(24px);
-  filter: url("#lensFilter") saturate(120%) brightness(1.15);
   border: var(--border-medium, 4px) solid var(--earth-brown);
   border-radius: 50px;
   padding: var(--space-sm) 2rem;
